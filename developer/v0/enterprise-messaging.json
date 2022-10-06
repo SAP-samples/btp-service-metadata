@@ -1,0 +1,257 @@
+{
+  "name": "enterprise-messaging",
+  "displayName": "SAP Event Mesh",
+  "description": "The SAP Event Mesh service decouples communication and allows for event-driven business processes.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/63MODC2qIDjt9S-wPRQg5ELnHzu6rYpfkeGuSjzXupo1gVcB-JaT5i_lLi4SPFyp.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/tags/73554900100800000765/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blogs",
+      "altText": ""
+    },
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/integration/enterprise-messaging.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it.",
+      "altText": ""
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Event%20Mesh",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts",
+      "altText": ""
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Event%20Mesh",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers",
+      "altText": ""
+    },
+    {
+      "value": "https://developers.sap.com/group.cp-enterprisemessaging-app-create.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Develop a Node.js-Based Event Mesh App",
+      "altText": ""
+    },
+    {
+      "value": "https://developers.sap.com/group.cp-enterprisemessaging-get-started.html",
+      "classification": "Onboarding",
+      "type": "Link",
+      "text": "Tutorial: Onboarding",
+      "altText": ""
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/event-mesh",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center",
+      "altText": ""
+    },
+    {
+      "value": "https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:26549:28901:35015",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Guided Answers for Event Mesh",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?sel1=Enterprise%20Messaging%3BEvent%20Mesh&title=JVM6&from=2021-01-01&to=2021-12-30%22",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New for Event Mesh",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/doc/e56d7e676cc74906b813d226062d8634/Cloud/en-US/EnterpriseMessaging_FSD_en.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is Event Mesh?",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/3ef34ffcbbe94d3e8fff0f9ea2d5911d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/74cc07a56b974db4893e6b773fd1c02e.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Monitoring and Troubleshooting",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/dc18d8ebc226404c87db22e818f70145.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/df532e8735eb4322b00bfc7e42f84e8d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_ENTERPRISE_MESSAGING/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=lurri4pnW0c",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP BTP in the Garage | Event Mesh Service",
+      "altText": ""
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Event Mesh - default plan",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "event-mesh-connectivity",
+      "displayName": "Event Mesh Connectivity",
+      "category": "SERVICE",
+      "description": "Event Mesh Connectivity",
+      "isFree": null,
+      "isBeta": true,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "event-mesh-connectivity-beta",
+      "displayName": "event-mesh-connectivity-beta",
+      "category": "SERVICE",
+      "description": "Event Mesh - Connectivity (Beta) - Manage connectivity configurations of different applications and services (including 3rd party eventing infrastructures) for seamless exchange of business events across your landscape",
+      "isFree": true,
+      "isBeta": true,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}

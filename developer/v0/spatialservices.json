@@ -1,0 +1,121 @@
+{
+  "name": "spatialservices",
+  "displayName": "SAP HANA spatial services",
+  "description": "SAP HANA spatial services provides a unified access layer for location-based services, including maps for visualization, geocoding and routing capabilities. It integrates location-based content and services from external providers into SAP products and customer applications.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AdVSNjrHAeI1bBiTl06N4o_ErpCsHhAvb9vh3PDfwn5q6LVhqdMHubVdPKfKlsmy.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20HANA%20spatial%20services",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts",
+      "altText": ""
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20HANA%20spatial%20services",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers",
+      "altText": ""
+    },
+    {
+      "value": "https://d.dam.sap.com/a/j8RQzaL/75866_SB_57839_enUS.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Solution Brief",
+      "altText": ""
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-hana-spatial-services",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/4e2337c5371a4ac18195cfe751514735/Cloud/en-US",
+      "classification": "Onboarding",
+      "type": "Link",
+      "text": "Tutorial: Onboarding",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/ac0c08cc6e0a48ad9182f6c080043c80/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/c7837a0d78e24fb5b9f66a058ab9f730/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What are SAP HANA Spatial Services",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES/latest/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://www.sap.com/documents/2022/02/da29c9cc-197e-0010-bca6-c68f7e60039b.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Introduction to SAP HANA Spatial Services",
+      "altText": ""
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "lite",
+      "displayName": "lite",
+      "category": "SERVICE",
+      "description": "Provides access to HANA spatial services capabilities.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Provides full access to HANA spatial services capabilities.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}
