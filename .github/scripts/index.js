@@ -6,9 +6,11 @@ const { ensureDir, emptyDir } = require('fs-extra')
 const path = require('path')
 
 function getOctokitConfig () {
+  const baseUrl = `https://${process.env.GH_ENTERPRISE_API_URL}/api/v3`
+
   const octokit = new Octokit({
     auth: process.env.GH_ENTERPRISE_TOKEN,
-    baseUrl: process.env.GH_ENTERPRISE_API_URL
+    baseUrl
   })
 
   return octokit
@@ -31,7 +33,9 @@ async function createAndCleanDir (dirPath) {
 }
 
 async function fetchAndStoreContent () {
-  const ghSourcePath = `/${process.env.METADATA_SOURCE_VERSION}/${process.env.METADATA_SOURCE_DIR}`
+  const sourceDir = process.env.METADATA_SOURCE_DIR
+  const sourceVersion = process.env.METADATA_SOURCE_VERSION
+  const ghSourcePath = `/${sourceVersion}/${sourceDir}`
   const typeDir = 'dir'
 
   // Get first level results (directories) from GitHub
