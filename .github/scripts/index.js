@@ -7,8 +7,8 @@ const path = require('path')
 
 function getOctokitConfig () {
   const octokit = new Octokit({
-    auth: process.env.GITHUB_ENTERPRISE_TOKEN,
-    baseUrl: process.env.GITHUB_ENTERPRISE_API_URL
+    auth: process.env.GH_ENTERPRISE_TOKEN,
+    baseUrl: process.env.GH_ENTERPRISE_API_URL
   })
 
   return octokit
