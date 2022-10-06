@@ -10,7 +10,7 @@ function getOctokitConfig () {
 
   const octokit = new Octokit({
     auth: process.env.GH_ENTERPRISE_TOKEN,
-    baseUrl: baseUrl
+    baseUrl
   })
 
   return octokit
