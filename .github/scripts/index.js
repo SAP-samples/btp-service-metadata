@@ -8,7 +8,7 @@ const path = require('path')
 function getOctokitConfig () {
   const octokit = new Octokit({
     auth: process.env.GH_ENTERPRISE_TOKEN,
-    baseUrl: "https://github.tools.sap/api/v3" // process.env.GH_ENTERPRISE_API_URL
+    baseUrl: process.env.GH_ENTERPRISE_API_URL
   })
 
   return octokit
@@ -33,7 +33,7 @@ async function createAndCleanDir (dirPath) {
 async function fetchAndStoreContent () {
   const sourceDir = process.env.METADATA_SOURCE_DIR
   const sourceVersion = process.env.METADATA_SOURCE_VERSION
-  const ghSourcePath = `/v0/sap_external`
+  const ghSourcePath = `/${sourceVersion}/${sourceDir}`
   const typeDir = 'dir'
 
   // Get first level results (directories) from GitHub
