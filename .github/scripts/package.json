@@ -1,0 +1,21 @@
+{
+  "name": "fetch-repo-files",
+  "version": "1.0.0",
+  "description": "Script to fetch metadata files",
+  "scripts": {
+    "fetch:metadata": "node index.js"
+  },
+  "author": "",
+  "license": "Apache2",
+  "dependencies": {
+    "@octokit/core": "^4.0.5",
+    "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1"
+  }
+}
