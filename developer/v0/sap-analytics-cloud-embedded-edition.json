@@ -1,0 +1,100 @@
+{
+  "name": "sap-analytics-cloud-embedded-edition",
+  "displayName": "SAP Analytics Cloud, embedded edition",
+  "description": "With SAP Analytics Cloud, embedded edition, you can build and embed reports, dashboards, and visuals into your business application to make confident decisions. Explore your business data via live connection between your SAP Analytics Cloud tenant and the remote SAP HANA database on SAP Cloud Platform.",
+  "icon": "data:image/svg+xml;base64,PHN2ZyBpZD0iY2xvdWQtZm9yLWFuYWx5dGljcyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMGE2ZWQxO30uY2xzLTJ7ZmlsbDojMDUzYjcwO308L3N0eWxlPjwvZGVmcz48dGl0bGU+Y2xvdWQtZm9yLWFuYWx5dGljczwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjksMzMuNDcxLDQxLjk0Nyw0Ni40MjJBMjMuMywyMy4zLDAsMCwxLDI5LDUxLjg1N2EyOC4xMDUsMjguMTA1LDAsMCwxLTMuODk0LDBBMjMuMDc4LDIzLjA3OCwwLDAsMSw2LjgwOCwzOS45LDIyLjU0NywyMi41NDcsMCwwLDEsNCwyOC45NDMsMjIuNzQ1LDIyLjc0NSwwLDAsMSw5LjQzNCwxMy45MDlhMzYuNTcsMzYuNTcsMCwwLDEsMi43MTctMi42MjZBMjIuNzYsMjIuNzYsMCwwLDEsMjUuMSw1Ljg0OVYyOS42NjhaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTAuNjQxLDIwLjUyMSwzMC4zNTUsMjkuNDg3LDQ0LjU3Myw0My44bDEuNDQ5LDEuMjY4QTI0LjAzLDI0LjAzLDAsMCwwLDUyLDI4Ljk0MywyNi40NDgsMjYuNDQ4LDAsMCwwLDUwLjY0MSwyMC41MjFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDkuMDExLDE2Ljk4OUEyNC44MDksMjQuODA5LDAsMCwwLDI5LDQuMDM4VjI1Ljg2NEw0Ny4yLDE3LjhaIi8+PC9zdmc+",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Analytics%20Cloud%2C%20embedded%20edition",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts",
+      "altText": ""
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Analytics%20Cloud%2C%20embedded%20edition",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers",
+      "altText": ""
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-analytics-cloud-embedded-edition",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/7466893ec68641198fc189757dc5f7a6/1.0/en-US/ce081403aaf14feca286d7d0b4af2b86.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAC_EMBEDDED_EDITION/1.0/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard plan with max. 150 concurrent sessions",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}
