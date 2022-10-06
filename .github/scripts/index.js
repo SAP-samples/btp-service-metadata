@@ -31,7 +31,9 @@ async function createAndCleanDir (dirPath) {
 }
 
 async function fetchAndStoreContent () {
-  const ghSourcePath = `/${process.env.METADATA_SOURCE_VERSION}/${process.env.METADATA_SOURCE_DIR}`
+  const sourceDir = process.env.METADATA_SOURCE_DIR
+  const sourceVersion = process.env.METADATA_SOURCE_VERSION
+  const ghSourcePath = `/${sourceVersion}/${sourceDir}`
   const typeDir = 'dir'
 
   // Get first level results (directories) from GitHub
