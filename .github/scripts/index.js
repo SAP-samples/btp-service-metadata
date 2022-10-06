@@ -33,7 +33,7 @@ async function createAndCleanDir (dirPath) {
 async function fetchAndStoreContent () {
   const sourceDir = process.env.METADATA_SOURCE_DIR
   const sourceVersion = process.env.METADATA_SOURCE_VERSION
-  const ghSourcePath = `/${sourceVersion}/${sourceDir}`
+  const ghSourcePath = `/v0/sap_external`
   const typeDir = 'dir'
 
   // Get first level results (directories) from GitHub
