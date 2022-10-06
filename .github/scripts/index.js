@@ -6,9 +6,11 @@ const { ensureDir, emptyDir } = require('fs-extra')
 const path = require('path')
 
 function getOctokitConfig () {
+  const baseUrl = `https://${process.env.GH_ENTERPRISE_API_URL}/api/v3`
+
   const octokit = new Octokit({
     auth: process.env.GH_ENTERPRISE_TOKEN,
-    baseUrl: process.env.GH_ENTERPRISE_API_URL
+    baseUrl: baseUrl
   })
 
   return octokit
