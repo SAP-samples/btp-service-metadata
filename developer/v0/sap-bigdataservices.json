@@ -1,0 +1,43 @@
+{
+  "name": "sap-bigdataservices",
+  "displayName": "SAP Big Data Services",
+  "description": "Big Data Services",
+  "icon": null,
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Big%20Data%20Services",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts",
+      "altText": ""
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Big%20Data%20Services",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers",
+      "altText": ""
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Big Data Services",
+      "category": "SERVICE",
+      "description": "Big Data Services",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}
