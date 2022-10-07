@@ -35,7 +35,7 @@ async function createAndCleanDir (dirPath) {
 async function fetchAndStoreContent () {
   const sourceDir = process.env.METADATA_SOURCE_DIR
   const sourceVersion = process.env.METADATA_SOURCE_VERSION
-  const ghSourcePath = `/${sourceVersion}/${sourceDir}`
+  const ghSourcePath = `/${sourceDir}/${sourceVersion}`
   const typeDir = 'dir'
 
   // Get first level results (directories) from GitHub
@@ -43,7 +43,7 @@ async function fetchAndStoreContent () {
 
   for (const resultEntry of resultDir.data) {
     const pathComp = resultEntry.path.split('/')
-    const targetFilePath = path.resolve(__dirname, '..', '..', pathComp[2], pathComp[0])
+    const targetFilePath = path.resolve(__dirname, '..', '..', pathComp[1], pathComp[2])
 
     if (resultEntry.type === typeDir) {
       // Clean/Create the directories if not existing

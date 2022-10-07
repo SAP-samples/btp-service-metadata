@@ -3,10 +3,6 @@ name: Update Metadata Files
 
 on:
   workflow_dispatch: {}
-
-env:
-  METADATA_SOURCE_REPO: btp-metadata-repo
-  METADATA_SOURCE_OWNER: btp-setup-automator
   
 jobs:
   fetch-metadata:
@@ -31,8 +27,8 @@ jobs:
           export GH_ENTERPRISE_API_URL=${{ secrets.GH_ENTERPRISE_API_URL }}
           export METADATA_SOURCE_VERSION=${{ secrets.METADATA_SOURCE_VERSION }}
           export METADATA_SOURCE_DIR=${{ secrets.METADATA_SOURCE_DIR }} 
-          export METADATA_SOURCE_REPO=${{ env.METADATA_SOURCE_REPO }}
-          export METADATA_SOURCE_OWNER=${{ env.METADATA_SOURCE_OWNER }}
+          export METADATA_SOURCE_REPO=${{ secrets.METADATA_SOURCE_REPO }}
+          export METADATA_SOURCE_OWNER=${{ secrets.METADATA_SOURCE_OWNER }}
           npm run fetch:metadata
       - name: "Store changes in GH repository"
         run: |
