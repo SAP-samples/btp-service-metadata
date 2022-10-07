@@ -1,0 +1,418 @@
+{
+  "name": "service-manager",
+  "displayName": "SAP Field Service Management",
+  "description": "SAP Service Manager service allows you to consume platform services in any connected runtime environment, track service instances creation, and share services and service instances between different environments.",
+  "icon": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMjI5IiBkYXRhLW5hbWU9IkxheWVyIDIyOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMGE2ZWQxO30uY2xzLTJ7ZmlsbDojMDUzYjcwO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yOCw3YTMsMywwLDEsMS0zLDMsMywzLDAsMCwxLDMtM20wLTNhNiw2LDAsMSwwLDYsNiw2LjAwNyw2LjAwNywwLDAsMC02LTZaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjgsNDNhMywzLDAsMSwxLTMsMywzLDMsMCwwLDEsMy0zbTAtM2E2LDYsMCwxLDAsNiw2LDYuMDA3LDYuMDA3LDAsMCwwLTYtNloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMywyNXY2SDdWMjVoNm0zLTNINFYzNEgxNlYyMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00OSwyNXY2SDQzVjI1aDZtMy0zSDQwVjM0SDUyVjIyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM3LDI2LjEyNUE3LjEzMyw3LjEzMywwLDAsMSwyOS44NzUsMTlhMS4xMjUsMS4xMjUsMCwwLDEsMi4yNSwwQTQuODc5LDQuODc5LDAsMCwwLDM3LDIzLjg3NWExLjEyNSwxLjEyNSwwLDAsMSwwLDIuMjVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTksMjYuMTI1YTEuMTI1LDEuMTI1LDAsMCwxLDAtMi4yNUE0Ljg3OSw0Ljg3OSwwLDAsMCwyMy44NzUsMTlhMS4xMjUsMS4xMjUsMCwwLDEsMi4yNSwwQTcuMTMzLDcuMTMzLDAsMCwxLDE5LDI2LjEyNVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNSwzOC4xMjVBMS4xMjUsMS4xMjUsMCwwLDEsMjMuODc1LDM3LDQuODgsNC44OCwwLDAsMCwxOSwzMi4xMjVhMS4xMjUsMS4xMjUsMCwwLDEsMC0yLjI1QTcuMTMzLDcuMTMzLDAsMCwxLDI2LjEyNSwzNywxLjEyNSwxLjEyNSwwLDAsMSwyNSwzOC4xMjVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzEsMzguMTI1QTEuMTI1LDEuMTI1LDAsMCwxLDI5Ljg3NSwzNyw3LjEzMyw3LjEzMywwLDAsMSwzNywyOS44NzVhMS4xMjUsMS4xMjUsMCwwLDEsMCwyLjI1QTQuODgsNC44OCwwLDAsMCwzMi4xMjUsMzcsMS4xMjUsMS4xMjUsMCwwLDEsMzEsMzguMTI1WiIvPjwvc3ZnPg==",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Field%20Service%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Field%20Service%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/service-manager",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/service-management",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    },
+    {
+      "value": "https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Cloud/en-US/0ccebd7cec24411dacd5ad17799534e0.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Cloud/en-US/1ca5bbeac19340ce959e82b51b2fde1e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Cloud/en-US/3a27b85a47fc4dff99184dd5bf181e14.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/f13b6c63eef341bc8b7d25b352401c92.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://operatorhub.io/operator/sap-btp-operator",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "container",
+      "displayName": "container",
+      "category": "SERVICE",
+      "description": "Allows management of service instances and bindings in a reduced scope. Instances created in a container are not visible when using credentials of other container instances",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "service-operator-access",
+      "displayName": "service-operator-access",
+      "category": "SERVICE",
+      "description": "Provides credentials for SAP BTP service operator to access SAP BTP from a Kubernetes cluster.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "subaccount-admin",
+      "displayName": "subaccount-admin",
+      "category": "SERVICE",
+      "description": "Allows management of resources in the subaccount in which the service instance of this plan was created. This includes managing service instances, bindings and subaccount-scoped platforms.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "subaccount-audit",
+      "displayName": "subaccount-audit",
+      "category": "SERVICE",
+      "description": "Allows read-only access to the resources in the subaccount in which the service instance was created. This includes reading service instances, bindings and subaccount-scoped platforms.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}
