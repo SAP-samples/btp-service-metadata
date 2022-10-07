@@ -1,0 +1,161 @@
+{
+  "name": "iotae",
+  "displayName": "SAP IoT Simulator",
+  "description": "SAP IoT business services allow you to put raw sensor data into business object context and then use query models, rules, events and actions to leverage the data near real-time in analytical or transactional business applications.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/b4l-rzVTNM1Q7nYhGHUolDp0XdYZ_Z2O3v-TXVPvCtTf-Sa34v0TAmx7XF5uZbNX.svg",
+  "links": [
+    {
+      "value": "https://answers.sap.com/tags/73554900100800002247",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20IoT%20Simulator",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts",
+      "altText": ""
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20IoT%20Simulator",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers",
+      "altText": ""
+    },
+    {
+      "value": "https://eaexplorer.hana.ondemand.com/_item.html?id=12351#!/facet/18",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Enterprise Architecture Explorer Product Page",
+      "altText": ""
+    },
+    {
+      "value": "https://eaexplorer.hana.ondemand.com/rest/mimeRepositories/12412/file/L1_IoT_app_services_August_2016.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "From Things to Outcomes Presentation",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/p/SAP_IOT_APPLICATION_SERVICES",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation ",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/p/SAP_IoT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://help.sap.com/viewer/p/SAP_Leonardo_IoT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation",
+      "altText": ""
+    },
+    {
+      "value": "https://open.sap.com/courses/iot3",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Open SAP Course ",
+      "altText": ""
+    },
+    {
+      "value": "https://www.sap.com/developer/topics/iot-application-enablement.tutorials.html#tutorials",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Tutorials ",
+      "altText": ""
+    },
+    {
+      "value": "https://www.sap.com/documents/2017/12/aa0c7165-e67c-0010-82c7-eda71af511fa.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Authorization Guide",
+      "altText": ""
+    },
+    {
+      "value": "https://www.sapstore.com/solutions/40108/SAP-Leonardo-IoT-Foundation%2C-express-edition",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "To learn more about the service and the purchasing options please contact your account executive or visit our SAP Store.",
+      "altText": ""
+    },
+    {
+      "value": "https://www.youtube.com/embed/KQJqkhary08",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP IoT Application Enablement - Thing Modeler",
+      "altText": ""
+    },
+    {
+      "value": "https://www.youtube.com/embed/x5S6t6XNUxE",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP IoT Application Enablement - Developer Experience & Web IDE",
+      "altText": ""
+    },
+    {
+      "value": "https://www.youtube.com/playlist?list=PLWV533hWWvDnP5S4PLiC1d-J7hj1sjZn6",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Leonardo IoT Training Sessions",
+      "altText": ""
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Default service plan which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier based on capacity units",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard service plan (for SAP Leonardo IoT) which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}
