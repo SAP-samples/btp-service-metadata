@@ -1,0 +1,200 @@
+{
+  "name": "data-analytics-osb",
+  "displayName": "SAP Data Warehouse Cloud",
+  "description": "SAP Data Warehouse Cloud provides a single, fully-managed cloud environment to allow your organization to acquire, combine, prepare, and model data for consumption in analytics clients.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/CMDPh1DEphpk4tJTPuE5upJrVXmFHrzXWVyfhLqmOkwC0HQUgAL1kFGemtkFw35S.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Data%20Warehouse%20Cloud",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Data%20Warehouse%20Cloud",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://community.sap.com/topics/data-warehouse-cloud",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Data Warehouse Cloud Community"
+    },
+    {
+      "value": "https://developers.sap.com/tutorial-navigator.html?tag=software-product%3Atechnology-platform%2Fsap-data-warehouse-cloud%2Fsap-data-warehouse-cloud",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorials"
+    },
+    {
+      "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/c4fcae2e2b7645109ab3315e8a7a6b10.html?IDs=show",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Learning Journey: SAP Data Warehouse Cloud"
+    },
+    {
+      "value": "https://help.sap.com/doc/2e44fba46f674c179c0701d83526d67e/cloud/en-US/SAP_Data_Warehouse_Cloud_FSD.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_DATA_WAREHOUSE_CLOUD",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/5a2cf6cf78ee4f03bbd49714d79d8559/cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/viewer/d4f3c5a0bb074d09ae9b42b2b9bd7a08/cloud/en-US/5db9a099826c467e93ff0994fc185589.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Data Warehouse Cloud"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_DATA_WAREHOUSE_CLOUD/cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://launchpad.support.sap.com/#/notes/2854764",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Guidelines for SAP Data Warehouse Cloud Incidents"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.sap.com/documents/2022/05/00d61914-287e-0010-bca6-c68f7e60039b.html",
+      "classification": "Onboarding",
+      "type": "Link",
+      "text": "Tutorial: Onboarding"
+    },
+    {
+      "value": "https://www.sap.com/products/data-warehouse-cloud.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Experience SAP Data Warehouse Cloud"
+    },
+    {
+      "value": "https://www.youtube.com/embed/XdUFzWL-zFo",
+      "classification": "External",
+      "type": "Link",
+      "text": "What is SAP Data Warehouse Cloud?"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}
