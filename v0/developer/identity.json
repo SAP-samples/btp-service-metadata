@@ -1,0 +1,209 @@
+{
+  "name": "identity",
+  "displayName": "SAP Cloud Identity Services",
+  "description": "Cloud Identity Services provide basic capabilities for user authentication.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/E598-Pf-VG1KGSlRz_zekDmdOINI0-O-ICiLl_hgleut7LDrZPRB_OYh0EiUO6mg.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/topics/cloud-identity-services",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Cloud Identity Services"
+    },
+    {
+      "value": "https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Guided Answers"
+    },
+    {
+      "value": "https://blogs.sap.com/2015/08/12/sap-cloud-identity-how-to-guides/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "How-To Guide: SAP Business Technology Platform Identity Authentication"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cloud%20Identity%20Services",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cloud%20Identity%20Services",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/IAS",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/69aca66b45a74a73b4cc0efddd6ae63f.html",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Learning Journey: SAP BTP Security"
+    },
+    {
+      "value": "https://help.sap.com/http.svc/rc/9eeb59b4bab04a289778bc1463fa181b/Cloud/en-US/FSD_for_IAS.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e6b196abbb5710148c8ec6a698441b1e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation: Identity and Access Management"
+    },
+    {
+      "value": "https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/06818b2e1d334950ad984ea997341d9c.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Get Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/27882717f44b445fa287936c6f43dc1f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Identity Authentication"
+    },
+    {
+      "value": "https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/31af7da133874e199a7df1d42905241b.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/be600ca4258241789a3ab4adc05e4849.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Regional Availability"
+    },
+    {
+      "value": "https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/cce8d64eed1c4d8d8311147336ffe2eb.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/de21efe39e1442618388784891497067.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/p/IDENTITY_AUTHENTICATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/viewer/p/IDENTITY_PROVISIONING",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=448474827",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Community Wiki: SAP Business Technology Platform Identity Authentication"
+    },
+    {
+      "value": "https://www.sap.com/community/topic/security.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Community: Security"
+    },
+    {
+      "value": "https://www.sap.com/documents/2015/07/e4803e8e-5b7c-0010-82c7-eda71af511fa.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Overview: SAP Business Technology Platform Identity Authentication"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "application",
+      "displayName": "application",
+      "category": "SERVICE",
+      "description": "Register an application into your Identity Authentication tenant",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}

@@ -67,7 +67,7 @@ async function fetchAndStoreContent() {
       const targetFilePath = path.resolve(__dirname, '..', '..', pathComp[1])
       const resultFile = await getContentFromGitHub(resultEntry.path)
 
-      await fetchAndStoreResultsInRepo(resultFile, targetFilePath)
+      await handleFileResult(resultFile, targetFilePath)
     }
 
   }

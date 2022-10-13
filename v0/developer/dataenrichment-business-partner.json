@@ -1,0 +1,111 @@
+{
+  "name": "dataenrichment-business-partner",
+  "displayName": "SAP Data Enrichment service",
+  "description": "Industrializes the use of third-party data for enterprise applications, and makes it economical to find, procure and consume relevant datasets in timely fashion. Offers pre-built integrations with SAP S/4HANA Cloud and on-premise, and SAP Master Data Governance. Centrally links data from external data providers such as Dun & Bradstreet and CDQ into SAP enterprise applications, reducing overall TCO for data brokerage needs. Data Enrichment will be a one stop shop for multiple data augmentation needs.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/k64jXnkrj1AQWEml3cDYhWjWRJ3zxnbCEiXmVsvCIFjfcEkVxO5MMlutu95IbapI.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/2019/10/22/industrialize-your-use-of-third-party-data-with-sap-s4hana-cloud-for-data-enrichment/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Industrialize Your Use of Third Party Data with SAP Data Enrichment service"
+    },
+    {
+      "value": "https://blogs.sap.com/2019/12/26/try-out-sap-cloud-platform-data-enrichment-for-free/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Try out SAP Data Enrichment service for Free"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Data%20Enrichment%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Data%20Enrichment%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/data-enrichment",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://help.sap.com/doc/ffa27d7844f84f86b6af40b3f73a7ee6/latest/en-US/loiob0ae78ea148b445989d87f062fa39602_b0ae78ea148b445989d87f062fa39602.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/b2e912080b9c48b3a7066d59acc9f0d9/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/c97f1890387147679ab6a8cbf8276cf8/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Data Enrichment service?"
+    },
+    {
+      "value": "https://help.sap.com/viewer/dfcc98cbbcab4c109e17832fdad7bd3d/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/e6d9a574e3ae4c30b64a4b8246b3d7e6/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/viewer/e6d9a574e3ae4c30b64a4b8246b3d7e6/latest/en-US/ea1bb6c3f1ba440aa5bf92ef2e64d958.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/Cloud_Platform_Data_Enrichment/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Plan for usage of business partner data from external data providers.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}

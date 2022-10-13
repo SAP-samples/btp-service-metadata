@@ -1,0 +1,229 @@
+{
+  "name": "one-inbox-service",
+  "displayName": "SAP Task Center",
+  "description": "The SAP Task Center service only enables, but does not include the integration implementation from the supported SAP solutions. The SAP Task Center service enables integration with SAP applications to provide a single entry point for end users to access all their assigned workflow tasks. The tasks can be accessed by end users through the SAP Task Center Web application.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Dtx3ngKJBdFLr6cnaTrVLX1HXd6FNl9wv7YPNcAY_XbTqJuTwKCqJzAN0WUcUtMl.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPTaskCenter?section=Artifacts",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://blogs.sap.com/2021/06/08/access-the-sap-task-center-api-using-postman/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Access the SAP Task Center API using Postman"
+    },
+    {
+      "value": "https://blogs.sap.com/2021/12/01/sap-task-center-is-now-available-in-sap-mobile-start/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Task Center is now available in SAP Mobile Start"
+    },
+    {
+      "value": "https://blogs.sap.com/2021/12/09/handling-tasks-in-an-efficient-integrated-and-harmonized-way-using-sap-task-center/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Handling Tasks in an efficient, integrated and harmonized way using SAP Task Center"
+    },
+    {
+      "value": "https://blogs.sap.com/tag/sap-task-center/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "See All SAP Task Center Blogs"
+    },
+    {
+      "value": "https://dam.sap.com/mac/app/asset/preview/5103c1c536f36f4afea83617cd76f038cf1f5884",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Suite Quality \u2013 One Workflow Inbox"
+    },
+    {
+      "value": "https://dam.sap.com/mac/app/p/pdf/asset/preview/tNRwLUM?ltr=a",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Simplifying approvals across the Intelligent Suite via One Workflow Inbox"
+    },
+    {
+      "value": "https://news.sap.com/2021/12/sap-task-center-click-read-approve-repeat/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Task Center: Click, Read, Approve, Repeat!"
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=CF1ADKt4l3k",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Integrate Solutions in Your Intelligent Enterprise: What's Trending?"
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=wNoQtLoHGLk",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Simplifying approvals across the Intelligent Suite in One Workflow Inbox | SAP Community Call"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Task%20Center",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Task%20Center",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/1599f0308de2496582b9da1680f3519e/Cloud/en-US/Feature_Scope_Description_for_SAP_Task_Center.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is SAP Task Center?"
+    },
+    {
+      "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US/1bcdd459f84d4323a27581226d1d210e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US/834769400794464489f390350a82bbd6.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US/89c09a4067bd4c62a5a4b2f5c0da48c5.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Troubleshooting"
+    },
+    {
+      "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US/9693186f1fe54cbe801085d6bdfe8287.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/TASK_CENTER/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.youtube.com/embed/ai3G7ejuiB4",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Task Center"
+    },
+    {
+      "value": "https://www.youtube.com/embed/sv_q64zJ5cA",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Mobile Start \u2013 Your native entry point to the Intelligent Enterprise"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Default plan for using the SAP Task Center",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "authorities": {
+                  "description": "Configures scopes that are available in the client credentials flow.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "defaultCollectionQueryFilter": {
+                  "description": "Configures the default behavior of queries that return a collection of Workflow entities.",
+                  "type": "string",
+                  "enum": [
+                    "own",
+                    "shared"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

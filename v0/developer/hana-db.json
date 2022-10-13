@@ -1,0 +1,1100 @@
+{
+  "name": "hana-db",
+  "displayName": "SAP HANA service for SAP BTP",
+  "description": "The SAP HANA service allows you to leverage the in-memory data processing capabilities of SAP HANA in the cloud. As a managed database service, backups are fully automated and service availability guaranteed. Using the SAP HANA service, you can set up and manage SAP HANA databases and bind them to applications running on SAP Business Technology Platform. You can access SAP HANA databases using a variety of languages and interfaces, as well as build applications and models using tools provided with SAP HANA.",
+  "icon": "data:image/svg+xml;base64,PHN2ZyBpZD0iaGFuYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMGE2ZWQxO30uY2xzLTJ7ZmlsbDojMDUzYjcwO308L3N0eWxlPjwvZGVmcz48dGl0bGU+aGFuYTwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNTEsMjIuMzMyYTcuMjM2LDcuMjM2LDAsMCwwLTIuNjEzLTEuODJBMjIuNDA4LDIyLjQwOCwwLDAsMCwzOS41NjksMTlhMjIuNCwyMi40LDAsMCwwLTguODE3LDEuNTEyLDcuMjM2LDcuMjM2LDAsMCwwLTIuNjEzLDEuODIsMy43NzIsMy43NzIsMCwwLDAtMSwyLjUyMVY0Ni4wODFhMy42MzIsMy42MzIsMCwwLDAsMSwyLjUxNCw3LjEwNyw3LjEwNywwLDAsMCwyLjYwNywxLjgyMUEyMS4xNTQsMjEuMTU0LDAsMCwwLDM5LjU2OSw1MmEyMi40MDgsMjIuNDA4LDAsMCwwLDguODE4LTEuNTEyQTcuMjM2LDcuMjM2LDAsMCwwLDUxLDQ4LjY2OGEzLjkyNywzLjkyNywwLDAsMCwxLTIuNTIxVjI0Ljg1M0EzLjc3MiwzLjc3MiwwLDAsMCw1MSwyMi4zMzJaTTQyLjM2NSw0OS4xNzRjLS44OTMuMDg1LTEuODE4LjE0NC0yLjguMTQ0YTI4LjUzOCwyOC41MzgsMCwwLDEtMy40MDYtLjIxMVYzMC41NzJhMzMuMjYsMzMuMjYsMCwwLDAsMy40MDYuMTY1Yy45NzksMCwxLjktLjA1LDIuOC0uMTI2Wm03LjE2Ny0zLjAyN2MwLC43LS45MTYsMS40Ni0yLjQ1NCwyLjAzNWExNC4yOCwxNC4yOCwwLDAsMS0yLjIyOS42MjJWMzAuMjY3YTEzLjYyOCwxMy42MjgsMCwwLDAsNC42ODMtMS42NDNaTTQ3LjA3OCwyNi45ODVhMjEuNTcsMjEuNTcsMCwwLDEtNy41MDksMS4xMzYsMjEuNTA4LDIxLjUwOCwwLDAsMS03LjUtMS4xMzZjLTEuNTI0LS42NS0yLjQtMS40MTYtMi40LTIuMXYtLjAzMWMwLTEuMywzLjUyNi0zLjE3MSw5LjktMy4xNzEsNi40MTcsMCw5Ljk2MywxLjg3Niw5Ljk2MywzLjIwNUM0OS41MzIsMjUuNTc4LDQ4LjYzNiwyNi4zNDQsNDcuMDc4LDI2Ljk4NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNC4zLDI3Ljk4NkgxMi40MWE1LjM4Nyw1LjM4NywwLDAsMS0xLjY3NS0xMC41MTVsMi4zMDgtLjc1OUwxMi43ODEsMTQuM2E4LjEsOC4xLDAsMCwxLDEuNS01LjI4NEE2LjUsNi41LDAsMCwxLDE5LjEwOSw3YTYuMDU0LDYuMDU0LDAsMCwxLDUuODY0LDQuMDMzbDEuMzA3LDMuMjlMMjkuMzEsMTIuNWEzLjkyMiwzLjkyMiwwLDAsMSwyLjA0My0uNTkxLDMuOTg4LDMuOTg4LDAsMCwxLDMuOTE0LDMuMjQ5bC4xNTkuODQ1aDNjLS4wNDctLjQzOS0uMTA4LS45LS4yMS0xLjRBNi45NDEsNi45NDEsMCwwLDAsMjcuNzYyLDkuOTI4LDkuNDUyLDkuNDUyLDAsMCwwLDE5LjA1NSw0QzguODYzLDQuMjQyLDkuOCwxNC42MjEsOS44LDE0LjYyMUE4LjM4Nyw4LjM4NywwLDAsMCwxMi40MSwzMC45ODZIMjQuM1oiLz48L3N2Zz4=",
+  "links": [
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/data-storage/persistence-service.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20HANA%20service%20for%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20HANA%20service%20for%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/a36ee1aa073e4e8e840573fb30a72d95/Cloud/en-US/1e9a6cb47e1b44f990a917b4bf8c2e19.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/cc53ad464a57404b8d453bbadbc81ceb/Cloud/en-US/1bc8ef5c136940c1a3a45f0d92abb0b8.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/cc53ad464a57404b8d453bbadbc81ceb/Cloud/en-US/7cc0278fa13c4124bfe6af2ae5b59642.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/HANA_SERVICE/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "1024premium",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), enterprise edition (1 TB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), enterprise edition (1 TB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "1024standard",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), standard edition (1 TB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), standard edition (1 TB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "128premium",
+      "displayName": "HANA 128GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 128GB Premium edition",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "128standard",
+      "displayName": "HANA 128GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 128GB Standard edition",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "2048premium",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), enterprise edition (2 TB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), enterprise edition (2 TB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "2048standard",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), standard edition (2 TB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), standard edition (2 TB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "256premium",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), enterprise edition (256 GB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), enterprise edition (256 GB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "256standard",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), standard edition (256 GB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), standard edition (256 GB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "512premium",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), enterprise edition (512 GB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), enterprise edition (512 GB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "512standard",
+      "displayName": "SAP Cloud Platform, SAP HANA service (SAP DC), standard edition (512 GB) for Microsoft Azure EU-West",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform, SAP HANA service (SAP DC), standard edition (512 GB) for Microsoft Azure EU-West",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "64premium",
+      "displayName": "HANA 64GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 64GB Premium edition",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "64standard",
+      "displayName": "HANA 64GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 64GB Standard edition",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ae1",
+          "name": "UAE (Dubai)"
+        },
+        {
+          "region": "ap1",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap2",
+          "name": "Australia (Sydney DR)"
+        },
+        {
+          "region": "br1",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca1",
+          "name": "Canada (Toronto)"
+        },
+        {
+          "region": "ca2",
+          "name": "Canada (Toronto DR)"
+        },
+        {
+          "region": "cn1",
+          "name": "China (Shanghai)"
+        },
+        {
+          "region": "eu1",
+          "name": "Europe (Rot)"
+        },
+        {
+          "region": "eu2",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu3",
+          "name": "Europe (Amsterdam)"
+        },
+        {
+          "region": "jp1",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa1",
+          "name": "KSA (Riyadh)"
+        },
+        {
+          "region": "us1",
+          "name": "US East (Ashburn)"
+        },
+        {
+          "region": "us2",
+          "name": "US West (Chandler)"
+        },
+        {
+          "region": "us3",
+          "name": "US East (Sterling)"
+        },
+        {
+          "region": "us4",
+          "name": "US West (Colorado Springs)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "enterprise",
+      "displayName": "SAP HANA Service",
+      "category": "SERVICE",
+      "description": "SAP HANA Service",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "SAP HANA Service",
+      "category": "SERVICE",
+      "description": "SAP HANA Service",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    }
+  ]
+}
