@@ -45,6 +45,7 @@ async function fetchAndStoreContent() {
     const pathComp = resultEntry.path.split('/')
     const targetFilePath = path.resolve(__dirname, '..', '..', pathComp[1], pathComp[2])
 
+    break
     if (resultEntry.type === typeDir) {
       // Clean/Create the directories if not existing
       await createAndCleanDir(targetFilePath)
@@ -67,7 +68,7 @@ async function fetchAndStoreContent() {
       const targetFilePath = path.resolve(__dirname, '..', '..', pathComp[1])
       const resultFile = await getContentFromGitHub(resultEntry.path)
 
-      await handleFileResult(resultFile, targetFilePath)
+      await handleFileResult(resultFile.data, targetFilePath)
     }
 
   }
