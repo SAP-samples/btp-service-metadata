@@ -17,15 +17,15 @@ Based on your feedback we will add additional personas and additional curated me
 You may ask: what is your intention? The answer is that we would love to hear you feedback on:
 
 - the data itself (is there something missing etc.).
-- the ways how you would like to see the data provisioned for you. We are aware that plan JSON can only be a first step.  
+- the ways how you would like to see the data provisioned for you. We are aware that plain JSON can only be a first step.  
 
 ## Are you using the metadata?
 
-Of course we leverage the information ourself in the [btp-setup-automator](https://github.com/SAP-samples/btp-setup-automator/) to generate the JSON schemas for the input files used in this open-source tool. Take a look at the repository to get some inspiration on how to leverage the data for your scenarios.
+Of course we leverage the information ourselves in the [btp-setup-automator](https://github.com/SAP-samples/btp-setup-automator/) to generate the JSON schemas for the input files used in this open-source tool. Take a look at the repository to get some inspiration on how to leverage the data for your scenarios.
 
 ## Update cycle
 
-The data is fetched regularly to be up-to-date. If you experience that something is not up-to-date, please ket us know via a [issue](https://github.com/SAP/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)  
+The data is fetched regularly to be up-to-date. If you experience that something is not up-to-date, please ket us know via an [issue](https://github.com/SAP/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)  
 
 ## How to obtain support
 
