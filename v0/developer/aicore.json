@@ -91,6 +91,49 @@
   ],
   "servicePlans": [
     {
+      "name": "free",
+      "displayName": "Free",
+      "category": "SERVICE",
+      "description": "Free plan. To work without usage limits, migrate to standard plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "standard",
       "displayName": "Standard",
       "category": "SERVICE",
