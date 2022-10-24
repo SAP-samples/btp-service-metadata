@@ -159,4 +159,8 @@ map(
 )
 ```
 
-This filter is available, with accompanying comments, in [freesubscriptionplans.jq](freesubscriptionplans.jq).
+This filter is available, with accompanying comments, in [freesubscriptionplans.jq](freesubscriptionplans.jq), and can be executed, using the slurp option, like this:
+
+```bash
+jq -f freesubscriptionplans.jq -s ../v0/developer/*.json 
+```
