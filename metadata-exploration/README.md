@@ -4,7 +4,7 @@ This is a set of explorations of the metadata in this repository, provided as ex
 
 ## Inventory exploration
 
-There's an [inventory.json](v0/inventory.json) file which contains a summary of all the services, applications and environments. Each entry is represented by an object, each of which look like this:
+There's an `inventory.json` file which contains a summary of all the services, applications and environments. Each entry is represented by an object, each of which look like this:
 
 ```json
 {
