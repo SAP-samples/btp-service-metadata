@@ -259,3 +259,71 @@ The output looks something like this (heavily reduced for brevity):
   ]
 }
 ```
+
+### Services available in a given region
+
+Here's an example of getting a simple list of services, applications and environments that are available in a given region, which can be specified as an argument (e.g. `eu10`).
+
+First, there's the `jq` filter itself, which is also available as a commented version in [services-in-region.jq](services-in-region.jq):
+
+```jq
+map(
+  select(
+    any(
+      .servicePlans[];
+      any(
+        .dataCenters[];
+        .region | startswith($region)
+      )
+    )
+  )
+.displayName
+)
+| unique
+| .[]
+```
+
+Notice the use of the variable `$region` which is set via the `--arg` option when `jq` is invoked; here's an example (which is also available in [services-in-region](services-in-region) Bash script:
+
+```bash
+#!/usr/bin/env bash
+
+declare METADATADIR="../v0/developer"
+
+jq \
+  --arg region "${1:?Specify a region e.g. eu10}" \
+  --from-file services-in-region.jq \
+  --raw-output \
+  --slurp \
+  $METADATADIR/*.json
+```
+
+To get a flat, simple list of resource names, the array of results is expanded by the array iterator (`.[]`) in the `jq` filter, and the `--raw-output` option is used when `jq` is invoked, to stop `jq` doing what it does by default, which is to try to produce JSON elements (`"hello world"` is valid JSON, whereas `hello world`, without the enclosing double quotes, is not). 
+
+This filter and script, when invoked like this:
+
+```bash
+./services-in-region eu10
+```
+
+results in output like this (heavily reduced for brevity):
+
+```text
+ABAP Solution
+API Management, API Business Hub Enterprise
+API Management, API Portal
+API Management, API portal
+API Management, developer portal
+Application Autoscaler
+Audit Log Service API
+Blockchain Application Enablement
+Business Entity Recognition
+Cloud Integration Automation
+Connectivity (for scale-out build-out)
+Data Attribute Recommendation
+Data Quality Services UI
+Date and Time
+Document Classification
+Document Information Extraction
+...
+```

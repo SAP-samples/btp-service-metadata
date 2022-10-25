@@ -3,5 +3,6 @@
 declare METADATADIR="../v0/developer"
 
 jq \
-  -f services-by-region.jq \
-  -s $METADATADIR/*.json
+  -from-file services-by-region.jq \
+  -slurp \
+  $METADATADIR/*.json
