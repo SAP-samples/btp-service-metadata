@@ -2,6 +2,8 @@
 
 This is a set of explorations of the metadata in this repository, provided as examples for you to take and build upon.
 
+If you want to try these explorations out, you'll need [jq](https://stedolan.github.io/jq/), and optionally (for a more interactive environment) [ijq](https://sr.ht/~gpanders/ijq/). If you're running the BTP Setup Automator, you'll be pleased to know that both these tools are in the Docker image too, all ready for you to use. 
+
 ## Inventory exploration
 
 There's an `inventory.json` file which contains a summary of all the services, applications and environments. Each entry is represented by an object, each of which look like this:
