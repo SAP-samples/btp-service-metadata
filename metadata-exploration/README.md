@@ -166,3 +166,96 @@ This filter is available, with accompanying comments, in [freesubscriptionplans.
 ```bash
 jq -f freesubscriptionplans.jq -s ../v0/developer/*.json 
 ```
+
+### List services availability by region
+
+Data gravity is an important concept and sometimes we need to think about where services are in relation to the data we have. With this filter, which also is designed to run over a slurped array of entry JSON files, we can find that out.
+
+```jq
+def arrange:
+    .value[0].region as $region
+    | .key |= $region
+    | .value |= (map(.service) | unique)
+    ;
+    
+def main:
+    map(
+        .displayName as $service 
+        | .servicePlans
+        | map(.dataCenters[]|("\(.name) (\(.region))"))
+        | map({service: $service, region:.})
+    )
+    | flatten
+    | group_by(.region)
+    | with_entries(arrange)
+    ;
+
+main
+```
+
+This filter is available, with copious explanatory comments, in [service-by-region.jq](services-by-region.jq). Here's an example invocation:
+
+```bash
+jq -f services-by-region.jq -s ../v0/developer/*.json 
+```
+
+The output looks something like this (heavily reduced for brevity):
+
+```json
+{
+  "Australia (Sydney DR) (ap2)": [
+    "SAP ASE service",
+    "SAP BTP, Java server",
+    "SAP HANA service for SAP BTP"
+  ],
+  "Australia (Sydney) (ap1)": [
+    "SAP ASE service",
+    "SAP BTP, Java server",
+    "SAP HANA service for SAP BTP"
+  ],
+  "Australia (Sydney) (ap10)": [
+    "API Management, API Business Hub Enterprise",
+    "API Management, API Portal",
+    "API Management, API portal",
+    "API Management, developer portal",
+    "Application Autoscaler",
+    "Audit Log Service API",
+    "Business Entity Recognition",
+    "..."
+  ],
+  "...": [
+    "..."
+  ],
+  "US West (Chandler) (us2)": [
+    "SAP ASE service",
+    "SAP BTP, Java server",
+    "SAP HANA service for SAP BTP"
+  ],
+  "US West (Colorado Springs) (us4)": [
+    "SAP ASE service",
+    "SAP BTP, Java server",
+    "SAP HANA service for SAP BTP"
+  ],
+  "US West (WA) (us20)": [
+    "SAP BTP, Cloud Foundry runtime",
+    "SAP BTP, Kyma runtime",
+    "SAP BTP, serverless runtime",
+    "SAP Business Application Studio",
+    "SAP Business Rules Management",
+    "SAP Cloud Identity Services",
+    "SAP Cloud Management service for SAP BTP",
+    "SAP Cloud Portal service",
+    "SAP Cloud Transport Management",
+    "SAP Connectivity service",
+    "SAP Content Agent service",
+    "SAP Continuous Integration and Delivery",
+    "SAP Credential Store",
+    "SAP Custom Domain service",
+    "SAP Data Intelligence Cloud",
+    "SAP Data Privacy Integration",
+    "SAP Data Retention Manager",
+    "SAP Destination service",
+    "..."
+  ]
+}
+```
