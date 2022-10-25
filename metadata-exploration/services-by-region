@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+declare METADATADIR="../v0/developer"
+
+jq \
+  -f services-by-region.jq \
+  -s $METADATADIR/*.json
