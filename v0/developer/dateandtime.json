@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qvsenpZtmGjXj0jdKDOvDijJo_ATP0WxIH7PPGvOHFbNaWEftGTZvOsPmYBDljwg.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/dateandtime/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | Date and Time | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=Date%20and%20Time",
       "classification": "SAP Community",
       "type": "Link",
@@ -20,7 +26,7 @@
       "value": "https://discovery-center.cloud.sap/serviceCatalog/date-and-time",
       "classification": "Discovery Center",
       "type": "Link",
-      "text": "Discovery Center"
+      "text": "SAP Discovery Center - Date and Time"
     },
     {
       "value": "https://help.sap.com/docs/DATE_AND_TIME",
@@ -51,6 +57,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/DATE_AND_TIME/Latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     }
   ],
   "servicePlans": [
@@ -72,6 +84,11 @@
         }
       ],
       "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-ABS"
     }
   ]
 }

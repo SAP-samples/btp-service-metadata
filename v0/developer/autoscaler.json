@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mF9f5nh8toGAD-jfwwrIAnk1R0e203m83OzSCMQH2Ui2EhuA02J6AW_UzpDY7d7N.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/CFApplicationAutoscaler/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | Application Autoscaler | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=Application%20Autoscaler",
       "classification": "SAP Community",
       "type": "Link",
@@ -21,6 +27,12 @@
       "classification": "Discovery Center",
       "type": "Link",
       "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/application-autoscaler",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Application Autoscaler"
     },
     {
       "value": "https://help.sap.com/doc/0a842f0cc688413d9e8dd8fb24e85232/Cloud/en-US/fsd_for_application_autoscaler.pdf",
@@ -415,6 +427,11 @@
           }
         }
       }
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-CP-CF-AUTOSCALE"
     }
   ]
 }

@@ -38,7 +38,7 @@
       "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-hana-cloud",
       "classification": "Discovery Center",
       "type": "Link",
-      "text": "Discovery Center"
+      "text": "SAP Discovery Center - SAP HANA Cloud"
     },
     {
       "value": "https://help.sap.com/doc/eef71122810d4aa18d8eb6c37031f98a/latest/en-US/Feature_Scope_Description_SAP_HANA_Cloud_en.pdf",
@@ -87,6 +87,18 @@
       "classification": "Marketing",
       "type": "Link",
       "text": "Learn more about this service and how to purchase it."
+    },
+    {
+      "value": "https://www.youtube.com/embed/N1irItqyNco",
+      "classification": "External",
+      "type": "Link",
+      "text": "Top New Features in SAP HANA Cloud"
+    },
+    {
+      "value": "https://www.youtube.com/embed/c21ug2CG0CM",
+      "classification": "External",
+      "type": "Link",
+      "text": "What's New in SAP HANA Cloud"
     },
     {
       "value": "https://www.youtube.com/embed/oF9Occg1bfg",
@@ -1172,6 +1184,10 @@
           "name": "Europe (Frankfurt)"
         },
         {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
           "region": "jp10",
           "name": "Japan (Tokyo)"
         },
@@ -1992,6 +2008,10 @@
         {
           "region": "eu30",
           "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
         },
         {
           "region": "jp10",
@@ -4030,6 +4050,11 @@
           }
         }
       }
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "HAN-CLS-HC"
     }
   ]
 }

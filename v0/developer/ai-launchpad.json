@@ -29,6 +29,12 @@
       "text": "SAP Community Questions and Answers"
     },
     {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP AI Launchpad"
+    },
+    {
       "value": "https://help.sap.com/doc/91f0266b09a04484be6b68e9a7802b7e/CLOUD/en-US/7f4faf6764d249fc862714dac919532f.pdf",
       "classification": "Documentation",
       "type": "PDF",
@@ -103,20 +109,12 @@
           "name": "Europe (Frankfurt) EU Access - AWS"
         },
         {
-          "region": "eu20",
-          "name": "Europe (Netherlands)"
-        },
-        {
           "region": "jp10",
           "name": "Japan (Tokyo)"
         },
         {
           "region": "us10",
           "name": "US East (VA)"
-        },
-        {
-          "region": "us20",
-          "name": "US West (WA)"
         }
       ],
       "schemas": null
@@ -146,23 +144,20 @@
           "name": "Europe (Frankfurt) EU Access - AWS"
         },
         {
-          "region": "eu20",
-          "name": "Europe (Netherlands)"
-        },
-        {
           "region": "jp10",
           "name": "Japan (Tokyo)"
         },
         {
           "region": "us10",
           "name": "US East (VA)"
-        },
-        {
-          "region": "us20",
-          "name": "US West (WA)"
         }
       ],
       "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-ML-AILP"
     }
   ]
 }
