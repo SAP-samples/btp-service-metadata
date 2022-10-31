@@ -17,7 +17,9 @@ Based on your feedback we will add additional personas and additional curated me
 You may ask: what is your intention? The answer is that we would love to hear you feedback on:
 
 - the data itself (is there something missing etc.).
-- the ways how you would like to see the data provisioned for you. We are aware that plain JSON can only be a first step.  
+- the ways how you would like to see the data provisioned for you. We are aware that plain JSON can only be a first step.
+
+You do not know where to start? Need some inspiration? Then this [section](./metadata-exploration/README.md) is on interest for you.
 
 ## Are you using the metadata?
 
