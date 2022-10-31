@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Ilbe8d8TdUYVoHTIPutaLu23iu0yPF42JeJUnW2n_aNlMRtkD4Xx6wS9LqqB9Vzf.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPCPAppLogging/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Application Logging Service for SAP BTP | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Application%20Logging%20service%20for%20SAP%20BTP",
       "classification": "SAP Community",
       "type": "Link",
@@ -33,6 +39,12 @@
       "classification": "Documentation",
       "type": "PDF",
       "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/APPLICATION_LOGGING/f88a032109f0429caea276fc6e3a95f9/a34fd79d0ad04acfae40d115358011e0.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5dd739823b824b539eee47b7860a00be.html",
@@ -315,6 +327,9 @@
   "supportComponents": [
     {
       "value": "BC-CP-CF-APPLOG"
+    },
+    {
+      "value": "BC-NEO-LOG"
     }
   ]
 }
