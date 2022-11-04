@@ -65,7 +65,7 @@
       "text": "SAP HANA Cloud Overview Guide"
     },
     {
-      "value": "https://help.sap.com/viewer/p/HANA_CLOUD",
+      "value": "https://help.sap.com/docs/HANA_CLOUD",
       "classification": "Documentation",
       "type": "Link",
       "text": "Help Portal Product Page"
@@ -707,25 +707,6 @@
                         }
                       },
                       "type": "object"
-                    },
-                    "databaseMappings": {
-                      "items": {
-                        "properties": {
-                          "organization_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          },
-                          "space_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "organization_guid",
-                          "space_guid"
-                        ],
-                        "type": "object"
-                      }
                     },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
@@ -1552,25 +1533,6 @@
                         }
                       },
                       "type": "object"
-                    },
-                    "databaseMappings": {
-                      "items": {
-                        "properties": {
-                          "organization_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          },
-                          "space_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "organization_guid",
-                          "space_guid"
-                        ],
-                        "type": "object"
-                      }
                     },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
