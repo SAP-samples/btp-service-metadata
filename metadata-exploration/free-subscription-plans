@@ -3,5 +3,5 @@
 source lib.sh
 
 jq \
-  --from-file "services/by-region.jq" \
+  --from-file services/free-subscription-plans.jq \
   -s "$METADATADIR"/*.json

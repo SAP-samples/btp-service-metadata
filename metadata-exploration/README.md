@@ -6,6 +6,10 @@ If you want to try these explorations out, you'll need [jq](https://stedolan.git
 
 > There are some issues running `jq` with glob patterns on Windows shells (PowerShell and CMD) - see the [Wildcards on Windows](https://github.com/stedolan/jq/issues/1644) issue for more information. We recommend you use WSL2 on Windows.
 
+All the metadata files used in these examples are within the [v0/](../v0/) directory in this repository.
+
+> In each case there's a convenience script that calls `jq`, pointing to the metadata files, and specifies the appropriate `jq` filter file. All these scripts are in, execution requires you to be in, this `metadata-explorations/` directory.
+
 ## Inventory exploration
 
 There's an `inventory.json` file which contains a summary of all the services, applications and environments. Each entry is represented by an object, each of which look like this:
@@ -24,7 +28,7 @@ There's an `inventory.json` file which contains a summary of all the services, a
 
 Note the `category` property; we can use this to get a list of entries, grouped by category (i.e. an organized list of all the services, applications and so on). 
 
-Here's a simple `jq` filter to do just that (available, with accompanying comments, in [inventory-bycategory.jq](inventory-bycategory.jq)):
+Here's a simple `jq` filter to do just that (available, with accompanying comments, in [inventory/entries-by-category.jq](inventory/entries-by-category.jq)):
 
 ```jq
 map(
@@ -73,9 +77,11 @@ This produces output like this:
 ]
 ```
 
+You can run this filter with the convenience script [entries-by-category](./entries-by-category).
+
 ## Individual service file explorations
 
-Within the `developer/` directory there are many JSON files, one for each service, application and environment offering. 
+Within the [developer/](../v0/developer/) directory there are many JSON files, one for each service, application and environment offering. 
 
 Each file has a similar structure, which looks like this:
 
@@ -163,10 +169,35 @@ map(
 )
 ```
 
-This filter is available, with accompanying comments, in [freesubscriptionplans.jq](freesubscriptionplans.jq), and can be executed, using the slurp option, like this:
+This filter is available, with accompanying comments, in [services/free-subscription-plans.jq](services/free-subscription-plans.jq), and can be executed, using the slurp option, like this:
 
 ```bash
-jq -f freesubscriptionplans.jq -s ../v0/developer/*.json 
+jq --from-file services/free-subscription-plans.jq -s ../v0/developer/*.json 
+```
+
+The equivalent of the invocation we've just shown, is the execution of the convenience script [free-subscription-plans](./free-subscription-plans):
+
+```bash
+./free-subscription-plans
+```
+
+Either way, output should be produced looking something like this:
+
+```json
+[
+  "ai-launchpad",
+  "alm-ts",
+  "auditlog-viewer",
+  "automationpilot",
+  "cicd-app",
+  "content-agent-ui",
+  "integrationsuite",
+  "intelligent-situation-automation-app",
+  "IRPA",
+  "process-automation",
+  "sapappstudio",
+  "SAPLaunchpad"
+]
 ```
 
 ### List services availability by region
@@ -195,10 +226,10 @@ def main:
 main
 ```
 
-This filter is available, with copious explanatory comments, in [service-by-region.jq](services-by-region.jq). Here's an example invocation:
+This filter is available, with copious explanatory comments, in [services/by-region.jq](services/by-region.jq). Here's an example invocation using the corresponding convenience script provided:
 
 ```bash
-jq -f services-by-region.jq -s ../v0/developer/*.json 
+./services-by-region
 ```
 
 The output looks something like this (heavily reduced for brevity):
@@ -266,7 +297,7 @@ The output looks something like this (heavily reduced for brevity):
 
 Here's an example of getting a simple list of services, applications and environments that are available in a given region, which can be specified as an argument (e.g. `eu10`).
 
-First, there's the `jq` filter itself, which is also available as a commented version in [services-in-region.jq](services-in-region.jq):
+First, there's the `jq` filter itself, which is also available as a commented version in [services/in-region.jq](services/in-region.jq):
 
 ```jq
 map(
@@ -285,30 +316,31 @@ map(
 | .[]
 ```
 
-Notice the use of the variable `$region` which is set via the `--arg` option when `jq` is invoked; here's an example (which is also available in [services-in-region](services-in-region) Bash script:
+You can invoke the filter on the metadata files with this corresponding convenience script like this (noting that a region must be specified - in this example, the value `eu10` is given):
+
+```bash 
+./services-in-region eu10
+```
+
+The convenience script for this example, [services-in-region](./services-in-region) has more `jq` options and looks like this:
 
 ```bash
 #!/usr/bin/env bash
 
-declare METADATADIR="../v0/developer"
+source lib.sh
 
 jq \
   --arg region "${1:?Specify a region e.g. eu10}" \
-  --from-file services-in-region.jq \
+  --from-file services/in-region.jq \
   --raw-output \
-  --slurp \
-  $METADATADIR/*.json
+  -s "$METADATADIR"/*.json
 ```
 
-To get a flat, simple list of resource names, the array of results is expanded by the array iterator (`.[]`) in the `jq` filter, and the `--raw-output` option is used when `jq` is invoked, to stop `jq` doing what it does by default, which is to try to produce JSON elements (`"hello world"` is valid JSON, whereas `hello world`, without the enclosing double quotes, is not). 
+Notice the use of the variable `$region` which is set via the `--arg` option when `jq` is invoked.
 
-This filter and script, when invoked like this:
+To get a flat, simple list of resource names, the array of results is expanded by the array iterator (`.[]`) in [the filter](services/in-region.jq), and the `--raw-output` option is used when `jq` is invoked, to stop `jq` doing what it does by default, which is to try to produce JSON elements (`"hello world"` is valid JSON, whereas `hello world`, without the enclosing double quotes, is not). 
 
-```bash
-./services-in-region eu10
-```
-
-results in output like this (heavily reduced for brevity):
+Example output looks like this (heavily reduced for brevity):
 
 ```text
 ABAP Solution

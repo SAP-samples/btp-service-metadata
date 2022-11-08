@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source lib.sh
+
+jq \
+  --from-file inventory/by-category.jq \
+  "$METADATADIR/../inventory.json"

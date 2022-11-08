@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-declare METADATADIR="../v0/developer"
+source lib.sh
 
 jq \
   --arg region "${1:?Specify a region e.g. eu10}" \
-  --from-file services-in-region.jq \
+  --from-file services/in-region.jq \
   --raw-output \
-  --slurp \
-  $METADATADIR/*.json
+  -s "$METADATADIR"/*.json
