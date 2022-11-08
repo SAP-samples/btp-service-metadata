@@ -423,3 +423,7 @@ us3   US East (Sterling)
 us30  US Central (IA)
 us4   US West (Colorado Springs)
 ```
+
+This can then be combined with standard tools such as `cut` and other utilities such as [fzf](https://github.com/junegunn/fzf), like this:
+
+![Example of using this script to find and emit a region](regions.gif)
