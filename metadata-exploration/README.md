@@ -8,7 +8,7 @@ If you want to try these explorations out, you'll need [jq](https://stedolan.git
 
 All the metadata files used in these examples are within the [v0/](../v0/) directory in this repository.
 
-> In each case there's a convenience script that calls `jq`, pointing to the metadata files, and specifies the appropriate `jq` filter file. All these scripts are in, execution requires you to be in, this `metadata-explorations/` directory.
+In each example there's a convenience script that calls `jq`, pointing to the metadata files, and specifying the appropriate `jq` filter file. All these scripts are in, this `metadata-explorations/` directory, which is where you should be when you try to execute them.
 
 ## Inventory exploration
 
@@ -77,7 +77,11 @@ This produces output like this:
 ]
 ```
 
-You can run this filter with the convenience script [entries-by-category](./entries-by-category).
+You can run this filter with the convenience script [entries-by-category](./entries-by-category) like this:
+
+```bash
+./entries-by-category
+```
 
 ## Individual service file explorations
 
@@ -154,7 +158,7 @@ Each file has a similar structure, which looks like this:
 }
 ```
 
-While these are individually useful, they are even more useful to explore together. With the `jq` "slurp" feature, all of the JSON files can be read in together and placed into an enclosing array. Then filters can be applied as appropriate. 
+While these are individually useful, they are even more useful to explore together. With the `jq` [slurp](https://stedolan.github.io/jq/manual/#Invokingjq) feature, all of the JSON files can be read in together and placed into an enclosing array. Then filters can be applied as appropriate. 
 
 
 ### Applications with a free subscription plan
