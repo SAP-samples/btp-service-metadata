@@ -365,3 +365,61 @@ Document Classification
 Document Information Extraction
 ...
 ```
+
+### What are all the regions anyway?
+
+In case you're wondering what regions there are in general, this query is one you could run (and then you'd have a list from which to pick, to supply a value for the `services-in-region` example).
+
+The actual `jq` filter itself is quite straightforward:
+
+```jq
+map(.servicePlans[].dataCenters[])
+| unique_by(.region)
+| .[]
+| [.region,.name]
+| @tsv
+```
+
+This descends through the structure pulling out unique data center details, and emitting the region and name identifiers in a tab separated format. Running this on the entire list of metadata files with the convenience script:
+
+```bash
+./list-all-regions
+```
+
+produces output like this:
+
+```bash
+ae1   UAE (Dubai)
+ap1   Australia (Sydney)
+ap10  Australia (Sydney)
+ap11  Singapore
+ap12  South Korea (Seoul)
+ap20  Australia (Sydney) Azure
+ap21  Singapore
+br1   Brazil (Sao Paulo)
+br10  Brazil (Sao Paulo)
+ca1   Canada (Toronto)
+ca10  Canada (Montreal)
+ch20  cf-ch20
+cn1   China (Shanghai)
+eu1   Europe (Rot)
+eu10  Europe (Frankfurt)
+eu11  Europe (Frankfurt) EU Access - AWS
+eu2   Europe (Frankfurt)
+eu20  Europe (Netherlands)
+eu3   Europe (Amsterdam)
+eu30  Europe (Frankfurt)
+in30  India (Mumbai)
+jp1   Japan (Tokyo)
+jp10  Japan (Tokyo)
+jp20  Japan (Tokyo)
+sa1   KSA (Riyadh)
+us1   US East (Ashburn)
+us10  US East (VA)
+us2   US West (Chandler)
+us20  US West (WA)
+us21  US East (VA)
+us3   US East (Sterling)
+us30  US Central (IA)
+us4   US West (Colorado Springs)
+```

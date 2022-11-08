@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+source lib.sh
+
+jq \
+  --from-file services/all-regions.jq \
+  --raw-output \
+  -s "$METADATADIR"/*.json
