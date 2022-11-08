@@ -4,6 +4,9 @@ Set FontSize 24
 Set Width 1920
 Set Height 1080
 
+Type "clear"
+Enter
+
 Type "./list-all-regions"
 Sleep 4s
 Enter
@@ -16,7 +19,10 @@ Enter
 
 Sleep 6s
 
-Type "us"
+Type "u"
+Sleep 3s
+
+Type "s"
 Sleep 3s
 
 Type "spring"
