@@ -2,7 +2,16 @@
 
 This is a set of explorations of the metadata in this repository, provided as examples for you to take and build upon.
 
-If you want to try these explorations out, you'll need [jq](https://stedolan.github.io/jq/), and optionally (for a more interactive environment) [ijq](https://sr.ht/~gpanders/ijq/). If you're running the [BTP Setup Automator](https://github.com/SAP-samples/btp-setup-automator/), you'll be pleased to know that both these tools are in the Docker image too, all ready for you to use. 
+The metadata information is provided in JSON format. There are various ways to parse, explore and generally manipulate JSON data, including:
+
+* [jq - a lightweight and flexible command line JSON processor](https://stedolan.github.io/jq/)
+* [gron - making JSON greppable](https://github.com/tomnomnom/gron)
+* [fx - function execution](https://github.com/antonmedv/fx)
+* [jless — a command-line JSON viewer](https://jless.io/)
+
+You may have your own tools to parse and explore too.
+
+If you want to try these exploration examples out, you'll need [jq](https://stedolan.github.io/jq/), and optionally (for a more interactive environment) [ijq](https://sr.ht/~gpanders/ijq/). If you're running the [BTP Setup Automator](https://github.com/SAP-samples/btp-setup-automator/), you'll be pleased to know that both these tools are in the Docker image too, all ready for you to use. 
 
 > There are some issues running `jq` with glob patterns on Windows shells (PowerShell and CMD) - see the [Wildcards on Windows](https://github.com/stedolan/jq/issues/1644) issue for more information. We recommend you use WSL2 on Windows.
 
