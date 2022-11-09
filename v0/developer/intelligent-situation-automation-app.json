@@ -68,7 +68,7 @@
         }
       ],
       "schemas": null,
-      "materialNumberMapping": []
+      "materialNumberMappings": []
     },
     {
       "name": "free",
@@ -84,7 +84,11 @@
         }
       ],
       "schemas": null,
-      "materialNumberMapping": []
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8012217"
+        }
+      ]
     },
     {
       "name": "standard",
@@ -100,7 +104,14 @@
         }
       ],
       "schemas": null,
-      "materialNumberMapping": []
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8011405"
+        },
+        {
+          "materialNumber": "8011518"
+        }
+      ]
     }
   ],
   "supportComponents": [
