@@ -379,7 +379,7 @@ Document Information Extraction
 
 In case you're wondering what regions there are in general, this query is one you could run (and then you'd have a list from which to pick, to supply a value for the `services-in-region` example).
 
-The actual `jq` filter itself is quite straightforward:
+The actual `jq` filter itself is quite straightforward (and is available in [services/all-regions.jq](services/all-regions.jq) with lots of comments):
 
 ```jq
 map(.servicePlans[].dataCenters[])
