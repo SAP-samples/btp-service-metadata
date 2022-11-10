@@ -31,9 +31,9 @@ The data is fetched regularly to be up-to-date. If you experience that something
 
 ## How to get support
 
-[Create an issue](https://github.com/SAP/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E) in this repository if you find a bug 🐞.
+[Create an issue](https://github.com/SAP-samples/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E) in this repository if you find a bug 🐞.
 
-In case you would like to see an additional feature 🚀, feel free to [open a feature request](https://github.com/SAP/btp-service-metadata/issues/new?assignees=&labels=enhancement&template=feature-request.yml&title=%5BFEATURE+REQUEST%5D+%3Ctitle%3E)
+In case you would like to see an additional feature 🚀, feel free to [open a feature request](https://github.com/SAP-samples/btp-service-metadata/issues/new?assignees=&labels=enhancement&template=feature-request.yml&title=%5BFEATURE+REQUEST%5D+%3Ctitle%3E)
 
 In case of questions, we also have [GitHub discussions](https://github.com/SAP-samples/btp-service-metadata/discussions) activated 😎. This is the place to:
 
