@@ -1,0 +1,257 @@
+{
+  "name": "blockchain-services",
+  "displayName": "Blockchain Application Enablement",
+  "description": "Deliver blockchain-based services on any connected blockchain network.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zC24rcp-GRzZW6tlvR6nqZrV7PVMthmkBCl_kTsO59XPZRw5vjDIula82nhoUVmh.svg",
+  "links": [
+    {
+      "value": "https://open.sap.com/courses/leo4",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "OpenSAP: An Introduction to Blockchain"
+    },
+    {
+      "value": "https://api.sap.com/package/SCPBlockchainServices/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Blockchain Application Enablement | SAP API Business Hub"
+    },
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/product-info.Hyperledger-Fabric--on-SAP-Cloud-Platform.b9fb18ba-a2dc-485b-ad59-79c30c15ec93.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/blockchain-application-enablement",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Blockchain Application Enablement"
+    },
+    {
+      "value": "https://help.sap.com/viewer/0a3ff4e76504461f91d0a6319904b8ca/BLOCKCHAIN/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What are Blockchain Application Enablement services?"
+    },
+    {
+      "value": "https://help.sap.com/viewer/13450f5d403d4a9b810fa50ec6665110/BLOCKCHAIN/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/docs/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Business Technology Platform Blockchain Application Enablement Help Portal Page"
+    },
+    {
+      "value": "https://www.sap.com/products/leonardo/blockchain.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Leonardo Blockchain Website"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "blockchain-hana-integration",
+      "displayName": "Blockchain Services",
+      "category": "SERVICE",
+      "description": "Blockchain Services",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
+      "materialNumberMappings": []
+    },
+    {
+      "name": "blockchain-proof-of-history",
+      "displayName": "blockchain-proof-of-history",
+      "category": "SERVICE",
+      "description": "Persists partial object states (as JSON attribute updates) on blockchain and enables a complete history over all updates.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
+      "materialNumberMappings": []
+    },
+    {
+      "name": "blockchain-proof-of-state",
+      "displayName": "blockchain-proof-of-state",
+      "category": "SERVICE",
+      "description": "Persists complete object states (as JSON objects) on the blockchain.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
+      "materialNumberMappings": []
+    },
+    {
+      "name": "blockchain-timestamp",
+      "displayName": "blockchain-timestamp",
+      "category": "SERVICE",
+      "description": "A timestamp service for hash values generated over documents on the blockchain.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
+      "materialNumberMappings": []
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-BCS-VAS"
+    }
+  ]
+}

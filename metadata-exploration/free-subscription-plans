@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source lib.sh
+
+jq \
+  --from-file services/free-subscription-plans.jq \
+  -s "$METADATADIR"/*.json

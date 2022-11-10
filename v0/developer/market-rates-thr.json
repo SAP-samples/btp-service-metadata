@@ -1,0 +1,83 @@
+{
+  "name": "market-rates-thr",
+  "displayName": "Market Rates, Refinitiv",
+  "description": "The Market Rates Management, Refinitiv data option is a reuse service that allows you to import daily and historical Exchange Rates & Interest Rates from Refinitiv.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jow9lmGQkRxhcKy--w91CdYbnPVa65LT880QPpRx2h6mB1PFglW0-sc2pItxx14s.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/MarketRatesManagementAPI",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://api.sap.com/package/MarketRatesManagementAPI/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Market Rates Management, Refinitiv data option | SAP API Business Hub"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/market-rates-refinitiv",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Market Rates, Refinitiv"
+    },
+    {
+      "value": "https://help.sap.com/viewer/9da8c81f87e0480fac3975cdd3182418/LATEST/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Refinitiv data option"
+    },
+    {
+      "value": "https://help.sap.com/viewer/9da8c81f87e0480fac3975cdd3182418/LATEST/en-US/5e759c605bfe4b6ba52a06bf23f6c15c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_TR",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_CP_BUS_REUSE_SERVICE_MRM_TR/LATEST/en-US?task=discover_task",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.youtube.com/embed/h_0pIIPNhJY",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Market Rates Management, Refinitiv Data Option"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "default plan",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null,
+      "materialNumberMappings": []
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-CBS-CS"
+    }
+  ]
+}

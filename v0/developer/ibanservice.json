@@ -1,0 +1,101 @@
+{
+  "name": "ibanservice",
+  "displayName": "IBAN service",
+  "description": "Check validity and get details of given IBAN number.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/NiIIWE1YKUrSEWZ_rN3onxhJDhgcOSEcVcit94_-ev1ukbmdti_niKyz7tOyV9L5.svg",
+  "links": [
+    {
+      "value": " https://discovery-center.cloud.sap/serviceCatalog/iban-service",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://api.sap.com/package/ibanservice/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | IBAN Service | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=IBAN%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=IBAN%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/iban-service",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - IBAN service"
+    },
+    {
+      "value": "https://help.sap.com/docs/IBAN_SERVICE",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/docs/IBAN_SERVICE/9ba82223f71c46898e417c636cf24f56/a4fd370dd23f41989afde2646cfc06fb.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/IBAN_SERVICE/9ba82223f71c46898e417c636cf24f56/ab033167c7494d8db9644a8a8f2d4553.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/IBAN_SERVICE/9ba82223f71c46898e417c636cf24f56/c7cd3d07baf345df97a85e0eb450df61.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/IBAN_SERVICE/9ba82223f71c46898e417c636cf24f56/dc6d668b63dd456c866f91f312445cde.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is IBAN service?"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/IBAN_SERVICE/Latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Default Plan",
+      "isFree": true,
+      "isBeta": true,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null,
+      "materialNumberMappings": []
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-ABS"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "MDMBusinessPartnerService",
+  "displayName": "SAP Master Data service for business partners",
+  "description": "SAP Business Partner Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qZ8BMfCUCVZcNZ7NWQ_b6IVE-Jny2YkhmuZmU47DfDkDBEXVB-oXw5hyqFn68QGI.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/2020/03/03/sap-cloud-platform-master-data-for-business-partners-release-1.5/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blog: SAP Master Data service for business partners Release 1.5"
+    },
+    {
+      "value": "https://api.sap.com/package/SCPMDBPServices/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Master Data Service for Business Partners | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Master%20Data%20service%20for%20business%20partners",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Master%20Data%20service%20for%20business%20partners",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/1ae4c02ef01f474099ea7e91ff74c27b/latest/en-US/loiof17c712f221a46caac6281d69810365e.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/viewer/3b787e14f62047b0ab9ebc3fa5772be9/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/f4bdb01b870142b784aa0668f7877f74/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Master Data service for business partners"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_Cloud_Platform_Master_Data_for_Business_Partners/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_Cloud_Platform_Master_Data_for_Business_Partners/latest/en-US?task=discover_task",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "SAP Cloud Platform Master Data Management for business partners",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform Master Data Management for business partners",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null,
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8007002"
+        },
+        {
+          "materialNumber": "8007001"
+        }
+      ]
+    }
+  ],
+  "supportComponents": []
+}

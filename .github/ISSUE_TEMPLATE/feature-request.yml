@@ -1,0 +1,27 @@
+name: 🚀 Feature Request
+description: File a Feature Request
+title: "[FEATURE REQUEST] <title>"
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: level
+    attributes:
+      label: Area of the resources that should be enhanced?
+      options:
+        - Service list
+        - Metadata of services
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: Describe why you think that this resource provides additional value for a DDD learner.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Link to resource
+      description: You can add a link to additional information (e.g. link to the Discovery Center).
+    validations:
+      required: false

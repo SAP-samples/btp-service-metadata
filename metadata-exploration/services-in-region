@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+source lib.sh
+
+jq \
+  --arg region "${1:?Specify a region e.g. eu10}" \
+  --from-file services/in-region.jq \
+  --raw-output \
+  -s "$METADATADIR"/*.json

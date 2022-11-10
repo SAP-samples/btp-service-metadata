@@ -1,0 +1,276 @@
+{
+  "name": "data-privacy-integration-service",
+  "displayName": "SAP Data Privacy Integration",
+  "description": "Data Privacy Integration (DPI) is a service that supports applications realize their data privacy functions i.e Business Purpose Management ( Ensure Data is processed in a compliant manner based on valid Business Purpose ), Data Deletion and Retrieval of personal data. Applications that are part of an end to end business process can integrate with DPI to provide a centralized management of data privacy.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7sSPHbilTlHGrBDn82KHZdcY7Hz3S1A_wtoGo_N_PWRuZ6GsX4x57Ng0xE0lWzbD.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/search?searchterm=DPI",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/09/16/manage-business-purpose-and-data-privacy-for-your-applications-using-sap-cloud-platform-data-privacy-integration/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blog Data Privacy Integration"
+    },
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationApplicationRepository/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Application Repository | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationBusinessContext/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Business Context Management | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationDeletion/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Data Deletion | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationInformation/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Information Retrieval | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Data%20Privacy%20Integration",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Data%20Privacy%20Integration",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/data-privacy-integration",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Data Privacy Integration"
+    },
+    {
+      "value": "https://help.sap.com/doc/070f9c7b0b14489c93d39e54798e5409/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/DATA_PRIVACY_INTEGRATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/DATA_PRIVACY_INTEGRATION/c829f95e3a3a43ddb958782fb3bf61e2/3538bed426ff405fb68296575f53def4.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/DATA_PRIVACY_INTEGRATION/c829f95e3a3a43ddb958782fb3bf61e2/91954b1f5fee4039893300762ff51040.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/313a456d8f6c47289945699fbf5ab0c6/DEV/en-US",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/3916a64ef0594fa0b50b47708f4a5c41/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Data Privacy Integration"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/3916a64ef0594fa0b50b47708f4a5c41/83de644c472c47b7af42c226618a461f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/viewer/57390899c7b140ad958a20b0ebbd461a/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/c829f95e3a3a43ddb958782fb3bf61e2/9cd4d0166681448899a6df34cc60f57f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/c829f95e3a3a43ddb958782fb3bf61e2/a360cc35b40946139300990c4cdacad8.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "End-User Information"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/DATA_PRIV_INTEGRATION_OD/SHIP/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.youtube.com/embed/tms6_AEy2q8",
+      "classification": "External",
+      "type": "Link",
+      "text": "Data Privacy Integration Demo Video"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "application",
+      "displayName": "application",
+      "category": "SERVICE",
+      "description": "Application Plan",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null,
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8008872"
+        },
+        {
+          "materialNumber": "8008871"
+        },
+        {
+          "materialNumber": "8008953"
+        },
+        {
+          "materialNumber": "8008950"
+        }
+      ]
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null,
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8011064"
+        }
+      ]
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-GDP-IL"
+    }
+  ]
+}
