@@ -1,110 +1,5 @@
 [
   {
-    "technicalId": "ASE_PROVISIONING",
-    "displayName": "SAP ASE service",
-    "description": "The SAP ASE service on SAP Cloud Platform lets you consume SAP ASE databases from your applications running on SAP Cloud Platform or on-premise via Java APIs. It offers variousself-services, for example, that let you create or update databases, whileSAPis providing infrastructure and database platform operations.",
-    "fileName": "ase_provisioning.json",
-    "category": "SERVICE"
-  },
-  {
-    "technicalId": "Backend-service",
-    "displayName": "SAP Backend service",
-    "description": "With SAP Cloud Platform Backed service you can build robust, scalable and enterprise-ready APIs/services to serve your applications and extensions in a serverless environment. It is a fully managed API service that helps you build, run, and manage APIs in a serverless environment [BETA]",
-    "fileName": "backend-service.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "COMPUTE_UNIT",
-    "displayName": "SAP BTP, Java server",
-    "description": "Java Quota",
-    "fileName": "compute_unit.json",
-    "category": "SERVICE"
-  },
-  {
-    "technicalId": "INFRA",
-    "displayName": "SAP Custom Domain service",
-    "description": "The SAP Cloud Platform Custom Domain service lets you configure your own custom domain to expose publicly your SAP Cloud Platform application instead of using the default subdomain.",
-    "fileName": "infra.json",
-    "category": "SERVICE"
-  },
-  {
-    "technicalId": "IRPA",
-    "displayName": "SAP Intelligent Robotic Process Automation",
-    "description": "SAP Intelligent Robotic Process Automation lets you automate enterprise business processes. Design process automations with the Desktop Studio by creating end-to-end scenarios. Import these scenarios into the cloud Factory to configure and execute them with Agents. An Agent can work as a Digital Assistant (attended automation) or as a Digital Worker (unattended automation).",
-    "fileName": "irpa.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "LandscapePortal",
-    "displayName": "Landscape Portal",
-    "description": "The Landscape Portal acts as a central tool that allows SaaS providers to keep track of the distribution of their consumers across their systems as well as perform lifecycle management operations such as updating add-ons, creating new tenants, and more.",
-    "fileName": "landscapeportal.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "MDMBusinessPartnerApplication",
-    "displayName": "SAP Business Partner Application",
-    "description": "SAP Business Partner Application",
-    "fileName": "mdmbusinesspartnerapplication.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "MDMBusinessPartnerService",
-    "displayName": "SAP Master Data service for business partners",
-    "description": "SAP Business Partner Service",
-    "fileName": "mdmbusinesspartnerservice.json",
-    "category": "SERVICE"
-  },
-  {
-    "technicalId": "MDOrchestrationApplication",
-    "displayName": "SAP Master Data Orchestration",
-    "description": "Master data application for existing customers of SAP Master Data service for business partners and SAP Master Data service for products. New customers should use the Master Data Integration (Orchestration) tile. SAP Master Data Orchestration should only be used in combination with the SAP Master Data Integration service.",
-    "fileName": "mdorchestrationapplication.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "PersonalDataManagerApp",
-    "displayName": "SAP Personal Data Manager",
-    "description": "SAP Personal Data Manager provides the capability to generate reports showing the personal data stored in an application point of view with the help of a CSR. The reports can be generated and exported either in machine readable form (JSON) or human readable form (PDF). Data subjects can request the correction and deletion of personal data that is stored in an application point of view.",
-    "fileName": "personaldatamanagerapp.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "PortalApplication",
-    "displayName": "SAP Cloud Portal service",
-    "description": "SAP Cloud Portal service lets you build digital experience portals for employees, customers, and partners. You can streamline access to business data so that your employees can execute their daily business tasks securely, from any device.",
-    "fileName": "portalapplication.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "SAPLaunchpad",
-    "displayName": "SAP Launchpad service",
-    "description": "SAP Launchpad service provides users with a central point of access to applications from different sources.",
-    "fileName": "saplaunchpad.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "SAPWebAnalytics",
-    "displayName": "SAP Web Analytics",
-    "description": "SAP Web Analytics enables the collection and analysis of website data for understanding and optimizing web usage to measure organizational goals, drive strategy and improve the user's experience.",
-    "fileName": "sapwebanalytics.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "SAPWorkZone",
-    "displayName": "SAP Work Zone",
-    "description": "SAP Work Zone centralizes access to relevant business applications, processes, information, and communication in a unified entry point that users can access from any device.",
-    "fileName": "sapworkzone.json",
-    "category": "APPLICATION"
-  },
-  {
-    "technicalId": "WorkflowManagementSaaS",
-    "displayName": "SAP Workflow Management",
-    "description": "Digitize workflows, manage decisions and gain end-to-end process visibility",
-    "fileName": "workflowmanagementsaas.json",
-    "category": "APPLICATION"
-  },
-  {
     "technicalId": "abap",
     "displayName": "SAP BTP, ABAP environment",
     "description": "Access an instance to build custom ABAP cloud apps, leveraging newest innovations powered by SAP HANA.",
@@ -217,6 +112,13 @@
     "category": "SERVICE"
   },
   {
+    "technicalId": "ASE_PROVISIONING",
+    "displayName": "SAP ASE service",
+    "description": "The SAP ASE service on SAP Cloud Platform lets you consume SAP ASE databases from your applications running on SAP Cloud Platform or on-premise via Java APIs. It offers variousself-services, for example, that let you create or update databases, whileSAPis providing infrastructure and database platform operations.",
+    "fileName": "ase_provisioning.json",
+    "category": "SERVICE"
+  },
+  {
     "technicalId": "auditlog-api",
     "displayName": "Audit Log Service API",
     "description": "SAP Audit Log service API",
@@ -250,6 +152,13 @@
     "description": "The Application Autoscaler lets you automatically increase or decrease the number of application instances based on a policy you define.",
     "fileName": "autoscaler.json",
     "category": "SERVICE"
+  },
+  {
+    "technicalId": "Backend-service",
+    "displayName": "SAP Backend service",
+    "description": "With SAP Cloud Platform Backed service you can build robust, scalable and enterprise-ready APIs/services to serve your applications and extensions in a serverless environment. It is a fully managed API service that helps you build, run, and manage APIs in a serverless environment [BETA]",
+    "fileName": "backend-service.json",
+    "category": "APPLICATION"
   },
   {
     "technicalId": "blockchain-services",
@@ -320,6 +229,13 @@
     "description": "The SAP BTP, Cloud Foundry runtime lets you develop polyglot cloud-native applications and run them on the SAP BTP Cloud Foundry environment.",
     "fileName": "cloudfoundry.json",
     "category": "ENVIRONMENT"
+  },
+  {
+    "technicalId": "COMPUTE_UNIT",
+    "displayName": "SAP BTP, Java server",
+    "description": "Java Quota",
+    "fileName": "compute_unit.json",
+    "category": "SERVICE"
   },
   {
     "technicalId": "connectivity",
@@ -574,6 +490,13 @@
     "category": "SERVICE"
   },
   {
+    "technicalId": "INFRA",
+    "displayName": "SAP Custom Domain service",
+    "description": "The SAP Cloud Platform Custom Domain service lets you configure your own custom domain to expose publicly your SAP Cloud Platform application instead of using the default subdomain.",
+    "fileName": "infra.json",
+    "category": "SERVICE"
+  },
+  {
     "technicalId": "integration-suite-advanced-event-mesh",
     "displayName": "SAP Integration Suite, advanced event mesh",
     "description": "Advanced event mesh for SAP Integration Suite is a complete event streaming, event management, and monitoring platform that incorporates best practices, expertise, and technology for event-driven architecture (EDA) on a single platform.",
@@ -630,6 +553,13 @@
     "category": "APPLICATION"
   },
   {
+    "technicalId": "IRPA",
+    "displayName": "SAP Intelligent Robotic Process Automation",
+    "description": "SAP Intelligent Robotic Process Automation lets you automate enterprise business processes. Design process automations with the Desktop Studio by creating end-to-end scenarios. Import these scenarios into the cloud Factory to configure and execute them with Agents. An Agent can work as a Digital Assistant (attended automation) or as a Digital Worker (unattended automation).",
+    "fileName": "irpa.json",
+    "category": "APPLICATION"
+  },
+  {
     "technicalId": "irpa-service",
     "displayName": "SAP Intelligent Robotic Process Automation",
     "description": "SAP Intelligent Robotic Process Automation (SAP Intelligent RPA) lets you automate enterprise business processes. Design process automations with the Desktop Studio by creating end-to-end scenarios. Import these scenarios into the cloud Factory powered by SAP Cloud Platform to configure and execute them with Agents. Agents running on workstations can work as a Digital Assistant (attended automation) or as a Digital Worker (unattended automation).\t",
@@ -665,6 +595,13 @@
     "category": "ENVIRONMENT"
   },
   {
+    "technicalId": "LandscapePortal",
+    "displayName": "Landscape Portal",
+    "description": "The Landscape Portal acts as a central tool that allows SaaS providers to keep track of the distribution of their consumers across their systems as well as perform lifecycle management operations such as updating add-ons, creating new tenants, and more.",
+    "fileName": "landscapeportal.json",
+    "category": "APPLICATION"
+  },
+  {
     "technicalId": "malware-scanner",
     "displayName": "SAP Malware Scanning service",
     "description": "Scan business documents uploaded by your custom-developed apps for malware",
@@ -693,10 +630,31 @@
     "category": "APPLICATION"
   },
   {
+    "technicalId": "MDMBusinessPartnerApplication",
+    "displayName": "SAP Business Partner Application",
+    "description": "SAP Business Partner Application",
+    "fileName": "mdmbusinesspartnerapplication.json",
+    "category": "APPLICATION"
+  },
+  {
+    "technicalId": "MDMBusinessPartnerService",
+    "displayName": "SAP Master Data service for business partners",
+    "description": "SAP Business Partner Service",
+    "fileName": "mdmbusinesspartnerservice.json",
+    "category": "SERVICE"
+  },
+  {
     "technicalId": "mdo-one-mds-master",
     "displayName": "Master Data Integration (Orchestration)",
     "description": "Master data application that allows master data replication according to predetermined master data distribution models. SAP Master Data Orchestration can only be used in combination with the SAP Master Data Integration service.",
     "fileName": "mdo-one-mds-master.json",
+    "category": "APPLICATION"
+  },
+  {
+    "technicalId": "MDOrchestrationApplication",
+    "displayName": "SAP Master Data Orchestration",
+    "description": "Master data application for existing customers of SAP Master Data service for business partners and SAP Master Data service for products. New customers should use the Master Data Integration (Orchestration) tile. SAP Master Data Orchestration should only be used in combination with the SAP Master Data Integration service.",
+    "fileName": "mdorchestrationapplication.json",
     "category": "APPLICATION"
   },
   {
@@ -861,11 +819,25 @@
     "category": "SERVICE"
   },
   {
+    "technicalId": "PersonalDataManagerApp",
+    "displayName": "SAP Personal Data Manager",
+    "description": "SAP Personal Data Manager provides the capability to generate reports showing the personal data stored in an application point of view with the help of a CSR. The reports can be generated and exported either in machine readable form (JSON) or human readable form (PDF). Data subjects can request the correction and deletion of personal data that is stored in an application point of view.",
+    "fileName": "personaldatamanagerapp.json",
+    "category": "APPLICATION"
+  },
+  {
     "technicalId": "portal",
     "displayName": "SAP Cloud Portal service",
     "description": "SAP Cloud Platform Portal lets you build digital experience portals for employees, customers, and partners. You can streamline access to business data so that your employees can execute their daily business tasks securely, from any device.",
     "fileName": "portal.json",
     "category": "SERVICE"
+  },
+  {
+    "technicalId": "PortalApplication",
+    "displayName": "SAP Cloud Portal service",
+    "description": "SAP Cloud Portal service lets you build digital experience portals for employees, customers, and partners. You can streamline access to business data so that your employees can execute their daily business tasks securely, from any device.",
+    "fileName": "portalapplication.json",
+    "category": "APPLICATION"
   },
   {
     "technicalId": "postgresql",
@@ -1078,6 +1050,27 @@
     "category": "APPLICATION"
   },
   {
+    "technicalId": "SAPLaunchpad",
+    "displayName": "SAP Launchpad service",
+    "description": "SAP Launchpad service provides users with a central point of access to applications from different sources.",
+    "fileName": "saplaunchpad.json",
+    "category": "APPLICATION"
+  },
+  {
+    "technicalId": "SAPWebAnalytics",
+    "displayName": "SAP Web Analytics",
+    "description": "SAP Web Analytics enables the collection and analysis of website data for understanding and optimizing web usage to measure organizational goals, drive strategy and improve the user's experience.",
+    "fileName": "sapwebanalytics.json",
+    "category": "APPLICATION"
+  },
+  {
+    "technicalId": "SAPWorkZone",
+    "displayName": "SAP Work Zone",
+    "description": "SAP Work Zone centralizes access to relevant business applications, processes, information, and communication in a unified entry point that users can access from any device.",
+    "fileName": "sapworkzone.json",
+    "category": "APPLICATION"
+  },
+  {
     "technicalId": "scp-launchpad",
     "displayName": "SAP Launchpad service",
     "description": "SAP Launchpad service provides users with a central point of access to applications from different sources.",
@@ -1188,6 +1181,13 @@
     "description": "Digitize workflows, manage decisions and gain end-to-end process visibility",
     "fileName": "workflowmanagement.json",
     "category": "SERVICE"
+  },
+  {
+    "technicalId": "WorkflowManagementSaaS",
+    "displayName": "SAP Workflow Management",
+    "description": "Digitize workflows, manage decisions and gain end-to-end process visibility",
+    "fileName": "workflowmanagementsaas.json",
+    "category": "APPLICATION"
   },
   {
     "technicalId": "wums-c4re-beta",
