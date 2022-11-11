@@ -27,7 +27,7 @@ Of course we leverage the information ourselves in the [btp-setup-automator](htt
 
 ## Update cycle
 
-The data is fetched regularly to be up-to-date. If you experience that something is not up-to-date, please ket us know via an [issue](https://github.com/SAP/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)  
+The data is fetched regularly to be up-to-date. If you experience that something is not up-to-date, please ket us know via an [issue](https://github.com/SAP-samples/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)  
 
 ## How to get support
 
