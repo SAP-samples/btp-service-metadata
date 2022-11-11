@@ -4,17 +4,17 @@
 
 ## Description
 
-You are working with SAP BTP and looking for the metadata of the services in a *machine-readable* format? Then you are at the right place: this repository contains the metadata of the SAP BTP services available via a SAP BTP *pay-as-you-go* account.
+You are working with SAP BTP and looking for the metadata of the services in a *machine-readable* format? Then you are at the right place: this repository contains the **metadata of the SAP BTP services** available via an SAP BTP *pay-as-you-go* account.
 
 As different personas need different metadata when exploring the service metadata we decided to curate it for you. As criterion we use a *persona*+*-based approach as we are convinced that this will give the optimal support for the task at hand.
 
-We start with the persona *"developer"*. Based on the requirements of this persona we collected the metadata per service in the folder `v0/developer` as JSON files. In addition, we provide a inventory list as an overview of all available services to enable to have a quick overview what is available and what is not.
+We start with the persona *"developer"*. Based on the requirements of this persona we collected the metadata per service in the folder `v0/developer` as JSON files. In addition, we provide an [`inventory list`](v0/inventory.json) as an overview of all available services to enable to have a quick overview what is available and what is not.
 
-Based on your feedback we will add additional personas and additional curated metadata.
+Based on [your feedback](https://github.com/SAP-samples/btp-service-metadata/issues/new/choose) we will add additional personas and additional curated metadata.
 
 ## Feedback
 
-You may ask: what is your intention? The answer is that we would love to hear you feedback on:
+You may ask: what is your intention? The answer is that we would love to hear your feedback on:
 
 - the data itself (is there something missing etc.).
 - the ways how you would like to see the data provisioned for you. We are aware that plain JSON can only be a first step.
@@ -27,7 +27,7 @@ Of course we leverage the information ourselves in the [btp-setup-automator](htt
 
 ## Update cycle
 
-The data is fetched regularly to be up-to-date. If you experience that something is not up-to-date, please ket us know via an [issue](https://github.com/SAP-samples/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)  
+The data is fetched regularly to be up-to-date. If you experience that something is not up-to-date, please let us know via an [issue](https://github.com/SAP-samples/btp-service-metadata/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)  
 
 ## How to get support
 
