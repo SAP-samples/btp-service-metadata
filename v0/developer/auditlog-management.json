@@ -37,6 +37,22 @@
   ],
   "servicePlans": [
     {
+      "name": "central",
+      "displayName": "Central",
+      "category": "SERVICE",
+      "description": "Central plan for Auditlog Retrieval API",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        }
+      ],
+      "schemas": null,
+      "materialNumberMappings": []
+    },
+    {
       "name": "default",
       "displayName": "default",
       "category": "SERVICE",
