@@ -2,8 +2,20 @@
   "name": "service-manager",
   "displayName": "Service Manager",
   "description": "SAP Service Manager service allows you to consume platform services in any connected runtime environment, track service instances creation, and share services and service instances between different environments.",
-  "icon": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMjI5IiBkYXRhLW5hbWU9IkxheWVyIDIyOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMGE2ZWQxO30uY2xzLTJ7ZmlsbDojMDUzYjcwO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yOCw3YTMsMywwLDEsMS0zLDMsMywzLDAsMCwxLDMtM20wLTNhNiw2LDAsMSwwLDYsNiw2LjAwNyw2LjAwNywwLDAsMC02LTZaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjgsNDNhMywzLDAsMSwxLTMsMywzLDMsMCwwLDEsMy0zbTAtM2E2LDYsMCwxLDAsNiw2LDYuMDA3LDYuMDA3LDAsMCwwLTYtNloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMywyNXY2SDdWMjVoNm0zLTNINFYzNEgxNlYyMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00OSwyNXY2SDQzVjI1aDZtMy0zSDQwVjM0SDUyVjIyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM3LDI2LjEyNUE3LjEzMyw3LjEzMywwLDAsMSwyOS44NzUsMTlhMS4xMjUsMS4xMjUsMCwwLDEsMi4yNSwwQTQuODc5LDQuODc5LDAsMCwwLDM3LDIzLjg3NWExLjEyNSwxLjEyNSwwLDAsMSwwLDIuMjVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTksMjYuMTI1YTEuMTI1LDEuMTI1LDAsMCwxLDAtMi4yNUE0Ljg3OSw0Ljg3OSwwLDAsMCwyMy44NzUsMTlhMS4xMjUsMS4xMjUsMCwwLDEsMi4yNSwwQTcuMTMzLDcuMTMzLDAsMCwxLDE5LDI2LjEyNVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNSwzOC4xMjVBMS4xMjUsMS4xMjUsMCwwLDEsMjMuODc1LDM3LDQuODgsNC44OCwwLDAsMCwxOSwzMi4xMjVhMS4xMjUsMS4xMjUsMCwwLDEsMC0yLjI1QTcuMTMzLDcuMTMzLDAsMCwxLDI2LjEyNSwzNywxLjEyNSwxLjEyNSwwLDAsMSwyNSwzOC4xMjVaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzEsMzguMTI1QTEuMTI1LDEuMTI1LDAsMCwxLDI5Ljg3NSwzNyw3LjEzMyw3LjEzMywwLDAsMSwzNywyOS44NzVhMS4xMjUsMS4xMjUsMCwwLDEsMCwyLjI1QTQuODgsNC44OCwwLDAsMCwzMi4xMjUsMzcsMS4xMjUsMS4xMjUsMCwwLDEsMzEsMzguMTI1WiIvPjwvc3ZnPg==",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/rL_wvaq1TCc87xHtYz9MOjI4BVoJkEMXf8zyYs-vG_boaNhCS63DI81UFOsyquRI.svg",
   "links": [
+    {
+      "value": "https://api.sap.com/api/APIServiceManagment/resource",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/09/14/experience-the-new-way-of-consuming-and-managing-services-on-sap-cloud-platform/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Experience the New Way of Consuming and Managing Services on SAP BTP"
+    },
     {
       "value": "https://discovery-center.cloud.sap/#/serviceCatalog/service-manager",
       "classification": "Discovery Center",
@@ -15,6 +27,18 @@
       "classification": "External",
       "type": "Link",
       "text": "External"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/service-manager",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Service Manager"
+    },
+    {
+      "value": "https://help.sap.com/doc/f9809732e25740c3abd6158a57b8144e/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
     },
     {
       "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/0ccebd7cec24411dacd5ad17799534e0.html",
@@ -32,7 +56,13 @@
       "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/3a27b85a47fc4dff99184dd5bf181e14.html",
       "classification": "Documentation",
       "type": "Link",
-      "text": "Documentation"
+      "text": "What is SAP Service Manager"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/c9d5c050a067476f896a631e7414e2c9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
@@ -45,6 +75,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SERVICEMANAGEMENT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Service Manager Product Page"
     },
     {
       "value": "https://operatorhub.io/operator/sap-btp-operator",
