@@ -2,14 +2,14 @@
 
 This is a set of explorations of the metadata in this repository, provided as examples for you to take and build upon.
 
+## JSON focused tools
+
 The metadata information is provided in JSON format. There are various ways to parse, explore and generally manipulate JSON data, including:
 
 * [jq - a lightweight and flexible command line JSON processor](https://stedolan.github.io/jq/)
 * [gron - making JSON greppable](https://github.com/tomnomnom/gron)
 * [fx - function execution](https://github.com/antonmedv/fx)
 * [jless — a command-line JSON viewer](https://jless.io/)
-
-You may have your own tools to parse and explore too.
 
 If you want to try these exploration examples out, you'll need [jq](https://stedolan.github.io/jq/), and optionally (for a more interactive environment) [ijq](https://sr.ht/~gpanders/ijq/). If you're running the [BTP Setup Automator](https://github.com/SAP-samples/btp-setup-automator/), you'll be pleased to know that both these tools are in the Docker image too, all ready for you to use. 
 
@@ -18,6 +18,12 @@ If you want to try these exploration examples out, you'll need [jq](https://sted
 All the metadata files used in these examples are within the [v0/](../v0/) directory in this repository.
 
 In each example there's a convenience script that calls `jq`, pointing to the metadata files, and specifying the appropriate `jq` filter file. All these scripts are in, this `metadata-explorations/` directory, which is where you should be when you try to execute them.
+
+## Regular languages
+
+You may have your own tools to parse and explore too. Of course, you can also use a regular language (such as JavaScript or Python) to read in and explore the metadata. 
+
+There is an example for Node.js in [Services with the most plans](#services-with-the-most-plans).
 
 ## Inventory exploration
 
@@ -436,3 +442,83 @@ us4   US West (Colorado Springs)
 This can then be combined with standard tools such as `cut` and other utilities such as [fzf](https://github.com/junegunn/fzf), like this:
 
 ![Example of using this script to find and emit a region](regions.gif)
+
+### Services with the most plans
+
+This is a somewhat arbitrary query but it illustrates a more mainstream language approach to exploring the metadata. 
+
+The file [slurp.js](slurp.js) provides a function `slurp` and a directory name in `metadatadir`. It also combines these to provide a constant `m` containing the metadata from all the files in the [developer/](../v0/developer/) directory. 
+
+It can be then used in a Node.js REPL to explore. One simple example is to find out the services with the most plans.
+
+First, start a Node.js REPL:
+
+```bash
+node
+```
+
+You should then find yourself at a Node.js REPL prompt something like this:
+
+```text
+Welcome to Node.js v18.12.0.
+Type ".help" for more information.
+>
+```
+
+Now use the `.load` command to load the `slurp.js` file - you should see plenty of output:
+
+```text
+> .load slurp.js
+[output redacted]
+>
+```
+
+At this point you now have all the metadata in a constant `m`, that you can now use to explore:
+
+```javascript
+m.length
+```
+
+This should produce a number reflecting the count of individual metadata items (one per file), something like this:
+
+```text
+175
+```
+
+You can now use standard JavaScript functions. This sequence shows the service names:
+
+```javascript
+m.map(x => x.name)
+```
+
+with output similar to this:
+
+```javascript
+[
+  'abap-solution',
+  'abap',
+  'abapcp-web-router',
+  'ads-configui',
+  'ads',
+  'adsrestapi',
+  'ai-launchpad',
+  'aicore',
+  '...'
+]
+```
+
+Combinations of functions can be very powerful; here we use `map` and `sort` (with a custom sort function) and `slice` to discover the services with the most plans:
+
+```javascript
+m.map(x=> ({ name: x.name, plans: x.servicePlans.length})).sort((a, b) => b.plans - a.plans).slice(0,3)
+```
+
+At the time of writing, this produces something like this:
+
+```javascript
+[
+  { name: 'hana-db', plans: 14 },
+  { name: 'hana-cloud', plans: 8 },
+  { name: 'hyperledger-fabric', plans: 6 }
+]
+```
