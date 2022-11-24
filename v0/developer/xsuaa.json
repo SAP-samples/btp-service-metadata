@@ -5,16 +5,16 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qhOUIp9iQuuZD0CGAj8r2DME9MZRx7WhXS7efiK0J4ANcpnn__hC2WCzr63CS093.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/authtrustmgmnt/rest",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
       "value": "https://ga.support.sap.com/dtp/viewer/index.html#/tree/2212/actions/28290",
       "classification": "Support",
       "type": "Link",
       "text": "Troubleshooting for the SAP Authorization and Trust Management Service"
-    },
-    {
-      "value": "https://api.hana.ondemand.com/authorization/v1/documentation",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
     },
     {
       "value": "https://api.sap.com/package/authtrustmgmnt/overview",
@@ -39,12 +39,6 @@
       "classification": "Discovery Center",
       "type": "Link",
       "text": "SAP Discovery Center - Authorization and Trust Management Service"
-    },
-    {
-      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Authorization%20and%20Trust%20Management&date=all",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
     },
     {
       "value": "https://help.sap.com/doc/9ee30e4e471041ec9437c5a6866554ce/",
@@ -87,6 +81,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Authorization%20and%20Trust%20Management%20Service",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
     }
   ],
   "servicePlans": [
@@ -95,7 +95,7 @@
       "displayName": "apiaccess",
       "category": "SERVICE",
       "description": "Access plan for authorizations, users, identity providers, and API endpoints",
-      "isFree": true,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {
@@ -183,7 +183,7 @@
       "displayName": "application",
       "category": "SERVICE",
       "description": "Application plan to be used for business applications",
-      "isFree": true,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {
@@ -271,7 +271,7 @@
       "displayName": "broker",
       "category": "SERVICE",
       "description": "Broker plan to be used by business reuse services / service brokers",
-      "isFree": true,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {
@@ -359,7 +359,7 @@
       "displayName": "space",
       "category": "SERVICE",
       "description": "Space specific name adoption (required to run same applications in different spaces)",
-      "isFree": true,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {

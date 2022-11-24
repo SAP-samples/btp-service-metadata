@@ -1,0 +1,39 @@
+{
+  "name": "procurement-service",
+  "displayName": "Guided Buying",
+  "description": "Guided Buying allows you to integrate procurement solutions with SAP S/4HANA Cloud.",
+  "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjQuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InByb2R1Y3Qtc3dpdGNoIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiCgkgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTYgNTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2IDU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzA3NEQ5Mjt9Cgkuc3Qxe2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyAgICA7fQoJLnN0MntmaWxsOiMwMDZERDc7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjgsNmMxMi4yLDAsMjIsOS44LDIyLDIycy05LjgsMjItMjIsMjJTNiw0MC4yLDYsMjhDNiwxNS45LDE1LjksNiwyOCw2IE0yOCw0QzE0LjcsNCw0LDE0LjcsNCwyOAoJczEwLjcsMjQsMjQsMjRzMjQtMTAuNywyNC0yNFM0MS4zLDQsMjgsNHoiLz4KPGcgY2xhc3M9InN0MSI+Cgk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMjUsMzFjLTAuNiwwLTEuMSwwLjItMS40LDAuN2MtMC4yLDAuMy0wLjMsMC42LTAuNSwwLjhjLTAuMiwwLjMtMC4zLDAuNi0wLjQsMC44Yy0wLjEsMC4zLTAuMSwwLjUsMCwwLjYKCQljMC4xLDAuMiwwLjMsMC4zLDAuNiwwLjNoMTMuMmMwLjIsMCwwLjQsMC4xLDAuNiwwLjJjMC4yLDAuMiwwLjMsMC4zLDAuMywwLjZjMCwwLjItMC4xLDAuNC0wLjMsMC42Yy0wLjIsMC4yLTAuNCwwLjMtMC42LDAuMwoJCUgyMS40Yy0wLjYsMC0wLjktMC4xLTEtMC40Yy0wLjEtMC4zLTAuMS0wLjYsMC4xLTEuMWMwLjItMC40LDAuNC0wLjksMC43LTEuNGMwLjMtMC41LDAuNi0xLjEsMC45LTEuNmwwLjMtMC42CgkJYzAuMi0wLjIsMC4yLTAuNSwwLjEtMC43bC0zLjctOWMtMC4zLTAuNy0wLjYtMS40LTAuOC0yLjFzLTAuNy0xLTEuMi0xaC0xLjJjLTAuMiwwLTAuNC0wLjEtMC42LTAuM2MtMC4yLTAuMi0wLjItMC40LTAuMi0wLjYKCQljMC0wLjUsMC4zLTAuOCwwLjgtMC44aDIuNGMwLjMsMCwwLjcsMC4zLDEsMC44YzAuMywwLjUsMC42LDEuMSwwLjksMS43YzAuMywwLjYsMC41LDEuMiwwLjgsMS43YzAuMiwwLjUsMC40LDAuOCwwLjYsMC44aDE4LjEKCQljMC41LDAsMC45LDAuMiwxLjIsMC42YzAuMywwLjQsMC4zLDAuOCwwLjIsMS4zbC0yLjgsNy4xYy0wLjIsMC41LTAuNiwwLjgtMS4yLDAuOEgyNXogTTIxLjEsMzcuNWMwLjQsMCwwLjgsMC4yLDEuMSwwLjUKCQljMC4zLDAuMywwLjUsMC43LDAuNSwxLjJjMCwwLjQtMC4yLDAuOC0wLjUsMS4xYy0wLjMsMC4zLTAuNywwLjUtMS4xLDAuNWMtMC41LDAtMC45LTAuMi0xLjItMC41Yy0wLjMtMC4zLTAuNS0wLjctMC41LTEuMQoJCWMwLTAuNSwwLjItMC45LDAuNS0xLjJTMjAuNiwzNy41LDIxLjEsMzcuNXogTTIzLjMsMjcuOWMwLjIsMC41LDAuNCwwLjgsMC42LDEuMWMwLjIsMC4zLDAuNywwLjQsMS41LDAuNGg5LjQKCQljMC43LDAsMS4yLTAuMSwxLjQtMC40YzAuMi0wLjMsMC40LTAuNiwwLjYtMWwxLjItMi45YzAuMy0xLjEsMC40LTEuNywwLjEtMS45cy0wLjgtMC4zLTEuNi0wLjNIMjMuOWMtMC42LDAtMSwwLTEuMywwLjEKCQljLTAuMywwLTAuNSwwLjEtMC42LDAuM2MtMC4xLDAuMS0wLjEsMC4zLTAuMSwwLjZjMC4xLDAuMywwLjIsMC43LDAuMywxLjJMMjMuMywyNy45eiBNMzUuNywzNy41YzAuNCwwLDAuOCwwLjIsMS4xLDAuNQoJCWMwLjMsMC4zLDAuNSwwLjcsMC41LDEuMmMwLDAuNC0wLjIsMC44LTAuNSwxLjFjLTAuMywwLjMtMC43LDAuNS0xLjEsMC41Yy0wLjUsMC0wLjktMC4yLTEuMi0wLjVjLTAuMy0wLjMtMC41LTAuNy0wLjUtMS4xCgkJYzAtMC41LDAuMi0wLjksMC41LTEuMlMzNS4zLDM3LjUsMzUuNywzNy41eiIvPgo8L2c+Cjwvc3ZnPgo=",
+  "links": [
+    {
+      "value": "https://help.sap.com/docs/Guided%20Buying",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/Guided%20Buying/662c2bd15b5940cbaf249c814bedad91/8369e2f6dbbc44f8bfe72e69662db00c.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "apiaccess",
+      "displayName": "API Access",
+      "category": "SERVICE",
+      "description": "Access the API of your existing Guided Buying subscription. Note that this plan cannot be used standalone.",
+      "isFree": null,
+      "isBeta": true,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        }
+      ],
+      "schemas": null,
+      "materialNumberMappings": []
+    }
+  ],
+  "supportComponents": []
+}

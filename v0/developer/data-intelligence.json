@@ -29,18 +29,6 @@
       "text": "SAP Discovery Center - SAP Data Intelligence"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/ca509b7635484070a655738be408da63/1fd349c9b7a34bc58b55e5c7b871e92e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/ca509b7635484070a655738be408da63/f0d7525dcea04c70b262521f2965ab1e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
       "value": "https://help.sap.com/viewer/product/SAP_DATA_HUB/latest/en-US",
       "classification": "Documentation",
       "type": "Link",
@@ -63,12 +51,6 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "SAP Leonardo Machine Learning Foundation"
-    },
-    {
-      "value": "https://launchpad.support.sap.com/#/notes/2820555",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
     }
   ],
   "servicePlans": [
@@ -77,7 +59,7 @@
       "displayName": "Dedicated",
       "category": "SERVICE",
       "description": "SAP Data Intelligence - Dedicated plan",
-      "isFree": false,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {
@@ -109,66 +91,7 @@
           "name": "US West (WA)"
         }
       ],
-      "schemas": {
-        "service_instance": {
-          "create": {
-            "parameters": {
-              "type": "object",
-              "properties": {
-                "adminUsername": {
-                  "type": "string",
-                  "description": "Admin username of the new cluster"
-                },
-                "adminPassword": {
-                  "type": "string",
-                  "description": "Admin password of the new cluster"
-                },
-                "minNodes": {
-                  "type": "string",
-                  "description": "The minimum number of nodes"
-                },
-                "maxNodes": {
-                  "type": "string",
-                  "description": "The maximum number of nodes"
-                },
-                "vpcCIDR": {
-                  "type": "string",
-                  "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
-                },
-                "hibernationSchedules": {
-                  "type": "string",
-                  "description": "schedules for hibernation start and wake up"
-                }
-              },
-              "$schema": "http://json-schema.org/draft-07/schema"
-            }
-          },
-          "update": {
-            "parameters": {
-              "type": "object",
-              "properties": {
-                "minNodes": {
-                  "type": "string",
-                  "description": "The minimum number of nodes"
-                },
-                "maxNodes": {
-                  "type": "string",
-                  "description": "The maximum number of nodes"
-                },
-                "enableHibernation": {
-                  "type": "string",
-                  "description": "enable Hibernation, true to enable, false to disable"
-                },
-                "hibernationSchedules": {
-                  "type": "string",
-                  "description": "schedules for hibernation start and wake up"
-                }
-              },
-              "$schema": "http://json-schema.org/draft-07/schema"
-            }
-          }
-        }
-      },
+      "schemas": null,
       "materialNumberMappings": [
         {
           "materialNumber": "8011057"
@@ -180,7 +103,7 @@
       "displayName": "enterprise",
       "category": "SERVICE",
       "description": "SAP Data Intelligence - Enterprise plan",
-      "isFree": false,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {
@@ -212,66 +135,7 @@
           "name": "US West (WA)"
         }
       ],
-      "schemas": {
-        "service_instance": {
-          "create": {
-            "parameters": {
-              "type": "object",
-              "properties": {
-                "adminUsername": {
-                  "type": "string",
-                  "description": "Admin username of the new cluster"
-                },
-                "adminPassword": {
-                  "type": "string",
-                  "description": "Admin password of the new cluster"
-                },
-                "minNodes": {
-                  "type": "string",
-                  "description": "The minimum number of nodes"
-                },
-                "maxNodes": {
-                  "type": "string",
-                  "description": "The maximum number of nodes"
-                },
-                "vpcCIDR": {
-                  "type": "string",
-                  "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
-                },
-                "hibernationSchedules": {
-                  "type": "string",
-                  "description": "schedules for hibernation start and wake up"
-                }
-              },
-              "$schema": "http://json-schema.org/draft-07/schema"
-            }
-          },
-          "update": {
-            "parameters": {
-              "type": "object",
-              "properties": {
-                "minNodes": {
-                  "type": "string",
-                  "description": "The minimum number of nodes"
-                },
-                "maxNodes": {
-                  "type": "string",
-                  "description": "The maximum number of nodes"
-                },
-                "enableHibernation": {
-                  "type": "string",
-                  "description": "enable Hibernation, true to enable, false to disable"
-                },
-                "hibernationSchedules": {
-                  "type": "string",
-                  "description": "schedules for hibernation start and wake up"
-                }
-              },
-              "$schema": "http://json-schema.org/draft-07/schema"
-            }
-          }
-        }
-      },
+      "schemas": null,
       "materialNumberMappings": [
         {
           "materialNumber": "8009361"
@@ -286,7 +150,7 @@
       "displayName": "Tenant",
       "category": "SERVICE",
       "description": "SAP Data Intelligence - Tenant plan",
-      "isFree": true,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {
@@ -318,78 +182,7 @@
           "name": "US West (WA)"
         }
       ],
-      "schemas": {
-        "service_instance": {
-          "create": {
-            "parameters": {
-              "type": "object",
-              "properties": {
-                "clusterName": {
-                  "type": "string",
-                  "description": "Name of the existing cluster where the new tenant will be created"
-                },
-                "tenantName": {
-                  "type": "string",
-                  "description": "Name of the new tenant"
-                },
-                "adminUsername": {
-                  "type": "string",
-                  "description": "Admin username of the new tenant"
-                },
-                "adminPassword": {
-                  "type": "string",
-                  "description": "Admin password of the new tenant"
-                },
-                "resourceQuotas": {
-                  "type": "array",
-                  "description": "resource quotas for the new tenant",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "limit": {
-                        "type": "string"
-                      },
-                      "resource": {
-                        "type": "string"
-                      },
-                      "target": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "$schema": "http://json-schema.org/draft-07/schema"
-            }
-          },
-          "update": {
-            "parameters": {
-              "type": "object",
-              "properties": {
-                "resourceQuotas": {
-                  "type": "array",
-                  "description": "resource quotas for the new tenant",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "limit": {
-                        "type": "string"
-                      },
-                      "resource": {
-                        "type": "string"
-                      },
-                      "target": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              },
-              "$schema": "http://json-schema.org/draft-07/schema"
-            }
-          }
-        }
-      },
+      "schemas": null,
       "materialNumberMappings": []
     }
   ],

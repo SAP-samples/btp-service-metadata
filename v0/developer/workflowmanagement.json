@@ -107,7 +107,7 @@
       "displayName": "workflow",
       "category": "SERVICE",
       "description": "Plan for usage of process flexibility for customers with Workflow Management entitlement to enable Digital Process Automation",
-      "isFree": false,
+      "isFree": null,
       "isBeta": false,
       "dataCenters": [
         {
@@ -179,17 +179,7 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": {
-        "service_instance": {
-          "create": {
-            "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
-              "type": "object",
-              "properties": {}
-            }
-          }
-        }
-      },
+      "schemas": null,
       "materialNumberMappings": []
     }
   ],
