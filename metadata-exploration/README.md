@@ -443,6 +443,74 @@ This can then be combined with standard tools such as `cut` and other utilities 
 
 ![Example of using this script to find and emit a region](regions.gif)
 
+### Kyma availability
+
+Sometimes it's useful to know where (geographically) a specific service or group of services is available. In this example, we discover the availability of Kyma related services.
+
+The filter (in [services/kyma-availability.jq](services/kyma-availability.jq)) is relatively straightforward:
+
+```jq
+.[]
+| select((.name | contains("kyma"))).servicePlans
+| map({
+    offering: .displayName,
+    availability: .dataCenters|map(.region)
+  })
+```
+
+This explodes each slurped item, selects only those where the item's name contains the string "kyma", and then picks out the service plan details for the results. It then maps over those details, producing an array of objects with the offering name and a list of data center regions where that offering is available. Here's what the results look like:
+
+```json
+[
+  {
+    "offering": "Kyma Runtime AWS",
+    "availability": [
+      "ap10",
+      "ap11",
+      "ap12",
+      "br10",
+      "ca10",
+      "eu10",
+      "jp10",
+      "us10"
+    ]
+  },
+  {
+    "offering": "Kyma Runtime Azure",
+    "availability": [
+      "ap21",
+      "eu20",
+      "jp20",
+      "us20",
+      "us21"
+    ]
+  },
+  {
+    "offering": "free",
+    "availability": [
+      "ap10",
+      "ap11",
+      "ap12",
+      "br10",
+      "ca10",
+      "eu10",
+      "jp10",
+      "us10"
+    ]
+  },
+  {
+    "offering": "Kyma Runtime GCP",
+    "availability": [
+      "eu30",
+      "in30",
+      "us30"
+    ]
+  }
+]
+```
+
+There's a convenience script [kyma-availability](kyma-availability) that you can run for this.
+
 ### Services with the most plans
 
 This is a somewhat arbitrary query but it illustrates a more mainstream language approach to exploring the metadata. 
