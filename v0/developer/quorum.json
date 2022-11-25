@@ -59,7 +59,7 @@
       "displayName": "cyon",
       "category": "SERVICE",
       "description": "Connect Your Own Network (CYON) into SAP BTP.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -71,7 +71,33 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "dashboard": {
+                  "default": "",
+                  "description": "",
+                  "type": "string"
+                },
+                "enode": {
+                  "default": "",
+                  "description": "",
+                  "type": "string"
+                },
+                "rpc": {
+                  "default": "< RPC URL (required, https only)>",
+                  "description": "",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": [
         {
           "materialNumber": "8007129"
@@ -83,7 +109,7 @@
       "displayName": "dev",
       "category": "SERVICE",
       "description": "Environment with all relevant APIs for developing and testing of Solidity Smart Contracts on a fixed network with shared nodes.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -95,7 +121,23 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "password": {
+                  "default": "",
+                  "description": "Account password for locking the account",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": [
         {
           "materialNumber": "8007127"
@@ -107,7 +149,7 @@
       "displayName": "testnet",
       "category": "SERVICE",
       "description": "Quorum node which is part of a cross organizational test network available for developing and testing distributed applications. It may not be used productively.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -119,7 +161,38 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "nodeSecret": {
+                  "default": "",
+                  "description": "Secret that is used for encrypting resources of the instance",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "password": {
+                  "default": "",
+                  "description": "Account password for locking the account",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": [
         {
           "materialNumber": "8007128"

@@ -57,6 +57,12 @@
       "classification": "External",
       "type": "Link",
       "text": "RabbitMQ Official Website"
+    },
+    {
+      "value": "https://www.rabbitmq.com/community.html",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
     }
   ],
   "servicePlans": [
@@ -341,7 +347,7 @@
       "displayName": "virtualhost",
       "category": "SERVICE",
       "description": "[BETA] RabbitMQ service - virtual host plan within an existing RabbitMQ service instance (for non-productive usage)",
-      "isFree": null,
+      "isFree": true,
       "isBeta": true,
       "dataCenters": [
         {

@@ -3,14 +3,57 @@
   "displayName": "Mobile Content",
   "description": "Mobile Content",
   "icon": null,
-  "links": [],
+  "links": [
+    {
+      "value": "https://help.sap.com/docs/BTP/468990a67780424a9e66eb096d4345bb/6c3834f4af454a21babc4e0600defe06.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap11.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.br10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.jp10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.us10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
   "servicePlans": [
     {
       "name": "standard",
       "displayName": "Mobile Content to Go Service, the back-end for the corresponding iPhone application",
       "category": "SERVICE",
       "description": "Mobile Content to Go Service, the back-end for the corresponding iPhone application",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {

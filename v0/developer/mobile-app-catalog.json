@@ -3,14 +3,57 @@
   "displayName": "Mobile App Catalog",
   "description": "Mobile App Catalog",
   "icon": null,
-  "links": [],
+  "links": [
+    {
+      "value": "https://help.sap.com/docs/BTP/468990a67780424a9e66eb096d4345bb/94c2409443e54b24aa823a75ce9d5f70.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap11.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.br10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.jp10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.us10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
   "servicePlans": [
     {
       "name": "standard",
       "displayName": "Mobile App Lab Service provides access to mobile applications uploaded from Mobile Services cockpit",
       "category": "SERVICE",
       "description": "Mobile App Lab Service provides access to mobile applications uploaded from Mobile Services cockpit",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {

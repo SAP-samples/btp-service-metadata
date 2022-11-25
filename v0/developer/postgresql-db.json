@@ -123,7 +123,60 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "$id": "http://example.com/schemas/postgres-free-create.json",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "engine_version": {
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 12",
+                  "type": "string",
+                  "enum": [
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "default": "12"
+                },
+                "locale": {
+                  "description": "Indicates the locale for the instance (TODO)",
+                  "type": "string",
+                  "default": "en_US"
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "$id": "http://example.com/schemas/postgres-free-update.json",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "engine_version": {
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+                  "type": "string",
+                  "enum": [
+                    "11",
+                    "12",
+                    "13"
+                  ]
+                },
+                "locale": {
+                  "description": "Indicates the locale for the instance (TODO)",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": [
         {
           "materialNumber": "8012215"
@@ -138,7 +191,7 @@
       "displayName": "premium",
       "category": "SERVICE",
       "description": "Premium PostgreSQL service offering",
-      "isFree": null,
+      "isFree": false,
       "isBeta": false,
       "dataCenters": [
         {
@@ -218,7 +271,209 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "$id": "http://example.com/schemas/postgres-premium-create.json",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "audit_log_level": {
+                  "description": "Defines which classes of statements will be logged by session audit logging",
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "ALL",
+                      "DDL",
+                      "FUNCTION",
+                      "MISC",
+                      "NONE",
+                      "READ",
+                      "ROLE",
+                      "WRITE"
+                    ]
+                  },
+                  "minItems": 1,
+                  "default": [
+                    "ROLE",
+                    "DDL"
+                  ],
+                  "uniqueItems": true
+                },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+                  "type": "integer",
+                  "enum": [
+                    8,
+                    16,
+                    32,
+                    64,
+                    128,
+                    256
+                  ],
+                  "default": 8
+                },
+                "storage": {
+                  "description": "Amount of storage in GB to be allocated to the instance",
+                  "type": "integer",
+                  "default": 5
+                },
+                "engine_version": {
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 12",
+                  "type": "string",
+                  "enum": [
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "default": "12"
+                },
+                "multi_az": {
+                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+                  "type": "boolean",
+                  "default": true
+                },
+                "locale": {
+                  "description": "Indicates the locale for the instance (TODO)",
+                  "type": "string",
+                  "default": "en_US"
+                },
+                "maintenance_window": {
+                  "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+                  "type": "object",
+                  "properties": {
+                    "day_of_week": {
+                      "description": "Day of the week when the PostgreSQL database instance can be patched.",
+                      "type": "string",
+                      "enum": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "default": "Sunday"
+                    },
+                    "start_hour_utc": {
+                      "description": "Start hour of the time block (in UTC).",
+                      "type": "integer",
+                      "default": 4,
+                      "minimum": 0,
+                      "maximum": 23
+                    },
+                    "duration": {
+                      "description": "Duration of the time block in hours.",
+                      "type": "integer",
+                      "default": 1,
+                      "minimum": 1,
+                      "maximum": 23
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "$id": "http://example.com/schemas/postgres-premium-update.json",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "audit_log_level": {
+                  "description": "Defines which classes of statements will be logged by session audit logging",
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "ALL",
+                      "DDL",
+                      "FUNCTION",
+                      "MISC",
+                      "NONE",
+                      "READ",
+                      "ROLE",
+                      "WRITE"
+                    ]
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
+                  "type": "integer",
+                  "enum": [
+                    8,
+                    16,
+                    32,
+                    64,
+                    128,
+                    256
+                  ]
+                },
+                "storage": {
+                  "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
+                  "type": "integer"
+                },
+                "engine_version": {
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+                  "type": "string",
+                  "enum": [
+                    "11",
+                    "12",
+                    "13"
+                  ]
+                },
+                "multi_az": {
+                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
+                  "type": "boolean"
+                },
+                "maintenance_window": {
+                  "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+                  "type": "object",
+                  "properties": {
+                    "day_of_week": {
+                      "description": "Day of the week when the PostgreSQL database instance can be patched.",
+                      "type": "string",
+                      "enum": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "default": "Sunday"
+                    },
+                    "start_hour_utc": {
+                      "description": "Start hour of the time block (in UTC).",
+                      "type": "integer",
+                      "default": 4,
+                      "minimum": 0,
+                      "maximum": 23
+                    },
+                    "duration": {
+                      "description": "Duration of the time block in hours.",
+                      "type": "integer",
+                      "default": 1,
+                      "minimum": 1,
+                      "maximum": 23
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     },
     {
@@ -226,7 +481,7 @@
       "displayName": "standard",
       "category": "SERVICE",
       "description": "Standard PostgreSQL service offering",
-      "isFree": null,
+      "isFree": false,
       "isBeta": false,
       "dataCenters": [
         {
@@ -286,7 +541,201 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "$id": "http://example.com/schemas/postgres-standard-create.json",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "audit_log_level": {
+                  "description": "Defines which classes of statements will be logged by session audit logging",
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "ALL",
+                      "DDL",
+                      "FUNCTION",
+                      "MISC",
+                      "NONE",
+                      "READ",
+                      "ROLE",
+                      "WRITE"
+                    ]
+                  },
+                  "minItems": 1,
+                  "default": [
+                    "ROLE",
+                    "DDL"
+                  ],
+                  "uniqueItems": true
+                },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+                  "type": "integer",
+                  "enum": [
+                    2,
+                    4
+                  ],
+                  "default": 2
+                },
+                "storage": {
+                  "description": "Amount of storage in GB to be allocated to the instance",
+                  "type": "integer",
+                  "default": 5
+                },
+                "engine_version": {
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 12",
+                  "type": "string",
+                  "enum": [
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "default": "12"
+                },
+                "multi_az": {
+                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+                  "type": "boolean",
+                  "default": true
+                },
+                "locale": {
+                  "description": "Indicates the locale for the instance (TODO)",
+                  "type": "string",
+                  "default": "en_US"
+                },
+                "maintenance_window": {
+                  "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+                  "type": "object",
+                  "properties": {
+                    "day_of_week": {
+                      "description": "Day of the week when the PostgreSQL database instance can be patched.",
+                      "type": "string",
+                      "enum": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "default": "Sunday"
+                    },
+                    "start_hour_utc": {
+                      "description": "Start hour of the time block (in UTC).",
+                      "type": "integer",
+                      "default": 4,
+                      "minimum": 0,
+                      "maximum": 23
+                    },
+                    "duration": {
+                      "description": "Duration of the time block in hours.",
+                      "type": "integer",
+                      "default": 1,
+                      "minimum": 1,
+                      "maximum": 23
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "$id": "http://example.com/schemas/postgres-standard-update.json",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "audit_log_level": {
+                  "description": "Defines which classes of statements will be logged by session audit logging",
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "ALL",
+                      "DDL",
+                      "FUNCTION",
+                      "MISC",
+                      "NONE",
+                      "READ",
+                      "ROLE",
+                      "WRITE"
+                    ]
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
+                  "type": "integer",
+                  "enum": [
+                    2,
+                    4
+                  ]
+                },
+                "storage": {
+                  "description": "Amount of storage in GB to be allocated to the instance",
+                  "type": "integer"
+                },
+                "engine_version": {
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+                  "type": "string",
+                  "enum": [
+                    "11",
+                    "12",
+                    "13"
+                  ]
+                },
+                "multi_az": {
+                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
+                  "type": "boolean"
+                },
+                "maintenance_window": {
+                  "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+                  "type": "object",
+                  "properties": {
+                    "day_of_week": {
+                      "description": "Day of the week when the PostgreSQL database instance can be patched.",
+                      "type": "string",
+                      "enum": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                      ],
+                      "default": "Sunday"
+                    },
+                    "start_hour_utc": {
+                      "description": "Start hour of the time block (in UTC).",
+                      "type": "integer",
+                      "default": 4,
+                      "minimum": 0,
+                      "maximum": 23
+                    },
+                    "duration": {
+                      "description": "Duration of the time block in hours.",
+                      "type": "integer",
+                      "default": 1,
+                      "minimum": 1,
+                      "maximum": 23
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": [
         {
           "materialNumber": "8012498"

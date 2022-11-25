@@ -65,7 +65,7 @@
       "displayName": "Blockchain Services",
       "category": "SERVICE",
       "description": "Blockchain Services",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -77,7 +77,34 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     },
     {
@@ -85,7 +112,7 @@
       "displayName": "blockchain-proof-of-history",
       "category": "SERVICE",
       "description": "Persists partial object states (as JSON attribute updates) on blockchain and enables a complete history over all updates.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -97,7 +124,34 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     },
     {
@@ -105,7 +159,7 @@
       "displayName": "blockchain-proof-of-state",
       "category": "SERVICE",
       "description": "Persists complete object states (as JSON objects) on the blockchain.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -117,7 +171,34 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     },
     {
@@ -125,7 +206,7 @@
       "displayName": "blockchain-timestamp",
       "category": "SERVICE",
       "description": "A timestamp service for hash values generated over documents on the blockchain.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -137,7 +218,34 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "instructions": {
+                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
+                  "type": "string"
+                },
+                "documentation": {
+                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
+                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     }
   ],

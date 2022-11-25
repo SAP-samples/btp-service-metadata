@@ -71,6 +71,12 @@
       "text": "Get an Access Token for SAP Cloud Management Service APIs"
     },
     {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/7c6df2db6332419ea7a862191525377c.html",
       "classification": "Documentation",
       "type": "Link",
@@ -83,7 +89,7 @@
       "displayName": "central",
       "category": "SERVICE",
       "description": "Service plan for using Cloud Management service APIs to manage your global accounts, subaccounts, directories, and entitlements.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -163,7 +169,58 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "grantType": {
+                  "default": "password",
+                  "_enumDisplayName": {
+                    "password": "Password",
+                    "clientCredentials": "Client Credentials"
+                  },
+                  "description": "Use the Password grant type for Cloud Foundry and Password, or Client Credentials grant type for Other Environments.",
+                  "title": "Authorization Type",
+                  "type": "string",
+                  "enum": [
+                    "password",
+                    "clientCredentials"
+                  ]
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "grantType": {
+                  "default": "password",
+                  "_enumDisplayName": {
+                    "password": "Password",
+                    "clientCredentials": "Client Credentials"
+                  },
+                  "description": "Use the Password grant type for Cloud Foundry and Password, or Client Credentials grant type for Other Environments.",
+                  "title": "Authorization Type",
+                  "type": "string",
+                  "enum": [
+                    "password",
+                    "clientCredentials"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     },
     {
@@ -171,7 +228,7 @@
       "displayName": "local",
       "category": "SERVICE",
       "description": "Service plan for using Cloud Management service APIs to manage your environments and subscriptions to multitenant applications.",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -251,7 +308,58 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "grantType": {
+                  "default": "password",
+                  "_enumDisplayName": {
+                    "password": "Password",
+                    "clientCredentials": "Client Credentials"
+                  },
+                  "description": "Use the Password grant type for Cloud Foundry and Password, or Client Credentials grant type for Other Environments.",
+                  "title": "Authorization Type",
+                  "type": "string",
+                  "enum": [
+                    "password",
+                    "clientCredentials"
+                  ]
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "grantType": {
+                  "default": "password",
+                  "_enumDisplayName": {
+                    "password": "Password",
+                    "clientCredentials": "Client Credentials"
+                  },
+                  "description": "Use the Password grant type for Cloud Foundry and Password, or Client Credentials grant type for Other Environments.",
+                  "title": "Authorization Type",
+                  "type": "string",
+                  "enum": [
+                    "password",
+                    "clientCredentials"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     }
   ],

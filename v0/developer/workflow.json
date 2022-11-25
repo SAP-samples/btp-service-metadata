@@ -101,6 +101,12 @@
       "text": "Learning Journey: Workflow Capability"
     },
     {
+      "value": "https://help.sap.com/docs/BTP/e157c391253b4ecd93647bf232d18a83/fab405aa1ec64d6e9880761a31b0cd06.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/BTP/f85276c5069a429fa37d1cd352785c25/df943e71122448caaf3c49f5ffd80627.html",
       "classification": "Documentation",
       "type": "Link",
@@ -131,7 +137,7 @@
       "displayName": "standard",
       "category": "SERVICE",
       "description": "Default plan for using workflow",
-      "isFree": null,
+      "isFree": false,
       "isBeta": false,
       "dataCenters": [
         {
@@ -203,7 +209,33 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "authorities": {
+                  "description": "Configures scopes that are available in the client credentials flow.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "defaultCollectionQueryFilter": {
+                  "description": "Configures the default behavior of queries that return a collection of Workflow entities.",
+                  "type": "string",
+                  "enum": [
+                    "own",
+                    "shared"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     }
   ],

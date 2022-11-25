@@ -63,6 +63,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
+    },
+    {
+      "value": "https://support.sap.com/en/index.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     }
   ],
   "servicePlans": [
@@ -71,7 +77,7 @@
       "displayName": "beta",
       "category": "SERVICE",
       "description": "SAP Private Link service (beta) establishes a private connection between selected SAP BTP services and selected services in your own IaaS provider accounts.",
-      "isFree": null,
+      "isFree": false,
       "isBeta": true,
       "dataCenters": [
         {
@@ -83,7 +89,54 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_controlsOrder": [
+                "serviceName",
+                "desiredAZs"
+              ],
+              "_show_form_view": true,
+              "additionalProperties": false,
+              "properties": {
+                "desiredAZs": {
+                  "default": 3,
+                  "description": "Specifies the desired number of Availability Zones of the endpoint.\n\nExample: 2\n\nBy default, SAP Private Link service only creates the endpoint if the endpoint service is deployed in the same AZs as SAP BTP, to maximize High Availability.\nIn case fewer AZs than SAP BTPs should be allowed (i.e. only one or two AZs), please explicitly allow it by specifying the desired number of AZs via this parameter.",
+                  "title": "Desired AZs",
+                  "type": "integer"
+                },
+                "policyDocument": {
+                  "description": "Specifies the Endpoint Policy.\\n\\nThe endpoint policy controls which AWS principals (AWS accounts, IAM users, and IAM roles) can use the VPC endpoint to access the endpoint service.",
+                  "properties": {},
+                  "title": "Endpoint Policy Document",
+                  "type": "object"
+                },
+                "serviceName": {
+                  "description": "Specifies the service name for which the VPC Endpoint should be created.\\n\\nExample: \"com.amazonaws.us-east-1.monitoring\" or \"com.amazonaws.vpce.us-east-1.vpce-svc-09ac27c2a0cd319fa\" for AWS or custom VPC Endpoint Services respectively",
+                  "minLength": 1,
+                  "pattern": "com\\.amazonaws\\..+",
+                  "title": "Service Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "serviceName"
+              ],
+              "type": "object"
+            }
+          },
+          "update": {
+            "parameters": null
+          }
+        },
+        "service_binding": {
+          "create": {
+            "parameters": null
+          }
+        }
+      },
       "materialNumberMappings": []
     },
     {
@@ -91,7 +144,7 @@
       "displayName": "standard",
       "category": "SERVICE",
       "description": "Establish a private connection between your CF application and selected services in your own IaaS provider accounts.",
-      "isFree": null,
+      "isFree": false,
       "isBeta": false,
       "dataCenters": [
         {
@@ -119,7 +172,71 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_controlsOrder": [
+                "resourceId",
+                "subResource",
+                "requestMessage",
+                "cosmosDb"
+              ],
+              "_show_form_view": true,
+              "additionalProperties": false,
+              "properties": {
+                "cosmosDb": {
+                  "description": "Specifies CosmosDB-specific creation parameters.",
+                  "properties": {
+                    "regions:": {
+                      "description": "Specifies the regions a CosmosDB instance is geo-replicated in to enable Private Endpoint connections to them.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "CosmosDB geo-replication regions",
+                      "type": "array",
+                      "uniqueItems": true
+                    }
+                  },
+                  "title": "CosmosDB-specific creation parameters",
+                  "type": "object"
+                },
+                "requestMessage": {
+                  "description": "Specifies the request message which is displayed to the approver.",
+                  "maxLength": 60,
+                  "title": "Request Message",
+                  "type": "string"
+                },
+                "resourceId": {
+                  "description": "Specifies the Azure Resource ID of the service for which the private endpoint should be created.\n\nExample: /subscriptions/<subscription>/resourceGroups/<rg>/providers/Microsoft.Network/privateLinkServices/<myPrivateLinkService>",
+                  "minLength": 1,
+                  "pattern": "/subscriptions/.+/resourceGroups/.+/providers/.+?/.+?/[^/#?]+",
+                  "title": "Resource ID",
+                  "type": "string"
+                },
+                "subResource": {
+                  "description": "Specifies the subresource for a specific Resource ID. Note that subresource is not required for Azure Private Link resources.\n\nExample: mysqlServer\n\nAll supported native Azure services including subresources can be found here: https://help.sap.com/viewer/product/PRIVATE_LINK/CLOUD/en-US",
+                  "title": "Subresource",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "resourceId"
+              ],
+              "type": "object"
+            }
+          },
+          "update": {
+            "parameters": null
+          }
+        },
+        "service_binding": {
+          "create": {
+            "parameters": null
+          }
+        }
+      },
       "materialNumberMappings": [
         {
           "materialNumber": "8013421"

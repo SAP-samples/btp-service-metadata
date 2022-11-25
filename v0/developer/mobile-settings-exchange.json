@@ -3,14 +3,57 @@
   "displayName": "Mobile Settings Exchange Service",
   "description": "Mobile Settings Exchange Service",
   "icon": null,
-  "links": [],
+  "links": [
+    {
+      "value": "https://help.sap.com/docs/BTP/468990a67780424a9e66eb096d4345bb/620b0ae379ad476e9046338d16a7645b.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap11.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.br10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.jp10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.us10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
   "servicePlans": [
     {
       "name": "b2c",
       "displayName": "Mobile Settings Exchange Service is used for device registrations and general access to JSON data",
       "category": "SERVICE",
       "description": "Mobile Settings Exchange Service is used for device registrations and general access to JSON data",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -46,7 +89,7 @@
       "displayName": "Mobile Settings Exchange Service is used for device registrations and general access to JSON data",
       "category": "SERVICE",
       "description": "Mobile Settings Exchange Service is used for device registrations and general access to JSON data",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {

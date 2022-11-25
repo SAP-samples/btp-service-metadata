@@ -9,6 +9,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     }
   ],
   "servicePlans": [
@@ -17,9 +23,13 @@
       "displayName": "Standard",
       "category": "SERVICE",
       "description": "Standard plan",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
         {
           "region": "ap11",
           "name": "Singapore"
@@ -27,6 +37,14 @@
         {
           "region": "ap12",
           "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
         },
         {
           "region": "eu10",
@@ -41,7 +59,247 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "type": "object",
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "description": "Name of the solution",
+                      "type": "string"
+                    },
+                    "consumer_id_pattern": {
+                      "description": "String containing a regular expression with a capturing group. The subdomain of the consumer is matched against this regular expression. The value of the first capturing group is used as consumer id.",
+                      "type": "string"
+                    },
+                    "addon_product_name": {
+                      "description": "Registered name of the addon product. Will be passed through to ABAP OEM Plan",
+                      "type": "string"
+                    },
+                    "addon_product_version": {
+                      "description": "Version of the addon product that should be installed. Will be passed through to ABAP OEM Plan",
+                      "type": "string"
+                    },
+                    "sap_system_name": {
+                      "description": "Name of the SAP system",
+                      "type": "string",
+                      "pattern": "(^$)|(^(?!ADD|ALL|AMD|AND|ANY|ARE|ASC|AUX|AVG|BIT|CDC|COM|CON|DBA|END|EPS|FOR|GET|GID|IBM|INT|KEY|LOG|LPT|MAP|MAX|MIN|MON|NIX|NOT|NUL|OFF|OLD|OMS|OUT|PAD|PRN|RAW|REF|ROW|SAP|SET|SGA|SHG|SID|SQL|SUM|SYS|TMP|TOP|UID|USE|USR|VAR)[A-Z][A-Z0-9]{2}$)"
+                    },
+                    "size_of_runtime": {
+                      "default": 1,
+                      "description": "Default size of the HANA database (in blocks of the size 16 GB) of the ABAP System. Will be passed through to ABAP OEM Plan",
+                      "type": "integer",
+                      "enum": [
+                        1,
+                        2,
+                        4,
+                        6,
+                        8
+                      ]
+                    },
+                    "size_of_persistence": {
+                      "default": 4,
+                      "description": "Default size of the ABAP system (in blocks of the size 16 GB). Will be passed through to ABAP OEM Plan",
+                      "type": "integer",
+                      "enum": [
+                        4,
+                        8,
+                        16,
+                        32,
+                        64
+                      ]
+                    },
+                    "consumer_tenant_limit": {
+                      "default": 1,
+                      "description": "Maximum number of tenants in ABAP System",
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 800
+                    },
+                    "tenant_mode": {
+                      "description": "Decides whether a customer will have a tenant in a dedicated system (single) or a shared system (multi)",
+                      "type": "string",
+                      "enum": [
+                        "single",
+                        "multi"
+                      ]
+                    },
+                    "provider_admin_email": {
+                      "description": "Email address of initial provider user. Will be passed through to ABAP OEM Plan",
+                      "type": "string",
+                      "format": "email"
+                    },
+                    "usage": {
+                      "description": "Whether it is a test or productive solution",
+                      "type": "string",
+                      "enum": [
+                        "test",
+                        "prod"
+                      ]
+                    },
+                    "xs-security": {
+                      "type": "object",
+                      "properties": {
+                        "xsappname": {
+                          "description": "xsappname used for the OAuth clone during the instance creation",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "consumer_id_pattern",
+                    "size_of_runtime",
+                    "size_of_persistence",
+                    "provider_admin_email",
+                    "usage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "description": "Name of the solution",
+                      "type": "string"
+                    },
+                    "consumer_id_pattern": {
+                      "description": "String containing a regular expression with a capturing group. The subdomain of the consumer is matched against this regular expression. The value of the first capturing group is used as consumer id.",
+                      "type": "string"
+                    },
+                    "plans": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "plan_name": {
+                            "type": "string",
+                            "description": "Name of the plan",
+                            "pattern": "^[A-Z0-9a-z-_/ ]*$",
+                            "default": "default"
+                          },
+                          "addon_product_name": {
+                            "description": "Registered name of the addon product. Will be passed through to ABAP OEM Plan",
+                            "type": "string"
+                          },
+                          "addon_product_version": {
+                            "description": "Version of the addon product that should be installed. Will be passed through to ABAP OEM Plan",
+                            "type": "string"
+                          },
+                          "sap_system_name": {
+                            "description": "Name of the SAP system",
+                            "type": "string",
+                            "pattern": "(^$)|(^(?!ADD|ALL|AMD|AND|ANY|ARE|ASC|AUX|AVG|BIT|CDC|COM|CON|DBA|END|EPS|FOR|GET|GID|IBM|INT|KEY|LOG|LPT|MAP|MAX|MIN|MON|NIX|NOT|NUL|OFF|OLD|OMS|OUT|PAD|PRN|RAW|REF|ROW|SAP|SET|SGA|SHG|SID|SQL|SUM|SYS|TMP|TOP|UID|USE|USR|VAR)[A-Z][A-Z0-9]{2}$)"
+                          },
+                          "size_of_runtime": {
+                            "default": 1,
+                            "description": "Default size of the HANA database (in blocks of the size 16 GB) of the ABAP System. Will be passed through to ABAP OEM Plan",
+                            "type": "integer",
+                            "enum": [
+                              1,
+                              2,
+                              4,
+                              6,
+                              8
+                            ]
+                          },
+                          "size_of_persistence": {
+                            "default": 4,
+                            "description": "Default size of the ABAP system (in blocks of the size 16 GB). Will be passed through to ABAP OEM Plan",
+                            "type": "integer",
+                            "enum": [
+                              4,
+                              8,
+                              16,
+                              32,
+                              64
+                            ]
+                          },
+                          "consumer_tenant_limit": {
+                            "default": 1,
+                            "description": "Maximum number of tenants in ABAP System",
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 800
+                          },
+                          "tenant_mode": {
+                            "description": "Decides whether a customer will have a tenant in a dedicated system (single) or a shared system (multi)",
+                            "type": "string",
+                            "enum": [
+                              "single",
+                              "multi"
+                            ]
+                          },
+                          "provider_admin_email": {
+                            "description": "Email address of initial provider user. Will be passed through to ABAP OEM Plan",
+                            "type": "string",
+                            "format": "email"
+                          },
+                          "usage": {
+                            "description": "Whether it is a test or productive solution",
+                            "type": "string",
+                            "enum": [
+                              "test",
+                              "prod"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "plan_name",
+                          "size_of_runtime",
+                          "size_of_persistence",
+                          "provider_admin_email",
+                          "usage"
+                        ]
+                      }
+                    },
+                    "xs-security": {
+                      "type": "object",
+                      "properties": {
+                        "xsappname": {
+                          "description": "xsappname used for the OAuth clone during the instance creation",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "consumer_id_pattern",
+                    "plans"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "abap_endpoint_timeout": {
+                  "description": "Timeout for requests issued by approuter to ABAP backend",
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "maximum": 600000
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     }
   ],

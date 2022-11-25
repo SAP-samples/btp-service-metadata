@@ -3,14 +3,57 @@
   "displayName": "Mobile Client Log Upload Service",
   "description": "Mobile Client Log Upload Service",
   "icon": null,
-  "links": [],
+  "links": [
+    {
+      "value": "https://help.sap.com/docs/BTP/468990a67780424a9e66eb096d4345bb/ee280404f7ea4bb1ac12d2271815e3e0.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap11.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.br10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.jp10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.us10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
   "servicePlans": [
     {
       "name": "standard",
       "displayName": "Mobile Client Log Upload Service is used by mobile applications to upload technical log files",
       "category": "SERVICE",
       "description": "Mobile Client Log Upload Service is used by mobile applications to upload technical log files",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {

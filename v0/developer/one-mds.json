@@ -71,7 +71,7 @@
       "displayName": "s4hana-onpremise",
       "category": "SERVICE",
       "description": "Service plan for SAP S/4HANA on-premise integrations",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -95,7 +95,80 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "businessSystemId": {
+                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "type": "string",
+                  "pattern": "^.{1,60}$"
+                },
+                "enableTenantDeletion": {
+                  "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+                  "type": "boolean",
+                  "default": false
+                },
+                "writePermissions": {
+                  "description": "Array of entities the service instance has write permission for",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "entityType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "logSys": {
+                  "description": "The logical system.",
+                  "type": "string",
+                  "pattern": "^.{1,10}$"
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "businessSystemId": {
+                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "type": "string",
+                  "pattern": "^.{1,60}$"
+                },
+                "enableTenantDeletion": {
+                  "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+                  "type": "boolean",
+                  "default": false
+                },
+                "writePermissions": {
+                  "description": "Array of entities the service instance has write permission for",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "entityType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "logSys": {
+                  "description": "The logical system.",
+                  "type": "string",
+                  "pattern": "^.{1,10}$"
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": [
         {
           "materialNumber": "8009040"
@@ -110,7 +183,7 @@
       "displayName": "sap-integration",
       "category": "SERVICE",
       "description": "Service plan for SAP-to-SAP integrations",
-      "isFree": null,
+      "isFree": true,
       "isBeta": false,
       "dataCenters": [
         {
@@ -134,7 +207,114 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null,
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "businessSystemId": {
+                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "type": "string",
+                  "pattern": "^.{1,60}$"
+                },
+                "enableTenantDeletion": {
+                  "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+                  "type": "boolean",
+                  "default": false
+                },
+                "writePermissions": {
+                  "description": "Array of entities the service instance has write permission for",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "entityType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "logSys": {
+                  "description": "The logical system.",
+                  "type": "string",
+                  "pattern": "^.{1,10}$"
+                },
+                "application": {
+                  "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"s4\", \"cpq\", sfsf\".",
+                  "type": "string",
+                  "enum": [
+                    "ariba",
+                    "c4c",
+                    "cdc",
+                    "commerceCloud",
+                    "concur",
+                    "fieldglass",
+                    "hrc",
+                    "mdg",
+                    "s4",
+                    "cpq",
+                    "sfsf"
+                  ]
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "businessSystemId": {
+                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "type": "string",
+                  "pattern": "^.{1,60}$"
+                },
+                "enableTenantDeletion": {
+                  "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+                  "type": "boolean",
+                  "default": false
+                },
+                "writePermissions": {
+                  "description": "Array of entities the service instance has write permission for",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "entityType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "logSys": {
+                  "description": "The logical system.",
+                  "type": "string",
+                  "pattern": "^.{1,10}$"
+                },
+                "application": {
+                  "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"s4\", \"cpq\", sfsf\".",
+                  "type": "string",
+                  "enum": [
+                    "ariba",
+                    "c4c",
+                    "cdc",
+                    "commerceCloud",
+                    "concur",
+                    "fieldglass",
+                    "hrc",
+                    "mdg",
+                    "s4",
+                    "cpq",
+                    "sfsf"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
       "materialNumberMappings": []
     }
   ],
