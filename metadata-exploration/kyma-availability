@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+declare METADATADIR="../v0/developer"
+
+jq \
+  -s \
+  -f services/kyma-availability.jq \
+  $METADATADIR/*.json
