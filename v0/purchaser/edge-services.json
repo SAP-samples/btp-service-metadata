@@ -1,0 +1,47 @@
+{
+  "name": "edge-services",
+  "displayName": "SAP Edge Services",
+  "description": "SAP Edge Services",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/bBHx5UaFE3UNnTKk_zkBV6_82Cs_zivGLE1N2UL8jb_9UKWZvOHEE3h2_KXDP4en.svg",
+  "servicePlans": [
+    {
+      "name": "Enterprise",
+      "displayName": "SAP Edge Services",
+      "category": "APPLICATION",
+      "description": "SAP Edge Services",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        }
+      ],
+      "materialNumberMappings": []
+    },
+    {
+      "name": "Standard",
+      "displayName": "SAP Edge Services Cloud Standard Edition",
+      "category": "APPLICATION",
+      "description": "SAP Edge Services Cloud Standard Edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": []
+}

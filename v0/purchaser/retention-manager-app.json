@@ -1,0 +1,64 @@
+{
+  "name": "retention-manager-app",
+  "displayName": "SAP Data Retention Manager",
+  "description": "The SAP Business Technology Platform Data Retention Manager lets you block or delete personal data based on the residence and retention rules maintained.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/doiY5wud4Cy_nlOaLmdVCmWZZvNx8uAtJ3pv0KxvlmqUiF4xmTStMtoIPUq7SF3y.jpg",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Standard Plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

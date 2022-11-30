@@ -1,0 +1,72 @@
+{
+  "name": "data-attribute-recommendation",
+  "displayName": "Data Attribute Recommendation",
+  "description": "Data Attribute Recommendation uses free text, numbers and categories as input to classify entities such as products, stores and users into multiple classes and also to predict the value of missing numerical attributes in your data records. You can use Data Attribute Recommendation, for example, to classify incoming product information and predict the price of commodities based on their description.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/A9Z6WR5Ov_kjxECZcoLrNCCFe31SHkDm_rbSx8QSehp71FhStml2VjWHr85uclms.svg",
+  "servicePlans": [
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8011063"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Default standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8008070"
+        },
+        {
+          "materialNumber": "8008069"
+        },
+        {
+          "materialNumber": "8008830"
+        },
+        {
+          "materialNumber": "8008829"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

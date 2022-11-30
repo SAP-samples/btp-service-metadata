@@ -1,0 +1,44 @@
+{
+  "name": "mobile-network-trace",
+  "displayName": "Mobile Network Trace",
+  "description": "Mobile Network Trace",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Mobile Network Trace collects network trace information from mobile applications for debugging",
+      "category": "SERVICE",
+      "description": "Mobile Network Trace collects network trace information from mobile applications for debugging",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": []
+}

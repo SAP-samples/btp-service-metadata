@@ -1,0 +1,72 @@
+{
+  "name": "sap-analytics-cloud-embedded-edition",
+  "displayName": "SAP Analytics Cloud, embedded edition",
+  "description": "With SAP Analytics Cloud, embedded edition, you can build and embed reports, dashboards, and visuals into your business application to make confident decisions. Explore your business data via live connection between your SAP Analytics Cloud tenant and the remote SAP HANA database on SAP Business Technology Platform.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/2eQcXCIsRj1Dxc3cYJ0cCXiJtdHmcMMlAeduQvfzMcaMl3j-b4XWxQcL4w3Hug7I.svg",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard plan with max. 150 concurrent sessions",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

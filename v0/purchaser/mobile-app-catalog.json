@@ -1,0 +1,44 @@
+{
+  "name": "mobile-app-catalog",
+  "displayName": "Mobile App Catalog",
+  "description": "Mobile App Catalog",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Mobile App Lab Service provides access to mobile applications uploaded from Mobile Services cockpit",
+      "category": "SERVICE",
+      "description": "Mobile App Lab Service provides access to mobile applications uploaded from Mobile Services cockpit",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": []
+}

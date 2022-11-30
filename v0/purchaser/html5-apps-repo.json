@@ -1,0 +1,191 @@
+{
+  "name": "html5-apps-repo",
+  "displayName": "SAP HTML5 Application Repository service for SAP BTP",
+  "description": "The HTML5 Application Repository service enables central storage of HTML5 applications in SAP BTP. In runtime, the service enables the consuming application, typically the application router, to access HTML5 application static content in a secure and efficient manner.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/G23SWNPQLE14OYxkCY8KQw7Be4TZylan0mjMxsE8BPwNLXgAhaZ3I7i2jl_6Skxg.svg",
+  "servicePlans": [
+    {
+      "name": "app-host",
+      "displayName": "app-host",
+      "category": "SERVICE",
+      "description": "Use this service plan to deploy HTML5 applications to the repository.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "materialNumberMappings": []
+    },
+    {
+      "name": "app-runtime",
+      "displayName": "app-runtime",
+      "category": "SERVICE",
+      "description": "Use this service plan to consume HTML5 applications stored in the repository.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

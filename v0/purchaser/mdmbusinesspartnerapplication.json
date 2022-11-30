@@ -1,0 +1,28 @@
+{
+  "name": "MDMBusinessPartnerApplication",
+  "displayName": "SAP Business Partner Application",
+  "description": "SAP Business Partner Application",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "saas-application",
+      "displayName": "SAP Cloud Platform Master Data Management for business partners",
+      "category": "APPLICATION",
+      "description": "SAP Business Technology Platform Master Data Management for business partners",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": []
+}

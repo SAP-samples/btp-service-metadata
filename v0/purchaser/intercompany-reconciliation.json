@@ -1,0 +1,31 @@
+{
+  "name": "intercompany-reconciliation",
+  "displayName": "SAP S/4HANA Cloud for intelligent intercompany reconciliation",
+  "description": "Intelligent Intercompany Reconciliation is introduced to speed up your intercompany reconciliation process from company close to corporate close. The service is based on Artificial Intelligence in order to reconcile your financial data with high accuracy.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/r-q6XNYWXvIKROPMJJWscKvtF__KEz_LxGR6qw9-LNoKsq3t3WWNhacJuAiJK3dH.svg",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Default standard plan for Intelligent Intercompany Reconciliation.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8011502"
+        },
+        {
+          "materialNumber": "8012315"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

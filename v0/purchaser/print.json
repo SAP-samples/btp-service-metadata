@@ -1,0 +1,86 @@
+{
+  "name": "print",
+  "displayName": "SAP Print service",
+  "description": "Manage print queues, connect print clients and monitor print status",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/FX4Ugw-NNbfHCOveisY1vptR3xgZnHWrmFyijkNG0-JuxTPu70XqdRlqZ8V8eagi.svg",
+  "servicePlans": [
+    {
+      "name": "receiver",
+      "displayName": "receiver",
+      "category": "SERVICE",
+      "description": "Establish the connection to print clients",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    },
+    {
+      "name": "sender",
+      "displayName": "sender",
+      "category": "SERVICE",
+      "description": "Provides all relevant APIs for developing application which need to enable print capacity",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8008839"
+        },
+        {
+          "materialNumber": "8012184"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

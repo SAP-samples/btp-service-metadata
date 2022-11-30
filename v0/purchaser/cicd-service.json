@@ -1,0 +1,51 @@
+{
+  "name": "cicd-service",
+  "displayName": "SAP Continuous Integration and Delivery",
+  "description": "SAP Continuous Integration and Delivery lets you configure and run predefined continuous integration and delivery (CI/CD) pipelines that automatically test, build, and deploy your code changes to speed up your development and delivery cycles.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/uNs5NftN3suNq2rTgFY-pd79UIBEgKcrapeh7zgonIOkvM23lRVrsVdJh6BKdNjx.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "When subscribed together with the SAP Continuous Integration and Delivery Application Plan, the Service Plan additionally provides access to the SAP Continuous Integration and Delivery API",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8008787"
+        },
+        {
+          "materialNumber": "8009362"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

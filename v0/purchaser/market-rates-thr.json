@@ -1,0 +1,36 @@
+{
+  "name": "market-rates-thr",
+  "displayName": "Market Rates, Refinitiv",
+  "description": "The Market Rates Management, Refinitiv data option is a reuse service that allows you to import daily and historical Exchange Rates & Interest Rates from Refinitiv.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jow9lmGQkRxhcKy--w91CdYbnPVa65LT880QPpRx2h6mB1PFglW0-sc2pItxx14s.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "default plan",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

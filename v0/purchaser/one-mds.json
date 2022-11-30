@@ -1,0 +1,86 @@
+{
+  "name": "one-mds",
+  "displayName": "SAP Master Data Integration",
+  "description": "SAP Business Technology Platform Master Data Integration service offers master data synchronization across SAP solutions and is a central access layer for data sharing and distribution. The service can only be used for SAP to SAP Integration, and must not be directly accessed for 3rd party master data integration scenarios with SAP. SAP Business Technology Platform Master Data Orchestration is part of the master data integration service, and can only be used in conjunction with SAP Master Data Integration service.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/tCpybpdw5Q6fWa-R8giphpCv0wT3rwPhhkMCKwhMnPQE_0wP3vqExHHmoe136QgD.svg",
+  "servicePlans": [
+    {
+      "name": "s4hana-onpremise",
+      "displayName": "s4hana-onpremise",
+      "category": "SERVICE",
+      "description": "Service plan for SAP S/4HANA on-premise integrations",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8009040"
+        },
+        {
+          "materialNumber": "8009041"
+        }
+      ]
+    },
+    {
+      "name": "sap-integration",
+      "displayName": "sap-integration",
+      "category": "SERVICE",
+      "description": "Service plan for SAP-to-SAP integrations",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

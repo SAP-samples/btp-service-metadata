@@ -1,0 +1,55 @@
+{
+  "name": "market-rates-byor",
+  "displayName": "SAP Market Rates Management",
+  "description": "The Market Rates Management, Bring Your Own Rates data option allows you to upload and download your own market rates licensed from third party data providers",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/CubunvkOZMuYg3_3MiSwFUN6PndQwMleHEeaJDF5fBCxTEvNz7N8nO52MuacTP41.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "default plan",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

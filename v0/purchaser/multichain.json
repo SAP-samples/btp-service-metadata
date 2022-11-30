@@ -1,0 +1,101 @@
+{
+  "name": "multichain",
+  "displayName": "MultiChain on SAP BTP",
+  "description": "The MultiChain service lets you create, delete, monitor and maintain individual MultiChain nodes and connect them to a blockchain network.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/0hui_y_k0NmOiioPAuKmmBXpr9g44g1Pt_T1Ecckkz_hE7PiZ_zgsKVyBo4FVj8k.svg",
+  "servicePlans": [
+    {
+      "name": "cyon",
+      "displayName": "cyon",
+      "category": "SERVICE",
+      "description": "Connect Your Own Network",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8007054"
+        }
+      ]
+    },
+    {
+      "name": "large",
+      "displayName": "large",
+      "category": "SERVICE",
+      "description": "Large MultiChain Node",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8006076"
+        }
+      ]
+    },
+    {
+      "name": "medium",
+      "displayName": "medium",
+      "category": "SERVICE",
+      "description": "Medium MultiChain Node",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8006075"
+        }
+      ]
+    },
+    {
+      "name": "small",
+      "displayName": "small",
+      "category": "SERVICE",
+      "description": "Small MultiChain Node",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8006074"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

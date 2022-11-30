@@ -1,0 +1,44 @@
+{
+  "name": "mobile-push",
+  "displayName": "Mobile Push Notification",
+  "description": "Mobile Push Notification",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Mobile Push Notification Service is used to send out push messages to mobile devices",
+      "category": "SERVICE",
+      "description": "Mobile Push Notification Service is used to send out push messages to mobile devices",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": []
+}

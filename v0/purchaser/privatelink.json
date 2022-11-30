@@ -1,0 +1,76 @@
+{
+  "name": "privatelink",
+  "displayName": "SAP Private Link service",
+  "description": "SAP Private Link service establishes a private connection between selected SAP BTP services and selected services in your own IaaS provider accounts.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qxm0QTTTpIdkwWdPiCmsrVW2tACBjn1eXdESAGbEbuT_pTfsM-Se98j1g8fMSXvE.png",
+  "servicePlans": [
+    {
+      "name": "beta",
+      "displayName": "beta",
+      "category": "SERVICE",
+      "description": "Establish a private connection between your CF application and selected services in your own IaaS provider accounts.",
+      "isFree": false,
+      "isBeta": true,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Establish a private connection between your CF application and selected services in your own IaaS provider accounts.",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8013421"
+        },
+        {
+          "materialNumber": "8013403"
+        },
+        {
+          "materialNumber": "8013794"
+        },
+        {
+          "materialNumber": "8013793"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}
