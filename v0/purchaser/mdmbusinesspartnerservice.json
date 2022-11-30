@@ -1,0 +1,35 @@
+{
+  "name": "MDMBusinessPartnerService",
+  "displayName": "SAP Master Data service for business partners",
+  "description": "SAP Business Partner Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qZ8BMfCUCVZcNZ7NWQ_b6IVE-Jny2YkhmuZmU47DfDkDBEXVB-oXw5hyqFn68QGI.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "SAP Cloud Platform Master Data Management for business partners",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform Master Data Management for business partners",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8007002"
+        },
+        {
+          "materialNumber": "8007001"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

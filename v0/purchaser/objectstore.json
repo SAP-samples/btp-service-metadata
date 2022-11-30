@@ -1,0 +1,138 @@
+{
+  "name": "objectstore",
+  "displayName": "Object Store on SAP BTP",
+  "description": "Object Store on SAP BTP provisions an object storage space that can be used by applications to store and manage objects.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/a4OooLtN_eA6YFJtJUgx4_CYvcuWIS2_5rRXY_2-QpLqC15nVTGmmAJOYXznoxre.svg",
+  "servicePlans": [
+    {
+      "name": "azure-standard",
+      "displayName": "azure-standard",
+      "category": "SERVICE",
+      "description": "Provides an objectstore on Azure Storage account that applications can use to store & manage objects",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8005790"
+        }
+      ]
+    },
+    {
+      "name": "gcs-standard",
+      "displayName": "gcs-standard",
+      "category": "SERVICE",
+      "description": "Provides an objectstore on Google Cloud Storage that applications can use to store & manage objects",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8005382"
+        }
+      ]
+    },
+    {
+      "name": "s3-standard",
+      "displayName": "s3-standard",
+      "category": "SERVICE",
+      "description": "Provides an objectstore on AWS S3 that applications can use to store & manage objects",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8005382"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}
