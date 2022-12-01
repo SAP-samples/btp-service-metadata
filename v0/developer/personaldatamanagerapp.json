@@ -62,9 +62,9 @@
   "servicePlans": [
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "APPLICATION",
-      "description": "Standard Plan",
+      "description": "standard plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -79,6 +79,10 @@
         {
           "region": "ap21",
           "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
         },
         {
           "region": "eu10",
@@ -112,7 +116,6 @@
       "schemas": null
     }
   ],
-  "certifications": [],
   "supportComponents": [
     {
       "value": "LOD-CBS-GDP"
