@@ -122,7 +122,7 @@
       "value": "https://help.sap.com/docs/IDENTITY_PROVISIONING",
       "classification": "Documentation",
       "type": "Link",
-      "text": "Help Portal Product Page"
+      "text": "Documentation"
     }
   ],
   "servicePlans": [
@@ -203,7 +203,34 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "subscription": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "cloud_service": {
+                  "_enumDisplayName": {
+                    "PRODUCTIVE": "PRODUCTIVE",
+                    "TEST": "TEST"
+                  },
+                  "default": "PRODUCTIVE",
+                  "description": "Choose a productive or test service type from the drop down.",
+                  "enum": [
+                    "PRODUCTIVE",
+                    "TEST"
+                  ],
+                  "title": "Service type",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      }
     },
     {
       "name": "connectivity",
@@ -254,7 +281,34 @@
           "name": "US West (WA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "subscription": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "cloud_service": {
+                  "_enumDisplayName": {
+                    "PRODUCTIVE": "PRODUCTIVE",
+                    "TEST": "TEST"
+                  },
+                  "default": "PRODUCTIVE",
+                  "description": "Choose a productive or test service type from the drop down.",
+                  "enum": [
+                    "PRODUCTIVE",
+                    "TEST"
+                  ],
+                  "title": "Service type",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      }
     },
     {
       "name": "default",
@@ -333,12 +387,42 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "subscription": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "cloud_service": {
+                  "_enumDisplayName": {
+                    "PRODUCTIVE": "PRODUCTIVE",
+                    "TEST": "TEST"
+                  },
+                  "default": "PRODUCTIVE",
+                  "description": "Choose a productive or test service type from the drop down.",
+                  "enum": [
+                    "PRODUCTIVE",
+                    "TEST"
+                  ],
+                  "title": "Service type",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      }
     }
   ],
   "supportComponents": [
     {
       "value": "BC-IAM-IDS"
+    },
+    {
+      "value": "BC-IAM-IPS"
     }
   ]
 }
