@@ -708,25 +708,6 @@
                       },
                       "type": "object"
                     },
-                    "databaseMappings": {
-                      "items": {
-                        "properties": {
-                          "organization_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          },
-                          "space_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "organization_guid",
-                          "space_guid"
-                        ],
-                        "type": "object"
-                      }
-                    },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
                       "enum": [
@@ -829,7 +810,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16000,
+                      "maximum": 16384,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -1073,7 +1054,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16000,
+                      "maximum": 16384,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -1553,25 +1534,6 @@
                       },
                       "type": "object"
                     },
-                    "databaseMappings": {
-                      "items": {
-                        "properties": {
-                          "organization_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          },
-                          "space_guid": {
-                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "organization_guid",
-                          "space_guid"
-                        ],
-                        "type": "object"
-                      }
-                    },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
                       "enum": [
@@ -1674,7 +1636,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16000,
+                      "maximum": 16384,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -1918,7 +1880,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16000,
+                      "maximum": 16384,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -2583,6 +2545,9 @@
                     "template_name": {
                       "type": "string"
                     },
+                    "template_subaccount": {
+                      "type": "string"
+                    },
                     "updateStrategy": {
                       "description": "Preferred behaviour for iq version upgrade",
                       "enum": [
@@ -3113,23 +3078,6 @@
                         "2xlarge"
                       ]
                     },
-                    "requestedOperation": {
-                      "additionalProperties": false,
-                      "properties": {
-                        "arguments": {
-                          "additionalProperties": false,
-                          "description": "List of operation arguments",
-                          "properties": {},
-                          "type": "object"
-                        },
-                        "name": {
-                          "description": "Update operation",
-                          "const": "none",
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
                     "serviceStopped": {
                       "description": "Describes if the system should be running or stopped",
                       "type": "boolean"
@@ -3642,6 +3590,9 @@
                     "template_name": {
                       "type": "string"
                     },
+                    "template_subaccount": {
+                      "type": "string"
+                    },
                     "updateStrategy": {
                       "description": "Preferred behaviour for iq version upgrade",
                       "enum": [
@@ -4045,23 +3996,6 @@
                     "reader_type": {
                       "description": "Node size for IQ readers.",
                       "const": "small"
-                    },
-                    "requestedOperation": {
-                      "additionalProperties": false,
-                      "properties": {
-                        "arguments": {
-                          "additionalProperties": false,
-                          "description": "List of operation arguments",
-                          "properties": {},
-                          "type": "object"
-                        },
-                        "name": {
-                          "description": "Update operation",
-                          "const": "none",
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
                     },
                     "serviceStopped": {
                       "description": "Describes if the system should be running or stopped",
