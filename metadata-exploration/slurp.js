@@ -15,3 +15,7 @@ const slurp = (directory) => fs
    .map(name => require(path.join(directory, name)))
 
 const m = slurp(metadatadir)
+const i = require(path.join('../v0/','inventory.json'))
+
+const groupby = (xs, key) => xs.reduce((a, x) => { (a[x[key]] = a[x[key]] || []).push(x); return a }, {})
+const unique = (x, i, a) => a.indexOf(x) === i
