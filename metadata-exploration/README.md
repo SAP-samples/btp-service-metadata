@@ -11,19 +11,57 @@ The metadata information is provided in JSON format. There are various ways to p
 * [fx - function execution](https://github.com/antonmedv/fx)
 * [jless — a command-line JSON viewer](https://jless.io/)
 
-If you want to try these exploration examples out, you'll need [jq](https://stedolan.github.io/jq/), and optionally (for a more interactive environment) [ijq](https://sr.ht/~gpanders/ijq/). If you're running the [BTP Setup Automator](https://github.com/SAP-samples/btp-setup-automator/), you'll be pleased to know that both these tools are in the Docker image too, all ready for you to use. 
+## Exploration examples
+
+These explorations are in a mix of [JavaScript](https://nodejs.org/en/) and [jq](https://stedolan.github.io/jq/). If you want to use `jq`, you can optionally (for a more interactive environment) take a look at [ijq](https://sr.ht/~gpanders/ijq/). If you're running the [BTP Setup Automator](https://github.com/SAP-samples/btp-setup-automator/), you'll be pleased to know that both `jq` and `ijq` tools are in the Docker image too, all ready for you to use. 
 
 > There are some issues running `jq` with glob patterns on Windows shells (PowerShell and CMD) - see the [Wildcards on Windows](https://github.com/stedolan/jq/issues/1644) issue for more information. We recommend you use WSL2 on Windows.
 
 All the metadata files used in these examples are within the [v0/](../v0/) directory in this repository.
 
-In each example there's a convenience script that calls `jq`, pointing to the metadata files, and specifying the appropriate `jq` filter file. All these scripts are in, this `metadata-explorations/` directory, which is where you should be when you try to execute them.
+### jq examples
 
-## Regular languages
+For the `jq` examples, in each example there's a convenience script that calls `jq`, pointing to the metadata files, and specifying the appropriate `jq` filter file. All these scripts are in, this `metadata-explorations/` directory, which is where you should be when you try to execute them.
 
-You may have your own tools to parse and explore too. Of course, you can also use a regular language (such as JavaScript or Python) to read in and explore the metadata. 
+### JavaScript (Node.js) examples
 
-There is an example for Node.js in [Services with the most plans](#services-with-the-most-plans).
+For the JavaScript examples, you can use the [Node.js REPL](https://nodejs.org/api/repl.html).
+
+The file [slurp.js](slurp.js) provides a function `slurp` and a directory name in `metadatadir`. It also combines these to provide a constant `m` containing the metadata from all the files in the [developer/](../v0/developer/) directory. Moreover, it has a function defined called `groupby` which provides rudimentary grouping functionality on arrays of objects (while there are some experimental functions such as [Array.prototype.group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/group) and [Array.prototype.groupToMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/groupToMap), there is no generally available equivalent function on the `Array` prototype).
+
+The `slurp.js` file can be then used in a Node.js REPL to explore. First, start a Node.js REPL:
+
+```bash
+node
+```
+
+You should then find yourself at a Node.js REPL prompt something like this:
+
+```text
+Welcome to Node.js v18.12.0.
+Type ".help" for more information.
+>
+```
+
+Now use the `.load` command to load the `slurp.js` file - you should see plenty of output:
+
+```text
+> .load slurp.js
+[output redacted]
+>
+```
+
+At this point you now have all the metadata in a constant `m`, that you can now use to explore. Here's a very basic example:
+
+```javascript
+m.length
+```
+
+This should produce a number reflecting the count of individual metadata items (one per file), something like this:
+
+```text
+175
+```
 
 ## Inventory exploration
 
@@ -42,6 +80,8 @@ There's an `inventory.json` file which contains a summary of all the services, a
 ### Entries by category
 
 Note the `category` property; we can use this to get a list of entries, grouped by category (i.e. an organized list of all the services, applications and so on). 
+
+#### With jq
 
 Here's a simple `jq` filter to do just that (available, with accompanying comments, in [inventory/entries-by-category.jq](inventory/entries-by-category.jq)):
 
@@ -97,6 +137,84 @@ You can run this filter with the convenience script [entries-by-category](./entr
 ```bash
 ./entries-by-category
 ```
+
+#### With JavaScript
+
+Just like the `m` constant from the `slurp.js` file, you also have the contents of the `inventory.json` file in a constant `i`. Have a look at it in the REPL:
+
+```javascript
+i[0]
+```
+
+This will show you the first inventory item, like this:
+
+```json
+{
+  technicalId: 'abap',
+  displayName: 'SAP BTP, ABAP environment',
+  description: 'Access an instance to build custom ABAP cloud apps, leveraging newest innovations powered by SAP HANA.',
+  fileName: 'abap.json',
+  category: 'SERVICE'
+} 
+```
+
+To get a collection of entries by category in JavaScript, you can use the `groupby` function supplied in `slurp.js` to perform the initial grouping, like this:
+
+```javascript
+bycategory = groupby(i.map(x => [x.displayName,x.category]),1)
+```
+
+This should produce a similar structure to what we've seen before:
+
+```json
+{
+  SERVICE: [
+    [ 'SAP BTP, ABAP environment', 'SERVICE' ],
+    [ 'ABAP Solution', 'SERVICE' ],
+    [ '...', '...' ]
+  ],
+  APPLICATION: [
+    [ 'Web access for ABAP', 'APPLICATION' ],
+    [ 'Forms Service by Adobe', 'APPLICATION' ],
+    [ 'SAP Workflow Management', 'APPLICATION' ],
+    [ '...', '...' ]
+  ],
+  ENVIRONMENT: [
+    [ 'SAP BTP, Cloud Foundry runtime', 'ENVIRONMENT' ],
+    [ 'SAP BTP, Kyma runtime', 'ENVIRONMENT' ]
+  ]
+}
+```
+
+To clean this up (removing the now-redundant second array items) you could now perform a reduction:
+
+```javascript
+Object.keys(bycategory).reduce((a, x) => { a[x] = bycategory[x].map(x => x[0]); return a }, {})
+```
+
+This produces output like this:
+
+```json
+{
+  SERVICE: [
+    'SAP BTP, ABAP environment',
+    'ABAP Solution',
+    '...'
+  ],
+  APPLICATION: [
+    'Web access for ABAP',
+    'Forms Service by Adobe',
+    'SAP AI Launchpad',
+    '...'
+  ],
+  ENVIRONMENT: [ 
+    'SAP BTP, Cloud Foundry runtime', 
+    'SAP BTP, Kyma runtime'
+  ]
+}
+```
+
+This is almost, but not exactly, the same as what we got with the `jq` filter. Can you spot the difference?
 
 ## Individual service file explorations
 
@@ -178,7 +296,11 @@ While these are individually useful, they are even more useful to explore togeth
 
 ### Applications with a free subscription plan
 
-Entries that we think of as "subscriptions", rather than services, are referred to in the metadata as "applications" (to which one subscribes). To find a list of all applications with a free plan, for example, the following filter can be used:
+Entries that we think of as "subscriptions", rather than services, are referred to in the metadata as "applications" (to which one subscribes). 
+
+#### With jq
+
+To find a list of all applications with a free plan, for example, the following filter can be used:
 
 ```jq
 map(
@@ -217,6 +339,20 @@ Either way, output should be produced looking something like this:
   "sapappstudio",
   "SAPLaunchpad"
 ]
+```
+
+#### With JavaScript
+
+The JavaScript equivalent is very similar. This time (and for subsequent individual service file explorations) we'll use the `m` constant, which holds the slurped set of files.
+
+```javascript
+m.filter(
+  x => x.servicePlans.some(
+    x => x.category == "APPLICATION" && x.isFree
+  )
+ ).map(
+  x => x.name
+)
 ```
 
 ### List services availability by region
@@ -316,6 +452,8 @@ The output looks something like this (heavily reduced for brevity):
 
 Here's an example of getting a simple list of services, applications and environments that are available in a given region, which can be specified as an argument (e.g. `eu10`).
 
+#### In jq
+
 First, there's the `jq` filter itself, which is also available as a commented version in [services/in-region.jq](services/in-region.jq):
 
 ```jq
@@ -381,9 +519,39 @@ Document Information Extraction
 ...
 ```
 
+#### In JavaScript
+
+The JavaScript equivalent is similar in that there's a nested "any" type selection, owing to the original structure of. 
+
+```text
+resource
+  |
+  +-- servicePlans
+        |
+        +-- dataCenters
+```
+
+> `jq`'s `any` is `some` in JavaScript, and `jq`'s `all` is `every` in JavaScript.
+
+This is one way of approaching it:
+
+```javascript
+m.filter(
+  x => x.servicePlans.some(
+    x => x.dataCenters.some(
+      x => x.region.startsWith("eu10")
+    )
+  )
+).map(
+  x => x.displayName
+)
+```
+
 ### What are all the regions anyway?
 
 In case you're wondering what regions there are in general, this query is one you could run (and then you'd have a list from which to pick, to supply a value for the `services-in-region` example).
+
+#### In jq
 
 The actual `jq` filter itself is quite straightforward (and is available in [services/all-regions.jq](services/all-regions.jq) with lots of comments):
 
@@ -442,6 +610,65 @@ us4   US West (Colorado Springs)
 This can then be combined with standard tools such as `cut` and other utilities such as [fzf](https://github.com/junegunn/fzf), like this:
 
 ![Example of using this script to find and emit a region](regions.gif)
+
+#### In JavaScript
+
+First, we could use a `unique` style function, which we don't have as standard, but we can implement one (and perhaps put it in `slurp.js` along with `groupby` too):
+
+```javascript
+unique = (x, i, a) => a.indexOf(x) === i
+```
+
+This is a predicate function, in that it returns a boolean, which means it can be used as an argument to functions like `filter` (remember, in JavaScript, functions are first class citizens). 
+
+Next we can create a function to list the service regions for a given resource:
+
+```javascript
+serviceregions = x => x.servicePlans.reduce(
+  (a, x) => a.concat(x.dataCenters.map(
+    x => x.region
+  )), []).filter(unique)
+```
+
+We can use this for any given resource, like this:
+
+```javascript
+serviceregions(m[1])
+```
+
+This produces a unique list of region names like this:
+
+```json
+[
+  'eu10', 'jp10',
+  'us10', 'ap10',
+  'ap11', 'ap12',
+  'br10', 'ca10',
+  'eu11'
+]
+```
+
+Running this via `map` over all the resources in `m` would produce a list of such lists, so we need to concatenate (effectively flatten) and unique-ify (and optionally sort) that list-of-lists content:
+
+```javascript
+m.map(serviceregions).reduce((a, x) => a.concat(x)).filter(unique).sort()
+```
+
+This gives us the list we're looking for (minus the descriptive names):
+
+```json
+[
+  'ae1',  'ap1',  'ap10', 'ap11',
+  'ap12', 'ap20', 'ap21', 'br1',
+  'br10', 'ca1',  'ca10', 'ch20',
+  'cn1',  'eu1',  'eu10', 'eu11',
+  'eu2',  'eu20', 'eu3',  'eu30',
+  'in30', 'jp1',  'jp10', 'jp20',
+  'sa1',  'us1',  'us10', 'us2',
+  'us20', 'us21', 'us3',  'us30',
+  'us4'
+]
+```
 
 ### Kyma availability
 
