@@ -150,11 +150,11 @@ This will show you the first inventory item, like this:
 
 ```json
 {
-  technicalId: 'abap',
-  displayName: 'SAP BTP, ABAP environment',
-  description: 'Access an instance to build custom ABAP cloud apps, leveraging newest innovations powered by SAP HANA.',
-  fileName: 'abap.json',
-  category: 'SERVICE'
+  "technicalId": "abap",
+  "displayName": "SAP BTP, ABAP environment",
+  "description": "Access an instance to build custom ABAP cloud apps, leveraging newest innovations powered by SAP HANA.",
+  "fileName": "abap.json",
+  "category": "SERVICE"
 } 
 ```
 
@@ -168,20 +168,20 @@ This should produce a similar structure to what we've seen before:
 
 ```json
 {
-  SERVICE: [
-    [ 'SAP BTP, ABAP environment', 'SERVICE' ],
-    [ 'ABAP Solution', 'SERVICE' ],
-    [ '...', '...' ]
+  "SERVICE": [
+    [ "SAP BTP, ABAP environment", "SERVICE" ],
+    [ "ABAP Solution", "SERVICE" ],
+    [ "...", "..." ]
   ],
-  APPLICATION: [
-    [ 'Web access for ABAP', 'APPLICATION' ],
-    [ 'Forms Service by Adobe', 'APPLICATION' ],
-    [ 'SAP Workflow Management', 'APPLICATION' ],
-    [ '...', '...' ]
+  "APPLICATION": [
+    [ "Web access for ABAP", "APPLICATION" ],
+    [ "Forms Service by Adobe", "APPLICATION" ],
+    [ "SAP Workflow Management", "APPLICATION" ],
+    [ "...", "..." ]
   ],
-  ENVIRONMENT: [
-    [ 'SAP BTP, Cloud Foundry runtime', 'ENVIRONMENT' ],
-    [ 'SAP BTP, Kyma runtime', 'ENVIRONMENT' ]
+  "ENVIRONMENT": [
+    [ "SAP BTP, Cloud Foundry runtime", "ENVIRONMENT" ],
+    [ "SAP BTP, Kyma runtime", "ENVIRONMENT" ]
   ]
 }
 ```
@@ -196,20 +196,20 @@ This produces output like this:
 
 ```json
 {
-  SERVICE: [
-    'SAP BTP, ABAP environment',
-    'ABAP Solution',
-    '...'
+  "SERVICE": [
+    "SAP BTP, ABAP environment",
+    "ABAP Solution",
+    "..."
   ],
-  APPLICATION: [
-    'Web access for ABAP',
-    'Forms Service by Adobe',
-    'SAP AI Launchpad',
-    '...'
+  "APPLICATION": [
+    "Web access for ABAP",
+    "Forms Service by Adobe",
+    "SAP AI Launchpad",
+    "..."
   ],
-  ENVIRONMENT: [ 
-    'SAP BTP, Cloud Foundry runtime', 
-    'SAP BTP, Kyma runtime'
+  "ENVIRONMENT": [ 
+    "SAP BTP, Cloud Foundry runtime", 
+    "SAP BTP, Kyma runtime"
   ]
 }
 ```
@@ -640,11 +640,11 @@ This produces a unique list of region names like this:
 
 ```json
 [
-  'eu10', 'jp10',
-  'us10', 'ap10',
-  'ap11', 'ap12',
-  'br10', 'ca10',
-  'eu11'
+  "eu10", "jp10",
+  "us10", "ap10",
+  "ap11", "ap12",
+  "br10", "ca10",
+  "eu11"
 ]
 ```
 
@@ -658,15 +658,15 @@ This gives us the list we're looking for (minus the descriptive names):
 
 ```json
 [
-  'ae1',  'ap1',  'ap10', 'ap11',
-  'ap12', 'ap20', 'ap21', 'br1',
-  'br10', 'ca1',  'ca10', 'ch20',
-  'cn1',  'eu1',  'eu10', 'eu11',
-  'eu2',  'eu20', 'eu3',  'eu30',
-  'in30', 'jp1',  'jp10', 'jp20',
-  'sa1',  'us1',  'us10', 'us2',
-  'us20', 'us21', 'us3',  'us30',
-  'us4'
+  "ae1",  "ap1",  "ap10", "ap11",
+  "ap12", "ap20", "ap21", "br1",
+  "br10", "ca1",  "ca10", "ch20",
+  "cn1",  "eu1",  "eu10", "eu11",
+  "eu2",  "eu20", "eu3",  "eu30",
+  "in30", "jp1",  "jp10", "jp20",
+  "sa1",  "us1",  "us10", "us2",
+  "us20", "us21", "us3",  "us30",
+  "us4"
 ]
 ```
 
