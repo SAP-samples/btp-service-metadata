@@ -109,5 +109,17 @@
     {
       "value": "LOD-CBS-CS"
     }
+  ],
+  "apis": [
+    {
+      "name": "Market Data Download",
+      "url": "https://api.sap.com/api/DownloadAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Market Rates Upload",
+      "url": "https://api.sap.com/api/UploadAPI/overview",
+      "apiType": "RESTful"
+    }
   ]
 }

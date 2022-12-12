@@ -443,5 +443,27 @@
     {
       "value": "BC-XS-SEC"
     }
+  ],
+  "apis": [
+    {
+      "name": "Authorization",
+      "url": "https://api.sap.com/api/AuthorizationAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "User Management (System for Cross-domain Identity Management (SCIM))",
+      "url": "https://api.sap.com/api/PlatformAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Security Settings",
+      "url": "https://api.sap.com/api/SecuritySettingsAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Identity Provider Management",
+      "url": "https://api.sap.com/api/TrustConfigurationAPI/overview",
+      "apiType": "RESTful"
+    }
   ]
 }

@@ -60,5 +60,37 @@
     {
       "value": "CEC-BAF-DOM"
     }
+  ],
+  "apis": [
+    {
+      "name": "Business Configuration",
+      "url": "https://api.sap.com/api/BusinessConfiguration/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Business Partners",
+      "url": "https://api.sap.com/api/BusinessPartnerAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Orchestration",
+      "url": "https://api.sap.com/api/Orchestration/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Order Activities",
+      "url": "https://api.sap.com/api/OrderActivity/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Orders",
+      "url": "https://api.sap.com/api/OrderManagementV2/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Products",
+      "url": "https://api.sap.com/api/Product/overview",
+      "apiType": "RESTful"
+    }
   ]
 }

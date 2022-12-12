@@ -138,5 +138,62 @@
     {
       "value": "LOD-GDP-IL"
     }
+  ],
+  "apis": [
+    {
+      "name": "Application Repository",
+      "url": "https://api.sap.com/api/applicationRepository/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Business Context Configuration Management",
+      "url": "https://api.sap.com/api/businessContextConfiguration/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Business Context Record Management",
+      "url": "https://api.sap.com/api/businessContextRecord/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Business Purpose",
+      "url": "https://api.sap.com/api/businessPurpose/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Business Purpose and Rules Management",
+      "url": "https://api.sap.com/api/businessPurposeRules/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Archive and Destruction",
+      "url": "https://api.sap.com/api/dataSubjectArchiveAndDestruction/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Data Subject Deletion",
+      "url": "https://api.sap.com/api/dataSubjectDeletion/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Data subject deletion request",
+      "url": "https://api.sap.com/api/dataSubjectDeletionRequest/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Export Request",
+      "url": "https://api.sap.com/api/exportRequest/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Inbox Request",
+      "url": "https://api.sap.com/api/inboxRequestRepository/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Information",
+      "url": "https://api.sap.com/api/information/overview",
+      "apiType": "RESTful"
+    }
   ]
 }
