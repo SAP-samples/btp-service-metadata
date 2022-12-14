@@ -217,7 +217,201 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "emname": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]{1,100}$",
+                  "description": "It specifies the name of the message client. emname is used in the Event Mesh business application to identify message clients with ease."
+                },
+                "namespace": {
+                  "type": "string",
+                  "description": "It ensures that every message client within a subaccount is unique. The queues managed by the message client and topics used to publish by the message client have the namespace as prefix. Exactly three (firstSegment/secondSegment/thirdSegment)",
+                  "example": [
+                    "default/sap.myapp/1"
+                  ]
+                },
+                "version": {
+                  "type": "string",
+                  "pattern": "^1.0.0|1.1.0$",
+                  "description": "It specifies the version of the service descriptor."
+                },
+                "resources": {
+                  "type": "object",
+                  "description": "Resource Units is a collection of messaging resources such as queues, connections, and so on, required for a message client. You can specify this value in the service descriptor to allocate messaging resources based a specific business scenario.",
+                  "properties": {
+                    "units": {
+                      "type": "string",
+                      "default": "10",
+                      "pattern": "^([1-9][0-9]?[0-9]?[0-9])$"
+                    }
+                  },
+                  "required": [
+                    "units"
+                  ]
+                },
+                "options": {
+                  "type": "object",
+                  "description": "It\u2019s used to define the privileges and access channels for a message client.",
+                  "properties": {
+                    "management": {
+                      "type": "boolean",
+                      "default": false
+                    },
+                    "messagingrest": {
+                      "type": "boolean",
+                      "default": false
+                    },
+                    "messaging": {
+                      "type": "boolean",
+                      "default": true
+                    }
+                  },
+                  "required": [
+                    "management",
+                    "messagingrest",
+                    "messaging"
+                  ]
+                },
+                "rules": {
+                  "type": "object",
+                  "description": "It defines the publish or consume privileges for a message client.",
+                  "properties": {
+                    "topicRules": {
+                      "type": "object",
+                      "properties": {
+                        "publishFilter": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string",
+                              "pattern": "[a-zA-Z*+/]",
+                              "example": [
+                                "${namespace}/foo/bar/*",
+                                "${namespace}/*",
+                                "${namespace}/?",
+                                "${namespace}/+"
+                              ]
+                            }
+                          ]
+                        },
+                        "subscribeFilter": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string",
+                              "pattern": "[a-zA-Z*+/]",
+                              "example": [
+                                "${namespace}/foo/bar/*",
+                                "${namespace}/*",
+                                "${namespace}/+",
+                                "+/+/+/foo/bar/*"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "publishFilter",
+                        "subscribeFilter"
+                      ]
+                    },
+                    "queueRules": {
+                      "type": "object",
+                      "properties": {
+                        "publishFilter": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string",
+                              "pattern": "[a-zA-Z*+/]",
+                              "example": [
+                                "${namespace}/foo/bar/*",
+                                "${namespace}/*",
+                                "${namespace}/+"
+                              ]
+                            }
+                          ]
+                        },
+                        "subscribeFilter": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string",
+                              "pattern": "[a-zA-Z*+/]",
+                              "example": [
+                                "${namespace}/foo/bar/*",
+                                "${namespace}/*",
+                                "${namespace}/+"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "publishFilter",
+                        "subscribeFilter"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "topicRules",
+                    "queueRules"
+                  ]
+                },
+                "authorities": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string",
+                      "pattern": "[a-zA-Z0-9.,_()$|\\-!]+$"
+                    }
+                  ]
+                },
+                "xs-security": {
+                  "type": "object",
+                  "description": "The xs-security object is used to configure XSUAA-related properties, for example, the supported credential-types for an instance. The first credential-type in the array is set as default. ",
+                  "properties": {
+                    "oauth2-configuration": {
+                      "type": "object",
+                      "properties": {
+                        "credential-types": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string",
+                              "example": "x509"
+                            },
+                            {
+                              "type": "string",
+                              "example": "binding-secret"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "credential-types"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "oauth2-configuration"
+                  ]
+                }
+              },
+              "required": [
+                "emname",
+                "namespace"
+              ]
+            }
+          }
+        }
+      }
     },
     {
       "name": "event-mesh-connectivity",
