@@ -1,0 +1,73 @@
+{
+  "name": "sap-build-apps-runtime",
+  "displayName": "SAP Build Apps runtime service",
+  "description": "SAP Build Apps runtime internal reuse service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AMxRDPWxzLESb8QEEmescBY26QaJbWiu-0RFQhzSbTerLLraYa-XX3oAiRKEcuEU.svg",
+  "links": [
+    {
+      "value": "https://docs.appgyver.com/docs/onboarding",
+      "classification": "Onboarding",
+      "type": "Link",
+      "text": "Tutorial: Onboarding"
+    },
+    {
+      "value": "https://support.sap.com/",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support At SAP"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-build-apps",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP Build Apps"
+    },
+    {
+      "value": "https://help.sap.com/doc/2acecfb777684ce5a0a8a75fd78caffb/Latest/en-US/2a23b2bcd9084d83b9a8e76b2d1b4372.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BUILD_APPS",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/docs/BUILD_APPS/431746e4c663458aa68d9754b237bfc6/daece9f87abf4f7187a14ae0b1f8b2ab.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Build Apps"
+    },
+    {
+      "value": "https://quota-calculator.eu10.apps.build.cloud.sap/",
+      "classification": "Calculator",
+      "type": "Link",
+      "text": "SAP Build Apps Quota Estimator"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Standard plan for SAP Build Apps runtime internal",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}
