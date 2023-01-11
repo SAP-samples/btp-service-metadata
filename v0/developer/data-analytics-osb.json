@@ -210,8 +210,13 @@
   "supportComponents": [],
   "apis": [
     {
-      "name": "Catalog & Consumption",
-      "url": "https://api.sap.com/api/ODataAPI/overview",
+      "name": "Catalog",
+      "url": "https://api.sap.com/api/Catalog/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Consumption",
+      "url": "https://api.sap.com/api/Consumption/overview",
       "apiType": "OData V2"
     }
   ]
