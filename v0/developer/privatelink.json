@@ -188,7 +188,7 @@
                 "cosmosDb": {
                   "description": "Specifies CosmosDB-specific creation parameters.",
                   "properties": {
-                    "regions:": {
+                    "regions": {
                       "description": "Specifies the regions a CosmosDB instance is geo-replicated in to enable Private Endpoint connections to them.",
                       "items": {
                         "type": "string"
