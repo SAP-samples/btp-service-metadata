@@ -169,7 +169,66 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_show_form_view": true,
+              "additionalProperties": false,
+              "type": "object",
+              "properties": {
+                "roles": {
+                  "title": "roles",
+                  "description": "List of Roles for Current Instance",
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "Admin",
+                      "Read",
+                      "Import",
+                      "Export",
+                      "Activities"
+                    ]
+                  },
+                  "default": [
+                    "Admin"
+                  ]
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_show_form_view": true,
+              "additionalProperties": false,
+              "type": "object",
+              "properties": {
+                "roles": {
+                  "title": "roles",
+                  "description": "List of Roles for Current Instance",
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "Admin",
+                      "Read",
+                      "Import",
+                      "Export",
+                      "Activities"
+                    ]
+                  },
+                  "default": [
+                    "Admin"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
     },
     {
       "name": "standard",
@@ -256,7 +315,54 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_show_form_view": true,
+              "additionalProperties": false,
+              "type": "object",
+              "properties": {
+                "roles": {
+                  "title": "roles",
+                  "description": "List of Roles for Current Instance",
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "const": "Assemble"
+                  },
+                  "default": [
+                    "Assemble"
+                  ]
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_show_form_view": true,
+              "additionalProperties": false,
+              "type": "object",
+              "properties": {
+                "roles": {
+                  "title": "roles",
+                  "description": "List of Roles for Current Instance",
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "const": "Assemble"
+                  },
+                  "default": [
+                    "Assemble"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
     }
   ],
   "supportComponents": [
