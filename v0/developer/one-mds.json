@@ -103,7 +103,7 @@
               "type": "object",
               "properties": {
                 "businessSystemId": {
-                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
                   "type": "string",
                   "pattern": "^.{1,60}$"
                 },
@@ -128,6 +128,11 @@
                   "description": "The logical system.",
                   "type": "string",
                   "pattern": "^.{1,10}$"
+                },
+                "globalTenantId": {
+                  "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                 }
               }
             }
@@ -138,7 +143,7 @@
               "type": "object",
               "properties": {
                 "businessSystemId": {
-                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
                   "type": "string",
                   "pattern": "^.{1,60}$"
                 },
@@ -163,6 +168,11 @@
                   "description": "The logical system.",
                   "type": "string",
                   "pattern": "^.{1,10}$"
+                },
+                "globalTenantId": {
+                  "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                 }
               }
             }
@@ -207,7 +217,7 @@
               "type": "object",
               "properties": {
                 "businessSystemId": {
-                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
                   "type": "string",
                   "pattern": "^.{1,60}$"
                 },
@@ -232,6 +242,11 @@
                   "description": "The logical system.",
                   "type": "string",
                   "pattern": "^.{1,10}$"
+                },
+                "globalTenantId": {
+                  "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                 },
                 "application": {
                   "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"s4\", \"cpq\", sfsf\".",
@@ -259,7 +274,7 @@
               "type": "object",
               "properties": {
                 "businessSystemId": {
-                  "description": "Name to be displayed in Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+                  "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
                   "type": "string",
                   "pattern": "^.{1,60}$"
                 },
@@ -284,6 +299,11 @@
                   "description": "The logical system.",
                   "type": "string",
                   "pattern": "^.{1,10}$"
+                },
+                "globalTenantId": {
+                  "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                 },
                 "application": {
                   "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"s4\", \"cpq\", sfsf\".",
