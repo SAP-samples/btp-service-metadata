@@ -29,13 +29,19 @@
       "text": "Feature Scope Description"
     },
     {
-      "value": "https%3A%2F%2Fwww.sap.com%2Fdocuments%2F2021%2F09%2F7476f8c4-f77d-0010-bca6-c68f7e60039b.html",
+      "value": "https://community.sap.com/topics/hana-cloud",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP HANA Cloud Community"
+    },
+    {
+      "value": "https://www.sap.com/documents/2021/09/7476f8c4-f77d-0010-bca6-c68f7e60039b.html",
       "classification": "Onboarding",
       "type": "Link",
       "text": "SAP HANA Cloud Onboarding Guide"
     },
     {
-      "value": "https%3A%2F%2Fwww.youtube.com%2Fplaylist%3Flist%3DPLkzo92owKnVzONfsNdQNmpPQvUT54UUAL",
+      "value": "https://www.youtube.com/playlist?list=PLkzo92owKnVzONfsNdQNmpPQvUT54UUAL",
       "classification": "Tutorial",
       "type": "Link",
       "text": "SAP HANA Cloud tutorials provided by SAP HANA Academy"
@@ -696,6 +702,25 @@
                       },
                       "type": "object"
                     },
+                    "databaseMappings": {
+                      "items": {
+                        "properties": {
+                          "organization_guid": {
+                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+                            "type": "string"
+                          },
+                          "space_guid": {
+                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "organization_guid",
+                          "space_guid"
+                        ],
+                        "type": "object"
+                      }
+                    },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
                       "enum": [
@@ -798,7 +823,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16384,
+                      "maximum": 16000,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -1042,7 +1067,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16384,
+                      "maximum": 16000,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -1522,6 +1547,25 @@
                       },
                       "type": "object"
                     },
+                    "databaseMappings": {
+                      "items": {
+                        "properties": {
+                          "organization_guid": {
+                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+                            "type": "string"
+                          },
+                          "space_guid": {
+                            "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "organization_guid",
+                          "space_guid"
+                        ],
+                        "type": "object"
+                      }
+                    },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
                       "enum": [
@@ -1624,7 +1668,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16384,
+                      "maximum": 16000,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -1868,7 +1912,7 @@
                     "storage": {
                       "description": "Size of the Storage in GB",
                       "format": "int64",
-                      "maximum": 16384,
+                      "maximum": 16000,
                       "minimum": 120,
                       "type": "integer"
                     },
@@ -2533,9 +2577,6 @@
                     "template_name": {
                       "type": "string"
                     },
-                    "template_subaccount": {
-                      "type": "string"
-                    },
                     "updateStrategy": {
                       "description": "Preferred behaviour for iq version upgrade",
                       "enum": [
@@ -3066,6 +3107,23 @@
                         "2xlarge"
                       ]
                     },
+                    "requestedOperation": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "arguments": {
+                          "additionalProperties": false,
+                          "description": "List of operation arguments",
+                          "properties": {},
+                          "type": "object"
+                        },
+                        "name": {
+                          "description": "Update operation",
+                          "const": "none",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "serviceStopped": {
                       "description": "Describes if the system should be running or stopped",
                       "type": "boolean"
@@ -3578,9 +3636,6 @@
                     "template_name": {
                       "type": "string"
                     },
-                    "template_subaccount": {
-                      "type": "string"
-                    },
                     "updateStrategy": {
                       "description": "Preferred behaviour for iq version upgrade",
                       "enum": [
@@ -3984,6 +4039,23 @@
                     "reader_type": {
                       "description": "Node size for IQ readers.",
                       "const": "small"
+                    },
+                    "requestedOperation": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "arguments": {
+                          "additionalProperties": false,
+                          "description": "List of operation arguments",
+                          "properties": {},
+                          "type": "object"
+                        },
+                        "name": {
+                          "description": "Update operation",
+                          "const": "none",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
                     },
                     "serviceStopped": {
                       "description": "Describes if the system should be running or stopped",

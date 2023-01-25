@@ -1,7 +1,7 @@
 {
   "name": "sap-build-apps",
   "displayName": "SAP Build Apps",
-  "description": "SAP Build Apps is a full stack no-code development platform for creating Web and native mobile applications.",
+  "description": "SAP Build Apps is a full stack no-code development platform for creating Web and native mobile applications. Please note that an instance of Cloud Identity Services is required to successfully create a subscription. See Documentation for more information.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AMxRDPWxzLESb8QEEmescBY26QaJbWiu-0RFQhzSbTerLLraYa-XX3oAiRKEcuEU.svg",
   "links": [
     {
@@ -44,7 +44,7 @@
       "value": "https://help.sap.com/docs/BUILD_APPS/431746e4c663458aa68d9754b237bfc6/39a35cf3447241509f4dbbd19a96dbc0.html",
       "classification": "Documentation",
       "type": "Link",
-      "text": "Onboarding"
+      "text": "Initial Setup"
     },
     {
       "value": "https://help.sap.com/docs/BUILD_APPS/431746e4c663458aa68d9754b237bfc6/daece9f87abf4f7187a14ae0b1f8b2ab.html",
@@ -53,10 +53,28 @@
       "text": "What is SAP Build Apps"
     },
     {
-      "value": "https%3A%2F%2Fsupport.sap.com%2F",
+      "value": "https://community.sap.com/topics/build-apps?ct=blog&lng=en&tab=content",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "Community Content"
+    },
+    {
+      "value": "https://groups.community.sap.com/t5/sap-builders-blog-posts/announcing-the-sap-build-apps-sandbox/ba-p/128821",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "SAP Build Apps Sandbox"
+    },
+    {
+      "value": "https://support.sap.com/",
       "classification": "Support",
       "type": "Link",
       "text": "Support At SAP"
+    },
+    {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=SAP%20Build%20Apps",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
     }
   ],
   "servicePlans": [
