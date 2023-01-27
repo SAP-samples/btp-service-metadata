@@ -1,7 +1,7 @@
 {
   "name": "personal-data-manager-service",
   "displayName": "SAP Personal Data Manager",
-  "description": "SAP Personal Data Manager provides the capability to generate reports showing the personal data stored in an application point of view with the help of a CSR. The reports can be generated and exported either in machine readable form (JSON) or human readable form (PDF). Data subjects can request the correction and deletion of personal data that is stored in an application point of view.",
+  "description": "Manage requests and inform data subjects about their personal data in processing.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/uUrOrPIBknhf8h7-SQkvnzgFaymU7GsT-XHnDA5K1EgUtqKvvEB2Fymn_cYp12fJ.svg",
   "links": [
     {
@@ -59,12 +59,6 @@
       "text": "User Guide"
     },
     {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
-    },
-    {
       "value": "https://www.youtube.com/embed/CJmG-Xu0jzA",
       "classification": "External",
       "type": "Link",
@@ -76,7 +70,7 @@
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Free Plan",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

@@ -1,7 +1,7 @@
 {
   "name": "hana-cloud",
   "displayName": "SAP HANA Cloud",
-  "description": "SAP HANA Cloud provides a single place to access, store, and process all enterprise data in real time. It is a cloud-native platform that reduces the complexity of multi-cloud or hybrid system landscapes. SAP HANA Cloud provides all of the advanced SAP HANA technologies for multi-model data processing in-memory or on disk. You can benefit from cloud qualities such as automatic software updates, elasticity, and low total cost of ownership by using SAP HANA Cloud either as a stand-alone solution or as an extension to your existing on-premise environment.",
+  "description": "Leverage the in-memory data processing capabilities of SAP HANA in the cloud as one simple gateway",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/A7DWYBoYRuGw8xwQHjaHxjl4FaZshKHVUj4ILho_vgFCzv1PAPWpWSuMpbT9qRvI.svg",
   "links": [
     {
@@ -48,9 +48,9 @@
     },
     {
       "value": "https://help.sap.com/viewer/db19c7071e5f4101837e23f06e576495/cloud/en-US/4f8dabb4d8214d5d93b98dd5f2ad76c9.html",
-      "classification": "Support",
+      "classification": "Documentation",
       "type": "Link",
-      "text": "Support"
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/db19c7071e5f4101837e23f06e576495/cloud/en-US/d0aa0ec935c1401e8deb3be35d49730b.html",
@@ -75,18 +75,6 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "SAP HANA Cloud, Data Lake (Help Portal Product Page)"
-    },
-    {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
-    },
-    {
-      "value": "https://www.sap.com/products/cloud-platform/capabilities/data-driven-insights.hana-cloud.html",
-      "classification": "Marketing",
-      "type": "Link",
-      "text": "Learn more about this service and how to purchase it."
     },
     {
       "value": "https://www.youtube.com/embed/fpFsSdijpcE",
@@ -808,6 +796,9 @@
                       },
                       "type": "object"
                     },
+                    "project_name": {
+                      "type": "string"
+                    },
                     "serviceStopped": {
                       "description": "Describes if the system should be running or stopped",
                       "type": "boolean"
@@ -830,6 +821,9 @@
                     "systempassword": {
                       "description": "Password to be set for tenant",
                       "minLength": 8,
+                      "type": "string"
+                    },
+                    "template_name": {
                       "type": "string"
                     },
                     "update_strategy": {
@@ -1020,6 +1014,9 @@
                               "type": "string"
                             },
                             "initial_source_az": {
+                              "type": "string"
+                            },
+                            "project_name": {
                               "type": "string"
                             },
                             "secondary_az": {
@@ -1303,7 +1300,7 @@
       "name": "hana-cloud-connection-free",
       "displayName": "hana-cloud-connection-free",
       "category": "SERVICE",
-      "description": "Connection between SAP HANA Cloud services. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Connection between SAP HANA Cloud services for free tier version",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -1442,7 +1439,7 @@
       "name": "hana-free",
       "displayName": "hana-free",
       "category": "SERVICE",
-      "description": "SAP HANA in-memory database. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "SAP HANA in-memory database free tier version",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -1653,6 +1650,9 @@
                       },
                       "type": "object"
                     },
+                    "project_name": {
+                      "type": "string"
+                    },
                     "serviceStopped": {
                       "description": "Describes if the system should be running or stopped",
                       "type": "boolean"
@@ -1675,6 +1675,9 @@
                     "systempassword": {
                       "description": "Password to be set for tenant",
                       "minLength": 8,
+                      "type": "string"
+                    },
+                    "template_name": {
                       "type": "string"
                     },
                     "update_strategy": {
@@ -1867,6 +1870,9 @@
                             "initial_source_az": {
                               "type": "string"
                             },
+                            "project_name": {
+                              "type": "string"
+                            },
                             "secondary_az": {
                               "type": "string"
                             },
@@ -1989,7 +1995,7 @@
       "name": "relational-data-lake",
       "displayName": "relational-data-lake",
       "category": "SERVICE",
-      "description": "SAP HANA Cloud, data lake",
+      "description": "SAP HANA Cloud, relational data lake",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -2538,9 +2544,6 @@
                       "minimum": 1,
                       "type": "integer"
                     },
-                    "project_name": {
-                      "type": "string"
-                    },
                     "provisioned_size_gib": {
                       "description": "Size of IQ persistence in GB",
                       "maximum": 92160,
@@ -2572,9 +2575,6 @@
                     "systempassword": {
                       "description": "Password to be set for tenant",
                       "minLength": 6,
-                      "type": "string"
-                    },
-                    "template_name": {
                       "type": "string"
                     },
                     "updateStrategy": {
@@ -3188,7 +3188,7 @@
       "name": "relational-data-lake-free",
       "displayName": "relational-data-lake-free",
       "category": "SERVICE",
-      "description": "SAP HANA Cloud, data lake. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "SAP HANA Cloud, relational data lake free tier version",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -3603,9 +3603,6 @@
                       "minimum": 1,
                       "type": "integer"
                     },
-                    "project_name": {
-                      "type": "string"
-                    },
                     "provisioned_size_gib": {
                       "description": "Size of IQ persistence in GB",
                       "maximum": 256,
@@ -3631,9 +3628,6 @@
                     "systempassword": {
                       "description": "Password to be set for tenant",
                       "minLength": 6,
-                      "type": "string"
-                    },
-                    "template_name": {
                       "type": "string"
                     },
                     "updateStrategy": {

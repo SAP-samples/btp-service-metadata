@@ -1,7 +1,7 @@
 {
   "name": "postgresql-db",
   "displayName": "PostgreSQL on SAP BTP, hyperscaler option",
-  "description": "The PostgreSQL service on SAP BTP provides a way to directly consume the PostgreSQL service provided by the infrastructure providers such as AWS and Azure.",
+  "description": "PostgreSQL service on SAP Business Technology Platform",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/lSqKCQZ9_NirMKUww2rIEzTn9DVMPHOtTnLGTlxxQYfqvZn_MnZ5WgVjx5mu643x.svg",
   "servicePlans": [
     {
@@ -62,7 +62,7 @@
       "name": "premium",
       "displayName": "premium",
       "category": "SERVICE",
-      "description": "Premium PostgreSQL service offering",
+      "description": "PostgreSQL service for large scale productive usage",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -149,7 +149,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard PostgreSQL service offering",
+      "description": "PostgreSQL service for small scale productive usage",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [

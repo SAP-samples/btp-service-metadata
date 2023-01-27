@@ -1,14 +1,14 @@
 {
   "name": "sdm-repository",
   "displayName": "SAP Document Management service",
-  "description": "Use a CMIS complaint repository provided internally with all SAP Document Management service capabilities.",
+  "description": "Use a CMIS complaint repository provided internally with all Document Management capabilities.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/hTJVPoDjoBxUa91sFIWI6LBd27nJ3NXuMm_E8jHwnOLJDC87w68zUTn9OF53Vv8o.svg",
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "free",
+      "displayName": "Document Management, Repository option",
       "category": "SERVICE",
-      "description": "Storage in 1 GB Block. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Storage in 1GB block",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -85,9 +85,9 @@
     },
     {
       "name": "standard",
-      "displayName": "standard",
+      "displayName": "Document Management, Repository option",
       "category": "SERVICE",
-      "description": "Storage in 100 GB Blocks.",
+      "description": "Storage in 100GB blocks",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

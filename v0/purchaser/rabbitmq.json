@@ -1,14 +1,14 @@
 {
   "name": "rabbitmq",
   "displayName": "RabbitMQ",
-  "description": "RabbitMQ on SAP BTP includes a message broker that implements message queues for application-to-application messaging. Supports Advanced Message Queuing Protocol (AMQP).",
+  "description": "RabbitMQ",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mNVZx-E9GHSdgpTG5TmxbrurHmgvp1f4QrlLni5ak-sDY98ooPWVmAilZG7Mwptp.svg",
   "servicePlans": [
     {
       "name": "large",
-      "displayName": "large",
+      "displayName": "RabbitMQ",
       "category": "SERVICE",
-      "description": "RabbitMQ service - multi-node large plan with load balancing",
+      "description": "RabbitMQ",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -97,9 +97,9 @@
     },
     {
       "name": "medium",
-      "displayName": "medium",
+      "displayName": "RabbitMQ",
       "category": "SERVICE",
-      "description": "RabbitMQ service - multi-node medium plan with load balancing",
+      "description": "RabbitMQ",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -188,9 +188,9 @@
     },
     {
       "name": "small",
-      "displayName": "small",
+      "displayName": "RabbitMQ",
       "category": "SERVICE",
-      "description": "RabbitMQ service - multi-node small plan with load balancing",
+      "description": "RabbitMQ",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -279,9 +279,9 @@
     },
     {
       "name": "virtualhost",
-      "displayName": "virtualhost",
+      "displayName": "RabbitMQ service - virtualhost plan",
       "category": "SERVICE",
-      "description": "[BETA] RabbitMQ service - virtual host plan within an existing RabbitMQ service instance (for non-productive usage)",
+      "description": "RabbitMQ service - virtualhost plan",
       "isFree": true,
       "isBeta": true,
       "dataCenters": [
@@ -330,9 +330,9 @@
     },
     {
       "name": "xsmall",
-      "displayName": "xsmall",
+      "displayName": "RabbitMQ",
       "category": "SERVICE",
-      "description": "RabbitMQ service - multi-node x-small plan without load balancing",
+      "description": "RabbitMQ",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

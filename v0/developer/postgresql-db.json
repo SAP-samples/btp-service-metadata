@@ -1,7 +1,7 @@
 {
   "name": "postgresql-db",
   "displayName": "PostgreSQL on SAP BTP, hyperscaler option",
-  "description": "The PostgreSQL service on SAP BTP provides a way to directly consume the PostgreSQL service provided by the infrastructure providers such as AWS and Azure.",
+  "description": "PostgreSQL service on SAP Business Technology Platform",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/lSqKCQZ9_NirMKUww2rIEzTn9DVMPHOtTnLGTlxxQYfqvZn_MnZ5WgVjx5mu643x.svg",
   "links": [
     {
@@ -35,12 +35,6 @@
       "text": "Feature Scope Description"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
-    },
-    {
       "value": "https://help.sap.com/viewer/b3fe3621fa4a4ed28d7bbe3d6d88f036/Cloud/en-US",
       "classification": "Documentation",
       "type": "Link",
@@ -63,12 +57,6 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Find the Right Guide"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/c92112ee69784c3383a0fb8361156a6f/b045b64925a544689dd839266a23c89b.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/product/PostgreSQL/Cloud/en-US",
@@ -182,7 +170,7 @@
       "name": "premium",
       "displayName": "premium",
       "category": "SERVICE",
-      "description": "Premium PostgreSQL service offering",
+      "description": "PostgreSQL service for large scale productive usage",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -471,7 +459,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard PostgreSQL service offering",
+      "description": "PostgreSQL service for small scale productive usage",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [

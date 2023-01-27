@@ -1,7 +1,7 @@
 {
   "name": "cis",
   "displayName": "SAP Cloud Management service for SAP BTP",
-  "description": "Manage the control plane, account model, and product resources in SAP BTP using supported API interfaces provided by the SAP Cloud Management service for SAP BTP.",
+  "description": "Manage the control plane, account model, and product resources in SAP BTP using supported API interfaces.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jiuFwsd8jXs3SD2eIAuhawQrmNn6J7b8a7lzb8putVFzZZv9Dz2TGHahnojBXY1H.svg",
   "links": [
     {
@@ -86,9 +86,9 @@
   "servicePlans": [
     {
       "name": "central",
-      "displayName": "central",
+      "displayName": "Central",
       "category": "SERVICE",
-      "description": "Service plan for using Cloud Management service APIs to manage your global accounts, subaccounts, directories, and entitlements.",
+      "description": "Service plan for using Cloud Management APIs to manage your global accounts, subaccounts, directories, and entitlements.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -224,9 +224,9 @@
     },
     {
       "name": "local",
-      "displayName": "local",
+      "displayName": "Local",
       "category": "SERVICE",
-      "description": "Service plan for using Cloud Management service APIs to manage your environments and subscriptions to multitenant applications.",
+      "description": "Service plan for using Cloud Management APIs to manage your environments and subscriptions to multitenant applications.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

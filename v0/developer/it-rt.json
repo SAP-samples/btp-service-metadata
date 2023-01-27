@@ -1,15 +1,9 @@
 {
   "name": "it-rt",
   "displayName": "Process Integration Runtime",
-  "description": "Provides access to SAP Business Technology Platform Integration runtime (integration flows) and APIs.",
+  "description": "Provides access to SAP Cloud Integration runtime (integration flows) and APIs",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v5uV3ilFJzWpwPxBO1OZ06s5uBTY-JDK3yfeiRldCbDMHGSbed-5xF7DUN79BPei.svg",
   "links": [
-    {
-      "value": "https://cloudintegration.hana.ondemand.com/PI/help",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
-    },
     {
       "value": "https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/19af5e205fe14af6a4f8a9fd80d4dc92.html",
       "classification": "Documentation",
@@ -32,9 +26,9 @@
   "servicePlans": [
     {
       "name": "api",
-      "displayName": "api",
+      "displayName": "Process Integration API access",
       "category": "SERVICE",
-      "description": "Provides access to public APIs of SAP Business Technology Platform Integration",
+      "description": "Provides access to public APIs of SAP Cloud Integration",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -386,9 +380,9 @@
     },
     {
       "name": "integration-flow",
-      "displayName": "integration-flow",
+      "displayName": "Process Integration Flow access",
       "category": "SERVICE",
-      "description": "Creates an OAuth client which provides access to integration flows on the SAP Business Technology Platform Integration runtime",
+      "description": "Creates an OAuth client which provides access to integration flows on the SAP Cloud Integration runtime",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
