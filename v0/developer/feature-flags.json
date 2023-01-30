@@ -1,7 +1,7 @@
 {
   "name": "feature-flags",
   "displayName": "SAP Feature Flags service",
-  "description": "Control the rollout of new features.",
+  "description": "The Feature Flags service allows you to enable or disable new features at runtime without redeploying or restarting the application. You can use feature flags to control code delivery, synchronized rollout, direct shipment, and fast rollback of features.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/oP5CP7GZm7itTemEu-eUv_Yw0_KXSB_IJgZA4AcawEbVj8LNHub9_eNV-Di6lXAi.svg",
   "links": [
     {
@@ -72,9 +72,9 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Documentation",
+      "classification": "Support",
       "type": "Link",
-      "text": "Documentation"
+      "text": "Support"
     },
     {
       "value": "https://help.sap.com/docs/FEATURE_FLAGS",
@@ -86,7 +86,7 @@
   "servicePlans": [
     {
       "name": "lite",
-      "displayName": "Lite",
+      "displayName": "lite",
       "category": "SERVICE",
       "description": "Feature Flags service development plan (for non-productive usage)",
       "isFree": true,
@@ -173,7 +173,7 @@
     },
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "SERVICE",
       "description": "Feature Flags service standard plan",
       "isFree": true,

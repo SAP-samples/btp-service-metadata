@@ -23,7 +23,7 @@
   {
     "technicalId": "ads",
     "displayName": "SAP Forms service by Adobe",
-    "description": "SAP Forms service by Adobe lets you generate print and interactive forms using Adobe Document Services (ADS). Call the service from your application using a REST API for rendering documents and for managing form templates in the template store. Configure ADS and access the template store via service-offered UIs. To use Forms service by Adobe, you must subscribe to the application (ads-configui) and set entitlements to both, the ADS (ads) and the REST API template store (adsrestapi) service. In the Service Marketplace, find all two tiles easily by entering 'adobe' into the search field.",
+    "description": "Generate print and interactive forms using Adobe Document Services.",
     "fileName": "ads.json",
     "category": "SERVICE"
   },
@@ -128,7 +128,7 @@
   {
     "technicalId": "auditlog-management",
     "displayName": "SAP Audit Log Management service",
-    "description": "Retrieve the audit logs for your account.",
+    "description": "SAP Audit Log Management service helps to retrieve logs and change retention.",
     "fileName": "auditlog-management.json",
     "category": "SERVICE"
   },
@@ -184,7 +184,7 @@
   {
     "technicalId": "business-entity-recognition",
     "displayName": "Business Entity Recognition",
-    "description": "Detect and highlight entities from unstructured text using machine learning",
+    "description": "Business Entity Recognition helps you to detect and highlight any given type of named entity in unstructured text into pre-defined categories. You can use Business Entity Recognition, for example, to automatically extract the context from incoming emails with invoice inquiries, automating recurring tasks of answering to status and payment of invoices.",
     "fileName": "business-entity-recognition.json",
     "category": "SERVICE"
   },
@@ -205,7 +205,7 @@
   {
     "technicalId": "c4-distributed-order-management-app",
     "displayName": "SAP Order Management Foundation",
-    "description": "Consolidate and manage your orders and order-related data in a central solution",
+    "description": "The SAP Order Management foundation solution, including the application and service, provides order management functionality along with business configuration settings that allow you to create a customized solution. You can also integrate various systems and solutions to support your order management processes. This allows you to leverage, for example, your existing master data, order capture, and fulfillment systems while consolidating all of your orders and order-related data in a convenient cloud-based solution.",
     "fileName": "c4-distributed-order-management-app.json",
     "category": "APPLICATION"
   },
@@ -254,7 +254,7 @@
   {
     "technicalId": "cloudfoundry",
     "displayName": "SAP BTP, Cloud Foundry runtime",
-    "description": "The SAP BTP, Cloud Foundry runtime lets you develop polyglot cloud-native applications and run them on the SAP BTP Cloud Foundry environment.",
+    "description": "The Cloud Foundry environment enables you to develop new business applications and business services, supporting multiple runtimes, programming languages, libraries, and services. You can leverage a multitude of buildpacks, including community innovations and self-developed buildpacks.",
     "fileName": "cloudfoundry.json",
     "category": "ENVIRONMENT"
   },
@@ -443,7 +443,7 @@
   {
     "technicalId": "feature-flags",
     "displayName": "SAP Feature Flags service",
-    "description": "Control the rollout of new features.",
+    "description": "The Feature Flags service allows you to enable or disable new features at runtime without redeploying or restarting the application. You can use feature flags to control code delivery, synchronized rollout, direct shipment, and fast rollback of features.",
     "fileName": "feature-flags.json",
     "category": "SERVICE"
   },
@@ -639,7 +639,7 @@
   {
     "technicalId": "market-rates-byor",
     "displayName": "SAP Market Rates Management",
-    "description": "The Market Rates Management, Bring Your Own Rates data option allows you to upload and download your own market rates licensed from third party data providers",
+    "description": "Market Rates Management - Bring Your Own Rates Option",
     "fileName": "market-rates-byor.json",
     "category": "SERVICE"
   },
@@ -814,7 +814,7 @@
   {
     "technicalId": "objectstore",
     "displayName": "Object Store on SAP BTP",
-    "description": "Provides a bucket that applications can use to store and manage objects.",
+    "description": "Object Store on SAP BTP provisions an object storage space that can be used by applications to store and manage objects.",
     "fileName": "objectstore.json",
     "category": "SERVICE"
   },
@@ -870,7 +870,7 @@
   {
     "technicalId": "postgresql",
     "displayName": "PostgreSQL on SAP BTP",
-    "description": "PostgreSQL on SAP BTP offers an object-relational database management system with many advanced features, such as user-defined types, table inheritance, foreign key referential integrity, Multiversion Concurrency Control (MVCC), and so on.",
+    "description": "Relational database with an object-oriented model.",
     "fileName": "postgresql.json",
     "category": "SERVICE"
   },
@@ -1003,7 +1003,7 @@
   {
     "technicalId": "responsibilitymanagement-service",
     "displayName": "SAP Responsibility Management service",
-    "description": "Provides APIs for DetermineAgents using responsibility rules or external APIs(bring your own code) and AgentDeterminationRequest",
+    "description": "As we move toward an intelligent enterprise, intelligent systems need to determine agents who are responsible for business processes and objects, and automatically notify them. It is essential to define and manage these responsibilities for various contexts and retrieve responsible agents who can respond to tasks and activities.",
     "fileName": "responsibilitymanagement-service.json",
     "category": "SERVICE"
   },
@@ -1045,7 +1045,7 @@
   {
     "technicalId": "sap-build-apps",
     "displayName": "SAP Build Apps",
-    "description": "SAP Build Apps is a full stack no-code development platform for creating Web and native mobile applications. Please note that an instance of Cloud Identity Services is required to successfully create a subscription. See Documentation for more information.",
+    "description": "SAP Build Apps no-code development environment",
     "fileName": "sap-build-apps.json",
     "category": "SERVICE"
   },
@@ -1101,7 +1101,7 @@
   {
     "technicalId": "sapappstudio",
     "displayName": "SAP Business Application Studio",
-    "description": "SAP Business Application Studio is the next generation of SAP Web IDE, offering a modular development environment tailored for efficient development of business applications for the SAP Intelligent Enterprise. It provides pre-configured environments where you can develop, build, test and run using pre-installed runtimes and tools tailored for key scenarios such as: S/4HANA extensions, full stack business applications, Fiori applications and more. It supports quick integration with SAP solutions and services to allow building smarter and more intelligent applications.",
+    "description": "Develop, debug, test, and deploy SAP business applications.",
     "fileName": "sapappstudio.json",
     "category": "APPLICATION"
   },
@@ -1157,7 +1157,7 @@
   {
     "technicalId": "service-ticket-intelligence",
     "displayName": "Service Ticket Intelligence",
-    "description": "With Service Ticket Intelligence, incoming customers service tickets are automatically classified into their categories, and routed to the right agent. The agent is then provided with recommended solutions to improve operational efficiency. Service Ticket Intelligence leverages deep learning neural networks trained on large amounts of historical data. The model understands the semantics of unstructured ticket messages, classifies the ticket into their most likely categories and recommends solutions or knowledge base articles from similar previously answered tickets for the agent. With more processed service tickets and users feedback, the model improves over time.",
+    "description": "Build a self-driven customer service powered by machine learning with Service Ticket Intelligence",
     "fileName": "service-ticket-intelligence.json",
     "category": "SERVICE"
   },
@@ -1255,7 +1255,7 @@
   {
     "technicalId": "xfs-runtime",
     "displayName": "SAP BTP, serverless runtime",
-    "description": "Allows you to create, manage, configure extensions on SAP Cloud Platform",
+    "description": "Build, run, and manage your cloud extensions in a fully-managed environment",
     "fileName": "xfs-runtime.json",
     "category": "SERVICE"
   },
