@@ -1,7 +1,7 @@
 {
   "name": "kymaruntime",
   "displayName": "SAP BTP, Kyma runtime",
-  "description": "Kyma environment is a runtime you can use to build cloud-native Kubernetes-based applications by using microservices and serverless functions.",
+  "description": "SAP Business Technology Platform, Kyma runtime is a fully managed Kubernetes runtime based on the open-source project Kyma. This cloud-native solution allows the developers to extend SAP solutions with serverless Functions and combine them with containerized microservices. The offered functionality ensures smooth consumption of SAP and non-SAP applications, running workloads in a highly scalable environment, and building event- and API-based extensions.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/VESdFNPDVsKUx3gJ_-DpVM1CcgX6nPRU5uZYQzNlaNonA6lSr9X3qNznYIlEDG4U.svg",
   "links": [
     {
@@ -63,6 +63,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Security in the Kyma Environment"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
     }
   ],
   "servicePlans": [
@@ -142,9 +148,9 @@
     },
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "ENVIRONMENT",
-      "description": "Kyma Runtime Free",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

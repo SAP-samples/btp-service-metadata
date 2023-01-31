@@ -1,7 +1,7 @@
 {
   "name": "multichain",
   "displayName": "MultiChain on SAP BTP",
-  "description": "MultiChain",
+  "description": "The MultiChain service lets you create, delete, monitor and maintain individual MultiChain nodes and connect them to a blockchain network.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/0hui_y_k0NmOiioPAuKmmBXpr9g44g1Pt_T1Ecckkz_hE7PiZ_zgsKVyBo4FVj8k.svg",
   "links": [
     {
@@ -15,6 +15,12 @@
       "classification": "API Hub",
       "type": "Link",
       "text": "Overview | SAP Business Technology Platform - Blockchain Technologies | SAP API Business Hub"
+    },
+    {
+      "value": "https://cloudplatform.sap.com/dmp/capabilities/us/product/MultiChain-on-SAP-Cloud-Platform/c091cbd8-bb96-447a-81ca-5f5555996b02",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
     },
     {
       "value": "https://community.sap.com/search/?ct=blog&q=MultiChain%20on%20SAP%20BTP",
@@ -65,6 +71,12 @@
       "text": "Building a MultiChain Network"
     },
     {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
       "value": "https://help.sap.com/viewer/a420aed7df4343c29ce7587bbed77f11/BLOCKCHAIN/en-US",
       "classification": "Tutorial",
       "type": "Link",
@@ -86,9 +98,9 @@
   "servicePlans": [
     {
       "name": "cyon",
-      "displayName": "MultiChain",
+      "displayName": "cyon",
       "category": "SERVICE",
-      "description": "MultiChain",
+      "description": "Connect Your Own Network",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -105,9 +117,9 @@
     },
     {
       "name": "large",
-      "displayName": "MultiChain",
+      "displayName": "large",
       "category": "SERVICE",
-      "description": "MultiChain",
+      "description": "Large MultiChain Node",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -124,9 +136,9 @@
     },
     {
       "name": "medium",
-      "displayName": "MultiChain",
+      "displayName": "medium",
       "category": "SERVICE",
-      "description": "MultiChain",
+      "description": "Medium MultiChain Node",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -143,9 +155,9 @@
     },
     {
       "name": "small",
-      "displayName": "MultiChain",
+      "displayName": "small",
       "category": "SERVICE",
-      "description": "MultiChain",
+      "description": "Small MultiChain Node",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

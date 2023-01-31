@@ -1,7 +1,7 @@
 {
   "name": "ui5-flexibility-keyuser",
   "displayName": "UI5 flexibility for key users",
-  "description": "Add UI adaptation to your UI5 applications",
+  "description": "The UI5 flexibility service for key users lets you provide UI adaptation capabilites for your UI5 applications on Cloud Foundry. Users of your applications can change the user interface of your applications in an upgrade-safe and modification-free way, without affecting any other customer.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/nNCFqC8iTClDnsYPZYJGCLXKLux6AR4_0d0PN3_EsuNqePgjRhFTaiFQjFNq9Jjl.svg",
   "links": [
     {
@@ -71,6 +71,12 @@
       "text": "What's New"
     },
     {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
       "value": "https://www.youtube.com/embed/6_CQYtmRJNg",
       "classification": "External",
       "type": "Link",
@@ -86,9 +92,9 @@
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Free",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
