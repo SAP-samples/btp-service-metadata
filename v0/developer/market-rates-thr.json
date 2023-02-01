@@ -1,15 +1,9 @@
 {
   "name": "market-rates-thr",
-  "displayName": "Market Rates, Refinitiv",
-  "description": "The Market Rates Management, Refinitiv data option is a reuse service that allows you to import daily and historical Exchange Rates & Interest Rates from Refinitiv.",
+  "displayName": "Market Rates, Refinitiv ",
+  "description": "Market Rates, Refinitiv Standard plan",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jow9lmGQkRxhcKy--w91CdYbnPVa65LT880QPpRx2h6mB1PFglW0-sc2pItxx14s.svg",
   "links": [
-    {
-      "value": "https://api.sap.com/package/MarketRatesManagementAPI",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
-    },
     {
       "value": "https://api.sap.com/package/MarketRatesManagementAPI/overview",
       "classification": "API Hub",
@@ -21,6 +15,18 @@
       "classification": "Discovery Center",
       "type": "Link",
       "text": "SAP Discovery Center - Market Rates, Refinitiv"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_TR/9da8c81f87e0480fac3975cdd3182418/26d966512fb84183b6ecd8bdf3455542.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://api.sap.com/package/MarketRatesManagementAPI",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/9da8c81f87e0480fac3975cdd3182418/LATEST/en-US",
@@ -47,6 +53,12 @@
       "text": "Help Portal Product Page"
     },
     {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Market%20Rates,%20Refinitiv",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
       "value": "https://www.youtube.com/embed/h_0pIIPNhJY",
       "classification": "External",
       "type": "Link",
@@ -56,9 +68,9 @@
   "servicePlans": [
     {
       "name": "default",
-      "displayName": "default",
+      "displayName": "MRM - Thomson Reuters Data",
       "category": "SERVICE",
-      "description": "default plan",
+      "description": "MRM - Thomson Reuters Data",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

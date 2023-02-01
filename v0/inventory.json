@@ -23,7 +23,7 @@
   {
     "technicalId": "ads",
     "displayName": "SAP Forms service by Adobe",
-    "description": "SAP Forms service by Adobe lets you generate print and interactive forms using Adobe Document Services (ADS). Call the service from your application using a REST API for rendering documents and for managing form templates in the template store. Configure ADS and access the template store via service-offered UIs. To use Forms service by Adobe, you must subscribe to the application (ads-configui) and set entitlements to both, the ADS (ads) and the REST API template store (adsrestapi) service. In the Service Marketplace, find all two tiles easily by entering 'adobe' into the search field.",
+    "description": "Generate print and interactive forms using Adobe Document Services.",
     "fileName": "ads.json",
     "category": "SERVICE"
   },
@@ -65,7 +65,7 @@
   {
     "technicalId": "alm-ts",
     "displayName": "SAP Cloud Transport Management",
-    "description": "Cloud Transport Management Application",
+    "description": "SAP Cloud Transport Management service lets you manage software deliverables between accounts of different environments (such as Neo and Cloud Foundry), by transporting them across various runtimes. This includes application artifacts as well as their respective application-specific content.",
     "fileName": "alm-ts.json",
     "category": "APPLICATION"
   },
@@ -93,7 +93,7 @@
   {
     "technicalId": "apimanagement-apiportal",
     "displayName": "API Management, API portal",
-    "description": "API Management, API portal service drives innovation in modern business models. Based on APIs and digital assets, the service facilitates unified access from new channels and diverse user interfaces. This is possible by enabling developer communities to connect to your enterprise information and processes securely. Here, the access to backend services and complex landscapes are simplified with easy to consume APIs while protecting your systems from threats and overloaded access.",
+    "description": "API Management, API portal service drives innovation in modern business models. Based on APIs and digital assets, the service facilitates unified access from new channels and diverse user interfaces",
     "fileName": "apimanagement-apiportal.json",
     "category": "SERVICE"
   },
@@ -142,7 +142,7 @@
   {
     "technicalId": "automationpilot",
     "displayName": "SAP Automation Pilot",
-    "description": "SAP Automation Pilot provides out-of-the-box high-quality automation such as application restarts and reconfigurations, database restarts and updates, application and database health statuses, RCA, recommended actions, and more. Complex DevOps tasks are made simple without the need of having deep SAP Business Technology Platform knowledge. In addition, recommended actions are automated by using the SAP Alert Notification service for SAP BTP (sophisticated integration to immediately react on incoming alerts) or any other alerting system.",
+    "description": "Automation Pilot",
     "fileName": "automationpilot.json",
     "category": "APPLICATION"
   },
@@ -163,14 +163,14 @@
   {
     "technicalId": "blockchain-services",
     "displayName": "Blockchain Application Enablement",
-    "description": "Deliver blockchain-based services on any connected blockchain network.",
+    "description": "Blockchain Application Enablement",
     "fileName": "blockchain-services.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "build-workzone-advanced",
     "displayName": "SAP Build Work Zone, advanced edition",
-    "description": "Centralizes access to relevant business applications, processes, information, and communication in a unified entry point that users can access from any device. Note: SAP Work Zone was recently renamed to SAP Build Work Zone, advanced edition.",
+    "description": "Enable integration with other services.",
     "fileName": "build-workzone-advanced.json",
     "category": "SERVICE"
   },
@@ -205,7 +205,7 @@
   {
     "technicalId": "c4-distributed-order-management-app",
     "displayName": "SAP Order Management Foundation",
-    "description": "The SAP Order Management foundation solution, including the application and service, provides order management functionality along with business configuration settings that allow you to create a customized solution. You can also integrate various systems and solutions to support your order management processes. This allows you to leverage, for example, your existing master data, order capture, and fulfillment systems while consolidating all of your orders and order-related data in a convenient cloud-based solution.",
+    "description": "Consolidate and manage your orders and order-related data in a central solution",
     "fileName": "c4-distributed-order-management-app.json",
     "category": "APPLICATION"
   },
@@ -233,7 +233,7 @@
   {
     "technicalId": "cicd-app",
     "displayName": "SAP Continuous Integration and Delivery",
-    "description": "SAP Continuous Integration and Delivery lets you configure and run predefined continuous integration and delivery (CI/CD) pipelines that automatically build, test and deploy your code changes to speed up your development and delivery cycles.",
+    "description": "Create and run jobs for continuous integration and delivery.",
     "fileName": "cicd-app.json",
     "category": "APPLICATION"
   },
@@ -282,7 +282,7 @@
   {
     "technicalId": "content-agent",
     "displayName": "SAP Content Agent service",
-    "description": "SAP Content Agent service is a tool for SAP BTP applications offering generic content management operations such as view, export and import content with inter-dependencies and integration with SAP Cloud Transport Management service. It offers a view to track all activities along with logs, status and other information.",
+    "description": "Cloud Foundry based utility service that like an agent for content operations like assembly, export and import",
     "fileName": "content-agent.json",
     "category": "SERVICE"
   },
@@ -352,7 +352,7 @@
   {
     "technicalId": "dataenrichment-business-partner",
     "displayName": "Data Enrichment",
-    "description": "Industrializes the use of third-party data for enterprise applications, and makes it economical to find, procure and consume relevant datasets in timely fashion. Offers pre-built integrations with SAP S/4HANA Cloud and on-premise, and SAP Master Data Governance. Centrally links data from external data providers such as Dun & Bradstreet and CDQ into SAP enterprise applications, reducing overall TCO for data brokerage needs. Data Enrichment will be a one stop shop for multiple data augmentation needs.",
+    "description": "Data Enrichment",
     "fileName": "dataenrichment-business-partner.json",
     "category": "SERVICE"
   },
@@ -380,7 +380,7 @@
   {
     "technicalId": "document-information-extraction-application",
     "displayName": "Document Information Extraction UI",
-    "description": "UI Application to upload document for extraction to Document Information Extraction and correct the results.",
+    "description": "Document Information Extraction Application",
     "fileName": "document-information-extraction-application.json",
     "category": "APPLICATION"
   },
@@ -394,7 +394,7 @@
   {
     "technicalId": "dq-services",
     "displayName": "data quality service",
-    "description": "SAP Data Quality Management offers cloud-based services that let you embed address cleansing, geocoding, and reverse geocoding within any business process orapplication,so that you can reap the value of complete and accurate address data.",
+    "description": "Embed data quality services to validate addresses and enrich with geocodes.",
     "fileName": "dq-services.json",
     "category": "SERVICE"
   },
@@ -443,7 +443,7 @@
   {
     "technicalId": "feature-flags",
     "displayName": "SAP Feature Flags service",
-    "description": "The Feature Flags service allows you to enable or disable new features at runtime without redeploying or restarting the application. You can use feature flags to control code delivery, synchronized rollout, direct shipment, and fast rollback of features.",
+    "description": "Control the rollout of new features.",
     "fileName": "feature-flags.json",
     "category": "SERVICE"
   },
@@ -471,7 +471,7 @@
   {
     "technicalId": "hana-cloud-tools",
     "displayName": "SAP HANA Cloud",
-    "description": "SAP HANA Cloud provides a single place to access, store, and process all enterprise data in real time. It is a cloud-native platform that reduces the complexity of multi-cloud or hybrid system landscapes. SAP HANA Cloud provides all of the advanced SAP HANA technologies for multi-model data processing in-memory or on disk. You can benefit from cloud qualities such as automatic software updates, elasticity, and low total cost of ownership by using SAP HANA Cloud either as a stand-alone solution or as an extension to your existing on-premise environment.",
+    "description": "A single gateway to all your data.",
     "fileName": "hana-cloud-tools.json",
     "category": "APPLICATION"
   },
@@ -541,7 +541,7 @@
   {
     "technicalId": "intelligent-situation-automation-app",
     "displayName": "Intelligent Situation Automation",
-    "description": "Intelligent Situation Automation is an extension of Situation Handling. It processes situations raised and resolves them automatically using business rules, thus reducing the time users spend on routine manual and repetitive tasks.",
+    "description": "Extension of Situation Handling - automate situation resolution using business rules",
     "fileName": "intelligent-situation-automation-app.json",
     "category": "APPLICATION"
   },
@@ -583,7 +583,7 @@
   {
     "technicalId": "IRPA",
     "displayName": "SAP Intelligent Robotic Process Automation",
-    "description": "SAP Intelligent Robotic Process Automation lets you automate enterprise business processes. Design process automations with the Desktop Studio by creating end-to-end scenarios. Import these scenarios into the cloud Factory to configure and execute them with Agents. An Agent can work as a Digital Assistant (attended automation) or as a Digital Worker (unattended automation).",
+    "description": "Design, configure, and execute automation projects.",
     "fileName": "irpa.json",
     "category": "APPLICATION"
   },
@@ -611,14 +611,14 @@
   {
     "technicalId": "jobscheduler",
     "displayName": "SAP Job Scheduling service",
-    "description": "The Job Scheduling Service allows you to define and manage jobs that run once or on recurring schedules. Use this runtime-agnostic service to schedule REST endpoint actions in your application or to schedule long-running processes using Cloud Foundry tasks. Use REST APIs to schedule your jobs, including long-running jobs asynchronously, and create multiple schedule formats for both simple and complex recurring schedules. The service dashboard is a web interface that lets you manage jobs and schedules.",
+    "description": "Job Scheduler",
     "fileName": "jobscheduler.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "kymaruntime",
     "displayName": "SAP BTP, Kyma runtime",
-    "description": "SAP Cloud Platform, Kyma runtime is a fully managed Kubernetes runtime based on the open-source project Kyma. This cloud-native solution allows the developers to extend SAP solutions with serverless Functions and combine them with containerized microservices. The offered functionality ensures smooth consumption of SAP and non-SAP applications, running workloads in a highly scalable environment, and building event- and API-based extensions.",
+    "description": "Kyma environment is a runtime you can use to build cloud-native Kubernetes-based applications by using microservices and serverless functions.",
     "fileName": "kymaruntime.json",
     "category": "ENVIRONMENT"
   },
@@ -645,8 +645,8 @@
   },
   {
     "technicalId": "market-rates-thr",
-    "displayName": "Market Rates, Refinitiv",
-    "description": "The Market Rates Management, Refinitiv data option is a reuse service that allows you to import daily and historical Exchange Rates & Interest Rates from Refinitiv.",
+    "displayName": "Market Rates, Refinitiv ",
+    "description": "Market Rates, Refinitiv Standard plan",
     "fileName": "market-rates-thr.json",
     "category": "SERVICE"
   },
@@ -807,21 +807,21 @@
   {
     "technicalId": "multichain",
     "displayName": "MultiChain on SAP BTP",
-    "description": "The MultiChain service lets you create, delete, monitor and maintain individual MultiChain nodes and connect them to a blockchain network.",
+    "description": "MultiChain",
     "fileName": "multichain.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "objectstore",
     "displayName": "Object Store on SAP BTP",
-    "description": "Provides a bucket that applications can use to store and manage objects.",
+    "description": "Object Store on SAP BTP provisions an object storage space that can be used by applications to store and manage objects.",
     "fileName": "objectstore.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "ocnselfserviceagent",
     "displayName": "Open Connectors",
-    "description": "Open Connectors provides pre-built and feature-rich connectors to simplify the connectivity and seamless integration with over 150 non-SAP cloud applications. Customers benefit from connectivity to third-party APIs via harmonized RESTful APIs and can develop and map canonical data models to extend pre-built connectors. Furthermore customers can easily build API compositions across the different connectors.",
+    "description": "Open Connectors Live",
     "fileName": "ocnselfserviceagent.json",
     "category": "APPLICATION"
   },
@@ -856,7 +856,7 @@
   {
     "technicalId": "portal",
     "displayName": "SAP Cloud Portal service",
-    "description": "SAP Cloud Portal Service lets you build digital experience portals for employees, customers, and partners. You can streamline access to business data so that your employees can execute their daily business tasks securely, from any device.",
+    "description": "SAP Cloud Platform Portal lets you build digital experience portals for employees, customers, and partners. You can streamline access to business data so that your employees can execute their daily business tasks securely, from any device.",
     "fileName": "portal.json",
     "category": "SERVICE"
   },
@@ -897,8 +897,8 @@
   },
   {
     "technicalId": "prism-api",
-    "displayName": "procurement data warehouse API",
-    "description": "Provides access to procurement data warehouse API.",
+    "displayName": "SAP Procurement Analytics Warehouse",
+    "description": "SAP Procurement Analytics Warehouse",
     "fileName": "prism-api.json",
     "category": "APPLICATION"
   },
@@ -1010,7 +1010,7 @@
   {
     "technicalId": "retention-manager",
     "displayName": "SAP Data Retention Manager",
-    "description": "The SAP Cloud Platform Data Retention Manager lets you block or delete personal data based on the residence and retention rules maintained.",
+    "description": "Manage retention and residence rules to block or delete personal data.",
     "fileName": "retention-manager.json",
     "category": "SERVICE"
   },
@@ -1024,7 +1024,7 @@
   {
     "technicalId": "saas-registry",
     "displayName": "SAP Software-as-a-Service Provisioning service",
-    "description": "Service for application providers to register multitenant applications and services.",
+    "description": "Manage the registration and provisioning of multitenant application and service subscriptions.",
     "fileName": "saas-registry.json",
     "category": "SERVICE"
   },
@@ -1142,8 +1142,8 @@
   },
   {
     "technicalId": "sdm-web",
-    "displayName": "Document Management Service, Application Option",
-    "description": "Benefit from the standalone, ready-to-use web application of SAP Document Management service that provides document management capabilities.",
+    "displayName": "Document Management, application option",
+    "description": "Organize your documents with ready-to-use document management capabilities.",
     "fileName": "sdm-web.json",
     "category": "APPLICATION"
   },
@@ -1164,7 +1164,7 @@
   {
     "technicalId": "spatialservices",
     "displayName": "SAP HANA spatial services",
-    "description": "SAP HANA spatial services provides a unified access layer for location-based services, including maps for visualization, geocoding and routing capabilities. It integrates location-based content and services from external providers into SAP products and customer applications.",
+    "description": "SAP HANA spatial services provides a set of APIs for location-based services.",
     "fileName": "spatialservices.json",
     "category": "SERVICE"
   },
@@ -1185,7 +1185,7 @@
   {
     "technicalId": "tnt-onboard-dataenrichment-dcp",
     "displayName": "SAP Data Enrichment service",
-    "description": "Provides Business Partner data from third-party data providers",
+    "description": "Data Enrichment",
     "fileName": "tnt-onboard-dataenrichment-dcp.json",
     "category": "APPLICATION"
   },
@@ -1206,7 +1206,7 @@
   {
     "technicalId": "ui5-flexibility-keyuser",
     "displayName": "UI5 flexibility for key users",
-    "description": "The UI5 flexibility service for key users lets you provide UI adaptation capabilites for your UI5 applications on Cloud Foundry. Users of your applications can change the user interface of your applications in an upgrade-safe and modification-free way, without affecting any other customer.",
+    "description": "Add UI adaptation to your UI5 applications",
     "fileName": "ui5-flexibility-keyuser.json",
     "category": "SERVICE"
   },
@@ -1220,7 +1220,7 @@
   {
     "technicalId": "workflow",
     "displayName": "SAP Workflow Management",
-    "description": "Automate business processes using workflow technology.",
+    "description": "SAP Workflow service allows you to build, run, and manage workflows, from simple approvals to end-to-end processes that span across different organizations and applications. With an inbox application and custom-built user interfaces, you involve end users into business processes for decision making and data entry. The workflow service comes with web-based tools for workflow modeling, APIs for consumption in custom applications, monitoring tools, and a set of Fiori-based applications for end-user access. You can use JavaScript to embed custom business logic.",
     "fileName": "workflow.json",
     "category": "SERVICE"
   },
