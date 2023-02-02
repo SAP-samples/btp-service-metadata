@@ -1,7 +1,7 @@
 {
   "name": "alm-ts",
   "displayName": "SAP Cloud Transport Management",
-  "description": "SAP Cloud Transport Management service lets you manage software deliverables between accounts of different environments (such as Neo and Cloud Foundry), by transporting them across various runtimes. This includes application artifacts as well as their respective application-specific content.",
+  "description": "Cloud Transport Management Application",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/iV30iGbPJ7i-QjvBEanhdz_l9dPoQZW-JujZ7H6d1_8ycqrfuOHW_Ojj7a2zbFJR.svg",
   "links": [
     {
@@ -98,9 +98,9 @@
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "free",
+      "displayName": "Free",
       "category": "APPLICATION",
-      "description": "Manage transports of development artifacts and application-specific content in restricted mode. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Free Plan",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -185,9 +185,9 @@
     },
     {
       "name": "standard",
-      "displayName": "standard",
+      "displayName": "Standard",
       "category": "APPLICATION",
-      "description": "Manage transports of development artifacts and application-specific content.",
+      "description": "Standard Plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

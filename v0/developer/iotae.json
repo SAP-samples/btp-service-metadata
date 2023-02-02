@@ -23,6 +23,18 @@
       "text": "Documentation"
     },
     {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-iot-application-enablement",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP IoT Application Enablement"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-leonardo-iot",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP Leonardo IoT"
+    },
+    {
       "value": "https://eaexplorer.hana.ondemand.com/_item.html?id=12351#!/facet/18",
       "classification": "Documentation",
       "type": "Link",
@@ -101,12 +113,6 @@
       "text": "Help Portal Product Page"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_L",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
       "value": "https://open.sap.com/courses/iot3",
       "classification": "Documentation",
       "type": "Link",
@@ -123,12 +129,6 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Authorization Guide"
-    },
-    {
-      "value": "https://www.sapstore.com/solutions/40108/SAP-Leonardo-IoT-Foundation%2C-express-edition",
-      "classification": "Marketing",
-      "type": "Link",
-      "text": "To learn more about the service and the purchasing options please contact your account executive or visit our SAP Store."
     },
     {
       "value": "https://www.youtube.com/embed/KQJqkhary08",
@@ -160,7 +160,7 @@
       "name": "default",
       "displayName": "default",
       "category": "SERVICE",
-      "description": "Default service plan which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier based on capacity units",
+      "description": "Charged based on the total number of used capacity units. These are based on data streams (ingested data, api calls), stored data in different tiers (Time Series & Event hot store, warm store and archive) and number of connected devices.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -185,9 +185,9 @@
     },
     {
       "name": "standard",
-      "displayName": "standard",
+      "displayName": "Leonardo IoT",
       "category": "SERVICE",
-      "description": "Standard service plan (for SAP Leonardo IoT) which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier",
+      "description": "Leonardo IoT",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
