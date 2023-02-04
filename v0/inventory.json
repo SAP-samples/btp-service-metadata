@@ -29,8 +29,8 @@
   },
   {
     "technicalId": "ads-configui",
-    "displayName": "Forms Service by Adobe",
-    "description": "SAP Forms service by Adobe lets you generate print and interactive forms using Adobe Document Services (ADS). Call the service from your application using a REST API for rendering documents and for managing form templates in the template store. Configure ADS and access the template store via service-offered UIs. To use Forms service by Adobe, you must subscribe to the application (ads-configui) and set entitlements to both, the ADS (ads) and the REST API template store (adsrestapi) service. In the Service Marketplace, find all two tiles easily by entering 'adobe' into the search field.",
+    "displayName": "SAP Forms Service by Adobe",
+    "description": "Configure Adobe Document Services. Access the template store UI.",
     "fileName": "ads-configui.json",
     "category": "APPLICATION"
   },
@@ -78,8 +78,8 @@
   },
   {
     "technicalId": "api-management-apiportal",
-    "displayName": "API Management, API portal",
-    "description": "API Management technology helps you to share digital assets and enables consumption of these assets in new user interfaces. An API Portal application in SAP API Management helps you grow new revenue streams. You can not only configure and share but also monetize you digital assets, enabling up-sell and cross-sell though your eco-system.",
+    "displayName": "API Management-API Portal",
+    "description": "API Management-API Portal",
     "fileName": "api-management-apiportal.json",
     "category": "APPLICATION"
   },
@@ -107,7 +107,7 @@
   {
     "technicalId": "application-logs",
     "displayName": "SAP Application Logging service for SAP BTP",
-    "description": "In the Cloud Foundry environment, the SAP Application Logging service for SAP BTP lets you stream logs of bound applications to a central application logging stack. SAP Application Logging service for SAP BTP uses Elastic Stack to store and visualize your application log data. To fully leverage this service, please also consider using one of SAP&apos;s open source libraries (for example, cf-java-logging-support or cf-nodejs-logging-support). In the Neo environment, the application logging allows you to configure loggers for Java applications through the cockpit or the console client. Furthermore, you can retrieve default trace logs, HTTP access logs, and garbage collection logs for the last 7 days.",
+    "description": "Stream logs of bound applications to a central application logging stack.",
     "fileName": "application-logs.json",
     "category": "SERVICE"
   },
@@ -163,7 +163,7 @@
   {
     "technicalId": "blockchain-services",
     "displayName": "Blockchain Application Enablement",
-    "description": "Blockchain Application Enablement",
+    "description": "Deliver blockchain-based services on any connected blockchain network.",
     "fileName": "blockchain-services.json",
     "category": "SERVICE"
   },
@@ -233,7 +233,7 @@
   {
     "technicalId": "cicd-app",
     "displayName": "SAP Continuous Integration and Delivery",
-    "description": "SAP Continuous Integration and Delivery lets you configure and run predefined continuous integration and delivery (CI/CD) pipelines that automatically build, test and deploy your code changes to speed up your development and delivery cycles.",
+    "description": "Create and run jobs for continuous integration and delivery.",
     "fileName": "cicd-app.json",
     "category": "APPLICATION"
   },
@@ -303,7 +303,7 @@
   {
     "technicalId": "credstore",
     "displayName": "SAP Credential Store",
-    "description": "The Credential Store provides a secure repository for passwords and keys to applications that are running on SAP Cloud Platform. It enables the applications to retrieve credentials and use them for authentication to external services, or to perform cryptographic operations and TLS communication. ",
+    "description": "Secure repository for credentials, cryptographic keys and certificates.",
     "fileName": "credstore.json",
     "category": "SERVICE"
   },
@@ -345,21 +345,21 @@
   {
     "technicalId": "data-privacy-integration-service",
     "displayName": "SAP Data Privacy Integration",
-    "description": "Data Privacy Integration (DPI) is a service that supports applications realize their data privacy functions i.e Business Purpose Management ( Ensure Data is processed in a compliant manner based on valid Business Purpose ), Data Deletion and Retrieval of personal data. Applications that are part of an end to end business process can integrate with DPI to provide a centralized management of data privacy.",
+    "description": "Integrate the data privacy services with the external applications.",
     "fileName": "data-privacy-integration-service.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "dataenrichment-business-partner",
     "displayName": "Data Enrichment",
-    "description": "Industrializes the use of third-party data for enterprise applications, and makes it economical to find, procure and consume relevant datasets in timely fashion. Offers pre-built integrations with SAP S/4HANA Cloud and on-premise, and SAP Master Data Governance. Centrally links data from external data providers such as Dun & Bradstreet and CDQ into SAP enterprise applications, reducing overall TCO for data brokerage needs. Data Enrichment will be a one stop shop for multiple data augmentation needs.",
+    "description": "Data Enrichment",
     "fileName": "dataenrichment-business-partner.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "dateandtime",
     "displayName": "Date and Time",
-    "description": "Get default date format for a given country, timezone details and time difference between two provided time values.",
+    "description": "Date and Time",
     "fileName": "dateandtime.json",
     "category": "SERVICE"
   },
@@ -422,7 +422,7 @@
   {
     "technicalId": "enterprise-messaging",
     "displayName": "SAP Event Mesh",
-    "description": "Event Mesh",
+    "description": "The SAP Event Mesh service decouples communication and allows for event-driven business processes.",
     "fileName": "enterprise-messaging.json",
     "category": "SERVICE"
   },
@@ -464,7 +464,7 @@
   {
     "technicalId": "hana-cloud",
     "displayName": "SAP HANA Cloud",
-    "description": "SAP HANA Cloud provides a single place to access, store, and process all enterprise data in real time. It is a cloud-native platform that reduces the complexity of multi-cloud or hybrid system landscapes. SAP HANA Cloud provides all of the advanced SAP HANA technologies for multi-model data processing in-memory or on disk. You can benefit from cloud qualities such as automatic software updates, elasticity, and low total cost of ownership by using SAP HANA Cloud either as a stand-alone solution or as an extension to your existing on-premise environment.",
+    "description": "Leverage the in-memory data processing capabilities of SAP HANA in the cloud as one simple gateway",
     "fileName": "hana-cloud.json",
     "category": "SERVICE"
   },
@@ -561,8 +561,8 @@
   },
   {
     "technicalId": "iot",
-    "displayName": "Internet of Things",
-    "description": "The SAP Cloud Platform Internet of Things service for the Cloud Foundry environment connects devices to SAP Cloud Platform to provide scalable ingestion of IoT data and device management. The respective services provide a secure connection to remote devices using a broad variety of IoT protocols and manage the device lifecycle from onboarding to decommissioning. ",
+    "displayName": "SAP Cloud Platform Internet of Things",
+    "description": "SAP Cloud Platform Internet of Things",
     "fileName": "iot.json",
     "category": "SERVICE"
   },
@@ -835,7 +835,7 @@
   {
     "technicalId": "one-mds",
     "displayName": "SAP Master Data Integration",
-    "description": "SAP Business Technology Platform Master Data Integration service offers master data synchronization across SAP solutions and is a central access layer for data sharing and distribution. The service can only be used for SAP to SAP Integration, and must not be directly accessed for 3rd party master data integration scenarios with SAP. SAP Business Technology Platform Master Data Orchestration is part of the master data integration service, and can only be used in conjunction with SAP Master Data Integration service.",
+    "description": "Service for master data integration",
     "fileName": "one-mds.json",
     "category": "SERVICE"
   },
@@ -849,7 +849,7 @@
   {
     "technicalId": "PersonalDataManagerApp",
     "displayName": "SAP Personal Data Manager",
-    "description": "SAP Personal Data Manager provides the capability to generate reports showing the personal data stored in an application point of view with the help of a CSR. The reports can be generated and exported either in machine readable form (JSON) or human readable form (PDF). Data subjects can request the correction and deletion of personal data that is stored in an application point of view.",
+    "description": "Manage requests and inform data subjects about their personal data in processing.",
     "fileName": "personaldatamanagerapp.json",
     "category": "APPLICATION"
   },
@@ -897,8 +897,8 @@
   },
   {
     "technicalId": "prism-api",
-    "displayName": "SAP Procurement Analytics Warehouse",
-    "description": "SAP Procurement Analytics Warehouse",
+    "displayName": "procurement data warehouse API",
+    "description": "Provides access to procurement data warehouse API.",
     "fileName": "prism-api.json",
     "category": "APPLICATION"
   },
@@ -989,7 +989,7 @@
   {
     "technicalId": "responsibility-management-service-beta",
     "displayName": "SAP Responsibility Management service",
-    "description": "APIs to Determine responsible agents and agent determination requests",
+    "description": "Provides APIs for DetermineAgents using responsibility rules or external APIs(bring your own code) and AgentDeterminationRequest.",
     "fileName": "responsibility-management-service-beta.json",
     "category": "SERVICE"
   },
@@ -1150,7 +1150,7 @@
   {
     "technicalId": "service-manager",
     "displayName": "SAP Service Manager",
-    "description": "SAP Service Manager service allows you to consume platform services in any connected runtime environment, track service instances creation, and share services and service instances between different environments.",
+    "description": "The central registry for service brokers and platforms in SAP Business Technology Platform",
     "fileName": "service-manager.json",
     "category": "SERVICE"
   },
@@ -1227,7 +1227,7 @@
   {
     "technicalId": "workflowmanagement",
     "displayName": "SAP Workflow Management",
-    "description": "Digitize workflows, manage decisions and gain end-to-end process visibility.",
+    "description": "Digitize workflows, manage decisions and gain end-to-end process visibility",
     "fileName": "workflowmanagement.json",
     "category": "SERVICE"
   },

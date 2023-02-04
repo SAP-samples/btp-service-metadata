@@ -1,7 +1,7 @@
 {
   "name": "credstore",
   "displayName": "SAP Credential Store",
-  "description": "The Credential Store provides a secure repository for passwords and keys to applications that are running on SAP Business Technology Platform. It enables the applications to retrieve credentials and use them for authentication to external services, or to perform cryptographic operations and TLS communication. ",
+  "description": "Secure repository for credentials, cryptographic keys and certificates.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/bLa2FhHJYN10hypdALtq7jXJBbQmy7wVdWekbAN5_3yBGTH8rQTN9SqwjR5Gl9_7.svg",
   "links": [
     {
@@ -75,20 +75,14 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
     }
   ],
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "free",
+      "displayName": "Free",
       "category": "SERVICE",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Credential Store service free",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -175,7 +169,7 @@
       "name": "proxy",
       "displayName": "proxy",
       "category": "SERVICE",
-      "description": "Proxy plan",
+      "description": "Credential Store service proxy",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -262,7 +256,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard plan",
+      "description": "Credential Store service standard",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
