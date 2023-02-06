@@ -1,7 +1,7 @@
 {
   "name": "spatialservices",
   "displayName": "SAP HANA spatial services",
-  "description": "SAP HANA spatial services provides a set of APIs for location-based services.",
+  "description": "SAP HANA spatial services provides a unified access layer for location-based services, including maps for visualization, geocoding and routing capabilities. It integrates location-based content and services from external providers into SAP products and customer applications.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AdVSNjrHAeI1bBiTl06N4o_ErpCsHhAvb9vh3PDfwn5q6LVhqdMHubVdPKfKlsmy.svg",
   "links": [
     {
@@ -71,6 +71,12 @@
       "text": "Help Portal Product Page"
     },
     {
+      "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES/latest/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://www.sap.com/documents/2022/02/da29c9cc-197e-0010-bca6-c68f7e60039b.html",
       "classification": "Documentation",
       "type": "Link",
@@ -103,9 +109,9 @@
     },
     {
       "name": "standard",
-      "displayName": "HANA Spatial Services APIs",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "HANA Spatial Services APIs",
+      "description": "Provides full access to HANA spatial services capabilities.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
