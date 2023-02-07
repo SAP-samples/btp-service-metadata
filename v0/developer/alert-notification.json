@@ -1,7 +1,7 @@
 {
   "name": "alert-notification",
   "displayName": "SAP Alert Notification service for SAP BTP",
-  "description": "Service that exposes platform alerts and offers APIs for producing/consuming custom alerts",
+  "description": "SAP Business Technology Platform Alert Notification offers a common API for providers to publish alerts and for consumers to subscribe to these alerts. It is designed to send automatically real-time notifications and alerts about SAP Cloud events that may be of interest to the business and operations.<br/><br/>SAP does not support EU Access for this service. By activating the service, you are accepting this limitation.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/F7nUWGD0fudUx5QzfpAYXgqo3bhTG8C4xHpLhmxtii9DQK_HLr4_deyZCxbRAp5y.svg",
   "links": [
     {
@@ -35,6 +35,18 @@
       "text": "Overview | SAP Alert Notification Service for SAP BTP | SAP API Business Hub"
     },
     {
+      "value": "https://api.sap.com/package/AlertNotification?section=Artifacts",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "API Hub"
+    },
+    {
+      "value": "https://blogs.sap.com/tags/73555000100800001401/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blog"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Alert%20Notification%20service%20for%20SAP%20BTP",
       "classification": "SAP Community",
       "type": "Link",
@@ -45,6 +57,12 @@
       "classification": "SAP Community",
       "type": "Link",
       "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/alert-notification",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
     },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/alert-notification",
@@ -59,6 +77,12 @@
       "text": "Documentation"
     },
     {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
       "value": "https://www.youtube.com/embed/_DInhi4Skn4",
       "classification": "External",
       "type": "Link",
@@ -70,7 +94,7 @@
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",
-      "description": "Allows production & consumption of custom events",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -241,7 +265,11 @@
       "schemas": null
     }
   ],
-  "supportComponents": [],
+  "supportComponents": [
+    {
+      "value": "LOD-HCI-PI"
+    }
+  ],
   "apis": [
     {
       "name": "Cloud Foundry Configuration API",

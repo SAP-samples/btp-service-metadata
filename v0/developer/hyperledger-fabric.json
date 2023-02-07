@@ -1,7 +1,7 @@
 {
   "name": "hyperledger-fabric",
   "displayName": "Hyperledger Fabric on SAP BTP",
-  "description": "Hyperledger Fabric",
+  "description": "The Hyperledger Fabric service on SAP BTP lets you provision a Hyperledger Fabric node and join it to a network of nodes. Hyperledger Fabric supports Enterprise ready blockchain with smart contracts.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/11rA5_aU-6481o6j7mrYANBY6mEpKyz2yBRJM8JB_0N4GGvzY2VavIL5K-kfgFln.svg",
   "links": [
     {
@@ -15,6 +15,12 @@
       "classification": "API Hub",
       "type": "Link",
       "text": "Overview | SAP Business Technology Platform - Blockchain Technologies | SAP API Business Hub"
+    },
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/product-info.Hyperledger-Fabric--on-SAP-Cloud-Platform.b9fb18ba-a2dc-485b-ad59-79c30c15ec93.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
     },
     {
       "value": "https://community.sap.com/search/?ct=blog&q=Hyperledger%20Fabric%20on%20SAP%20BTP",
@@ -36,9 +42,9 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Documentation",
+      "classification": "Support",
       "type": "Link",
-      "text": "Documentation"
+      "text": "Support"
     },
     {
       "value": "https://help.sap.com/viewer/81f693ad49a046cba506cc9bd51052d0/BLOCKCHAIN/en-US",
@@ -86,9 +92,9 @@
   "servicePlans": [
     {
       "name": "backbone",
-      "displayName": "Hyperledger Fabric",
+      "displayName": "backbone",
       "category": "SERVICE",
-      "description": "Hyperledger Fabric",
+      "description": "Each Hyperledger Fabric network requires exactly one backbone node. This node provisions all Hyperledger Fabric network relevant infrastructure.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -136,9 +142,9 @@
     },
     {
       "name": "channel",
-      "displayName": "Hyperledger Fabric",
+      "displayName": "channel",
       "category": "SERVICE",
-      "description": "Hyperledger Fabric",
+      "description": "Exposes an existing Hyperledger Fabric channel created by the network administrator in a SAP BTP space for using.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -181,9 +187,9 @@
     },
     {
       "name": "cyon",
-      "displayName": "Hyperledger Fabric",
+      "displayName": "cyon",
       "category": "SERVICE",
-      "description": "Hyperledger Fabric",
+      "description": "Connect Your Own Network (CYON) into the SAP BTP.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -310,9 +316,9 @@
     },
     {
       "name": "dev",
-      "displayName": "Hyperledger Fabric",
+      "displayName": "dev",
       "category": "SERVICE",
-      "description": "Hyperledger Fabric",
+      "description": "Environment with all relevant APIs for developing and testing of Hyperledger Fabric Chaincode.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -360,9 +366,9 @@
     },
     {
       "name": "node",
-      "displayName": "Hyperledger Fabric",
+      "displayName": "node",
       "category": "SERVICE",
-      "description": "Hyperledger Fabric",
+      "description": "Hyperledger Fabric node that must be joined to a Hyperledger Fabric network for active participation.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -410,9 +416,9 @@
     },
     {
       "name": "testnet",
-      "displayName": "Hyperledger Fabric",
+      "displayName": "testnet",
       "category": "SERVICE",
-      "description": "Hyperledger Fabric",
+      "description": "Hyperledger Fabric node which is part of a cross organizational test network available for developing and testing distributed applications. It may not be used productively.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [

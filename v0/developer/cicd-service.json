@@ -1,7 +1,7 @@
 {
   "name": "cicd-service",
   "displayName": "SAP Continuous Integration and Delivery",
-  "description": "Create and run jobs for continuous integration and delivery.",
+  "description": "SAP Continuous Integration and Delivery lets you configure and run predefined continuous integration and delivery (CI/CD) pipelines that automatically test, build, and deploy your code changes to speed up your development and delivery cycles.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/uNs5NftN3suNq2rTgFY-pd79UIBEgKcrapeh7zgonIOkvM23lRVrsVdJh6BKdNjx.svg",
   "links": [
     {
@@ -21,6 +21,12 @@
       "classification": "SAP Community",
       "type": "Link",
       "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/continuous-integration--delivery?region=all",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
     },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/continuous-integration-delivery",
@@ -47,6 +53,12 @@
       "text": "Documentation"
     },
     {
+      "value": "https://help.sap.com/docs/CONTINUOUS_DELIVERY/99c72101f7ee40d0b2deb4df72ba1ad3/6e10ad426e434180a0c62d4e7b6115bc.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
       "value": "https://help.sap.com/docs/BTP/99c72101f7ee40d0b2deb4df72ba1ad3/618ca03fdca24e56924cc87cfbb7673a.html",
       "classification": "Documentation",
       "type": "Link",
@@ -70,7 +82,7 @@
       "name": "default",
       "displayName": "default",
       "category": "SERVICE",
-      "description": "Default Plan",
+      "description": "When subscribed together with the SAP Continuous Integration and Delivery Application Plan, the Service Plan additionally provides access to the SAP Continuous Integration and Delivery API",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

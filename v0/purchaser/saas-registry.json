@@ -1,12 +1,12 @@
 {
   "name": "saas-registry",
   "displayName": "SAP Software-as-a-Service Provisioning service",
-  "description": "Manage the registration and provisioning of multitenant application and service subscriptions.",
+  "description": "Service for application providers to register multitenant applications and services.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/fb-ZNTZAFSxTJYOTgQasqm2YfSUvkZrMbHfCHUuH--ZeDER0GYjPkpEJKDstqbN7.svg",
   "servicePlans": [
     {
       "name": "application",
-      "displayName": "Application",
+      "displayName": "application",
       "category": "SERVICE",
       "description": "Service plan for SaaS application owners to manage the lifecycle of SaaS applications with SAP SaaS Provisioning APIs.",
       "isFree": true,

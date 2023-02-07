@@ -1,7 +1,7 @@
 {
   "name": "responsibilitymanagement-service",
   "displayName": "SAP Responsibility Management service",
-  "description": "Provides APIs for DetermineAgents using responsibility rules or external APIs(bring your own code) and AgentDeterminationRequest",
+  "description": "As we move toward an intelligent enterprise, intelligent systems need to determine agents who are responsible for business processes and objects, and automatically notify them. It is essential to define and manage these responsibilities for various contexts and retrieve responsible agents who can respond to tasks and activities.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/b1ldTck8NnlM5p1bIuY7pPeRiF9Lu13vNGYUO1yNfjK_mT946xz-xvRQI2Nng8-w.svg",
   "links": [
     {
@@ -76,7 +76,7 @@
       "name": "standard",
       "displayName": "Standard",
       "category": "SERVICE",
-      "description": "Standard",
+      "description": "Standard Plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -92,7 +92,11 @@
       "schemas": null
     }
   ],
-  "supportComponents": [],
+  "supportComponents": [
+    {
+      "value": "CA-GTF-RM-SCP"
+    }
+  ],
   "apis": [
     {
       "name": "Agent Determination",

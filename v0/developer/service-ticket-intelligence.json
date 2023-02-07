@@ -1,7 +1,7 @@
 {
   "name": "service-ticket-intelligence",
   "displayName": "Service Ticket Intelligence",
-  "description": "Build a self-driven customer service powered by machine learning with Service Ticket Intelligence",
+  "description": "With Service Ticket Intelligence, incoming customers service tickets are automatically classified into their categories, and routed to the right agent. The agent is then provided with recommended solutions to improve operational efficiency. Service Ticket Intelligence leverages deep learning neural networks trained on large amounts of historical data. The model understands the semantics of unstructured ticket messages, classifies the ticket into their most likely categories and recommends solutions or knowledge base articles from similar previously answered tickets for the agent. With more processed service tickets and users feedback, the model improves over time.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/tfbwzuhuTPRGmijfhNEqwmTthkD4hfIbXD68wBhGHqBiYxfXdadDvrFOgLIoSTQg.svg",
   "links": [
     {
@@ -89,10 +89,16 @@
       "text": "Security"
     },
     {
-      "value": "https://help.sap.com/viewer/934ccff77ddb4fa2bf268a0085984db0/LATEST/en-US/76a77fbf8d3645978d98711450f0b8bc.html",
+      "value": "https://help.sap.com/stint",
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/934ccff77ddb4fa2bf268a0085984db0/LATEST/en-US/76a77fbf8d3645978d98711450f0b8bc.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
     },
     {
       "value": "https://help.sap.com/viewer/product/SERVICE_TICKET_INTELLIGENCE",
@@ -164,9 +170,9 @@
     },
     {
       "name": "standard",
-      "displayName": "Service Ticket Intelligence helps to build a self-driven customer service powered by Machine Learning.",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Service Ticket Intelligence helps to build a self-driven customer service powered by Machine Learning.",
+      "description": "Default Plan for Service Ticket Intelligence",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -190,6 +196,10 @@
       "schemas": null
     }
   ],
-  "supportComponents": [],
+  "supportComponents": [
+    {
+      "value": "CA-ML-STI"
+    }
+  ],
   "apis": []
 }

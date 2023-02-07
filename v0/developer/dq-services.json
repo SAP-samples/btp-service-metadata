@@ -1,7 +1,7 @@
 {
   "name": "dq-services",
   "displayName": "data quality service",
-  "description": "Embed data quality services to validate addresses and enrich with geocodes.",
+  "description": "SAP Data Quality Management offers cloud-based services that let you embed address cleansing, geocoding, and reverse geocoding within any business process orapplication,so that you can reap the value of complete and accurate address data.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mBUHVI2lkrz4pxeyr1lxCWsJay9g5w1uGY6jsWMo8Iuq-kqJVKMQJ3c4qjksxqHC.svg",
   "links": [
     {
@@ -27,6 +27,12 @@
       "classification": "Discovery Center",
       "type": "Link",
       "text": "SAP Discovery Center - Data Quality Services"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-data-quality-management",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
     },
     {
       "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Data%20Quality%20Services",
@@ -65,6 +71,18 @@
       "text": "Help Portal Product Page"
     },
     {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/on-premise/product-use-and-support-terms.html?tag=agreements:product-use-support-terms/on-premise-software/software-use-rights/",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
       "value": "https://www.sap.com/documents/2019/08/7a08c953-607d-0010-87a3-c30de2ffd8ff.html",
       "classification": "Documentation",
       "type": "Link",
@@ -80,9 +98,9 @@
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Free plan for Data Quality Services",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -95,7 +113,7 @@
     },
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "SERVICE",
       "description": "Standard plan for Data Quality Services",
       "isFree": true,
