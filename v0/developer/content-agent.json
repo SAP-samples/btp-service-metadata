@@ -1,27 +1,9 @@
 {
   "name": "content-agent",
   "displayName": "SAP Content Agent service",
-  "description": "SAP Content Agent service is a tool for SAP BTP applications offering generic content management operations such as view, export and import content with inter-dependencies and integration with SAP Cloud Transport Management service. It offers a view to track all activities along with logs, status and other information.",
+  "description": "Cloud Foundry based utility service that like an agent for content operations like assembly, export and import",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/T6WCAhOxXRGPLqRZKoxi1tvBxB8JIQwUYpL9uKLpnZYgKvSYYeVhAQfZ7uqRfseP.svg",
   "links": [
-    {
-      "value": "https://blogs.sap.com/2020/08/30/introducing-sap-cloud-platform-content-agent-enhanced-transport-capabilities-for-sap-cloud-platform-integration-suite-content/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Blog: SAP Content Agent Service"
-    },
-    {
-      "value": "https://blogs.sap.com/2022/09/05/how-to-use-sap-content-agent-service-video/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "How to use SAP Content Agent Service"
-    },
-    {
-      "value": "https://roadmaps.sap.com/board?range=CURRENT-LAST",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Roadmap"
-    },
     {
       "value": "https://api.sap.com/package/SAPContentAgentService/overview",
       "classification": "API Hub",
@@ -47,10 +29,34 @@
       "text": "SAP Discovery Center - Content Agent"
     },
     {
+      "value": "https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/8addcbc7a1274bffa414858416b8e1c7.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/08/30/introducing-sap-cloud-platform-content-agent-enhanced-transport-capabilities-for-sap-cloud-platform-integration-suite-content/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blog: SAP Content Agent Service"
+    },
+    {
       "value": "https://blogs.sap.com/2022/08/09/new-user-interface-for-content-agent-service/",
       "classification": "Blog",
       "type": "Link",
       "text": "Blog: New User Interface for Content Agent Service"
+    },
+    {
+      "value": "https://blogs.sap.com/2022/09/05/how-to-use-sap-content-agent-service-video/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "How to use SAP Content Agent Service"
+    },
+    {
+      "value": "https://roadmaps.sap.com/board?range=CURRENT-LAST&PRODUCT=73555000100800002111#Q3%202022",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Roadmap"
     },
     {
       "value": "https://help.sap.com/docs/BTP/ae1a4f2d150d468d9ff56e13f9898e07/9d9f235a96a947f5986021bbcebcef8c.html",
@@ -94,7 +100,7 @@
       "name": "application",
       "displayName": "application",
       "category": "SERVICE",
-      "description": "Provides programmatic access to generic content management APIs to view, export as download and push to Cloud Transport Management service, import content into respective SAP BTP tenant and view historic data of activities performed",
+      "description": "Application plan for generic content management APIs",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -240,7 +246,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard plan for content assembly and export for SAP Cloud Integration and SAP API Management content types using transport queues like Change Management System and SAP Transport Management Service",
+      "description": "Standard plan for content assembly and export",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

@@ -58,14 +58,14 @@
   {
     "technicalId": "alert-notification",
     "displayName": "SAP Alert Notification service for SAP BTP",
-    "description": "SAP Cloud Platform Alert Notification offers a common API for providers to publish alerts and for consumers to subscribe to these alerts. It is designed to send automatically real-time notifications and alerts about SAP Cloud events that may be of interest to the business and operations.<br/><br/>SAP does not support EU Access for this service. By activating the service, you are accepting this limitation.",
+    "description": "Service that exposes platform alerts and offers APIs for producing/consuming custom alerts",
     "fileName": "alert-notification.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "alm-ts",
     "displayName": "SAP Cloud Transport Management",
-    "description": "SAP Cloud Transport Management service lets you manage software deliverables between accounts of different environments (such as Neo and Cloud Foundry), by transporting them across various runtimes. This includes application artifacts as well as their respective application-specific content.",
+    "description": "Cloud Transport Management Application",
     "fileName": "alm-ts.json",
     "category": "APPLICATION"
   },
@@ -99,8 +99,8 @@
   },
   {
     "technicalId": "apimanagement-devportal",
-    "displayName": "API Management, developer portal",
-    "description": "API Management, developer portal service simplifies sharing managed APIs and enables collaborations with customers, partners, and developers, providing a common platform for application developers to consume APIs. It offers capabilities for onboarding application developers, exploring and testing APIs, and creating and subscribing to applications.This service provides the plan which allows you to access APIs in the developer portal.",
+    "displayName": "API Management, API Business Hub Enterprise",
+    "description": "API Management, API Business Hub Enterprise service simplifies sharing managed APIs and enables collaborations with customers, partners, and developers; providing a common platform for application developers to consume APIs.",
     "fileName": "apimanagement-devportal.json",
     "category": "SERVICE"
   },
@@ -135,7 +135,7 @@
   {
     "technicalId": "auditlog-viewer",
     "displayName": "SAP Audit Log Viewer service for SAP BTP",
-    "description": "SAP Audit Log Viewer service for SAP BTP helps to view and manage audit logs.",
+    "description": "Audit Log Viewer",
     "fileName": "auditlog-viewer.json",
     "category": "APPLICATION"
   },
@@ -156,7 +156,7 @@
   {
     "technicalId": "Backend-service",
     "displayName": "SAP Backend service",
-    "description": "With SAP Cloud Platform Backed service you can build robust, scalable and enterprise-ready APIs/services to serve your applications and extensions in a serverless environment. It is a fully managed API service that helps you build, run, and manage APIs in a serverless environment [BETA]",
+    "description": "SAP Cloud Platform Backend service [BETA]",
     "fileName": "backend-service.json",
     "category": "APPLICATION"
   },
@@ -170,21 +170,21 @@
   {
     "technicalId": "build-workzone-advanced",
     "displayName": "SAP Build Work Zone, advanced edition",
-    "description": "Centralizes access to relevant business applications, processes, information, and communication in a unified entry point that users can access from any device. Note: SAP Work Zone was recently renamed to SAP Build Work Zone, advanced edition.",
+    "description": "Enable integration with other services.",
     "fileName": "build-workzone-advanced.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "build-workzone-standard",
     "displayName": "SAP Build Work Zone, standard edition",
-    "description": "Provides users with a central point of access to applications from different sources. Note: SAP Launchpad service was recently renamed to SAP Build Work Zone, standard edition.",
+    "description": "Enable integration with other services.",
     "fileName": "build-workzone-standard.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "business-entity-recognition",
     "displayName": "Business Entity Recognition",
-    "description": "Business Entity Recognition helps you to detect and highlight any given type of named entity in unstructured text into pre-defined categories. You can use Business Entity Recognition, for example, to automatically extract the context from incoming emails with invoice inquiries, automating recurring tasks of answering to status and payment of invoices.",
+    "description": "Detect and highlight entities from unstructured text using machine learning",
     "fileName": "business-entity-recognition.json",
     "category": "SERVICE"
   },
@@ -233,21 +233,21 @@
   {
     "technicalId": "cicd-app",
     "displayName": "SAP Continuous Integration and Delivery",
-    "description": "SAP Continuous Integration and Delivery lets you configure and run predefined continuous integration and delivery (CI/CD) pipelines that automatically build, test and deploy your code changes to speed up your development and delivery cycles.",
+    "description": "Create and run jobs for continuous integration and delivery.",
     "fileName": "cicd-app.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "cicd-service",
     "displayName": "SAP Continuous Integration and Delivery",
-    "description": "SAP Continuous Integration and Delivery lets you configure and run predefined continuous integration and delivery (CI/CD) pipelines that automatically test, build, and deploy your code changes to speed up your development and delivery cycles.",
+    "description": "Create and run jobs for continuous integration and delivery.",
     "fileName": "cicd-service.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "cis",
     "displayName": "SAP Cloud Management service for SAP BTP",
-    "description": "Manage the control plane, account model, and product resources in SAP BTP using supported API interfaces provided by the SAP Cloud Management service for SAP BTP.",
+    "description": "Manage the control plane, account model, and product resources in SAP BTP using supported API interfaces.",
     "fileName": "cis.json",
     "category": "SERVICE"
   },
@@ -282,7 +282,7 @@
   {
     "technicalId": "content-agent",
     "displayName": "SAP Content Agent service",
-    "description": "SAP Content Agent service is a tool for SAP BTP applications offering generic content management operations such as view, export and import content with inter-dependencies and integration with SAP Cloud Transport Management service. It offers a view to track all activities along with logs, status and other information.",
+    "description": "Cloud Foundry based utility service that like an agent for content operations like assembly, export and import",
     "fileName": "content-agent.json",
     "category": "SERVICE"
   },
@@ -394,7 +394,7 @@
   {
     "technicalId": "dq-services",
     "displayName": "data quality service",
-    "description": "SAP Data Quality Management offers cloud-based services that let you embed address cleansing, geocoding, and reverse geocoding within any business process orapplication,so that you can reap the value of complete and accurate address data.",
+    "description": "Embed data quality services to validate addresses and enrich with geocodes.",
     "fileName": "dq-services.json",
     "category": "SERVICE"
   },
@@ -408,7 +408,7 @@
   {
     "technicalId": "eadesigner",
     "displayName": "SAP Enterprise Architecture Designer, cloud edition",
-    "description": "SAP Enterprise Architecture Designer, Cloud Edition (SAP EA Designer) lets you capture, analyze, and present your organization's landscapes, strategies, requirements, processes, data, and other artifacts in a shared environment. Using industry-standard notations and techniques, organizations can leverage rich metadata and use models and diagrams to drive understanding and promote shared outcomes in creating innovative systems, information sets, and processes to support goals and capabilities.",
+    "description": "SAP EA Designer Cloud Edition",
     "fileName": "eadesigner.json",
     "category": "APPLICATION"
   },
@@ -422,7 +422,7 @@
   {
     "technicalId": "enterprise-messaging",
     "displayName": "SAP Event Mesh",
-    "description": "The SAP Event Mesh service decouples communication and allows for event-driven business processes.",
+    "description": "Event Mesh",
     "fileName": "enterprise-messaging.json",
     "category": "SERVICE"
   },
@@ -457,7 +457,7 @@
   {
     "technicalId": "hana",
     "displayName": "SAP HANA Schemas & HDI Containers",
-    "description": "Use the SAP HANA schemas & HDI containers service to create service instances on SAP HANA databases and bind them to cloud applications. To create schemas and HDI containers, an SAP HANA database must be available in your space. The SAP HANA schemas & HDI containers service is part of the SAP HANA service.",
+    "description": "SAP HANA Schemas & HDI Containers",
     "fileName": "hana.json",
     "category": "SERVICE"
   },
@@ -499,7 +499,7 @@
   {
     "technicalId": "hyperledger-fabric",
     "displayName": "Hyperledger Fabric on SAP BTP",
-    "description": "The Hyperledger Fabric service on SAP BTP lets you provision a Hyperledger Fabric node and join it to a network of nodes. Hyperledger Fabric supports Enterprise ready blockchain with smart contracts.",
+    "description": "Hyperledger Fabric",
     "fileName": "hyperledger-fabric.json",
     "category": "SERVICE"
   },
@@ -561,8 +561,8 @@
   },
   {
     "technicalId": "iot",
-    "displayName": "Internet of Things",
-    "description": "The SAP Cloud Platform Internet of Things service for the Cloud Foundry environment connects devices to SAP Cloud Platform to provide scalable ingestion of IoT data and device management. The respective services provide a secure connection to remote devices using a broad variety of IoT protocols and manage the device lifecycle from onboarding to decommissioning. ",
+    "displayName": "SAP Cloud Platform Internet of Things",
+    "description": "SAP Cloud Platform Internet of Things",
     "fileName": "iot.json",
     "category": "SERVICE"
   },
@@ -597,14 +597,14 @@
   {
     "technicalId": "it-prod",
     "displayName": "Process Integration",
-    "description": "The SAP Cloud Integration connects cloud applications with other SAP and non-SAP cloud and on-premise apps.",
+    "description": "Seamlessly orchestrate business processes and integrate data in real time",
     "fileName": "it-prod.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "it-rt",
     "displayName": "Process Integration Runtime",
-    "description": "Provides access to SAP Cloud Platform Integration runtime (integration flows) and APIs.",
+    "description": "Provides access to SAP Cloud Integration runtime (integration flows) and APIs",
     "fileName": "it-rt.json",
     "category": "SERVICE"
   },
@@ -653,7 +653,7 @@
   {
     "technicalId": "market-rates-ux",
     "displayName": "SAP Market Rates Management",
-    "description": "The Manage Market Rates application enables you to read and manage market data you have uploaded by using the data options available with the SAP Market Rates Management service",
+    "description": "SAP Market Rates Management",
     "fileName": "market-rates-ux.json",
     "category": "APPLICATION"
   },
@@ -681,14 +681,14 @@
   {
     "technicalId": "MDOrchestrationApplication",
     "displayName": "SAP Master Data Orchestration",
-    "description": "Master data application for existing customers of SAP Master Data service for business partners and SAP Master Data service for products. New customers should use the Master Data Integration (Orchestration) tile. SAP Master Data Orchestration should only be used in combination with the SAP Master Data Integration service.",
+    "description": "Master Data Orchestration",
     "fileName": "mdorchestrationapplication.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "ml-foundation",
-    "displayName": "SAP Leonardo ML Foundation",
-    "description": "SAP Leonardo Machine Learning Foundation enables you to enhance business processes and software applications with intelligence. Unlock knowledge from structured and unstructured data such as images, text, time series and tabular data. By consuming easy-to-use APIs you can detect the content of pictures, extract keywords from natural language texts or analyze and forecast time-series data. All this can be done without prior investmentintospecial hardware or expertise in machine learning. Besides using pre-trained ML services you can also deploy custom ML models or tune existing models with your own training data. This allows you to easily serve customized ML models for critical business processes in a scalable and secure manner.",
+    "displayName": "SAP Leonardo Machine Learning Foundation",
+    "description": "SAP Leonardo Machine Learning Foundation",
     "fileName": "ml-foundation.json",
     "category": "SERVICE"
   },
@@ -826,6 +826,13 @@
     "category": "APPLICATION"
   },
   {
+    "technicalId": "onboarding-app",
+    "displayName": "procurement data warehouse",
+    "description": null,
+    "fileName": "onboarding-app.json",
+    "category": "APPLICATION"
+  },
+  {
     "technicalId": "one-inbox-service",
     "displayName": "SAP Task Center",
     "description": "Integrate all tasks into SAP Task Center",
@@ -849,7 +856,7 @@
   {
     "technicalId": "PersonalDataManagerApp",
     "displayName": "SAP Personal Data Manager",
-    "description": "SAP Personal Data Manager provides the capability to generate reports showing the personal data stored in an application point of view with the help of a CSR. The reports can be generated and exported either in machine readable form (JSON) or human readable form (PDF). Data subjects can request the correction and deletion of personal data that is stored in an application point of view.",
+    "description": "Manage requests and inform data subjects about their personal data in processing.",
     "fileName": "personaldatamanagerapp.json",
     "category": "APPLICATION"
   },
@@ -863,7 +870,7 @@
   {
     "technicalId": "PortalApplication",
     "displayName": "SAP Cloud Portal service",
-    "description": "SAP Cloud Portal service lets you build digital experience portals for employees, customers, and partners. You can streamline access to business data so that your employees can execute their daily business tasks securely, from any device.",
+    "description": "PortalApplication",
     "fileName": "portalapplication.json",
     "category": "APPLICATION"
   },
@@ -982,7 +989,7 @@
   {
     "technicalId": "responsibility-management-application-beta",
     "displayName": "SAP Responsibility Management service",
-    "description": "Provides APIs for DetermineAgents using responsibility rules or external APIs(bring your own code) and AgentDeterminationRequest.",
+    "description": "Determine the user responsible in Responsibility Rules app using Business Rules or an External API ( write your own code)",
     "fileName": "responsibility-management-application-beta.json",
     "category": "APPLICATION"
   },
@@ -996,14 +1003,14 @@
   {
     "technicalId": "responsibilitymanagement-application",
     "displayName": "Responsibility Management Service",
-    "description": null,
+    "description": "As we move toward an intelligent enterprise, intelligent systems need to determine agents who are responsible for business processes and objects, and automatically notify them. It is essential to define and manage these responsibilities for various contexts and retrieve responsible agents who can respond to tasks and activities.",
     "fileName": "responsibilitymanagement-application.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "responsibilitymanagement-service",
     "displayName": "SAP Responsibility Management service",
-    "description": "As we move toward an intelligent enterprise, intelligent systems need to determine agents who are responsible for business processes and objects, and automatically notify them. It is essential to define and manage these responsibilities for various contexts and retrieve responsible agents who can respond to tasks and activities.",
+    "description": "Provides APIs for DetermineAgents using responsibility rules or external APIs(bring your own code) and AgentDeterminationRequest",
     "fileName": "responsibilitymanagement-service.json",
     "category": "SERVICE"
   },
@@ -1024,7 +1031,7 @@
   {
     "technicalId": "saas-registry",
     "displayName": "SAP Software-as-a-Service Provisioning service",
-    "description": "Service for application providers to register multitenant applications and services.",
+    "description": "Manage the registration and provisioning of multitenant application and service subscriptions.",
     "fileName": "saas-registry.json",
     "category": "SERVICE"
   },
@@ -1073,7 +1080,7 @@
   {
     "technicalId": "sap-document-information-extraction",
     "displayName": "Document Information Extraction",
-    "description": "Document Information Extraction helps you to process various documents that have content in headers and tables. You can use the extracted information, for example, to automatically process payables, invoices, or payment notes while making sure that invoices and payables match.",
+    "description": "Document Information Extraction helps to reduce the time spent on business document processing by extracting information from documents automatically.",
     "fileName": "sap-document-information-extraction.json",
     "category": "SERVICE"
   },
@@ -1094,7 +1101,7 @@
   {
     "technicalId": "sapappgyver",
     "displayName": "SAP AppGyver",
-    "description": "Low-code / no-code tools from SAP that accelerate SAP business applications development.",
+    "description": "No-code development of sophisticated web and mobile apps.",
     "fileName": "sapappgyver.json",
     "category": "APPLICATION"
   },
@@ -1157,7 +1164,7 @@
   {
     "technicalId": "service-ticket-intelligence",
     "displayName": "Service Ticket Intelligence",
-    "description": "With Service Ticket Intelligence, incoming customers service tickets are automatically classified into their categories, and routed to the right agent. The agent is then provided with recommended solutions to improve operational efficiency. Service Ticket Intelligence leverages deep learning neural networks trained on large amounts of historical data. The model understands the semantics of unstructured ticket messages, classifies the ticket into their most likely categories and recommends solutions or knowledge base articles from similar previously answered tickets for the agent. With more processed service tickets and users feedback, the model improves over time.",
+    "description": "Build a self-driven customer service powered by machine learning with Service Ticket Intelligence",
     "fileName": "service-ticket-intelligence.json",
     "category": "SERVICE"
   },
@@ -1213,7 +1220,7 @@
   {
     "technicalId": "workcalendar",
     "displayName": "Work Calendar",
-    "description": "Get details of factory calendar such as weekday, holiday, workday for a country.",
+    "description": "Work Calendar",
     "fileName": "workcalendar.json",
     "category": "SERVICE"
   },
@@ -1247,8 +1254,8 @@
   },
   {
     "technicalId": "wums-partner-api-beta",
-    "displayName": "Workspace Utilization",
-    "description": "The Workspace Utilization Management service lets you write sensor measurements to the Workspace Utilization Management API. Sensor platform providers use this API to integrate with the Workspace Utilization Management solution of SAP Cloud for Real Estate.",
+    "displayName": "SAP Cloud for Real Estate Workspace Utilization Management API (BETA)",
+    "description": "SAP Cloud for Real Estate Workspace Utilization Management API (BETA)",
     "fileName": "wums-partner-api-beta.json",
     "category": "SERVICE"
   },
