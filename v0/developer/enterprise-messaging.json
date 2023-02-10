@@ -1,7 +1,7 @@
 {
   "name": "enterprise-messaging",
   "displayName": "SAP Event Mesh",
-  "description": "Event Mesh",
+  "description": "The SAP Event Mesh service decouples communication and allows for event-driven business processes.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/63MODC2qIDjt9S-wPRQg5ELnHzu6rYpfkeGuSjzXupo1gVcB-JaT5i_lLi4SPFyp.svg",
   "links": [
     {
@@ -41,6 +41,12 @@
       "text": "Overview | SAP Event Mesh Default Plan | SAP API Business Hub"
     },
     {
+      "value": "https://cloudplatform.sap.com/capabilities/integration/enterprise-messaging.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Event%20Mesh",
       "classification": "SAP Community",
       "type": "Link",
@@ -72,9 +78,9 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Documentation",
+      "classification": "Support",
       "type": "Link",
-      "text": "Documentation"
+      "text": "Support"
     },
     {
       "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US",
@@ -128,9 +134,9 @@
   "servicePlans": [
     {
       "name": "default",
-      "displayName": "Event Mesh - default plan - broker resource per subaccount for productive usage",
+      "displayName": "default",
       "category": "SERVICE",
-      "description": "default - broker resource per subaccount for productive usage",
+      "description": "Event Mesh - default plan",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -424,9 +430,9 @@
     },
     {
       "name": "event-mesh-connectivity-beta",
-      "displayName": "Event Mesh Connectivity BETA",
+      "displayName": "event-mesh-connectivity-beta",
       "category": "SERVICE",
-      "description": "Event Mesh Connectivity BETA",
+      "description": "Event Mesh - Connectivity (Beta) - Manage connectivity configurations of different applications and services (including 3rd party eventing infrastructures) for seamless exchange of business events across your landscape",
       "isFree": true,
       "isBeta": true,
       "dataCenters": [

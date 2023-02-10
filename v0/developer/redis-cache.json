@@ -1,7 +1,7 @@
 {
   "name": "redis-cache",
   "displayName": "Redis on SAP BTP, hyperscaler option",
-  "description": "Redis Cache service on SAP BTP",
+  "description": "The Redis service on SAP BTP provides a way to directly consume the Redis cache service provided by the Infrastructure providers such as AWS and Azure.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/xXLQLYrsh34SMrdW6tFY9sLzOCywbl08tPqcwt6oYRILElMFhpuXF_iVJBRlXgPH.svg",
   "links": [
     {
@@ -45,6 +45,18 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/ad8f6ea81b714bbb9bf995dd2c2b424e/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/product/Redis/Cloud/en-US",
@@ -200,7 +212,7 @@
       "name": "premium",
       "displayName": "premium",
       "category": "SERVICE",
-      "description": "Redis Cache service for large scale productive usage",
+      "description": "Create production-ready Redis Cache instances with premium features.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -498,7 +510,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
-      "description": "Redis Cache service for small scale productive usage",
+      "description": "Standard Redis Cache service offering.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
