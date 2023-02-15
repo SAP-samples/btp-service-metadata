@@ -1,7 +1,7 @@
 {
   "name": "data-attribute-recommendation",
   "displayName": "Data Attribute Recommendation",
-  "description": "DAR is a classification service that can classify entities such as product, stores and users.",
+  "description": "Data Attribute Recommendation uses free text, numbers and categories as input to classify entities such as products, stores and users into multiple classes and also to predict the value of missing numerical attributes in your data records. You can use Data Attribute Recommendation, for example, to classify incoming product information and predict the price of commodities based on their description.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/A9Z6WR5Ov_kjxECZcoLrNCCFe31SHkDm_rbSx8QSehp71FhStml2VjWHr85uclms.svg",
   "links": [
     {
@@ -114,9 +114,15 @@
     },
     {
       "value": "https://help.sap.com/viewer/105bcfd88921418e8c29b24a7a402ec3/SHIP/en-US/4fb850f57a7848cab74f180c129c0b86.html",
-      "classification": "Documentation",
+      "classification": "Support",
       "type": "Link",
-      "text": "Documentation"
+      "text": "Support"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
     },
     {
       "value": "https://www.youtube.com/embed/6IWV3pg2BK8",
@@ -134,9 +140,9 @@
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Default free plan",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

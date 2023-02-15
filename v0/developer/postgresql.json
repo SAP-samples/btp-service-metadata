@@ -1,9 +1,15 @@
 {
   "name": "postgresql",
   "displayName": "PostgreSQL on SAP BTP",
-  "description": "Relational database with an object-oriented model.",
+  "description": "PostgreSQL on SAP BTP offers an object-relational database management system with many advanced features, such as user-defined types, table inheritance, foreign key referential integrity, Multiversion Concurrency Control (MVCC), and so on.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/xmznGQCxmAqlX--w_o9LfN6ozrRtnHJyw_aksb86y38qhpAeMoTftSbyLQhaHHdU.svg",
   "links": [
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/data-storage/postgresql.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
     {
       "value": "https://community.sap.com/search/?ct=blog&q=PostgreSQL%20on%20SAP%20BTP",
       "classification": "SAP Community",
@@ -29,10 +35,16 @@
       "text": "Feature Scope Description"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/314e0968334d45ab855924497759671b.html",
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
     },
     {
       "value": "https://help.sap.com/docs/BTP/6be7ed96ddeb4e158c2107c434142545/1cb29d5c1f714e71a79379c6b7482428.html",
@@ -74,9 +86,9 @@
   "servicePlans": [
     {
       "name": "large",
-      "displayName": "PostgreSQL",
+      "displayName": "large",
       "category": "SERVICE",
-      "description": "PostgreSQL",
+      "description": "PostgreSQL relational database service - large plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -161,9 +173,9 @@
     },
     {
       "name": "medium",
-      "displayName": "PostgreSQL",
+      "displayName": "medium",
       "category": "SERVICE",
-      "description": "PostgreSQL",
+      "description": "PostgreSQL relational database service - medium plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -248,9 +260,9 @@
     },
     {
       "name": "small",
-      "displayName": "PostgreSQL",
+      "displayName": "small",
       "category": "SERVICE",
-      "description": "PostgreSQL",
+      "description": "PostgreSQL relational database service - small plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -335,9 +347,9 @@
     },
     {
       "name": "xsmall",
-      "displayName": "PostgreSQL",
+      "displayName": "xsmall",
       "category": "SERVICE",
-      "description": "PostgreSQL",
+      "description": "PostgreSQL relational database service - xsmall plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -422,9 +434,9 @@
     },
     {
       "name": "xxsmall",
-      "displayName": "PostgreSQL",
+      "displayName": "xxsmall",
       "category": "SERVICE",
-      "description": "PostgreSQL",
+      "description": "PostgreSQL relational database service - xxsmall plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

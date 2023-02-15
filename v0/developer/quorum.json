@@ -1,9 +1,15 @@
 {
   "name": "quorum",
   "displayName": "Quorum on SAP BTP",
-  "description": "Quorum",
+  "description": "The Quorum service lets you create, delete, monitor and maintain individual Quorum nodes and connect them to a blockchain network.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Ol1uhfqFqKgQhafn1_1EZ2kHzSYQYb4PhJlsxwT-uG46LHEMZQADTpVCMfo_ltOR.png",
   "links": [
+    {
+      "value": "",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
     {
       "value": "https://open.sap.com/courses/leo4",
       "classification": "Learning",
@@ -35,6 +41,12 @@
       "text": "Quorum Dashboard"
     },
     {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
       "value": "https://help.sap.com/docs/QUORUM",
       "classification": "Documentation",
       "type": "Link",
@@ -44,9 +56,9 @@
   "servicePlans": [
     {
       "name": "cyon",
-      "displayName": "Quorum",
+      "displayName": "cyon",
       "category": "SERVICE",
-      "description": "Quorum",
+      "description": "Connect Your Own Network (CYON) into SAP BTP.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -89,9 +101,9 @@
     },
     {
       "name": "dev",
-      "displayName": "Quorum",
+      "displayName": "dev",
       "category": "SERVICE",
-      "description": "Quorum",
+      "description": "Environment with all relevant APIs for developing and testing of Solidity Smart Contracts on a fixed network with shared nodes.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -124,9 +136,9 @@
     },
     {
       "name": "testnet",
-      "displayName": "Quorum",
+      "displayName": "testnet",
       "category": "SERVICE",
-      "description": "Quorum",
+      "description": "Quorum node which is part of a cross organizational test network available for developing and testing distributed applications. It may not be used productively.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

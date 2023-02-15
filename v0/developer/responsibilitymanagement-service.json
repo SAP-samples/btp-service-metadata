@@ -1,15 +1,9 @@
 {
   "name": "responsibilitymanagement-service",
   "displayName": "SAP Responsibility Management service",
-  "description": "Determine responsible agents for a business process",
+  "description": "As we move toward an intelligent enterprise, intelligent systems need to determine agents who are responsible for business processes and objects, and automatically notify them. It is essential to define and manage these responsibilities for various contexts and retrieve responsible agents who can respond to tasks and activities.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/b1ldTck8NnlM5p1bIuY7pPeRiF9Lu13vNGYUO1yNfjK_mT946xz-xvRQI2Nng8-w.svg",
   "links": [
-    {
-      "value": "https://api.sap.com/package/ResponsibilityManagementOnSAPBTP/rest",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
-    },
     {
       "value": "https://api.sap.com/package/ResponsibilityManagementOnSAPBTP/overview",
       "classification": "API Hub",
@@ -33,6 +27,24 @@
       "classification": "Discovery Center",
       "type": "Link",
       "text": "SAP Discovery Center - Responsibility Management Service"
+    },
+    {
+      "value": "https://help.sap.com/doc/ad6fe188a1ce4222865871e7b54249e0/SHIP/en-US/067b880fe2c344e298d89703a8dceb07.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/RESPONSIBILITY_MANAGEMENT_SCP/e8006c3a6395426291c07b3e6f7ce78b/f34038af419543ac9ff4d4bba2ee5210.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://api.sap.com/package/ResponsibilityManagementOnSAPBTP/rest",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/8308e6d301d54584a33cd04a9861bc52/1809.000/en-US/a4a31dc3e2824cb1afc7be8eafc07f5c.html?q=Responsibility%20Management",
@@ -69,6 +81,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Responsibility%20Management%20Service",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
     }
   ],
   "servicePlans": [
@@ -76,7 +94,7 @@
       "name": "standard",
       "displayName": "Standard",
       "category": "SERVICE",
-      "description": "Standard",
+      "description": "Standard Plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

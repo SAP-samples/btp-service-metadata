@@ -1,7 +1,7 @@
 {
   "name": "data-analytics-osb",
   "displayName": "SAP Data Warehouse Cloud",
-  "description": "SAP Data Warehouse Cloud",
+  "description": "SAP Data Warehouse Cloud provides a single, fully-managed cloud environment to allow your organization to acquire, combine, prepare, and model data for consumption in analytics clients.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/CMDPh1DEphpk4tJTPuE5upJrVXmFHrzXWVyfhLqmOkwC0HQUgAL1kFGemtkFw35S.svg",
   "links": [
     {
@@ -71,6 +71,12 @@
       "text": "Feature Scope Description"
     },
     {
+      "value": "https://help.sap.com/docs/SAP_DATA_WAREHOUSE_CLOUD",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/SAP_DATA_WAREHOUSE_CLOUD/c8a54ee704e94e15926551293243fd1d/7a453609c8694b029493e7d87e0de60a.html",
       "classification": "Documentation",
       "type": "Link",
@@ -101,6 +107,12 @@
       "text": "Help Portal Product Page"
     },
     {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
       "value": "https://www.youtube.com/embed/XdUFzWL-zFo",
       "classification": "External",
       "type": "Link",
@@ -110,9 +122,9 @@
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Free Plan",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -153,9 +165,9 @@
     },
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard Plan",
+      "description": "Standard plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

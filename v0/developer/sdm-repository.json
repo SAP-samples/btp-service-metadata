@@ -1,7 +1,7 @@
 {
   "name": "sdm-repository",
   "displayName": "SAP Document Management service",
-  "description": "Use a CMIS complaint repository provided internally with all Document Management capabilities.",
+  "description": "Use a CMIS complaint repository provided internally with all SAP Document Management service capabilities.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/hTJVPoDjoBxUa91sFIWI6LBd27nJ3NXuMm_E8jHwnOLJDC87w68zUTn9OF53Vv8o.svg",
   "links": [
     {
@@ -53,18 +53,30 @@
       "text": "What is Document Service"
     },
     {
+      "value": "https://help.sap.com/docs/DOCUMENT_MANAGEMENT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/DOCUMENT_SERVICE",
       "classification": "Documentation",
       "type": "Link",
       "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
     }
   ],
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "Document Management, Repository option",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Storage in 1GB block",
+      "description": "Storage in 1 GB Block. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -141,9 +153,9 @@
     },
     {
       "name": "standard",
-      "displayName": "Document Management, Repository option",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Storage in 100GB blocks",
+      "description": "Storage in 100 GB Blocks.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

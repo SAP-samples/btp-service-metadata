@@ -1,7 +1,7 @@
 {
   "name": "iot",
-  "displayName": "SAP Cloud Platform Internet of Things",
-  "description": "SAP Business Technology Platform Internet of Things",
+  "displayName": "Internet of Things",
+  "description": "The SAP Business Technology Platform Internet of Things service for the Cloud Foundry environment connects devices to SAP Business Technology Platform to provide scalable ingestion of IoT data and device management. The respective services provide a secure connection to remote devices using a broad variety of IoT protocols and manage the device lifecycle from onboarding to decommissioning. ",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7VrQU-FPZy41F2ffwvJTHHmzp8fTZvNNkGKFt3zoBPYTlfp7zt590IyAVO29Z36h.svg",
   "links": [
     {
@@ -33,6 +33,18 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Internet of Things"
+    },
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/iot/iot-service.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-iot",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
     },
     {
       "value": "https://help.sap.com/doc/f7254d7f9e0d4dc9b54a3f5f95987a2b/latest/en-US/leonardo_iot_fsd.pdf",
@@ -206,9 +218,9 @@
   "servicePlans": [
     {
       "name": "standard",
-      "displayName": "SAP Cloud Platform Internet of Things",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "SAP Business Technology Platform Internet of Things",
+      "description": "Internet of Things service standard size (managed service)",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [

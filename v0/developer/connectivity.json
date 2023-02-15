@@ -1,7 +1,7 @@
 {
   "name": "connectivity",
   "displayName": "SAP Connectivity service",
-  "description": "Establish connections to on-premise systems through the Cloud Connector",
+  "description": "SAP BTP Connectivity service allows you to establish secure and reliable connectivity between your cloud applications and on-premise systems running in isolated networks.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/4KElzJRR2HNjRM4iIRMuPHDJa0AZ91Vcvd_CdHqB64WwCwjVPSogxfJ-xJncRSSv.svg",
   "links": [
     {
@@ -47,6 +47,12 @@
       "text": "Overview | SAP Connectivity Service | SAP API Business Hub"
     },
     {
+      "value": "https://cloudplatform.sap.com/capabilities/integration/cloud-connector.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Connectivity%20service",
       "classification": "SAP Community",
       "type": "Link",
@@ -59,6 +65,12 @@
       "text": "SAP Community Questions and Answers"
     },
     {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/connectivity-service",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/connectivity-service",
       "classification": "Discovery Center",
       "type": "Link",
@@ -69,6 +81,18 @@
       "classification": "Documentation",
       "type": "PDF",
       "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/e54cc8fbbb571014beb5caaf6aa31280.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/e6c7616abb5710148cfcf3e75d96d596.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US",
@@ -239,7 +263,7 @@
     },
     {
       "name": "lite",
-      "displayName": "Lite",
+      "displayName": "lite",
       "category": "SERVICE",
       "description": "Allow cloud applications to establish secure connections to on-premise systems through SAP Cloud Connector",
       "isFree": true,

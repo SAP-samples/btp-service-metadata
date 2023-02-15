@@ -1,9 +1,15 @@
 {
   "name": "rabbitmq",
   "displayName": "RabbitMQ",
-  "description": "RabbitMQ",
+  "description": "RabbitMQ on SAP BTP includes a message broker that implements message queues for application-to-application messaging. Supports Advanced Message Queuing Protocol (AMQP).",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mNVZx-E9GHSdgpTG5TmxbrurHmgvp1f4QrlLni5ak-sDY98ooPWVmAilZG7Mwptp.svg",
   "links": [
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/integration/rabbitmq.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it. RabbitMQ 3.6 plans are reaching end of life soon. Support to upgrade the existing RabbitMQ 3.6 instances to the new 3.7 plans would be provided soon."
+    },
     {
       "value": "https://help.sap.com/doc/7b0fc537dd794cc3abf113ee99936799/",
       "classification": "Documentation",
@@ -29,6 +35,18 @@
       "text": "Tutorial: RabbitMQ"
     },
     {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/bf757994794445ed904b97bf1907812a.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/viewer/product/RabbitMQ/Cloud/en-US",
       "classification": "Documentation",
       "type": "Link",
@@ -50,9 +68,9 @@
   "servicePlans": [
     {
       "name": "large",
-      "displayName": "RabbitMQ",
+      "displayName": "large",
       "category": "SERVICE",
-      "description": "RabbitMQ",
+      "description": "RabbitMQ service - multi-node large plan with load balancing",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -137,9 +155,9 @@
     },
     {
       "name": "medium",
-      "displayName": "RabbitMQ",
+      "displayName": "medium",
       "category": "SERVICE",
-      "description": "RabbitMQ",
+      "description": "RabbitMQ service - multi-node medium plan with load balancing",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -224,9 +242,9 @@
     },
     {
       "name": "small",
-      "displayName": "RabbitMQ",
+      "displayName": "small",
       "category": "SERVICE",
-      "description": "RabbitMQ",
+      "description": "RabbitMQ service - multi-node small plan with load balancing",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -311,9 +329,9 @@
     },
     {
       "name": "virtualhost",
-      "displayName": "RabbitMQ service - virtualhost plan",
+      "displayName": "virtualhost",
       "category": "SERVICE",
-      "description": "RabbitMQ service - virtualhost plan",
+      "description": "[BETA] RabbitMQ service - virtual host plan within an existing RabbitMQ service instance (for non-productive usage)",
       "isFree": true,
       "isBeta": true,
       "dataCenters": [
@@ -362,9 +380,9 @@
     },
     {
       "name": "xsmall",
-      "displayName": "RabbitMQ",
+      "displayName": "xsmall",
       "category": "SERVICE",
-      "description": "RabbitMQ",
+      "description": "RabbitMQ service - multi-node x-small plan without load balancing",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

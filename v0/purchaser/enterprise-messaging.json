@@ -1,14 +1,14 @@
 {
   "name": "enterprise-messaging",
   "displayName": "SAP Event Mesh",
-  "description": "Event Mesh",
+  "description": "The SAP Event Mesh service decouples communication and allows for event-driven business processes.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/63MODC2qIDjt9S-wPRQg5ELnHzu6rYpfkeGuSjzXupo1gVcB-JaT5i_lLi4SPFyp.svg",
   "servicePlans": [
     {
       "name": "default",
-      "displayName": "Event Mesh - default plan - broker resource per subaccount for productive usage",
+      "displayName": "default",
       "category": "SERVICE",
-      "description": "default - broker resource per subaccount for productive usage",
+      "description": "Event Mesh - default plan",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -115,9 +115,9 @@
     },
     {
       "name": "event-mesh-connectivity-beta",
-      "displayName": "Event Mesh Connectivity BETA",
+      "displayName": "event-mesh-connectivity-beta",
       "category": "SERVICE",
-      "description": "Event Mesh Connectivity BETA",
+      "description": "Event Mesh - Connectivity (Beta) - Manage connectivity configurations of different applications and services (including 3rd party eventing infrastructures) for seamless exchange of business events across your landscape",
       "isFree": true,
       "isBeta": true,
       "dataCenters": [

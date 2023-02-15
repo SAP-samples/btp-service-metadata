@@ -1,9 +1,15 @@
 {
   "name": "objectstore",
   "displayName": "Object Store on SAP BTP",
-  "description": "Provides a bucket that applications can use to store and manage objects.",
+  "description": "Object Store on SAP BTP provisions an object storage space that can be used by applications to store and manage objects.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/a4OooLtN_eA6YFJtJUgx4_CYvcuWIS2_5rRXY_2-QpLqC15nVTGmmAJOYXznoxre.svg",
   "links": [
+    {
+      "value": "https://cloudplatform.sap.com/capabilities/data-storage/objectstore.html",
+      "classification": "Marketing",
+      "type": "Link",
+      "text": "Learn more about this service and how to purchase it."
+    },
     {
       "value": "https://community.sap.com/search/?ct=blog&q=Object%20Store%20on%20SAP%20BTP",
       "classification": "SAP Community",
@@ -48,9 +54,9 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Documentation",
+      "classification": "Support",
       "type": "Link",
-      "text": "Documentation"
+      "text": "Support"
     },
     {
       "value": "https://help.sap.com/viewer/product/ObjectStore/Cloud/en-US",
@@ -62,9 +68,9 @@
   "servicePlans": [
     {
       "name": "azure-standard",
-      "displayName": "ObjectStore",
+      "displayName": "azure-standard",
       "category": "SERVICE",
-      "description": "ObjectStore",
+      "description": "Provides an objectstore on Azure Storage account that applications can use to store & manage objects",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -101,9 +107,9 @@
     },
     {
       "name": "gcs-standard",
-      "displayName": "Object Store",
+      "displayName": "gcs-standard",
       "category": "SERVICE",
-      "description": "Object Store",
+      "description": "Provides an objectstore on Google Cloud Storage that applications can use to store & manage objects",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -124,9 +130,9 @@
     },
     {
       "name": "s3-standard",
-      "displayName": "Object Store",
+      "displayName": "s3-standard",
       "category": "SERVICE",
-      "description": "Object Store",
+      "description": "Provides an objectstore on AWS S3 that applications can use to store & manage objects",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [

@@ -1,14 +1,14 @@
 {
   "name": "credstore",
   "displayName": "SAP Credential Store",
-  "description": "Secure repository for credentials, cryptographic keys and certificates.",
+  "description": "The Credential Store provides a secure repository for passwords and keys to applications that are running on SAP Business Technology Platform. It enables the applications to retrieve credentials and use them for authentication to external services, or to perform cryptographic operations and TLS communication. ",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/bLa2FhHJYN10hypdALtq7jXJBbQmy7wVdWekbAN5_3yBGTH8rQTN9SqwjR5Gl9_7.svg",
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Credential Store service free",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -99,7 +99,7 @@
       "name": "proxy",
       "displayName": "proxy",
       "category": "SERVICE",
-      "description": "Credential Store service proxy",
+      "description": "Proxy plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -186,7 +186,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
-      "description": "Credential Store service standard",
+      "description": "Standard plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

@@ -1,7 +1,7 @@
 {
   "name": "xsuaa",
   "displayName": "SAP Authorization and Trust Management service",
-  "description": "Lets you manage user authorizations and trust to identity providers.",
+  "description": "The Authorization and Trust Management service lets you manage user authorizations and trust to identity providers. Identity providers are the user base for applications. You can use an identity authentication tenant, an SAP on-premise system, or a custom corporate identity provider. User authorizations are managed using technical roles at the application level, which can be aggregated into business-level groups and role collections for large-scale cloud scenarios.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qhOUIp9iQuuZD0CGAj8r2DME9MZRx7WhXS7efiK0J4ANcpnn__hC2WCzr63CS093.svg",
   "links": [
     {
@@ -77,6 +77,12 @@
       "text": "Tutorials (Cloud Foundry Environment)"
     },
     {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/dbea343ebe184c26b6067daaabaa9ac6.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Authorization%20and%20Trust%20Management%20Service",
       "classification": "Documentation",
       "type": "Link",
@@ -86,9 +92,9 @@
   "servicePlans": [
     {
       "name": "apiaccess",
-      "displayName": "Apiaccess",
+      "displayName": "apiaccess",
       "category": "SERVICE",
-      "description": "Access Plan for Authorization, Users and IDPS API endpoints.",
+      "description": "Access plan for authorizations, users, identity providers, and API endpoints",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -173,7 +179,7 @@
     },
     {
       "name": "application",
-      "displayName": "Application",
+      "displayName": "application",
       "category": "SERVICE",
       "description": "Application plan to be used for business applications",
       "isFree": true,
@@ -260,9 +266,9 @@
     },
     {
       "name": "broker",
-      "displayName": "Broker",
+      "displayName": "broker",
       "category": "SERVICE",
-      "description": "To be used by business reuse services or service brokers",
+      "description": "Broker plan to be used by business reuse services / service brokers",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -347,9 +353,9 @@
     },
     {
       "name": "space",
-      "displayName": "Space",
+      "displayName": "space",
       "category": "SERVICE",
-      "description": "Space specific name adoption",
+      "description": "Space specific name adoption (required to run same applications in different spaces)",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

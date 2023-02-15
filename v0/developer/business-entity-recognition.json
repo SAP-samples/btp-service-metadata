@@ -1,7 +1,7 @@
 {
   "name": "business-entity-recognition",
   "displayName": "Business Entity Recognition",
-  "description": "Detect and highlight entities from unstructured text using machine learning",
+  "description": "Business Entity Recognition helps you to detect and highlight any given type of named entity in unstructured text into pre-defined categories. You can use Business Entity Recognition, for example, to automatically extract the context from incoming emails with invoice inquiries, automating recurring tasks of answering to status and payment of invoices.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/EtYwV2zsSfcBgKfxkX3a2HGlXmbf4GIWmqOi_4hqUo1L3pKTmAlOq_6dPhy4vZNc.svg",
   "links": [
     {
@@ -95,6 +95,12 @@
       "text": "Initial Setup"
     },
     {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
       "value": "https://www.youtube.com/embed/VAZKt5kSeBY",
       "classification": "External",
       "type": "Link",
@@ -104,9 +110,9 @@
   "servicePlans": [
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Free plan for Business Entity Recognition",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -135,9 +141,9 @@
     },
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard plan for Business Entity Recognition",
+      "description": "Default Plan for Business Entity Recognition",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

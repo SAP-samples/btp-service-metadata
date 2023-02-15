@@ -1,7 +1,7 @@
 {
   "name": "jobscheduler",
   "displayName": "SAP Job Scheduling service",
-  "description": "Job Scheduler",
+  "description": "The Job Scheduling Service allows you to define and manage jobs that run once or on recurring schedules. Use this runtime-agnostic service to schedule REST endpoint actions in your application or to schedule long-running processes using Cloud Foundry tasks. Use REST APIs to schedule your jobs, including long-running jobs asynchronously, and create multiple schedule formats for both simple and complex recurring schedules. The service dashboard is a web interface that lets you manage jobs and schedules.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v5uV3ilFJzWpwPxBO1OZ06s5uBTY-JDK3yfeiRldCbDMHGSbed-5xF7DUN79BPei.svg",
   "links": [
     {
@@ -48,9 +48,9 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Documentation",
+      "classification": "Support",
       "type": "Link",
-      "text": "Documentation"
+      "text": "Support"
     },
     {
       "value": "https://help.sap.com/docs/JOB_SCHEDULER",
@@ -63,14 +63,20 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "What's New"
+    },
+    {
+      "value": "https://www.sapstore.com/solutions/40166/SAP-Cloud-Platform-Job-Scheduler",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     }
   ],
   "servicePlans": [
     {
       "name": "standard",
-      "displayName": "Job Scheduler service standard plan",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Job Scheduler service standard plan",
+      "description": "Create multiple jobs or Cloud Foundry tasks with minimum schedule frequency of 5 minutes.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [

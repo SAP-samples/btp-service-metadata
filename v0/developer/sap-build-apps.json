@@ -1,9 +1,15 @@
 {
   "name": "sap-build-apps",
   "displayName": "SAP Build Apps",
-  "description": "SAP Build Apps no-code development environment",
+  "description": "SAP Build Apps is a full stack no-code development platform for creating Web and native mobile applications. Please note that an instance of Cloud Identity Services is required to successfully create a subscription. See Documentation for more information.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AMxRDPWxzLESb8QEEmescBY26QaJbWiu-0RFQhzSbTerLLraYa-XX3oAiRKEcuEU.svg",
   "links": [
+    {
+      "value": "https://account.hana.ondemand.com/cockpit#/home/allaccounts",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP BTP Cockpit"
+    },
     {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Build%20Apps",
       "classification": "SAP Community",
@@ -15,6 +21,12 @@
       "classification": "SAP Community",
       "type": "Link",
       "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/sap-build-apps",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
     },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-build-apps",
@@ -74,9 +86,9 @@
   "servicePlans": [
     {
       "name": "additional-active-users",
-      "displayName": "Additional Active Users",
+      "displayName": "additional-active-users",
       "category": "SERVICE",
-      "description": "Additional active users for SAP Build Apps",
+      "description": "Additional Active Users",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -93,9 +105,9 @@
     },
     {
       "name": "additional-capacity-units",
-      "displayName": "Additional Capacity Units",
+      "displayName": "additional-capacity-units",
       "category": "SERVICE",
-      "description": "Additional capacity units for SAP Build Apps",
+      "description": "Additional Capacity Units",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -112,9 +124,9 @@
     },
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "APPLICATION",
-      "description": "Free plan for SAP Build Apps",
+      "description": "Use the free offering for evaluation purposes. Restrictions apply to the enabled features. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -131,9 +143,9 @@
     },
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "APPLICATION",
-      "description": "Standard plan for SAP Build Apps",
+      "description": "Use the plan for productive development.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

@@ -1,14 +1,14 @@
 {
   "name": "destination",
   "displayName": "SAP Destination service",
-  "description": "Provides a secure and reliable access to destination and certificate configurations",
+  "description": "The Destination service lets you retrieve the backend destination details you need to configure applications in the Cloud Foundry environment.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/o7VuYO5M1EhOj0zG1CC9najqsh9pmt5ZJDNYXv3XETZgs9nPStrzzZOQvpx4DLVg.svg",
   "servicePlans": [
     {
       "name": "lite",
-      "displayName": "Lite",
+      "displayName": "lite",
       "category": "SERVICE",
-      "description": "Allow access to the Destination service REST API",
+      "description": "Shared resources across all apps",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

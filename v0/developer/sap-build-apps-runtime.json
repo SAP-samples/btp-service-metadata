@@ -1,9 +1,21 @@
 {
   "name": "sap-build-apps-runtime",
-  "displayName": "SAP Build Apps runtime service",
-  "description": "SAP Build Apps runtime internal reuse service",
+  "displayName": "SAP Build Apps runtime",
+  "description": "The runtime service for SAP Build Apps. Allows connectivity to visual cloud functions applications developed and deployed on the SAP Build Apps runtime. A subscription to SAP Build Apps is required to use this service.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AMxRDPWxzLESb8QEEmescBY26QaJbWiu-0RFQhzSbTerLLraYa-XX3oAiRKEcuEU.svg",
   "links": [
+    {
+      "value": "https://account.hana.ondemand.com/cockpit#/home/allaccounts",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP BTP Cockpit"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/sap-build-apps",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-build-apps",
       "classification": "Discovery Center",
@@ -62,9 +74,9 @@
   "servicePlans": [
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard plan for SAP Build Apps runtime internal",
+      "description": "Use the standard plan to establish trust to the SAP Build Apps runtime from other applications.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

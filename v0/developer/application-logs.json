@@ -1,7 +1,7 @@
 {
   "name": "application-logs",
   "displayName": "SAP Application Logging service for SAP BTP",
-  "description": "Stream logs of bound applications to a central application logging stack.",
+  "description": "In the Cloud Foundry environment, the SAP Application Logging service for SAP BTP lets you stream logs of bound applications to a central application logging stack. SAP Application Logging service for SAP BTP uses Elastic Stack to store and visualize your application log data. To fully leverage this service, please also consider using one of SAP&apos;s open source libraries (for example, cf-java-logging-support or cf-nodejs-logging-support). In the Neo environment, the application logging allows you to configure loggers for Java applications through the cockpit or the console client. Furthermore, you can retrieve default trace logs, HTTP access logs, and garbage collection logs for the last 7 days.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Ilbe8d8TdUYVoHTIPutaLu23iu0yPF42JeJUnW2n_aNlMRtkD4Xx6wS9LqqB9Vzf.svg",
   "links": [
     {
@@ -15,6 +15,12 @@
       "classification": "SAP Community",
       "type": "Link",
       "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/application-logging-service",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
     },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/application-logging-service",
@@ -50,9 +56,9 @@
   "servicePlans": [
     {
       "name": "large",
-      "displayName": "Application logs large plan",
+      "displayName": "large",
       "category": "SERVICE",
-      "description": "Application logs large plan",
+      "description": "Large Service Plan",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -220,9 +226,9 @@
     },
     {
       "name": "standard",
-      "displayName": "Application logs standard plan",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Application logs standard plan",
+      "description": "Standard Service Plan",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [

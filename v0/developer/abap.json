@@ -1,7 +1,7 @@
 {
   "name": "abap",
   "displayName": "SAP BTP, ABAP environment",
-  "description": "Develop ABAP cloud apps and extensions, leveraging innovations of SAP HANA",
+  "description": "Access an instance to build custom ABAP cloud apps, leveraging newest innovations powered by SAP HANA.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/vJcd41n53HzFxRHvVOidRfGh2GGIiNS9fFPpkfK6m94KHgZbrcuPvhR6mmVn3Bh8.svg",
   "links": [
     {
@@ -71,6 +71,12 @@
       "text": "Initial Setup"
     },
     {
+      "value": "https://help.sap.com/docs/BTP/3504ec5ef16548778610c7e89cc0eac3/11d62652aa2b4600a0fa136de0789648.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/BTP/5371047f1273405bb46725a417f95433/272ad1b3b09948d6a86b52ffa21c55bb.html",
       "classification": "Documentation",
       "type": "Link",
@@ -119,6 +125,12 @@
       "text": "What's New"
     },
     {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
       "value": "https://www.youtube.com/embed/VMww435AM48",
       "classification": "External",
       "type": "Link",
@@ -128,9 +140,9 @@
   "servicePlans": [
     {
       "name": "16_abap_64_db",
-      "displayName": "16 GB ABAP Runtime, 64 GB Database",
+      "displayName": "16_abap_64_db (DEPRECATED)",
       "category": "SERVICE",
-      "description": "16 GB ABAP Runtime, 64 GB Database",
+      "description": "This plan should not be used anymore as it will soon be removed. Please use plan standard instead.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -296,9 +308,9 @@
     },
     {
       "name": "free",
-      "displayName": "Free",
+      "displayName": "free",
       "category": "SERVICE",
-      "description": "Free plan",
+      "description": "Free plan. For small proof-of-concept projects with limited number of repository objects (max. 500). The instance will be only available during regular office hours. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

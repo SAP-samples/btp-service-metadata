@@ -1,7 +1,7 @@
 {
   "name": "IRPA",
   "displayName": "SAP Intelligent Robotic Process Automation",
-  "description": "Design, configure, and execute automation projects.",
+  "description": "SAP Intelligent Robotic Process Automation lets you automate enterprise business processes. Design process automations with the Desktop Studio by creating end-to-end scenarios. Import these scenarios into the cloud Factory to configure and execute them with Agents. An Agent can work as a Digital Assistant (attended automation) or as a Digital Worker (unattended automation).",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/wX4singZFQyid79UsAxgqytJ7SBrVft8CaEWCBZ1Vq0aXOH6NZseMOL7-ch-erbe.svg",
   "servicePlans": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "name": "concurrent-attended",
-      "displayName": "Concurrent attended runs",
+      "displayName": "concurrent-attended",
       "category": "SERVICE",
       "description": "Number of concurrent attended runs (in blocks of 10)",
       "isFree": null,
@@ -76,7 +76,7 @@
     },
     {
       "name": "concurrent-unattended",
-      "displayName": "Concurrent unattended runs",
+      "displayName": "concurrent-unattended",
       "category": "SERVICE",
       "description": "Number of concurrent unattended runs (in blocks of 1)",
       "isFree": null,
@@ -140,7 +140,7 @@
       "name": "free",
       "displayName": "Free",
       "category": "APPLICATION",
-      "description": "SAP Intelligent Robotic Process Automation Free Model",
+      "description": "Design, configure, and execute automation projects (free edition). Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
