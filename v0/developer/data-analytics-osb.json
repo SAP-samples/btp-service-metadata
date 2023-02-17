@@ -161,14 +161,42 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_show_form_view": true,
+              "type": "object",
+              "properties": {
+                "email": {
+                  "description": "email of the user",
+                  "type": "string",
+                  "format": "email",
+                  "minLength": 1
+                },
+                "first_name": {
+                  "description": "first name of the user",
+                  "type": "string",
+                  "minLength": 1
+                },
+                "last_name": {
+                  "description": "last name of the user",
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
     },
     {
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
       "description": "Standard plan",
-      "isFree": null,
+      "isFree": false,
       "isBeta": false,
       "dataCenters": [
         {
@@ -204,7 +232,35 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "_show_form_view": true,
+              "type": "object",
+              "properties": {
+                "email": {
+                  "description": "email of the user",
+                  "type": "string",
+                  "format": "email",
+                  "minLength": 1
+                },
+                "first_name": {
+                  "description": "first name of the user",
+                  "type": "string",
+                  "minLength": 1
+                },
+                "last_name": {
+                  "description": "last name of the user",
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
     }
   ],
   "supportComponents": [

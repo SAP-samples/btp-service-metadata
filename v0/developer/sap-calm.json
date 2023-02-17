@@ -59,7 +59,7 @@
       "displayName": "default",
       "category": "SERVICE",
       "description": "Plan default",
-      "isFree": null,
+      "isFree": false,
       "isBeta": false,
       "dataCenters": [
         {
@@ -80,6 +80,9 @@
   ],
   "supportComponents": [
     {
+      "value": "SV-CLM-API"
+    },
+    {
       "value": "SV-CLM-OP"
     }
   ],
@@ -90,12 +93,17 @@
       "apiType": "RESTful"
     },
     {
+      "name": "SAP Cloud ALM Status Events",
+      "url": "https://api.sap.com/api/CALM_BSM/overview",
+      "apiType": "RESTful"
+    },
+    {
       "name": "SAP Cloud ALM Projects",
       "url": "https://api.sap.com/api/CALM_PJM/overview",
       "apiType": "RESTful"
     },
     {
-      "name": "SAP Cloud ALM Process Management",
+      "name": "SAP Cloud ALM Process Scopes",
       "url": "https://api.sap.com/api/CALM_PM/overview",
       "apiType": "RESTful"
     },
