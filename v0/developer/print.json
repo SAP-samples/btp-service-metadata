@@ -117,7 +117,88 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "notifications": {
+                  "type": "array",
+                  "minItems": 0,
+                  "maxItems": 1,
+                  "default": [
+                    {
+                      "destinationName": "",
+                      "usage": ""
+                    }
+                  ],
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "destinationName": {
+                        "type": "string",
+                        "pattern": "^[\\w-]{0,200}$",
+                        "default": ""
+                      },
+                      "usage": {
+                        "type": "string",
+                        "enum": [
+                          "OMS",
+                          "ISN",
+                          ""
+                        ],
+                        "default": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "notifications": {
+                  "type": "array",
+                  "minItems": 0,
+                  "maxItems": 1,
+                  "default": [
+                    {
+                      "destinationName": "",
+                      "usage": ""
+                    }
+                  ],
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "destinationName": {
+                        "type": "string",
+                        "pattern": "^[\\w-]{0,200}$",
+                        "default": ""
+                      },
+                      "usage": {
+                        "type": "string",
+                        "enum": [
+                          "OMS",
+                          "ISN",
+                          ""
+                        ],
+                        "default": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     },
     {
       "name": "sender",
