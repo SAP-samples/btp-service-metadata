@@ -207,6 +207,24 @@
                   "default": 4,
                   "const": 4
                 },
+                "admin_user_name": {
+                  "title": "Admin User Name",
+                  "description": "Optionally enter the username of the administrator. The username must not begin with SAP_ or _, must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 40 characters.",
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 40,
+                  "pattern": "^(?!SAP_|_)[\\.A-Z0-9_-]{0,40}$"
+                },
+                "login_attribute": {
+                  "title": "Login Attribute",
+                  "description": "Which attribute should be used for login.",
+                  "type": "string",
+                  "enum": [
+                    "email",
+                    "user_name"
+                  ],
+                  "default": "email"
+                },
                 "size_of_runtime": {
                   "title": "ABAP Runtime Size",
                   "description": "Enter the size of the ABAP runtime in blocks of 16 GB",
