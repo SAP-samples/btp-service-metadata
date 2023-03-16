@@ -99,7 +99,36 @@
           "name": "US East (VA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "readOnly": {
+                  "description": "read Only scope for restrictive access",
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "readOnly": {
+                  "description": "read Only scope for restrictive access",
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
+          }
+        }
+      }
     }
   ],
   "supportComponents": [
