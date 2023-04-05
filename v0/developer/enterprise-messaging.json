@@ -315,11 +315,7 @@
                             }
                           ]
                         }
-                      },
-                      "required": [
-                        "publishFilter",
-                        "subscribeFilter"
-                      ]
+                      }
                     },
                     "queueRules": {
                       "type": "object",
@@ -352,26 +348,9 @@
                             }
                           ]
                         }
-                      },
-                      "required": [
-                        "publishFilter",
-                        "subscribeFilter"
-                      ]
+                      }
                     }
-                  },
-                  "required": [
-                    "topicRules",
-                    "queueRules"
-                  ]
-                },
-                "authorities": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "string",
-                      "pattern": "[a-zA-Z0-9.,_()$|\\-!]+$"
-                    }
-                  ]
+                  }
                 },
                 "xs-security": {
                   "type": "object",
