@@ -536,7 +536,8 @@
                 "is_development_allowed",
                 "sapsystemname",
                 "size_of_runtime",
-                "size_of_persistence"
+                "size_of_persistence",
+                "size_of_persistence_disk"
               ],
               "properties": {
                 "admin_email": {
@@ -615,6 +616,12 @@
                     16,
                     24
                   ]
+                },
+                "size_of_persistence_disk": {
+                  "description": "Change the disk or storage size of the HANA database (in GB). If \"auto\" is selected the value will be set to the minimal value: 40 * size_of_persistence + 40. The maximum value is 120 * size_of_persistence + 40.",
+                  "type": "string",
+                  "pattern": "^(auto|\\d+)?$",
+                  "default": "auto"
                 }
               },
               "required": [
