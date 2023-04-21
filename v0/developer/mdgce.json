@@ -1,0 +1,74 @@
+{
+  "name": "mdgce",
+  "displayName": "SAP Master Data Governance, cloud edition",
+  "description": "SAP Master Data Governance, cloud edition supports you in maintaining a high level of master data quality, offering capabilities to manage core attributes of business partners and to evaluate their quality.",
+  "icon": "Icon too big. Service owner needs to reduce size.",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Master%20Data%20Governance%2C%20cloud%20edition",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Master%20Data%20Governance%2C%20cloud%20edition",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/MDG_CE/nt.latest",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "free",
+      "displayName": "Free",
+      "category": "APPLICATION",
+      "description": "Process core business partner master data (such as name and address) using multi-level, workflow-based change processes, and evaluate their quality. This plan is for test and free purposes. No productive use is permitted. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Process core business partner master data (such as name and address) using multi-level, workflow-based change processes, and evaluate their quality. ",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}
