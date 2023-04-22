@@ -2,7 +2,7 @@
   "name": "mdgce",
   "displayName": "SAP Master Data Governance, cloud edition",
   "description": "SAP Master Data Governance, cloud edition supports you in maintaining a high level of master data quality, offering capabilities to manage core attributes of business partners and to evaluate their quality.",
-  "icon": "Icon too big. Service owner needs to reduce size.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/k6a4QEYfYDv5JIBBm3J6GckgvlMRrvaK7VzzYix4n_HSmgShxEoierKhMlRY1V6c.svg",
   "links": [
     {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Master%20Data%20Governance%2C%20cloud%20edition",
@@ -17,16 +17,70 @@
       "text": "SAP Community Questions and Answers"
     },
     {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/master-data-governance-cloud-edition",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Master Data Governance, cloud edition"
+    },
+    {
+      "value": "https://help.sap.com/docs/MDG_CE",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/docs/MDG_CE/27ced20013d04f8bb7568ff8451c66ad/e47041ef492449b59857198999ecb0e9.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://community.sap.com/topics/master-data-governance",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "MDG on SAP Community"
+    },
+    {
+      "value": "https://community.sap.com/topics/master-data-governance/how-to",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "How-To Information Including Video Tutorials"
+    },
+    {
+      "value": "https://www.sap.com/documents/2022/10/48311aa5-487e-0010-bca6-c68f7e60039b.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Deep-Dive: Detailed Presentation on SAP Master Data Governance, cloud edition"
+    },
+    {
+      "value": "https://www.sap.com/documents/2023/02/04811155-5e7e-0010-bca6-c68f7e60039b.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/mdg-ce/mdg-ce-application-help-27ced20013d04f8bb7568ff8451c66ad/39aec39392ff4f06b965cf9c7886cdb7.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Free Tier Offering"
+    },
+    {
       "value": "https://help.sap.com/viewer/product/MDG_CE/nt.latest",
       "classification": "Support",
       "type": "Link",
       "text": "Support"
     },
     {
+      "value": "https://help.sap.com/whats-new/7cfb2af16a2b403ab5b934ef59139c2b",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
       "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
       "classification": "Legal",
       "type": "Link",
-      "text": "Legal"
+      "text": "Business Technology Platform Supplemental Terms and Conditions"
     }
   ],
   "servicePlans": [
@@ -69,6 +123,13 @@
       "schemas": null
     }
   ],
-  "supportComponents": [],
+  "supportComponents": [
+    {
+      "value": "CA-MDG-CL"
+    },
+    {
+      "value": "CA-MDG-CL*"
+    }
+  ],
   "apis": []
 }

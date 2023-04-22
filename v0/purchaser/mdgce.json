@@ -2,7 +2,7 @@
   "name": "mdgce",
   "displayName": "SAP Master Data Governance, cloud edition",
   "description": "SAP Master Data Governance, cloud edition supports you in maintaining a high level of master data quality, offering capabilities to manage core attributes of business partners and to evaluate their quality.",
-  "icon": "Icon too big. Service owner needs to reduce size.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/k6a4QEYfYDv5JIBBm3J6GckgvlMRrvaK7VzzYix4n_HSmgShxEoierKhMlRY1V6c.svg",
   "servicePlans": [
     {
       "name": "free",
@@ -17,7 +17,11 @@
           "name": "Europe (Frankfurt)"
         }
       ],
-      "materialNumberMappings": []
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8015104"
+        }
+      ]
     },
     {
       "name": "standard",
@@ -43,5 +47,13 @@
       "materialNumberMappings": []
     }
   ],
-  "certifications": []
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
 }
