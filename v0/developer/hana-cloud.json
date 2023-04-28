@@ -1122,7 +1122,10 @@
                             "DISASTER_KEEP_AZ_RECOVERY",
                             "disaster_recovery_takeover",
                             "TEMPLATE_BACKUP",
-                            "synchronous_replication_takeover"
+                            "synchronous_replication_takeover",
+                            "TAKE_SNAPSHOT_FOR_FALLBACK",
+                            "FALLBACK_TO_SNAPSHOT",
+                            "REMOVE_SNAPSHOT_FOR_FALLBACK"
                           ],
                           "type": "string"
                         }
@@ -2032,7 +2035,10 @@
                             "DISASTER_KEEP_AZ_RECOVERY",
                             "disaster_recovery_takeover",
                             "TEMPLATE_BACKUP",
-                            "synchronous_replication_takeover"
+                            "synchronous_replication_takeover",
+                            "TAKE_SNAPSHOT_FOR_FALLBACK",
+                            "FALLBACK_TO_SNAPSHOT",
+                            "REMOVE_SNAPSHOT_FOR_FALLBACK"
                           ],
                           "type": "string"
                         }
