@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/FX4Ugw-NNbfHCOveisY1vptR3xgZnHWrmFyijkNG0-JuxTPu70XqdRlqZ8V8eagi.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SCPPrintService/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Print Service | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Print%20service",
       "classification": "SAP Community",
       "type": "Link",
@@ -29,6 +35,12 @@
       "text": "Feature Scope Description"
     },
     {
+      "value": "https://help.sap.com/viewer/07d0692a5a994703992d7538ad78d54b/SHIP/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/viewer/07d0692a5a994703992d7538ad78d54b/SHIP/en-US/5abafd8af72e4a88a4cfaa39ca9b8e2b.html",
       "classification": "Documentation",
       "type": "Link",
@@ -45,6 +57,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "What is SAP Print service?"
+    },
+    {
+      "value": "https://help.sap.com/viewer/9fd06c162b874c3bac7ef214be7fdb9a/SHIP/en-US/553c9ca63cd84537b140d2aa547b8c02.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/9fd06c162b874c3bac7ef214be7fdb9a/SHIP/en-US/f24202b39b614bd6b81c4f8513d0244f.html",
@@ -223,5 +241,11 @@
       "value": "BC-CCM-PRN-OM-SCP"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "SAP Print Service",
+      "url": "https://api.sap.com/api/PRINTAPI/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }

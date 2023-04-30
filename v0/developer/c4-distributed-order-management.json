@@ -5,6 +5,18 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/5ka_XK0Oe038LeC5pEWCtwoI35yGtDwDhoZTyuf7LoEMvabM2tFGEFgVv-bvzOW5.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPOrderManagementFoundation/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Order Management Foundation | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPOrderManagementFoundationBusinessEvents/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Order Management Foundation Business Events | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Order%20Management%20foundation",
       "classification": "SAP Community",
       "type": "Link",
@@ -21,6 +33,12 @@
       "classification": "Documentation",
       "type": "PDF",
       "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_EM",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/docs/SAP_Order_Management_Foundation/95fb0d8e21b9460b8e4690ebbc667d92/0c2255104eb549069933a925dfe71503.html",
@@ -102,5 +120,46 @@
       "value": "CEC-BAF-DOM-INT"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Business Configuration",
+      "url": "https://api.sap.com/api/BusinessConfiguration/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Business Partners",
+      "url": "https://api.sap.com/api/BusinessPartnerAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Orchestration",
+      "url": "https://api.sap.com/api/Orchestration/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Orchestration - Outbound Contracts",
+      "url": "https://api.sap.com/api/OrchestrationOutbound/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Order Activities",
+      "url": "https://api.sap.com/api/OrderActivity/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Orders \u2013 Outbound Contracts",
+      "url": "https://api.sap.com/api/OrderManagementOutbound/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Orders",
+      "url": "https://api.sap.com/api/OrderManagementV2/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Products",
+      "url": "https://api.sap.com/api/Product/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }

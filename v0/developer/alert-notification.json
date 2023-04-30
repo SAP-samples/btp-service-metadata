@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/F7nUWGD0fudUx5QzfpAYXgqo3bhTG8C4xHpLhmxtii9DQK_HLr4_deyZCxbRAp5y.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/AlertNotification/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Alert Notification Service for SAP BTP | SAP API Business Hub"
+    },
+    {
       "value": "https://api.sap.com/package/AlertNotification?section=Artifacts",
       "classification": "API Hub",
       "type": "Link",
@@ -297,5 +303,36 @@
       "value": "LOD-HCI-PI"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Cloud Foundry Configuration API",
+      "url": "https://api.sap.com/api/cf_configuration_api/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Cloud Foundry Consumer API",
+      "url": "https://api.sap.com/api/cf_consumer_api/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Cloud Foundry Producer API",
+      "url": "https://api.sap.com/api/cf_producer_api/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Neo Configuration API",
+      "url": "https://api.sap.com/api/neo_configuration_api/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Neo Consumer API",
+      "url": "https://api.sap.com/api/neo_consumer_api/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Neo Producer API",
+      "url": "https://api.sap.com/api/neo_producer_api/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }

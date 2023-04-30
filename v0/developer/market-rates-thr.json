@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jow9lmGQkRxhcKy--w91CdYbnPVa65LT880QPpRx2h6mB1PFglW0-sc2pItxx14s.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/MarketRatesManagementAPI/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Market Rates Management, Refinitiv data option | SAP API Business Hub"
+    },
+    {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/market-rates-refinitiv",
       "classification": "Discovery Center",
       "type": "Link",
@@ -85,5 +91,16 @@
       "value": "LOD-CBS-CS"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Market Rates API",
+      "url": "https://api.sap.com/api/MarketRates/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Market Rates Upload",
+      "url": "https://api.sap.com/api/MarketUploadAPI/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }

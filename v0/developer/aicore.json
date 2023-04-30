@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/tbvFIvhMmXYD8hjF8P0q2xW5YrDJFbcX8CYCsCQn8AI-DbJ4DTOiWw5TM3D6NitW.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPAICore/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP AI Core | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20AI%20Core",
       "classification": "SAP Community",
       "type": "Link",
@@ -95,6 +101,12 @@
       "text": "Help Portal Product Page"
     },
     {
+      "value": "https://pypi.org/project/ai-core-sdk/",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    },
+    {
       "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
       "classification": "Legal",
       "type": "Link",
@@ -178,5 +190,11 @@
       "value": "CA-ML-AIC"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "AI Core",
+      "url": "https://api.sap.com/api/AI_CORE_API/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }
