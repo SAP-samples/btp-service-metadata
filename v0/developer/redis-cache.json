@@ -158,14 +158,14 @@
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
                   "type": "string",
                   "enum": [
-                    "allkeys-lru",
-                    "volatile-lru",
                     "allkeys-lfu",
-                    "volatile-lfu",
+                    "allkeys-lru",
                     "allkeys-random",
+                    "noeviction",
+                    "volatile-lfu",
+                    "volatile-lru",
                     "volatile-random",
-                    "volatile-ttl",
-                    "noeviction"
+                    "volatile-ttl"
                   ],
                   "default": "noeviction"
                 }
@@ -192,14 +192,14 @@
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
                   "type": "string",
                   "enum": [
-                    "allkeys-lru",
-                    "volatile-lru",
                     "allkeys-lfu",
-                    "volatile-lfu",
+                    "allkeys-lru",
                     "allkeys-random",
+                    "noeviction",
+                    "volatile-lfu",
+                    "volatile-lru",
                     "volatile-random",
-                    "volatile-ttl",
-                    "noeviction"
+                    "volatile-ttl"
                   ]
                 }
               }
@@ -327,14 +327,14 @@
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
                   "type": "string",
                   "enum": [
-                    "allkeys-lru",
-                    "volatile-lru",
                     "allkeys-lfu",
-                    "volatile-lfu",
+                    "allkeys-lru",
                     "allkeys-random",
+                    "noeviction",
+                    "volatile-lfu",
+                    "volatile-lru",
                     "volatile-random",
-                    "volatile-ttl",
-                    "noeviction"
+                    "volatile-ttl"
                   ],
                   "default": "noeviction"
                 },
@@ -435,14 +435,14 @@
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
                   "type": "string",
                   "enum": [
-                    "allkeys-lru",
-                    "volatile-lru",
                     "allkeys-lfu",
-                    "volatile-lfu",
+                    "allkeys-lru",
                     "allkeys-random",
+                    "noeviction",
+                    "volatile-lfu",
+                    "volatile-lru",
                     "volatile-random",
-                    "volatile-ttl",
-                    "noeviction"
+                    "volatile-ttl"
                   ]
                 },
                 "shard_count": {
@@ -623,14 +623,14 @@
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
                   "type": "string",
                   "enum": [
-                    "allkeys-lru",
-                    "volatile-lru",
                     "allkeys-lfu",
-                    "volatile-lfu",
+                    "allkeys-lru",
                     "allkeys-random",
+                    "noeviction",
+                    "volatile-lfu",
+                    "volatile-lru",
                     "volatile-random",
-                    "volatile-ttl",
-                    "noeviction"
+                    "volatile-ttl"
                   ],
                   "default": "noeviction"
                 },
@@ -729,14 +729,14 @@
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
                   "type": "string",
                   "enum": [
-                    "allkeys-lru",
-                    "volatile-lru",
                     "allkeys-lfu",
-                    "volatile-lfu",
+                    "allkeys-lru",
                     "allkeys-random",
+                    "noeviction",
+                    "volatile-lfu",
+                    "volatile-lru",
                     "volatile-random",
-                    "volatile-ttl",
-                    "noeviction"
+                    "volatile-ttl"
                   ]
                 },
                 "shard_count": {

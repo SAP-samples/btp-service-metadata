@@ -296,24 +296,6 @@
                   ],
                   "uniqueItems": true
                 },
-                "memory": {
-                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                  "type": "integer",
-                  "enum": [
-                    8,
-                    16,
-                    32,
-                    64,
-                    128,
-                    256
-                  ],
-                  "default": 8
-                },
-                "storage": {
-                  "description": "Amount of storage in GB to be allocated to the instance",
-                  "type": "integer",
-                  "default": 5
-                },
                 "engine_version": {
                   "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 12",
                   "type": "string",
@@ -323,11 +305,6 @@
                     "13"
                   ],
                   "default": "12"
-                },
-                "multi_az": {
-                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
-                  "type": "boolean",
-                  "default": true
                 },
                 "locale": {
                   "description": "Indicates the locale for the instance (TODO)",
@@ -367,6 +344,29 @@
                       "maximum": 23
                     }
                   }
+                },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+                  "type": "integer",
+                  "enum": [
+                    8,
+                    16,
+                    32,
+                    64,
+                    128,
+                    256
+                  ],
+                  "default": 8
+                },
+                "multi_az": {
+                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+                  "type": "boolean",
+                  "default": true
+                },
+                "storage": {
+                  "description": "Amount of storage in GB to be allocated to the instance",
+                  "type": "integer",
+                  "default": 5
                 }
               }
             }
@@ -589,15 +589,15 @@
                   ],
                   "default": "12"
                 },
-                "multi_az": {
-                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
-                  "type": "boolean",
-                  "default": true
-                },
                 "locale": {
                   "description": "Indicates the locale for the instance (TODO)",
                   "type": "string",
                   "default": "en_US"
+                },
+                "multi_az": {
+                  "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+                  "type": "boolean",
+                  "default": true
                 },
                 "maintenance_window": {
                   "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
@@ -672,7 +672,7 @@
                   ]
                 },
                 "storage": {
-                  "description": "Amount of storage in GB to be allocated to the instance",
+                  "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
                   "type": "integer"
                 },
                 "engine_version": {
