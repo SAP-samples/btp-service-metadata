@@ -618,7 +618,7 @@
                   ]
                 },
                 "size_of_persistence_disk": {
-                  "description": "Change the disk or storage size of the HANA database (in GB). If \"auto\" is selected the value will be set to the minimal value: 40 * size_of_persistence + 40. The maximum value is 120 * size_of_persistence + 40.",
+                  "description": "Change the storage size of the HANA database (in GB). If \"auto\" is selected it will be set to the minimal value: 40 * size_of_persistence + 40. The maximum value is 120 * size_of_persistence + 40. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimal value.",
                   "type": "string",
                   "pattern": "^(auto|\\d+)?$",
                   "default": "auto"
