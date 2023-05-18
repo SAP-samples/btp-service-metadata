@@ -361,6 +361,31 @@
                   "description": "Amount of storage in GB to be allocated to the instance",
                   "type": "integer",
                   "default": 5
+                },
+                "db_parameters": {
+                  "description": "Database system configurations",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "description": "Name of the system configuration",
+                        "enum": [
+                          "max_wal_size",
+                          "checkpoint_timeout",
+                          "autovacuum_max_workers",
+                          "autovacuum_vacuum_scale_factor",
+                          "max_locks_per_transaction"
+                        ],
+                        "type": "string"
+                      },
+                      "value": {
+                        "description": "Value of the system configuration",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "uniqueItems": true
                 }
               }
             }
@@ -454,6 +479,31 @@
                       "maximum": 23
                     }
                   }
+                },
+                "db_parameters": {
+                  "description": "Database system configurations",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "description": "Name of the system configuration",
+                        "enum": [
+                          "max_wal_size",
+                          "checkpoint_timeout",
+                          "autovacuum_max_workers",
+                          "autovacuum_vacuum_scale_factor",
+                          "max_locks_per_transaction"
+                        ],
+                        "type": "string"
+                      },
+                      "value": {
+                        "description": "Value of the system configuration",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "uniqueItems": true
                 }
               }
             }
@@ -626,6 +676,31 @@
                       "maximum": 23
                     }
                   }
+                },
+                "db_parameters": {
+                  "description": "Database system configurations",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "description": "Name of the system configuration",
+                        "enum": [
+                          "max_wal_size",
+                          "checkpoint_timeout",
+                          "autovacuum_max_workers",
+                          "autovacuum_vacuum_scale_factor",
+                          "max_locks_per_transaction"
+                        ],
+                        "type": "string"
+                      },
+                      "value": {
+                        "description": "Value of the system configuration",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "uniqueItems": true
                 }
               }
             }
@@ -715,6 +790,31 @@
                       "maximum": 23
                     }
                   }
+                },
+                "db_parameters": {
+                  "description": "Database system configurations",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "description": "Name of the system configuration",
+                        "enum": [
+                          "max_wal_size",
+                          "checkpoint_timeout",
+                          "autovacuum_max_workers",
+                          "autovacuum_vacuum_scale_factor",
+                          "max_locks_per_transaction"
+                        ],
+                        "type": "string"
+                      },
+                      "value": {
+                        "description": "Value of the system configuration",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "uniqueItems": true
                 }
               }
             }

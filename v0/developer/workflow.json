@@ -233,7 +233,8 @@
                   "type": "array",
                   "items": {
                     "type": "string"
-                  }
+                  },
+                  "default": []
                 },
                 "defaultCollectionQueryFilter": {
                   "description": "Configures the default behavior of queries that return a collection of Workflow entities.",
@@ -241,7 +242,8 @@
                   "enum": [
                     "own",
                     "shared"
-                  ]
+                  ],
+                  "default": "own"
                 }
               }
             }
