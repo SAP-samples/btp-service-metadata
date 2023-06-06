@@ -262,7 +262,34 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "properties": {
+                "origin": {
+                  "type": "object",
+                  "properties": {
+                    "serviceGuid": {
+                      "description": "Service instance guid of the service instance share",
+                      "type": "string"
+                    },
+                    "landscape": {
+                      "description": "landscape, where service sharing was configured, not required for local sharing and CF Scale Out scenario.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "serviceGuid"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
     },
     {
       "name": "standard",
