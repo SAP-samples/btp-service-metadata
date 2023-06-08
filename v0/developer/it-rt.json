@@ -1,7 +1,7 @@
 {
   "name": "it-rt",
   "displayName": "Process Integration Runtime",
-  "description": "Provides access to SAP Business Technology Platform Integration runtime (integration flows) and APIs.",
+  "description": "Provides access to the integration flow endpoints and public APIs of the Cloud Integration capability of Integration Suite. You need this service instance only if you want to execute the integration flows or access Cloud Integration resources via APIs.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v5uV3ilFJzWpwPxBO1OZ06s5uBTY-JDK3yfeiRldCbDMHGSbed-5xF7DUN79BPei.svg",
   "links": [
     {
@@ -34,7 +34,7 @@
       "name": "api",
       "displayName": "api",
       "category": "SERVICE",
-      "description": "Provides access to public APIs of SAP Business Technology Platform Integration",
+      "description": "Creates an OAuth client that provides access to the public APIs of the Cloud Integration capability",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -388,7 +388,7 @@
       "name": "integration-flow",
       "displayName": "integration-flow",
       "category": "SERVICE",
-      "description": "Creates an OAuth client which provides access to integration flows on the SAP Business Technology Platform Integration runtime",
+      "description": "Creates an OAuth client that provides access to the Cloud Integration capability's runtime",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
