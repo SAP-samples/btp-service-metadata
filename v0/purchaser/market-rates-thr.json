@@ -22,6 +22,29 @@
         }
       ],
       "materialNumberMappings": []
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Standard plan",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8014832"
+        }
+      ]
     }
   ],
   "certifications": [

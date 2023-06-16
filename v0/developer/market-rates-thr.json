@@ -17,6 +17,12 @@
       "text": "SAP Discovery Center - Market Rates, Refinitiv"
     },
     {
+      "value": "https://help.sap.com/doc/7bd539aa2fc24158b8a0ab5ae110606d/LATEST/en-US/FSD_MRM_Refinitiv.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "What is Refinitiv data option"
+    },
+    {
       "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_TR/9da8c81f87e0480fac3975cdd3182418/26d966512fb84183b6ecd8bdf3455542.html",
       "classification": "Documentation",
       "type": "Link",
@@ -71,6 +77,25 @@
       "displayName": "default",
       "category": "SERVICE",
       "description": "default plan",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Standard plan",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
