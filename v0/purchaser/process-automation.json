@@ -1,14 +1,14 @@
 {
   "name": "process-automation",
   "displayName": "SAP Build Process Automation",
-  "description": "SAP Build Process Automation is a citizen development solution to adapt, improve, and innovate business processes with the low-code/no-code capabilities of SAP Workflow Management and SAP Intelligent RPA.",
+  "description": "SAP Build Process Automation combines capabilities from SAP Workflow Management and SAP Intelligent RPA with a powerful, yet intuitive no-code development experience. SAP Build Process Automation enables business users and technologists to become citizen developers. With powerful yet intuitive low-code and no-code capabilities, the solution supports you in driving automation by tapping into the expertise of citizen developers.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/8ib5t629pDFKan3W5TeH3vlmhTPy7nB8pHFWKLtImSxU8yIzXhORRGBrkVGGvloY.svg",
   "servicePlans": [
     {
       "name": "advanced-user",
       "displayName": "advanced-user",
       "category": "SERVICE",
-      "description": "This plan enables you to add an advanced user",
+      "description": "Allows you to create advanced users. They can design, monitor, or administrate the solution and access the process visibility workspace. The entitlement includes access to the SAP Build Work Zone, standard edition and a certain amount of API calls and storage. In API-driven use cases or with a very many process instances, additional licensing could be needed for API calls and storage.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -50,7 +50,7 @@
       "name": "automation-attended",
       "displayName": "automation-attended",
       "category": "SERVICE",
-      "description": "This plan enables you to execute attended automation",
+      "description": "Allows you to use automations (bots) in attended mode, which means you need to take action.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -92,7 +92,7 @@
       "name": "automation-unattended",
       "displayName": "automation-unattended",
       "category": "SERVICE",
-      "description": "This plan enables you to execute unattended automation",
+      "description": "Allows you to use automations (bots) in unattended mode, which means without your intervention.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -134,7 +134,7 @@
       "name": "free",
       "displayName": "free",
       "category": "APPLICATION",
-      "description": "Only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions. Limits may apply. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Only community support is available for free tier service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile. Subscribe to the free service. To fully use all capabilities of SAP Build Process Automation, you also must subscribe to the standard entitlement at no additional cost.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -169,7 +169,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "APPLICATION",
-      "description": "Default plan for using Process Automation",
+      "description": "Subscribe to the production service. Note that to fully use all capabilities of SAP Build Process Automation, you also must subscribe to the standard entitlement at no additional cost.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -204,7 +204,7 @@
       "name": "standard-user",
       "displayName": "standard-user",
       "category": "SERVICE",
-      "description": "This plan enables you to add a standard user",
+      "description": "Allows you to create standard users. They are process participants who trigger, approve, or contribute to a process instance. The entitlement includes the access to SAP Build Work Zone, standard edition and a certain amount of API calls and storage. In API-driven use cases or with a very many process instances, additional licensing could be needed for API calls and storage.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
