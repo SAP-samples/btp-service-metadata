@@ -6,9 +6,9 @@
   "servicePlans": [
     {
       "name": "dedicated",
-      "displayName": "Dedicated",
+      "displayName": "dedicated",
       "category": "SERVICE",
-      "description": "SAP Data Intelligence - Dedicated plan",
+      "description": "Required for every new system. Provides a fully isolated cluster with dedicated hardware resources. The system automatically creates one tenant named default.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -95,9 +95,9 @@
     },
     {
       "name": "tenant",
-      "displayName": "Tenant",
+      "displayName": "tenant",
       "category": "SERVICE",
-      "description": "SAP Data Intelligence - Tenant plan",
+      "description": "(Optional) Used in combination with the dedicated service plan. Lets you add up to 19 tenants to the default tenant that run on the same cluster and share the same hardware resources. ",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
