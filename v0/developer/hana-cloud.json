@@ -717,20 +717,6 @@
                       },
                       "type": "object"
                     },
-                    "backup": {
-                      "additionalProperties": false,
-                      "description": "Backup service properties",
-                      "properties": {
-                        "retentionDays": {
-                          "description": "Specifies the retention period for a backup in days",
-                          "format": "int32",
-                          "maximum": 215,
-                          "minimum": 0,
-                          "type": "integer"
-                        }
-                      },
-                      "type": "object"
-                    },
                     "databaseMappings": {
                       "items": {
                         "properties": {
@@ -996,20 +982,6 @@
                         "secondaryAvailabilityZone": {
                           "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
                           "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
-                    "backup": {
-                      "additionalProperties": false,
-                      "description": "Backup service properties",
-                      "properties": {
-                        "retentionDays": {
-                          "description": "Specifies the retention period for a backup in days",
-                          "format": "int32",
-                          "maximum": 215,
-                          "minimum": 0,
-                          "type": "integer"
                         }
                       },
                       "type": "object"
@@ -1376,7 +1348,11 @@
                   },
                   "required": [
                     "datalakeID",
-                    "hanaID"
+                    "hanaID",
+                    "hanaUser",
+                    "hanaPassword",
+                    "datalakeUser",
+                    "datalakePassword"
                   ],
                   "type": "object"
                 }
@@ -1511,7 +1487,11 @@
                   },
                   "required": [
                     "datalakeID",
-                    "hanaID"
+                    "hanaID",
+                    "hanaUser",
+                    "hanaPassword",
+                    "datalakeUser",
+                    "datalakePassword"
                   ],
                   "type": "object"
                 }
@@ -1646,20 +1626,6 @@
                         "secondaryAvailabilityZone": {
                           "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
                           "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
-                    "backup": {
-                      "additionalProperties": false,
-                      "description": "Backup service properties",
-                      "properties": {
-                        "retentionDays": {
-                          "description": "Specifies the retention period for a backup in days",
-                          "format": "int32",
-                          "maximum": 215,
-                          "minimum": 0,
-                          "type": "integer"
                         }
                       },
                       "type": "object"
@@ -1929,20 +1895,6 @@
                         "secondaryAvailabilityZone": {
                           "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
                           "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
-                    "backup": {
-                      "additionalProperties": false,
-                      "description": "Backup service properties",
-                      "properties": {
-                        "retentionDays": {
-                          "description": "Specifies the retention period for a backup in days",
-                          "format": "int32",
-                          "maximum": 215,
-                          "minimum": 0,
-                          "type": "integer"
                         }
                       },
                       "type": "object"
@@ -2276,20 +2228,6 @@
                 "data": {
                   "additionalProperties": false,
                   "properties": {
-                    "backup": {
-                      "additionalProperties": false,
-                      "description": "Backup service properties",
-                      "properties": {
-                        "retentionDays": {
-                          "description": "Specifies the retention period for a backup in days",
-                          "format": "int32",
-                          "maximum": 215,
-                          "minimum": 1,
-                          "type": "integer"
-                        }
-                      },
-                      "type": "object"
-                    },
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
                       "enum": [
@@ -2837,20 +2775,6 @@
                 "data": {
                   "additionalProperties": false,
                   "properties": {
-                    "backup": {
-                      "additionalProperties": false,
-                      "description": "Backup service properties",
-                      "properties": {
-                        "retentionDays": {
-                          "description": "Specifies the retention period for a backup in days",
-                          "format": "int32",
-                          "maximum": 215,
-                          "minimum": 1,
-                          "type": "integer"
-                        }
-                      },
-                      "type": "object"
-                    },
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
                       "enum": [
