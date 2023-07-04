@@ -100,7 +100,7 @@
       "name": "api",
       "displayName": "Api",
       "category": "SERVICE",
-      "description": "Graph capability in SAP Integration Suite, available as part of a closed beta program. If you are interested in participating, please contact us at sap.graph@sap.com.",
+      "description": "API of SAP Graph",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -109,8 +109,16 @@
           "name": "Europe (Frankfurt)"
         },
         {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
           "region": "us10",
           "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
         }
       ],
       "schemas": null
