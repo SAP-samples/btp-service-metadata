@@ -268,16 +268,24 @@
             "parameters": {
               "$schema": "http://json-schema.org/draft-07/schema",
               "type": "object",
+              "_show_form_view": true,
               "properties": {
                 "origin": {
                   "type": "object",
+                  "_controlsOrder": [
+                    "serviceGuid",
+                    "landscape"
+                  ],
                   "properties": {
                     "serviceGuid": {
-                      "description": "Service instance guid of the service instance share",
+                      "title": "Service GUID",
+                      "minLength": 1,
+                      "description": "GUID of the original service instance",
                       "type": "string"
                     },
                     "landscape": {
-                      "description": "landscape, where service sharing was configured, not required for local sharing and CF Scale Out scenario.",
+                      "title": "Region Technical Key (Landscape)",
+                      "description": "Technical key of the region (landscape) where the original service instance is located",
                       "type": "string"
                     }
                   },
