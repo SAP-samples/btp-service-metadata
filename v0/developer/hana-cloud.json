@@ -682,6 +682,11 @@
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "defaultProperties": [
+                    "memory",
+                    "edition",
+                    "systempassword"
+                  ],
                   "properties": {
                     "additionalWorkers": {
                       "description": "Number of additional workers for scale out systems",
@@ -717,6 +722,20 @@
                       },
                       "type": "object"
                     },
+                    "backup": {
+                      "additionalProperties": false,
+                      "description": "Backup service properties",
+                      "properties": {
+                        "retentionDays": {
+                          "description": "Specifies the retention period for a backup in days",
+                          "format": "int32",
+                          "maximum": 215,
+                          "minimum": 0,
+                          "type": "integer"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "databaseMappings": {
                       "items": {
                         "properties": {
@@ -745,6 +764,7 @@
                       "type": "string"
                     },
                     "edition": {
+                      "default": "cloud",
                       "description": "Image edition (cloud vs. orange)",
                       "enum": [
                         "cloud",
@@ -757,11 +777,9 @@
                       "description": "List of services of the HANA to be enabled",
                       "properties": {
                         "docstore": {
-                          "default": false,
                           "type": "boolean"
                         },
                         "scriptserver": {
-                          "default": false,
                           "type": "boolean"
                         }
                       },
@@ -802,7 +820,6 @@
                       "type": "integer"
                     },
                     "memoryScaleOut": {
-                      "default": 0,
                       "description": "HANA memory size (RAM) in GB for scale out systems",
                       "format": "int64",
                       "maximum": 0,
@@ -877,7 +894,6 @@
                       "type": "string"
                     },
                     "storage": {
-                      "default": 120,
                       "description": "Size of the Storage in GB",
                       "format": "int64",
                       "maximum": 16000,
@@ -885,6 +901,7 @@
                       "type": "integer"
                     },
                     "systempassword": {
+                      "default": "",
                       "description": "Password to be set for tenant",
                       "minLength": 8,
                       "type": "string"
@@ -900,7 +917,6 @@
                       ]
                     },
                     "vcpu": {
-                      "default": 2,
                       "description": "Number of vCPUs used by HANA",
                       "minimum": 2,
                       "type": "integer"
@@ -950,6 +966,7 @@
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "default": {},
                   "defaultProperties": [],
                   "properties": {
                     "additionalWorkers": {
@@ -986,6 +1003,20 @@
                       },
                       "type": "object"
                     },
+                    "backup": {
+                      "additionalProperties": false,
+                      "description": "Backup service properties",
+                      "properties": {
+                        "retentionDays": {
+                          "description": "Specifies the retention period for a backup in days",
+                          "format": "int32",
+                          "maximum": 215,
+                          "minimum": 0,
+                          "type": "integer"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
                       "enum": [
@@ -999,11 +1030,9 @@
                       "description": "List of services of the HANA to be enabled",
                       "properties": {
                         "docstore": {
-                          "default": false,
                           "type": "boolean"
                         },
                         "scriptserver": {
-                          "default": false,
                           "type": "boolean"
                         }
                       },
@@ -1348,11 +1377,7 @@
                   },
                   "required": [
                     "datalakeID",
-                    "hanaID",
-                    "hanaUser",
-                    "hanaPassword",
-                    "datalakeUser",
-                    "datalakePassword"
+                    "hanaID"
                   ],
                   "type": "object"
                 }
@@ -1487,11 +1512,7 @@
                   },
                   "required": [
                     "datalakeID",
-                    "hanaID",
-                    "hanaUser",
-                    "hanaPassword",
-                    "datalakeUser",
-                    "datalakePassword"
+                    "hanaID"
                   ],
                   "type": "object"
                 }
@@ -1595,6 +1616,11 @@
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "defaultProperties": [
+                    "memory",
+                    "edition",
+                    "systempassword"
+                  ],
                   "properties": {
                     "additionalWorkers": {
                       "description": "Number of additional workers for scale out systems",
@@ -1630,6 +1656,20 @@
                       },
                       "type": "object"
                     },
+                    "backup": {
+                      "additionalProperties": false,
+                      "description": "Backup service properties",
+                      "properties": {
+                        "retentionDays": {
+                          "description": "Specifies the retention period for a backup in days",
+                          "format": "int32",
+                          "maximum": 215,
+                          "minimum": 0,
+                          "type": "integer"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "databaseMappings": {
                       "items": {
                         "properties": {
@@ -1658,6 +1698,7 @@
                       "type": "string"
                     },
                     "edition": {
+                      "default": "cloud",
                       "description": "Image edition (cloud vs. orange)",
                       "enum": [
                         "cloud",
@@ -1670,11 +1711,9 @@
                       "description": "List of services of the HANA to be enabled",
                       "properties": {
                         "docstore": {
-                          "default": false,
                           "type": "boolean"
                         },
                         "scriptserver": {
-                          "default": false,
                           "type": "boolean"
                         }
                       },
@@ -1715,7 +1754,6 @@
                       "type": "integer"
                     },
                     "memoryScaleOut": {
-                      "default": 0,
                       "description": "HANA memory size (RAM) in GB for scale out systems",
                       "format": "int64",
                       "maximum": 0,
@@ -1790,7 +1828,6 @@
                       "type": "string"
                     },
                     "storage": {
-                      "default": 120,
                       "description": "Size of the Storage in GB",
                       "format": "int64",
                       "maximum": 16000,
@@ -1798,6 +1835,7 @@
                       "type": "integer"
                     },
                     "systempassword": {
+                      "default": "",
                       "description": "Password to be set for tenant",
                       "minLength": 8,
                       "type": "string"
@@ -1813,7 +1851,6 @@
                       ]
                     },
                     "vcpu": {
-                      "default": 2,
                       "description": "Number of vCPUs used by HANA",
                       "minimum": 2,
                       "type": "integer"
@@ -1863,6 +1900,7 @@
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "default": {},
                   "defaultProperties": [],
                   "properties": {
                     "additionalWorkers": {
@@ -1899,6 +1937,20 @@
                       },
                       "type": "object"
                     },
+                    "backup": {
+                      "additionalProperties": false,
+                      "description": "Backup service properties",
+                      "properties": {
+                        "retentionDays": {
+                          "description": "Specifies the retention period for a backup in days",
+                          "format": "int32",
+                          "maximum": 215,
+                          "minimum": 0,
+                          "type": "integer"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "disasterRecoveryMode": {
                       "description": "Disaster Recovery of the HANA instance",
                       "enum": [
@@ -1912,11 +1964,9 @@
                       "description": "List of services of the HANA to be enabled",
                       "properties": {
                         "docstore": {
-                          "default": false,
                           "type": "boolean"
                         },
                         "scriptserver": {
-                          "default": false,
                           "type": "boolean"
                         }
                       },
@@ -2224,10 +2274,30 @@
             "parameters": {
               "$schema": "http://json-schema.org/draft-07/schema",
               "additionalProperties": false,
+              "defaultProperties": [
+                "data"
+              ],
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "defaultProperties": [
+                    "systempassword"
+                  ],
                   "properties": {
+                    "backup": {
+                      "additionalProperties": false,
+                      "description": "Backup service properties",
+                      "properties": {
+                        "retentionDays": {
+                          "description": "Specifies the retention period for a backup in days",
+                          "format": "int32",
+                          "maximum": 215,
+                          "minimum": 1,
+                          "type": "integer"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
                       "enum": [
@@ -2715,6 +2785,7 @@
                       "type": "string"
                     },
                     "systempassword": {
+                      "default": "",
                       "description": "Password to be set for tenant",
                       "minLength": 6,
                       "type": "string"
@@ -2750,6 +2821,9 @@
                       ]
                     }
                   },
+                  "required": [
+                    "systempassword"
+                  ],
                   "type": "object"
                 },
                 "metadata": {
@@ -2771,10 +2845,29 @@
             "parameters": {
               "$schema": "http://json-schema.org/draft-07/schema",
               "additionalProperties": false,
+              "defaultProperties": [
+                "data"
+              ],
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "default": {},
+                  "defaultProperties": [],
                   "properties": {
+                    "backup": {
+                      "additionalProperties": false,
+                      "description": "Backup service properties",
+                      "properties": {
+                        "retentionDays": {
+                          "description": "Specifies the retention period for a backup in days",
+                          "format": "int32",
+                          "maximum": 215,
+                          "minimum": 1,
+                          "type": "integer"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
                       "enum": [
@@ -3404,9 +3497,15 @@
             "parameters": {
               "$schema": "http://json-schema.org/draft-07/schema",
               "additionalProperties": false,
+              "defaultProperties": [
+                "data"
+              ],
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "defaultProperties": [
+                    "systempassword"
+                  ],
                   "properties": {
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
@@ -3775,6 +3874,7 @@
                       "type": "string"
                     },
                     "systempassword": {
+                      "default": "",
                       "description": "Password to be set for tenant",
                       "minLength": 6,
                       "type": "string"
@@ -3804,6 +3904,9 @@
                       "const": "small"
                     }
                   },
+                  "required": [
+                    "systempassword"
+                  ],
                   "type": "object"
                 },
                 "metadata": {
@@ -3825,9 +3928,14 @@
             "parameters": {
               "$schema": "http://json-schema.org/draft-07/schema",
               "additionalProperties": false,
+              "defaultProperties": [
+                "data"
+              ],
               "properties": {
                 "data": {
                   "additionalProperties": false,
+                  "default": {},
+                  "defaultProperties": [],
                   "properties": {
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
