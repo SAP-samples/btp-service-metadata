@@ -618,7 +618,7 @@
   {
     "technicalId": "malware-scanner",
     "displayName": "SAP Malware Scanning service",
-    "description": "Scan business documents uploaded by your custom-developed apps for malware",
+    "description": "Use SAP Malware Scanning service to scan business documents for malware. Integrate this service with your custom-developed apps running on Cloud Foundry. When your apps upload business documents, your apps can call the SAP Malware Scanning service to check for viruses or other malware.",
     "fileName": "malware-scanner.json",
     "category": "SERVICE"
   },
@@ -877,21 +877,21 @@
   {
     "technicalId": "print",
     "displayName": "SAP Print service",
-    "description": "Manage print queues, connect print clients and monitor print status",
+    "description": "SAP Print service is used in business applications that are based on SAP Business Technology Platform (BTP) as well as other SAP Cloud products across SAP Intelligent Enterprise Suite. Using this service, the business application's development team can easily establish the connection between SAP Print service and the customer\u2019s local printers. This means you can significantly reduce the development effort.",
     "fileName": "print.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "print-app",
     "displayName": "SAP Print service",
-    "description": "Allows you to manage print queue and monitor the print status",
+    "description": "SAP Print service is used in business applications that are based on SAP Business Technology Platform (BTP) as well as other SAP Cloud products across SAP Intelligent Enterprise Suite. Using this service, the business application's development team can easily establish the connection between SAP Print service and the customer\u2019s local printers. This means you can significantly reduce the development effort.",
     "fileName": "print-app.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "privatelink",
     "displayName": "SAP Private Link service",
-    "description": "SAP Private Link service establishes a private connection between selected SAP BTP services and selected services in your own IaaS provider accounts.",
+    "description": "SAP Private Link service establishes a private connection between selected SAP BTP services and selected services in your own IaaS provider accounts. By reusing the private link functionality of our partner IaaS providers, it lets you access your services through private network connections to avoid data transfer via the public Internet.",
     "fileName": "privatelink.json",
     "category": "SERVICE"
   },
