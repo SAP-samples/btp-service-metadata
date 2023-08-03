@@ -55,52 +55,6 @@
   ],
   "servicePlans": [
     {
-      "name": "blockchain-hana-integration",
-      "displayName": "Blockchain Services",
-      "category": "SERVICE",
-      "description": "Blockchain Services",
-      "isFree": true,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "Europe (Frankfurt)"
-        },
-        {
-          "region": "us10",
-          "name": "US East (VA)"
-        }
-      ],
-      "schemas": {
-        "service_instance": {
-          "create": {
-            "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
-              "type": "object",
-              "properties": {
-                "instructions": {
-                  "default": "Replace this JSON object with the SERVICE KEY for the blockchain technology to which this service must bind.",
-                  "type": "string"
-                },
-                "documentation": {
-                  "default": "https://help.sap.com/viewer/p/BLOCKCHAIN_APPLICATION_ENABLEMENT",
-                  "type": "string"
-                },
-                "type": {
-                  "default": "< Used blockchain technology (hyperledger-fabric|multichain|quorum) >",
-                  "description": "Used blockchain technology (hyperledger-fabric|multichain|quorum)",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "type"
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
       "name": "blockchain-proof-of-history",
       "displayName": "blockchain-proof-of-history",
       "category": "SERVICE",
