@@ -1,7 +1,7 @@
 {
   "name": "market-rates-thr",
   "displayName": "Market Rates, Refinitiv",
-  "description": "The Market Rates Management, Refinitiv data option is a reuse service that allows you to import daily and historical Exchange Rates & Interest Rates from Refinitiv.",
+  "description": "The Refinitiv data option for SAP Market Rates Management provides market rates on a daily basis or for a specified date range that you can use in SAP S/4HANA systems. It includes the Download Market Data service, which is a reuse service that allows you to import market data.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/NDFrng2cXDXjiSxZYm-9scmaMmWuIQIxryGt8OTroeL_uL_7oYwCKUB4HVK0fGjM.svg",
   "links": [
     {
@@ -9,6 +9,12 @@
       "classification": "API Hub",
       "type": "Link",
       "text": "Overview | SAP Market Rates Management, Refinitiv data option | SAP API Business Hub"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/market-rates-refinitiv",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
     },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/market-rates-refinitiv",
@@ -33,6 +39,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/mrm-refinitiv",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/9da8c81f87e0480fac3975cdd3182418/LATEST/en-US",
@@ -93,9 +105,9 @@
     },
     {
       "name": "standard",
-      "displayName": "Standard",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "Standard plan",
+      "description": "Upload, download, and distribute market rates data from Refinitiv and your own market rates in your landscapes.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

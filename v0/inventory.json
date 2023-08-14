@@ -604,21 +604,21 @@
   {
     "technicalId": "market-rates-byor",
     "displayName": "SAP Market Rates Management",
-    "description": "The Market Rates Management, Bring Your Own Rates data option allows you to upload and download your own market rates licensed from third party data providers",
+    "description": "The SAP Market Rates Management, Bring Your Own Rates data option allows you to upload and download your own market rates licensed from third party data providers. It includes upload and download APIs that enable you to upload and download market data in a format compatible with an SAP S/4HANA system.",
     "fileName": "market-rates-byor.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "market-rates-thr",
     "displayName": "Market Rates, Refinitiv",
-    "description": "The Market Rates Management, Refinitiv data option is a reuse service that allows you to import daily and historical Exchange Rates & Interest Rates from Refinitiv.",
+    "description": "The Refinitiv data option for SAP Market Rates Management provides market rates on a daily basis or for a specified date range that you can use in SAP S/4HANA systems. It includes the Download Market Data service, which is a reuse service that allows you to import market data.",
     "fileName": "market-rates-thr.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "market-rates-ux",
     "displayName": "SAP Market Rates Management",
-    "description": "The Manage Market Rates application enables you to read and manage market data you have uploaded by using the data options available with the SAP Market Rates Management service.",
+    "description": "SAP Market Rates Management application enables you to read and manage market data you have uploaded by using the data options available with the SAP Market Rates Management service.",
     "fileName": "market-rates-ux.json",
     "category": "APPLICATION"
   },
@@ -842,7 +842,7 @@
   {
     "technicalId": "postgresql-db",
     "displayName": "PostgreSQL on SAP BTP, hyperscaler option",
-    "description": "The PostgreSQL service on SAP BTP provides a way to directly consume the PostgreSQL service provided by the infrastructure providers such as AWS and Azure.",
+    "description": "PostgreSQL on SAP BTP, hyperscaler option provides a managed relational database service, based on native PostgreSQL offerings from cloud providers AWS, Microsoft Azure, Google Cloud Platform and Alicloud.",
     "fileName": "postgresql-db.json",
     "category": "SERVICE"
   },
