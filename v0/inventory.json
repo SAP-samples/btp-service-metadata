@@ -120,8 +120,8 @@
   },
   {
     "technicalId": "auditlog-api",
-    "displayName": "Audit Log Service API",
-    "description": "SAP Audit Log service API",
+    "displayName": "DEPRECATED Audit Log Retrieval",
+    "description": "DEPRECATED Retrieve the audit logs.",
     "fileName": "auditlog-api.json",
     "category": "SERVICE"
   },
@@ -1044,7 +1044,7 @@
   },
   {
     "technicalId": "SAPLaunchpad",
-    "displayName": "SAP Build Work Zone, standard edition ",
+    "displayName": "SAP Build Work Zone, standard edition",
     "description": "Provides users with a central point of access to applications from different sources. Note: SAP Launchpad service was recently renamed to SAP Build Work Zone, standard edition.",
     "fileName": "saplaunchpad.json",
     "category": "APPLICATION"
@@ -1178,14 +1178,14 @@
   {
     "technicalId": "wums-c4re-beta",
     "displayName": "Workspace Utilization",
-    "description": "The Workspace Utilization Management application lets you assign sensors to workplaces and spaces. These sensors measure how your workspaces are used. The Workspace Utilization Management application integrates with SAP Cloud for Real Estate and SAP Analytics Cloud to analyze, manage, and optimize your workspaces.",
+    "description": "The Workspace Utilization service lets you assign sensors to workplaces and spaces. These sensors measure how your workspaces are used. The Workspace Utilization service integrates with SAP Cloud for Real Estate and SAP Analytics Cloud to analyze, manage, and optimize your workspaces.",
     "fileName": "wums-c4re-beta.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "wums-partner-api-beta",
     "displayName": "Workspace Utilization",
-    "description": "The Workspace Utilization Management service lets you write sensor measurements to the Workspace Utilization Management API. Sensor platform providers use this API to integrate with the Workspace Utilization Management solution of SAP Cloud for Real Estate.",
+    "description": "The Workspace Utilization service lets you assign sensors to workplaces and spaces. These sensors measure how your workspaces are used. The Workspace Utilization service integrates with SAP Cloud for Real Estate and SAP Analytics Cloud to analyze, manage, and optimize your workspaces.",
     "fileName": "wums-partner-api-beta.json",
     "category": "SERVICE"
   },
