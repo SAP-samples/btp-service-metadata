@@ -1,0 +1,37 @@
+{
+  "name": "auditlog",
+  "displayName": "SAP Audit Log service",
+  "description": "Allow users to ingest compliance audit data from SAP BTP services and applications and store it for a default retention time of 90 days (with no additional costs applied). The ability to retrieve and download this data within this period is part of Auditlog Management Service. The service serves to support audit activities by prove wrongdoing and identifying malicious activities and provision of forensic evidence that can be used at Court. The scope of the service are secure and configuration change information records, data privacy specific logs, logs motivated by Multiple Regulations. The service is following each SAP Product standards and GDPR Compliance regulations.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/-q2bflkrtL7nx5aO0BYsamdf7P7N-mOWDy6eLFvramFDrYXwt4aSH5CH6SAMSLeM.svg",
+  "servicePlans": [
+    {
+      "name": "premium",
+      "displayName": "premium",
+      "category": "SERVICE",
+      "description": "Allows ingestion of audit data from customer owned BTP applications and the ability to configure flexible retention period (min. is 7 days). The premium service plan is being paid based on actual consumption (volumes of audit data being ingested/stored).",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8016101"
+        },
+        {
+          "materialNumber": "8016582"
+        },
+        {
+          "materialNumber": "8016088"
+        },
+        {
+          "materialNumber": "8016581"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

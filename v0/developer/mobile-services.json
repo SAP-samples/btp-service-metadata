@@ -179,6 +179,12 @@
       "text": "Documentation"
     },
     {
+      "value": "https://mobile-service-cockpit-web.cfapps.ch20.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com",
       "classification": "Documentation",
       "type": "Link",
@@ -262,7 +268,7 @@
       "name": "b2c",
       "displayName": "b2c",
       "category": "SERVICE",
-      "description": "Build and run mobile apps for B2C use cases.",
+      "description": "(Deprecated) Develop, configure, and manage mobile apps that access enterprise data. Consumer Edition billing is based on active users. An active user is an individual user of a platform application that connects to the service at least once during any rolling three-month period. Billing is determined for active users that have accessed mobile services within the calendar month. There are no feature limitations, and unlimited users and apps are allowed.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -293,6 +299,10 @@
         {
           "region": "ca10",
           "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
         },
         {
           "region": "eu10",
@@ -345,7 +355,7 @@
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Develop, configure, and manage mobile apps that access enterprise data. Free tier is available for production accounts and can be upgraded to a production plan. Try out a service using a global account without additional cost, and then move to a paid service once you reach the technical limits of the service. Only community support is available for free tier service plans, and these are not subject to SLAs. Additional restrictions may apply.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -376,6 +386,10 @@
         {
           "region": "ca10",
           "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
         },
         {
           "region": "eu10",
@@ -461,6 +475,10 @@
           "name": "Canada (Montreal)"
         },
         {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
           "region": "eu10",
           "name": "Europe (Frankfurt)"
         },
@@ -511,7 +529,7 @@
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
-      "description": "Build and run mobile apps for B2E and B2B use cases.",
+      "description": "(Deprecated) Develop, configure, and manage mobile apps that access enterprise data. Standard plan billing is based on registered users. A registered user is a current named user that is associated with device registrations and application connections. A named user is an individual who is authorized to access the service. Users may be employees of customers or customer affiliates, or business partner users. There are no feature limitations.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -542,6 +560,10 @@
         {
           "region": "ca10",
           "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
         },
         {
           "region": "eu10",
