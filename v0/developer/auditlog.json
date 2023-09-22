@@ -11,12 +11,6 @@
       "text": "API Hub"
     },
     {
-      "value": "https://api.sap.com/package/scpauditlogging/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Audit Log Service | SAP API Business Hub"
-    },
-    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Audit%20Log%20service",
       "classification": "SAP Community",
       "type": "Link",
@@ -41,34 +35,82 @@
       "text": "SAP Discovery Center - Audit Log Service"
     },
     {
+      "value": "https://help.sap.com/docs/AUDIT_LOG",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/30ece35bac024ca69de8b16bff79c413.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Audit Log Retrieval API Usage in the Cloud Foundry Environment"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-retention-for-cloud-foundry-environment",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Retention of Audit Data"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-retrieval-api-for-global-accounts-in-cloud-foundry-environment",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Audit Log Retrieval API for Global Accounts in the Cloud Foundry Environment"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-viewer-for-cloud-foundry-environment",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Audit Log Viewer"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-write-api-for-customers",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Audit Log Write API for Customers"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/btp-getting-support",
+      "classification": "Support",
+      "type": "Link",
+      "text": "How to report an incident (external SAP)"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/security-events-logged-by-cf-services",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security Events Logged by the CF Services"
+    },
+    {
+      "value": "https://influence.sap.com/sap/ino/#/campaign/2277",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Influence"
+    },
+    {
+      "value": "https://itsm.services.sap/now/workspace/agent/home",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Service Now support components: (NEO) BC-NEO-AUDITLOG, (CF) BC-CP-CF-SEC-AUDITLG"
+    },
+    {
+      "value": "https://jira.tools.sap/secure/CreateIssueDetails!init.jspa?issuetype=1&pid=119140&components=200410&priority=3",
+      "classification": "Support",
+      "type": "Link",
+      "text": "How to report an incident (internal SAP)"
+    },
+    {
+      "value": "https://www.sapbrandtools.com/naming-center/#/requests/3273",
+      "classification": "External",
+      "type": "Link",
+      "text": "Audit Log Management community tag"
+    },
+    {
       "value": "https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/f92c86ab11f6474ea5579d839051c334.html",
       "classification": "Documentation",
       "type": "Link",
       "text": "What is Audit Logging in the Cloud Foundry Environment"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/f92c86ab11f6474ea5579d839051c334.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/ea72206b834e4ace9cd834feed6c0e09/02c39712c1064c96b37c1ea5bc9420dc.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/ea72206b834e4ace9cd834feed6c0e09/e4d818da43af43e1983df8e9e5caadb2.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/CP",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
     }
   ],
   "servicePlans": [
@@ -93,26 +135,5 @@
       "value": "BC-CP-CF-SEC-AUDITLG"
     }
   ],
-  "apis": [
-    {
-      "name": "Audit Log Retention API (Neo environment)",
-      "url": "https://api.sap.com/api/AuditLogRetentionAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Audit Log Retrieval API (Neo environment)",
-      "url": "https://api.sap.com/api/AuditLogRetrievalAPI/overview",
-      "apiType": "OData V2"
-    },
-    {
-      "name": "Audit Log Retrieval API (Cloud Foundry environment)",
-      "url": "https://api.sap.com/api/CFAuditLogRetrievalAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Audit Log Write API (Cloud Foundry environment)",
-      "url": "https://api.sap.com/api/CFAuditLogWriteAPI/overview",
-      "apiType": "RESTful"
-    }
-  ]
+  "apis": []
 }
