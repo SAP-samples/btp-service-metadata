@@ -29,6 +29,12 @@
       "text": "Roadmap"
     },
     {
+      "value": "https://api.sap.com/package/SAPCPWorkflowManagementAPIs/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Workflow Management | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Workflow%20Management",
       "classification": "SAP Community",
       "type": "Link",
@@ -191,5 +197,16 @@
       "value": "LOD-BPM-PFS"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Process Flexibility API",
+      "url": "https://api.sap.com/api/SAP_CP_WorkflowManagement_ProcessFlexibility/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Process Visibility API",
+      "url": "https://api.sap.com/api/SAP_CP_WorkflowManagement_ProcessVisibility/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }
