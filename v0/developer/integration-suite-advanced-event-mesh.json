@@ -117,38 +117,35 @@
       "isBeta": false,
       "dataCenters": [
         {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
           "region": "eu10",
           "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
         },
         {
           "region": "in30",
           "name": "India (Mumbai)"
         },
         {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
           "region": "us20",
           "name": "US West (WA)"
         }
       ],
-      "schemas": {
-        "subscription": {
-          "create": {
-            "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
-              "_show_standard_config_view": true,
-              "additionalProperties": false,
-              "properties": {
-                "admin_user_email": {
-                  "description": "Provide an email that belongs to a user who is onboarded on IAS. This user gets access to the subscribed application and can provide access to other users.",
-                  "minLength": 1,
-                  "title": "Admin User Email",
-                  "type": "string"
-                }
-              },
-              "type": "object"
-            }
-          }
-        }
-      }
+      "schemas": null
     }
   ],
   "supportComponents": [
