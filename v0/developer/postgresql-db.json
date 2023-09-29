@@ -441,6 +441,13 @@
                     }
                   },
                   "uniqueItems": true
+                },
+                "backup_retention_period": {
+                  "description": "Defines backup retention period for the PostgreSQL database instance",
+                  "type": "integer",
+                  "default": 14,
+                  "minimum": 14,
+                  "maximum": 35
                 }
               }
             }
@@ -564,6 +571,12 @@
                     }
                   },
                   "uniqueItems": true
+                },
+                "backup_retention_period": {
+                  "description": "Defines backup retention period for the PostgreSQL database instance",
+                  "type": "integer",
+                  "minimum": 14,
+                  "maximum": 35
                 }
               }
             }
@@ -809,6 +822,13 @@
                     }
                   },
                   "uniqueItems": true
+                },
+                "backup_retention_period": {
+                  "description": "Defines backup retention period for the PostgreSQL database instance",
+                  "type": "integer",
+                  "default": 14,
+                  "minimum": 14,
+                  "maximum": 35
                 }
               }
             }
@@ -928,6 +948,12 @@
                     }
                   },
                   "uniqueItems": true
+                },
+                "backup_retention_period": {
+                  "description": "Defines backup retention period for the PostgreSQL database instance",
+                  "type": "integer",
+                  "minimum": 14,
+                  "maximum": 35
                 }
               }
             }
