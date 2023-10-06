@@ -5,24 +5,6 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/F0f5ToT99GLu5KytW0iGB9B57lym8IczQb9DyIMgGse0jrMipS5HCoOYtNAxmg61.svg",
   "links": [
     {
-      "value": "https://community.sap.com/topics/cloud-platform-abap-environment",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP BTP, ABAP Environment Community"
-    },
-    {
-      "value": "https://developers.sap.com/tutorial-navigator.html?tag=software-product%3Atechnology-platform%2Fsap-business-technology-platform%2Fsap-btp-abap-environment",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Tutorial Navigator"
-    },
-    {
-      "value": "https://learning.sap.com/learning-journey/get-started-with-abap-programming-on-sap-btp",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Tutorial: Get Started with ABAP Programming on SAP BTP"
-    },
-    {
       "value": "https://api.sap.com/package/SAPCPABAPENV/overview",
       "classification": "API Hub",
       "type": "Link",
@@ -60,33 +42,63 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/e129aa20c78c4a9fb379b9803b02e5f6.html",
-      "classification": "Documentation",
+      "classification": "Security",
       "type": "Link",
       "text": "Security"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/e34a329acc804c0e874496548183682f.html",
+      "value": "https://help.sap.com/docs/btp/sap-abap-development-user-guide/released-apis",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/abap-environment",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is ABAP Environment"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/getting-started-in-abap-environment",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/getting-started-with-customer-account-in-abap-environment",
       "classification": "Documentation",
       "type": "Link",
       "text": "Initial Setup"
+    },
+    {
+      "value": "https://community.sap.com/topics/cloud-platform-abap-environment",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP BTP ABAP environment community"
+    },
+    {
+      "value": "https://developers.sap.com/tutorial-navigator.html?tag=software-product%3Atechnology-platform%2Fsap-business-technology-platform%2Fsap-btp-abap-environment",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial Navigator"
+    },
+    {
+      "value": "https://learning.sap.com/learning-journey/get-started-with-abap-programming-on-sap-btp",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Get Started with ABAP Programming on SAP BTP"
+    },
+    {
+      "value": "https://help.sap.com/docs/sap-btp-abap-environment",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Product Page"
     },
     {
       "value": "https://help.sap.com/docs/BTP/3504ec5ef16548778610c7e89cc0eac3/11d62652aa2b4600a0fa136de0789648.html",
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/11d62652aa2b4600a0fa136de0789648.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is ABAP Environment"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/2ffdd2412aff494dbf3de31089c965d4.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Onboarding"
     },
     {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/31367ef6c3e947059e0d7c1cbfcaae93.html",
@@ -105,6 +117,12 @@
       "classification": "Support",
       "type": "Link",
       "text": "Getting Support"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/e34a329acc804c0e874496548183682f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/docs/BTP/923180ddb98240829d935862025004d6/289477a81eec4d4e84c0302fb6835035.html",
@@ -128,7 +146,7 @@
       "value": "https://www.youtube.com/embed/VMww435AM48",
       "classification": "External",
       "type": "Link",
-      "text": "Developer Tools for the ABAP Environment"
+      "text": "ABAP Development Tools for the SAP BTP ABAP environment"
     }
   ],
   "servicePlans": [
@@ -202,7 +220,7 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Memory Size",
-                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS",
+                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure",
                   "type": "integer",
                   "default": 4,
                   "const": 4
@@ -248,7 +266,8 @@
               "_show_form_view": true,
               "_controlsOrder": [
                 "description",
-                "size_of_runtime"
+                "size_of_runtime",
+                "size_of_persistence"
               ],
               "properties": {
                 "description": {
@@ -258,12 +277,25 @@
                   "maxLength": 256,
                   "pattern": "^[^'\\x00-\\x1f]*$"
                 },
+                "size_of_persistence": {
+                  "title": "HANA Memory Size",
+                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure. -1 means to keep the current value, i.e. no update.",
+                  "type": "integer",
+                  "default": -1,
+                  "enum": [
+                    -1,
+                    4
+                  ]
+                },
                 "size_of_runtime": {
                   "title": "ABAP Runtime Size",
-                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB",
+                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB. -1 means to keep the current value, i.e. no update.",
                   "type": "integer",
-                  "default": 1,
-                  "const": 1
+                  "default": -1,
+                  "enum": [
+                    -1,
+                    1
+                  ]
                 }
               }
             }
@@ -680,7 +712,7 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Memory Size",
-                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS",
+                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure",
                   "type": "integer",
                   "default": 2,
                   "enum": [
@@ -748,7 +780,9 @@
               "_show_form_view": true,
               "_controlsOrder": [
                 "description",
-                "size_of_runtime"
+                "size_of_runtime",
+                "size_of_persistence",
+                "size_of_persistence_disk"
               ],
               "properties": {
                 "description": {
@@ -758,12 +792,28 @@
                   "maxLength": 256,
                   "pattern": "^[^'\\x00-\\x1f]*$"
                 },
+                "size_of_persistence": {
+                  "title": "HANA Memory Size",
+                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure. -1 means to keep the current value, i.e. no update.",
+                  "type": "integer",
+                  "default": -1,
+                  "enum": [
+                    -1,
+                    2,
+                    4,
+                    8,
+                    16,
+                    32,
+                    64
+                  ]
+                },
                 "size_of_runtime": {
                   "title": "ABAP Runtime Size",
-                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB",
+                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB. -1 means to keep the current value, i.e. no update.",
                   "type": "integer",
-                  "default": 1,
+                  "default": -1,
                   "enum": [
+                    -1,
                     1,
                     2,
                     4,
@@ -773,6 +823,12 @@
                     24,
                     32
                   ]
+                },
+                "size_of_persistence_disk": {
+                  "description": "Change the storage size of the HANA database (in GB). If \"auto\" is selected it will be set to the minimal value: 40 * size_of_persistence + 40. The maximum value is 120 * size_of_persistence + 40. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimal value.",
+                  "type": "string",
+                  "pattern": "^(auto|\\d+)?$",
+                  "default": "auto"
                 }
               }
             }
