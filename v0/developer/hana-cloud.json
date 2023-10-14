@@ -213,8 +213,8 @@
                   "additionalProperties": false,
                   "defaultProperties": [
                     "memory",
-                    "edition",
-                    "systempassword"
+                    "systempassword",
+                    "edition"
                   ],
                   "properties": {
                     "additionalWorkers": {
@@ -468,8 +468,8 @@
                   },
                   "required": [
                     "edition",
-                    "memory",
-                    "systempassword"
+                    "systempassword",
+                    "memory"
                   ],
                   "type": "object"
                 },
@@ -1153,8 +1153,8 @@
                   "additionalProperties": false,
                   "defaultProperties": [
                     "memory",
-                    "edition",
-                    "systempassword"
+                    "systempassword",
+                    "edition"
                   ],
                   "properties": {
                     "additionalWorkers": {
@@ -1408,8 +1408,8 @@
                   },
                   "required": [
                     "edition",
-                    "memory",
-                    "systempassword"
+                    "systempassword",
+                    "memory"
                   ],
                   "type": "object"
                 },
@@ -2362,9 +2362,6 @@
                       ]
                     }
                   },
-                  "required": [
-                    "systempassword"
-                  ],
                   "type": "object"
                 },
                 "metadata": {
@@ -3445,9 +3442,6 @@
                       "const": "small"
                     }
                   },
-                  "required": [
-                    "systempassword"
-                  ],
                   "type": "object"
                 },
                 "metadata": {
