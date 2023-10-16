@@ -6,9 +6,9 @@
   "servicePlans": [
     {
       "name": "16_abap_64_db",
-      "displayName": "16_abap_64_db (DEPRECATED)",
+      "displayName": "16 GB Runtime and 64 GB Persistence",
       "category": "SERVICE",
-      "description": "This plan should not be used anymore as it will soon be removed. Please use plan standard instead.",
+      "description": "This service plan is deprecated. Please change the service plan to standard plan.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -111,9 +111,9 @@
     },
     {
       "name": "free",
-      "displayName": "free",
+      "displayName": "Free",
       "category": "SERVICE",
-      "description": "Free plan. For small proof-of-concept projects with limited number of repository objects (max. 500). The instance will be only available during regular office hours. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "For small proof-of-concept development projects. Also can be used for the piloting of a remote ABAP test cockpit scenario against on-premise systems in the Custom Code Migration app. The instance will be stopped each night automatically and needs to be started again via the Landscape Portal. Only community support is available for free tier service plans and these are not subject to SLAs.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -261,9 +261,9 @@
     },
     {
       "name": "standard",
-      "displayName": "standard",
+      "displayName": "Standard",
       "category": "SERVICE",
-      "description": "Configurable ABAP Runtime and HANA Memory",
+      "description": "For development, test, and productive ABAP systems. The minimum system size is 2 blocks of persistent memory and 1 block of runtime memory.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
