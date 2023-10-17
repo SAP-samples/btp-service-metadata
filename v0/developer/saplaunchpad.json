@@ -25,6 +25,37 @@
   ],
   "servicePlans": [
     {
+      "name": "foundation",
+      "displayName": "foundation",
+      "category": "APPLICATION",
+      "description": "Sets up the technical requirements for running SAP Start, to enable users to access a predefined site that serves as a central point to the integrated SAP cloud solutions.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "APPLICATION",
