@@ -2,7 +2,7 @@
   "name": "postgresql-db",
   "displayName": "PostgreSQL on SAP BTP, hyperscaler option",
   "description": "PostgreSQL on SAP BTP, hyperscaler option provides a managed relational database service, based on native PostgreSQL offerings from cloud providers AWS, Microsoft Azure, Google Cloud Platform and Alicloud.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jzxsBExBDrf5jK0Xl5e4zddj2ixI2Q275YMz8I5SyLdhoHOkHLAjsU1QKaHSH2q_.svg",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/PwJ4x14FoLsA0xkl_k-kjvBJmnpaf7bYFHyjd0TmIxLXzNcLvsOIoYPO316EUJaq.svg",
   "links": [
     {
       "value": "https://community.sap.com/search/?ct=blog&q=PostgreSQL%20on%20SAP%20BTP%2C%20hyperscaler%20option",
@@ -115,14 +115,14 @@
         "service_instance": {
           "create": {
             "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
               "$id": "http://example.com/schemas/postgres-free-create.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
               "type": "object",
               "_show_form_view": true,
               "additionalProperties": true,
               "properties": {
                 "engine_version": {
-                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 12",
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 14",
                   "type": "string",
                   "enum": [
                     "11",
@@ -130,7 +130,7 @@
                     "13",
                     "14"
                   ],
-                  "default": "12"
+                  "default": "14"
                 },
                 "locale": {
                   "description": "Indicates the locale for the instance (TODO)",
@@ -169,8 +169,8 @@
           },
           "update": {
             "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
               "$id": "http://example.com/schemas/postgres-free-update.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
               "type": "object",
               "_show_form_view": true,
               "additionalProperties": true,
@@ -288,8 +288,8 @@
         "service_instance": {
           "create": {
             "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
               "$id": "http://example.com/schemas/postgres-premium-create.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
               "type": "object",
               "_show_form_view": true,
               "additionalProperties": true,
@@ -322,7 +322,7 @@
                   "uniqueItems": true
                 },
                 "engine_version": {
-                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 12",
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 14",
                   "type": "string",
                   "enum": [
                     "11",
@@ -330,7 +330,7 @@
                     "13",
                     "14"
                   ],
-                  "default": "12"
+                  "default": "14"
                 },
                 "locale": {
                   "description": "Indicates the locale for the instance (TODO)",
@@ -446,7 +446,7 @@
                   "description": "Defines backup retention period for the PostgreSQL database instance",
                   "type": "integer",
                   "default": 14,
-                  "minimum": 14,
+                  "minimum": 1,
                   "maximum": 35
                 }
               }
@@ -454,8 +454,8 @@
           },
           "update": {
             "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
               "$id": "http://example.com/schemas/postgres-premium-update.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
               "type": "object",
               "_show_form_view": true,
               "additionalProperties": true,
@@ -575,7 +575,7 @@
                 "backup_retention_period": {
                   "description": "Defines backup retention period for the PostgreSQL database instance",
                   "type": "integer",
-                  "minimum": 14,
+                  "minimum": 1,
                   "maximum": 35
                 }
               }
@@ -673,8 +673,8 @@
         "service_instance": {
           "create": {
             "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
               "$id": "http://example.com/schemas/postgres-standard-create.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
               "type": "object",
               "_show_form_view": true,
               "additionalProperties": true,
@@ -717,7 +717,7 @@
                   "default": 5
                 },
                 "engine_version": {
-                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 12",
+                  "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 14",
                   "type": "string",
                   "enum": [
                     "11",
@@ -725,7 +725,7 @@
                     "13",
                     "14"
                   ],
-                  "default": "12"
+                  "default": "14"
                 },
                 "locale": {
                   "description": "Indicates the locale for the instance (TODO)",
@@ -827,7 +827,7 @@
                   "description": "Defines backup retention period for the PostgreSQL database instance",
                   "type": "integer",
                   "default": 14,
-                  "minimum": 14,
+                  "minimum": 1,
                   "maximum": 35
                 }
               }
@@ -835,8 +835,8 @@
           },
           "update": {
             "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
               "$id": "http://example.com/schemas/postgres-standard-update.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
               "type": "object",
               "_show_form_view": true,
               "additionalProperties": true,
@@ -952,7 +952,7 @@
                 "backup_retention_period": {
                   "description": "Defines backup retention period for the PostgreSQL database instance",
                   "type": "integer",
-                  "minimum": 14,
+                  "minimum": 1,
                   "maximum": 35
                 }
               }
