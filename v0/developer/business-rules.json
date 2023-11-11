@@ -29,6 +29,12 @@
       "text": "Support Components for SAP BTP"
     },
     {
+      "value": "https://api.sap.com/package/SAPCPBusinessRulesAPIs/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | Business Rules Service | SAP API Business Hub"
+    },
+    {
       "value": "https://cloudplatform.sap.com/capabilities/integration/business-rules.html",
       "classification": "Documentation",
       "type": "Link",
@@ -75,6 +81,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=Q8jUHt9UMw8",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
     }
   ],
   "servicePlans": [
@@ -218,5 +230,26 @@
       "value": "LOD-BPM-RUL"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Rule Authoring API for Cloud Foundry",
+      "url": "https://api.sap.com/api/SAP_CF_BusinessRules_Repository/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Rule Execution API for Cloud Foundry",
+      "url": "https://api.sap.com/api/SAP_CF_BusinessRules_Runtime_V2/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Rule Authoring API for Neo",
+      "url": "https://api.sap.com/api/SAP_CP_BusinessRules_Repository/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Rule Execution API for Neo",
+      "url": "https://api.sap.com/api/SAP_CP_BusinessRules_Runtime_V2/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }
