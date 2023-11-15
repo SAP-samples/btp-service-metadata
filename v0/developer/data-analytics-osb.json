@@ -258,22 +258,33 @@
               "$schema": "http://json-schema.org/draft-07/schema",
               "_show_form_view": true,
               "type": "object",
+              "_controlsOrder": [
+                "first_name",
+                "last_name",
+                "email",
+                "host_name"
+              ],
               "properties": {
                 "email": {
-                  "description": "email of the user",
                   "type": "string",
                   "format": "email",
                   "minLength": 1
                 },
                 "first_name": {
-                  "description": "first name of the user",
                   "type": "string",
                   "minLength": 1
                 },
                 "last_name": {
-                  "description": "last name of the user",
                   "type": "string",
                   "minLength": 1
+                },
+                "host_name": {
+                  "description": "The host name of the tenant can only contain numbers (0-9), lower case letters (a-z), and\nhyphens (-). The same host name can't be reused to create other instances.",
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]*$",
+                  "validationMessage": "Please include only lower case letters, numbers and hyphens. White spaces are not allowed.",
+                  "minLength": 1,
+                  "maxLength": 100
                 }
               }
             }
@@ -353,22 +364,33 @@
               "$schema": "http://json-schema.org/draft-07/schema",
               "_show_form_view": true,
               "type": "object",
+              "_controlsOrder": [
+                "first_name",
+                "last_name",
+                "email",
+                "host_name"
+              ],
               "properties": {
                 "email": {
-                  "description": "email of the user",
                   "type": "string",
                   "format": "email",
                   "minLength": 1
                 },
                 "first_name": {
-                  "description": "first name of the user",
                   "type": "string",
                   "minLength": 1
                 },
                 "last_name": {
-                  "description": "last name of the user",
                   "type": "string",
                   "minLength": 1
+                },
+                "host_name": {
+                  "description": "The host name of the tenant can only contain numbers (0-9), lower case letters (a-z), and\nhyphens (-). The same host name can't be reused to create other instances.",
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]*$",
+                  "validationMessage": "Please include only lower case letters, numbers and hyphens. White spaces are not allowed.",
+                  "minLength": 1,
+                  "maxLength": 100
                 }
               }
             }
