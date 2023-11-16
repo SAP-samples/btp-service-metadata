@@ -1,0 +1,28 @@
+{
+  "name": "di-api",
+  "displayName": "Dataspace Integration API Access",
+  "description": "Provides access to the public APIs of Dataspace Integration a capability of Integration Suite.",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "api",
+      "displayName": "Access APIs provided by the Dataspace Integration capability of Integration Suite",
+      "category": "SERVICE",
+      "description": "Access APIs provided by the Dataspace Integration capability of Integration Suite",
+      "isFree": true,
+      "isBeta": true,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": []
+}
