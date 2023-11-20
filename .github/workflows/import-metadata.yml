@@ -40,7 +40,7 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "[btpmr-bot] $(date '+%Y-%m-%d %H:%M:%S'): fetched BTP metadata"
           git push origin ${{ github.ref_name }}
       - name: Send event to dependent repositories
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           result-encoding: string
           retry-exempt-status-codes: 400,401
