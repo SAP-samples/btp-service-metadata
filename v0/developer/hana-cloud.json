@@ -337,11 +337,6 @@
                         "type": "object"
                       }
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "memory": {
                       "default": 30,
                       "description": "HANA memory size (RAM) in GB",
@@ -467,6 +462,7 @@
                   },
                   "required": [
                     "edition",
+                    "systempassword",
                     "memory"
                   ],
                   "type": "object"
@@ -1281,11 +1277,6 @@
                         "type": "object"
                       }
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "memory": {
                       "default": 30,
                       "description": "HANA memory size (RAM) in GB",
@@ -1411,6 +1402,7 @@
                   },
                   "required": [
                     "edition",
+                    "systempassword",
                     "memory"
                   ],
                   "type": "object"
@@ -1959,11 +1951,6 @@
                       },
                       "type": "object"
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "initOptions": {
                       "additionalProperties": false,
                       "properties": {
@@ -2531,11 +2518,6 @@
                       },
                       "type": "object"
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "initOptions": {
                       "additionalProperties": false,
                       "properties": {
@@ -3061,11 +3043,6 @@
                       "description": "Node type for IQ co-ordinators.",
                       "const": "small"
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "initOptions": {
                       "additionalProperties": false,
                       "properties": {
@@ -3492,11 +3469,6 @@
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
                       "const": "small"
-                    },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
                     },
                     "initOptions": {
                       "additionalProperties": false,
