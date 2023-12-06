@@ -47,6 +47,12 @@
       "text": "SAP Community Topic Page"
     },
     {
+      "value": "https://developers.sap.com/mission.gen-ai-process-business-documents.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Use Generative AI to Process Business Documents"
+    },
+    {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/document-information-extraction",
       "classification": "Discovery Center",
       "type": "Link",
@@ -206,6 +212,37 @@
       "category": "SERVICE",
       "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "premium_edition",
+      "displayName": "premium_edition",
+      "category": "SERVICE",
+      "description": "Service plan premium_edition for production usage of Document Information Extraction, charged per document page.",
+      "isFree": false,
       "isBeta": false,
       "dataCenters": [
         {

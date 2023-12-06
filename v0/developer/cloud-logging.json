@@ -1,0 +1,597 @@
+{
+  "name": "cloud-logging",
+  "displayName": "Cloud Logging",
+  "description": "SAP Cloud Logging service is an instance-based observability service that builds upon OpenSearch to store, visualize, and analyze application logs, metrics, and traces from SAP BTP Cloud Foundry, Kyma, Kubernetes and other runtime environments. For Cloud Foundry and Kyma it offers an easy integration by providing predefined contents to investigate load, latency, and error rates of the observed applications based on their requests and correlate them with additional data.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/sbGV-GgbwCC6beofIfZW_xJSIii91rZJKWeDkDDKtvxigna5iZTG6VZ3qE3b5AP8.svg",
+  "links": [
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-cloud-logging",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://help.sap.com/doc/aa085d66f4184898b49ef80c9aa7b2c4/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CLOUD_LOGGING",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CLOUD_LOGGING/d82d23dc499c44079e1e779c1d3a5191/834217698bdb47609642ab4001734251.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CLOUD_LOGGING/d82d23dc499c44079e1e779c1d3a5191/ac5029751b074e15ab7d49e5b461fa79.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup topic in service guide"
+    },
+    {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/btp-getting-support",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support Content"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "dev",
+      "displayName": "Cloud Logging",
+      "category": "SERVICE",
+      "description": "Dedicated Cloud Logging instance for evaluation purposes with limited ingestion and storage capabilities that must not be used in production.",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": {
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": true,
+              "properties": {
+                "ingest": {
+                  "properties": {
+                    "certValidityDays": {
+                      "default": 90,
+                      "maximum": 180,
+                      "minimum": 1,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "title": "createServiceBinding",
+              "type": "object"
+            }
+          }
+        },
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": true,
+              "properties": {
+                "backend": {
+                  "additionalProperties": true,
+                  "properties": {
+                    "max_data_nodes": {
+                      "default": 1,
+                      "maximum": 1,
+                      "minimum": 1,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                },
+                "dashboards": {
+                  "properties": {
+                    "custom_label": {
+                      "maxLength": 20,
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "ingest": {
+                  "properties": {
+                    "max_instances": {
+                      "default": 1,
+                      "maximum": 1,
+                      "minimum": 1,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                },
+                "ingest_otlp": {
+                  "properties": {
+                    "enabled": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "retention_period": {
+                  "default": 7,
+                  "maximum": 90,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "rotate_root_ca": {
+                  "default": false,
+                  "type": "boolean"
+                },
+                "saml": {
+                  "properties": {
+                    "enabled": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "enabled"
+                  ],
+                  "type": "object"
+                }
+              },
+              "title": "createServiceInstance",
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "large",
+      "displayName": "large",
+      "category": "SERVICE",
+      "description": "Dedicated large service instance with auto-scaling for use in production",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": {
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": true,
+              "properties": {
+                "ingest": {
+                  "properties": {
+                    "certValidityDays": {
+                      "default": 90,
+                      "maximum": 180,
+                      "minimum": 1,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "title": "createServiceBinding",
+              "type": "object"
+            }
+          }
+        },
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": true,
+              "properties": {
+                "backend": {
+                  "additionalProperties": true,
+                  "properties": {
+                    "max_data_nodes": {
+                      "default": 2,
+                      "maximum": 10,
+                      "minimum": 2,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                },
+                "dashboards": {
+                  "properties": {
+                    "custom_label": {
+                      "maxLength": 20,
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "ingest": {
+                  "properties": {
+                    "max_instances": {
+                      "default": 2,
+                      "maximum": 10,
+                      "minimum": 2,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                },
+                "ingest_otlp": {
+                  "properties": {
+                    "enabled": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "retention_period": {
+                  "default": 7,
+                  "maximum": 90,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "rotate_root_ca": {
+                  "default": false,
+                  "type": "boolean"
+                },
+                "saml": {
+                  "properties": {
+                    "enabled": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "enabled"
+                  ],
+                  "type": "object"
+                }
+              },
+              "title": "createServiceInstance",
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Dedicated standard service instance with auto-scaling for use in production",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": {
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": true,
+              "properties": {
+                "ingest": {
+                  "properties": {
+                    "certValidityDays": {
+                      "default": 90,
+                      "maximum": 180,
+                      "minimum": 1,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "title": "createServiceBinding",
+              "type": "object"
+            }
+          }
+        },
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": true,
+              "properties": {
+                "backend": {
+                  "additionalProperties": true,
+                  "properties": {
+                    "max_data_nodes": {
+                      "default": 2,
+                      "maximum": 10,
+                      "minimum": 2,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                },
+                "dashboards": {
+                  "properties": {
+                    "custom_label": {
+                      "maxLength": 20,
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "ingest": {
+                  "properties": {
+                    "max_instances": {
+                      "default": 2,
+                      "maximum": 10,
+                      "minimum": 2,
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                },
+                "ingest_otlp": {
+                  "properties": {
+                    "enabled": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "retention_period": {
+                  "default": 7,
+                  "maximum": 90,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "rotate_root_ca": {
+                  "default": false,
+                  "type": "boolean"
+                },
+                "saml": {
+                  "properties": {
+                    "enabled": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "enabled"
+                  ],
+                  "type": "object"
+                }
+              },
+              "title": "createServiceInstance",
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}
