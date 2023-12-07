@@ -424,11 +424,6 @@
                         "type": "object"
                       }
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "memory": {
                       "default": 30,
                       "description": "HANA memory size (RAM) in GB",
@@ -443,18 +438,6 @@
                       "maximum": 0,
                       "minimum": 0,
                       "type": "integer"
-                    },
-                    "plugins": {
-                      "description": "HANA Plugins list configured for HANA instance",
-                      "items": {
-                        "properties": {
-                          "name": {
-                            "description": "plugin version for installation",
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "type": "array"
                     },
                     "productVersion": {
                       "additionalProperties": false,
@@ -566,6 +549,7 @@
                   },
                   "required": [
                     "edition",
+                    "systempassword",
                     "memory"
                   ],
                   "type": "object"
@@ -702,18 +686,6 @@
                       "maximum": 5970,
                       "minimum": 30,
                       "type": "integer"
-                    },
-                    "plugins": {
-                      "description": "HANA Plugins list configured for HANA instance",
-                      "items": {
-                        "properties": {
-                          "name": {
-                            "description": "plugin version for installation",
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "type": "array"
                     },
                     "productVersion": {
                       "additionalProperties": false,
@@ -1392,11 +1364,6 @@
                         "type": "object"
                       }
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "memory": {
                       "default": 30,
                       "description": "HANA memory size (RAM) in GB",
@@ -1411,18 +1378,6 @@
                       "maximum": 0,
                       "minimum": 0,
                       "type": "integer"
-                    },
-                    "plugins": {
-                      "description": "HANA Plugins list configured for HANA instance",
-                      "items": {
-                        "properties": {
-                          "name": {
-                            "description": "plugin version for installation",
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "type": "array"
                     },
                     "productVersion": {
                       "additionalProperties": false,
@@ -1534,6 +1489,7 @@
                   },
                   "required": [
                     "edition",
+                    "systempassword",
                     "memory"
                   ],
                   "type": "object"
@@ -1670,18 +1626,6 @@
                       "maximum": 5970,
                       "minimum": 30,
                       "type": "integer"
-                    },
-                    "plugins": {
-                      "description": "HANA Plugins list configured for HANA instance",
-                      "items": {
-                        "properties": {
-                          "name": {
-                            "description": "plugin version for installation",
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "type": "array"
                     },
                     "productVersion": {
                       "additionalProperties": false,
@@ -2093,11 +2037,6 @@
                         }
                       },
                       "type": "object"
-                    },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
                     },
                     "initOptions": {
                       "additionalProperties": false,
@@ -2665,11 +2604,6 @@
                         }
                       },
                       "type": "object"
-                    },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
                     },
                     "initOptions": {
                       "additionalProperties": false,
@@ -3196,11 +3130,6 @@
                       "description": "Node type for IQ co-ordinators.",
                       "const": "small"
                     },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
-                    },
                     "initOptions": {
                       "additionalProperties": false,
                       "properties": {
@@ -3627,11 +3556,6 @@
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
                       "const": "small"
-                    },
-                    "generateSystemPassword": {
-                      "default": false,
-                      "description": "Describes if the systempassword should be generated or not.",
-                      "type": "boolean"
                     },
                     "initOptions": {
                       "additionalProperties": false,
