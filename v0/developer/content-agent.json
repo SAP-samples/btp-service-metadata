@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OfbgJIbbMYFiPFfiSAQSrT9EhHRYv8QGRculiIQTPZnIZyrEr_swFYpqIplEhiR6.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPContentAgentService/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Content Agent Service | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Content%20Agent%20service",
       "classification": "SAP Community",
       "type": "Link",
@@ -51,6 +57,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Roadmap"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/ae1a4f2d150d468d9ff56e13f9898e07/9d9f235a96a947f5986021bbcebcef8c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/ae1a4f2d150d468d9ff56e13f9898e07/Latest/en-US",
@@ -364,5 +376,11 @@
       "value": "BC-CP-LCM-CAS"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "SAP Content Agent Service",
+      "url": "https://api.sap.com/api/contentagentapi/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }
