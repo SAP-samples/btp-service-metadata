@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/6rVZcYFZzLEXXhIiyv53ITtZDAFP3YHL9aosFePe-OrK51kWOYiFJSsnnaLrR0--.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/ResponsibilityManagementOnSAPBTP/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Responsibility Management Service on SAP Business Technology Platform | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Responsibility%20Management%20service",
       "classification": "SAP Community",
       "type": "Link",
@@ -125,5 +131,21 @@
       "value": "CA-GTF-RM-SCP"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Agent Determination",
+      "url": "https://api.sap.com/api/AgentDeterminationAPIs/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Configuration",
+      "url": "https://api.sap.com/api/ConfigurationAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Teams",
+      "url": "https://api.sap.com/api/TeamsAPI/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }

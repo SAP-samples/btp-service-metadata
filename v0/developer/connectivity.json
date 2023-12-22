@@ -5,6 +5,24 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/DSW4zoy3YUwLmE7RK0BMlBuldrh4OHbg-4eZdXrtxcA-Axh14G7QL6EPuzQ1UJwf.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPCloudFoundryConnectivity/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | Connect to SAP Cloud Foundry Services | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPCloudPlatformConnectivity/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | Connect to SAP Business Technology Platform Services | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/scpconnectivity/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Connectivity Service | SAP API Business Hub"
+    },
+    {
       "value": "https://cloudplatform.sap.com/capabilities/integration/cloud-connector.html",
       "classification": "Marketing",
       "type": "Link",
@@ -83,6 +101,12 @@
       "text": "Documentation"
     },
     {
+      "value": "https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/BTP/b865ed651e414196b39f8922db2122c7/e69bc863bb571014b358e2947e36d475.html",
       "classification": "Documentation",
       "type": "Link",
@@ -105,6 +129,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/c731a6d16db644e393e6cbfd7367558e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/e54cc8fbbb571014beb5caaf6aa31280.html",
@@ -135,6 +165,12 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.sap.com/products/business-technology-platform/use-cases.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     }
   ],
   "servicePlans": [
@@ -324,8 +360,25 @@
       "value": "BC-CP-CON-K8S-PROXY"
     },
     {
+      "value": "BC-CP-DEST-CF"
+    },
+    {
       "value": "BC-MID-SCC"
+    },
+    {
+      "value": "OPU-API-OD-DT"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Destination Service (Cloud Foundry)",
+      "url": "https://api.sap.com/api/SAP_CP_CF_Connectivity_Destination/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Destination Service (Neo)",
+      "url": "https://api.sap.com/api/SAP_CP_Neo_Connectivity_Destination/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }

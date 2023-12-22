@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/F0f5ToT99GLu5KytW0iGB9B57lym8IczQb9DyIMgGse0jrMipS5HCoOYtNAxmg61.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPCPABAPENV/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP BTP ABAP Environment | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20BTP%2C%20ABAP%20environment",
       "classification": "SAP Community",
       "type": "Link",
@@ -90,6 +96,12 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/3504ec5ef16548778610c7e89cc0eac3/11d62652aa2b4600a0fa136de0789648.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/31367ef6c3e947059e0d7c1cbfcaae93.html",
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
@@ -830,5 +842,11 @@
       "value": "BC-CP-ABA"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Git Repository - Manage",
+      "url": "https://api.sap.com/api/AC_MANAGE_GIT_REPOSITORY_0001/overview",
+      "apiType": "OData V2"
+    }
+  ]
 }

@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/sHWGHNB-USuX6oILeMudOp6Tjmx18QflqnTsoPmqaFnrpRufk9j8JBlleyD7gu4T.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPProcessAutomation/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Build Process Automation | SAP API Business Hub"
+    },
+    {
       "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/sap-build-process-automation",
       "classification": "Discovery Center",
       "type": "Link",
@@ -29,6 +35,12 @@
       "text": "Security"
     },
     {
+      "value": "https://help.sap.com/docs/PROCESS_AUTOMATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://blogs.sap.com/2022/03/29/sap-process-automation-free-tier-availability/",
       "classification": "Onboarding",
       "type": "Link",
@@ -51,12 +63,6 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "What Is SAP Build Process Automation?"
-    },
-    {
-      "value": "https://help.sap.com/docs/PROCESS_AUTOMATION",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/viewer/product/PROCESS_AUTOMATION/Cloud",
@@ -113,5 +119,41 @@
       "value": "BPI-PA"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Automation Execution",
+      "url": "https://api.sap.com/api/SPA_Automation_Execution/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Automation Monitoring",
+      "url": "https://api.sap.com/api/SPA_Automation_Monitoring/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Decisions",
+      "url": "https://api.sap.com/api/SPA_Decision/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Visibility Scenarios",
+      "url": "https://api.sap.com/api/SPA_Visibility_Scenario/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Visibility Workspace",
+      "url": "https://api.sap.com/api/SPA_Visibility_Workspace/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Inbox",
+      "url": "https://api.sap.com/api/SPA_Workflow_Inbox/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Workflow",
+      "url": "https://api.sap.com/api/SPA_Workflow_Runtime/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }

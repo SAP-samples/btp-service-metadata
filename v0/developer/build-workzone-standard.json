@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qB65RBz4bdaQxBf_E8wSvsRCBRWwZea-kOkU0OHIcng96kTCtCW-qXJmRulCRUzi.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPCLOUDPLATFORMPORTAL/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Build Work Zone and SAP Cloud Portal Service | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Build%20Work%20Zone%2C%20standard%20edition",
       "classification": "SAP Community",
       "type": "Link",
@@ -33,6 +39,12 @@
       "classification": "Documentation",
       "type": "PDF",
       "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/WZ",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/docs/WZ_STD",
@@ -83,7 +95,19 @@
       "text": "SAP Fiori Deployment Options and System Landscape Recommendations"
     },
     {
+      "value": "https://help.sap.com/viewer/8422cb487c2146999a2a7dab9cc85cf7/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/Portal_Service/1.0/en-US",
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
@@ -259,8 +283,57 @@
   ],
   "supportComponents": [
     {
+      "value": "EP-CPP-CF-LND"
+    },
+    {
       "value": "EP-WZ-LND"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Export Business Content (CF)",
+      "url": "https://api.sap.com/api/ContentExport/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Retrieve the content of web content widgets (Neo)",
+      "url": "https://api.sap.com/api/GetWCEWidgetsContent/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage SAP Fiori Launchpad Runtime Site Status (Neo)",
+      "url": "https://api.sap.com/api/ManageFlpRuntimeSiteStatus/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage SAP Fiori Launchpad Content Sharing Lifecycle (Neo)",
+      "url": "https://api.sap.com/api/ManageFlpSharedContent/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage SAP Fiori Launchpad Site Lifecycle (Neo)",
+      "url": "https://api.sap.com/api/ManageFlpSiteLifecycle/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage Translation Interface (Neo)",
+      "url": "https://api.sap.com/api/ManageTranslationInterface/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Set Default SAP Fiori Launchpad Site (Neo)",
+      "url": "https://api.sap.com/api/SetFlpDefaultSite/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Replicate HTML5 Apps to SAPUI5 Application Index Interface (Neo)",
+      "url": "https://api.sap.com/api/appindex/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage a Custom SAPUI5 Version Interface (Neo)",
+      "url": "https://api.sap.com/api/customui5version/overview",
+      "apiType": "RESTful"
+    }
+  ]
 }
