@@ -89,6 +89,12 @@
       "text": "Tutorial: Get Started with ABAP Programming on SAP BTP"
     },
     {
+      "value": "https://help.sap.com/docs/sap-btp-abap-environment/abap-environment/abap-environment",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/sap-btp-abap-environment",
       "classification": "Documentation",
       "type": "Link",
@@ -117,12 +123,6 @@
       "classification": "Support",
       "type": "Link",
       "text": "Getting Support"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/e34a329acc804c0e874496548183682f.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
     },
     {
       "value": "https://help.sap.com/docs/BTP/923180ddb98240829d935862025004d6/289477a81eec4d4e84c0302fb6835035.html",
@@ -219,8 +219,8 @@
                   "default": true
                 },
                 "size_of_persistence": {
-                  "title": "HANA Memory Size",
-                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure",
+                  "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory",
                   "type": "integer",
                   "default": 4,
                   "const": 4
@@ -244,8 +244,8 @@
                   "default": "email"
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size",
-                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB",
+                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime",
                   "type": "integer",
                   "default": 1,
                   "const": 1
@@ -278,8 +278,8 @@
                   "pattern": "^[^'\\x00-\\x1f]*$"
                 },
                 "size_of_persistence": {
-                  "title": "HANA Memory Size",
-                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure. -1 means to keep the current value, i.e. no update.",
+                  "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that the new 'size_of_persistence' has to be greater than or equal to '(size_of_persistence_disk - 40) / 120' and also that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
@@ -288,8 +288,8 @@
                   ]
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size",
-                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB. -1 means to keep the current value, i.e. no update.",
+                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. -1 means to keep the current value, i.e. no update.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
@@ -711,8 +711,8 @@
                   "default": true
                 },
                 "size_of_persistence": {
-                  "title": "HANA Memory Size",
-                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure",
+                  "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory",
                   "type": "integer",
                   "default": 2,
                   "enum": [
@@ -743,8 +743,8 @@
                   "default": "email"
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size",
-                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB",
+                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime",
                   "type": "integer",
                   "default": 1,
                   "enum": [
@@ -759,7 +759,8 @@
                   ]
                 },
                 "size_of_persistence_disk": {
-                  "description": "Change the storage size of the HANA database (in GB). If \"auto\" is selected it will be set to the minimal value: 40 * size_of_persistence + 40. The maximum value is 120 * size_of_persistence + 40. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimal value.",
+                  "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
+                  "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
                   "type": "string",
                   "pattern": "^(auto|\\d+)?$",
                   "default": "auto"
@@ -793,8 +794,8 @@
                   "pattern": "^[^'\\x00-\\x1f]*$"
                 },
                 "size_of_persistence": {
-                  "title": "HANA Memory Size",
-                  "description": "Enter the size of the HANA memory in blocks of 15 GB on AWS or 16 GB on Azure. -1 means to keep the current value, i.e. no update.",
+                  "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that the new 'size_of_persistence' has to be greater than or equal to '(size_of_persistence_disk - 40) / 120' and also that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
@@ -808,8 +809,8 @@
                   ]
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size",
-                  "description": "Enter the size of the ABAP runtime in blocks of 16 GB. -1 means to keep the current value, i.e. no update.",
+                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. -1 means to keep the current value, i.e. no update.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
@@ -825,7 +826,8 @@
                   ]
                 },
                 "size_of_persistence_disk": {
-                  "description": "Change the storage size of the HANA database (in GB). If \"auto\" is selected it will be set to the minimal value: 40 * size_of_persistence + 40. The maximum value is 120 * size_of_persistence + 40. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimal value.",
+                  "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
+                  "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
                   "type": "string",
                   "pattern": "^(auto|\\d+)?$",
                   "default": "auto"
