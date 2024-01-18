@@ -11,12 +11,6 @@
       "text": "SAP Discovery Center - Cloud Logging"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-cloud-logging",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
-    },
-    {
       "value": "https://help.sap.com/doc/a1ed56770e394b8f8a0386c11d7b0196/",
       "classification": "Documentation",
       "type": "PDF",
@@ -50,9 +44,9 @@
   "servicePlans": [
     {
       "name": "dev",
-      "displayName": "Cloud Logging",
+      "displayName": "dev",
       "category": "SERVICE",
-      "description": "Dedicated Cloud Logging instance for evaluation purposes with limited ingestion and storage capabilities that must not be used in production.",
+      "description": "Dedicated Cloud Logging instance for evaluation purposes with limited ingestion and storage capabilities that must not be used in production",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
