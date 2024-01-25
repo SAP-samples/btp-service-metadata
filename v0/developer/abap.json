@@ -827,7 +827,7 @@
                 },
                 "size_of_persistence_disk": {
                   "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-                  "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+                  "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
                   "type": "string",
                   "pattern": "^(auto|\\d+)?$",
                   "default": "auto"
