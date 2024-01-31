@@ -29,6 +29,12 @@
       "text": "Support Components for SAP BTP"
     },
     {
+      "value": "https://api.sap.com/package/SAPCPWorkflowAPIs/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Workflow Service | SAP API Business Hub"
+    },
+    {
       "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Workflow%20Management",
       "classification": "SAP Community",
       "type": "Link",
@@ -102,6 +108,12 @@
     },
     {
       "value": "https://help.sap.com/docs/BTP/e157c391253b4ecd93647bf232d18a83/fab405aa1ec64d6e9880761a31b0cd06.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f85276c5069a429fa37d1cd352785c25/df943e71122448caaf3c49f5ffd80627.html",
       "classification": "Documentation",
       "type": "Link",
       "text": "Documentation"
@@ -234,8 +246,32 @@
   ],
   "supportComponents": [
     {
+      "value": "LOD-BPM-WFS"
+    },
+    {
       "value": "SAMELOD-BPM-WFS"
     }
   ],
-  "apis": []
+  "apis": [
+    {
+      "name": "Workflow API for Neo",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Workflow API for Cloud Foundry",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow_CF/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Inbox API for Neo",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow_TCM/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Inbox API for Cloud Foundry",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow_TCM_CF/overview",
+      "apiType": "OData V2"
+    }
+  ]
 }
