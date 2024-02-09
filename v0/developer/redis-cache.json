@@ -146,13 +146,13 @@
               "additionalProperties": true,
               "properties": {
                 "engine_version": {
-                  "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 4.0",
+                  "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
                   "type": "string",
                   "enum": [
                     "4.0",
                     "6.0"
                   ],
-                  "default": "4.0"
+                  "default": "6.0"
                 },
                 "eviction_policy": {
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
@@ -315,13 +315,13 @@
                   "default": 8
                 },
                 "engine_version": {
-                  "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 4.0",
+                  "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
                   "type": "string",
                   "enum": [
                     "4.0",
                     "6.0"
                   ],
-                  "default": "4.0"
+                  "default": "6.0"
                 },
                 "eviction_policy": {
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
@@ -611,13 +611,13 @@
                   "default": 2
                 },
                 "engine_version": {
-                  "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 4.0",
+                  "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
                   "type": "string",
                   "enum": [
                     "4.0",
                     "6.0"
                   ],
-                  "default": "4.0"
+                  "default": "6.0"
                 },
                 "eviction_policy": {
                   "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
