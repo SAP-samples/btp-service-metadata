@@ -5,6 +5,167 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/R5EAXqwDmwjabMDRyjUTEr922WGBGroJ2yxoED783k5EsOg6l-sMljPv2NHRVZkE.svg",
   "servicePlans": [
     {
+      "name": "broker-100",
+      "displayName": "Broker 100",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 100 sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017570"
+        }
+      ]
+    },
+    {
+      "name": "broker-100k",
+      "displayName": "Broker 100K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 100K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017586"
+        }
+      ]
+    },
+    {
+      "name": "broker-10k",
+      "displayName": "Broker 10K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 10K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017665"
+        }
+      ]
+    },
+    {
+      "name": "broker-1k",
+      "displayName": "Broker 1K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 1K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017673"
+        }
+      ]
+    },
+    {
+      "name": "broker-250",
+      "displayName": "Broker 250",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 250 sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017664"
+        }
+      ]
+    },
+    {
+      "name": "broker-50k",
+      "displayName": "Broker 50K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 50K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017602"
+        }
+      ]
+    },
+    {
+      "name": "broker-5k",
+      "displayName": "Broker 5K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 5K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017682"
+        }
+      ]
+    },
+    {
       "name": "default",
       "displayName": "default",
       "category": "APPLICATION",
@@ -72,6 +233,73 @@
         },
         {
           "materialNumber": "8013431"
+        }
+      ]
+    },
+    {
+      "name": "spooling-add-on",
+      "displayName": "Spooling Add-on",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh extra spool of 500GB",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017637"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Plan for consuming or subscribing to various broker based advanced event mesh models",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8017637"
+        },
+        {
+          "materialNumber": "8017570"
+        },
+        {
+          "materialNumber": "8017586"
+        },
+        {
+          "materialNumber": "8017665"
+        },
+        {
+          "materialNumber": "8017673"
+        },
+        {
+          "materialNumber": "8017664"
+        },
+        {
+          "materialNumber": "8017602"
+        },
+        {
+          "materialNumber": "8017682"
         }
       ]
     }

@@ -103,6 +103,139 @@
   ],
   "servicePlans": [
     {
+      "name": "broker-100",
+      "displayName": "Broker 100",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 100 sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "broker-100k",
+      "displayName": "Broker 100K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 100K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "broker-10k",
+      "displayName": "Broker 10K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 10K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "broker-1k",
+      "displayName": "Broker 1K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 1K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "broker-250",
+      "displayName": "Broker 250",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 250 sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "broker-50k",
+      "displayName": "Broker 50K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 50K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "broker-5k",
+      "displayName": "Broker 5K",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh 5K sized broker",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "default",
       "displayName": "default",
       "category": "APPLICATION",
@@ -141,6 +274,44 @@
         {
           "region": "us20",
           "name": "US West (WA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "spooling-add-on",
+      "displayName": "Spooling Add-on",
+      "category": "SERVICE",
+      "description": "Plan for consuming or subscribing to advanced event mesh extra spool of 500GB",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Plan for consuming or subscribing to various broker based advanced event mesh models",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
         }
       ],
       "schemas": null
