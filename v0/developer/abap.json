@@ -185,6 +185,7 @@
                 "is_development_allowed",
                 "sapsystemname",
                 "size_of_runtime",
+                "elastic",
                 "size_of_persistence"
               ],
               "properties": {
@@ -218,6 +219,13 @@
                   "type": "boolean",
                   "default": true
                 },
+                "size_of_runtime": {
+                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                  "type": "integer",
+                  "default": 1,
+                  "const": 1
+                },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
                   "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory",
@@ -243,12 +251,11 @@
                   ],
                   "default": "email"
                 },
-                "size_of_runtime": {
-                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime",
-                  "type": "integer",
-                  "default": 1,
-                  "const": 1
+                "elastic": {
+                  "title": "Elastic Scaling of ABAP Application Server",
+                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                  "type": "boolean",
+                  "default": false
                 }
               },
               "required": [
@@ -263,10 +270,12 @@
               "$schema": "http://json-schema.org/draft-07/schema",
               "additionalProperties": false,
               "type": "object",
+              "_load_current_config": true,
               "_show_form_view": true,
               "_controlsOrder": [
                 "description",
                 "size_of_runtime",
+                "elastic",
                 "size_of_persistence"
               ],
               "properties": {
@@ -279,7 +288,7 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that the new 'size_of_persistence' has to be greater than or equal to '(size_of_persistence_disk - 40) / 120' and also that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
@@ -289,13 +298,19 @@
                 },
                 "size_of_runtime": {
                   "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. -1 means to keep the current value, i.e. no update.",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. -1 means to keep the current value, i.e. no update.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
                     -1,
                     1
                   ]
+                },
+                "elastic": {
+                  "title": "Elastic Scaling of ABAP Application Server",
+                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                  "type": "boolean",
+                  "default": false
                 }
               }
             }
@@ -496,6 +511,7 @@
               "$schema": "http://json-schema.org/draft-07/schema",
               "additionalProperties": false,
               "type": "object",
+              "_load_current_config": true,
               "_show_form_view": true,
               "_controlsOrder": [
                 "description"
@@ -676,6 +692,7 @@
                 "is_development_allowed",
                 "sapsystemname",
                 "size_of_runtime",
+                "elastic",
                 "size_of_persistence",
                 "size_of_persistence_disk"
               ],
@@ -710,6 +727,22 @@
                   "type": "boolean",
                   "default": true
                 },
+                "size_of_runtime": {
+                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                  "type": "integer",
+                  "default": 1,
+                  "enum": [
+                    1,
+                    2,
+                    4,
+                    6,
+                    8,
+                    16,
+                    24,
+                    32
+                  ]
+                },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
                   "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory",
@@ -742,21 +775,11 @@
                   ],
                   "default": "email"
                 },
-                "size_of_runtime": {
-                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime",
-                  "type": "integer",
-                  "default": 1,
-                  "enum": [
-                    1,
-                    2,
-                    4,
-                    6,
-                    8,
-                    16,
-                    24,
-                    32
-                  ]
+                "elastic": {
+                  "title": "Elastic Scaling of ABAP Application Server",
+                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                  "type": "boolean",
+                  "default": false
                 },
                 "size_of_persistence_disk": {
                   "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
@@ -778,10 +801,12 @@
               "$schema": "http://json-schema.org/draft-07/schema",
               "additionalProperties": false,
               "type": "object",
+              "_load_current_config": true,
               "_show_form_view": true,
               "_controlsOrder": [
                 "description",
                 "size_of_runtime",
+                "elastic",
                 "size_of_persistence",
                 "size_of_persistence_disk"
               ],
@@ -795,7 +820,7 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that the new 'size_of_persistence' has to be greater than or equal to '(size_of_persistence_disk - 40) / 120' and also that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
@@ -810,7 +835,7 @@
                 },
                 "size_of_runtime": {
                   "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. -1 means to keep the current value, i.e. no update.",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. -1 means to keep the current value, i.e. no update.",
                   "type": "integer",
                   "default": -1,
                   "enum": [
@@ -824,6 +849,12 @@
                     24,
                     32
                   ]
+                },
+                "elastic": {
+                  "title": "Elastic Scaling of ABAP Application Server",
+                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                  "type": "boolean",
+                  "default": false
                 },
                 "size_of_persistence_disk": {
                   "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
