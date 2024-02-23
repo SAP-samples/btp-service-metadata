@@ -31,10 +31,6 @@
         {
           "region": "us10",
           "name": "US East (VA)"
-        },
-        {
-          "region": "us20",
-          "name": "US West (WA)"
         }
       ],
       "materialNumberMappings": []
@@ -66,13 +62,16 @@
         {
           "region": "us10",
           "name": "US East (VA)"
-        },
-        {
-          "region": "us20",
-          "name": "US West (WA)"
         }
       ],
-      "materialNumberMappings": []
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8009277"
+        },
+        {
+          "materialNumber": "8011024"
+        }
+      ]
     },
     {
       "name": "concurrent-unattended",
@@ -101,13 +100,16 @@
         {
           "region": "us10",
           "name": "US East (VA)"
-        },
-        {
-          "region": "us20",
-          "name": "US West (WA)"
         }
       ],
-      "materialNumberMappings": []
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8009276"
+        },
+        {
+          "materialNumber": "8011025"
+        }
+      ]
     },
     {
       "name": "default",
@@ -163,13 +165,13 @@
         {
           "region": "us10",
           "name": "US East (VA)"
-        },
-        {
-          "region": "us20",
-          "name": "US West (WA)"
         }
       ],
-      "materialNumberMappings": []
+      "materialNumberMappings": [
+        {
+          "materialNumber": "8011152"
+        }
+      ]
     }
   ],
   "certifications": [

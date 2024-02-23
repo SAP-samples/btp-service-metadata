@@ -195,7 +195,8 @@
                   "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. It will overide the access list provided during previous create/update operation",
                   "type": "string"
                 }
-              }
+              },
+              "_load_current_config": true
             }
           }
         }
@@ -582,7 +583,8 @@
                   "minimum": 1,
                   "maximum": 35
                 }
-              }
+              },
+              "_load_current_config": true
             }
           }
         }
@@ -961,7 +963,8 @@
                   "minimum": 1,
                   "maximum": 35
                 }
-              }
+              },
+              "_load_current_config": true
             }
           }
         }
