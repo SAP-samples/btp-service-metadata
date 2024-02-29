@@ -121,6 +121,33 @@
   ],
   "servicePlans": [
     {
+      "name": "free",
+      "displayName": "Free",
+      "category": "SERVICE",
+      "description": "Test and explore the features provided by the Forms service by Adobe. The usage of service plan Free is limited to six months. After six months, SAP has the right to delete free tier instances and data. Only community support is available for free tier service plans, and these are not subject to service level agreements (SLAs). Service plan Free is subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "standard",
       "displayName": "Standard",
       "category": "SERVICE",
