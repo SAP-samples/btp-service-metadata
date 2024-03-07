@@ -87,6 +87,14 @@
           "name": "Europe (Netherlands)"
         },
         {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
           "region": "jp10",
           "name": "Japan (Tokyo)"
         },
@@ -105,6 +113,10 @@
         {
           "region": "us21",
           "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
         }
       ],
       "materialNumberMappings": []
@@ -158,6 +170,14 @@
           "name": "Europe (Netherlands)"
         },
         {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
           "region": "jp10",
           "name": "Japan (Tokyo)"
         },
@@ -176,19 +196,19 @@
         {
           "region": "us21",
           "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
         }
       ],
-      "materialNumberMappings": [
-        {
-          "materialNumber": "8011136"
-        }
-      ]
+      "materialNumberMappings": []
     },
     {
       "name": "hana_compute_unit",
       "displayName": "hana_compute_unit",
       "category": "SERVICE",
-      "description": "Configurable HANA Memory in blocks of 15 GB on AWS or 16 GB on Azure",
+      "description": "Configurable HANA Memory in blocks of 16 GB (or 15 GB on AWS) ",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -237,6 +257,14 @@
           "name": "Europe (Netherlands)"
         },
         {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
           "region": "jp10",
           "name": "Japan (Tokyo)"
         },
@@ -255,6 +283,10 @@
         {
           "region": "us21",
           "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
         }
       ],
       "materialNumberMappings": []
@@ -312,6 +344,14 @@
           "name": "Europe (Netherlands)"
         },
         {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
           "region": "jp10",
           "name": "Japan (Tokyo)"
         },
@@ -330,22 +370,13 @@
         {
           "region": "us21",
           "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
         }
       ],
-      "materialNumberMappings": [
-        {
-          "materialNumber": "8006182"
-        },
-        {
-          "materialNumber": "8006365"
-        },
-        {
-          "materialNumber": "8006181"
-        },
-        {
-          "materialNumber": "8006364"
-        }
-      ]
+      "materialNumberMappings": []
     }
   ],
   "certifications": [
