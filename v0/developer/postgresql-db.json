@@ -292,6 +292,24 @@
         }
       ],
       "schemas": {
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$id": "http://example.com/schemas/postgres-premium-create-binding.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "enable_cmk": {
+                  "description": "Enables CMK features on a particular PostgreSQL Instance",
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
+          }
+        },
         "service_instance": {
           "create": {
             "parameters": {
@@ -438,7 +456,8 @@
                           "checkpoint_timeout",
                           "autovacuum_max_workers",
                           "autovacuum_vacuum_scale_factor",
-                          "max_locks_per_transaction"
+                          "max_locks_per_transaction",
+                          "idle_in_transaction_session_timeout"
                         ],
                         "type": "string"
                       },
@@ -569,7 +588,8 @@
                           "checkpoint_timeout",
                           "autovacuum_max_workers",
                           "autovacuum_vacuum_scale_factor",
-                          "max_locks_per_transaction"
+                          "max_locks_per_transaction",
+                          "idle_in_transaction_session_timeout"
                         ],
                         "type": "string"
                       },
@@ -684,6 +704,24 @@
         }
       ],
       "schemas": {
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$id": "http://example.com/schemas/postgres-standard-create-binding.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "enable_cmk": {
+                  "description": "Enables CMK features on a particular PostgreSQL Instance",
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
+          }
+        },
         "service_instance": {
           "create": {
             "parameters": {
@@ -826,7 +864,8 @@
                           "checkpoint_timeout",
                           "autovacuum_max_workers",
                           "autovacuum_vacuum_scale_factor",
-                          "max_locks_per_transaction"
+                          "max_locks_per_transaction",
+                          "idle_in_transaction_session_timeout"
                         ],
                         "type": "string"
                       },
@@ -953,7 +992,8 @@
                           "checkpoint_timeout",
                           "autovacuum_max_workers",
                           "autovacuum_vacuum_scale_factor",
-                          "max_locks_per_transaction"
+                          "max_locks_per_transaction",
+                          "idle_in_transaction_session_timeout"
                         ],
                         "type": "string"
                       },
