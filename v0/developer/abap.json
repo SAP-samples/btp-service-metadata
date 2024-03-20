@@ -228,7 +228,7 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory",
                   "type": "integer",
                   "default": 4,
                   "const": 4
@@ -288,23 +288,17 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                   "type": "integer",
-                  "default": -1,
-                  "enum": [
-                    -1,
-                    4
-                  ]
+                  "default": 4,
+                  "const": 4
                 },
                 "size_of_runtime": {
                   "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. -1 means to keep the current value, i.e. no update.",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
                   "type": "integer",
-                  "default": -1,
-                  "enum": [
-                    -1,
-                    1
-                  ]
+                  "default": 1,
+                  "const": 1
                 },
                 "elastic": {
                   "title": "Elastic Scaling of ABAP Application Server",
@@ -793,7 +787,7 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory",
                   "type": "integer",
                   "default": 2,
                   "enum": [
@@ -868,11 +862,10 @@
                 },
                 "size_of_persistence": {
                   "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 15 GB on AWS or 16 GB on Azure) that should be used for the HANA Cloud memory. -1 means to keep the current value, i.e. no update. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+                  "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                   "type": "integer",
-                  "default": -1,
+                  "default": 2,
                   "enum": [
-                    -1,
                     2,
                     4,
                     8,
@@ -883,11 +876,10 @@
                 },
                 "size_of_runtime": {
                   "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. -1 means to keep the current value, i.e. no update.",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
                   "type": "integer",
-                  "default": -1,
+                  "default": 1,
                   "enum": [
-                    -1,
                     1,
                     2,
                     4,
