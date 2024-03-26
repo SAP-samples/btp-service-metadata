@@ -5,6 +5,25 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/PV4XIuP2kDBgur0JzrYUP9uLmoAajoDEaDqOm2anoFoMWqbCB-YN54cP1M5wKkNL.svg",
   "servicePlans": [
     {
+      "name": "build-code",
+      "displayName": "Build Code",
+      "category": "SERVICE",
+      "description": "Allows production & consumption of custom events",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "materialNumberMappings": []
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",

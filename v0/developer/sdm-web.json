@@ -85,6 +85,25 @@
   ],
   "servicePlans": [
     {
+      "name": "build-code",
+      "displayName": "Document Management, application option",
+      "category": "APPLICATION",
+      "description": "API Calls in blocks of 1000.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "standard",
       "displayName": "standard",
       "category": "APPLICATION",

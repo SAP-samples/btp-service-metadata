@@ -103,6 +103,25 @@
   ],
   "servicePlans": [
     {
+      "name": "build-code",
+      "displayName": "build-code",
+      "category": "APPLICATION",
+      "description": "SAP Business Application Studio",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "APPLICATION",

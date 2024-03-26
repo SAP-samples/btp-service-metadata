@@ -205,6 +205,25 @@
   ],
   "servicePlans": [
     {
+      "name": "build-code",
+      "displayName": "Build-code",
+      "category": "SERVICE",
+      "description": "Create an org in your Cloud Foundry environment to start developing build code applications",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "ENVIRONMENT",

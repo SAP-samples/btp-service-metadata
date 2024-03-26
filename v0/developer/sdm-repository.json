@@ -79,6 +79,25 @@
   ],
   "servicePlans": [
     {
+      "name": "build-code",
+      "displayName": "Document Management, Repository option",
+      "category": "SERVICE",
+      "description": "Storage in 1GB Block.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",

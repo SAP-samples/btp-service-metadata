@@ -5,6 +5,25 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/hTJVPoDjoBxUa91sFIWI6LBd27nJ3NXuMm_E8jHwnOLJDC87w68zUTn9OF53Vv8o.svg",
   "servicePlans": [
     {
+      "name": "build-code",
+      "displayName": "Document Management, Repository option",
+      "category": "SERVICE",
+      "description": "Storage in 1GB Block.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "materialNumberMappings": []
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",

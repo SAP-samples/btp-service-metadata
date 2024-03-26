@@ -5,6 +5,12 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7uH8Uf6cvNKWPiWvxz9S-zxLArnybv6O-XcUPkXfBkvb3rKTNZx95-plL6L7w-eP.svg",
   "links": [
     {
+      "value": "https://api.sap.com/package/SAPAnalyticsCloud/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Analytics Cloud | SAP API Business Hub"
+    },
+    {
       "value": "https://api.sap.com/package/SAPAnalyticsCloudEmbeddedEdition/overview",
       "classification": "API Hub",
       "type": "Link",
@@ -113,6 +119,12 @@
       "text": "Help Portal Product Page"
     },
     {
+      "value": "https://www.sapanalytics.cloud/",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    },
+    {
       "value": "https://www.youtube.com/embed/26xTLnkymFA",
       "classification": "External",
       "type": "Link",
@@ -189,12 +201,55 @@
   "supportComponents": [
     {
       "value": "LOD-ANA-OEM-CP"
+    },
+    {
+      "value": "LOD-ANA-PL"
     }
   ],
   "apis": [
     {
+      "name": "SAP Analytics Cloud Activities Service",
+      "url": "https://api.sap.com/api/Activities_API/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Calendar Service",
+      "url": "https://api.sap.com/api/Calendar_API/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Data Export Service",
+      "url": "https://api.sap.com/api/DataExport_API/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Data Import Service",
+      "url": "https://api.sap.com/api/DataImport_API/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Multi Actions Service",
+      "url": "https://api.sap.com/api/MultiActions_API/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "OEM Tenant Management",
+      "url": "https://api.sap.com/api/OEM_API/overview",
+      "apiType": "RESTful"
+    },
+    {
       "name": "Configuration and REST APIs",
       "url": "https://api.sap.com/api/SACEmbeddedEdition/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "SAP Analytics Cloud Tenant API",
+      "url": "https://api.sap.com/api/Story_API/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Open Story & Application URL",
+      "url": "https://api.sap.com/api/URL_API/overview",
       "apiType": "RESTful"
     }
   ]

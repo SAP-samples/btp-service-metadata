@@ -121,6 +121,25 @@
   ],
   "servicePlans": [
     {
+      "name": "build-code",
+      "displayName": "Build Code",
+      "category": "SERVICE",
+      "description": "Allows production & consumption of custom events",
+      "isFree": false,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",
