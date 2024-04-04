@@ -233,6 +233,12 @@
                   "default": 4,
                   "const": 4
                 },
+                "elastic": {
+                  "title": "Elastic Scaling of ABAP Application Server",
+                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                  "type": "boolean",
+                  "default": false
+                },
                 "admin_user_name": {
                   "title": "Admin User Name",
                   "description": "Optionally enter the username of the administrator. The username must not begin with SAP_ or _, must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 40 characters.",
@@ -250,12 +256,6 @@
                     "user_name"
                   ],
                   "default": "email"
-                },
-                "elastic": {
-                  "title": "Elastic Scaling of ABAP Application Server",
-                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
-                  "type": "boolean",
-                  "default": false
                 }
               },
               "required": [
@@ -517,6 +517,24 @@
                   "minLength": 3,
                   "maxLength": 3,
                   "pattern": "^(?!ADD|ALL|AMD|ADM|AND|ANY|ARE|ASC|AUX|AVG|BIT|CDC|COM|CON|DAA|DBA|ECO|END|EPS|FOR|GET|GID|IBM|INT|KEY|LOG|LPT|MAP|MAX|MIN|MON|NIX|NOT|NUL|OFF|OLD|OMS|OUT|PAD|PRN|RAW|REF|ROW|SAP|SET|SGA|SHG|SID|SQL|SUM|SYS|TMP|TOP|UID|USE|USR|VAR)[A-Z][A-Z0-9]{2}$"
+                },
+                "admin_user_name": {
+                  "title": "Admin User Name",
+                  "description": "Optionally enter the username of the administrator. The username must not begin with SAP_ or _, must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 40 characters.",
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 40,
+                  "pattern": "^(?!SAP_|_)[\\.A-Z0-9_-]{0,40}$"
+                },
+                "login_attribute": {
+                  "title": "Login Attribute",
+                  "description": "Which attribute should be used for login.",
+                  "type": "string",
+                  "enum": [
+                    "email",
+                    "user_name"
+                  ],
+                  "default": "email"
                 }
               },
               "required": [
@@ -799,6 +817,12 @@
                     64
                   ]
                 },
+                "elastic": {
+                  "title": "Elastic Scaling of ABAP Application Server",
+                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                  "type": "boolean",
+                  "default": false
+                },
                 "admin_user_name": {
                   "title": "Admin User Name",
                   "description": "Optionally enter the username of the administrator. The username must not begin with SAP_ or _, must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 40 characters.",
@@ -816,12 +840,6 @@
                     "user_name"
                   ],
                   "default": "email"
-                },
-                "elastic": {
-                  "title": "Elastic Scaling of ABAP Application Server",
-                  "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
-                  "type": "boolean",
-                  "default": false
                 },
                 "size_of_persistence_disk": {
                   "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
