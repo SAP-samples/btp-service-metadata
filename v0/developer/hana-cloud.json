@@ -352,25 +352,6 @@
                       },
                       "type": "object"
                     },
-                    "dataEncryption": {
-                      "description": "Data Encryption Specifications",
-                      "properties": {
-                        "keyID": {
-                          "description": "Encryption Key GUID",
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "mode": {
-                          "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-                          "enum": [
-                            "MANAGED_KEY",
-                            "DEDICATED_KEY"
-                          ],
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
                     "databaseMappings": {
                       "items": {
                         "properties": {
@@ -667,22 +648,6 @@
                           "maximum": 215,
                           "minimum": 0,
                           "type": "integer"
-                        }
-                      },
-                      "type": "object"
-                    },
-                    "dataEncryption": {
-                      "description": "Data Encryption Specifications",
-                      "properties": {
-                        "keyID": {
-                          "description": "Encryption Key GUID",
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "mode": {
-                          "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-                          "const": "MANAGED_KEY",
-                          "type": "string"
                         }
                       },
                       "type": "object"
@@ -1355,25 +1320,6 @@
                       },
                       "type": "object"
                     },
-                    "dataEncryption": {
-                      "description": "Data Encryption Specifications",
-                      "properties": {
-                        "keyID": {
-                          "description": "Encryption Key GUID",
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "mode": {
-                          "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-                          "enum": [
-                            "MANAGED_KEY",
-                            "DEDICATED_KEY"
-                          ],
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
                     "databaseMappings": {
                       "items": {
                         "properties": {
@@ -1670,22 +1616,6 @@
                           "maximum": 215,
                           "minimum": 0,
                           "type": "integer"
-                        }
-                      },
-                      "type": "object"
-                    },
-                    "dataEncryption": {
-                      "description": "Data Encryption Specifications",
-                      "properties": {
-                        "keyID": {
-                          "description": "Encryption Key GUID",
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "mode": {
-                          "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-                          "const": "MANAGED_KEY",
-                          "type": "string"
                         }
                       },
                       "type": "object"
@@ -2061,25 +1991,6 @@
                         "xlarge",
                         "2xlarge"
                       ]
-                    },
-                    "dataEncryption": {
-                      "description": "Data Encryption Specifications",
-                      "properties": {
-                        "keyID": {
-                          "description": "Encryption Key GUID",
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "mode": {
-                          "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-                          "enum": [
-                            "MANAGED_KEY",
-                            "DEDICATED_KEY"
-                          ],
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
                     },
                     "enableBackups": {
                       "description": "Describes if IQ backups are enabled or not",
@@ -3312,25 +3223,6 @@
                     "coordinator_type": {
                       "description": "Node type for IQ co-ordinators.",
                       "const": "small"
-                    },
-                    "dataEncryption": {
-                      "description": "Data Encryption Specifications",
-                      "properties": {
-                        "keyID": {
-                          "description": "Encryption Key GUID",
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "mode": {
-                          "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-                          "enum": [
-                            "MANAGED_KEY",
-                            "DEDICATED_KEY"
-                          ],
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
                     },
                     "generateSystemPassword": {
                       "default": false,
