@@ -198,7 +198,7 @@
   {
     "technicalId": "build-workzone-standard",
     "displayName": "SAP Build Work Zone, standard edition",
-    "description": "Provides users with a central point of access to applications from different sources. Note: SAP Launchpad service was recently renamed to SAP Build Work Zone, standard edition.",
+    "description": "Provides users with a central point of access to applications from different sources.",
     "fileName": "build-workzone-standard.json",
     "category": "SERVICE"
   },
@@ -854,6 +854,13 @@
     "category": "SERVICE"
   },
   {
+    "technicalId": "one-mds-master",
+    "displayName": "SAP Master Data Integration Tenant",
+    "description": "Replicate master data between applications via a central master data hub.",
+    "fileName": "one-mds-master.json",
+    "category": "APPLICATION"
+  },
+  {
     "technicalId": "personal-data-manager-service",
     "displayName": "SAP Personal Data Manager",
     "description": "SAP Personal Data Manager provides the capability to generate reports showing the personal data stored in an application point of view with the help of a CSR. The reports can be generated and exported either in machine readable form (JSON) or human readable form (PDF). Data subjects can request the correction and deletion of personal data that is stored in an application point of view.",
@@ -1094,7 +1101,7 @@
   {
     "technicalId": "SAPLaunchpad",
     "displayName": "SAP Build Work Zone, standard edition",
-    "description": "Provides users with a central point of access to applications from different sources. Note: SAP Launchpad service was recently renamed to SAP Build Work Zone, standard edition.",
+    "description": "Provides users with a central point of access to applications from different sources.",
     "fileName": "saplaunchpad.json",
     "category": "APPLICATION"
   },

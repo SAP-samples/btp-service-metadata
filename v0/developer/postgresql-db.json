@@ -116,6 +116,24 @@
         }
       ],
       "schemas": {
+        "service_binding": {
+          "create": {
+            "parameters": {
+              "$id": "http://example.com/schemas/postgres-free-create-binding.json",
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "type": "object",
+              "_show_form_view": true,
+              "additionalProperties": true,
+              "properties": {
+                "show_cert_url": {
+                  "description": "Adds server and client certificate urls in the VCAP credentials",
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
+          }
+        },
         "service_instance": {
           "create": {
             "parameters": {
@@ -133,7 +151,8 @@
                     "12",
                     "13",
                     "14",
-                    "15"
+                    "15",
+                    "16"
                   ],
                   "default": "14"
                 },
@@ -188,7 +207,8 @@
                     "12",
                     "13",
                     "14",
-                    "15"
+                    "15",
+                    "16"
                   ]
                 },
                 "locale": {
@@ -263,6 +283,10 @@
           "name": "Europe (Frankfurt)"
         },
         {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
           "region": "in30",
           "name": "India (Mumbai)"
         },
@@ -311,6 +335,11 @@
               "properties": {
                 "enable_cmk": {
                   "description": "Enables CMK features on a particular PostgreSQL Instance",
+                  "type": "boolean",
+                  "default": false
+                },
+                "show_cert_url": {
+                  "description": "Adds server and client certificate urls in the VCAP credentials",
                   "type": "boolean",
                   "default": false
                 }
@@ -362,7 +391,8 @@
                     "12",
                     "13",
                     "14",
-                    "15"
+                    "15",
+                    "16"
                   ],
                   "default": "14"
                 },
@@ -538,7 +568,8 @@
                     "12",
                     "13",
                     "14",
-                    "15"
+                    "15",
+                    "16"
                   ]
                 },
                 "allow_access": {
@@ -614,6 +645,29 @@
                   "type": "integer",
                   "minimum": 1,
                   "maximum": 35
+                },
+                "instance_shares": {
+                  "description": "Indicates the preferred instance sharing configurations by having operation and list of subaccounts mentioned.",
+                  "properties": {
+                    "op": {
+                      "description": "Operation on the mentioned subaccounts. To share add is selected and to unshare delete to selected",
+                      "enum": [
+                        "add",
+                        "delete"
+                      ],
+                      "type": "string"
+                    },
+                    "values": {
+                      "description": "List of subaccounts to share or unshare.",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "type": "object"
                 }
               },
               "_load_current_config": true
@@ -679,6 +733,10 @@
           "name": "Europe (Frankfurt)"
         },
         {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
           "region": "in30",
           "name": "India (Mumbai)"
         },
@@ -727,6 +785,11 @@
               "properties": {
                 "enable_cmk": {
                   "description": "Enables CMK features on a particular PostgreSQL Instance",
+                  "type": "boolean",
+                  "default": false
+                },
+                "show_cert_url": {
+                  "description": "Adds server and client certificate urls in the VCAP credentials",
                   "type": "boolean",
                   "default": false
                 }
@@ -788,7 +851,8 @@
                     "12",
                     "13",
                     "14",
-                    "15"
+                    "15",
+                    "16"
                   ],
                   "default": "14"
                 },
@@ -946,7 +1010,8 @@
                     "12",
                     "13",
                     "14",
-                    "15"
+                    "15",
+                    "16"
                   ]
                 },
                 "multi_az": {
@@ -1022,6 +1087,29 @@
                   "type": "integer",
                   "minimum": 1,
                   "maximum": 35
+                },
+                "instance_shares": {
+                  "description": "Indicates the preferred instance sharing configurations by having operation and list of subaccounts mentioned.",
+                  "properties": {
+                    "op": {
+                      "description": "Operation on the mentioned subaccounts. To share add is selected and to unshare delete to selected",
+                      "enum": [
+                        "add",
+                        "delete"
+                      ],
+                      "type": "string"
+                    },
+                    "values": {
+                      "description": "List of subaccounts to share or unshare.",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "type": "object"
                 }
               },
               "_load_current_config": true
@@ -1085,6 +1173,10 @@
         {
           "region": "eu30",
           "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
         },
         {
           "region": "in30",
@@ -1180,6 +1272,10 @@
         {
           "region": "eu30",
           "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
         },
         {
           "region": "in30",
