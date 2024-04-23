@@ -95,7 +95,7 @@
       "name": "hana",
       "displayName": "hana",
       "category": "SERVICE",
-      "description": "SAP HANA in-memory database",
+      "description": "Creates an instance of SAP HANA Cloud, SAP HANA database for in-memory multi-model data processing.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -189,7 +189,7 @@
       "name": "hana-cloud-connection",
       "displayName": "hana-cloud-connection",
       "category": "SERVICE",
-      "description": "Connection between SAP HANA Cloud services",
+      "description": "Connects an SAP HANA Cloud, SAP HANA database instance with an SAP HANA Cloud, data lake instance without additional costs.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -343,7 +343,7 @@
       "name": "hana-free",
       "displayName": "hana-free",
       "category": "SERVICE",
-      "description": "SAP HANA in-memory database. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Creates a free and limited SAP HANA Cloud, SAP HANA database instance. This free instance is stopped on a nightly basis and must be restarted within 30 days, or it will be deleted. Please note, only community support is available for free service plans, and these are not subject to SLAs. The use of a free tier service plan is subject to additional terms and conditions, as provided in the Business Technology Platform Supplemental Terms and Conditions, linked in the Additional Links tab displayed in the Service tile.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -414,7 +414,7 @@
       "name": "relational-data-lake",
       "displayName": "relational-data-lake",
       "category": "SERVICE",
-      "description": "SAP HANA Cloud, data lake",
+      "description": "Creates an SAP HANA Cloud, data lake instance with data lake Files and (optional) data lake Relational Engine capabilities.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -508,7 +508,7 @@
       "name": "relational-data-lake-free",
       "displayName": "relational-data-lake-free",
       "category": "SERVICE",
-      "description": "SAP HANA Cloud, data lake. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "description": "Creates a free and limited SAP HANA Cloud, data lake instance per global account per landscape. Supports the minimum configuration of 4vCPU, 256 GB storage and is limited to the SAP HANA data lake relational engine only (data lake Files and SQL on files are not supported). This free instance is stopped on a nightly basis and must be restarted within 30 days, or it will be deleted. It's not subject to SLAs and only community support is available. Free tier instances can be converted to paid tier instance at any time.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
