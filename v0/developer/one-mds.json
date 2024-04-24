@@ -261,7 +261,7 @@
                   "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                 },
                 "application": {
-                  "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", sfsf\".",
+                  "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\".",
                   "type": "string",
                   "enum": [
                     "ariba",
@@ -275,7 +275,9 @@
                     "resource management",
                     "s4",
                     "cpq",
-                    "sfsf"
+                    "sfsf",
+                    "ci",
+                    "omf"
                   ]
                 }
               }
@@ -319,7 +321,7 @@
                   "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                 },
                 "application": {
-                  "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", sfsf\".",
+                  "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\".",
                   "type": "string",
                   "enum": [
                     "ariba",
@@ -333,7 +335,9 @@
                     "resource management",
                     "s4",
                     "cpq",
-                    "sfsf"
+                    "sfsf",
+                    "ci",
+                    "omf"
                   ]
                 }
               }
