@@ -8,7 +8,7 @@
       "name": "free",
       "displayName": "Free",
       "category": "SERVICE",
-      "description": "Create Redis Cache instances for limited use.",
+      "description": "Redis cache service for non-productive development usage",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -59,6 +59,10 @@
         {
           "region": "jp20",
           "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
         },
         {
           "region": "us10",
@@ -245,6 +249,10 @@
         {
           "region": "jp20",
           "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
         },
         {
           "region": "us10",
