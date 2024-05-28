@@ -8,6 +8,7 @@ The metadata information is provided in JSON format. There are various ways to p
 
 * [jq - a lightweight and flexible command line JSON processor](https://stedolan.github.io/jq/)
 * [gron - making JSON greppable](https://github.com/tomnomnom/gron)
+* [fx - terminal JSON viewer and processor](https://fx.wtf/)
 * [jless — a command-line JSON viewer](https://jless.io/)
 
 ## Exploration examples
