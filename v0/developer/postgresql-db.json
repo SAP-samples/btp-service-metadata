@@ -645,28 +645,6 @@
                   "type": "integer",
                   "minimum": 1,
                   "maximum": 35
-                },
-                "instance_shares": {
-                  "description": "Indicates the preferred instance sharing configurations by having operation and list of subaccounts mentioned.",
-                  "properties": {
-                    "op": {
-                      "description": "Operation on the mentioned subaccounts. To share add is selected and to unshare delete to selected",
-                      "enum": [
-                        "add",
-                        "delete"
-                      ],
-                      "type": "string"
-                    },
-                    "values": {
-                      "description": "List of subaccounts to share or unshare.",
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
-                      "uniqueItems": true
-                    }
-                  },
-                  "type": "object"
                 }
               },
               "_load_current_config": true
@@ -1086,28 +1064,6 @@
                   "type": "integer",
                   "minimum": 1,
                   "maximum": 35
-                },
-                "instance_shares": {
-                  "description": "Indicates the preferred instance sharing configurations by having operation and list of subaccounts mentioned.",
-                  "properties": {
-                    "op": {
-                      "description": "Operation on the mentioned subaccounts. To share add is selected and to unshare delete to selected",
-                      "enum": [
-                        "add",
-                        "delete"
-                      ],
-                      "type": "string"
-                    },
-                    "values": {
-                      "description": "List of subaccounts to share or unshare.",
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
-                      "uniqueItems": true
-                    }
-                  },
-                  "type": "object"
                 }
               },
               "_load_current_config": true

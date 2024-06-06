@@ -103,6 +103,10 @@
           "name": "Canada (Montreal)"
         },
         {
+          "region": "ch20",
+          "name": "Switzerland (Zurich) Azure EU Access"
+        },
+        {
           "region": "eu10",
           "name": "Europe (Frankfurt)"
         },
@@ -115,8 +119,16 @@
           "name": "Europe (Netherlands)"
         },
         {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
           "region": "il30",
           "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
         },
         {
           "region": "jp10",
@@ -125,6 +137,10 @@
         {
           "region": "jp20",
           "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
         },
         {
           "region": "sa30",
@@ -141,6 +157,10 @@
         {
           "region": "us21",
           "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
         }
       ],
       "schemas": {
@@ -323,16 +343,10 @@
               "_show_form_view": true,
               "additionalProperties": true,
               "properties": {
-                "memory": {
-                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
-                  "type": "integer",
-                  "enum": [
-                    8,
-                    16,
-                    32,
-                    64
-                  ],
-                  "default": 8
+                "cluster_mode": {
+                  "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
+                  "type": "boolean",
+                  "default": true
                 },
                 "engine_version": {
                   "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
@@ -357,18 +371,6 @@
                   ],
                   "default": "noeviction"
                 },
-                "cluster_mode": {
-                  "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
-                  "type": "boolean",
-                  "default": true
-                },
-                "shard_count": {
-                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                  "type": "integer",
-                  "minimum": 1,
-                  "maximum": 90,
-                  "default": 1
-                },
                 "maintenance_window": {
                   "description": "Indicates the maintenance window for the Redis cache.",
                   "type": "object",
@@ -403,6 +405,17 @@
                     }
                   }
                 },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
+                  "type": "integer",
+                  "enum": [
+                    8,
+                    16,
+                    32,
+                    64
+                  ],
+                  "default": 8
+                },
                 "multi_az": {
                   "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
                   "type": "boolean",
@@ -420,6 +433,13 @@
                   "type": "string",
                   "pattern": "^[KEg$lshzxeA]*$",
                   "default": ""
+                },
+                "shard_count": {
+                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 90,
+                  "default": 1
                 }
               }
             }
@@ -432,16 +452,6 @@
               "_show_form_view": true,
               "additionalProperties": true,
               "properties": {
-                "memory": {
-                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
-                  "type": "integer",
-                  "enum": [
-                    8,
-                    16,
-                    32,
-                    64
-                  ]
-                },
                 "engine_version": {
                   "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
                   "type": "string",
@@ -464,12 +474,6 @@
                     "volatile-ttl"
                   ]
                 },
-                "shard_count": {
-                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                  "type": "integer",
-                  "minimum": 1,
-                  "maximum": 90
-                },
                 "maintenance_window": {
                   "description": "Indicates the maintenance window for the Redis cache.",
                   "type": "object",
@@ -504,6 +508,16 @@
                     }
                   }
                 },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
+                  "type": "integer",
+                  "enum": [
+                    8,
+                    16,
+                    32,
+                    64
+                  ]
+                },
                 "multi_az": {
                   "description": "Indicates whether the instance is a multi-AZ deployment. Only non-multi-AZ to multi-AZ is allowed.",
                   "type": "boolean"
@@ -519,27 +533,11 @@
                   "type": "string",
                   "pattern": "^[KEg$lshzxeA]*$"
                 },
-                "instance_shares": {
-                  "description": "Indicates the preferred instance sharing configurations by having operation and list of subaccounts mentioned.",
-                  "properties": {
-                    "op": {
-                      "description": "Operation on the mentioned subaccounts. To share add is selected and to unshare delete to selected",
-                      "enum": [
-                        "add",
-                        "delete"
-                      ],
-                      "type": "string"
-                    },
-                    "values": {
-                      "description": "List of subaccounts to share or unshare.",
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
-                      "uniqueItems": true
-                    }
-                  },
-                  "type": "object"
+                "shard_count": {
+                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 90
                 }
               },
               "_load_current_config": true
@@ -621,6 +619,10 @@
           "name": "Japan (Tokyo)"
         },
         {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
           "region": "sa30",
           "name": "cf-sa30"
         },
@@ -651,14 +653,10 @@
               "_show_form_view": true,
               "additionalProperties": true,
               "properties": {
-                "memory": {
-                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                  "type": "integer",
-                  "enum": [
-                    2,
-                    4
-                  ],
-                  "default": 2
+                "cluster_mode": {
+                  "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
+                  "type": "boolean",
+                  "default": true
                 },
                 "engine_version": {
                   "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
@@ -683,18 +681,6 @@
                   ],
                   "default": "noeviction"
                 },
-                "cluster_mode": {
-                  "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
-                  "type": "boolean",
-                  "default": true
-                },
-                "shard_count": {
-                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                  "type": "integer",
-                  "minimum": 1,
-                  "maximum": 90,
-                  "default": 1
-                },
                 "maintenance_window": {
                   "description": "Indicates the maintenance window for the Redis cache.",
                   "type": "object",
@@ -729,6 +715,15 @@
                     }
                   }
                 },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+                  "type": "integer",
+                  "enum": [
+                    2,
+                    4
+                  ],
+                  "default": 2
+                },
                 "multi_az": {
                   "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
                   "type": "boolean",
@@ -746,6 +741,13 @@
                   "type": "string",
                   "pattern": "^[KEg$lshzxeA]*$",
                   "default": ""
+                },
+                "shard_count": {
+                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 90,
+                  "default": 1
                 }
               }
             }
@@ -758,14 +760,6 @@
               "_show_form_view": true,
               "additionalProperties": true,
               "properties": {
-                "memory": {
-                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                  "type": "integer",
-                  "enum": [
-                    2,
-                    4
-                  ]
-                },
                 "engine_version": {
                   "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
                   "type": "string",
@@ -788,12 +782,6 @@
                     "volatile-ttl"
                   ]
                 },
-                "shard_count": {
-                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                  "type": "integer",
-                  "minimum": 1,
-                  "maximum": 90
-                },
                 "maintenance_window": {
                   "description": "Indicates the maintenance window for the Redis cache.",
                   "type": "object",
@@ -828,6 +816,14 @@
                     }
                   }
                 },
+                "memory": {
+                  "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+                  "type": "integer",
+                  "enum": [
+                    2,
+                    4
+                  ]
+                },
                 "multi_az": {
                   "description": "Indicates whether the instance is a multi-AZ deployment. Only non-multi-AZ to multi-AZ is allowed.",
                   "type": "boolean"
@@ -843,27 +839,11 @@
                   "type": "string",
                   "pattern": "^[KEg$lshzxeA]*$"
                 },
-                "instance_shares": {
-                  "description": "Indicates the preferred instance sharing configurations by having operation and list of subaccounts mentioned.",
-                  "properties": {
-                    "op": {
-                      "description": "Operation on the mentioned subaccounts. To share add is selected and to unshare delete to selected",
-                      "enum": [
-                        "add",
-                        "delete"
-                      ],
-                      "type": "string"
-                    },
-                    "values": {
-                      "description": "List of subaccounts to share or unshare.",
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
-                      "uniqueItems": true
-                    }
-                  },
-                  "type": "object"
+                "shard_count": {
+                  "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 90
                 }
               },
               "_load_current_config": true
