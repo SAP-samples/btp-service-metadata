@@ -196,6 +196,11 @@
   ],
   "apis": [
     {
+      "name": "API Portal - API Provider (Neo)",
+      "url": "https://api.sap.com/api/APIPortal/overview",
+      "apiType": "OData V2"
+    },
+    {
       "name": "API Portal - API Proxy (Neo)",
       "url": "https://api.sap.com/api/APIPortal_APIProxy/overview",
       "apiType": "OData V2"
@@ -221,6 +226,11 @@
       "apiType": "OData V2"
     },
     {
+      "name": "API Portal - Applications (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Applications/overview",
+      "apiType": "OData V2"
+    },
+    {
       "name": "API Portal - Applications (CF)",
       "url": "https://api.sap.com/api/APIPortal_Applications_CF/overview",
       "apiType": "OData V2"
@@ -233,6 +243,11 @@
     {
       "name": "API Portal - CertificateStoreReference (Neo)",
       "url": "https://api.sap.com/api/APIPortal_CertificateStoreReference/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - CertificateStoreReference (CF)",
+      "url": "https://api.sap.com/api/APIPortal_CertificateStoreReference_CF/overview",
       "apiType": "OData V2"
     },
     {
@@ -251,6 +266,11 @@
       "apiType": "OData V2"
     },
     {
+      "name": "API Portal - Developer (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Developer_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
       "name": "API Portal - Endpoint (Neo)",
       "url": "https://api.sap.com/api/APIPortal_Endpoint/overview",
       "apiType": "OData V2"
@@ -263,11 +283,6 @@
     {
       "name": "API Portal - Generic Key Value Maps (Neo)",
       "url": "https://api.sap.com/api/APIPortal_GenericKeyValueMap/overview",
-      "apiType": "OData V2"
-    },
-    {
-      "name": "API Portal - Generic Key Value Maps (CF)",
-      "url": "https://api.sap.com/api/APIPortal_GenericKeyValueMap_CF/overview",
       "apiType": "OData V2"
     },
     {
@@ -291,23 +306,8 @@
       "apiType": "OData V2"
     },
     {
-      "name": "API Portal - Rules (Neo)",
-      "url": "https://api.sap.com/api/APIPortal_Rules/overview",
-      "apiType": "OData V2"
-    },
-    {
-      "name": "API Portal - Rules (CF)",
-      "url": "https://api.sap.com/api/APIPortal_Rules_CF/overview",
-      "apiType": "OData V2"
-    },
-    {
       "name": "API Portal - Transport (Neo)",
       "url": "https://api.sap.com/api/APIPortal_Transport/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "API Portal - Transport (CF)",
-      "url": "https://api.sap.com/api/APIPortal_Transport_CF/overview",
       "apiType": "RESTful"
     },
     {
@@ -343,11 +343,6 @@
     {
       "name": "Developer Portal - Application (Neo)",
       "url": "https://api.sap.com/api/DevPortal_Application/overview",
-      "apiType": "OData V2"
-    },
-    {
-      "name": "API Business Hub Enterprise - Application (CF)",
-      "url": "https://api.sap.com/api/DevPortal_Application_CF/overview",
       "apiType": "OData V2"
     },
     {

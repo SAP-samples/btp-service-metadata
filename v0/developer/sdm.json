@@ -318,18 +318,8 @@
   ],
   "apis": [
     {
-      "name": "Add Access Control Entries",
-      "url": "https://api.sap.com/api/AddAclPropertyApi/overview",
-      "apiType": "RESTful"
-    },
-    {
       "name": "Administrative Operations",
       "url": "https://api.sap.com/api/AdminAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Append Content Stream",
-      "url": "https://api.sap.com/api/AppendContentStreamApi/overview",
       "apiType": "RESTful"
     },
     {
@@ -368,8 +358,8 @@
       "apiType": "RESTful"
     },
     {
-      "name": "Create Secondary Type",
-      "url": "https://api.sap.com/api/CreateSecondaryTypeApi/overview",
+      "name": "Create Share",
+      "url": "https://api.sap.com/api/CreateShareApi/overview",
       "apiType": "RESTful"
     },
     {
@@ -383,13 +373,18 @@
       "apiType": "RESTful"
     },
     {
-      "name": "Download a File",
-      "url": "https://api.sap.com/api/DownloadFileApi/overview",
+      "name": "Generate Thumbnail",
+      "url": "https://api.sap.com/api/GenerateThumbnailApi/overview",
       "apiType": "RESTful"
     },
     {
       "name": "Get Access Control List",
       "url": "https://api.sap.com/api/GetAclPropertyApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Allowable Actions",
+      "url": "https://api.sap.com/api/GetAllowableActionsApi/overview",
       "apiType": "RESTful"
     },
     {
@@ -400,6 +395,11 @@
     {
       "name": "Get Deleted Children",
       "url": "https://api.sap.com/api/GetDeletedChildrenApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Descendants",
+      "url": "https://api.sap.com/api/GetDescendantsApi/overview",
       "apiType": "RESTful"
     },
     {
@@ -438,11 +438,6 @@
       "apiType": "RESTful"
     },
     {
-      "name": "ZIP Content Download",
-      "url": "https://api.sap.com/api/GetZipContentStream/overview",
-      "apiType": "RESTful"
-    },
-    {
       "name": "Zip Extract and Upload",
       "url": "https://api.sap.com/api/MassUploadApi/overview",
       "apiType": "RESTful"
@@ -458,23 +453,18 @@
       "apiType": "RESTful"
     },
     {
+      "name": "Remove Access Control Entries",
+      "url": "https://api.sap.com/api/RemoveAclPropertyApi/overview",
+      "apiType": "RESTful"
+    },
+    {
       "name": "Restore Object",
       "url": "https://api.sap.com/api/RestoreObjectApi/overview",
       "apiType": "RESTful"
     },
     {
-      "name": "Fetch Repository",
-      "url": "https://api.sap.com/api/ServiceApi/overview",
-      "apiType": "RESTful"
-    },
-    {
       "name": "Update Properties",
       "url": "https://api.sap.com/api/UpdatePropertiesApi/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "ZIP Content Creation",
-      "url": "https://api.sap.com/api/ZipCreationForDownload/overview",
       "apiType": "RESTful"
     }
   ]
