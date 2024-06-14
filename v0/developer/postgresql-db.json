@@ -479,7 +479,7 @@
                 "storage": {
                   "description": "Amount of storage in GB to be allocated to the instance",
                   "type": "integer",
-                  "default": 5
+                  "default": 20
                 },
                 "db_parameters": {
                   "description": "Database system configurations",
@@ -818,7 +818,7 @@
                 "storage": {
                   "description": "Amount of storage in GB to be allocated to the instance",
                   "type": "integer",
-                  "default": 5
+                  "default": 20
                 },
                 "engine_version": {
                   "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 14",
