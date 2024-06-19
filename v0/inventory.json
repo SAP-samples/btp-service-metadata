@@ -420,13 +420,6 @@
     "category": "APPLICATION"
   },
   {
-    "technicalId": "edge-services",
-    "displayName": "SAP Edge Services",
-    "description": "SAP Edge Services",
-    "fileName": "edge-services.json",
-    "category": "APPLICATION"
-  },
-  {
     "technicalId": "enterprise-messaging",
     "displayName": "SAP Event Mesh",
     "description": "The SAP Event Mesh service decouples communication and allows for event-driven business processes.",
@@ -439,6 +432,13 @@
     "description": "The SAP Event Mesh service decouples communication and allows for event-driven business processes.",
     "fileName": "enterprise-messaging-hub.json",
     "category": "APPLICATION"
+  },
+  {
+    "technicalId": "euporie",
+    "displayName": "euporie",
+    "description": "Tenant lifecycle orchestration service used by Deploy with Confidence.",
+    "fileName": "euporie.json",
+    "category": "SERVICE"
   },
   {
     "technicalId": "event-broker",
