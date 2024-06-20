@@ -2145,6 +2145,48 @@
                       "description": "Describes if IQ backups are enabled or not",
                       "type": "boolean"
                     },
+                    "extensionServices": {
+                      "items": {
+                        "properties": {
+                          "allowlistIPs": {
+                            "items": {
+                              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                              "type": "string"
+                            },
+                            "maxItems": 250,
+                            "type": "array"
+                          },
+                          "credentials": {
+                            "additionalProperties": false,
+                            "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+                            "properties": {
+                              "type": {
+                                "pattern": "^(serviceKey)$",
+                                "type": "string"
+                              },
+                              "value": {
+                                "additionalProperties": true,
+                                "properties": {},
+                                "type": "object"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "enabled": {
+                            "type": "boolean"
+                          },
+                          "name": {
+                            "pattern": "^(ConnectivityProxy)$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "enabled"
+                        ],
+                        "type": "object"
+                      }
+                    },
                     "fileContainer": {
                       "description": "Configuration of the Data Lake's default file container",
                       "properties": {
@@ -2728,6 +2770,48 @@
                       "description": "Describes if IQ backups are enabled or not",
                       "type": "boolean"
                     },
+                    "extensionServices": {
+                      "items": {
+                        "properties": {
+                          "allowlistIPs": {
+                            "items": {
+                              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                              "type": "string"
+                            },
+                            "maxItems": 250,
+                            "type": "array"
+                          },
+                          "credentials": {
+                            "additionalProperties": false,
+                            "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+                            "properties": {
+                              "type": {
+                                "pattern": "^(serviceKey)$",
+                                "type": "string"
+                              },
+                              "value": {
+                                "additionalProperties": true,
+                                "properties": {},
+                                "type": "object"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "enabled": {
+                            "type": "boolean"
+                          },
+                          "name": {
+                            "pattern": "^(ConnectivityProxy)$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "enabled"
+                        ],
+                        "type": "object"
+                      }
+                    },
                     "fileContainer": {
                       "description": "Configuration of the Data Lake's default file container",
                       "properties": {
@@ -3212,6 +3296,10 @@
                           "description": "List of operation arguments",
                           "properties": {
                             "upgrade_type": {
+                              "enum": [
+                                "none",
+                                "CLDDBSPC_MIGRATION_BEGIN"
+                              ],
                               "type": "string"
                             }
                           },
@@ -3391,6 +3479,48 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "extensionServices": {
+                      "items": {
+                        "properties": {
+                          "allowlistIPs": {
+                            "items": {
+                              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                              "type": "string"
+                            },
+                            "maxItems": 250,
+                            "type": "array"
+                          },
+                          "credentials": {
+                            "additionalProperties": false,
+                            "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+                            "properties": {
+                              "type": {
+                                "pattern": "^(serviceKey)$",
+                                "type": "string"
+                              },
+                              "value": {
+                                "additionalProperties": true,
+                                "properties": {},
+                                "type": "object"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "enabled": {
+                            "type": "boolean"
+                          },
+                          "name": {
+                            "pattern": "^(ConnectivityProxy)$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "enabled"
+                        ],
+                        "type": "object"
+                      }
                     },
                     "generateSystemPassword": {
                       "default": false,
@@ -3835,6 +3965,48 @@
                       "description": "Node type for IQ co-ordinators.",
                       "const": "small"
                     },
+                    "extensionServices": {
+                      "items": {
+                        "properties": {
+                          "allowlistIPs": {
+                            "items": {
+                              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                              "type": "string"
+                            },
+                            "maxItems": 250,
+                            "type": "array"
+                          },
+                          "credentials": {
+                            "additionalProperties": false,
+                            "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+                            "properties": {
+                              "type": {
+                                "pattern": "^(serviceKey)$",
+                                "type": "string"
+                              },
+                              "value": {
+                                "additionalProperties": true,
+                                "properties": {},
+                                "type": "object"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "enabled": {
+                            "type": "boolean"
+                          },
+                          "name": {
+                            "pattern": "^(ConnectivityProxy)$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "enabled"
+                        ],
+                        "type": "object"
+                      }
+                    },
                     "generateSystemPassword": {
                       "default": false,
                       "description": "Describes if the systempassword should be generated or not.",
@@ -4209,6 +4381,10 @@
                           "description": "List of operation arguments",
                           "properties": {
                             "upgrade_type": {
+                              "enum": [
+                                "none",
+                                "CLDDBSPC_MIGRATION_BEGIN"
+                              ],
                               "type": "string"
                             }
                           },
