@@ -80,9 +80,9 @@
   "servicePlans": [
     {
       "name": "standard",
-      "displayName": "standard",
+      "displayName": "$i18n{applicationCoordinates.jobscheduler.plan_standard.name}",
       "category": "SERVICE",
-      "description": "Create multiple jobs or Cloud Foundry tasks with minimum schedule frequency of 5 minutes.",
+      "description": "$i18n{applicationCoordinates.jobscheduler.plan_standard.description}",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
