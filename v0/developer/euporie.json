@@ -22,7 +22,354 @@
           "name": "Europe (Netherlands)"
         }
       ],
-      "schemas": null
+      "schemas": {
+        "service_instance": {
+          "create": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": false,
+              "_show_form_view": true,
+              "type": "object",
+              "_controlsOrder": [
+                "registryUrl",
+                "themistoLandscapeLabel",
+                "themistoSpaceId",
+                "credentials",
+                "trust"
+              ],
+              "properties": {
+                "registryUrl": {
+                  "type": "string",
+                  "title": "Registry URL (DwC only)",
+                  "description": "Task registry URL: <a href=https://github.wdf.sap.corp/pages/euporie/euporie/concepts/task/#task-registry>Documentation</a>"
+                },
+                "trust": {
+                  "type": "object",
+                  "title": "Trust type",
+                  "description": "Trust configuration is needed for establishing secure communication with Euporie: <br /> - Unified Provisioning: <a href=https://github.wdf.sap.corp/pages/euporie/euporie/usage/establish-trust-between-euporie-up/>Learn more</a> <br /> - Standalone: <a href=https://github.wdf.sap.corp/pages/euporie/euporie/standalone/standalone-use-case/#establishing-trust-between-your-service-and-euporie/>Learn more</a>",
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "title": "None",
+                      "const": "",
+                      "_enumDisplayName": {
+                        "": "None"
+                      },
+                      "default": ""
+                    },
+                    {
+                      "type": "object",
+                      "title": "Deploy with Confidence",
+                      "additionalProperties": false,
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "dwc-mtls",
+                          "default": "dwc-mtls"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "title": "Mutual-TLS (mTLS)",
+                      "description": "See more in our <a href=https://github.wdf.sap.corp/pages/euporie/euporie/standalone/standalone-use-case/#establishing-trust-between-your-service-and-euporie>docs</a>",
+                      "additionalProperties": false,
+                      "_controlsOrder": [
+                        "type",
+                        "trustedOUs",
+                        "trustedCNs"
+                      ],
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "mtls",
+                          "default": "mtls"
+                        },
+                        "trustedOUs": {
+                          "title": "Trusted Organizational Units (OU)",
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string"
+                          },
+                          "description": "Subaccount IDs where your services are being deployed"
+                        },
+                        "trustedCNs": {
+                          "title": "Trusted Common Names (CN)",
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string"
+                          },
+                          "description": "Common names of your service certificates"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "title": "Unified Provisioning",
+                      "description": "See more in our <a href=https://github.wdf.sap.corp/pages/euporie/euporie/usage/establish-trust-between-euporie-up>docs</a>",
+                      "additionalProperties": false,
+                      "_controlsOrder": [
+                        "type",
+                        "issuerName",
+                        "clientId"
+                      ],
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "ias",
+                          "default": "ias"
+                        },
+                        "issuerName": {
+                          "title": "Issuer Name",
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 100,
+                          "description": "Issuer name: E.g. https://<ias-tenant>.accounts.ondemand.com"
+                        },
+                        "clientId": {
+                          "type": "string",
+                          "title": "Client ID",
+                          "minLength": 1,
+                          "maxLength": 100,
+                          "description": "Client UUID"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "credentials": {
+                  "type": "object",
+                  "title": "Credentials Type",
+                  "description": "<a href=https://github.wdf.sap.corp/pages/euporie/euporie/concepts/product/>Documentation</a>",
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "title": "None (Unified Provisioning / Standalone)",
+                      "const": "",
+                      "_enumDisplayName": {
+                        "": "None"
+                      },
+                      "default": ""
+                    },
+                    {
+                      "type": "object",
+                      "title": "Deploy with Confidence",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "dwc",
+                          "default": "dwc"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "title": "Local (Test Purposes - Contact Euporie Team)",
+                      "additionalProperties": true,
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "local",
+                          "default": "local"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "themistoLandscapeLabel": {
+                  "type": "string",
+                  "title": "Themisto Landscape Label (DwC only)",
+                  "description": "<a href=https://pages.github.tools.sap/deploy-with-confidence/solar-system/onboarding/set-up-new-dwc-instance/euporie_onboarding/>Documentation</a>"
+                },
+                "themistoSpaceId": {
+                  "type": "string",
+                  "title": "Themisto Space ID (DwC only)",
+                  "description": "<a href=https://pages.github.tools.sap/deploy-with-confidence/solar-system/onboarding/set-up-new-dwc-instance/euporie_onboarding/>Documentation</a>"
+                }
+              }
+            }
+          },
+          "update": {
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema",
+              "additionalProperties": false,
+              "_show_form_view": true,
+              "type": "object",
+              "_controlsOrder": [
+                "registryUrl",
+                "themistoLandscapeLabel",
+                "themistoSpaceId",
+                "credentials",
+                "trust"
+              ],
+              "properties": {
+                "registryUrl": {
+                  "type": "string",
+                  "title": "Registry URL (DwC only)",
+                  "description": "Task registry URL: <a href=https://github.wdf.sap.corp/pages/euporie/euporie/concepts/task/#task-registry>Documentation</a>"
+                },
+                "trust": {
+                  "type": "object",
+                  "title": "Trust type",
+                  "description": "Trust configuration is needed for establishing secure communication with Euporie: <br /> - Unified Provisioning: <a href=https://github.wdf.sap.corp/pages/euporie/euporie/usage/establish-trust-between-euporie-up/>Learn more</a> <br /> - Standalone: <a href=https://github.wdf.sap.corp/pages/euporie/euporie/standalone/standalone-use-case/#establishing-trust-between-your-service-and-euporie/>Learn more</a>",
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "title": "None",
+                      "const": "",
+                      "_enumDisplayName": {
+                        "": "None"
+                      },
+                      "default": ""
+                    },
+                    {
+                      "type": "object",
+                      "title": "Deploy with Confidence",
+                      "additionalProperties": false,
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "dwc-mtls",
+                          "default": "dwc-mtls"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "title": "Mutual-TLS (mTLS)",
+                      "description": "See more in our <a href=https://github.wdf.sap.corp/pages/euporie/euporie/standalone/standalone-use-case/#establishing-trust-between-your-service-and-euporie>docs</a>",
+                      "additionalProperties": false,
+                      "_controlsOrder": [
+                        "type",
+                        "trustedOUs",
+                        "trustedCNs"
+                      ],
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "mtls",
+                          "default": "mtls"
+                        },
+                        "trustedOUs": {
+                          "title": "Trusted Organizational Units (OU)",
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string"
+                          },
+                          "description": "Subaccount IDs where your services are being deployed"
+                        },
+                        "trustedCNs": {
+                          "title": "Trusted Common Names (CN)",
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string"
+                          },
+                          "description": "Common names of your service certificates"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "title": "Unified Provisioning",
+                      "description": "See more in our <a href=https://github.wdf.sap.corp/pages/euporie/euporie/usage/establish-trust-between-euporie-up>docs</a>",
+                      "additionalProperties": false,
+                      "_controlsOrder": [
+                        "type",
+                        "issuerName",
+                        "clientId"
+                      ],
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "ias",
+                          "default": "ias"
+                        },
+                        "issuerName": {
+                          "title": "Issuer Name",
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 100,
+                          "description": "Issuer name: E.g. https://<ias-tenant>.accounts.ondemand.com"
+                        },
+                        "clientId": {
+                          "type": "string",
+                          "title": "Client ID",
+                          "minLength": 1,
+                          "maxLength": 100,
+                          "description": "Client UUID"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "credentials": {
+                  "type": "object",
+                  "title": "Credentials Type",
+                  "description": "<a href=https://github.wdf.sap.corp/pages/euporie/euporie/concepts/product/>Documentation</a>",
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "title": "None (Unified Provisioning / Standalone)",
+                      "const": "",
+                      "_enumDisplayName": {
+                        "": "None"
+                      },
+                      "default": ""
+                    },
+                    {
+                      "type": "object",
+                      "title": "Deploy with Confidence",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "dwc",
+                          "default": "dwc"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "title": "Local (Test Purposes - Contact Euporie Team)",
+                      "additionalProperties": true,
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type (Non-editable)",
+                          "const": "local",
+                          "default": "local"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "themistoLandscapeLabel": {
+                  "type": "string",
+                  "title": "Themisto Landscape Label (DwC only)",
+                  "description": "<a href=https://pages.github.tools.sap/deploy-with-confidence/solar-system/onboarding/set-up-new-dwc-instance/euporie_onboarding/>Documentation</a>"
+                },
+                "themistoSpaceId": {
+                  "type": "string",
+                  "title": "Themisto Space ID (DwC only)",
+                  "description": "<a href=https://pages.github.tools.sap/deploy-with-confidence/solar-system/onboarding/set-up-new-dwc-instance/euporie_onboarding/>Documentation</a>"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   ],
   "supportComponents": [],
