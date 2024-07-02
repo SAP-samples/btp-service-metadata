@@ -1,0 +1,137 @@
+{
+  "name": "event-mesh-message-client",
+  "displayName": "SAP Integration Suite, Event Mesh",
+  "description": "Event Mesh in SAP Integration Suite allows business applications to communicate through asynchronous events.",
+  "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM1MDdfMzY1MzYpIj4KPHBhdGggZD0iTTYuNTkyMjIgMC4wOTQ3MjY2QzQuNDcwODYgMC4wOTQ3MjY2IDIuOTYzNjMgMS44MjM3MyAyLjcxMjUyIDMuNjI4ODNDMi4wMzAxMyAzLjY2OTUgMS40Mjc1OCAzLjkyNjI3IDAuOTU5NjAyIDQuMzU3NTdDMC4zMjY1MDMgNC45NDEwNSAtMC4wMDA0ODgyODEgNS43ODc5NiAtMC4wMDA0ODgyODEgNi42ODEwOEMtMC4wMDA0ODgyODEgNy41MTEwOSAwLjI1MDk2OSA4LjI5NTYzIDAuODE1NTAzIDguODc1NjhDMS4zODM4NSA5LjQ1OTY0IDIuMTkwNzMgOS43NTU0NSAzLjE0MDc5IDkuNzU1NDVINC45NDgyOVY4LjY2ODdDNC45NDgyOSA3LjYxODU5IDUuNzk0NTcgNi43NTI1NyA2Ljg1NjYxIDYuNzUyNTdDNy42ODU3MyA2Ljc1MjU3IDguNDEzOCA3LjI4ODY1IDguNjY5NjQgOC4wNzA3NEw4LjcwOTk3IDguMTk0MDNMOC43NDcyIDguMDc3N0M4Ljk5ODUxIDcuMjkyNTQgOS43MjY4MiA2Ljc1MjU3IDEwLjU1NzYgNi43NTI1N0MxMS41NzY3IDYuNzUyNTcgMTIuMzk2NSA3LjU1MjkxIDEyLjQ1NTcgOC41NDY2MUMxMi45OTUzIDcuOTMwOTcgMTMuMzMyNiA3LjEwMTg3IDEzLjMzMjYgNi4xMDcxNUMxMy4zMzI2IDQuMTMxMTEgMTEuOTIyMSAyLjYxMjU2IDEwLjIyNDEgMi40NTE5NUM5LjU0MzM4IDEuMDQyNjIgOC4yNzk4NyAwLjA5NDcyNjYgNi41OTIyMiAwLjA5NDcyNjZaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMzUwN18zNjUzNikiLz4KPHBhdGggZD0iTTEzLjQ4ODMgMTMuODY2M0MxMy4yNTM5IDE0LjEwNDcgMTMuMDIyMyAxNC40NzQzIDEzLjI1NjcgMTQuNzEyN0MxMy40OTExIDE0Ljk1MTEgMTMuNzU3MSAxNC45Njc4IDEzLjk5MTUgMTQuNzI5NEwxNS43OTEyIDEyLjg5ODlDMTYuMDI1NiAxMi42NjA1IDE2LjAyNTYgMTIuMjc0MyAxNS43OTEyIDEyLjAzNTlMMTMuOTkxNSAxMC4yMDU0QzEzLjc1NzEgOS45NjY5OCAxMy40ODE3IDkuODY3NzIgMTMuMjQ3MyAxMC4xMDYxQzEyLjk1NDEgMTAuMzM1IDEzLjM2MjIgMTAuODMgMTMuNTk2NiAxMS4wNjg1TDE0LjI2ODUgMTEuODcwNkwxMC41Njg3IDExLjg3NDNMMTAuNTY4NSAxMi4zNDkxQzEwLjU2ODMgMTIuNjc2NSAxMC44MzE2IDEyLjk0MTggMTEuMTU2MiAxMi45NDE1TDE0LjMzNDcgMTIuOTM4MUwxMy40ODgzIDEzLjg2NjNaIiBmaWxsPSJ1cmwoI3BhaW50MV9saW5lYXJfMzUwN18zNjUzNikiLz4KPHBhdGggZD0iTTYuMDE2MTEgOC43MTkzMUM2LjAxNjExIDguMjExNjIgNi40MjQxNyA3LjgwMDA1IDYuOTI3NTIgNy44MDAwNUM3LjMyMDg0IDcuODAwMDUgNy42Njk4IDguMDU0NTQgNy43OTMwNCA4LjQzMTI4TDguNTQwNTQgMTAuNzE2M0M4LjU4MjEzIDEwLjg0MjEgOC42MzEwNSAxMS4wMTg1IDguNjg3MzEgMTEuMjQ1NUM4Ljc0MzU3IDExLjQ3MjUgOC43ODAyNyAxMS42MjMgOC43OTczOSAxMS42OTdDOC44MTY5NiAxMS42MjMgOC44NTYxIDExLjQ3NSA4LjkxNDggMTEuMjUyOUM4Ljk3NTk2IDExLjAyODQgOS4wMjczMyAxMC44NTU3IDkuMDY4OTEgMTAuNzM0OEw5LjgwNTkzIDguNDMyMTJDOS45MjY1MSA4LjA1NTM3IDEwLjI3NDIgNy44MDAwNSAxMC42NjY4IDcuODAwMDVDMTEuMTY2MyA3LjgwMDA1IDExLjU3MTMgOC4yMDg1MyAxMS41NzEzIDguNzEyNDFWMTEuODczM0wxMC41Njg3IDExLjg3NDNMMTAuNTY5NiA5Ljg1NDAyQzEwLjU2OTYgOS41ODc1NiAxMC41NzU3IDkuMzM1OSAxMC41ODggOS4wOTkwNEMxMC42MDI2IDguODYyMTkgMTAuNTk2NiA4Ljc2ODAxIDEwLjYxIDguNzI1MjZDMTAuNjA3NSA4LjcyNzczIDEwLjU4MzEgOC44MTQwOCAxMC41MzY2IDguOTg0MzJDMTAuNTEyMSA5LjA2NTc0IDEwLjQ2MDggOS4yNDA5MSAxMC4zODI1IDkuNTA5ODRDMTAuMzA2NyA5Ljc3ODc3IDEwLjI0NjcgOS45NzczOCAxMC4yMDI3IDEwLjEwNTdMOS4zNzQyMiAxMi41OTM1QzkuMjkwNDYgMTIuODQ1MSA5LjA1Njc5IDEzLjAxNDUgOC43OTM3MiAxMy4wMTQ1QzguNTMwNjUgMTMuMDE0NSA4LjI5Njk4IDEyLjg0NTEgOC4yMTMyMiAxMi41OTM1TDcuMzg0NzQgMTAuMTA1N0M3LjMzMzM3IDkuOTU1MTcgNy4yNTk5OCA5LjcxOTU1IDcuMTY0NTggOS4zOTg4MUM3LjA3MTYzIDkuMDc1NjEgNy4wMDY4IDguODUxMDkgNi45NzAxMSA4LjcyNTI2TDYuOTc3NDUgOC44MzI1OEM2Ljk3OTkgOC44NzIwNiA2Ljk4NzI0IDkuMDExNDYgNi45OTk0NyA5LjI1MDc4QzcuMDExNyA5LjQ4NzYzIDcuMDE3ODEgOS42ODg3MSA3LjAxNzgxIDkuODU0MDJWMTIuNTA5NEM3LjAxNzgxIDEyLjc4ODQgNi43OTM1NyAxMy4wMTQ1IDYuNTE2OTYgMTMuMDE0NUM2LjI0MDM1IDEzLjAxNDUgNi4wMTYxMSAxMi43ODg0IDYuMDE2MTEgMTIuNTA5NFY4LjcxOTMxWiIgZmlsbD0idXJsKCNwYWludDJfbGluZWFyXzM1MDdfMzY1MzYpIi8+CjwvZz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8zNTA3XzM2NTM2IiB4MT0iMS45OTgxOSIgeTE9IjEuNTM5NDMiIHgyPSI4LjQyNTM5IiB5Mj0iMTAuNDEyOSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDE5NUZGIi8+CjxzdG9wIG9mZnNldD0iMC45OTEwMjgiIHN0b3AtY29sb3I9IiMxMTQ3RTkiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzM1MDdfMzY1MzYiIHgxPSI3LjQ4NzI4IiB5MT0iOC44NDQ2MiIgeDI9IjEyLjE3OTQiIHkyPSIxNS40NDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDJfbGluZWFyXzM1MDdfMzY1MzYiIHgxPSI3LjQ4NzI4IiB5MT0iOC44NDQ2MiIgeDI9IjEyLjE3OTQiIHkyPSIxNS40NDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zNTA3XzM2NTM2Ij4KPHJlY3Qgd2lkdGg9IjE1Ljk5OTYiIGhlaWdodD0iMTYiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDA0ODgyODEpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+  "links": [
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/integration-suite?region=all&tab=service_plan",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://help.sap.com/docs/integration-suite/sap-integration-suite/capabilities",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/integration-suite/sap-integration-suite/support",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/soon",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/tobecreated",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "message-client",
+      "displayName": "message-client",
+      "category": "SERVICE",
+      "description": "Creates a message client that lets you access events from Event Mesh in a secure way",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "Australia (Sydney)"
+        },
+        {
+          "region": "ap11",
+          "name": "Singapore"
+        },
+        {
+          "region": "ap12",
+          "name": "South Korea (Seoul)"
+        },
+        {
+          "region": "ap20",
+          "name": "Australia (Sydney) Azure"
+        },
+        {
+          "region": "ap21",
+          "name": "Singapore"
+        },
+        {
+          "region": "br10",
+          "name": "Brazil (Sao Paulo)"
+        },
+        {
+          "region": "ca10",
+          "name": "Canada (Montreal)"
+        },
+        {
+          "region": "ch20",
+          "name": "Switzerland (Zurich) Azure EU Access"
+        },
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "eu11",
+          "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "eu20",
+          "name": "Europe (Netherlands)"
+        },
+        {
+          "region": "eu30",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "India (Mumbai)"
+        },
+        {
+          "region": "jp10",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp20",
+          "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us20",
+          "name": "US West (WA)"
+        },
+        {
+          "region": "us21",
+          "name": "US East (VA)"
+        },
+        {
+          "region": "us30",
+          "name": "US Central (IA)"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

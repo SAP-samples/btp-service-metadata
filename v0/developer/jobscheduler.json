@@ -69,20 +69,14 @@
       "classification": "Documentation",
       "type": "Link",
       "text": "What's New"
-    },
-    {
-      "value": "https://www.sapstore.com/solutions/40166/SAP-Cloud-Platform-Job-Scheduler",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
     }
   ],
   "servicePlans": [
     {
       "name": "standard",
-      "displayName": "$i18n{applicationCoordinates.jobscheduler.plan_standard.name}",
+      "displayName": "standard",
       "category": "SERVICE",
-      "description": "$i18n{applicationCoordinates.jobscheduler.plan_standard.description}",
+      "description": "Create multiple jobs or Cloud Foundry tasks with minimum schedule frequency of 5 minutes.",
       "isFree": false,
       "isBeta": false,
       "dataCenters": [
@@ -179,6 +173,9 @@
     }
   ],
   "supportComponents": [
+    {
+      "value": "BC-CP-CF-JBS"
+    },
     {
       "value": "BC-XS-SRV-JBS"
     }
