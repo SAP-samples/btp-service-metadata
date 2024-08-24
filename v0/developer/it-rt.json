@@ -1,15 +1,9 @@
 {
   "name": "it-rt",
-  "displayName": "Process Integration Runtime",
+  "displayName": "SAP Process Integration Runtime",
   "description": "Provides access to the integration flow endpoints and public APIs of the Cloud Integration capability of Integration Suite. You need this service instance only if you want to execute the integration flows or access Cloud Integration resources via APIs.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v5uV3ilFJzWpwPxBO1OZ06s5uBTY-JDK3yfeiRldCbDMHGSbed-5xF7DUN79BPei.svg",
   "links": [
-    {
-      "value": "https://cloudintegration.hana.ondemand.com/PI/help",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
-    },
     {
       "value": "https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/19af5e205fe14af6a4f8a9fd80d4dc92.html",
       "classification": "Documentation",
@@ -101,6 +95,10 @@
         {
           "region": "jp20",
           "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
         },
         {
           "region": "us10",
@@ -484,6 +482,10 @@
         {
           "region": "jp20",
           "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
         },
         {
           "region": "us10",

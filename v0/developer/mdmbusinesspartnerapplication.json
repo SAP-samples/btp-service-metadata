@@ -1,15 +1,22 @@
 {
   "name": "MDMBusinessPartnerApplication",
-  "displayName": "SAP Business Partner Application",
-  "description": "SAP Business Partner Application",
-  "icon": null,
-  "links": [],
+  "displayName": "Master Data Service for Business Partners",
+  "description": "Master data service allows management of business partners in SAP Business Technology Platform. It provides UI and Odata service to manage business partners.",
+  "icon": "data:image/svg+xml;base64,PHN2ZyBpZD0ibWFzdGVyLWRhdGEtZm9yLWJ1c2luZXNzLXBhcnRuZXIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDU2IDU2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzBhNmVkMTt9LmNscy0ye2ZpbGw6IzA1M2I3MDt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjgsMjMuNUE0LjUsNC41LDAsMSwwLDMyLjUsMjgsNC41LDQuNSwwLDAsMCwyOCwyMy41Wm0wLDZBMS41LDEuNSwwLDEsMSwyOS41LDI4LDEuNSwxLjUsMCwwLDEsMjgsMjkuNVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik04LjUsMjMuNUE0LjUsNC41LDAsMSwwLDEzLDI4LDQuNSw0LjUsMCwwLDAsOC41LDIzLjVabTAsNkExLjUsMS41LDAsMSwxLDEwLDI4LDEuNSwxLjUsMCwwLDEsOC41LDI5LjVaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjgsNGE0LjUsNC41LDAsMSwwLDQuNSw0LjVBNC41LDQuNSwwLDAsMCwyOCw0Wm0wLDZhMS41LDEuNSwwLDEsMSwxLjUtMS41QTEuNSwxLjUsMCwwLDEsMjgsMTBaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNDcuNSwyMy41QTQuNSw0LjUsMCwxLDAsNTIsMjgsNC41LDQuNSwwLDAsMCw0Ny41LDIzLjVabTAsNkExLjUsMS41LDAsMSwxLDQ5LDI4LDEuNSwxLjUsMCwwLDEsNDcuNSwyOS41WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTI4LDQzYTQuNSw0LjUsMCwxLDAsNC41LDQuNUE0LjUsNC41LDAsMCwwLDI4LDQzWm0wLDZhMS41LDEuNSwwLDEsMSwxLjUtMS41QTEuNSwxLjUsMCwwLDEsMjgsNDlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjIuMDY0LDcuODY1QTIxLDIxLDAsMCwwLDcuOTEsMjIuMDYsNS43NSw1Ljc1LDAsMCwxLDguNSwyMmE1Ljk3Miw1Ljk3MiwwLDAsMSwyLjM3OS41QTE4LjA3MiwxOC4wNzIsMCwwLDEsMjIuNDksMTAuODcsNS45NzcsNS45NzcsMCwwLDEsMjIsOC41LDYuMDE0LDYuMDE0LDAsMCwxLDIyLjA2NCw3Ljg2NVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMC44NzksMzMuNTA1QTUuOTcyLDUuOTcyLDAsMCwxLDguNSwzNGE1Ljc1LDUuNzUsMCwwLDEtLjU5LS4wNiwyMSwyMSwwLDAsMCwxNC4xNTQsMTQuMiw1LjA2NCw1LjA2NCwwLDAsMSwuNDI2LTNBMTguMDcyLDE4LjA3MiwwLDAsMSwxMC44NzksMzMuNTA1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ1LjEyMSwzMy41MDVBMTguMDcyLDE4LjA3MiwwLDAsMSwzMy41MSw0NS4xM2E1LjA2NCw1LjA2NCwwLDAsMSwuNDI2LDNBMjEsMjEsMCwwLDAsNDguMDksMzMuOTRhNS43NSw1Ljc1LDAsMCwxLS41OS4wNkE1Ljk3Miw1Ljk3MiwwLDAsMSw0NS4xMjEsMzMuNTA1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ1LjEzLDIyLjQ5YTUuMDY0LDUuMDY0LDAsMCwxLDMtLjQyNkEyMSwyMSwwLDAsMCwzMy45NCw3LjkwOSw1LjgsNS44LDAsMCwxLDM0LDguNWE1Ljk3Miw1Ljk3MiwwLDAsMS0uNDk1LDIuMzc5QTE4LjA3MiwxOC4wNzIsMCwwLDEsNDUuMTMsMjIuNDlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjYuNSwzMy43ODh2Ny45MjRhNS40MTMsNS40MTMsMCwwLDEsMywwVjMzLjc4OGE1LjQxMyw1LjQxMywwLDAsMS0zLDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzMuNzg4LDI2LjVhNS40MTMsNS40MTMsMCwwLDEsMCwzaDcuOTI0YTUuNDEzLDUuNDEzLDAsMCwxLDAtM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNi41LDE0LjI4OHY3LjkyNGE1LjQxMyw1LjQxMywwLDAsMSwzLDBWMTQuMjg4YTUuNDEzLDUuNDEzLDAsMCwxLTMsMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yMi4yMTIsMjkuNWE1LjQxMyw1LjQxMywwLDAsMSwwLTNIMTQuMjg4YTUuNDEzLDUuNDEzLDAsMCwxLDAsM1oiLz48L3N2Zz4=",
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_Cloud_Platform_Master_Data_for_Business_Partners/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
   "servicePlans": [
     {
       "name": "saas-application",
-      "displayName": "SAP Cloud Platform Master Data Management for business partners",
+      "displayName": "saas-application",
       "category": "APPLICATION",
-      "description": "SAP Business Technology Platform Master Data Management for business partners",
+      "description": "Application plan",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [

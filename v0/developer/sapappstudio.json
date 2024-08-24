@@ -140,6 +140,25 @@
       "schemas": null
     },
     {
+      "name": "build-code-free",
+      "displayName": "Build Code Free",
+      "category": "APPLICATION",
+      "description": "Use the build-code-free plan for evaluation AI-based development. This option is available only if your subaccount is subscribed to SAP Build Code.",
+      "isFree": true,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        },
+        {
+          "region": "us10",
+          "name": "US East (VA)"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "APPLICATION",
@@ -206,6 +225,10 @@
         {
           "region": "jp20",
           "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
         },
         {
           "region": "sa30",
@@ -297,6 +320,10 @@
         {
           "region": "jp20",
           "name": "Japan (Tokyo)"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
         },
         {
           "region": "sa30",

@@ -41,6 +41,18 @@
       "text": "Documentation"
     },
     {
+      "value": "https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/parameter-reference",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/using-service-keys",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/hana-cloud/sap-hana-cloud-getting-started-guide/sap-hana-cloud-getting-started-guide",
       "classification": "Documentation",
       "type": "Link",
@@ -3298,7 +3310,8 @@
                             "upgrade_type": {
                               "enum": [
                                 "none",
-                                "CLDDBSPC_MIGRATION_BEGIN"
+                                "CLDDBSPC_MIGRATION_BEGIN",
+                                "PREPARE_FOR_MULTI_AZ"
                               ],
                               "type": "string"
                             }
@@ -4383,7 +4396,8 @@
                             "upgrade_type": {
                               "enum": [
                                 "none",
-                                "CLDDBSPC_MIGRATION_BEGIN"
+                                "CLDDBSPC_MIGRATION_BEGIN",
+                                "PREPARE_FOR_MULTI_AZ"
                               ],
                               "type": "string"
                             }

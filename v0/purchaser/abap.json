@@ -8,7 +8,7 @@
       "name": "16_abap_64_db",
       "displayName": "16 GB Runtime and 64 GB Persistence",
       "category": "SERVICE",
-      "description": "This service plan is deprecated. Please change the service plan to standard plan.",
+      "description": "Provides a 16 GB ABAP runtime with 64 GB database. No additional sizing possible. This service plan was deprecated. It has been replaced by service plans Standard, ABAP Compute Unit and HANA Compute Unit.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -36,9 +36,9 @@
     },
     {
       "name": "abap_compute_unit",
-      "displayName": "abap_compute_unit",
+      "displayName": "ABAP Compute Unit",
       "category": "SERVICE",
-      "description": "Configurable ABAP Runtime in blocks of 16 GB",
+      "description": "Allows you to configure runtime memory, which refers to volatile memory used during the execution of applications. This memory provides fast read and write access but loses all data when the system is restarted or shut down. The metric measures the amount of runtime memory used in 16 GB blocks on an hourly basis. It is mandatory to assign a combination of three entitlement service plans: ABAP Compute Unit, HANA Compute Unit, and either the Free, Standard, or SaaS OEM plan.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -210,9 +210,9 @@
     },
     {
       "name": "hana_compute_unit",
-      "displayName": "hana_compute_unit",
+      "displayName": "HANA Compute Unit",
       "category": "SERVICE",
-      "description": "Configurable HANA Memory in blocks of 16 GB (or 15 GB on AWS) ",
+      "description": "Allows you to configure persistent memory, which refers to storage that retains data even after the system is restarted or shut down. The metric measures the amount of persistent storage used in 16 GB blocks on an hourly basis. It is mandatory to assign a combination of three entitlement service plans: ABAP Compute Unit, HANA Compute Unit, and either the Free, Standard, or SaaS OEM plan.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -299,7 +299,7 @@
       "name": "standard",
       "displayName": "Standard",
       "category": "SERVICE",
-      "description": "For development, test, and productive ABAP systems. The minimum system size is 2 blocks of persistent memory and 1 block of runtime memory.",
+      "description": "Allows you to create projects for development, test, and productive ABAP systems. The minimum system size is 2 HANA Compute Units and 1 ABAP Compute Unit. It is mandatory to assign a combination of three entitlement service plans: ABAP Compute Unit, HANA Compute Unit, and either the Free, Standard, or SaaS OEM plan.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [

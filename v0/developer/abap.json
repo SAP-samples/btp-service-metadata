@@ -59,6 +59,12 @@
       "text": "What is ABAP Environment"
     },
     {
+      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/commercial-information",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/getting-started-in-abap-environment",
       "classification": "Documentation",
       "type": "Link",
@@ -154,7 +160,7 @@
       "name": "16_abap_64_db",
       "displayName": "16 GB Runtime and 64 GB Persistence",
       "category": "SERVICE",
-      "description": "This service plan is deprecated. Please change the service plan to standard plan.",
+      "description": "Provides a 16 GB ABAP runtime with 64 GB database. No additional sizing possible. This service plan was deprecated. It has been replaced by service plans Standard, ABAP Compute Unit and HANA Compute Unit.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -220,8 +226,8 @@
                   "default": true
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                  "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
                   "type": "integer",
                   "default": 1,
                   "const": 1
@@ -294,8 +300,8 @@
                   "const": 4
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                  "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
                   "type": "integer",
                   "default": 1,
                   "const": 1
@@ -314,9 +320,9 @@
     },
     {
       "name": "abap_compute_unit",
-      "displayName": "abap_compute_unit",
+      "displayName": "ABAP Compute Unit",
       "category": "SERVICE",
-      "description": "Configurable ABAP Runtime in blocks of 16 GB",
+      "description": "Allows you to configure runtime memory, which refers to volatile memory used during the execution of applications. This memory provides fast read and write access but loses all data when the system is restarted or shut down. The metric measures the amount of runtime memory used in 16 GB blocks on an hourly basis. It is mandatory to assign a combination of three entitlement service plans: ABAP Compute Unit, HANA Compute Unit, and either the Free, Standard, or SaaS OEM plan.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -568,9 +574,9 @@
     },
     {
       "name": "hana_compute_unit",
-      "displayName": "hana_compute_unit",
+      "displayName": "HANA Compute Unit",
       "category": "SERVICE",
-      "description": "Configurable HANA Memory in blocks of 16 GB (or 15 GB on AWS) ",
+      "description": "Allows you to configure persistent memory, which refers to storage that retains data even after the system is restarted or shut down. The metric measures the amount of persistent storage used in 16 GB blocks on an hourly basis. It is mandatory to assign a combination of three entitlement service plans: ABAP Compute Unit, HANA Compute Unit, and either the Free, Standard, or SaaS OEM plan.",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -657,7 +663,7 @@
       "name": "standard",
       "displayName": "Standard",
       "category": "SERVICE",
-      "description": "For development, test, and productive ABAP systems. The minimum system size is 2 blocks of persistent memory and 1 block of runtime memory.",
+      "description": "Allows you to create projects for development, test, and productive ABAP systems. The minimum system size is 2 HANA Compute Units and 1 ABAP Compute Unit. It is mandatory to assign a combination of three entitlement service plans: ABAP Compute Unit, HANA Compute Unit, and either the Free, Standard, or SaaS OEM plan.",
       "isFree": true,
       "isBeta": false,
       "dataCenters": [
@@ -753,6 +759,7 @@
                 "sapsystemname",
                 "size_of_runtime",
                 "elastic",
+                "size_of_application_server",
                 "size_of_persistence",
                 "size_of_persistence_disk"
               ],
@@ -788,8 +795,8 @@
                   "default": true
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                  "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
                   "type": "integer",
                   "default": 1,
                   "enum": [
@@ -822,6 +829,17 @@
                   "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
                   "type": "boolean",
                   "default": false
+                },
+                "size_of_application_server": {
+                  "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+                  "type": "string",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "0.5",
+                    "2"
+                  ]
                 },
                 "admin_user_name": {
                   "title": "Admin User Name",
@@ -867,6 +885,7 @@
                 "description",
                 "size_of_runtime",
                 "elastic",
+                "size_of_application_server",
                 "size_of_persistence",
                 "size_of_persistence_disk"
               ],
@@ -893,8 +912,8 @@
                   ]
                 },
                 "size_of_runtime": {
-                  "title": "ABAP Runtime Size (size_of_runtime) in ACU",
-                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                  "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
+                  "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
                   "type": "integer",
                   "default": 1,
                   "enum": [
@@ -913,6 +932,17 @@
                   "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
                   "type": "boolean",
                   "default": false
+                },
+                "size_of_application_server": {
+                  "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
+                  "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+                  "type": "string",
+                  "default": "auto",
+                  "enum": [
+                    "auto",
+                    "0.5",
+                    "2"
+                  ]
                 },
                 "size_of_persistence_disk": {
                   "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",

@@ -134,8 +134,8 @@
   },
   {
     "technicalId": "auditlog-api",
-    "displayName": "DEPRECATED Audit Log Retrieval",
-    "description": "DEPRECATED Retrieve the audit logs.",
+    "displayName": "[DEPRECATED] Audit Log Retrieval",
+    "description": "[DEPRECATED] Retrieve the audit logs.",
     "fileName": "auditlog-api.json",
     "category": "SERVICE"
   },
@@ -351,7 +351,7 @@
   },
   {
     "technicalId": "dataenrichment-business-partner",
-    "displayName": "Data Enrichment",
+    "displayName": "Data Enrichment Service",
     "description": "Industrializes the use of third-party data for enterprise applications, and makes it economical to find, procure and consume relevant datasets in timely fashion. Offers pre-built integrations with SAP S/4HANA Cloud and on-premise, and SAP Master Data Governance. Centrally links data from external data providers such as Dun & Bradstreet and CDQ into SAP enterprise applications, reducing overall TCO for data brokerage needs. Data Enrichment will be a one stop shop for multiple data augmentation needs.",
     "fileName": "dataenrichment-business-partner.json",
     "category": "SERVICE"
@@ -372,8 +372,8 @@
   },
   {
     "technicalId": "di-api",
-    "displayName": "Dataspace Integration API Access",
-    "description": "Provides access to the public APIs of Dataspace Integration a capability of Integration Suite.",
+    "displayName": "Data Space Integration API Access",
+    "description": "Provides access to the public APIs of Data Space Integration a capability of Integration Suite.",
     "fileName": "di-api.json",
     "category": "SERVICE"
   },
@@ -450,7 +450,7 @@
   {
     "technicalId": "event-mesh-message-client",
     "displayName": "SAP Integration Suite, Event Mesh",
-    "description": "Event Mesh in SAP Integration Suite allows business applications to communicate through asynchronous events.",
+    "description": "Provides access to message client of Event Mesh capability of Integration Suite. You need this service instance to create a message client that will let you publish and consume events.",
     "fileName": "event-mesh-message-client.json",
     "category": "SERVICE"
   },
@@ -463,8 +463,8 @@
   },
   {
     "technicalId": "extension-center",
-    "displayName": "Extension Center",
-    "description": "Allows you to create, manage, configure extensions on SAP Cloud Platform",
+    "displayName": "Serverless Runtime",
+    "description": "Allows you to create, manage, configure extensions on SAP Cloud Platform.",
     "fileName": "extension-center.json",
     "category": "APPLICATION"
   },
@@ -581,13 +581,6 @@
     "category": "SERVICE"
   },
   {
-    "technicalId": "invoice-object-recommendation",
-    "displayName": "Invoice Object Recommendation",
-    "description": "The Invoice Object Recommendation services provides the functionality to train a machine learning model with customer specific data that can give recommendations on G/L Accounts for incoming invoices without a purchase order reference attached. The service therefore provides a training call as described and an inference call that gives back recommendations based on a trained model to semi-automate the invoice processing in the area of accounts payable.",
-    "fileName": "invoice-object-recommendation.json",
-    "category": "SERVICE"
-  },
-  {
     "technicalId": "iot",
     "displayName": "Internet of Things",
     "description": "The SAP Cloud Platform Internet of Things service for the Cloud Foundry environment connects devices to SAP Cloud Platform to provide scalable ingestion of IoT data and device management. The respective services provide a secure connection to remote devices using a broad variety of IoT protocols and manage the device lifecycle from onboarding to decommissioning. ",
@@ -618,20 +611,20 @@
   {
     "technicalId": "irpa-service",
     "displayName": "SAP Intelligent Robotic Process Automation",
-    "description": "SAP Intelligent Robotic Process Automation (SAP Intelligent RPA) lets you automate enterprise business processes. Design process automations with the Desktop Studio by creating end-to-end scenarios. Import these scenarios into the cloud Factory powered by SAP Cloud Platform to configure and execute them with Agents. Agents running on workstations can work as a Digital Assistant (attended automation) or as a Digital Worker (unattended automation).\t",
+    "description": "SAP Intelligent Robotic Process Automation lets you automate enterprise business processes. Design process automations with the Desktop Studio by creating end-to-end scenarios. Import these scenarios into the cloud Factory to configure and execute them with Agents. An Agent can work as a Digital Assistant (attended automation) or as a Digital Worker (unattended automation).",
     "fileName": "irpa-service.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "it-prod",
-    "displayName": "Process Integration",
+    "displayName": "SAP Process Integration",
     "description": "The SAP Cloud Integration connects cloud applications with other SAP and non-SAP cloud and on-premise apps.",
     "fileName": "it-prod.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "it-rt",
-    "displayName": "Process Integration Runtime",
+    "displayName": "SAP Process Integration Runtime",
     "description": "Provides access to the integration flow endpoints and public APIs of the Cloud Integration capability of Integration Suite. You need this service instance only if you want to execute the integration flows or access Cloud Integration resources via APIs.",
     "fileName": "it-rt.json",
     "category": "SERVICE"
@@ -652,7 +645,7 @@
   },
   {
     "technicalId": "LandscapePortal",
-    "displayName": "Landscape Portal",
+    "displayName": "Landscape Portal for SAP S/4HANA Cloud",
     "description": "The Landscape Portal acts as a central tool that allows SaaS providers to keep track of the distribution of their consumers across their systems as well as perform lifecycle management operations such as updating add-ons, creating new tenants, and more.",
     "fileName": "landscapeportal.json",
     "category": "APPLICATION"
@@ -674,7 +667,7 @@
   {
     "technicalId": "market-rates-thr",
     "displayName": "Market Rates, Refinitiv",
-    "description": "The Refinitiv data option for SAP Market Rates Management provides market rates on a daily basis or for a specified date range that you can use in SAP S/4HANA systems. It includes the Download Market Data service, which is a reuse service that allows you to import market data.",
+    "description": "The Market Rates Management, Refinitiv data option is a reuse service that allows you to import daily and historical Exchange Rates & Interest Rates from Refinitiv.",
     "fileName": "market-rates-thr.json",
     "category": "SERVICE"
   },
@@ -694,8 +687,8 @@
   },
   {
     "technicalId": "MDMBusinessPartnerApplication",
-    "displayName": "SAP Business Partner Application",
-    "description": "SAP Business Partner Application",
+    "displayName": "Master Data Service for Business Partners",
+    "description": "Master data service allows management of business partners in SAP Cloud Platform. It provides UI and Odata service to manage business partners.",
     "fileName": "mdmbusinesspartnerapplication.json",
     "category": "APPLICATION"
   },
@@ -715,8 +708,8 @@
   },
   {
     "technicalId": "MDOrchestrationApplication",
-    "displayName": "Master Data Orchestration",
-    "description": "Master data application for existing customers of SAP Master Data service for business partners and SAP Master Data service for products. New customers should use the Master Data Integration (Orchestration) tile. SAP Master Data Orchestration should only be used in combination with the SAP Master Data Integration service.",
+    "displayName": "Business Data Orchestration",
+    "description": "Business Data Orchestration application for existing customers of SAP Master Data service for business partners and SAP Master Data service for products. New customers should use the Master Data Integration (Orchestration) tile. Business Data Orchestration application should only be used in combination with the SAP Master Data Integration service.",
     "fileName": "mdorchestrationapplication.json",
     "category": "APPLICATION"
   },
@@ -863,7 +856,7 @@
   {
     "technicalId": "one-mds",
     "displayName": "SAP Master Data Integration",
-    "description": "SAP Business Technology Platform Master Data Integration service offers master data synchronization across SAP solutions and is a central access layer for data sharing and distribution. The service can only be used for SAP to SAP Integration, and must not be directly accessed for 3rd party master data integration scenarios with SAP. SAP Business Technology Platform Master Data Orchestration is part of the master data integration service, and can only be used in conjunction with SAP Master Data Integration service.",
+    "description": "SAP Master Data Integration service that runs on SAP Business Technology Platform offers master data synchronization across SAP solutions and is a central access layer for data sharing and distribution. The service can only be used for SAP to SAP Integration, and must not be directly accessed for 3rd party master data integration scenarios with SAP. SAP Business Technology Platform Master Data Orchestration is part of the master data integration service, and can only be used in conjunction with SAP Master Data Integration service.",
     "fileName": "one-mds.json",
     "category": "SERVICE"
   },
@@ -1171,7 +1164,7 @@
   {
     "technicalId": "spatialservices-app",
     "displayName": "SAP HANA spatial services",
-    "description": "HANA Spatial Services",
+    "description": "SAP HANA spatial services provides a unified access layer for location-based services, including maps for visualization, geocoding and routing capabilities. It integrates location-based content and services from external providers into SAP products and customer applications.",
     "fileName": "spatialservices-app.json",
     "category": "APPLICATION"
   },
@@ -1185,7 +1178,7 @@
   {
     "technicalId": "tnt-onboard-dataenrichment-dcp",
     "displayName": "SAP Data Enrichment service",
-    "description": "Provides Business Partner data from third-party data providers",
+    "description": "Industrializes the use of third-party data for enterprise applications, and makes it economical to find, procure and consume relevant datasets in timely fashion. Offers pre-built integrations with SAP S/4HANA Cloud and on-premise, and SAP Master Data Governance. Centrally links data from external data providers such as Dun & Bradstreet and CDQ into SAP enterprise applications, reducing overall TCO for data brokerage needs. Data Enrichment will be a one stop shop for multiple data augmentation needs.",
     "fileName": "tnt-onboard-dataenrichment-dcp.json",
     "category": "APPLICATION"
   },
@@ -1247,7 +1240,7 @@
   },
   {
     "technicalId": "wums-partner-api-beta",
-    "displayName": "Workspace Utilization",
+    "displayName": "Workspace Utilization - BETA",
     "description": "The Workspace Utilization service lets you assign sensors to workplaces and spaces. These sensors measure how your workspaces are used. The Workspace Utilization service integrates with SAP Cloud for Real Estate and SAP Analytics Cloud to analyze, manage, and optimize your workspaces.",
     "fileName": "wums-partner-api-beta.json",
     "category": "SERVICE"
@@ -1255,7 +1248,7 @@
   {
     "technicalId": "xfs-runtime",
     "displayName": "SAP BTP, serverless runtime",
-    "description": "Allows you to create, manage, configure extensions on SAP Cloud Platform",
+    "description": "Allows you to create, manage, configure extensions on SAP Cloud Platform.",
     "fileName": "xfs-runtime.json",
     "category": "SERVICE"
   },
