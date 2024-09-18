@@ -1,0 +1,24 @@
+{
+  "name": "application-frontend",
+  "displayName": "Application Frontend Service",
+  "description": "Host, serve, and manage frontend applications to extend SAP\u2019s business solutions.",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Test the features of Application Frontend. This service plan is not for productive use.",
+      "isFree": null,
+      "isBeta": true,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "Europe (Frankfurt)"
+        }
+      ],
+      "materialNumberMappings": []
+    }
+  ],
+  "certifications": []
+}
