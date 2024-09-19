@@ -2272,6 +2272,15 @@
                                   "type": "string"
                                 },
                                 "type": "array"
+                              },
+                              "trustBindings": {
+                                "description": "Trusts bindings to be established with other services",
+                                "items": {
+                                  "description": "Trust group",
+                                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                  "type": "string"
+                                },
+                                "type": "array"
                               }
                             },
                             "required": [
@@ -2339,6 +2348,14 @@
                         "trusts": {
                           "items": {
                             "properties": {
+                              "aggregateTo": {
+                                "items": {
+                                  "description": "List of aliases to aggregate to",
+                                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
                               "alias": {
                                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                 "type": "string"
@@ -2897,6 +2914,15 @@
                                   "type": "string"
                                 },
                                 "type": "array"
+                              },
+                              "trustBindings": {
+                                "description": "Trusts bindings to be established with other services",
+                                "items": {
+                                  "description": "Trust group",
+                                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                  "type": "string"
+                                },
+                                "type": "array"
                               }
                             },
                             "required": [
@@ -2964,6 +2990,14 @@
                         "trusts": {
                           "items": {
                             "properties": {
+                              "aggregateTo": {
+                                "items": {
+                                  "description": "List of aliases to aggregate to",
+                                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
                               "alias": {
                                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                 "type": "string"
