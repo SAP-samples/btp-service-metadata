@@ -163,6 +163,17 @@
               "_show_form_view": true,
               "additionalProperties": false,
               "properties": {
+                "authentication": {
+                  "description": "Specifies the Authentication type with which the VPC Connection will be created.\n\nSupported types are: \"SASL_SCRAM\" and \"TLS\"Example: \"SASL_SCRAM\"",
+                  "title": "Authentication",
+                  "type": "string"
+                },
+                "clusterARN": {
+                  "description": "Specifies the cluster ARN for which the VPC Connection will be created.\n\nExample: \"arn:aws:kafka:us-east-1:123456789012:cluster/testing/de8982fa-8222-4e87-8b20-9bf3cdfa1521-2\"",
+                  "pattern": "arn:aws:kafka:.+",
+                  "title": "Cluster ARN",
+                  "type": "string"
+                },
                 "desiredAZs": {
                   "default": 3,
                   "description": "Specifies the desired number of Availability Zones of the endpoint.\n\nExample: 2\n\nBy default, SAP Private Link service only creates the endpoint if the endpoint service is deployed in the same AZs as SAP BTP, to maximize High Availability.\nIn case fewer AZs than SAP BTPs should be allowed (i.e. only one or two AZs), please explicitly allow it by specifying the desired number of AZs via this parameter.",
