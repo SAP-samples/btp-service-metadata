@@ -1,14 +1,14 @@
 {
   "name": "one-mds-master",
   "displayName": "SAP Master Data Integration Tenant",
-  "description": "Replicate master data between applications via a central master data hub.",
+  "description": "SAP Master Data Integration Tenant",
   "icon": null,
   "servicePlans": [
     {
       "name": "standard",
       "displayName": "Standard",
       "category": "APPLICATION",
-      "description": "Standard plan for Master Data Integration",
+      "description": "free",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
@@ -27,6 +27,10 @@
         {
           "region": "eu11",
           "name": "Europe (Frankfurt) EU Access - AWS"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
         },
         {
           "region": "us10",
