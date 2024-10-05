@@ -219,33 +219,7 @@
           "name": "US Central (IA)"
         }
       ],
-      "schemas": {
-        "service_instance": {
-          "create": {
-            "parameters": {
-              "$schema": "http://json-schema.org/draft-07/schema",
-              "type": "object",
-              "properties": {
-                "authorities": {
-                  "description": "Configures scopes that are available in the client credentials flow.",
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "defaultCollectionQueryFilter": {
-                  "description": "Configures the default behavior of queries that return a collection of Workflow entities.",
-                  "type": "string",
-                  "enum": [
-                    "own",
-                    "shared"
-                  ]
-                }
-              }
-            }
-          }
-        }
-      }
+      "schemas": null
     }
   ],
   "supportComponents": [
