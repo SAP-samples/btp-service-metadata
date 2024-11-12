@@ -203,6 +203,14 @@
                   "maxLength": 256,
                   "pattern": "^[^<>()\\[\\]\\\\,;:\\s@\"`]+@([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}$"
                 },
+                "admin_employee_id": {
+                  "title": "Admin Employee ID",
+                  "description": "Optionally enter the Employee ID of the initial administrator. The Employee ID must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 60 characters.",
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 60,
+                  "pattern": "^(?!_)[\\.A-Z0-9_-]{0,60}$"
+                },
                 "description": {
                   "title": "ABAP System Description",
                   "description": "Enter a description for the ABAP system",
@@ -508,6 +516,14 @@
                   "maxLength": 256,
                   "pattern": "^[^<>()\\[\\]\\\\,;:\\s@\"`]+@([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}$"
                 },
+                "admin_employee_id": {
+                  "title": "Admin Employee ID",
+                  "description": "Optionally enter the Employee ID of the initial administrator. The Employee ID must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 60 characters.",
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 60,
+                  "pattern": "^(?!_)[\\.A-Z0-9_-]{0,60}$"
+                },
                 "description": {
                   "title": "ABAP System Description",
                   "description": "Enter a description for the ABAP system",
@@ -771,6 +787,14 @@
                   "minLength": 6,
                   "maxLength": 256,
                   "pattern": "^[^<>()\\[\\]\\\\,;:\\s@\"`]+@([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}$"
+                },
+                "admin_employee_id": {
+                  "title": "Admin Employee ID",
+                  "description": "Optionally enter the Employee ID of the initial administrator. The Employee ID must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 60 characters.",
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 60,
+                  "pattern": "^(?!_)[\\.A-Z0-9_-]{0,60}$"
                 },
                 "description": {
                   "title": "ABAP System Description",
