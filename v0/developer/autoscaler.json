@@ -206,6 +206,31 @@
               ],
               "description": "schema for autoscaler policy for standard plan",
               "properties": {
+                "configuration": {
+                  "properties": {
+                    "custom_metrics": {
+                      "properties": {
+                        "metric_submission_strategy": {
+                          "properties": {
+                            "allow_from": {
+                              "const": "bound_app",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "allow_from"
+                          ],
+                          "type": "object"
+                        }
+                      },
+                      "required": [
+                        "metric_submission_strategy"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
                 "instance_max_count": {
                   "description": "Maximum how many instances of application can be provisioned as part of application scaling",
                   "minimum": 1,
