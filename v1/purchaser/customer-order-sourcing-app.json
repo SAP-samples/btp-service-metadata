@@ -1,0 +1,37 @@
+{
+  "name": "customer-order-sourcing-app",
+  "displayName": "SAP Customer Order Sourcing",
+  "description": "SAP Customer Order Sourcing",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic2FwLWN1c3RvbWVyLW9yZGVyLXNvdXJjaW5nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NiA1NiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwNTNiNzA7fS5jbHMtMntmaWxsOiMwYTZlZDE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5zYXAtY3VzdG9tZXItb3JkZXItc291cmNpbmc8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQwLDMwLjk1OEExMC41MjEsMTAuNTIxLDAsMSwwLDUwLjUsNDEuNDc5LDEwLjUxMiwxMC41MTIsMCwwLDAsNDAsMzAuOTU4Wk00MCw0OWE3LjUyMSw3LjUyMSwwLDEsMSw3LjUtNy41MjFBNy41MjEsNy41MjEsMCwwLDEsNDAsNDlaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjQ0LjAxNiAzNi40MDQgMzguMDcgNDIuNDcyIDM1Ljk3OSA0MC41OTYgMzMuOTk3IDQyLjY5MiAzOC4wNyA0Ni41NTMgNDUuOTk3IDM4LjUgNDQuMDE2IDM2LjQwNCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0Ljk3OCw3LjU3Niw0MS4yLDE1LjQyN1YyOC45MTFhMTIuNjU1LDEyLjY1NSwwLDAsMSwzLjMuNzM5VjEzLjZMMjUsNCwxOC44MjgsNi45NjYsMjIuNDgyLDguOFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNy40NjQsNDMuNzE2LDI1LDQ0LjkxMSw4LjgsMzcuMDZWMTUuNDI3bDYuNDktMy4wNTNMMzEuNDcsMjAuMjI1djkuMTU5bDMuMy0xLjU3VjE4LjMwNkwxNS4yMjgsOC44LDUuNSwxMy42djI1LjNMMjUsNDguNDg3bDMuNC0xLjY3M0ExMi41NzcsMTIuNTc3LDAsMCwxLDI3LjQ2NCw0My43MTZaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEyLjAzMiAzNS4wNTQgMjEuNjkyIDM5LjY3NyAyMS42OTIgMzUuNzUxIDEyLjAzMiAzMS4wNDEgMTIuMDMyIDM1LjA1NCIvPjwvc3ZnPg==",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "SAP Customer Order Sourcing-Application",
+      "category": "APPLICATION",
+      "description": "SAP Customer Order Sourcing",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8007698",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008230",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

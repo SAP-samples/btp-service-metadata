@@ -1,0 +1,61 @@
+{
+  "name": "dataenrichment-business-partner",
+  "displayName": "Data Enrichment Service",
+  "description": "Data Enrichment Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/tfcHi0wkHapbs-6UoMiDcH0YCU88XgGaObq1gFxo_55bPIm9ytDEpT7eRr-wV8fm.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Plan for usage of business partner data from external data providers.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8006034",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006034",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

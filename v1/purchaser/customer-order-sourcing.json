@@ -1,0 +1,37 @@
+{
+  "name": "customer-order-sourcing",
+  "displayName": "SAP Customer Order Sourcing",
+  "description": "SAP Customer Order Sourcing",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/wwFNUfQRhSC7IqKOXeUyIIF1_sXWjYF2OAFMFxBilh_zeoZX_bYHVD2H3PV37jBq.svg",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Default plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8007698",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008230",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

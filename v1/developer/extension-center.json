@@ -1,0 +1,136 @@
+{
+  "name": "extension-center",
+  "displayName": "Serverless Runtime",
+  "description": "Allows you to create, manage, configure extensions on SAP Business Technology Platform.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7YQE_MtaPbytsAoSGtVpszwnUCM1bxvhL6xU3-Mp5TRxXhfpxa7rz8aTVkERO0-o.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/?s=serverless+runtime",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blogs"
+    },
+    {
+      "value": "https://help.sap.com/doc/5e8107bf49684962b897217040398007/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/61834baadfcc45a2b4bf6675b518e6f9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/6f6b050980384b18bb0a0bae5a9b2daa.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "Extension Center"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/7b8cc2b0e8d141d6aa37c7dff4d70b82.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is SAP BTP, Serverless Runtime"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/80f67e476a8447378a72b3fcfbce8f3e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/8400ccd0efc94c3096a9468c1e5f63ce.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "SAP Business Technology Platform Serverless Runtime CLI"
+    },
+    {
+      "value": "https://help.sap.com/docs/XF_SERVERLESS_RUNTIME",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Product Page"
+    },
+    {
+      "value": "https://www.youtube.com/embed/hUx3Miq29XQ",
+      "classification": "External",
+      "type": "Link",
+      "text": "Overview"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "Standard application plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-CP-XF-SRT"
+    }
+  ],
+  "apis": []
+}

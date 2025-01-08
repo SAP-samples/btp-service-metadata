@@ -1,0 +1,61 @@
+{
+  "name": "epd-visualization",
+  "displayName": "Visualization",
+  "description": "Import, manage and connect 3D data to business data.",
+  "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0OCA0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDggNDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojNUI3Qjk1O3N0cm9rZS13aWR0aDoyLjkxNzQ7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojMEY5MUQxO3N0cm9rZS13aWR0aDoyLjkxNzQ7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjUsMS45bDE4LjgsMTEuNEwyNy42LDIzLjRsMCwyMi41bDExLjItNi4yYzAsMCw1LjEtMi43LDUuMS04Ljl2LTEwIi8+Cgk8cG9seWxpbmUgY2xhc3M9InN0MSIgcG9pbnRzPSI1LjYsMzYuNSAyMiw0NS45IDIyLDIzLjQgNS4zLDEzLjMgMjUsMS45IAkiLz4KCTxsaW5lIGNsYXNzPSJzdDEiIHgxPSIxMS4yIiB5MT0iMjgiIHgyPSIyMiIgeTI9IjMzLjkiLz4KPC9nPgo8L3N2Zz4K",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008476",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008647",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008647",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017574",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017674",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

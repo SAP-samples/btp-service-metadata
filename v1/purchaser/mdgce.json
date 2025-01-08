@@ -1,0 +1,244 @@
+{
+  "name": "mdgce",
+  "displayName": "SAP Master Data Governance, cloud edition",
+  "description": "SAP Master Data Governance, cloud edition",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/sqxJ1QM3ihtDKBMmFrhCPZpiXvpc6LB1v1Ijhb4NPePZy2aF3LrWJWX21l8zjvDR.svg",
+  "servicePlans": [
+    {
+      "name": "demo",
+      "displayName": "Demo",
+      "category": "APPLICATION",
+      "description": "Process core business partner master data (such as name and address) using multi-level, workflow-based change processes, and evaluate their quality. This plan is for test and demo purposes. No productive use is permitted.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8014741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015104",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "free",
+      "displayName": "Free",
+      "category": "APPLICATION",
+      "description": "Process core business partner master data (such as name and address) using multi-level, workflow-based change processes, and evaluate their quality. This plan is for test and free purposes. No productive use is permitted. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile. Up to 5000 business partner master data records in active data and up to 10000 businesspartners in open processes. ",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8015104",
+          "commercialModel": null
+        }
+      ]
+    },
+    {
+      "name": "internal",
+      "displayName": "Internal",
+      "category": "APPLICATION",
+      "description": "Process core business partner master data (such as name and address) using multi-level, workflow-based change processes, and evaluate their quality.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Process core business partner master data (such as name and address) using multi-level, workflow-based change processes, and evaluate their quality. ",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011182",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011182",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015104",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "displayName": "Test",
+      "category": "APPLICATION",
+      "description": "Process core business partner master data (such as name and address) using multi-level, workflow-based change processes, and evaluate their quality. This plan is for test purposes. No productive use is permitted.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011182",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011182",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015104",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

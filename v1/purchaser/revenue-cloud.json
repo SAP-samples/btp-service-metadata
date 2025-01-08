@@ -1,0 +1,61 @@
+{
+  "name": "revenue-cloud",
+  "displayName": "SAP Subscription Billing",
+  "description": "SAP Subscription Billing",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic3Vic2NyaXB0aW9uLWJpbGxpbmdfU0FQXyIgZGF0YS1uYW1lPSJzdWJzY3JpcHRpb24tYmlsbGluZyAoU0FQKSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zMS43MjcsMzAuOTkxaC03LjVhLjczOS43MzksMCwwLDAtLjUxLjI0LjY0Ny42NDcsMCwwLDAtLjI0LjUxMS44MzQuODM0LDAsMCwwLC43NS43NTFoNy41YS43Ny43NywwLDAsMCwuNzUtLjc1MUEuNjU1LjY1NSwwLDAsMCwzMS43MjcsMzAuOTkxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMxLjcyNywzMy45OTRoLTcuNWEuNzM5LjczOSwwLDAsMC0uNTEuMjQuNjQ3LjY0NywwLDAsMC0uMjQuNTExLjc0OC43NDgsMCwwLDAsLjI0LjUxMS43MzkuNzM5LDAsMCwwLC41MS4yNGg3LjVhLjc2OC43NjgsMCwwLDAsLjc1LS43NTFBLjY1NS42NTUsMCwwLDAsMzEuNzI3LDMzLjk5NFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNi41NTcsMTYuNDU2YTEuMzEzLDEuMzEzLDAsMCwwLTEuMDgtLjQ4aC0xMC41bC02LDYuMDA2VjM4LjVhMS40NzIsMS40NzIsMCwwLDAsLjQyLDEuMDgxLDEuNzI0LDEuNzI0LDAsMCwwLDEuMTQuNDJoMTVhMS4zNzksMS4zNzksMCwwLDAsMS4wMi0uNDIsMS4zNjMsMS4zNjMsMCwwLDAsLjQyLTEuMDgxVjE3LjQ3OEExLjI3OSwxLjI3OSwwLDAsMCwzNi41NTcsMTYuNDU2Wk0yMS4yMjYsMzcuNzc4VjI0LjIzNGgzLjc1YTIuMjI3LDIuMjI3LDAsMCwwLDEuNTYxLS42MywyLjE3OSwyLjE3OSwwLDAsMCwuNjg5LTEuNjIyVjE4LjJoNy41MzFsLjAzLDE5LjU4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ3LjI1LDE5Ljc5M0EyMS4wMTIsMjEuMDEyLDAsMCwwLDI5LjkyOSw3LjQ2NywyMC4yMTEsMjAuMjExLDAsMCwwLDExLjEsMTYuNjg2LDIwLjQ5MiwyMC40OTIsMCwwLDAsMTAuNTE2LDM3LjUsMjAuODkzLDIwLjg5MywwLDAsMCwyOC43MDUsNDcuNSwyLjI1MywyLjI1MywwLDAsMSwyOC43NTksNTJoLS4wNTRjLTguNzItLjAyMi0xNy40NTktNC42ODctMjEuNzc0LTEyLjQ1YTI0LjQxNiwyNC40MTYsMCwwLDEsMS4wMTgtMjQuOSwyMy41MDYsMjMuNTA2LDAsMCwxLDkuNy04LjQxOEEyNC4xMywyNC4xMywwLDAsMSw1MCwxOC41OWExLjUsMS41LDAsMCwxLTIuNzQ5LDEuMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01MC40MDUsNDUuOTk0aC00LjM0YTIzLjg3NCwyMy44NzQsMCwwLDAsNC4zMTItNy41MDgsMjguNTMxLDI4LjUzMSwwLDAsMCwxLjYwNi0xMC41MSwxLjUsMS41LDAsMCwwLTMsMCwyMy4wNTIsMjMuMDUyLDAsMCwxLTUuOSwxNC44NzhWMzguNDg2YTEuNSwxLjUsMCwxLDAtMywwVjQ3LjVhMS41LDEuNSwwLDAsMCwxLjUsMS41aDguODE4YTEuNSwxLjUsMCwwLDAsMC0zWiIvPjwvc3ZnPg==",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "APPLICATION",
+      "description": "Use the SAP Subscription Billing application user interface to manage your subscription business processes.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005307",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006140",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006140",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006249",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006249",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007773",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011426",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

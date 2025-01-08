@@ -1,0 +1,53 @@
+{
+  "name": "data-lifecycle-service-saas-registry-application",
+  "displayName": "Data Archiving",
+  "description": "Data Archiving",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "APPLICATION",
+      "description": "Default Plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8011558",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011558",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014267",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015801",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

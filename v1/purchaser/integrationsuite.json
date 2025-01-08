@@ -1,0 +1,2019 @@
+{
+  "name": "integrationsuite",
+  "displayName": "SAP Integration Suite",
+  "description": "Integration Suite",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MgknvYR59-0m5NlxicakHcJCI90SRhWxdkt0V5U0YQoNwAQieC9pH-S_9r03UGoN.svg",
+  "servicePlans": [
+    {
+      "name": "api_and_events_edition",
+      "displayName": "API and Events Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite that includes up to 10,000 monthly transactions. You get the capabilities OData Provisioning and Event Mesh, and features like Developer Hub.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "basic_edition",
+      "displayName": "Basic Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite with only Cloud Integration capability that includes up to 10,000 monthly transactions without JMS and B2B related features.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "spc-integrationsuite-basic_edition",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "dev_edition",
+      "displayName": "Development Edition",
+      "category": "APPLICATION",
+      "description": "Integration Suite Development Edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "edge_integration_cell",
+      "displayName": "edge_integration_cell",
+      "category": "SERVICE",
+      "description": "Use Edge Integration Cell to operate your integration content in a private landscape.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "enterprise_agreement",
+      "displayName": "Enterprise Agreement",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite that includes up to 10,000 monthly transactions. You get all capabilities of Integration Suite and a separate entitlement for Edge Integration Cell.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "spc-integrationsuite-enterprise_agreement",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "free",
+      "displayName": "Free",
+      "category": "APPLICATION",
+      "description": "Use Integration Suite free of cost for a limited duration that includes up to 10,000 monthly transactions. You get all capabilities of Integration Suite and a separate entitlement for Edge Integration Cell.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "integration_flows",
+      "displayName": "integration_flows",
+      "category": "SERVICE",
+      "description": "Assign integration flow count to one or more subaccount and deploy as many custom integration flows from the SAP Integration Suite tenants hosted on those subaccounts.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018921",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "messages",
+      "displayName": "Messages",
+      "category": "SERVICE",
+      "description": "Integration Suite Messages",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018921",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "spc-integrationsuite-messages",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "premium_edition",
+      "displayName": "Premium Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite that includes up to 10 million monthly transactions shared across all premium entitlements. You get all capabilities of Integration Suite and a separate entitlement for Edge Integration Cell.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "spc-integrationsuite-premium_edition",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "standard_edition",
+      "displayName": "Standard Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite that includes up to 10,000 monthly transactions. You get all capabilities of Integration Suite and a separate entitlement for Edge Integration Cell.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "spc-integrationsuite-standard_edition",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "starter_edition",
+      "displayName": "Starter Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite with only Cloud Integration capability that includes up to 10,000 monthly transactions. You have full access to all standard content and can create a certain number of integration flows using a basic set of adapters.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018921",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "successfactors_edition",
+      "displayName": "SFSF Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite with only Cloud Integration capability that includes up to 100,000 monthly transactions across all SuccessFactors entitlements without JMS and B2B related features.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "spc-integrationsuite-successfactors_edition",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "test_demo_edition",
+      "displayName": "Test and Demo Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite that includes up to 25,000 monthly transactions. You get all capabilities of Integration Suite.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "spc-integrationsuite-test_demo_edition",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

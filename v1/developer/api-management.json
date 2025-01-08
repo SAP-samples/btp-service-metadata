@@ -1,0 +1,489 @@
+{
+  "name": "api-management",
+  "displayName": "API Management",
+  "description": "API Management",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/xKfQgn8Rg0LXmmUKJRvfMPYUXH5bHDr6Kj6rckUPZWbz1D0QC36V4OCu8IAHtfH7.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/tags/73554900100700000774/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blogs"
+    },
+    {
+      "value": "https://developers.sap.com/group.cp-apim-code-1.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Get Started with API Management"
+    },
+    {
+      "value": "https://api.sap.com/package/APIContentRecipes/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | API Content - Recipes | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/APIMgmt/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP API Management | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/DebuggingandTraceability/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP API Management Debugging and Traceability | SAP API Business Hub"
+    },
+    {
+      "value": "https://blogs.sap.com/2017/08/18/sap-api-management-faq/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "SAP API Management FAQ"
+    },
+    {
+      "value": "https://help.hana.ondemand.com/apim_od/frameset.htm",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community"
+    },
+    {
+      "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/70d719fe34e74dd68afd01a4274341ea.html",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Learning Journey"
+    },
+    {
+      "value": "https://help.sap.com/doc/55b4cf1c4ea04d4bbd6178c3d0ea75de/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/0734f8fa6b3a477181b54a8d319accdf.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/2ceab71343704de0bfce2145f97c85b1.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/5a4b9fd9c26c49109a70cb9a221c7149.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/74c042b9710e4970ae51ec58b749fb4f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Build APIs"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/75a4a11ed5294ec89b69fb40dba36308.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Publish APIs"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/7712c611015045afb47d7c244fffee63.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Analyze APIs"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/7d8514b4ab46455e8416723003b414d7.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Management as a Service on SAP Cloud Foundry"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/adcbc07b031b4ac285b22867a1216306.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP API Management"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/dd6d58c1586a4a0a8ffca46a1a019d38.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Consume APIs"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/f9ebf02b2ca5456db8ce6ea2556afb88.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/66d066d903c2473f81ec33acfe2ccdb4/fcdc89b5c4884d5e8cfb32c5914943ab.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Monetize APIs"
+    },
+    {
+      "value": "https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US?",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CLOUD_PLATFORM_API_MANAGEMENT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.sap.com/developer/tutorials/hcp-apim-enable-service.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Enable the SAP Business Technology Platform, API Management Service"
+    },
+    {
+      "value": "https://www.sap.com/documents/2017/11/962aa5f1-df7c-0010-82c7-eda71af511fa.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Explore SAP APIs Infographic"
+    },
+    {
+      "value": "https://www.sap.com/india/products/api-management.html#support",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "analytics",
+      "displayName": "Expose your data and processes as APIs for omnichannel consumption and manage the lifecycle of those APIs",
+      "category": "SERVICE",
+      "description": "Expose your data and processes as APIs for omnichannel consumption and manage the lifecycle of those APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "lite",
+      "displayName": "Expose your data and processes as APIs for omni-channel consumption and manage the lifecycle of those APIs",
+      "category": "SERVICE",
+      "description": "Expose your data and processes as APIs for omni-channel consumption and manage the lifecycle of those APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "preview",
+      "displayName": "Expose your data and processes as APIs for omni-channel consumption and manage the lifecycle of those APIs",
+      "category": "SERVICE",
+      "description": "Expose your data and processes as APIs for omni-channel consumption and manage the lifecycle of those APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "starter",
+      "displayName": "Expose your data and processes as APIs for omni-channel consumption and manage the lifecycle of those APIs",
+      "category": "SERVICE",
+      "description": "Expose your data and processes as APIs for omni-channel consumption and manage the lifecycle of those APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "OPU-API"
+    },
+    {
+      "value": "OPU-API-OD-AN"
+    },
+    {
+      "value": "OPU-API-OD-DT"
+    },
+    {
+      "value": "OPU-API-OD-RT"
+    }
+  ],
+  "apis": [
+    {
+      "name": "API Portal - API Provider (Neo)",
+      "url": "https://api.sap.com/api/APIPortal/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - API Proxy (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_APIProxy/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - API Proxy (CF)",
+      "url": "https://api.sap.com/api/APIPortal_APIProxy_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Access Control Service (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_AccessControlService/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Access Control Service (CF)",
+      "url": "https://api.sap.com/api/APIPortal_AccessControlService_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Analytics (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Analytics_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Applications (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Applications/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Applications (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Applications_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - API Provider (CF)",
+      "url": "https://api.sap.com/api/APIPortal_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - CertificateStoreReference (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_CertificateStoreReference/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - CertificateStoreReference (CF)",
+      "url": "https://api.sap.com/api/APIPortal_CertificateStoreReference_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Configure CacheResources (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_ConfigureCacheResource/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Content Archive Transport (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Content_Archive_Transport/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "API Portal - Content Archive Transport (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Content_Archive_Transport_CF/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "API Portal - Developer (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Developer/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Developer (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Developer_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Endpoint (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Endpoint/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Endpoint (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Endpoint_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Generic Key Value Maps (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_GenericKeyValueMap/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Generic Key Value Maps (CF)",
+      "url": "https://api.sap.com/api/APIPortal_GenericKeyValueMap_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Key Value Maps (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_KeyValueMap/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Key Value Maps (CF)",
+      "url": "https://api.sap.com/api/APIPortal_KeyValueMap_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Product (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Product/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Product (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Product_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Rules (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Rules/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Rules (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Rules_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Portal - Transport (Neo)",
+      "url": "https://api.sap.com/api/APIPortal_Transport/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "API Portal - Transport (CF)",
+      "url": "https://api.sap.com/api/APIPortal_Transport_CF/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "API Portal - Virtual Host Request (CF)",
+      "url": "https://api.sap.com/api/APIPortal_VirtualHostRequest_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "API Business Hub Enterprise - Analytics (CF)",
+      "url": "https://api.sap.com/api/API_Business_Hub_Enterprise_Analytics_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Billing (Neo)",
+      "url": "https://api.sap.com/api/Billing_APIs/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Billing (CF)",
+      "url": "https://api.sap.com/api/Billing_APIs_CF/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Developer Hub - Product (Neo)",
+      "url": "https://api.sap.com/api/DevPortalAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Developer Hub - Product (CF)",
+      "url": "https://api.sap.com/api/DevPortalAPI_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Developer Hub - Application (Neo)",
+      "url": "https://api.sap.com/api/DevPortal_Application/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Developer Hub - Application (CF)",
+      "url": "https://api.sap.com/api/DevPortal_Application_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Developer Hub - Discovery Service (Neo)",
+      "url": "https://api.sap.com/api/DevPortal_DiscoveryService/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Developer Hub - Discovery Service (CF)",
+      "url": "https://api.sap.com/api/DevPortal_DiscoveryService_CF/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Developer Hub - Registering Users (Neo)",
+      "url": "https://api.sap.com/api/DevPortal_RegisteringUsers/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Developer Hub - Registering Users(CF)",
+      "url": "https://api.sap.com/api/DevPortal_RegisteringUsers_CF/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Developer Hub - View User Details (Neo)",
+      "url": "https://api.sap.com/api/DevPortal_ViewUserDetails/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Developer Hub - View User Details (CF)",
+      "url": "https://api.sap.com/api/DevPortal_ViewUserDetails_CF/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Graph - Configuration",
+      "url": "https://api.sap.com/api/Graph_ConfigurationAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Metering (Neo)",
+      "url": "https://api.sap.com/api/Metering_APIs/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Metering (CF)",
+      "url": "https://api.sap.com/api/Metering_APIs_CF/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

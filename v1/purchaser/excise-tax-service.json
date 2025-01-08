@@ -1,0 +1,123 @@
+{
+  "name": "Excise-Tax-Service",
+  "displayName": "quick-start service for SAP Excise Tax Management",
+  "description": "SAP Excise Tax Management",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/YnA0Vk_eSBtxAq3h07o0F47Laj9so8tYueTZs3ODfL83CJL0rSpUObhqOXRniILC.svg",
+  "servicePlans": [
+    {
+      "name": "emcsintegration",
+      "displayName": "emcsintegration",
+      "category": "SERVICE",
+      "description": "Service plan for providing read access to Business Partner and Material Master data. Additionally provides access to save ARC code",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "extend",
+      "displayName": "extend",
+      "category": "SERVICE",
+      "description": "The service plan is to read,extend and update excisetax data",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014221",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "readmasterdata",
+      "displayName": "readmasterdata",
+      "category": "SERVICE",
+      "description": "Service plan for providing read access to Business Partner and Material Master data",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014221",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "taxcalculation",
+      "displayName": "taxcalculation",
+      "category": "SERVICE",
+      "description": "Service plan for Excise Tax Calculation",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014221",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "transportdata",
+      "displayName": "transportdata",
+      "category": "SERVICE",
+      "description": "Manages data transfer between tenants",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    }
+  ],
+  "certifications": []
+}

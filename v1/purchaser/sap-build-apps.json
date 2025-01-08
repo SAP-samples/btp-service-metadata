@@ -1,0 +1,888 @@
+{
+  "name": "sap-build-apps",
+  "displayName": "SAP Build Apps",
+  "description": "SAP Build Apps",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AofNL1SZuIcWVSKeGVTrj8_ipaGzos9X3mBWQeRdyRB-UxXz2otkPlDNjrf_wbgt.svg",
+  "servicePlans": [
+    {
+      "name": "additional-active-users",
+      "displayName": "additional-active-users",
+      "category": "SERVICE",
+      "description": "Additional active users for SAP Build Apps.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "7777777",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8010833",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010836",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010840",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011478",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012216",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012324",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012590",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013754",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013754",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013773",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014014",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014033",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014046",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014155",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014491",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014797",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015351",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015352",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015353",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017424",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018243",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018511",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "additional-capacity-units",
+      "displayName": "additional-capacity-units",
+      "category": "SERVICE",
+      "description": "Additional capacity units for SAP Build Apps.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "7777777",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8010833",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010836",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010840",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011478",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012216",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012324",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012590",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013754",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013754",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013773",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013773",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014014",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014033",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014046",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014155",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014491",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014797",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015351",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015352",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015353",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017424",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018243",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018511",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "community",
+      "displayName": "Community",
+      "category": "APPLICATION",
+      "description": "Community plan for SAP Build Apps",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "APPLICATION",
+      "description": "Intended for test and evaluation purposes of building applications in a no-code development environment. After the quota is reached, you need to update to the paid service plan. Only community support is available for free tier service plans and these are not subject to SLAs. Additional restrictions may apply.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "ProdDummy19",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012216",
+          "commercialModel": null
+        }
+      ]
+    },
+    {
+      "name": "partner",
+      "displayName": "partner",
+      "category": "APPLICATION",
+      "description": "Build and extend business applications in a no code development environment and run them productively. This plan includes 25 active users, 760 Capacity Units and 25 Work Zone, standard edition users.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8015351",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015352",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015353",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "Build and extend business applications in a no code development environment and run them productively. This plan includes 25 active users, 760 Capacity Units and 25 Work Zone, standard edition users.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "7777777",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010833",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010836",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010840",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011478",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012216",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012324",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012590",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013754",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013773",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014014",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014033",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014046",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014155",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014491",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014797",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015351",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015352",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015353",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017424",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018243",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018511",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

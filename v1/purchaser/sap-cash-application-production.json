@@ -1,0 +1,69 @@
+{
+  "name": "sap-cash-application-production",
+  "displayName": "SAP Cash Application",
+  "description": "SAP Cash Application",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zGREa-Z_eU5-mzjwdxgGoWUccEvanzAWzjEvHR3nB-dau06SOUZ7PaUWNVfjIQw5.svg",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard Plan includes all cash application features",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005289",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016461",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016532",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018592",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018915",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

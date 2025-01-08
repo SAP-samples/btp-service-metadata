@@ -1,0 +1,33 @@
+{
+  "name": "grir-service-integration",
+  "displayName": "SAP Goods and Invoice Receipt Reconciliation Integration",
+  "description": "SAP Goods and Invoice Receipt Reconciliation Integration",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "SAP Goods and Invoice Receipt Reconciliation for integration/testing",
+      "category": "SERVICE",
+      "description": "SAP Goods and Invoice Receipt Reconciliation for integration/testing",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8006000",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008352",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

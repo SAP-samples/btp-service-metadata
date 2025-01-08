@@ -1,0 +1,393 @@
+{
+  "name": "aicore",
+  "displayName": "SAP AI Core",
+  "description": "SAP AI Core",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Arl8lF2s3YNllJ-JbTLmuXlfP0JXI-2hnEhgzuJywHw57W9MzIUznH-D4qA9Alwr.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPAICore/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP AI Core | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20AI%20Core",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20AI%20Core",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/sap-ai-core",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP AI Core"
+    },
+    {
+      "value": "https://help.sap.com/doc/f8e4425207534eadbece49b9b140b97b/CLOUD/en-US/2cdce4231bff40ea9f8bdd0518d66d74.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/AI_CORE/2d6c5984063c40a59eda62f4a9135bee/38c4599432d74c1d94e70f7c955a717d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/AI_CORE/2d6c5984063c40a59eda62f4a9135bee/499309d6e371419fb7a88b7d68c20a31.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Libraries and SDKs"
+    },
+    {
+      "value": "https://help.sap.com/docs/AI_CORE/2d6c5984063c40a59eda62f4a9135bee/a476d3c15bf04494907dcdb7a9aee131.html?state=PRODUCTION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://blogs.sap.com/tags/73554900100800003641/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "SAP AI Core Community"
+    },
+    {
+      "value": "https://developers.sap.com/group.ai-core-get-started-basics.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Get Started: Create Your First Machine Learning Project Using SAP AI Core"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2d6c5984063c40a59eda62f4a9135bee/CLOUD/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is SAP AI Core?"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2d6c5984063c40a59eda62f4a9135bee/CLOUD/en-US/38c4599432d74c1d94e70f7c955a717d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2d6c5984063c40a59eda62f4a9135bee/CLOUD/en-US/716d4c38e3054c93a9d481b51cc66298.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2d6c5984063c40a59eda62f4a9135bee/CLOUD/en-US/b7f76ad874a44c30bb94f3d2af51003f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2d6c5984063c40a59eda62f4a9135bee/CLOUD/en-US/f559038fef1b4661bf62e26ee02442e8.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "SAP AI Core Troubleshooting"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/AI_CORE/CLOUD/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://pypi.org/project/ai-core-sdk/",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "extended",
+      "displayName": "Extended",
+      "category": "SERVICE",
+      "description": "Default plan for aicore and gen ai features.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "free",
+      "displayName": "Free",
+      "category": "SERVICE",
+      "description": "Free plan. To work without usage limits, migrate to standard plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "sap-internal",
+      "displayName": "sap-internal",
+      "category": "SERVICE",
+      "description": "Default sap internal plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Default standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-ML-AIC"
+    }
+  ],
+  "apis": [
+    {
+      "name": "AI Core",
+      "url": "https://api.sap.com/api/AI_CORE_API/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Orchestration",
+      "url": "https://api.sap.com/api/ORCHESTRATION_API/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

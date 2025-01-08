@@ -1,0 +1,1798 @@
+{
+  "name": "hana-db",
+  "displayName": "SAP HANA service for SAP BTP",
+  "description": "SAP HANA Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/HJA77oskIk2FWo7JZp00MnAJLJl9PMS_z-BrD4v4pwJ6QxcveRZSL588rkDv7YD7.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20HANA%20service%20for%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20HANA%20service%20for%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-hana-service-sap-regions",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP HANA Service (SAP Regions)"
+    },
+    {
+      "value": "https://help.sap.com/doc/224205d0dc3749328bf65124a44e2cc0/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=SAP%20HANA",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=SAP%20HANA%20Service&sel4=Neo",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/doc/e4672c2cebc74a38aeaeb875cba2e848/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/a12d484310c847d2bb7ce1f0283cdb1e/d5089968190147ce965e1f7ec29d6f44.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Getting Started with an Enterprise Account in the Cloud Foundry Environment"
+    },
+    {
+      "value": "https://help.sap.com/viewer/a36ee1aa073e4e8e840573fb30a72d95/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is the SAP HANA service"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/a36ee1aa073e4e8e840573fb30a72d95/1e9a6cb47e1b44f990a917b4bf8c2e19.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/a36ee1aa073e4e8e840573fb30a72d95/6d4c5eb0048746c78bdf708d51d69e9c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is the SAP HANA Service"
+    },
+    {
+      "value": "https://help.sap.com/viewer/ae64c8301e6e4389981e16ba44df40ea/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/cc53ad464a57404b8d453bbadbc81ceb/1bc8ef5c136940c1a3a45f0d92abb0b8.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/cc53ad464a57404b8d453bbadbc81ceb/21418824b23a401aa116d9ad42dd5ba6.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Create an SAP HANA Service Instance Using the Cloud Cockpit"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/cc53ad464a57404b8d453bbadbc81ceb/7ae07947054b427f8e1b6fc17966e02d.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Developing an Application for the SAP HANA Service"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/cc53ad464a57404b8d453bbadbc81ceb/7cc0278fa13c4124bfe6af2ae5b59642.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/cc53ad464a57404b8d453bbadbc81ceb/f70399be7fca4508aa0e33e138dbd84d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Introduction to the SAP HANA Service"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/d4790b2de2f4429db6f3dff54e4d7b3a/446fa573ed7142788d646fc023ab1cfd.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Getting Started with an Enterprise Account in the Neo Environment"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/d4790b2de2f4429db6f3dff54e4d7b3a/d5fdd697bf634e77a18076f54b5936e9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/d4790b2de2f4429db6f3dff54e4d7b3a/eb91609f87b4443dab617d1683cccba5.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Getting Started with a Trial Account in the Neo Environment"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/d4790b2de2f4429db6f3dff54e4d7b3a/f6567e3b7334403b9b275426fbe4fb04.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is the SAP HANA Service in SAP Regions"
+    },
+    {
+      "value": "https://help.sap.com/docs/HANA_SERVICE_CF",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal: SAP Business Technology Platform, SAP HANA Service in AWS and GCP Regions"
+    },
+    {
+      "value": "https://help.sap.com/docs/HANA_SERVICE_SAP_CP",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/docs/HANA_SERVICE",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://www.youtube.com/embed/LcFu9t5sGi0",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Business Technology Platform - HANA Service Demo"
+    },
+    {
+      "value": "https://youtube.com/embed/sBweIGEFAXc",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Business Technology Platform HANA Service"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "1024premium",
+      "displayName": "HANA 1TB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 1TB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "1024standard",
+      "displayName": "HANA 1TB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 1TB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "128premium",
+      "displayName": "HANA 128GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 128GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "128standard",
+      "displayName": "HANA 128GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 128GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "2048premium",
+      "displayName": "HANA 2TB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 2TB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "2048standard",
+      "displayName": "HANA 2TB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 2TB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "256premium",
+      "displayName": "HANA 256GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 256GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "256standard",
+      "displayName": "HANA 256GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 256GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "3072premium",
+      "displayName": "HANA 3TB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 3TB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "3072standard",
+      "displayName": "HANA 3TB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 3TB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "32premium",
+      "displayName": "HANA 32GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 32GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "32standard",
+      "displayName": "HANA 32GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 32GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "512premium",
+      "displayName": "HANA 512GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 512GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "512standard",
+      "displayName": "HANA 512GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 512GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "64premium",
+      "displayName": "HANA 64GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 64GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "64standard",
+      "displayName": "HANA 64GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 64GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "enterprise",
+      "displayName": "SAP HANA Service",
+      "category": "SERVICE",
+      "description": "SAP HANA Service",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "SAP HANA Service",
+      "category": "SERVICE",
+      "description": "SAP HANA Service",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "HAN-CLS-DB"
+    }
+  ],
+  "apis": []
+}

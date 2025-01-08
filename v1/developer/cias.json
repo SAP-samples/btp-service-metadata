@@ -1,0 +1,184 @@
+{
+  "name": "cias",
+  "displayName": "Cloud Integration Automation",
+  "description": "Cloud Integration Automation",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/rzAz4R09RkdFHcdBbk72gmxcRjP-FzOClink_1_D5QY4Cz8eK30I8XDh6Md7mO0m.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=Cloud%20Integration%20Automation",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=Cloud%20Integration%20Automation",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-integration-automation",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Cloud Integration Automation"
+    },
+    {
+      "value": "https://help.sap.com/docs/Cloud%20Integration%20Automation%20Service/edfa11059aca499892c08168fd68d97d/2eae0b6a94134862a22cfb96f8c7b220.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/Cloud%20Integration%20Automation%20Service/edfa11059aca499892c08168fd68d97d/9e8f7c250d974b8eb9818eced1074ed3.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://blogs.sap.com/2018/05/28/cloud-integration-automation-service-what-is-it/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Cloud Integration Automation Service \u2013 What is it?"
+    },
+    {
+      "value": "https://blogs.sap.com/2018/06/08/cloud-integration-automation-service-step-by-step/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Cloud Integration Automation Service: Step-by Step"
+    },
+    {
+      "value": "https://blogs.sap.com/2021/06/09/cloud-integration-automation-service-now-on-cloud-foundry/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Cloud Integration Automation Service: Now on Cloud Foundry"
+    },
+    {
+      "value": "https://blogs.sap.com/2021/06/09/how-to-activate-cloud-integration-automation-service-on-cloud-foundry/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "How to activate Cloud Integration Automation Service on Cloud Foundry"
+    },
+    {
+      "value": "https://blogs.sap.com/2021/08/24/start-a-scenario-integration-workflow-with-could-integration-automation-service-on-cloud-foundry-btp/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Start a scenario integration workflow with Cloud Integration Automation Service on Cloud Foundry (SAP BTP)"
+    },
+    {
+      "value": "https://blogs.sap.com/2022/04/08/new-video-easy-to-use-cloud-integration-automation-service/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "New video: Easy to Use Cloud Integration Automation Service"
+    },
+    {
+      "value": "https://help.sap.com/viewer/edfa11059aca499892c08168fd68d97d/Latest/en-US/35fbf2ab8a844217b3486f85a2bd9ab2.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Cloud Integration Automation Service"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/Cloud%20Integration%20Automation%20Service/Latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/Cloud%2520Integration%2520Automation%2520Service/Latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "oauth2",
+      "displayName": "oauth2",
+      "category": "SERVICE",
+      "description": "Plan to access Cloud Integration Automation Service APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "Plan to use the Cloud Integration Automation Service - UI Application",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-HCI-PI"
+    }
+  ],
+  "apis": []
+}

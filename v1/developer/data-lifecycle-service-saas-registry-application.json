@@ -1,0 +1,37 @@
+{
+  "name": "data-lifecycle-service-saas-registry-application",
+  "displayName": "Data Archiving",
+  "description": "Data Archiving",
+  "icon": null,
+  "links": [],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "APPLICATION",
+      "description": "Default Plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

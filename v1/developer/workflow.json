@@ -1,0 +1,405 @@
+{
+  "name": "workflow",
+  "displayName": "SAP Workflow Management",
+  "description": "SAP Workflow service allows you to build, run, and manage workflows, from simple approvals to end-to-end processes that span across different organizations and applications. With an inbox application and custom-built user interfaces, you involve end users into business processes for decision making and data entry. The workflow service comes with web-based tools for workflow modeling, APIs for consumption in custom applications, monitoring tools, and a set of Fiori-based applications for end-user access. You can use JavaScript to embed custom business logic.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/KUY7weA2FULbsayegkDrID76qi3Y4pD4UDU6vGRttGVNj5p0fgWagnudo_ry69Xw.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/tags/73554900100800000555/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blogs"
+    },
+    {
+      "value": "https://developers.sap.com/group.cp-workflow-cf.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Get Started with SAP BTP Workflows"
+    },
+    {
+      "value": "https://developers.sap.com/mission.cp-starter-ibpm-employeeonboarding.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Automate and Extend Employee Onboarding"
+    },
+    {
+      "value": "https://launchpad.support.sap.com/#/notes/1888290",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support Components for SAP BTP"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPCPWorkflowAPIs/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Workflow Service | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Workflow%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Workflow%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/8c8be0fcde064d4d95e958c44bbce34c/Cloud/en-US/34a79458361c4cadb7fdac12e4294b6b.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/doc/a78c0b1278914d8cacdee12ab4c18b63/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/WORKFLOW/16e4ca742bd742e98184ef1e53d2ec2d/a3220658f2dc46a48e47614aa2a2c663.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Workflow"
+    },
+    {
+      "value": "https://help.sap.com/docs/WORKFLOW/e157c391253b4ecd93647bf232d18a83/60ae81179050478caa4212fad4ba50f2.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Developing Applications with Workflow Capability"
+    },
+    {
+      "value": "https://help.sap.com/docs/WORKFLOW/e157c391253b4ecd93647bf232d18a83/e379f6b9d2354e3ba09908f736c89e2a.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Consuming the Workflow Capability at Application Runtime"
+    },
+    {
+      "value": "https://help.sap.com/docs/WORKFLOW/e157c391253b4ecd93647bf232d18a83/fc3d44872c354742afd672aa8d9c16b4.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup in the Cloud Foundry Environment"
+    },
+    {
+      "value": "https://help.sap.com/docs/WORKFLOW",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/learning-journeys/34c3e8adf5234d91b9b4cdee94b9306b",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Learning Journey: Workflow Capability"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e157c391253b4ecd93647bf232d18a83/0047e4b99ac240ffae5ab870ff866f9f.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "Workflow Editor"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e157c391253b4ecd93647bf232d18a83/e6163e119ba645d0ae6a31022b670381.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "Monitor Workflows app"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e157c391253b4ecd93647bf232d18a83/fab405aa1ec64d6e9880761a31b0cd06.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f85276c5069a429fa37d1cd352785c25/df943e71122448caaf3c49f5ffd80627.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/WORKFLOW_SERVICE",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "lite",
+      "displayName": "lite",
+      "category": "SERVICE",
+      "description": "Plan for usage of workflow service with non-productive applications",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "authorities": {
+                    "description": "Configures scopes that are available in the client credentials flow.",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "default": []
+                  },
+                  "defaultCollectionQueryFilter": {
+                    "description": "Configures the default behavior of queries that return a collection of Workflow entities.",
+                    "type": "string",
+                    "enum": [
+                      "own",
+                      "shared"
+                    ],
+                    "default": "own"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Default plan for using workflow",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "authorities": {
+                    "description": "Configures scopes that are available in the client credentials flow.",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "default": []
+                  },
+                  "defaultCollectionQueryFilter": {
+                    "description": "Configures the default behavior of queries that return a collection of Workflow entities.",
+                    "type": "string",
+                    "enum": [
+                      "own",
+                      "shared"
+                    ],
+                    "default": "own"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-BPM-WFS"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Workflow API for Neo",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Workflow API for Cloud Foundry",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow_CF/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Inbox API for Neo",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow_TCM/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Inbox API for Cloud Foundry",
+      "url": "https://api.sap.com/api/SAP_CP_Workflow_TCM_CF/overview",
+      "apiType": "OData V2"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "e-mobility-service",
+  "displayName": "SAP E-Mobility",
+  "description": "SAP E-Mobility",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/6dky7bcbtK8z5vCINsuoqN7Jr3pUYjPHgsS_wNHTDTZ-vLLznfrehs_xuPK0of05.svg",
+  "servicePlans": [
+    {
+      "name": "api",
+      "displayName": "api",
+      "category": "SERVICE",
+      "description": "Offers access to the API of an existing SAP E-Mobility subscription.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8011463",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012567",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013696",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

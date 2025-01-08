@@ -1,0 +1,53 @@
+{
+  "name": "nfe",
+  "displayName": "SAP Document and Reporting Compliance outbound nota fiscal",
+  "description": "SAP Document and Reporting Compliance outbound nota fiscal",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/6f6DBQYQuhhmoZV_hPqxeD5MKhomnwEdfjDE-_t47BCpQW6DwDScuVpHB07dvJkz.svg",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Outbound invoicing option for Brazil Standard",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005683",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005878",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008132",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008153",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008888",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008888",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

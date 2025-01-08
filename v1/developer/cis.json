@@ -1,0 +1,3074 @@
+{
+  "name": "cis",
+  "displayName": "SAP Cloud Management service for SAP BTP",
+  "description": "Cloud Management Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/HUUjKa3mwi7E5O-tWW2EXAqFh-jwns0OsiVTB26sz-hhvPuBfwwBINKIksUz1boF.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cloud%20Management%20service%20for%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cloud%20Management%20service%20for%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-management-service",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Cloud Management Service"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/09/15/introducing-cloud-management-tools-cli-and-apis-for-sap-cloud-platform-part-1/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Introducing Cloud Management Tools \u2013 CLI and APIs for SAP BTP (Blog: Part 1)"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/09/15/introducing-cloud-management-tools-cli-and-apis-for-sap-cloud-platform-part-2/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Introducing Cloud Management Tools \u2013 CLI and APIs for SAP BTP (Blog: Part 2)"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/12/30/the-easy-way-to-work-with-cloud-management-apis-on-sap-cloud-platform/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "The easy way to work with Cloud Management APIs on SAP BTP"
+    },
+    {
+      "value": "https://developers.sap.com/tutorials/cp-sapcp-getstarted.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Get Started with the Command-Line Interface for SAP BTP (btp CLI)"
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=U3azydhcIss&feature=youtu.be",
+      "classification": "External",
+      "type": "Link",
+      "text": "Hands-On SAP Dev Ep.77 - Exploring btp CLI - the CLI for SAP BTP (Video by DJ Adams)"
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=yY3pXcw4e7c",
+      "classification": "External",
+      "type": "Link",
+      "text": "Hands-On SAP Dev Ep.79 - A first look at the core service APIs for SAP BTP (Video by DJ Adams)"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/17b6a171552544a6804f12ea83112a3f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/3670474a58c24ac2b082e76cbbd9dc19.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Get an Access Token for SAP Cloud Management Service APIs"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/7c6df2db6332419ea7a862191525377c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Account Administration Using the SAP BTP Command-Line Interface (btp CLI)"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "account-context",
+      "displayName": "Account Context",
+      "category": "SERVICE",
+      "description": "Service plan for retrieving account contextual information for SAP BTP entities.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "central",
+      "displayName": "central",
+      "category": "SERVICE",
+      "description": "Service plan for using Cloud Management service APIs to manage your global accounts, subaccounts, directories, and entitlements.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "grantType": {
+                    "default": "password",
+                    "_enumDisplayName": {
+                      "password": "Password",
+                      "clientCredentials": "Client Credentials"
+                    },
+                    "description": "Use the Password grant type for Cloud Foundry and Kubernetes, or Client Credentials grant type for Other Environments.",
+                    "title": "Authorization Type",
+                    "type": "string",
+                    "enum": [
+                      "password",
+                      "clientCredentials"
+                    ]
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "grantType": {
+                    "default": "password",
+                    "_enumDisplayName": {
+                      "password": "Password",
+                      "clientCredentials": "Client Credentials"
+                    },
+                    "description": "Use the Password grant type for Cloud Foundry and Kubernetes, or Client Credentials grant type for Other Environments.",
+                    "title": "Authorization Type",
+                    "type": "string",
+                    "enum": [
+                      "password",
+                      "clientCredentials"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "central-viewer",
+      "displayName": "Central Viewer",
+      "category": "SERVICE",
+      "description": "Service plan for using Cloud Management APIs to read your global accounts, subaccounts, directories, and entitlements.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "cloud-automation",
+      "displayName": "Cloud Automation",
+      "category": "SERVICE",
+      "description": "Allows users to create and manage Cloud Automation resources in a global account.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "cloud-automation-requests-agent",
+      "displayName": "Cloud Automation Requests Agent",
+      "category": "SERVICE",
+      "description": "Allows users to create and manage Cloud Automation requests in a global account.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "commercial-access",
+      "displayName": "Commercial Access",
+      "category": "SERVICE",
+      "description": "Service plan for content providers to manage their product lifecycle including entitlements, platform and commercial registration, and more.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "directory-initial-authorizations",
+      "displayName": "Initial Authorizations - Directories",
+      "category": "SERVICE",
+      "description": "Service plan for managing and provisioning the default authorizations for directories.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "entity-metadata-settings",
+      "displayName": "Cloud Management Service - Entity Metadata Settings",
+      "category": "SERVICE",
+      "description": "Allows to create and extend entity metadata settings and to maintain their values.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "global-account-initial-authorizations",
+      "displayName": "Initial Authorizations - Global Accounts",
+      "category": "SERVICE",
+      "description": "Service plan for managing and provisioning the default authorizations for global accounts.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "local",
+      "displayName": "local",
+      "category": "SERVICE",
+      "description": "Service plan for using Cloud Management service APIs to manage your environments and subscriptions to multitenant applications.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "grantType": {
+                    "default": "password",
+                    "_enumDisplayName": {
+                      "password": "Password",
+                      "clientCredentials": "Client Credentials"
+                    },
+                    "description": "Use the Password grant type for Cloud Foundry and Kubernetes, or Client Credentials grant type for Other Environments.",
+                    "title": "Authorization Type",
+                    "type": "string",
+                    "enum": [
+                      "password",
+                      "clientCredentials"
+                    ]
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "grantType": {
+                    "default": "password",
+                    "_enumDisplayName": {
+                      "password": "Password",
+                      "clientCredentials": "Client Credentials"
+                    },
+                    "description": "Use the Password grant type for Cloud Foundry and Kubernetes, or Client Credentials grant type for Other Environments.",
+                    "title": "Authorization Type",
+                    "type": "string",
+                    "enum": [
+                      "password",
+                      "clientCredentials"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "local-viewer",
+      "displayName": "Local Viewer",
+      "category": "SERVICE",
+      "description": "Service plan for using Cloud Management APIs to read your environments and subscriptions to multitenant applications.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "subaccount-initial-authorizations",
+      "displayName": "Initial Authorizations - Subaccounts",
+      "category": "SERVICE",
+      "description": "Service plan for managing and provisioning the default authorizations for subaccounts.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "subscription-viewer",
+      "displayName": "Subscription Viewer",
+      "category": "SERVICE",
+      "description": "Service plan for getting subscriptions information.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-basic",
+      "displayName": "system-basic",
+      "category": "SERVICE",
+      "description": "Service plan for getting entitlement assignments, and commercial-related events to facilitate account and entitlement management.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-basic-central",
+      "displayName": "System Basic - Central",
+      "category": "SERVICE",
+      "description": "Service plan for getting entitlement assignments to facilitate quota management for subaccounts in all regions.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-central",
+      "displayName": "System-Central",
+      "category": "SERVICE",
+      "description": "Service plan for using Cloud Management APIs with cross-tenant credentials to manage global accounts, subaccounts, directories, and entitlements.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-full",
+      "displayName": "CIS",
+      "category": "SERVICE",
+      "description": "Service plan for using CIS APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-local",
+      "displayName": "System-Local",
+      "category": "SERVICE",
+      "description": "Service plan for using Cloud Management APIs with cross-tenant credentials to manage environments and subscriptions to multitenant applications.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-viewer",
+      "displayName": "CIS",
+      "category": "SERVICE",
+      "description": "Service plan for using CIS APIs (read-only operations)",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-viewer-subaccount",
+      "displayName": "System-Viewer-Subaccount",
+      "category": "SERVICE",
+      "description": "Service plan for getting information about a specified subaccount (intended for service owners)",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "system-xpr",
+      "displayName": "system-xpr",
+      "category": "SERVICE",
+      "description": "Service plan for creating and managing resource providers to allow a global account to connect to a provider account on a non-SAP cloud vendor.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "trial-initial-authorizations",
+      "displayName": "Initial Authorizations - Trial Accounts",
+      "category": "SERVICE",
+      "description": "Service plan for managing and provisioning the default authorizations for trial accounts.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "xrs",
+      "displayName": "xrs",
+      "category": "SERVICE",
+      "description": "A service which manages access to a single cross-platform registration center for services, multitenant applications, and environments.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

@@ -1,0 +1,53 @@
+{
+  "name": "sap-order-and-delivery-scheduling-api",
+  "displayName": "SAP Order and Delivery Scheduling",
+  "description": "SAP Order and Delivery Scheduling",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Provides API access to a subscribed SAP Order and Delivery Scheduling application.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8013541",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013541",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015043",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015051",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018129",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018211",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

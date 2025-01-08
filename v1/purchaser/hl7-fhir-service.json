@@ -1,0 +1,56 @@
+{
+  "name": "hl7-fhir-service",
+  "displayName": "SAP Health Data Services for FHIR",
+  "description": "SAP Health Data Services for FHIR",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/44c2gt0gWgCOY32CuB55ae_hbNugwQFwUHWzFIUZuCjmriW3C4izp2NOCPuBcs7l.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Enables you to build interoperable applications that store, process, and exchange health data by leveraging the HL7\u00ae FHIR\u00ae standard.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Enables you to build interoperable applications that store, process, and exchange health data by leveraging the HL7\u00ae FHIR\u00ae standard.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8017384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017451",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

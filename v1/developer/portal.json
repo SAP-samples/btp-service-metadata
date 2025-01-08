@@ -1,0 +1,381 @@
+{
+  "name": "portal",
+  "displayName": "SAP Cloud Portal service",
+  "description": "Cloud Portal Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/PM93GjRorD3tfn92OE2_gxz6z4jZwpCEZ1_2TcCbY3UzCumes-vG3Mfb_YT_hV45.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPCLOUDPLATFORMPORTAL/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Build Work Zone and SAP Cloud Portal Service | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cloud%20Portal%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cloud%20Portal%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-portal-service",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Cloud Portal Service"
+    },
+    {
+      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Portal",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/doc/8bac45b5f9834b039030fd30ef693147/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/Portal_Service/ad4b9f0b14b0458cad9bd27bf435637d/d7b1a89c9a0f46bd9b1e2b6ca70add66.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://help.sap.com/docs/WZ",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/WZ_STD",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/8422cb487c2146999a2a7dab9cc85cf7/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/ad4b9f0b14b0458cad9bd27bf435637d/5798687972fd4c2bace31c65b47f5587.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Cloud Portal service"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/ad4b9f0b14b0458cad9bd27bf435637d/de4d7d6401dd44af914af1405ba667c8.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Troubleshooting and Monitoring"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/ad4b9f0b14b0458cad9bd27bf435637d/fd79b232967545569d1ae4d8f691016b.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/viewer/disclaimer-for-links?q=https://developers.sap.com/mission.cp-starter-digitalexp-portal.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial Starter Scenario: Deliver Your First Portal Site"
+    },
+    {
+      "value": "https://help.sap.com/docs/P",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/Portal_Service/1.0/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "map-jam-dc-plan",
+      "displayName": "map-jam-dc-plan",
+      "category": "SERVICE",
+      "description": "Get available mappings to JAM data centers",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Integrate with other services using APIs.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "EP-CPP-CF-LND"
+    },
+    {
+      "value": "EP-WZ-LND"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Export Business Content (CF)",
+      "url": "https://api.sap.com/api/ContentExport/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Retrieve the content of web content widgets (Neo)",
+      "url": "https://api.sap.com/api/GetWCEWidgetsContent/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage SAP Fiori Launchpad Runtime Site Status (Neo)",
+      "url": "https://api.sap.com/api/ManageFlpRuntimeSiteStatus/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage SAP Fiori Launchpad Content Sharing Lifecycle (Neo)",
+      "url": "https://api.sap.com/api/ManageFlpSharedContent/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage SAP Fiori Launchpad Site Lifecycle (Neo)",
+      "url": "https://api.sap.com/api/ManageFlpSiteLifecycle/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage Translation Interface (Neo)",
+      "url": "https://api.sap.com/api/ManageTranslationInterface/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Set Default SAP Fiori Launchpad Site (Neo)",
+      "url": "https://api.sap.com/api/SetFlpDefaultSite/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Replicate HTML5 Apps to SAPUI5 Application Index Interface (Neo)",
+      "url": "https://api.sap.com/api/appindex/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Manage a Custom SAPUI5 Version Interface (Neo)",
+      "url": "https://api.sap.com/api/customui5version/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "name": "PersonalDataManagerApp",
+  "displayName": "SAP Personal Data Manager",
+  "description": "Personal Data Manager",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jGHwckmzkyFfNICjAbczZr74akoRiaTsIBqrnMLSMG6Lb2qgjO_nmOMETRVPtq2G.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Personal%20Data%20Manager",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Personal%20Data%20Manager",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/personal-data-manager",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Personal Data Manager"
+    },
+    {
+      "value": "https://help.sap.com/docs/PERSONAL_DATA_MANAGER",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/PERSONAL_DATA_MANAGER/1e4f89a3d9dc473b842e7d35b42143de/e66e5036be7c4583b5c4cf1052e53841.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/personal-data-manager/ecaeff7ef95f470381ed76db241b6c72/user-administration-and-authentication",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://help.sap.com/viewer/620a3ea6aaf64610accdd05cca9e3de2/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Personal Data Manager"
+    },
+    {
+      "value": "https://help.sap.com/viewer/b43057c4bb5f4e02a1913798bb8693d0/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "User Guide"
+    },
+    {
+      "value": "https://www.youtube.com/embed/CJmG-Xu0jzA",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Business Technology Platform Personal Data Manager"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "APPLICATION",
+      "description": "Default Plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "tdd",
+      "displayName": "Test and Development",
+      "category": "APPLICATION",
+      "description": "Manage requests and inform data subjects about their personal data in processing.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-CBS-GDP"
+    }
+  ],
+  "apis": []
+}

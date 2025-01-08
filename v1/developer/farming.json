@@ -1,0 +1,56 @@
+{
+  "name": "farming",
+  "displayName": "SAP Intelligent Agriculture",
+  "description": "SAP Intelligent Agriculture",
+  "icon": "Icon too big. Service owner needs to reduce size.",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Intelligent%20Agriculture",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Intelligent%20Agriculture",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_INTELLIGENT_AGRICULTURE",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "The standard plan includes the full SAP Intelligent Agriculture solution",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

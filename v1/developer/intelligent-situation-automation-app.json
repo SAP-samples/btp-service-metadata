@@ -1,0 +1,136 @@
+{
+  "name": "intelligent-situation-automation-app",
+  "displayName": "Intelligent Situation Automation",
+  "description": "Intelligent Situation Automation",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/WJO7R_De2Pn8FthU4ku57yscABds8b08mlKt7z3XtxSFqciZg6CVngNlE-GPHR1i.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=Intelligent%20Situation%20Automation",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=Intelligent%20Situation%20Automation",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/intelligent-situation-automation",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Intelligent Situation Automation"
+    },
+    {
+      "value": "https://help.sap.com/doc/8ecfa03af20a44aabae923b3c2edd9ec/1.0/en-US/05d26452e5734791becb7fc9e8cc4c83.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/INTELLIGENT_SITUATION_AUT/2dff17d3732c422b99c02bba7101dde7/ddf0086d3ef64ef7960ff35ea6ffda21.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2dff17d3732c422b99c02bba7101dde7/1.0/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Intelligent Situation Automation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2dff17d3732c422b99c02bba7101dde7/1.0/en-US/82fa362287604ccfbd771da042d14bfe.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/viewer/64b367baf8b346b09702672666b0c0ae/1.0/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Administration Guide for Intelligent Situation Automation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/dd7bde0fac4e421bb79830f81df88c86/1.0/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "User Guide for Intelligent Situation Automation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/INTELLIGENT_SITUATION_AUT/1.0/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Intelligent%20Situation%20Automation",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "beta",
+      "displayName": "beta",
+      "category": "APPLICATION",
+      "description": "For trial purposes only; not to be used in production scenarios",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "APPLICATION",
+      "description": "For exploring features in testing environment only; do not use in production scenarios. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "For production scenarios",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-SIT-ATM"
+    }
+  ],
+  "apis": []
+}

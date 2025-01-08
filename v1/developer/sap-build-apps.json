@@ -1,0 +1,256 @@
+{
+  "name": "sap-build-apps",
+  "displayName": "SAP Build Apps",
+  "description": "SAP Build Apps",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AofNL1SZuIcWVSKeGVTrj8_ipaGzos9X3mBWQeRdyRB-UxXz2otkPlDNjrf_wbgt.svg",
+  "links": [
+    {
+      "value": "https://account.hana.ondemand.com/cockpit#/home/allaccounts",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP BTP Cockpit"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Build%20Apps",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Build%20Apps",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/sap-build-apps",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-build-apps",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP Build Apps"
+    },
+    {
+      "value": "https://help.sap.com/doc/2acecfb777684ce5a0a8a75fd78caffb/Latest/en-US/2a23b2bcd9084d83b9a8e76b2d1b4372.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BUILD_APPS",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/docs/BUILD_APPS/431746e4c663458aa68d9754b237bfc6/39a35cf3447241509f4dbbd19a96dbc0.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BUILD_APPS/431746e4c663458aa68d9754b237bfc6/daece9f87abf4f7187a14ae0b1f8b2ab.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Build Apps"
+    },
+    {
+      "value": "https://help.sap.com/docs/build-apps/service-guide/security",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://community.sap.com/topics/build-apps?ct=blog&lng=en&tab=content",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "Community Content"
+    },
+    {
+      "value": "https://support.sap.com/",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support At SAP"
+    },
+    {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=SAP%20Build%20Apps",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "additional-active-users",
+      "displayName": "additional-active-users",
+      "category": "SERVICE",
+      "description": "Additional active users for SAP Build Apps.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "additional-capacity-units",
+      "displayName": "additional-capacity-units",
+      "category": "SERVICE",
+      "description": "Additional capacity units for SAP Build Apps.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "community",
+      "displayName": "Community",
+      "category": "APPLICATION",
+      "description": "Community plan for SAP Build Apps",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "APPLICATION",
+      "description": "Intended for test and evaluation purposes of building applications in a no-code development environment. After the quota is reached, you need to update to the paid service plan. Only community support is available for free tier service plans and these are not subject to SLAs. Additional restrictions may apply.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "partner",
+      "displayName": "partner",
+      "category": "APPLICATION",
+      "description": "Build and extend business applications in a no code development environment and run them productively. This plan includes 25 active users, 760 Capacity Units and 25 Work Zone, standard edition users.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "Build and extend business applications in a no code development environment and run them productively. This plan includes 25 active users, 760 Capacity Units and 25 Work Zone, standard edition users.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-LCA-ACP"
+    }
+  ],
+  "apis": []
+}

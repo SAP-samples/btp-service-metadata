@@ -1,0 +1,1612 @@
+{
+  "name": "mobile-services",
+  "displayName": "SAP Mobile Services",
+  "description": "Mobile Services",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mTzliZGY_FuTbHPe1-3---npW-Wky40oV3-Kbp36v9GmHy_FPFf-3LKe46GjfP8s.svg",
+  "servicePlans": [
+    {
+      "name": "b2c",
+      "displayName": "b2c",
+      "category": "SERVICE",
+      "description": "(Deprecated) Develop, configure, and manage mobile apps that access enterprise data. Consumer Edition billing is based on active users. An active user is an individual user of a platform application that connects to the service at least once during any rolling three-month period. Billing is determined for active users that have accessed mobile services within the calendar month. There are no feature limitations, and unlimited users and apps are allowed.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8003145",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004160",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008120",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008120",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008128",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008498",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008499",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008809",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011070",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011169",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011542",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014803",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "basic-app",
+      "displayName": "basic-app",
+      "category": "SERVICE",
+      "description": "SAP Mobile Services accelerates enterprise mobile solution development through native SDKs and a cross-platform Mobile Development Kit. The basic plan offers security, onboarding, push notifications and other essential features for SAP mobile applications.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "basic-plus-app",
+      "displayName": "basic-plus-app",
+      "category": "SERVICE",
+      "description": "SAP Mobile Services accelerates enterprise mobile solution development through native SDKs and a cross-platform Mobile Development Kit. The basic plus plan offers a comprehensive feature set for SAP mobile applications.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8018282",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "build-code",
+      "displayName": "build-code",
+      "category": "SERVICE",
+      "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8017771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018204",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Develop, configure, and manage mobile apps that access enterprise data. Free tier is available for production accounts and can be upgraded to a production plan. Try out a service using a global account without additional cost, and then move to a paid service once you reach the technical limits of the service. Only community support is available for free tier service plans, and these are not subject to SLAs. Additional restrictions may apply.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8003145",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004160",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008120",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008498",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008499",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008809",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011070",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011169",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011542",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014803",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        }
+      ]
+    },
+    {
+      "name": "lite",
+      "displayName": "lite",
+      "category": "SERVICE",
+      "description": "Develop, configure, and manage mobile apps that access enterprise data. The Lite plan is for mobile services in a trial landscape. Lite is only available for trial accounts and cannot be upgraded to a production plan. There are no feature limitations, but quota limits apply. Only community support is available for free tier service plans, and these are not subject to SLAs. Additional restrictions may apply.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8003145",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004160",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008120",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008498",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008499",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008809",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011070",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011169",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011542",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014803",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "ProdDummy19",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "resources",
+      "displayName": "resources",
+      "category": "SERVICE",
+      "description": "Develop, configure, and manage mobile apps that access enterprise data. Key features include app content lifecycle management, push notifications for data updates, on-device storage of data (offline apps), app security, and app monitoring and usage reporting. Billing is based on active resources, which is a user identifier (or device identifier for anonymous users) that has accessed mobile services within the calendar month. No limitations are imposed on available features, resources, or apps.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8003145",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004160",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008120",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008498",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008499",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008809",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011070",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011169",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011542",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011542",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014803",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018282",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "(Deprecated) Develop, configure, and manage mobile apps that access enterprise data. Standard plan billing is based on registered users. A registered user is a current named user that is associated with device registrations and application connections. A named user is an individual who is authorized to access the service. Users may be employees of customers or customer affiliates, or business partner users. There are no feature limitations.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "7777777",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000857",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003145",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003145",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004160",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005479",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005479",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005710",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005710",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008120",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008428",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008428",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008476",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008498",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008499",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008647",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008647",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008809",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008809",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010833",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010836",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010840",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010925",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010925",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011000",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011070",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011169",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011478",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011542",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012216",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012304",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012304",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012324",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012579",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012580",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012590",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013660",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013754",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013773",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014014",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014033",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014046",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014155",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014321",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014491",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014797",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014803",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015351",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015351",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015352",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015352",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015353",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015509",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015509",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017424",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018243",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018511",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

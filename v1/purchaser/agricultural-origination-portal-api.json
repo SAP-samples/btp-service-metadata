@@ -1,0 +1,33 @@
+{
+  "name": "agricultural-origination-portal-api",
+  "displayName": "SAP Agricultural Origination Portal",
+  "description": "Agricultural Origination Portal provides information on business transactions like contracts, deliveries, inventory and settlements in a modern, state of the art digitized way through a portal running on laptops and mobile devices",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/qXyN39W9gT_pg36XeUG8bJ0qGII7XWXKhuVu6OgNIB2fdp9QvLKkqumkvMzSqjp8.png",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Standard plan for SAP Agricultural Origination Portal API Service",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8011728",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015592",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

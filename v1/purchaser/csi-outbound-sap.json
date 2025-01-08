@@ -1,0 +1,37 @@
+{
+  "name": "csi-outbound-SAP",
+  "displayName": "Consumer Sales Intelligence Outbound",
+  "description": "Consumer Sales Intelligence Outbound",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Consumer Sales Intelligence Outbound",
+      "category": "SERVICE",
+      "description": "Consumer Sales Intelligence Outbound",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8007918",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008372",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

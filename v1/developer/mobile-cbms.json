@@ -1,0 +1,130 @@
+{
+  "name": "mobile-cbms",
+  "displayName": "Mobile Cloud Build",
+  "description": "Mobile Cloud Build",
+  "icon": null,
+  "links": [
+    {
+      "value": "https://help.sap.com/docs/BTP/468990a67780424a9e66eb096d4345bb/063c131a022e4432ae4f21022c90a178.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.ap11.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.br10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.jp10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://mobile-service-cockpit-web.cfapps.us10.hana.ondemand.com",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "lite",
+      "displayName": "Mobile Cloud Build enables customized builds of SAP mobile applications",
+      "category": "SERVICE",
+      "description": "Mobile Cloud Build enables customized builds of SAP mobile applications",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "Mobile Cloud Build enables customized builds of SAP mobile applications",
+      "category": "SERVICE",
+      "description": "Mobile Cloud Build enables customized builds of SAP mobile applications",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

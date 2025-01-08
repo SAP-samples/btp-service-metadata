@@ -1,0 +1,52 @@
+{
+  "name": "asset-central-poc",
+  "displayName": "Asset Central Foundation - Test & Demo",
+  "description": "Asset Central Foundation - Test & Demo",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "provisioning-admin",
+      "displayName": "Asset Central Foundation - Test & Demo",
+      "category": "SERVICE",
+      "description": "Asset Central Foundation - provisioning-admin",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "standard",
+      "displayName": "Asset Central Foundation - Test & Demo",
+      "category": "SERVICE",
+      "description": "Asset Central Foundation - Test & Demo",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005320",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007061",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007874",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

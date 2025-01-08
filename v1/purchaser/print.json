@@ -1,0 +1,141 @@
+{
+  "name": "print",
+  "displayName": "SAP Print service",
+  "description": "Print Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/lRepxyd_U70FZo8QF1iKcdn8NKMgEXXB89QxQlW2KKW210Ufgh14__Ela3wbhynB.svg",
+  "servicePlans": [
+    {
+      "name": "receiver",
+      "displayName": "receiver",
+      "category": "SERVICE",
+      "description": "Establish the connection to print clients",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8012184",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "sender",
+      "displayName": "sender",
+      "category": "SERVICE",
+      "description": "Provides all relevant APIs for developing application which need to enable print capacity",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008839",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8012184",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

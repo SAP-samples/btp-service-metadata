@@ -1,0 +1,49 @@
+{
+  "name": "ppservice-inbound",
+  "displayName": "Promotion Pricing, Data Upload",
+  "description": "Promotion Pricing, Data Upload",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/-q89S10w8_PnrqkBsRTAMEir29RZaHV3JZiWQiGectZzKwWCpXivNZFKUAxcasbz.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Default service plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8007699",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012253",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014286",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

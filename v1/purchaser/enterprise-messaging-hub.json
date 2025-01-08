@@ -1,0 +1,233 @@
+{
+  "name": "enterprise-messaging-hub",
+  "displayName": "SAP Event Mesh",
+  "description": "Event Mesh",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM1MDdfMzY1MzYpIj4KPHBhdGggZD0iTTYuNTkyMjIgMC4wOTQ3MjY2QzQuNDcwODYgMC4wOTQ3MjY2IDIuOTYzNjMgMS44MjM3MyAyLjcxMjUyIDMuNjI4ODNDMi4wMzAxMyAzLjY2OTUgMS40Mjc1OCAzLjkyNjI3IDAuOTU5NjAyIDQuMzU3NTdDMC4zMjY1MDMgNC45NDEwNSAtMC4wMDA0ODgyODEgNS43ODc5NiAtMC4wMDA0ODgyODEgNi42ODEwOEMtMC4wMDA0ODgyODEgNy41MTEwOSAwLjI1MDk2OSA4LjI5NTYzIDAuODE1NTAzIDguODc1NjhDMS4zODM4NSA5LjQ1OTY0IDIuMTkwNzMgOS43NTU0NSAzLjE0MDc5IDkuNzU1NDVINC45NDgyOVY4LjY2ODdDNC45NDgyOSA3LjYxODU5IDUuNzk0NTcgNi43NTI1NyA2Ljg1NjYxIDYuNzUyNTdDNy42ODU3MyA2Ljc1MjU3IDguNDEzOCA3LjI4ODY1IDguNjY5NjQgOC4wNzA3NEw4LjcwOTk3IDguMTk0MDNMOC43NDcyIDguMDc3N0M4Ljk5ODUxIDcuMjkyNTQgOS43MjY4MiA2Ljc1MjU3IDEwLjU1NzYgNi43NTI1N0MxMS41NzY3IDYuNzUyNTcgMTIuMzk2NSA3LjU1MjkxIDEyLjQ1NTcgOC41NDY2MUMxMi45OTUzIDcuOTMwOTcgMTMuMzMyNiA3LjEwMTg3IDEzLjMzMjYgNi4xMDcxNUMxMy4zMzI2IDQuMTMxMTEgMTEuOTIyMSAyLjYxMjU2IDEwLjIyNDEgMi40NTE5NUM5LjU0MzM4IDEuMDQyNjIgOC4yNzk4NyAwLjA5NDcyNjYgNi41OTIyMiAwLjA5NDcyNjZaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMzUwN18zNjUzNikiLz4KPHBhdGggZD0iTTEzLjQ4ODMgMTMuODY2M0MxMy4yNTM5IDE0LjEwNDcgMTMuMDIyMyAxNC40NzQzIDEzLjI1NjcgMTQuNzEyN0MxMy40OTExIDE0Ljk1MTEgMTMuNzU3MSAxNC45Njc4IDEzLjk5MTUgMTQuNzI5NEwxNS43OTEyIDEyLjg5ODlDMTYuMDI1NiAxMi42NjA1IDE2LjAyNTYgMTIuMjc0MyAxNS43OTEyIDEyLjAzNTlMMTMuOTkxNSAxMC4yMDU0QzEzLjc1NzEgOS45NjY5OCAxMy40ODE3IDkuODY3NzIgMTMuMjQ3MyAxMC4xMDYxQzEyLjk1NDEgMTAuMzM1IDEzLjM2MjIgMTAuODMgMTMuNTk2NiAxMS4wNjg1TDE0LjI2ODUgMTEuODcwNkwxMC41Njg3IDExLjg3NDNMMTAuNTY4NSAxMi4zNDkxQzEwLjU2ODMgMTIuNjc2NSAxMC44MzE2IDEyLjk0MTggMTEuMTU2MiAxMi45NDE1TDE0LjMzNDcgMTIuOTM4MUwxMy40ODgzIDEzLjg2NjNaIiBmaWxsPSJ1cmwoI3BhaW50MV9saW5lYXJfMzUwN18zNjUzNikiLz4KPHBhdGggZD0iTTYuMDE2MTEgOC43MTkzMUM2LjAxNjExIDguMjExNjIgNi40MjQxNyA3LjgwMDA1IDYuOTI3NTIgNy44MDAwNUM3LjMyMDg0IDcuODAwMDUgNy42Njk4IDguMDU0NTQgNy43OTMwNCA4LjQzMTI4TDguNTQwNTQgMTAuNzE2M0M4LjU4MjEzIDEwLjg0MjEgOC42MzEwNSAxMS4wMTg1IDguNjg3MzEgMTEuMjQ1NUM4Ljc0MzU3IDExLjQ3MjUgOC43ODAyNyAxMS42MjMgOC43OTczOSAxMS42OTdDOC44MTY5NiAxMS42MjMgOC44NTYxIDExLjQ3NSA4LjkxNDggMTEuMjUyOUM4Ljk3NTk2IDExLjAyODQgOS4wMjczMyAxMC44NTU3IDkuMDY4OTEgMTAuNzM0OEw5LjgwNTkzIDguNDMyMTJDOS45MjY1MSA4LjA1NTM3IDEwLjI3NDIgNy44MDAwNSAxMC42NjY4IDcuODAwMDVDMTEuMTY2MyA3LjgwMDA1IDExLjU3MTMgOC4yMDg1MyAxMS41NzEzIDguNzEyNDFWMTEuODczM0wxMC41Njg3IDExLjg3NDNMMTAuNTY5NiA5Ljg1NDAyQzEwLjU2OTYgOS41ODc1NiAxMC41NzU3IDkuMzM1OSAxMC41ODggOS4wOTkwNEMxMC42MDI2IDguODYyMTkgMTAuNTk2NiA4Ljc2ODAxIDEwLjYxIDguNzI1MjZDMTAuNjA3NSA4LjcyNzczIDEwLjU4MzEgOC44MTQwOCAxMC41MzY2IDguOTg0MzJDMTAuNTEyMSA5LjA2NTc0IDEwLjQ2MDggOS4yNDA5MSAxMC4zODI1IDkuNTA5ODRDMTAuMzA2NyA5Ljc3ODc3IDEwLjI0NjcgOS45NzczOCAxMC4yMDI3IDEwLjEwNTdMOS4zNzQyMiAxMi41OTM1QzkuMjkwNDYgMTIuODQ1MSA5LjA1Njc5IDEzLjAxNDUgOC43OTM3MiAxMy4wMTQ1QzguNTMwNjUgMTMuMDE0NSA4LjI5Njk4IDEyLjg0NTEgOC4yMTMyMiAxMi41OTM1TDcuMzg0NzQgMTAuMTA1N0M3LjMzMzM3IDkuOTU1MTcgNy4yNTk5OCA5LjcxOTU1IDcuMTY0NTggOS4zOTg4MUM3LjA3MTYzIDkuMDc1NjEgNy4wMDY4IDguODUxMDkgNi45NzAxMSA4LjcyNTI2TDYuOTc3NDUgOC44MzI1OEM2Ljk3OTkgOC44NzIwNiA2Ljk4NzI0IDkuMDExNDYgNi45OTk0NyA5LjI1MDc4QzcuMDExNyA5LjQ4NzYzIDcuMDE3ODEgOS42ODg3MSA3LjAxNzgxIDkuODU0MDJWMTIuNTA5NEM3LjAxNzgxIDEyLjc4ODQgNi43OTM1NyAxMy4wMTQ1IDYuNTE2OTYgMTMuMDE0NUM2LjI0MDM1IDEzLjAxNDUgNi4wMTYxMSAxMi43ODg0IDYuMDE2MTEgMTIuNTA5NFY4LjcxOTMxWiIgZmlsbD0idXJsKCNwYWludDJfbGluZWFyXzM1MDdfMzY1MzYpIi8+CjwvZz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8zNTA3XzM2NTM2IiB4MT0iMS45OTgxOSIgeTE9IjEuNTM5NDMiIHgyPSI4LjQyNTM5IiB5Mj0iMTAuNDEyOSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDE5NUZGIi8+CjxzdG9wIG9mZnNldD0iMC45OTEwMjgiIHN0b3AtY29sb3I9IiMxMTQ3RTkiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzM1MDdfMzY1MzYiIHgxPSI3LjQ4NzI4IiB5MT0iOC44NDQ2MiIgeDI9IjEyLjE3OTQiIHkyPSIxNS40NDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDJfbGluZWFyXzM1MDdfMzY1MzYiIHgxPSI3LjQ4NzI4IiB5MT0iOC44NDQ2MiIgeDI9IjEyLjE3OTQiIHkyPSIxNS40NDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zNTA3XzM2NTM2Ij4KPHJlY3Qgd2lkdGg9IjE1Ljk5OTYiIGhlaWdodD0iMTYiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDA0ODgyODEpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "Event Mesh - standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005999",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005999",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008712",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008807",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008807",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009206",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009206",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011164",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011728",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012342",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012666",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013903",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015592",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018912",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018913",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

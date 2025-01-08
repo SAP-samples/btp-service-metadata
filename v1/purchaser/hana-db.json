@@ -1,0 +1,4275 @@
+{
+  "name": "hana-db",
+  "displayName": "SAP HANA service for SAP BTP",
+  "description": "SAP HANA Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/HJA77oskIk2FWo7JZp00MnAJLJl9PMS_z-BrD4v4pwJ6QxcveRZSL588rkDv7YD7.svg",
+  "servicePlans": [
+    {
+      "name": "1024premium",
+      "displayName": "HANA 1TB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 1TB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000885",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002089",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002094",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003391",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003489",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003494",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003953",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "1024standard",
+      "displayName": "HANA 1TB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 1TB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001027",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002079",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002084",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003381",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003479",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003484",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "128premium",
+      "displayName": "HANA 128GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 128GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000882",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002075",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002086",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002091",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003388",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003486",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003948",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003950",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004745",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004746",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005443",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007736",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007737",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "128standard",
+      "displayName": "HANA 128GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 128GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002076",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002081",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003378",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003476",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003481",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003949",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "2048premium",
+      "displayName": "HANA 2TB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 2TB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "2048standard",
+      "displayName": "HANA 2TB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 2TB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "256premium",
+      "displayName": "HANA 256GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 256GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000888",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002087",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002092",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003389",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003487",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003492",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003953",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "256standard",
+      "displayName": "HANA 256GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 256GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001025",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002077",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002082",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003379",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003477",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003482",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "3072premium",
+      "displayName": "HANA 3TB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 3TB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "3072standard",
+      "displayName": "HANA 3TB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 3TB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "32premium",
+      "displayName": "HANA 32GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 32GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8001020",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002709",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003548",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003633",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003634",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003948",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003950",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003953",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "32standard",
+      "displayName": "HANA 32GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 32GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002075",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003547",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003631",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003949",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004130",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004745",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004745",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004746",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007736",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007737",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007738",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "512premium",
+      "displayName": "HANA 512GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 512GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002088",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002093",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003390",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003488",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003493",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003953",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "512standard",
+      "displayName": "HANA 512GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 512GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001026",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002078",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002083",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003380",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003478",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003483",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "64premium",
+      "displayName": "HANA 64GB Premium edition",
+      "category": "SERVICE",
+      "description": "HANA 64GB Premium edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000881",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001021",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001021",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002075",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002075",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002710",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003485",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003545",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003948",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003950",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003953",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004131",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004745",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004746",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007736",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007737",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "64standard",
+      "displayName": "HANA 64GB Standard edition",
+      "category": "SERVICE",
+      "description": "HANA 64GB Standard edition",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "neo-ae1",
+          "name": "neo-ae1"
+        },
+        {
+          "region": "neo-ap1",
+          "name": "neo-ap1"
+        },
+        {
+          "region": "neo-br1",
+          "name": "neo-br1"
+        },
+        {
+          "region": "neo-ca1",
+          "name": "neo-ca1"
+        },
+        {
+          "region": "neo-cn1",
+          "name": "neo-cn1"
+        },
+        {
+          "region": "neo-eu1",
+          "name": "neo-eu1"
+        },
+        {
+          "region": "neo-eu2",
+          "name": "neo-eu2"
+        },
+        {
+          "region": "neo-eu3",
+          "name": "neo-eu3"
+        },
+        {
+          "region": "neo-jp1",
+          "name": "neo-jp1"
+        },
+        {
+          "region": "neo-sa1",
+          "name": "neo-sa1"
+        },
+        {
+          "region": "neo-us1",
+          "name": "neo-us1"
+        },
+        {
+          "region": "neo-us2",
+          "name": "neo-us2"
+        },
+        {
+          "region": "neo-us3",
+          "name": "neo-us3"
+        },
+        {
+          "region": "neo-us4",
+          "name": "neo-us4"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001023",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002075",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003475",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003949",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004745",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004746",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004746",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007736",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007736",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007737",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007737",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "enterprise",
+      "displayName": "SAP HANA Service",
+      "category": "SERVICE",
+      "description": "SAP HANA Service",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8006072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006073",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006073",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006085",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006086",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006094",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006095",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006096",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006097",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006098",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006099",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006193",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "SAP HANA Service",
+      "category": "SERVICE",
+      "description": "SAP HANA Service",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8006072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006073",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006085",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006086",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006094",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006095",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006096",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006097",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006098",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006099",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

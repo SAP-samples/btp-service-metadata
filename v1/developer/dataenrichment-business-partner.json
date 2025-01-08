@@ -1,0 +1,98 @@
+{
+  "name": "dataenrichment-business-partner",
+  "displayName": "Data Enrichment Service",
+  "description": "Data Enrichment Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/tfcHi0wkHapbs-6UoMiDcH0YCU88XgGaObq1gFxo_55bPIm9ytDEpT7eRr-wV8fm.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/2019/10/22/industrialize-your-use-of-third-party-data-with-sap-s4hana-cloud-for-data-enrichment/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Industrialize Your Use of Third Party Data with SAP Data Enrichment service"
+    },
+    {
+      "value": "https://blogs.sap.com/2019/12/26/try-out-sap-cloud-platform-data-enrichment-for-free/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Try out SAP Data Enrichment service for Free"
+    },
+    {
+      "value": "https://help.sap.com/doc/ffa27d7844f84f86b6af40b3f73a7ee6/latest/en-US/loiob0ae78ea148b445989d87f062fa39602_b0ae78ea148b445989d87f062fa39602.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/b2e912080b9c48b3a7066d59acc9f0d9/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/c97f1890387147679ab6a8cbf8276cf8/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Data Enrichment service?"
+    },
+    {
+      "value": "https://help.sap.com/viewer/dfcc98cbbcab4c109e17832fdad7bd3d/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/e6d9a574e3ae4c30b64a4b8246b3d7e6/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/viewer/e6d9a574e3ae4c30b64a4b8246b3d7e6/latest/en-US/ea1bb6c3f1ba440aa5bf92ef2e64d958.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/Cloud_Platform_Data_Enrichment/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Plan for usage of business partner data from external data providers.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

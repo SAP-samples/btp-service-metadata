@@ -1,0 +1,49 @@
+{
+  "name": "greentoken-api",
+  "displayName": "SAP Green Token",
+  "description": "SAP Green Token",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/vsknY_Dvw5krNTrQQLl6kaakCmvkHbO01GtOFVVf2wg9fBTvXD-MD3YPTHANM-fZ.svg",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Provides API access to the SAP Green Token application.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8014261",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017082",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017082",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018081",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018605",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

@@ -1,0 +1,44 @@
+{
+  "name": "tpi-service-prod",
+  "displayName": "SAP Trading Platform Integration",
+  "description": "SAP Trading Platform Integration",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zH6dxpzHRe4ZXSBpOsOyrx2s4qiO6ezU4GP463KtCWvBs4wW89Ps0pIHZ5aMvdCg.svg",
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/TRADING_PLATFORM_INTEGRATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "In addition to the Application Plan for SAP Trading Platform Integration, the Service Plan manages the access to the APIs used by the trading platform(s), other 3rd party component(s) or the connected backend.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

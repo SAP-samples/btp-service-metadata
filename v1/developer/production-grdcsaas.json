@@ -1,0 +1,70 @@
+{
+  "name": "production-grdcsaas",
+  "displayName": "SAP Group Reporting Data Collection",
+  "description": "Provide entry gate for all non S/4 data required for group closing purposes: manual data collection for financials and non financials, structured, semi-structured data, text.",
+  "icon": "Icon too big. Service owner needs to reduce size.",
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_Group_Reporting_Data_Collection/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "Application plan.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "tandd",
+      "displayName": "Test and Demo",
+      "category": "APPLICATION",
+      "description": "Provide entry gate for all non S/4 data required for group closing purposes : data collection for financials and non financials, structured, semi-structured data, text.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

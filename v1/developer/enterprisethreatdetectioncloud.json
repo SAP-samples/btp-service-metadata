@@ -1,0 +1,54 @@
+{
+  "name": "EnterpriseThreatDetectionCloud",
+  "displayName": "SAP Enterprise Threat Detection, Cloud Edition",
+  "description": "SAP Enterprise Threat Detection, Cloud Edition",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic2FwLWVudGVycHJpc2UtdGhyZWF0LWRldGVjdGlvbi1jbG91ZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48dGl0bGU+bW9uaXRvcmluZy1zZXJ2aWNlPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01MS4yLDcuOEEzLjMsMy4zLDAsMCwwLDQ5LDdIN2EzLjIyNywzLjIyNywwLDAsMC0yLjEuOEEyLjk0LDIuOTQsMCwwLDAsNCwxMFY0MGEyLjg3OCwyLjg3OCwwLDAsMCwuOSwyLjFBMi44NzgsMi44NzgsMCwwLDAsNyw0M0g0OWEyLjk0LDIuOTQsMCwwLDAsMi4yLS45QTIuNzgyLDIuNzgyLDAsMCwwLDUyLDQwVjEwQTMuMywzLjMsMCwwLDAsNTEuMiw3LjhaTTQ5LDQwSDdWMjYuN2g3LjlhLjYuNiwwLDAsMCwuNi0uM2wyLTIuNiwyLjksNy43YS42ODguNjg4LDAsMCwwLC44LjUuNjY5LjY2OSwwLDAsMCwuNy0uNkwyNS43LDE3bDMuNSwyMC4xYS44NDkuODQ5LDAsMCwwLC44LjdoMGEuODcxLjg3MSwwLDAsMCwuOC0uNmwzLjktMTYuN0wzNywyNi4xYS43OTIuNzkyLDAsMCwwLC44LjVINDlabTAtMTUuMUgzOC41bC0zLjEtNy41YS44OTEuODkxLDAsMCwwLS44LS41Ljc0OS43NDksMCwwLDAtLjcuNkwzMC4zLDMyLjksMjYuOCwxM2EuOTY5Ljk2OSwwLDAsMC0uOC0uNy44MzguODM4LDAsMCwwLS44LjZMMjEuMSwyOC40bC0yLjUtNi43YS43MzguNzM4LDAsMCwwLS42LS41LDEuMTM1LDEuMTM1LDAsMCwwLS44LjNMMTQuNSwyNUg3VjEwSDQ5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTM4LjUsMjQuOWwtMy4xLTcuNWEuODkxLjg5MSwwLDAsMC0uOC0uNS43NDkuNzQ5LDAsMCwwLS43LjZMMzAuMywzMi45LDI2LjgsMTNhLjk2OS45NjksMCwwLDAtLjgtLjcuODM4LjgzOCwwLDAsMC0uOC42TDIxLjEsMjguNGwtMi41LTYuN2EuNzM4LjczOCwwLDAsMC0uNi0uNSwxLjEzNSwxLjEzNSwwLDAsMC0uOC4zTDE0LjUsMjVIN3YxLjdoNy45YS42LjYsMCwwLDAsLjYtLjNsMi0yLjYsMi45LDcuN2EuNjg4LjY4OCwwLDAsMCwuOC41LjY2OS42NjksMCwwLDAsLjctLjZMMjUuNywxN2wzLjUsMjAuMWEuODQ5Ljg0OSwwLDAsMCwuOC43Ljg3MS44NzEsMCwwLDAsLjgtLjZsMy45LTE2LjdMMzcsMjYuMWEuNzkyLjc5MiwwLDAsMCwuOC41SDQ5VjI0LjlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzguNSw0NmgtMjFhMS4yODQsMS4yODQsMCwwLDAtMSwuNCwxLjQzMywxLjQzMywwLDAsMC0uNSwxLjEsMS4zODksMS4zODksMCwwLDAsLjUsMSwxLjU5MSwxLjU5MSwwLDAsMCwxLC41aDIxYTEuNjA2LDEuNjA2LDAsMCwwLDEuMS0uNSwxLjQzMywxLjQzMywwLDAsMCwuNC0xQTEuMzI2LDEuMzI2LDAsMCwwLDM4LjUsNDZaIi8+PC9zdmc+",
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_ENTERPRISE_THREAT_DETECTION_CLOUD_EDITION/SHIP/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "APPLICATION",
+      "description": "Standard functionality",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "demo",
+      "displayName": "demo",
+      "category": "APPLICATION",
+      "description": "Limited functionality for demonstration purposes only",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

@@ -1,0 +1,150 @@
+{
+  "name": "Excise-Tax-Service",
+  "displayName": "quick-start service for SAP Excise Tax Management",
+  "description": "SAP Excise Tax Management",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/YnA0Vk_eSBtxAq3h07o0F47Laj9so8tYueTZs3ODfL83CJL0rSpUObhqOXRniILC.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=quick-start%20service%20for%20SAP%20Excise%20Tax%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=quick-start%20service%20for%20SAP%20Excise%20Tax%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/7b815af40979400c89edbb0726e17500/SHIP/en-US/loio7b815af40979400c89edbb0726e17500.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/viewer/14d4836ce4ae4a2cb12de79dc593a87d/SHIP/en-US/d87bc47005784b67855e2640aa04feec.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/viewer/5025fc41540045c5bb8ecb10753c3733/SHIP/en-US/a1a4f150a98149348698400105384c49.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/61be3f7c46f6495c83f2d54772dd3607/SHIP/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Excise Tax Service"
+    },
+    {
+      "value": "https://help.sap.com/viewer/61be3f7c46f6495c83f2d54772dd3607/SHIP/en-US/0f01583bf84243f48cbd52aab7d4361a.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/EXCISE_TAX",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "emcsintegration",
+      "displayName": "emcsintegration",
+      "category": "SERVICE",
+      "description": "Service plan for providing read access to Business Partner and Material Master data. Additionally provides access to save ARC code",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "extend",
+      "displayName": "extend",
+      "category": "SERVICE",
+      "description": "The service plan is to read,extend and update excisetax data",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "readmasterdata",
+      "displayName": "readmasterdata",
+      "category": "SERVICE",
+      "description": "Service plan for providing read access to Business Partner and Material Master data",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "taxcalculation",
+      "displayName": "taxcalculation",
+      "category": "SERVICE",
+      "description": "Service plan for Excise Tax Calculation",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "transportdata",
+      "displayName": "transportdata",
+      "category": "SERVICE",
+      "description": "Manages data transfer between tenants",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

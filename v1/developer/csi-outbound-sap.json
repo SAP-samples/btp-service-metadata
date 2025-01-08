@@ -1,0 +1,108 @@
+{
+  "name": "csi-outbound-SAP",
+  "displayName": "Consumer Sales Intelligence Outbound",
+  "description": "Consumer Sales Intelligence Outbound",
+  "icon": null,
+  "links": [
+    {
+      "value": "https://api.sap.com/package/ConsumerSalesIntelligence/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Consumer Sales Intelligence | SAP API Business Hub"
+    },
+    {
+      "value": "https://help.sap.com/docs/CSI",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Consumer Sales Intelligence Outbound",
+      "category": "SERVICE",
+      "description": "Consumer Sales Intelligence Outbound",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": [
+    {
+      "name": "Inbound Processing - OData",
+      "url": "https://api.sap.com/api/InboundODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Store Inventory Information",
+      "url": "https://api.sap.com/api/InventoryVisibilityAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Store Inventory Information - OData",
+      "url": "https://api.sap.com/api/InventoryVisibilityMtarODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Outbound Processing - OData",
+      "url": "https://api.sap.com/api/OutboundODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Product Information",
+      "url": "https://api.sap.com/api/ProductsAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Product Information - OData",
+      "url": "https://api.sap.com/api/ProductsODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Site Information Data",
+      "url": "https://api.sap.com/api/SitesAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Site Information Data - OData",
+      "url": "https://api.sap.com/api/SitesODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Supplier Direct Inventory Data for Admin - OData",
+      "url": "https://api.sap.com/api/SupplierInsightInternalODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Supplier Direct Inventory Data - OData",
+      "url": "https://api.sap.com/api/SupplierInsightODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Transaction Log Collector",
+      "url": "https://api.sap.com/api/TLOGCollectorAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Transaction Log Collector - OData",
+      "url": "https://api.sap.com/api/TLOGCollectorODataAPI/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Transaction Log Receiver",
+      "url": "https://api.sap.com/api/TLOGReceiverAPI/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

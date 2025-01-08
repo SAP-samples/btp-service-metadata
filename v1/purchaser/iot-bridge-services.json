@@ -1,0 +1,33 @@
+{
+  "name": "iot-bridge-services",
+  "displayName": "SAP Leonardo IoT Bridge Services",
+  "description": "SAP Leonardo IoT Bridge Services",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "Leonardo IoT Bridge Services",
+      "category": "SERVICE",
+      "description": "Leonardo IoT Bridge Services",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005614",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005998",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

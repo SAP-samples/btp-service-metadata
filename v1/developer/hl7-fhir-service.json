@@ -1,0 +1,184 @@
+{
+  "name": "hl7-fhir-service",
+  "displayName": "SAP Health Data Services for FHIR",
+  "description": "SAP Health Data Services for FHIR",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/44c2gt0gWgCOY32CuB55ae_hbNugwQFwUHWzFIUZuCjmriW3C4izp2NOCPuBcs7l.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/APIHDSF/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Health Data Services for FHIR | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Health%20Data%20Services%20for%20FHIR",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Health%20Data%20Services%20for%20FHIR",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-health-data-services-for-fhir",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP Health Data Services for FHIR"
+    },
+    {
+      "value": "https://help.sap.com/doc/DRAFT/9131621bfaca4c10a6b671875e770b94/Production/en-US/44976ab478674b4f8914dddf4fa3313e.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR/4613ca2972b540168ab4e03bf72023d7/4921781396f64bbda7affaa11090a10e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR/4613ca2972b540168ab4e03bf72023d7/ed9982e6591b4278867f61195748f7f9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Administration Guide"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR/6ec9d8374f3f4add8033b945d0aa8a0e/4d26132d0e624729830faf17e2cb165c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security Guide"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR/f64d5f2b858042f791b64bdd4094df22/2fe94484269e487ea72a35befbe0a02b.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Troubleshooting"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR/f64d5f2b858042f791b64bdd4094df22/52ecf76401634de0b2271edcc94e8fbe.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Health Data Services for FHIR?"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR/f64d5f2b858042f791b64bdd4094df22/872ceb743a38498bb960b916de6cde5d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_HEALTH_DATA_SERVICES_FOR_FHIR?state=PRODUCTION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://blogs.sap.com/2023/06/20/how-to-use-the-hl7-fhir-rest-api-of-the-sap-health-data-services-for-fhir-beta/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "How to use the HL7 FHIR REST API of the SAP Health Data Services for FHIR"
+    },
+    {
+      "value": "https://community.sap.com/t5/tag/HL7/tg-p/",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "Blogs"
+    },
+    {
+      "value": "https://www.youtube.com/embed/rMvLKqIpGE8?si=c6rhW0hok1-AUfOw",
+      "classification": "External",
+      "type": "Link",
+      "text": "What is SAP Health Data Services for FHIR?"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Enables you to build interoperable applications that store, process, and exchange health data by leveraging the HL7\u00ae FHIR\u00ae standard.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Enables you to build interoperable applications that store, process, and exchange health data by leveraging the HL7\u00ae FHIR\u00ae standard.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "IS-HC-HDS"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Authorization Service",
+      "url": "https://api.sap.com/api/AuthorizationService/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Core Service",
+      "url": "https://api.sap.com/api/CoreService/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Integration Using FHIR Messaging",
+      "url": "https://api.sap.com/api/FHIRMessaging/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Packaging Service",
+      "url": "https://api.sap.com/api/FHIRPackage/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Conformance Service",
+      "url": "https://api.sap.com/api/MetaService/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Rules Service",
+      "url": "https://api.sap.com/api/RulesService/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Terminology Resources and Operations",
+      "url": "https://api.sap.com/api/TerminologyService/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

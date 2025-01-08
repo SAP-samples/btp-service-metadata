@@ -1,0 +1,268 @@
+{
+  "name": "xfs-runtime",
+  "displayName": "SAP BTP, serverless runtime",
+  "description": "Allows you to create, manage, and configure extensions on SAP Business Technology Platform and provides runtime access to OData services exposed by the OData Provisioning capability in SAP Integration Suite.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7YQE_MtaPbytsAoSGtVpszwnUCM1bxvhL6xU3-Mp5TRxXhfpxa7rz8aTVkERO0-o.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Default plan for productive usage",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008193",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008193",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008649",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008649",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008835",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008835",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008837",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011258",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "reuse",
+      "displayName": "reuse",
+      "category": "SERVICE",
+      "description": "This is a reuse plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    }
+  ],
+  "certifications": []
+}

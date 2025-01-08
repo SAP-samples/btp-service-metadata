@@ -1,0 +1,82 @@
+{
+  "name": "c4re-api",
+  "displayName": "SAP Cloud for Real Estate",
+  "description": "SAP Cloud for Real Estate, location management option",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/79MS2Ck3s3iGFKQ_FnjDPp8J0cnc-aZF8eOwce9qtdgPjf7H_8pcWoJRWYPbZIes.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPCloudforRealEstate/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Cloud for Real Estate | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cloud%20for%20Real%20Estate",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cloud%20for%20Real%20Estate",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CLOUD_FOR_REAL_ESTATE",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "read",
+      "displayName": "Readonly",
+      "category": "SERVICE",
+      "description": "Readonly access to C4RE business APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "readwrite",
+      "displayName": "Read & Write",
+      "category": "SERVICE",
+      "description": "Read and write access to C4RE business APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-RE"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Location Management",
+      "url": "https://api.sap.com/api/location_management_api/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

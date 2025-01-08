@@ -1,0 +1,29 @@
+{
+  "name": "people-insights-release",
+  "displayName": "SAP Work-Life Release",
+  "description": "SAP Work-Life Release",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "SAP Work-Life",
+      "category": "APPLICATION",
+      "description": "SAP Work-Life",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005689",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

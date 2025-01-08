@@ -1,0 +1,49 @@
+{
+  "name": "csi-inventory-SAP",
+  "displayName": "Consumer Sales Intelligence Inventory Visibility",
+  "description": "Consumer Sales Intelligence Inventory Visibility",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Consumer Sales Intelligence Inventory Visibility",
+      "category": "SERVICE",
+      "description": "Consumer Sales Intelligence Inventory Visibility",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8006991",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007918",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008167",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008372",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

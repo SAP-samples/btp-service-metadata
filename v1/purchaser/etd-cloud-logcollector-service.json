@@ -1,0 +1,61 @@
+{
+  "name": "etd-cloud-logcollector-service",
+  "displayName": "SAP Enterprise Threat Detection, Cloud Edition, Log Collector",
+  "description": "SAP Enterprise Threat Detection, Cloud Edition, Log Collector",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic2FwLWVudGVycHJpc2UtdGhyZWF0LWRldGVjdGlvbi1jbG91ZC1sb2ctY29sbGVjdG9yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NiA1NiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwYTZlY2Y7fS5jbHMtMntmaWxsOiMwMDNiNzQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE1LjcyOSwzMi4zNjRoMi43MjRhMi43MjksMi43MjksMCwwLDAsMi43MjctMi43MmwyLjcyOSwxLjA2djEuNjU4YTIuNjU2LDIuNjU2LDAsMCwwLC41MDgsMS41bC0zLjAyOSw0Yy0uMDczLS4wMDYtLjEzNS0uMDQyLS4yMDgtLjA0MkgxOC40NTdhMi43MjksMi43MjksMCwwLDAtMi43MywyLjcyOXYyLjcyNEEyLjcyOSwyLjcyOSwwLDAsMCwxOC40NTcsNDZIMjEuMThhMi43MjksMi43MjksMCwwLDAsMi43MjktMi43MjlWNDAuNTQ3YTIuNjc5LDIuNjc5LDAsMCwwLTEuMTg3LTIuMTkxbDIuNzA5LTMuNTc3YTIuNjY4LDIuNjY4LDAsMCwwLDEuMjA3LjMxMmgyLjcyNGEyLjY1MywyLjY1MywwLDAsMCwxLjM1NC0uNDExTDMyLjUsMzYuNDY2YTIuNjUzLDIuNjUzLDAsMCwwLS40MTEsMS4zNTR2Mi43MjNhMi43MjksMi43MjksMCwwLDAsMi43MjksMi43M2gyLjcyM2EyLjczLDIuNzMsMCwwLDAsMi43My0yLjczVjM3LjgyYTIuNzI5LDIuNzI5LDAsMCwwLTIuNzMtMi43MjlIMzQuODJhMi42NTMsMi42NTMsMCwwLDAtMS4zNTQuNDExTDMxLjY4LDMzLjcxNmEyLjY1MywyLjY1MywwLDAsMCwuNDExLTEuMzU0VjI5Ljc3bDMuMTI4LTEuNTI0YTIuNjkzLDIuNjkzLDAsMCwwLDIuMzI4LDEuMzloMi43MjRBMi43MjksMi43MjksMCwwLDAsNDMsMjYuOTA3VjI0LjE4NGEyLjcyOSwyLjcyOSwwLDAsMC0yLjcyOS0yLjcyOUgzNy41NDdhMi43MjksMi43MjksMCwwLDAtMi43MjksMi43Mjl2Mi43MjNsMCwuMDE2LTMuMDU2LDEuNDg4YTIuNzA3LDIuNzA3LDAsMCwwLTIuNC0xLjVIMjcuNzNsLTEuMDcyLTIuNzMyYTIuNzI3LDIuNzI3LDAsMCwwLDIuNzA2LTIuNzI0VjE4LjcyOUEyLjcyOSwyLjcyOSwwLDAsMCwyNi42MzQsMTZIMjMuOTExYTIuNzI5LDIuNzI5LDAsMCwwLTIuNzI5LDIuNzI5djIuNzI0YTIuNzI5LDIuNzI5LDAsMCwwLDIuNzI5LDIuNzI5SDI1LjJsMS4xLDIuNzkyYTIuNjgzLDIuNjgzLDAsMCwwLTIuMzA3LDIuM2wtMi44LTEuMDg4VjI2LjkxMWEyLjcyOSwyLjcyOSwwLDAsMC0yLjcyOS0yLjcyOUgxNS43MjlBMi43MjksMi43MjksMCwwLDAsMTMsMjYuOTExdjIuNzIzQTIuNzI5LDIuNzI5LDAsMCwwLDE1LjcyOSwzMi4zNjRaTTIxLjE4LDQzLjI3M0gxOC40NTdsMCwwLDAtMi43MjYsMi43MjUsMFptMTMuNjQtNS40NTUsMi43MjUsMCwwLDIuNzI1SDM0LjgybDAsMFptMi43MjctMTMuNjM2LDIuNzI2LDAsMCwyLjcyNUgzNy41NDdsMCwwWm0tOC4xODMsNS40NTYsMCwyLjcyNkgyNi42MzhsMCwwLDAtMi43MjZabS01LjQ1My04LjE4MywwLDAsMC0yLjcyNiwyLjcyNSwwLDAsMi43MjZabS04LjE4Miw1LjQ1NCwyLjcyNiwwLDAsMi43MjVIMTUuNzI5bDAsMFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00NS45ODksNDBINDN2M2gyLjk4OWwuMDExLjAxMUw0NS45ODksNDksMTAsNDguOTc3bC4wMTEtNS45ODhMMTMsNDNWNDBsLTIuOTg5LS4wMTFBMy4wMTEsMy4wMTEsMCwwLDAsNyw0M3Y1Ljk3N2EzLjAxMSwzLjAxMSwwLDAsMCwzLjAxMSwzLjAxMkw0NS45ODksNTJBMy4wMTEsMy4wMTEsMCwwLDAsNDksNDguOTg5VjQzLjAxMUEzLjAxMSwzLjAxMSwwLDAsMCw0NS45ODksNDBaIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSIzNyIgY3k9IjQ2IiByPSIxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjQxLjUiIGN5PSI0NiIgcj0iMS41Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDUuODQsMTYuOTYyYTguNDg5LDguNDg5LDAsMCwwLTEyLjc4My01LjcxM0ExMS4wMjIsMTEuMDIyLDAsMCwwLDIyLjQxLDRDMTAuMzQ2LDQsMTEuMDksMTYuOTg4LDExLjA5LDE2Ljk4OEExMC4yMjQsMTAuMjI0LDAsMCwwLDEzLDM2Ljg3MXYtM2E3LjI4NCw3LjI4NCwwLDAsMS02LTcuMTU1LDcuNDEsNy40MSwwLDAsMSw1LjAyNy02Ljg3N2wyLjI3OS0uNzY4LS4yMzItMi4zODlhOS4xMzIsOS4xMzIsMCwwLDEsMi4wMS03LjAxM0E3Ljc0NCw3Ljc0NCwwLDAsMSwyMi40NjUsN2E5LjIwOSw5LjIwOSwwLDAsMSw3Ljk5NCw1LjMzOWwxLjE3NiwyLjg3MSwyLjQyNC0xLjMxOEE3LjYsNy42LDAsMCwxLDM3LjQ0OSwxM2E1LjU0Niw1LjU0NiwwLDAsMSw1LjQ0Myw0LjUxOGwuMjg4LDEuNTI4LDEuNDE1LjY0NkE3LjQ4NCw3LjQ4NCwwLDAsMSw0MywzMy44NDh2M2ExMC40NTYsMTAuNDU2LDAsMCwwLDIuODQtMTkuODg3WiIvPjwvc3ZnPg==",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Standard functionality",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8010984",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013613",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014307",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015437",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "demo",
+      "displayName": "demo",
+      "category": "SERVICE",
+      "description": "Limited functionality for demonstration purposes only",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8018321",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

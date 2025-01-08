@@ -1,0 +1,79 @@
+{
+  "name": "cmh-service",
+  "displayName": "SAP Complaint Handling",
+  "description": "SAP Complaint Handling",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/VcOu9vMUlhJAA7fGmuNZrDlAhwgP4GXqkP_aNnMaWe2nrxFwiBt-AuFTcwezZ7Ot.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPComplaintHandling/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Complaint Handling | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Complaint%20Handling",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Complaint%20Handling",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_CMH/SHIP/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "api-access",
+      "displayName": "api-access",
+      "category": "SERVICE",
+      "description": "API Access Plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-DMO-CMH"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Customer Complaints",
+      "url": "https://api.sap.com/api/customercomplaint/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Master Data",
+      "url": "https://api.sap.com/api/masterdata/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Master Data Deletion",
+      "url": "https://api.sap.com/api/masterdatadeletion/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Supplier Complaints",
+      "url": "https://api.sap.com/api/suppliercomplaint/overview",
+      "apiType": "OData V2"
+    }
+  ]
+}

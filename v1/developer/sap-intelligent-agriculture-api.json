@@ -1,0 +1,66 @@
+{
+  "name": "sap-intelligent-agriculture-api",
+  "displayName": "SAP Intelligent Agriculture",
+  "description": "SAP Intelligent Agriculture",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ZqknK8ECOiRy248GVMG2y55ODf8Rzx2-5WXP8bRnUc12a29ss0u_5Wzbp5mUTTbA.png",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPIntelligentAgriculture/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Intelligent Agriculture | SAP API Business Hub"
+    },
+    {
+      "value": "https://help.sap.com/ia",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_INTELLIGENT_AGRICULTURE/2201/en-US?task=implement_task",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard plan to consume SAP Intelligent Agriculture APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-AG-FARM"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Season Service",
+      "url": "https://api.sap.com/api/SIA_Season/overview",
+      "apiType": "OData V2"
+    }
+  ]
+}

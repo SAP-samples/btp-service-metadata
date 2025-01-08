@@ -1,0 +1,1014 @@
+{
+  "name": "kafka",
+  "displayName": "Apache Kafka on SAP BTP",
+  "description": "Apache Kafka",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/vfRjHYiyuNX71Gadod_Lo5T5mjUo24DT9vCcUC9Sacq1KjfmQ7l6sNpS115krkdI.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=Apache%20Kafka%20on%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=Apache%20Kafka%20on%20SAP%20BTP",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/fe8f39bf9b0640fe8ae37031a85a8d96/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Technical Documentation: Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2a27e0b0dae8473d937b46a085202c4f/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Technical Documentation: What is Apache Kafka?"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/2a27e0b0dae8473d937b46a085202c4f/2294c9a0318e480ea86d0b2064ea5c4d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Technical Documentation: Getting Started"
+    },
+    {
+      "value": "https://help.sap.com/docs/CP_KAFKA",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Technical Documentation: Overview"
+    },
+    {
+      "value": "https://wiki.one.int.sap/wiki/display/HCPBD/Getting+Started+With+Kafka",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "dedicated",
+      "displayName": "dedicated",
+      "category": "SERVICE",
+      "description": "(Deprecated) Get access to an advertised Kafka cluster",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": true,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "reference",
+      "displayName": "reference",
+      "category": "SERVICE",
+      "description": "Get access to an advertised Kafka cluster.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "_controlsOrder": [
+                  "validity",
+                  "cert_format",
+                  "key_format",
+                  "key_size",
+                  "key_alg",
+                  "secret"
+                ],
+                "properties": {
+                  "validity": {
+                    "description": "The desired lifetime of the certificate",
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 365,
+                    "default": 90
+                  },
+                  "cert_format": {
+                    "description": "The desired output format for the certificate",
+                    "type": "string",
+                    "enum": [
+                      "PEM",
+                      "PKCS#7"
+                    ],
+                    "default": "PEM"
+                  },
+                  "key_format": {
+                    "description": "The desired output format for the private key",
+                    "type": "string",
+                    "enum": [
+                      "PKCS#8",
+                      "PKCS#12"
+                    ],
+                    "default": "PKCS#8"
+                  },
+                  "key_size": {
+                    "description": "The number of bits the private key shall have",
+                    "type": "integer",
+                    "minimum": 2048,
+                    "default": 2048
+                  },
+                  "key_alg": {
+                    "description": "The encryption algorithm to use for encrypting the private key",
+                    "type": "string",
+                    "enum": [
+                      "AES256",
+                      "AES192",
+                      "AES128",
+                      "3DES"
+                    ],
+                    "default": "AES256"
+                  },
+                  "secret": {
+                    "description": "The secret to use for encrypting the private key",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "shard",
+      "displayName": "shard",
+      "category": "SERVICE",
+      "description": "Get access to a shared Kafka cluster",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "properties": {
+                  "shard_plan": {
+                    "description": "Determines the quotas assigned to the shard like the number of topics and partitions",
+                    "type": "string",
+                    "enum": [
+                      "q1.very_small",
+                      "q1.small",
+                      "q1.medium",
+                      "q1.large",
+                      "q1.very_large"
+                    ],
+                    "default": "q1.medium"
+                  },
+                  "topics": {
+                    "description": "Comma-separated list of names or specifications of topics to create intially",
+                    "type": "string",
+                    "default": ""
+                  },
+                  "consumer_groups": {
+                    "description": "Comma-separated list of names of consumer group to create initially",
+                    "type": "string",
+                    "default": ""
+                  },
+                  "cluster_group": {
+                    "description": "Name of the cluster group where the cluster is chosen from to host the shard",
+                    "type": "string",
+                    "default": "default"
+                  }
+                }
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "_controlsOrder": [
+                  "validity",
+                  "cert_format",
+                  "key_format",
+                  "key_size",
+                  "key_alg",
+                  "secret"
+                ],
+                "properties": {
+                  "validity": {
+                    "description": "The desired lifetime of the certificate",
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 365,
+                    "default": 90
+                  },
+                  "cert_format": {
+                    "description": "The desired output format for the certificate",
+                    "type": "string",
+                    "enum": [
+                      "PEM",
+                      "PKCS#7"
+                    ],
+                    "default": "PEM"
+                  },
+                  "key_format": {
+                    "description": "The desired output format for the private key",
+                    "type": "string",
+                    "enum": [
+                      "PKCS#8",
+                      "PKCS#12"
+                    ],
+                    "default": "PKCS#8"
+                  },
+                  "key_size": {
+                    "description": "The number of bits the private key shall have",
+                    "type": "integer",
+                    "minimum": 2048,
+                    "default": 2048
+                  },
+                  "key_alg": {
+                    "description": "The encryption algorithm to use for encrypting the private key",
+                    "type": "string",
+                    "enum": [
+                      "AES256",
+                      "AES192",
+                      "AES128",
+                      "3DES"
+                    ],
+                    "default": "AES256"
+                  },
+                  "secret": {
+                    "description": "The secret to use for encrypting the private key",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Dedicated Kafka cluster with variable size.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "properties": {
+                  "dynatrace_enabled": {
+                    "description": "Flag to enable/disable Dynatrace monitoring for the service",
+                    "type": "boolean"
+                  },
+                  "dynatrace_environment_id": {
+                    "description": "Identifier for the Dynatrace environment the service will report to",
+                    "type": "string"
+                  },
+                  "dynatrace_api_token": {
+                    "description": "API token for the Dynatrace environment the service will report to",
+                    "type": "string"
+                  },
+                  "dynatrace_api_url": {
+                    "description": "API URL for the Dynatrace environment the service will report to",
+                    "type": "string"
+                  },
+                  "number_of_brokers": {
+                    "description": "Number of Kafka brokers. Valid range is between 3 and 100 brokers.",
+                    "type": "integer",
+                    "default": 3
+                  },
+                  "disk_per_broker": {
+                    "description": "Disk size in GBs for each broker in the cluster. Valid input format is <size-in-GBs>G.",
+                    "type": "string",
+                    "default": "500G"
+                  },
+                  "cores_per_broker": {
+                    "description": "Number of cores for each broker",
+                    "type": "integer",
+                    "default": 2
+                  },
+                  "allowed_spark_clusters": {
+                    "description": "Names of Spark clusters allowed to access this cluster",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "default": []
+                  },
+                  "message_max_bytes": {
+                    "description": "The largest record batch size allowed by Kafka. Valid range is 1 to 10 MB with format <size-in-unit>[unit], e.g. 1000k.",
+                    "type": "string",
+                    "default": "1048588"
+                  },
+                  "auto_create_topics_enable": {
+                    "description": "Enable auto creation of topics on the Kafka cluster",
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "delete_topic_enable": {
+                    "description": "Enable deletion of topics on the Kafka cluster",
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "topics": {
+                    "description": "Comma-separated list of names or specifications of topics to create intially",
+                    "type": "string",
+                    "default": ""
+                  },
+                  "min_insync_replicas": {
+                    "description": "The minimum number of replicas that must acknowledge a write",
+                    "type": "integer",
+                    "default": 2
+                  },
+                  "log_retention_hours": {
+                    "description": "How long messages should be persisted in hours",
+                    "type": "integer",
+                    "default": 168
+                  },
+                  "public_ip": {
+                    "description": "Flag to enable/disable a public endpoint for the cluster",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "allow_access": {
+                    "description": "IP addresses, CIDR ranges and domains to give access to the public endpoint",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "default": []
+                  },
+                  "enable_kafka_connect": {
+                    "description": "Flag to enable/disable Kafka Connect on the cluster",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "stack": {
+                    "description": "Resource manager used to provision clusters",
+                    "type": "string"
+                  },
+                  "broker_bind_mode": {
+                    "description": "Mode used to provision service bindings, either sync or async",
+                    "type": "string",
+                    "enum": [
+                      "sync",
+                      "async"
+                    ]
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "_show_form_view": false,
+                "_load_current_config": true,
+                "properties": {
+                  "dynatrace_enabled": {
+                    "description": "Flag to enable/disable Dynatrace monitoring for the service",
+                    "type": "boolean"
+                  },
+                  "dynatrace_environment_id": {
+                    "description": "Identifier for the Dynatrace environment the service will report to",
+                    "type": "string"
+                  },
+                  "dynatrace_api_token": {
+                    "description": "API token for the Dynatrace environment the service will report to",
+                    "type": "string"
+                  },
+                  "dynatrace_api_url": {
+                    "description": "API URL for the Dynatrace environment the service will report to",
+                    "type": "string"
+                  },
+                  "number_of_brokers": {
+                    "description": "Number of Kafka brokers. Valid range is between 3 and 100 brokers.",
+                    "type": "integer"
+                  },
+                  "disk_per_broker": {
+                    "description": "Disk size in GBs for each broker in the cluster. Valid input format is <size-in-GBs>G.",
+                    "type": "string"
+                  },
+                  "cores_per_broker": {
+                    "description": "Number of cores for each broker",
+                    "type": "integer"
+                  },
+                  "allowed_spark_clusters": {
+                    "description": "Names of Spark clusters allowed to access this cluster",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "message_max_bytes": {
+                    "description": "The largest record batch size allowed by Kafka. Valid range is 1 to 10 MB with format <size-in-unit>[unit], e.g. 1000k.",
+                    "type": "string"
+                  },
+                  "auto_create_topics_enable": {
+                    "description": "Enable auto creation of topics on the Kafka cluster",
+                    "type": "boolean"
+                  },
+                  "delete_topic_enable": {
+                    "description": "Enable deletion of topics on the Kafka cluster",
+                    "type": "boolean"
+                  },
+                  "min_insync_replicas": {
+                    "description": "The minimum number of replicas that must acknowledge a write",
+                    "type": "integer"
+                  },
+                  "log_retention_hours": {
+                    "description": "How long messages should be persisted in hours",
+                    "type": "integer"
+                  },
+                  "public_ip": {
+                    "description": "Flag to enable/disable a public endpoint for the cluster",
+                    "type": "boolean"
+                  },
+                  "allow_access": {
+                    "description": "IP addresses, CIDR ranges and domains to give access to the public endpoint",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "enable_kafka_connect": {
+                    "description": "Flag to enable/disable Kafka Connect on the cluster",
+                    "type": "boolean"
+                  },
+                  "broker_bind_mode": {
+                    "description": "Mode used to provision service bindings, either sync or async",
+                    "type": "string",
+                    "enum": [
+                      "sync",
+                      "async"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "_controlsOrder": [
+                  "validity",
+                  "cert_format",
+                  "key_format",
+                  "key_size",
+                  "key_alg",
+                  "secret"
+                ],
+                "properties": {
+                  "validity": {
+                    "description": "The desired lifetime of the certificate",
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 365,
+                    "default": 90
+                  },
+                  "cert_format": {
+                    "description": "The desired output format for the certificate",
+                    "type": "string",
+                    "enum": [
+                      "PEM",
+                      "PKCS#7"
+                    ],
+                    "default": "PEM"
+                  },
+                  "key_format": {
+                    "description": "The desired output format for the private key",
+                    "type": "string",
+                    "enum": [
+                      "PKCS#8",
+                      "PKCS#12"
+                    ],
+                    "default": "PKCS#8"
+                  },
+                  "key_size": {
+                    "description": "The number of bits the private key shall have",
+                    "type": "integer",
+                    "minimum": 2048,
+                    "default": 2048
+                  },
+                  "key_alg": {
+                    "description": "The encryption algorithm to use for encrypting the private key",
+                    "type": "string",
+                    "enum": [
+                      "AES256",
+                      "AES192",
+                      "AES128",
+                      "3DES"
+                    ],
+                    "default": "AES256"
+                  },
+                  "secret": {
+                    "description": "The secret to use for encrypting the private key",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

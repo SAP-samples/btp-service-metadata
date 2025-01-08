@@ -1,0 +1,57 @@
+{
+  "name": "c4-distributed-order-management",
+  "displayName": "SAP Order Management foundation",
+  "description": "SAP Order Management Foundation",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/5ka_XK0Oe038LeC5pEWCtwoI35yGtDwDhoZTyuf7LoEMvabM2tFGEFgVv-bvzOW5.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Receive orders for physical and subscription products from multiple channels. The APIs provide basic order management functionality along with business configuration settings.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8011496",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011496",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014311",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "tandd",
+      "displayName": "tandd",
+      "category": "SERVICE",
+      "description": "Receive orders for physical and subscription products from multiple channels. The APIs provide basic order management functionality along with business configuration settings. The plan is intended to be used for Test, Demo & Development purposes for partners.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8015915",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

@@ -1,0 +1,611 @@
+{
+  "name": "sdm",
+  "displayName": "Document Management Service, Integration Option",
+  "description": "Document Management Service, Integration Option",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/0hcsYwZJnGw63M8x7hWdRQfXZKqb_kTNG19cd1RRyhjn7aF2eQEK1GBPHITUzaqy.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPDocumentManagementServiceIntegrationOption/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Document Management Service, Integration Option | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPDocumentManagementServiceIntegrationOptionCMISAPI/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Document Management Service, Integration Option - CMIS | SAP API Business Hub"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/document-management-service-integration-option",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Document Management Service, Integration Option"
+    },
+    {
+      "value": "https://help.sap.com/doc/4551b91432244b9586798187207100a7/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/DOCUMENT_MANAGEMENT/f6e70dd4bffa4b65965b43feed4c9429/8a33bf75776849cfa06feecb22aba9d6.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Monitoring and Troubleshooting"
+    },
+    {
+      "value": "https://help.sap.com/docs/DOCUMENT_MANAGEMENT/f6e70dd4bffa4b65965b43feed4c9429/bc0f1ec7d5374b968e0b0de6db470c94.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/docs/DOCUMENT_MANAGEMENT/f6e70dd4bffa4b65965b43feed4c9429/bfbb1cd940f24302bdd9d8f82f660a14.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security Guide"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPDocumentManagementServiceIntegrationOption/rest",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=all&mt=73555000100800002121&q=sap%20document%20management%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "Blog"
+    },
+    {
+      "value": "https://help.sap.com/viewer/f6e70dd4bffa4b65965b43feed4c9429/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Document Management"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f6e70dd4bffa4b65965b43feed4c9429/24382e5628cf4607816e1120e1db98f2.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Manage Document Management, integration"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f6e70dd4bffa4b65965b43feed4c9429/27e742e062924d72a9f1cb94a8c8346c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f6e70dd4bffa4b65965b43feed4c9429/bc0f1ec7d5374b968e0b0de6db470c94.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f6e70dd4bffa4b65965b43feed4c9429/c54fa8c2b5164dc2ae636e44fe92cacd.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f6e70dd4bffa4b65965b43feed4c9429/d30200e0993a457888db2786d4bb5cd9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Consume Document Management, repository"
+    },
+    {
+      "value": "https://help.sap.com/docs/DOCUMENT_MANAGEMENT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.youtube.com/embed/AwFlRaEmUvo",
+      "classification": "External",
+      "type": "Link",
+      "text": "Know about Document Management in less than 3 minutes"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "build-code",
+      "displayName": "build-code",
+      "category": "SERVICE",
+      "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric. For build-code plan, API calls shall be calculated in blocks of 1000.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Storage in 1 GB Block. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Storage in 100 GB Blocks.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-CP-CF-SDM"
+    },
+    {
+      "value": "BC-CP-CF-SDM-INT"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Add Access Control Entries",
+      "url": "https://api.sap.com/api/AddAclPropertyApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Administrative Operations",
+      "url": "https://api.sap.com/api/AdminAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Append Content Stream",
+      "url": "https://api.sap.com/api/AppendContentStreamApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "CMIS Query",
+      "url": "https://api.sap.com/api/CMISQueryApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Cancel Check Out Document",
+      "url": "https://api.sap.com/api/CancelCheckOutDocumentApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Check In Document",
+      "url": "https://api.sap.com/api/CheckInDocumentApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Check Out Document",
+      "url": "https://api.sap.com/api/CheckOutDocumentApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Create Document",
+      "url": "https://api.sap.com/api/CreateDocumentApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Create Document from Source",
+      "url": "https://api.sap.com/api/CreateDocumentFromSourceApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Create Favorite",
+      "url": "https://api.sap.com/api/CreateFavoriteApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Create Folder",
+      "url": "https://api.sap.com/api/CreateFolderApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Create Link",
+      "url": "https://api.sap.com/api/CreateLinkApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Create Secondary Type",
+      "url": "https://api.sap.com/api/CreateSecondaryTypeApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Create Share",
+      "url": "https://api.sap.com/api/CreateShareApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Delete Object",
+      "url": "https://api.sap.com/api/DeleteObjectApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Permanently Remove the Object",
+      "url": "https://api.sap.com/api/DeletePermanentlyApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Delete Tree",
+      "url": "https://api.sap.com/api/DeleteTreeApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Download a File",
+      "url": "https://api.sap.com/api/DownloadFileApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Generate Thumbnail",
+      "url": "https://api.sap.com/api/GenerateThumbnailApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Access Control List",
+      "url": "https://api.sap.com/api/GetAclPropertyApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Allowable Actions",
+      "url": "https://api.sap.com/api/GetAllowableActionsApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Children",
+      "url": "https://api.sap.com/api/GetChildrenApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Deleted Children",
+      "url": "https://api.sap.com/api/GetDeletedChildrenApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Descendants",
+      "url": "https://api.sap.com/api/GetDescendantsApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Folder Tree",
+      "url": "https://api.sap.com/api/GetFolderTreeApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Object",
+      "url": "https://api.sap.com/api/GetObjectApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Parent",
+      "url": "https://api.sap.com/api/GetParentApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Properties",
+      "url": "https://api.sap.com/api/GetPropertiesApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Type Children",
+      "url": "https://api.sap.com/api/GetTypeChildrenApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Type Definition",
+      "url": "https://api.sap.com/api/GetTypeDefinitionApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Get Type Descendants",
+      "url": "https://api.sap.com/api/GetTypeDescendantsApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "ZIP Content Download",
+      "url": "https://api.sap.com/api/GetZipContentStream/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Zip Extract and Upload",
+      "url": "https://api.sap.com/api/MassUploadApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Migration Operations",
+      "url": "https://api.sap.com/api/MigrationAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Move Object",
+      "url": "https://api.sap.com/api/MoveObjectApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Remove Access Control Entries",
+      "url": "https://api.sap.com/api/RemoveAclPropertyApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Restore Object",
+      "url": "https://api.sap.com/api/RestoreObjectApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Fetch Repository",
+      "url": "https://api.sap.com/api/ServiceApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Update Folder, Document, Link Object",
+      "url": "https://api.sap.com/api/UpdateFolder_Document_LinkApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Update Properties",
+      "url": "https://api.sap.com/api/UpdatePropertiesApi/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "ZIP Content Creation",
+      "url": "https://api.sap.com/api/ZipCreationForDownload/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

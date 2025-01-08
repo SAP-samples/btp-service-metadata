@@ -1,0 +1,694 @@
+{
+  "name": "analytics-planning-osb",
+  "displayName": "SAP Analytics Cloud",
+  "description": "Get the most value from your data, deliver trusted insights, and extend planning and analysis across your enterprise.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/CII8ksoab17QwiLm0SopavM3y5Rh-x9FwdIzG02WrBhVmB3VQJWmwkCO1ChfWdR0.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Analytics%20Cloud",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Analytics%20Cloud",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/sap-analytics-cloud",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-analytics-cloud",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP Analytics Cloud"
+    },
+    {
+      "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/500292207a261014b467ddb396b66331.html?IDs=show",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Learning Journey: SAP Analytics Cloud"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/1fb1f4ce92f44fc983debc25ac1f2cc9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/449cc17118304d73b2d50d562eff50a5.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Analytics Cloud"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/6ea0ee725a624eebbd0012a267e7b7f9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/7d62bf739865437bae9bf9543d1860e5.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/8b9038ca44f547bf8e69b04e5c55eb37.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "System Administration"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/b40cee6c233e43b5b04dfaf758894f3c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Understanding SAP Analytics Cloud Commercial Models"
+    },
+    {
+      "value": "https://apps.support.sap.com/sap/support/knowledge/public/en/2487011",
+      "classification": "Support",
+      "type": "Link",
+      "text": "What information do I need to provide when opening an incident for SAP Analytics Cloud?"
+    },
+    {
+      "value": "https://community.sap.com/topics/cloud-analytics",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Analytics Cloud Community"
+    },
+    {
+      "value": "https://developers.sap.com/tutorial-navigator.html?search=sap+analytics+cloud",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorials"
+    },
+    {
+      "value": "https://saphanajourney.com/sap-analytics-cloud/learning-track/",
+      "classification": "Onboarding",
+      "type": "Link",
+      "text": "Tutorial: Onboarding"
+    },
+    {
+      "value": "https://www.sap.com/products/technology-platform/cloud-analytics.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Experience SAP Analytics Cloud"
+    },
+    {
+      "value": "https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/837228942b504eeeb75efee930727914.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Get More Help and SAP Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/c96a267c5da04fff90bb55313ee9f77c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_ANALYTICS_CLOUD/release/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.youtube.com/embed/26xTLnkymFA",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Analytics Cloud \u2013 Act with Confidence"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "type": "object",
+                "_controlsOrder": [
+                  "first_name",
+                  "last_name",
+                  "email",
+                  "confirm_email",
+                  "host_name",
+                  "number_of_business_intelligence_licenses",
+                  "number_of_planning_professional_licenses",
+                  "number_of_planning_standard_licenses"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "pattern": "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+                    "validationMessage": "Please enter a valid email address. Only include one '@' in the email.",
+                    "minLength": 1
+                  },
+                  "confirm_email": {
+                    "type": "string",
+                    "format": "email",
+                    "pattern": "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+                    "validationMessage": "Please enter the same email address as before.",
+                    "minLength": 1
+                  },
+                  "first_name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "last_name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "host_name": {
+                    "description": "The host name of the tenant can only contain numbers (0-9), lower case letters (a-z), and\nhyphens (-). The same host name can't be reused to create other instances.",
+                    "type": "string",
+                    "pattern": "^[a-z0-9-]*$",
+                    "validationMessage": "Please include only lower case letters, numbers and hyphens. White spaces are not allowed.",
+                    "minLength": 0
+                  },
+                  "number_of_planning_professional_licenses": {
+                    "title": "Number of Planning Professional Licenses",
+                    "type": "number",
+                    "default": 1,
+                    "minimum": 1,
+                    "maximum": 1
+                  },
+                  "number_of_planning_standard_licenses": {
+                    "title": "Number of Planning Standard Licenses",
+                    "type": "number",
+                    "default": 2,
+                    "minimum": 2,
+                    "maximum": 2
+                  },
+                  "number_of_business_intelligence_licenses": {
+                    "title": "Number of Business Intelligence Licenses",
+                    "type": "number",
+                    "default": 6,
+                    "minimum": 6,
+                    "maximum": 6
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "type": "object",
+                "_controlsOrder": [
+                  "number_of_business_intelligence_licenses",
+                  "number_of_planning_professional_licenses",
+                  "number_of_planning_standard_licenses"
+                ],
+                "properties": {
+                  "number_of_planning_professional_licenses": {
+                    "title": "Number of Planning Professional Licenses",
+                    "type": "number",
+                    "default": 1,
+                    "minimum": 1,
+                    "maximum": 1
+                  },
+                  "number_of_planning_standard_licenses": {
+                    "title": "Number of Planning Standard Licenses",
+                    "type": "number",
+                    "default": 2,
+                    "minimum": 2,
+                    "maximum": 2
+                  },
+                  "number_of_business_intelligence_licenses": {
+                    "title": "Number of Business Intelligence Licenses",
+                    "type": "number",
+                    "default": 6,
+                    "minimum": 6,
+                    "maximum": 6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "production",
+      "displayName": "production",
+      "category": "SERVICE",
+      "description": "Production plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "type": "object",
+                "_controlsOrder": [
+                  "first_name",
+                  "last_name",
+                  "email",
+                  "confirm_email",
+                  "host_name",
+                  "number_of_business_intelligence_licenses",
+                  "number_of_planning_professional_licenses",
+                  "number_of_planning_standard_licenses"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "pattern": "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+                    "validationMessage": "Please enter a valid email address. Only include one '@' in the email.",
+                    "minLength": 1
+                  },
+                  "confirm_email": {
+                    "type": "string",
+                    "format": "email",
+                    "pattern": "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+                    "validationMessage": "Please enter the same email address as before.",
+                    "minLength": 1
+                  },
+                  "first_name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "last_name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "host_name": {
+                    "description": "The host name of the tenant can only contain numbers (0-9), lower case letters (a-z), and\nhyphens (-). The same host name can't be reused to create other instances.",
+                    "type": "string",
+                    "pattern": "^[a-z0-9-]*$",
+                    "validationMessage": "Please include only lower case letters, numbers and hyphens. White spaces are not allowed.",
+                    "minLength": 0
+                  },
+                  "number_of_planning_professional_licenses": {
+                    "title": "Number of Planning Professional Licenses",
+                    "type": "number",
+                    "default": 1,
+                    "minimum": 0
+                  },
+                  "number_of_planning_standard_licenses": {
+                    "title": "Number of Planning Standard Licenses",
+                    "type": "number",
+                    "default": 10,
+                    "minimum": 0
+                  },
+                  "number_of_business_intelligence_licenses": {
+                    "title": "Number of Business Intelligence Licenses",
+                    "description": "To create a Production plan, you're required to select one option at minimum.\n\nOption 1) 25 Business Intelligence licenses.\n\nOption 2) 1 Planning Professional licenses and 10 Planning Standard licenses.\n\nAlternatively, you can choose any combination of the available license type as long as it fulfills the minimum requirement.",
+                    "type": "number",
+                    "default": 25,
+                    "minimum": 0
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "type": "object",
+                "_controlsOrder": [
+                  "number_of_business_intelligence_licenses",
+                  "number_of_planning_professional_licenses",
+                  "number_of_planning_standard_licenses"
+                ],
+                "properties": {
+                  "number_of_planning_professional_licenses": {
+                    "title": "Number of Planning Professional Licenses",
+                    "type": "number",
+                    "default": 0,
+                    "minimum": 0
+                  },
+                  "number_of_planning_standard_licenses": {
+                    "title": "Number of Planning Standard Licenses",
+                    "type": "number",
+                    "default": 0,
+                    "minimum": 0
+                  },
+                  "number_of_business_intelligence_licenses": {
+                    "title": "Number of Business Intelligence Licenses",
+                    "description": "To create a Production plan, you're required to select one option at minimum.\n\nOption 1) 25 Business Intelligence licenses.\n\nOption 2) 1 Planning Professional licenses and 10 Planning Standard licenses.\n\nAlternatively, you can choose any combination of the available license type as long as it fulfills the minimum requirement.",
+                    "type": "number",
+                    "default": 0,
+                    "minimum": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "displayName": "test",
+      "category": "SERVICE",
+      "description": "Test plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "type": "object",
+                "_controlsOrder": [
+                  "first_name",
+                  "last_name",
+                  "email",
+                  "confirm_email",
+                  "host_name",
+                  "number_of_test_licenses"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "pattern": "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+                    "validationMessage": "Please enter a valid email address. Only include one '@' in the email.",
+                    "minLength": 1
+                  },
+                  "confirm_email": {
+                    "type": "string",
+                    "format": "email",
+                    "pattern": "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+                    "validationMessage": "Please enter the same email address as before.",
+                    "minLength": 1
+                  },
+                  "first_name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "last_name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "host_name": {
+                    "description": "The host name of the tenant can only contain numbers (0-9), lower case letters (a-z), and\nhyphens (-). The same host name can't be reused to create other instances.",
+                    "type": "string",
+                    "pattern": "^[a-z0-9-]*$",
+                    "validationMessage": "Please include only lower case letters, numbers and hyphens. White spaces are not allowed.",
+                    "minLength": 0
+                  },
+                  "number_of_test_licenses": {
+                    "description": "The default number of test user license is 20.\nThere is no maximum limit and the licenses\nare for non-productive data use.",
+                    "type": "number",
+                    "default": 20,
+                    "minimum": 20
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "type": "object",
+                "properties": {
+                  "number_of_test_licenses": {
+                    "description": "The default number of test user license is 20.\nThere is no maximum limit and the licenses\nare for non-productive data use.",
+                    "type": "number",
+                    "default": 0,
+                    "minimum": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

@@ -1,0 +1,145 @@
+{
+  "name": "market-rates-thr",
+  "displayName": "Market Rates, Refinitiv",
+  "description": "Market Rates, Refinitiv",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/I3QsnEkHFTqTxWd7SH151bPk5yyeSgRd6UBmJRm3XTsZlfh3bHBBO2Dr6gjCCyt7.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/MarketRatesManagementAPI/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Market Rates Management, Refinitiv data option | SAP API Business Hub"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/market-rates-refinitiv",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Market Rates, Refinitiv"
+    },
+    {
+      "value": "https://help.sap.com/doc/7bd539aa2fc24158b8a0ab5ae110606d/LATEST/en-US/FSD_MRM_Refinitiv.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "What is Refinitiv data option"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_TR/9da8c81f87e0480fac3975cdd3182418/26d966512fb84183b6ecd8bdf3455542.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://api.sap.com/package/MarketRatesManagementAPI",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/9da8c81f87e0480fac3975cdd3182418/LATEST/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Refinitiv data option"
+    },
+    {
+      "value": "https://help.sap.com/viewer/9da8c81f87e0480fac3975cdd3182418/LATEST/en-US/5e759c605bfe4b6ba52a06bf23f6c15c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_TR",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_CP_BUS_REUSE_SERVICE_MRM_TR/LATEST/en-US?task=discover_task",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Market%20Rates,%20Refinitiv",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://www.youtube.com/embed/h_0pIIPNhJY",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Market Rates Management, Refinitiv Data Option"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Upload, download, and distribute market rates data from Refinitiv and your own market rates in your landscapes.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Upload, download, and distribute market rates data from Refinitiv and your own market rates in your landscapes.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-CBS-CS"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Market Rates API",
+      "url": "https://api.sap.com/api/MarketRates/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Market Rates Upload",
+      "url": "https://api.sap.com/api/MarketUploadAPI/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

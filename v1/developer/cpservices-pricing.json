@@ -1,0 +1,388 @@
+{
+  "name": "cpservices-pricing",
+  "displayName": "Pricing service",
+  "description": "Pricing service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/26wnPGhAy5d_fjczf2bqoKjQefFEMlzW8HbcYcUIOaaPTqabx6YqSj3bFEWaaN8t.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/api/PricingService/resource",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPProductConfiguration?section=OVERVIEW",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://developers.sap.com/tutorials/productconfiguration-ui5-app-create.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Create an SAPUI5 Application for SAP Variant Configuration and Pricing Services"
+    },
+    {
+      "value": "https://launchpad.support.sap.com/#/notes/2711932",
+      "classification": "Support",
+      "type": "Link",
+      "text": "More information about configuration and pricing services"
+    },
+    {
+      "value": "https://launchpad.support.sap.com/#/notes/2864628",
+      "classification": "Support",
+      "type": "Link",
+      "text": "SDI installation quick guides"
+    },
+    {
+      "value": "https://launchpad.support.sap.com/#/notes/2894167",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Differences between Pricing service and SAP ERP sales pricing"
+    },
+    {
+      "value": "https://launchpad.support.sap.com/#/notes/2912589",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Troubleshooting data replication issues"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPProductConfiguration/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Variant Configuration and Pricing | SAP API Business Hub"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/pricing-service",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Pricing service"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-variant-configuration-and-pricing",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP Variant Configuration and Pricing"
+    },
+    {
+      "value": "https://help.sap.com/doc/755a95a78fd948cdac64cb2e36f7834c/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/variant-configuration-and-pricing/extension-guide-for-sap-variant-configuration-and-pricing",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/10174d84e5154f138c5a976cdad7a49c/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/40af1155b9d344a4b7474c694d13f595/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/60117f3b58cc4876b0cb33b5bc9a7b5f/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/7a3f001c85a349bc8299bdf59647baab/611a44161d0f43c9a456e7e3f7458c6c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/7a3f001c85a349bc8299bdf59647baab/a7af0c11c98d4e098a38bb0e37376b2c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/7a3f001c85a349bc8299bdf59647baab/ecd742bef6044a868226483633d7e764.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Pricing service"
+    },
+    {
+      "value": "https://help.sap.com/viewer/f2b349b522ff40f0918e1e7ada320799/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/f67b66eae9e7401e89917f9791051ce4/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/f67b66eae9e7401e89917f9791051ce4/5237e804d06b4ef4a945ec330c189c4c.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Onboarding"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_PRODUCT_CONFIGURATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_VARIANT_CONFIGURATION_AND_PRICING",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "commerce",
+      "displayName": "commerce",
+      "category": "SERVICE",
+      "description": "for SAP Commerce integration",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "cpq",
+      "displayName": "cpq",
+      "category": "SERVICE",
+      "description": "for SAP CPQ integration",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "cps-prod",
+      "displayName": "cps-prod",
+      "category": "SERVICE",
+      "description": "Productive tenant, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "cps-test",
+      "displayName": "cps-test",
+      "category": "SERVICE",
+      "description": "Non-productive tenant, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Pricing service",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "partner",
+      "displayName": "partner",
+      "category": "SERVICE",
+      "description": "Non-productive tenant, for test & demo, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "ssc-prc",
+      "displayName": "ssc-prc",
+      "category": "SERVICE",
+      "description": "for SAP SSC integration",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-CPS"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Administration Service",
+      "url": "https://api.sap.com/api/AdministrationService/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Pricing Service",
+      "url": "https://api.sap.com/api/PricingService/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Variant Configuration Service",
+      "url": "https://api.sap.com/api/ProductConfigurationService/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

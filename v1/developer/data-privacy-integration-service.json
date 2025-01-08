@@ -1,0 +1,500 @@
+{
+  "name": "data-privacy-integration-service",
+  "displayName": "SAP Data Privacy Integration",
+  "description": "Data Privacy Integration",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/IMETUg-cWjscv8Akweptc1x_mplPv5Sf7NAp6Be4QegEpJECUSUyxlJBNCRNmrIc.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationApplicationRepository/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Application Repository | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationBusinessContext/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Business Context Management | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationDeletion/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Data Deletion | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/DataPrivacyIntegrationInformation/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Data Privacy Integration - Information Retrieval | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Data%20Privacy%20Integration",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Data%20Privacy%20Integration",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/data-privacy-integration",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Data Privacy Integration"
+    },
+    {
+      "value": "https://help.sap.com/doc/070f9c7b0b14489c93d39e54798e5409/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/DATA_PRIVACY_INTEGRATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/DATA_PRIVACY_INTEGRATION/b228da96d1ce494aa0b5cee43d0a1876/60c4908bcebe402480b2bb7943f3a08f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://help.sap.com/docs/DATA_PRIVACY_INTEGRATION/c829f95e3a3a43ddb958782fb3bf61e2/3538bed426ff405fb68296575f53def4.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/DATA_PRIVACY_INTEGRATION/c829f95e3a3a43ddb958782fb3bf61e2/91954b1f5fee4039893300762ff51040.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/data-privacy-integration/development/data-privacy-integration",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Data Privacy Integration"
+    },
+    {
+      "value": "https://help.sap.com/docs/data-privacy-integration/development/getting-started",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://api.sap.com/search?searchterm=DPI&tab=All&refinedBy=true",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/09/16/manage-business-purpose-and-data-privacy-for-your-applications-using-sap-cloud-platform-data-privacy-integration/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blog Data Privacy Integration"
+    },
+    {
+      "value": "https://help.sap.com/viewer/313a456d8f6c47289945699fbf5ab0c6/DEV/en-US",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/57390899c7b140ad958a20b0ebbd461a/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/c829f95e3a3a43ddb958782fb3bf61e2/9cd4d0166681448899a6df34cc60f57f.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/c829f95e3a3a43ddb958782fb3bf61e2/a360cc35b40946139300990c4cdacad8.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "End-User Information"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.youtube.com/embed/tms6_AEy2q8",
+      "classification": "External",
+      "type": "Link",
+      "text": "Data Privacy Integration Demo Video"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "anonymization",
+      "displayName": "anonymization",
+      "category": "SERVICE",
+      "description": "Next Generation service plan for anonymization functions for SAP business applications",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "application",
+      "displayName": "application",
+      "category": "SERVICE",
+      "description": "Application Plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "application-internal",
+      "displayName": "application-internal",
+      "category": "SERVICE",
+      "description": "Service plan of data privacy for SAP business applications",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "data-privacy-internal",
+      "displayName": "data-privacy-internal",
+      "category": "SERVICE",
+      "description": "Next Generation service plan of data privacy for SAP business applications",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard Plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-GDP-IL"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Application Repository",
+      "url": "https://api.sap.com/api/applicationRepository/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Business Context Configuration Management",
+      "url": "https://api.sap.com/api/businessContextConfiguration/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Business Context Record Management",
+      "url": "https://api.sap.com/api/businessContextRecord/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Business Purpose",
+      "url": "https://api.sap.com/api/businessPurpose/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Business Purpose and Rules Management",
+      "url": "https://api.sap.com/api/businessPurposeRules/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Archive and Destruction",
+      "url": "https://api.sap.com/api/dataSubjectArchiveAndDestruction/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Data Subject Deletion",
+      "url": "https://api.sap.com/api/dataSubjectDeletion/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Data subject deletion request",
+      "url": "https://api.sap.com/api/dataSubjectDeletionRequest/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Export Request",
+      "url": "https://api.sap.com/api/exportRequest/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Inbox Request",
+      "url": "https://api.sap.com/api/inboxRequestRepository/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Information",
+      "url": "https://api.sap.com/api/information/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "name": "WorkflowManagementSaaS",
+  "displayName": "SAP Workflow Management",
+  "description": "Digitize workflows, manage decisions and gain end-to-end process visibility",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/F5GzcJu9OLPFupCZoI6WL-gs_HAdAIvS9q5l10J4lY1pYo8ClAsqXoTmjvxR2_SA.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/topics/digital-process-automation",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "Digital Process Automation \u2013 Topic Page"
+    },
+    {
+      "value": "https://developers.sap.com/mission.cp-starter-ibpm-employeeonboarding.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorial: Automate and Extend Employee Onboarding"
+    },
+    {
+      "value": "https://launchpad.support.sap.com/#/notes/1888290",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support Components"
+    },
+    {
+      "value": "https://roadmaps.sap.com/board?BC=6EAE8B28C5D91EDA9E819CA3AB46E0E5",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Roadmap"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Workflow%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Workflow%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/4017908370e54d318faed689bdbca6a6/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/6f55baaf330443bd8132d071581bbae6/98f1df747e344adcbfbb81747a530dba.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/6f55baaf330443bd8132d071581bbae6/d7910e2bf7f64afc9d0eb21b0cc9e84d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/6f55baaf330443bd8132d071581bbae6/da4a2678e5c4406d803e6879cf7427bc.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Workflow Management"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e157c391253b4ecd93647bf232d18a83/0047e4b99ac240ffae5ab870ff866f9f.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "Workflow Editor"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e157c391253b4ecd93647bf232d18a83/e6163e119ba645d0ae6a31022b670381.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "Monitor Workflows app"
+    },
+    {
+      "value": "https://help.sap.com/docs/WORKFLOW_MANAGEMENT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.youtube.com/embed/aUvOt7DGyeU",
+      "classification": "External",
+      "type": "Link",
+      "text": "Purchase Requisition Approval and Release with SAP Workflow Management"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "saas-application",
+      "displayName": "saas-application",
+      "category": "APPLICATION",
+      "description": "Plan for usage of process flexibility for customers with Workflow Management entitlement to enable Digital Process Automation",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-BPM-PFS"
+    }
+  ],
+  "apis": []
+}

@@ -1,0 +1,48 @@
+{
+  "name": "sap-cash-application-production",
+  "displayName": "SAP Cash Application",
+  "description": "SAP Cash Application",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zGREa-Z_eU5-mzjwdxgGoWUccEvanzAWzjEvHR3nB-dau06SOUZ7PaUWNVfjIQw5.svg",
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_CASH_APPLICATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard Plan includes all cash application features",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

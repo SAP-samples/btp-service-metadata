@@ -1,0 +1,145 @@
+{
+  "name": "market-rates-thr",
+  "displayName": "Market Rates, Refinitiv",
+  "description": "Market Rates, Refinitiv",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/I3QsnEkHFTqTxWd7SH151bPk5yyeSgRd6UBmJRm3XTsZlfh3bHBBO2Dr6gjCCyt7.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Upload, download, and distribute market rates data from Refinitiv and your own market rates in your landscapes.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8006194",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006194",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008133",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008133",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011147",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014832",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Upload, download, and distribute market rates data from Refinitiv and your own market rates in your landscapes.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8006194",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008133",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011147",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014832",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014832",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

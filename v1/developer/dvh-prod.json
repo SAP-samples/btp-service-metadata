@@ -1,0 +1,311 @@
+{
+  "name": "dvh-prod",
+  "displayName": "SAP Digital Vehicle Hub",
+  "description": "SAP Digital Vehicle Hub",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/CQ1JRFmUwVki5OBwtPQa8aCFoXoHqloPlAi5Khp431Ujy-5XRvkGqBgy4dWSJBNW.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPDigitalVehicleHub/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Digital Vehicle Hub | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPDigitalVehicleHubBusinessEvents/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Digital Vehicle Hub Business Events | SAP API Business Hub"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/df532e8735eb4322b00bfc7e42f84e8d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_DIGITAL_VEHICLE_HUB",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_DIGITAL_VEHICLE_HUB/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "authorization-controlled",
+      "displayName": "authorization-controlled",
+      "category": "SERVICE",
+      "description": "This is a plan to support scenarios with limited access to users (by restricting selective role assignments per user/user group) to SAP Digital Vehicle Hub data via API",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "xs-security": {
+                    "type": "object",
+                    "properties": {
+                      "xsappname": {
+                        "description": "xsappname is used to identify the clone",
+                        "type": "string",
+                        "default": "<PROVIDE UNIQUE XSAPPNAME FOR THE BROKER>"
+                      },
+                      "authorities": {
+                        "type": "array",
+                        "description": "roles which will be exposed in the broker",
+                        "default": [
+                          "$XSMASTERAPPNAME.usage.read",
+                          "$XSMASTERAPPNAME.fuel_card.read",
+                          "$XSMASTERAPPNAME.registration.read",
+                          "$XSMASTERAPPNAME.sales.read",
+                          "$XSMASTERAPPNAME.invoice.read",
+                          "$XSMASTERAPPNAME.warranty.read",
+                          "$XSMASTERAPPNAME.purchase.read",
+                          "$XSMASTERAPPNAME.insurance_contract.read",
+                          "$XSMASTERAPPNAME.planned_maintenance_interval.read",
+                          "$XSMASTERAPPNAME.service_contract.read",
+                          "$XSMASTERAPPNAME.service_history.read",
+                          "$XSMASTERAPPNAME.source_system_status.read",
+                          "$XSMASTERAPPNAME.vehicle.read",
+                          "$XSMASTERAPPNAME.vehicle.delete",
+                          "$XSMASTERAPPNAME.usage.manage",
+                          "$XSMASTERAPPNAME.fuel_card.manage",
+                          "$XSMASTERAPPNAME.registration.manage",
+                          "$XSMASTERAPPNAME.sales.manage",
+                          "$XSMASTERAPPNAME.invoice.manage",
+                          "$XSMASTERAPPNAME.warranty.manage",
+                          "$XSMASTERAPPNAME.purchase.manage",
+                          "$XSMASTERAPPNAME.insurance_contract.manage",
+                          "$XSMASTERAPPNAME.planned_maintenance_interval.manage",
+                          "$XSMASTERAPPNAME.service_contract.manage",
+                          "$XSMASTERAPPNAME.service_history.manage",
+                          "$XSMASTERAPPNAME.source_system_status.manage",
+                          "$XSMASTERAPPNAME.vehicle.manage",
+                          "$XSMASTERAPPNAME.retention.manager",
+                          "$XSMASTERAPPNAME.PersonalDataManager",
+                          "$XSMASTERAPPNAME.vehicle_configuration.manage",
+                          "$XSMASTERAPPNAME.vehicle_analytics.read",
+                          "$XSMASTERAPPNAME.vehicle_timeline.read",
+                          "$XSMASTERAPPNAME.vehicle_monitoring.read",
+                          "$XSMASTERAPPNAME.vehicle_monitoring.manage",
+                          "$XSMASTERAPPNAME.related_procurement.read",
+                          "$XSMASTERAPPNAME.related_procurement.manage",
+                          "$XSMASTERAPPNAME.inbound_deliveries.read",
+                          "$XSMASTERAPPNAME.inbound_deliveries.manage",
+                          "$XSMASTERAPPNAME.outbound_deliveries.read",
+                          "$XSMASTERAPPNAME.outbound_deliveries.manage",
+                          "$XSMASTERAPPNAME.customer_returns_deliveries.read",
+                          "$XSMASTERAPPNAME.customer_returns_deliveries.manage",
+                          "$XSMASTERAPPNAME.supplier_returns_deliveries.read",
+                          "$XSMASTERAPPNAME.supplier_returns_deliveries.manage",
+                          "$XSMASTERAPPNAME.inbound_material_document.read",
+                          "$XSMASTERAPPNAME.inbound_material_document.manage",
+                          "$XSMASTERAPPNAME.outbound_material_document.read",
+                          "$XSMASTERAPPNAME.outbound_material_document.manage",
+                          "$XSMASTERAPPNAME.customer_returns_material_document.read",
+                          "$XSMASTERAPPNAME.customer_returns_material_document.manage",
+                          "$XSMASTERAPPNAME.supplier_returns_material_document.read",
+                          "$XSMASTERAPPNAME.supplier_returns_material_document.manage",
+                          "$XSMASTERAPPNAME.related_object.read",
+                          "$XSMASTERAPPNAME.related_object.manage",
+                          "$XSMASTERAPPNAME.financial_document.read",
+                          "$XSMASTERAPPNAME.financial_document.manage",
+                          "$XSMASTERAPPNAME.extension_entity_1.read",
+                          "$XSMASTERAPPNAME.extension_entity_1.manage",
+                          "$XSMASTERAPPNAME.extension_entity_2.read",
+                          "$XSMASTERAPPNAME.extension_entity_2.manage",
+                          "$XSMASTERAPPNAME.extension_entity_3.read",
+                          "$XSMASTERAPPNAME.extension_entity_3.manage",
+                          "$XSMASTERAPPNAME.extension_entity_4.read",
+                          "$XSMASTERAPPNAME.extension_entity_4.manage",
+                          "$XSMASTERAPPNAME.extension_entity_5.read",
+                          "$XSMASTERAPPNAME.extension_entity_5.manage",
+                          "$XSMASTERAPPNAME.vehicle_download.read",
+                          "$XSMASTERAPPNAME.spare_part.read",
+                          "$XSMASTERAPPNAME.spare_part.manage",
+                          "$XSMASTERAPPNAME.alert.read",
+                          "$XSMASTERAPPNAME.alert.manage",
+                          "$XSMASTERAPPNAME.cdp_config.read",
+                          "$XSMASTERAPPNAME.cdp_config.manage",
+                          "$XSMASTERAPPNAME.offboarding_download.read",
+                          "$XSMASTERAPPNAME.cdp_initialLoad.manage"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "properties": {
+                  "xs-security": {
+                    "type": "object",
+                    "properties": {
+                      "xsappname": {
+                        "description": "xsappname is used to identify the clone",
+                        "type": "string",
+                        "default": "<PROVIDE XSAPPNAME OF THE BROKER>"
+                      },
+                      "authorities": {
+                        "type": "array",
+                        "description": "roles which will be exposed in the broker",
+                        "default": [
+                          "$XSMASTERAPPNAME.usage.read",
+                          "$XSMASTERAPPNAME.fuel_card.read",
+                          "$XSMASTERAPPNAME.registration.read",
+                          "$XSMASTERAPPNAME.sales.read",
+                          "$XSMASTERAPPNAME.invoice.read",
+                          "$XSMASTERAPPNAME.warranty.read",
+                          "$XSMASTERAPPNAME.purchase.read",
+                          "$XSMASTERAPPNAME.insurance_contract.read",
+                          "$XSMASTERAPPNAME.planned_maintenance_interval.read",
+                          "$XSMASTERAPPNAME.service_contract.read",
+                          "$XSMASTERAPPNAME.service_history.read",
+                          "$XSMASTERAPPNAME.source_system_status.read",
+                          "$XSMASTERAPPNAME.vehicle.read",
+                          "$XSMASTERAPPNAME.vehicle.delete",
+                          "$XSMASTERAPPNAME.usage.manage",
+                          "$XSMASTERAPPNAME.fuel_card.manage",
+                          "$XSMASTERAPPNAME.registration.manage",
+                          "$XSMASTERAPPNAME.sales.manage",
+                          "$XSMASTERAPPNAME.invoice.manage",
+                          "$XSMASTERAPPNAME.warranty.manage",
+                          "$XSMASTERAPPNAME.purchase.manage",
+                          "$XSMASTERAPPNAME.insurance_contract.manage",
+                          "$XSMASTERAPPNAME.planned_maintenance_interval.manage",
+                          "$XSMASTERAPPNAME.service_contract.manage",
+                          "$XSMASTERAPPNAME.service_history.manage",
+                          "$XSMASTERAPPNAME.source_system_status.manage",
+                          "$XSMASTERAPPNAME.vehicle.manage",
+                          "$XSMASTERAPPNAME.retention.manager",
+                          "$XSMASTERAPPNAME.PersonalDataManager",
+                          "$XSMASTERAPPNAME.vehicle_configuration.manage",
+                          "$XSMASTERAPPNAME.vehicle_analytics.read",
+                          "$XSMASTERAPPNAME.vehicle_timeline.read",
+                          "$XSMASTERAPPNAME.vehicle_monitoring.read",
+                          "$XSMASTERAPPNAME.vehicle_monitoring.manage",
+                          "$XSMASTERAPPNAME.related_procurement.read",
+                          "$XSMASTERAPPNAME.related_procurement.manage",
+                          "$XSMASTERAPPNAME.inbound_deliveries.read",
+                          "$XSMASTERAPPNAME.inbound_deliveries.manage",
+                          "$XSMASTERAPPNAME.outbound_deliveries.read",
+                          "$XSMASTERAPPNAME.outbound_deliveries.manage",
+                          "$XSMASTERAPPNAME.customer_returns_deliveries.read",
+                          "$XSMASTERAPPNAME.customer_returns_deliveries.manage",
+                          "$XSMASTERAPPNAME.supplier_returns_deliveries.read",
+                          "$XSMASTERAPPNAME.supplier_returns_deliveries.manage",
+                          "$XSMASTERAPPNAME.inbound_material_document.read",
+                          "$XSMASTERAPPNAME.inbound_material_document.manage",
+                          "$XSMASTERAPPNAME.outbound_material_document.read",
+                          "$XSMASTERAPPNAME.outbound_material_document.manage",
+                          "$XSMASTERAPPNAME.customer_returns_material_document.read",
+                          "$XSMASTERAPPNAME.customer_returns_material_document.manage",
+                          "$XSMASTERAPPNAME.supplier_returns_material_document.read",
+                          "$XSMASTERAPPNAME.supplier_returns_material_document.manage",
+                          "$XSMASTERAPPNAME.related_object.read",
+                          "$XSMASTERAPPNAME.related_object.manage",
+                          "$XSMASTERAPPNAME.financial_document.read",
+                          "$XSMASTERAPPNAME.financial_document.manage",
+                          "$XSMASTERAPPNAME.extension_entity_1.read",
+                          "$XSMASTERAPPNAME.extension_entity_1.manage",
+                          "$XSMASTERAPPNAME.extension_entity_2.read",
+                          "$XSMASTERAPPNAME.extension_entity_2.manage",
+                          "$XSMASTERAPPNAME.extension_entity_3.read",
+                          "$XSMASTERAPPNAME.extension_entity_3.manage",
+                          "$XSMASTERAPPNAME.extension_entity_4.read",
+                          "$XSMASTERAPPNAME.extension_entity_4.manage",
+                          "$XSMASTERAPPNAME.extension_entity_5.read",
+                          "$XSMASTERAPPNAME.extension_entity_5.manage",
+                          "$XSMASTERAPPNAME.vehicle_download.read",
+                          "$XSMASTERAPPNAME.spare_part.read",
+                          "$XSMASTERAPPNAME.spare_part.manage",
+                          "$XSMASTERAPPNAME.alert.read",
+                          "$XSMASTERAPPNAME.alert.manage",
+                          "$XSMASTERAPPNAME.cdp_config.read",
+                          "$XSMASTERAPPNAME.cdp_config.manage",
+                          "$XSMASTERAPPNAME.offboarding_download.read",
+                          "$XSMASTERAPPNAME.cdp_initialLoad.manage"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "This is a plan to support all scenarios to users to SAP Digital Vehicle Hub data via API",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "LOD-DMO-DVH"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Vehicle Configuration Controls",
+      "url": "https://api.sap.com/api/VehicleConfiguration/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Vehicle Extension Entities",
+      "url": "https://api.sap.com/api/VehicleExtension/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Vehicle Data Export",
+      "url": "https://api.sap.com/api/VehicleInitialLoadAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Maintain Vehicle",
+      "url": "https://api.sap.com/api/VehicleObjectAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Vehicle Associations",
+      "url": "https://api.sap.com/api/VehicleObjectAssociationAPI/overview",
+      "apiType": "OData V2"
+    }
+  ]
+}

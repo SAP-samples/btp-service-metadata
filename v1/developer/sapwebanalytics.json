@@ -1,0 +1,194 @@
+{
+  "name": "SAPWebAnalytics",
+  "displayName": "SAP Web Analytics",
+  "description": "SAP Web Analytics enables the collection and analysis of website data for understanding and optimizing web usage to measure organizational goals, drive strategy and improve the user's experience.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/L1mqfoSAiKhUUvm3IhPGUnVnoarQB_nVsPUu5tFtakcTCgLk6Kt9FfiI76BJnVUq.svg",
+  "links": [
+    {
+      "value": "https://developers.sap.com/mission.cp-web-analytics-get-started.html",
+      "classification": "Onboarding",
+      "type": "Link",
+      "text": "Tutorial: Onboarding"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPWebAnalytics/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Web Analytics | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Web%20Analytics",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Web%20Analytics",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/8ebb4ffdfabb460e9591c60015f71d37/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e342b49c78c74d4e8ebc00700a791aee/54d8cb9ae92f4597b85237fb54fd2a39.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e342b49c78c74d4e8ebc00700a791aee/70cbc79762c34409ba6b56c883a695a3.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "SAp Web Analytics Dashboard"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/e342b49c78c74d4e8ebc00700a791aee/e90c64af5dc04a238b324b359558cd48.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Web Analytics"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_WEB_ANALYTICS/1.0/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_WEB_ANALYTICS",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.youtube.com/embed/bXMtor_AmPE",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Web Analytics"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "APPLICATION",
+      "description": "Usage analytics for your websites and web applications. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "APPLICATION",
+      "description": "Standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-SWA"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Manage Web Analytics",
+      "url": "https://api.sap.com/api/APIdetailsSWA/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

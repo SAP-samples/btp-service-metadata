@@ -1,0 +1,36 @@
+{
+  "name": "iam-analytics-ts-poc",
+  "displayName": "Time Series Analytics (poc)",
+  "description": "Process data to be shown on embedded SAP Analytics Cloud dashboards.",
+  "icon": null,
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_PREDICTIVE_MAINTENANCE_AND_SERVICE_CLOUD",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Time Series Analytics (poc)",
+      "category": "SERVICE",
+      "description": "Process data to be shown on embedded SAP Analytics Cloud dashboards.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

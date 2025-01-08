@@ -1,0 +1,137 @@
+{
+  "name": "SAPHybrisRevenueCloud",
+  "displayName": "SAP Subscription Billing",
+  "description": "SAP Subscription Billing",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OWeJNH3m_Xjw_kbfMTlaEmJnuAcmqWLuCnuCwYDM94lYdoHDfqYF4LvJJvVTsr5H.svg",
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Subscription%20Billing",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Subscription%20Billing",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/viewer/987aec876092428f88162e438acf80d6/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/CLOUD_TO_CASH_OD/latest/en-US?task=implement_task",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "API Access SAP Subscription Billing functions and integrate with other applications.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": [
+        {
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "type": "object",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "properties": {
+                  "xsuaa": {
+                    "type": "object",
+                    "title": "Service Binding/Key Type",
+                    "description": "Defines the type of credential you use to establish technical connectivity between applications.\n\n Using the \"X.509 Certificate\" is considered more secure as it works without the need to share secrets between the calling application and the service instance of SAP Authorization and Trust Management service (XSUAA).",
+                    "oneOf": [
+                      {
+                        "type": "boolean",
+                        "title": "Client ID/Secret",
+                        "description": "Client ID/Secret"
+                      },
+                      {
+                        "type": "object",
+                        "title": "X.509 Certificate",
+                        "description": "X.509 Certificate",
+                        "additionalProperties": false,
+                        "required": [
+                          "credential-type",
+                          "x509"
+                        ],
+                        "properties": {
+                          "credential-type": {
+                            "type": "string",
+                            "title": "Credential Type",
+                            "enum": [
+                              "x509"
+                            ],
+                            "_enumDisplayName": {
+                              "x509": "X.509"
+                            },
+                            "default": "x509"
+                          },
+                          "x509": {
+                            "title": "X.509",
+                            "type": "object",
+                            "required": [
+                              "certificate",
+                              "certificate-pinning"
+                            ],
+                            "properties": {
+                              "certificate": {
+                                "type": "string",
+                                "title": "Certificate",
+                                "minLength": 1,
+                                "description": "Paste the public-key certificate in privacy-enhanced mail (PEM) format. \n\n For service bindings/keys integrating with S/4HANA Cloud using communication scenario SAP_COM_0642, enter the entire content of the Base-64-encoded X.509 certificate (.crt) file that you previously downloaded from your S/4HANA Cloud system into this field. Check completeness in the JSON view. \n\n Caution: Making manual changes to the certificate will invalidate the certificate."
+                              },
+                              "certificate-pinning": {
+                                "type": "string",
+                                "title": "Certificate Pinning",
+                                "description": "For API-based access to SAP Subscription Billing with an X.509 certificate. \n\n Certificate Pinning is always set to false, as this makes certificate rotation easier. When clients request the access token, the certificate's subject and issuer Distinguished Name is compared to those of the stored credentials which had been used for creating the service binding/key. If they match and the certificate was issued on or after the stored issuer date, the authentication is accepted.",
+                                "default": "false",
+                                "enum": [
+                                  "false"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

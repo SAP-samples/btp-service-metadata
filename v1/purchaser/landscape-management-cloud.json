@@ -1,0 +1,53 @@
+{
+  "name": "landscape-management-cloud",
+  "displayName": "SAP Landscape Management Cloud",
+  "description": "SAP Landscape Management Cloud",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/aIUcPa0Xh1V2juDn-J6fEB63gpFxqTp-QC5MwpuHUZ3VwmQxkUVhtJA-IKQuT87V.svg",
+  "servicePlans": [
+    {
+      "name": "free",
+      "displayName": "Free",
+      "category": "SERVICE",
+      "description": "Use all product features for up to two discovered SAP systems in IaaS environments. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8015761",
+          "commercialModel": null
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Discover and manage all your SAP systems in IaaS environments without limitations.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

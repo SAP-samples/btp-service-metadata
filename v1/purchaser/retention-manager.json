@@ -1,0 +1,348 @@
+{
+  "name": "retention-manager",
+  "displayName": "SAP Data Retention Manager",
+  "description": "Data Retention Manager",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/kWib6ydi0gE2I-tEWlPHq2jn5xGL3EtPq7N5hm9G9UMDUEkFTCq5p23vGv-EZnI_.svg",
+  "servicePlans": [
+    {
+      "name": "dev",
+      "displayName": "dev",
+      "category": "SERVICE",
+      "description": "Dev",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "SERVICE",
+      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8011142",
+          "commercialModel": null
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Standard plan for SAP Data Retention Manager service",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8006142",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006143",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006264",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007126",
+          "commercialModel": "ppu_ms_azure"
+        },
+        {
+          "materialNumber": "8007213",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007213",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008806",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008821",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008859",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008938",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008938",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008939",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008939",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009213",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011022",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011463",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011558",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011558",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012527",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012567",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013696",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014221",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014267",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015495",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017193",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

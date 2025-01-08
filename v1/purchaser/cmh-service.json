@@ -1,0 +1,33 @@
+{
+  "name": "cmh-service",
+  "displayName": "SAP Complaint Handling",
+  "description": "SAP Complaint Handling",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/VcOu9vMUlhJAA7fGmuNZrDlAhwgP4GXqkP_aNnMaWe2nrxFwiBt-AuFTcwezZ7Ot.svg",
+  "servicePlans": [
+    {
+      "name": "api-access",
+      "displayName": "api-access",
+      "category": "SERVICE",
+      "description": "API Access Plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8012158",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018751",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

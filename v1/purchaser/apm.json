@@ -1,0 +1,49 @@
+{
+  "name": "apm",
+  "displayName": "SAP Asset Performance Management",
+  "description": "SAP Asset Performance Management",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "SAP Asset Performance Management",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8012342",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012344",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012578",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

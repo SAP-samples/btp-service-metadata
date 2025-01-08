@@ -1,0 +1,905 @@
+{
+  "name": "cloudfoundry",
+  "displayName": "SAP BTP, Cloud Foundry runtime",
+  "description": "Cloud Foundry Environment",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MfBx5cdlo5e3uk3cN8GGOHbv0295Ntbz6rL3EsFTxqjkhMYoD27-aG6qRMAA2P0M.svg",
+  "servicePlans": [
+    {
+      "name": "build-code",
+      "displayName": "build-code",
+      "category": "SERVICE",
+      "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric. Create an org in your Cloud Foundry environment to start developing build code applications.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-002"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-003"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-004"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-005"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20-001"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-001"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-002"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8017771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018204",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "cf-eu10",
+      "displayName": "cloudfoundry-cf-eu10",
+      "category": "SERVICE",
+      "description": "cloudfoundry-cf-eu10",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu10-002",
+      "displayName": "cf-eu10-002",
+      "category": "SERVICE",
+      "description": "eu10-002 Extended Region",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu10-003",
+      "displayName": "cf-eu10-003",
+      "category": "SERVICE",
+      "description": "eu10-003 Extended Region",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu10-004",
+      "displayName": "cf-eu10-004",
+      "category": "SERVICE",
+      "description": "eu10-004 Extended Region",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu10-004-ext",
+      "displayName": "cf-eu10-004-ext",
+      "category": "ENVIRONMENT",
+      "description": "Create an additional Cloud Foundry org for the subaccount",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu10-005",
+      "displayName": "cf-eu10-005",
+      "category": "SERVICE",
+      "description": "eu10-005 Extended Region",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu10-005-ext",
+      "displayName": "cf-eu10-005-ext",
+      "category": "ENVIRONMENT",
+      "description": "Create an additional Cloud Foundry org for the subaccount",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu20-001",
+      "displayName": "cf-eu20-001",
+      "category": "SERVICE",
+      "description": "cf-eu20-001 Extended Region",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-eu20-001-ext",
+      "displayName": "cf-eu20-001-ext",
+      "category": "ENVIRONMENT",
+      "description": "Create an additional Cloud Foundry org for a subaccount on cf-eu20-001",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-us10-001",
+      "displayName": "cf-us10-001",
+      "category": "SERVICE",
+      "description": "us10-001 Extended Region",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "cf-us10-002",
+      "displayName": "cf-us10-002",
+      "category": "SERVICE",
+      "description": "us10-002 Extended Region",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "ENVIRONMENT",
+      "description": "Free Tier Plan for CPEA and Pay-As-You Go. Only community support is available for free tier service plans and these are not subject to SLAs. Use of free tier service plans is subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-002"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-003"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-004"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-005"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20-001"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-001"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-002"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005365",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005780",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005899",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008837",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011138",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011174",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011260",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "ENVIRONMENT",
+      "description": "Create an org in the Cloud Foundry environment to start developing polyglot cloud-native applications.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-002"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-003"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-004"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-005"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20-001"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-001"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-002"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005365",
+          "commercialModel": null
+        },
+        {
+          "materialNumber": "8011260",
+          "commercialModel": null
+        },
+        {
+          "materialNumber": "8005780",
+          "commercialModel": null
+        },
+        {
+          "materialNumber": "8005899",
+          "commercialModel": null
+        },
+        {
+          "materialNumber": "8008837",
+          "commercialModel": null
+        }
+      ]
+    },
+    {
+      "name": "trial",
+      "displayName": "trial",
+      "category": "UNKNOWN",
+      "description": "Create organization in cloud foundry - trial based",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-002"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-003"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-004"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10-005"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20-001"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-001"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10-002"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

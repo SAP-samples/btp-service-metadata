@@ -1,0 +1,1898 @@
+{
+  "name": "service-manager",
+  "displayName": "SAP Service Manager",
+  "description": "SAP Service Manager service allows you to consume platform services in any connected runtime environment, track service instances creation, and share services and service instances between different environments.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/K3ItS0XAKlDgo5PLOHqrqThoSqQ_zh5zGHyDfhIHWyVjL8EFIad72X9zAYmSfp-x.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/api/APIServiceManagment/resource",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://blogs.sap.com/2020/09/14/experience-the-new-way-of-consuming-and-managing-services-on-sap-cloud-platform/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Experience the New Way of Consuming and Managing Services on SAP BTP"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Service%20Manager",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Service%20Manager",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/service-manager",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/service-management",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/service-manager",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Service Manager"
+    },
+    {
+      "value": "https://help.sap.com/doc/f9809732e25740c3abd6158a57b8144e/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/0ccebd7cec24411dacd5ad17799534e0.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/1ca5bbeac19340ce959e82b51b2fde1e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/3a27b85a47fc4dff99184dd5bf181e14.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Service Manager"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/c9d5c050a067476f896a631e7414e2c9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/f13b6c63eef341bc8b7d25b352401c92.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SERVICEMANAGEMENT",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Service Manager Product Page"
+    },
+    {
+      "value": "https://operatorhub.io/operator/sap-btp-operator",
+      "classification": "External",
+      "type": "Link",
+      "text": "External"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "agent-access",
+      "displayName": "agent-access",
+      "category": "SERVICE",
+      "description": "Allows SM Agents of a given environment to access SM APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "all-subaccount-bindings-admin",
+      "displayName": "all-subaccount-bindings-admin",
+      "category": "SERVICE",
+      "description": "Allows read-only access to service instances and full management of service bindings in a subaccount. This includes  getting the list of all service instances, getting details about their parameters, and creating service bindings on behalf of customers.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        },
+        {
+          "region": "west4",
+          "name": "gcp_us-west4"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "all-subaccount-services-admin",
+      "displayName": "all-subaccount-services-admin",
+      "category": "SERVICE",
+      "description": "Allow users of a given environment to manage service instances and bindings. This includes creating, reading, updating, and deleting.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "container",
+      "displayName": "container",
+      "category": "SERVICE",
+      "description": "Allows management of service instances and bindings in a reduced scope corresponding to the service instance. Instances created using the container-instance binding credentials are visible from the instance itself and from instances of the subaccount-* plans, but not from other container instances",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "dev-support",
+      "displayName": "dev-support",
+      "category": "SERVICE",
+      "description": "Allows a service-manager operator to manage the service-manager entities on the region.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "global-offerings-audit",
+      "displayName": "global-offerings-audit",
+      "category": "SERVICE",
+      "description": "Allows read-only access to all service offerings and service plans in a landscape.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "service-operator-access",
+      "displayName": "service-operator-access",
+      "category": "SERVICE",
+      "description": "Provides credentials for SAP BTP service operator to access SAP BTP from a Kubernetes cluster.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "service-provider-admin",
+      "displayName": "service-provider-admin",
+      "category": "SERVICE",
+      "description": "Allows service providers to view and manage service instances of their services across all subaccounts.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        },
+        {
+          "region": "west4",
+          "name": "gcp_us-west4"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "serviceBrokerName",
+                  "brokerCredentials"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "brokerCredentials": {
+                    "oneOf": [
+                      {
+                        "properties": {
+                          "basicAuthentication": {
+                            "_controlsOrder": [
+                              "username",
+                              "password"
+                            ],
+                            "description": "Broker Basic authentication.",
+                            "properties": {
+                              "password": {
+                                "description": "Broker password",
+                                "format": "password",
+                                "minLength": 1,
+                                "title": "Password",
+                                "type": "string"
+                              },
+                              "username": {
+                                "description": "Broker username",
+                                "minLength": 1,
+                                "title": "Username",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "username",
+                              "password"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "basicAuthentication"
+                        ],
+                        "title": "Basic Authentication",
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "tlsAuthentication": {
+                            "description": "Broker TLS authentication.",
+                            "properties": {
+                              "clientKey": {
+                                "description": "Broker client certificate key.",
+                                "minLength": 1,
+                                "title": "Client Certificate Key",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "clientKey"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "tlsAuthentication"
+                        ],
+                        "title": "TLS Authentication",
+                        "type": "object"
+                      }
+                    ],
+                    "title": "Broker Credentials",
+                    "type": "object"
+                  },
+                  "serviceBrokerName": {
+                    "description": "The service broker name.",
+                    "minLength": 1,
+                    "title": "Service Broker Name",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "serviceBrokerName",
+                  "brokerCredentials"
+                ],
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "properties": {
+                  "brokerCredentials": {
+                    "oneOf": [
+                      {
+                        "properties": {
+                          "basicAuthentication": {
+                            "_controlsOrder": [
+                              "username",
+                              "password"
+                            ],
+                            "description": "Broker Basic authentication.",
+                            "properties": {
+                              "password": {
+                                "description": "Broker password",
+                                "format": "password",
+                                "minLength": 1,
+                                "title": "Password",
+                                "type": "string"
+                              },
+                              "username": {
+                                "description": "Broker username",
+                                "minLength": 1,
+                                "title": "Username",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "username",
+                              "password"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "basicAuthentication"
+                        ],
+                        "title": "Basic Authentication",
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "tlsAuthentication": {
+                            "description": "Broker TLS authentication.",
+                            "properties": {
+                              "clientKey": {
+                                "description": "Broker client certificate key.",
+                                "minLength": 1,
+                                "title": "Client Certificate Key",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "clientKey"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "tlsAuthentication"
+                        ],
+                        "title": "TLS Authentication",
+                        "type": "object"
+                      }
+                    ],
+                    "title": "Broker Credentials",
+                    "type": "object"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "service-provider-audit",
+      "displayName": "service-provider-audit",
+      "category": "SERVICE",
+      "description": "Allows service providers to view service instances of their services across all subaccounts.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        },
+        {
+          "region": "west4",
+          "name": "gcp_us-west4"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "serviceBrokerName",
+                  "brokerCredentials"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "brokerCredentials": {
+                    "oneOf": [
+                      {
+                        "properties": {
+                          "basicAuthentication": {
+                            "_controlsOrder": [
+                              "username",
+                              "password"
+                            ],
+                            "description": "Broker Basic authentication.",
+                            "properties": {
+                              "password": {
+                                "description": "Broker password",
+                                "format": "password",
+                                "minLength": 1,
+                                "title": "Password",
+                                "type": "string"
+                              },
+                              "username": {
+                                "description": "Broker username",
+                                "minLength": 1,
+                                "title": "Username",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "username",
+                              "password"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "basicAuthentication"
+                        ],
+                        "title": "Basic Authentication",
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "tlsAuthentication": {
+                            "description": "Broker TLS authentication.",
+                            "properties": {
+                              "clientKey": {
+                                "description": "Broker client certificate key.",
+                                "minLength": 1,
+                                "title": "Client Certificate Key",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "clientKey"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "tlsAuthentication"
+                        ],
+                        "title": "TLS Authentication",
+                        "type": "object"
+                      }
+                    ],
+                    "title": "Broker Credentials",
+                    "type": "object"
+                  },
+                  "serviceBrokerName": {
+                    "description": "The service broker name.",
+                    "minLength": 1,
+                    "title": "Service Broker Name",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "serviceBrokerName",
+                  "brokerCredentials"
+                ],
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "properties": {
+                  "brokerCredentials": {
+                    "oneOf": [
+                      {
+                        "properties": {
+                          "basicAuthentication": {
+                            "_controlsOrder": [
+                              "username",
+                              "password"
+                            ],
+                            "description": "Broker Basic authentication.",
+                            "properties": {
+                              "password": {
+                                "description": "Broker password",
+                                "format": "password",
+                                "minLength": 1,
+                                "title": "Password",
+                                "type": "string"
+                              },
+                              "username": {
+                                "description": "Broker username",
+                                "minLength": 1,
+                                "title": "Username",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "username",
+                              "password"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "basicAuthentication"
+                        ],
+                        "title": "Basic Authentication",
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "tlsAuthentication": {
+                            "description": "Broker TLS authentication.",
+                            "properties": {
+                              "clientKey": {
+                                "description": "Broker client certificate key.",
+                                "minLength": 1,
+                                "title": "Client Certificate Key",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "clientKey"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "tlsAuthentication"
+                        ],
+                        "title": "TLS Authentication",
+                        "type": "object"
+                      }
+                    ],
+                    "title": "Broker Credentials",
+                    "type": "object"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "subaccount-admin",
+      "displayName": "subaccount-admin",
+      "category": "SERVICE",
+      "description": "Allows management of resources in the subaccount in which the service instance of this plan was created. This includes managing service instances, bindings and subaccount-scoped platforms.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "subaccount-audit",
+      "displayName": "subaccount-audit",
+      "category": "SERVICE",
+      "description": "Allows read-only access to the resources in the subaccount in which the service instance was created. This includes reading service instances, bindings and subaccount-scoped platforms.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

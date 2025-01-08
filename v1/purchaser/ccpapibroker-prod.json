@@ -1,0 +1,49 @@
+{
+  "name": "ccpapibroker-prod",
+  "displayName": "S/4HANA Cloud for Customer Payments",
+  "description": "S/4HANA Cloud for Customer Payments",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/JFSpAIOzZhzivbdj2vbfHHvIRcOdWAqWNpCpHyC2jxk_pDy-AivbnqLnmZX7nv2s.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Default plan to be used by business reuse service",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8004800",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004800",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009219",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015510",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

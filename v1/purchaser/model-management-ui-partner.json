@@ -1,0 +1,29 @@
+{
+  "name": "Model-Management-UI-partner",
+  "displayName": "SAP Cash Application Model Manager for partner",
+  "description": "SAP Cash Application Model Manager for partner",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard Plan includes all cash application ui features",
+      "category": "APPLICATION",
+      "description": "Standard Plan includes all cash application ui features",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8006084",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

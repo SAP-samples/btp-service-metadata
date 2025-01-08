@@ -1,0 +1,144 @@
+{
+  "name": "icsm-integration",
+  "displayName": "SAP Intelligent Clinical Supply Management",
+  "description": "SAP Intelligent Clinical Supply Management",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPIntelligentClinicalSupplyManagementForPlanning/odata",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "API Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Intelligent%20Clinical%20Supply%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Intelligent%20Clinical%20Supply%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/S4_INTELLCLINICSUPPLYMGMT/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "config-api",
+      "displayName": "Config API",
+      "category": "SERVICE",
+      "description": "SAP Intelligent Clinical Supply Management - Integration Service (Config API)",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "ctms-api",
+      "displayName": "CTMS",
+      "category": "SERVICE",
+      "description": "SAP Intelligent Clinical Supply Management - Integration Service (CTMS API)",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "irt-actuals-api",
+      "displayName": "IRT Actuals",
+      "category": "SERVICE",
+      "description": "SAP Intelligent Clinical Supply Management - Integration Service (IRT Actuals API)",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "pushtosupply-api",
+      "displayName": "Push To Supply Planning API",
+      "category": "SERVICE",
+      "description": "SAP Intelligent Clinical Supply Management - Integration Service (Push to Supply Planning API)",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "SAP Intelligent Clinical Supply Management - Integration Service",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "study-api",
+      "displayName": "Study",
+      "category": "SERVICE",
+      "description": "SAP Intelligent Clinical Supply Management - Integration Service (Study API)",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

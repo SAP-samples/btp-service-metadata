@@ -1,0 +1,154 @@
+{
+  "name": "ml-foundation",
+  "displayName": "SAP Leonardo ML Foundation",
+  "description": "SAP Leonardo ML Foundation",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/lSybCFIbq8DVrawicxvA-2OHMx6Qc64CMs8LNnlxSY7DUVwk5YZzl3QhwDpwdjzR.svg",
+  "links": [
+    {
+      "value": "http://help.sap.com/mlf",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/5004c04c7a261014806dd6ca0b4c6cbb.html",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Learning Journey: SAP Leonardo Machine Learning"
+    },
+    {
+      "value": "https://help.sap.com/doc/690e5969eec141579ba0afce0170e7b0/latest/en-US/loio0e40a39a3b27468f9c95fe3705a36dec.pdf",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/mlf",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://help.sap.com/viewer/2e6173bf645243bb9a88f0269250f3a2/latest/en-US/b2fd7c3da7d9445283cb6407e2616e7d.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_LEONARDO_MACHINE_LEARNING_FOUNDATION",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "internal",
+      "displayName": "SAP Leonardo Machine Learning Foundation services",
+      "category": "SERVICE",
+      "description": "SAP Leonardo Machine Learning Foundation services",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Default standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard_new",
+      "displayName": "ML Foundation Standard",
+      "category": "SERVICE",
+      "description": "ML Foundation Standard",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-ML-PLT"
+    }
+  ],
+  "apis": []
+}

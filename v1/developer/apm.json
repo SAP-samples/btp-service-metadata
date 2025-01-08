@@ -1,0 +1,152 @@
+{
+  "name": "apm",
+  "displayName": "SAP Asset Performance Management",
+  "description": "SAP Asset Performance Management",
+  "icon": null,
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPAssetPerformanceManagementAssetHealth/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Asset Performance Management - Asset Health | SAP API Business Hub"
+    },
+    {
+      "value": "https://api.sap.com/package/SAPAssetPerformanceManagementAssetStrategy/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Asset Performance Management - Asset Strategy | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Asset%20Performance%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Asset%20Performance%20Management",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/1bb12075258a41e1a024d28a6ddfe246/0328318b0e5e4bca9ecf96af8723f849.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/1bb12075258a41e1a024d28a6ddfe246/4983c41d3c444a3685ffd6d09e780c03.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/1bb12075258a41e1a024d28a6ddfe246/578cf2567a454abbbc987a729fba24d8.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/1bb12075258a41e1a024d28a6ddfe246/66803101f11242fda331e66682776910.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/1bb12075258a41e1a024d28a6ddfe246/9bd20a4a262149558e1f1922de4deeff.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/1bb12075258a41e1a024d28a6ddfe246/a229a5c2657947c386a4aca290d88026.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/1bb12075258a41e1a024d28a6ddfe246/efb0277f338241d4bdf4b19f1673ecf8.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP_APM/468c925d1276476680b47d94548174a1/a2b4d1a5c84f409f9fb2ae4d49287d27.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "SAP Asset Performance Management",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "APM-AH"
+    },
+    {
+      "value": "APM-AS"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Manage Alert Types",
+      "url": "https://api.sap.com/api/AlertType_APIs/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Manage Alerts",
+      "url": "https://api.sap.com/api/Alert_APIs/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Manage Indicators",
+      "url": "https://api.sap.com/api/Indicator_Related_APIs/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Manage Maintenance Notification Service",
+      "url": "https://api.sap.com/api/Notification_APIs/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Manage Time Series Data",
+      "url": "https://api.sap.com/api/Timeseries_APIs/overview",
+      "apiType": "OData V2"
+    },
+    {
+      "name": "Recommendation",
+      "url": "https://api.sap.com/api/recommendationRest/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

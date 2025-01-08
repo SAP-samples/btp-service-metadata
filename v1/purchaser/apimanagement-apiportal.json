@@ -1,0 +1,1029 @@
+{
+  "name": "apimanagement-apiportal",
+  "displayName": "API Management, API portal",
+  "description": "API Management, API portal",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v5uV3ilFJzWpwPxBO1OZ06s5uBTY-JDK3yfeiRldCbDMHGSbed-5xF7DUN79BPei.svg",
+  "servicePlans": [
+    {
+      "name": "apim-as-route-service",
+      "displayName": "apim-as-route-service",
+      "category": "SERVICE",
+      "description": "This plan lets you manage applications and APIs built on SAP Business Technology Platform Cloud Foundry layer by binding it with API Management controls, that are already available in the Cloud Foundry environment. To use this plan, you must have already enabled API Management service on the Cloud Foundry environment and subscribed to API Management, API portal from the SAP Business Technology Platform Cockpit.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000800",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000857",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002949",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003341",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003674",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003676",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003677",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004472",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004739",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004740",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005158",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005565",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005996",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005996",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006005",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006006",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007905_issue",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "apiportal-apiaccess",
+      "displayName": "apiportal-apiaccess",
+      "category": "SERVICE",
+      "description": "This plan enables api access for API Management. To use this plan, you must have already subscribed to API Management, API portal from the SAP Business Technology Platform Cockpit.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000800",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000857",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002949",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003341",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003674",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003676",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003677",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004472",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004739",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004740",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005158",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005565",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005996",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005996",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006005",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006006",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007905_issue",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "on-premise-connectivity",
+      "displayName": "on-premise-connectivity",
+      "category": "SERVICE",
+      "description": "The on-premise-connectivity plan allows you to generate a service key, consisting of user credentials like clientID, clientSecret, etc., by creating a service instance. These credentials are used in the enablement of Principal Propagation, making a desirable connection to the backend possible.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000800",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000857",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002949",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003341",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003674",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003676",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003677",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004472",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004739",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004740",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004741",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005158",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005565",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005996",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005996",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006005",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006006",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007905_issue",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008410",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008412",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008413",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008414",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008646",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008801",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011144",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011156",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011157",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012139",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012322",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013624",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017214",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018102",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018911",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

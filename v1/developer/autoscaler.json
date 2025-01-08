@@ -1,0 +1,970 @@
+{
+  "name": "autoscaler",
+  "displayName": "Application Autoscaler",
+  "description": "Application Autoscaler",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ivyifhwzElzNS2Ti38msQu-bL_kq2CFcwZEVEMpaaipQIrTeTlxe588NQYSs510y.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/CFApplicationAutoscaler/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | Application Autoscaler | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=Application%20Autoscaler",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=Application%20Autoscaler",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/application-autoscaler",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/application-autoscaler",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Application Autoscaler"
+    },
+    {
+      "value": "https://help.sap.com/doc/0a842f0cc688413d9e8dd8fb24e85232/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/application-autoscaler/application-autoscaler/initial-setup",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/7472b7d13d5d4862b2b06a730a2df086/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is Application Autoscaler"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/Application_Autoscaler/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "lite",
+      "displayName": "lite",
+      "category": "SERVICE",
+      "description": "This plan allows four scaling rules and two schedules per policy document",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": null
+            },
+            "update": {
+              "parameters": null
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "anyOf": [
+                  {
+                    "required": [
+                      "scaling_rules"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "schedules"
+                    ]
+                  }
+                ],
+                "description": "schema for autoscaler policy for lite plan",
+                "properties": {
+                  "configuration": {
+                    "properties": {
+                      "custom_metrics": {
+                        "properties": {
+                          "metric_submission_strategy": {
+                            "properties": {
+                              "allow_from": {
+                                "enum": [
+                                  "bound_app"
+                                ],
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "allow_from"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "metric_submission_strategy"
+                        ],
+                        "type": "object"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "instance_max_count": {
+                    "description": "Maximum how many instances of application can be provisioned as part of application scaling",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "instance_min_count": {
+                    "description": "Minimum number of application instance always runs",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "scaling_rules": {
+                    "items": {
+                      "properties": {
+                        "adjustment": {
+                          "description": "Magnitude of scaling in each step, +1 means scale up 1 Instance -2 means scale down 2 instances",
+                          "pattern": "^[-+][1-9]+[0-9]*$",
+                          "type": "string"
+                        },
+                        "breach_duration_secs": {
+                          "description": "The length of the past period when a scaling action might be triggered based on metric usage",
+                          "maximum": 3600,
+                          "minimum": 60,
+                          "type": "number"
+                        },
+                        "cool_down_secs": {
+                          "description": "The interval between two successive scaling activity",
+                          "maximum": 3600,
+                          "minimum": 60,
+                          "type": "number"
+                        },
+                        "metric_type": {
+                          "pattern": "^[a-zA-Z0-9_]+$",
+                          "type": "string"
+                        },
+                        "operator": {
+                          "enum": [
+                            "<",
+                            ">",
+                            "<=",
+                            ">="
+                          ],
+                          "type": "string"
+                        },
+                        "threshold": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "metric_type",
+                        "threshold",
+                        "operator",
+                        "adjustment"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "schedules": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "specific_date"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "recurring_schedule"
+                        ]
+                      }
+                    ],
+                    "properties": {
+                      "recurring_schedule": {
+                        "items": {
+                          "oneOf": [
+                            {
+                              "required": [
+                                "days_of_week"
+                              ]
+                            },
+                            {
+                              "required": [
+                                "days_of_month"
+                              ]
+                            }
+                          ],
+                          "properties": {
+                            "days_of_month": {
+                              "description": "The list of the days of the month when to trigger scaling. Values ranging from 1 to 31",
+                              "items": {
+                                "enum": [
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  19,
+                                  20,
+                                  21,
+                                  22,
+                                  23,
+                                  24,
+                                  25,
+                                  26,
+                                  27,
+                                  28,
+                                  29,
+                                  30,
+                                  31
+                                ],
+                                "type": "number"
+                              },
+                              "minItems": 1,
+                              "type": "array",
+                              "uniqueItems": true
+                            },
+                            "days_of_week": {
+                              "description": "The list of the days of the week when to trigger scaling. Values ranging from 1 to 7",
+                              "items": {
+                                "enum": [
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7
+                                ],
+                                "type": "number"
+                              },
+                              "minItems": 1,
+                              "type": "array",
+                              "uniqueItems": true
+                            },
+                            "end_date": {
+                              "description": "End date of the recurrence in YYYY-MM-DD format",
+                              "oneOf": [
+                                {
+                                  "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$",
+                                  "type": "string"
+                                },
+                                {
+                                  "enum": [
+                                    ""
+                                  ],
+                                  "type": "string"
+                                }
+                              ]
+                            },
+                            "end_time": {
+                              "description": "End time of the recurrence in 24 hour format",
+                              "pattern": "^(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            },
+                            "initial_min_instance_count": {
+                              "description": "The number of instances to scale up to as soon as the recurrence period starts",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_max_count": {
+                              "description": "Maximum number of instances to scale up during recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_min_count": {
+                              "description": "The number of instances to scale down to once recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "start_date": {
+                              "description": "Start date of the recurrence in YYYY-MM-DD format",
+                              "oneOf": [
+                                {
+                                  "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$",
+                                  "type": "string"
+                                },
+                                {
+                                  "enum": [
+                                    ""
+                                  ],
+                                  "type": "string"
+                                }
+                              ]
+                            },
+                            "start_time": {
+                              "description": "Start time of the recurrence in 24 hour format",
+                              "pattern": "^(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "start_time",
+                            "end_time",
+                            "instance_min_count",
+                            "instance_max_count"
+                          ],
+                          "type": "object"
+                        }
+                      },
+                      "specific_date": {
+                        "items": {
+                          "properties": {
+                            "end_date_time": {
+                              "description": "End date and time to scale in YYYY-MM-DDTHH:MM format",
+                              "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            },
+                            "initial_min_instance_count": {
+                              "description": "The number of instances to scale up to as soon as the recurrence period starts",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_max_count": {
+                              "description": "Maximum number of instances to scale up during recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_min_count": {
+                              "description": "The number of instances to scale down to once recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "start_date_time": {
+                              "description": "Start date and time to scale in YYYY-MM-DDTHH:MM format",
+                              "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "start_date_time",
+                            "end_date_time",
+                            "instance_min_count",
+                            "instance_max_count"
+                          ],
+                          "type": "object"
+                        }
+                      },
+                      "timezone": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "timezone"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "instance_min_count",
+                  "instance_max_count"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "This plan allows ten scaling rules and ten schedules per policy document",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": null
+            },
+            "update": {
+              "parameters": null
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "anyOf": [
+                  {
+                    "required": [
+                      "scaling_rules"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "schedules"
+                    ]
+                  }
+                ],
+                "description": "schema for autoscaler policy for standard plan",
+                "properties": {
+                  "configuration": {
+                    "properties": {
+                      "custom_metrics": {
+                        "properties": {
+                          "metric_submission_strategy": {
+                            "properties": {
+                              "allow_from": {
+                                "enum": [
+                                  "bound_app"
+                                ],
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "allow_from"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "metric_submission_strategy"
+                        ],
+                        "type": "object"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "instance_max_count": {
+                    "description": "Maximum how many instances of application can be provisioned as part of application scaling",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "instance_min_count": {
+                    "description": "Minimum number of application instance always runs",
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "scaling_rules": {
+                    "items": {
+                      "properties": {
+                        "adjustment": {
+                          "description": "Magnitude of scaling in each step, +1 means scale up 1 Instance -2 means scale down 2 instances",
+                          "pattern": "^[-+][1-9]+[0-9]*$",
+                          "type": "string"
+                        },
+                        "breach_duration_secs": {
+                          "description": "The length of the past period when a scaling action might be triggered based on metric usage",
+                          "maximum": 3600,
+                          "minimum": 60,
+                          "type": "number"
+                        },
+                        "cool_down_secs": {
+                          "description": "The interval between two successive scaling activity",
+                          "maximum": 3600,
+                          "minimum": 60,
+                          "type": "number"
+                        },
+                        "metric_type": {
+                          "pattern": "^[a-zA-Z0-9_]+$",
+                          "type": "string"
+                        },
+                        "operator": {
+                          "enum": [
+                            "<",
+                            ">",
+                            "<=",
+                            ">="
+                          ],
+                          "type": "string"
+                        },
+                        "threshold": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "metric_type",
+                        "threshold",
+                        "operator",
+                        "adjustment"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "schedules": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "specific_date"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "recurring_schedule"
+                        ]
+                      }
+                    ],
+                    "properties": {
+                      "recurring_schedule": {
+                        "items": {
+                          "oneOf": [
+                            {
+                              "required": [
+                                "days_of_week"
+                              ]
+                            },
+                            {
+                              "required": [
+                                "days_of_month"
+                              ]
+                            }
+                          ],
+                          "properties": {
+                            "days_of_month": {
+                              "description": "The list of the days of the month when to trigger scaling. Values ranging from 1 to 31",
+                              "items": {
+                                "enum": [
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  19,
+                                  20,
+                                  21,
+                                  22,
+                                  23,
+                                  24,
+                                  25,
+                                  26,
+                                  27,
+                                  28,
+                                  29,
+                                  30,
+                                  31
+                                ],
+                                "type": "number"
+                              },
+                              "minItems": 1,
+                              "type": "array",
+                              "uniqueItems": true
+                            },
+                            "days_of_week": {
+                              "description": "The list of the days of the week when to trigger scaling. Values ranging from 1 to 7",
+                              "items": {
+                                "enum": [
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7
+                                ],
+                                "type": "number"
+                              },
+                              "minItems": 1,
+                              "type": "array",
+                              "uniqueItems": true
+                            },
+                            "end_date": {
+                              "description": "End date of the recurrence in YYYY-MM-DD format",
+                              "oneOf": [
+                                {
+                                  "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$",
+                                  "type": "string"
+                                },
+                                {
+                                  "enum": [
+                                    ""
+                                  ],
+                                  "type": "string"
+                                }
+                              ]
+                            },
+                            "end_time": {
+                              "description": "End time of the recurrence in 24 hour format",
+                              "pattern": "^(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            },
+                            "initial_min_instance_count": {
+                              "description": "The number of instances to scale up to as soon as the recurrence period starts",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_max_count": {
+                              "description": "Maximum number of instances to scale up during recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_min_count": {
+                              "description": "The number of instances to scale down to once recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "start_date": {
+                              "description": "Start date of the recurrence in YYYY-MM-DD format",
+                              "oneOf": [
+                                {
+                                  "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$",
+                                  "type": "string"
+                                },
+                                {
+                                  "enum": [
+                                    ""
+                                  ],
+                                  "type": "string"
+                                }
+                              ]
+                            },
+                            "start_time": {
+                              "description": "Start time of the recurrence in 24 hour format",
+                              "pattern": "^(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "start_time",
+                            "end_time",
+                            "instance_min_count",
+                            "instance_max_count"
+                          ],
+                          "type": "object"
+                        }
+                      },
+                      "specific_date": {
+                        "items": {
+                          "properties": {
+                            "end_date_time": {
+                              "description": "End date and time to scale in YYYY-MM-DDTHH:MM format",
+                              "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            },
+                            "initial_min_instance_count": {
+                              "description": "The number of instances to scale up to as soon as the recurrence period starts",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_max_count": {
+                              "description": "Maximum number of instances to scale up during recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "instance_min_count": {
+                              "description": "The number of instances to scale down to once recurrence period",
+                              "minimum": 1,
+                              "type": "integer"
+                            },
+                            "start_date_time": {
+                              "description": "Start date and time to scale in YYYY-MM-DDTHH:MM format",
+                              "pattern": "^2[0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "start_date_time",
+                            "end_date_time",
+                            "instance_min_count",
+                            "instance_max_count"
+                          ],
+                          "type": "object"
+                        }
+                      },
+                      "timezone": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "timezone"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "instance_min_count",
+                  "instance_max_count"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-CP-CF-AUTOSCALE"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Application Autoscaler custom metrics API",
+      "url": "https://api.sap.com/api/ApplicationAutoscalerCustomMetricsAPI/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

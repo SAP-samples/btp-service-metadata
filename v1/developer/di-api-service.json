@@ -1,0 +1,499 @@
+{
+  "name": "di-api-service",
+  "displayName": "Data Ingestion for Industry Cloud Solutions",
+  "description": "Data Ingestion for Industry Cloud Solutions",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2IDBIMFYxNkgxNlYwWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi40NTI1IDAuNjk4MDM2QzEyLjc3NzcgMC43NDgwMzUgMTMuMDgwNyAwLjgzMzk0OCAxMy4zNTc3IDAuOTU1MzI2QzEzLjk5MDQgMS4yMzI0OSAxNC40NzU2IDEuNjg5MTUgMTQuNzg1OCAyLjI5OTIyQzE1LjA5NTkgMi45MDkyNiAxNS4yMjUgMy42NjA4IDE1LjE2NTUgNC41MTEwMUMxNS4xMzEgNS4wMDM2MSAxNS4wMzM2IDUuNTIzNzIgMTQuODc2MSA2LjA2MDk5QzE0LjY1IDUuNjczMTQgMTQuMzk3OCA1LjI4NTE4IDE0LjEyMDUgNC45MDA3N0MxNC4xNDUxIDQuNzQyODEgMTQuMTYyNiA0LjU4OTExIDE0LjE3MyA0LjQ0MDEzQzE0LjIyMjggMy43MjkxMiAxNC4xMDk5IDMuMTY5NjggMTMuOTAwOCAyLjc1ODM3QzEzLjY5NzUgMi4zNTg1OCAxMy4zODY5IDIuMDYzNiAxMi45NjE5IDEuODc3MzhDMTIuODI5OSAxLjgxOTU2IDEyLjY4NDQgMS43NzEzMiAxMi41MjU2IDEuNzM0NDRDMTIuMzQ2OSAyLjIzODc4IDExLjg2NTYgMi42IDExLjMgMi42QzEwLjc5OTUgMi42IDEwLjM2NSAyLjMxNzE1IDEwLjE0NzggMS45MDI1OEM5Ljc5Mjk2IDIuMDA2MzEgOS40MjM1MiAyLjE0MjUxIDkuMDQzNTQgMi4zMTE4OEM5LjY2NzQ0IDIuNzE0NzMgMTAuMjc5NSAzLjE4MDUgMTAuODY0MSAzLjY5ODI0QzExLjc0ODYgNC40ODE1MiAxMi41NTI5IDUuMzY4NCAxMy4yMzEyIDYuMzA4MjRDMTMuOTA5NCA3LjI0ODA5IDE0LjQ0ODQgOC4yMjI0OSAxNC44MTcyIDkuMTc1ODFDMTUuMTg1OSAxMC4xMjkxIDE1LjM3NzQgMTEuMDQyNyAxNS4zODA2IDExLjg2NDRDMTUuMzgzNyAxMi42ODYxIDE1LjE5ODUgMTMuMzk5NyAxNC44MzU3IDEzLjk2NDZDMTQuNTI2MSAxNC40NDY1IDE0LjA5MjMgMTQuODEyMSAxMy41NTMxIDE1LjA0NzFDMTMuNDAxMyAxNS41OTY2IDEyLjg5NzggMTYgMTIuMyAxNkMxMS43OTcgMTYgMTEuMzYwOCAxNS43MTQ0IDExLjE0NDYgMTUuMjk2NEMxMS4wNjY3IDE1LjI4NTYgMTAuOTg4MSAxNS4yNzMzIDEwLjkwODggMTUuMjU5NEMxMC4wMjY4IDE1LjEwNSA5LjA4MDczIDE0Ljc2NDMgOC4xMjQ2OSAxNC4yNTY4QzguMDgzMTIgMTQuMjM0OCA4LjA0MTU1IDE0LjIxMjQgOC4wMDAwMSAxNC4xODk3QzcuODE1NjUgMTQuMjkwMyA3LjYzMDk4IDE0LjM4NSA3LjQ0NjM5IDE0LjQ3MzdDNi40OTIyIDE0LjkzMTkgNS41NTkwOCAxNS4yMTgxIDQuNzAwMyAxNS4zMTYxQzMuODQxNDcgMTUuNDE0MSAzLjA3Mzg2IDE1LjMyMTggMi40NDEyNyAxNS4wNDQ3QzEuODA4NjEgMTQuNzY3NSAxLjMyMzM2IDE0LjMxMDggMS4wMTMxOSAxMy43MDA4QzAuNzAzMDQzIDEzLjA5MDcgMC41NzM5OTIgMTIuMzM5MiAwLjYzMzQ5OSAxMS40ODlDMC42OTMwMDIgMTAuNjM4OSAwLjkzOTg2IDkuNzA2ODEgMS4zNTk5OSA4Ljc0NjA0QzEuNDk2NTYgOC40MzM3MSAxLjY1MDU4IDguMTIwMzQgMS44MjA4OSA3LjgwNzgyQzEuNjU2MTIgNy40Nzg5NSAxLjUxMDAzIDcuMTUwMzMgMS4zODM4NSA2LjgyNDE2QzEuMzAxNjIgNi42MTE1OSAxLjIyODIgNi40MDA5OSAxLjE2MzcyIDYuMTkyOTRDMC41MDk4MDMgNi4xMjQ4MiAwIDUuNTcxOTUgMCA0LjlDMCA0LjM0NDU1IDAuMzQ4MzU0IDMuODcwNDcgMC44Mzg1MDggMy42ODQzQzAuODkzMDkzIDMuMDUxMDMgMS4wNzA2MSAyLjQ5NDEzIDEuMzY1MzQgMi4wMzUzN0MxLjcyODIyIDEuNDcwNTIgMi4yNjE3NyAxLjA2NTM4IDIuOTM1NjEgMC44NDMxOTRDMy42MDkzNSAwLjYyMTA0MiA0LjQxMDExIDAuNTg2MTU1IDUuMjkyMTkgMC43NDA1NzJDNi4xNTA3NiAwLjg5MDg3NCA3LjA2OTk3IDEuMjE3NjUgOC4wMDAwMiAxLjcwMjk3QzguMTE3NTEgMS42NDE2NiA4LjIzNTA3IDEuNTgyNzUgOC4zNTI2IDEuNTI2MzJDOC45MzY1OCAxLjI0NTkgOS41MTI2NyAxLjAyOTg5IDEwLjA2ODcgMC44ODIwMjNDMTAuMjQyNyAwLjM2OTEwMSAxMC43MjgyIDAgMTEuMyAwQzExLjgwMDggMCAxMi4yMzU0IDAuMjgzMTI4IDEyLjQ1MjUgMC42OTgwMzZaTTEzLjM5NyAxNC4wMDIyQzEzLjE2NjMgMTMuNjQwMSAxMi43NjEyIDEzLjQgMTIuMyAxMy40QzExLjczMzQgMTMuNCAxMS4yNTE1IDEzLjc2MjUgMTEuMDczNCAxNC4yNjgyQzEwLjQzNTUgMTQuMTU1OSA5LjczNzE5IDEzLjkyNjUgOS4wMDg1MyAxMy41NzkzQzkuNDMzNDggMTMuMjk2MyA5Ljg1MjggMTIuOTg0IDEwLjI2MTUgMTIuNjQ1N0MxMS4xNjU4IDExLjg5NzEgMTIuMDAwMiAxMS4wMzU2IDEyLjcxNjkgMTAuMTEwNUMxMy4wMzYxIDkuNjk4NTYgMTMuMzI5MiA5LjI3NzU5IDEzLjU5MzIgOC44NTI1QzEzLjcwMzIgOS4wODQwNCAxMy44MDI0IDkuMzE0MDkgMTMuODkwNSA5LjU0MTYxQzE0LjIyNTIgMTAuNDA2OSAxNC4zODMgMTEuMTk2NyAxNC4zODU2IDExLjg2ODNDMTQuMzg4MiAxMi41Mzc3IDE0LjIzNzUgMTMuMDQ5NSAxNC4wMDExIDEzLjQxNzVDMTMuODQ5NCAxMy42NTM2IDEzLjY0OTkgMTMuODUwNyAxMy4zOTcgMTQuMDAyMlpNMi4zMTA1NSA2LjQ1ODM2QzIuMjM4NDIgNi4yNzE5MSAyLjE3NDUxIDYuMDg4OTcgMi4xMTg1OSA1LjkwOTk2QzIuNDEyMyA1LjY3MTYxIDIuNiA1LjMwNzczIDIuNiA0LjlDMi42IDQuMzcyNzMgMi4yODYwOSAzLjkxODc4IDEuODM0OTcgMy43MTQ4M0MxLjg4MjgzIDMuMjQ1MjQgMi4wMTUyMyAyLjg3IDIuMTk5OTMgMi41ODI0OUMyLjQzMDg0IDIuMjIzMDcgMi43NzIzMSAxLjk1NDI2IDMuMjQ0MzQgMS43OTg2MkMzLjcyODQ3IDEuNjM4OTkgNC4zNTkxMiAxLjU5NzI1IDUuMTIyMyAxLjczMDg1QzUuNjkyNDkgMS44MzA2NyA2LjMxMTA2IDIuMDI0MTcgNi45NTY0OSAyLjMxMTg4QzYuNDc0NzMgMi42MjI5NSA1Ljk5OTMyIDIuOTcxOTkgNS41Mzc1MyAzLjM1NDI4QzQuODMwOTcgMy45MzkyIDQuMTY3MTEgNC41OTMwMSAzLjU2ODY3IDUuMjkyMjNDMy43NTgwOCA1LjYwNTkzIDMuOTMwNDcgNS45MTk5MiA0LjA4NTI5IDYuMjMyM0M0LjcwNTY3IDUuNDcwMTUgNS40MTEwMSA0Ljc1ODQ1IDYuMTY4MTggNC4xMzE2MkM2Ljc2NTE5IDMuNjM3MzkgNy4zODIyMiAzLjIwNjAzIDguMDAwMDEgMi44NDc1NEM4Ljc1MTU4IDMuMjgzNjYgOS40OTkgMy44MjU4OCAxMC4yMDgyIDQuNDUzOTdDMTEuMDM4NyA1LjE4OTQ0IDExLjc5MzEgNi4wMjE2NSAxMi40MjcyIDYuOTAwM0MxMi42NDkgNy4yMDc2MiAxMi44NTM3IDcuNTE3MzUgMTMuMDQwNCA3LjgyNzFDMTIuNzI3OSA4LjM4NTMyIDEyLjM1NjggOC45NDQ2NSAxMS45MzM0IDkuNDkxMDVDMTEuMjYyIDEwLjM1NzcgMTAuNDc4OSAxMS4xNjYzIDkuNjMwODEgMTEuODY4NEM4Ljc4MjMgMTIuNTcwOCA3Ljg5MzM1IDEzLjE0NjMgNy4wMTkyNSAxMy41NjZDNi4xNDMxOCAxMy45ODY3IDUuMzE2NzcgMTQuMjM0MyA0LjU4ODY1IDE0LjMxNzRDMy44NTk2MSAxNC40MDA2IDMuMjc0NTMgMTQuMzE0MiAyLjgzNzE0IDE0LjEyMjZDMi40MTIwNyAxMy45MzY0IDIuMTAxNDkgMTMuNjQxNCAxLjg5ODIzIDEzLjI0MTZDMS42ODkxMiAxMi44MzAzIDEuNTc2MTkgMTIuMjcwOSAxLjYyNTk2IDExLjU1OTlDMS42NzU3MyAxMC44NDg4IDEuODg1OTcgMTAuMDMwNiAyLjI3MDA5IDkuMTUyMTNDMi4zMTM2NCA5LjA1MjUzIDIuMzU5MjMgOC45NTI2MyAyLjQwNjgxIDguODUyNUMyLjU4MTgzIDkuMTM0MyAyLjc2OTc3IDkuNDE0NTEgMi45Njk4MiA5LjY5MTczQzMuNjQ4MDkgMTAuNjMxNiA0LjQ1MjQyIDExLjUxODUgNS4zMzY4OSAxMi4zMDE3QzUuMzgyNjIgMTIuMzQyMiA1LjQyODUyIDEyLjM4MjQgNS40NzQ1OCAxMi40MjIzQzUuNzkyOCAxMi4yNzQ2IDYuMTEzNTEgMTIuMTA3NyA2LjQzNDYgMTEuOTIyMkM2LjI4NTkxIDExLjgwMDUgNi4xMzg1NCAxMS42NzUxIDUuOTkyNzggMTEuNTQ2QzUuMTYyMyAxMC44MTA1IDQuNDA3OSA5Ljk3ODMyIDMuNzczOCA5LjA5OTY3QzMuMTM5MTggOC4yMjAzIDIuNjQ0MzMgNy4zMjExOSAyLjMxMDU1IDYuNDU4MzZaIiBmaWxsPSIjMDg1NEEwIi8+CjxwYXRoIGQ9Ik03LjgxNjg2IDYuODQ4OThWNi41NDQ1NkM3LjgxNjg2IDYuMDU1OTQgNy4xMDg4OSA1LjggNi40MDg0MyA1LjhDNS43MDc5NyA1LjggNSA2LjA1Nzg4IDUgNi41NDQ1NlY4LjU0NzVDNSA4Ljk2NjMyIDUuNTIwMTggOS4yMTI1NyA2LjEwNzk2IDkuMjc2NTVMNi4xMjY3NCA5LjI2Mjk4VjcuOTYzODhDNi4xMjY3NCA3LjM1MzExIDYuODIxNTcgNi44OTkzOSA3LjgxNjg2IDYuODQ4OThaIiBmaWxsPSIjMDg1NEEwIi8+CjxwYXRoIGQ9Ik04LjAwNDY1IDcuMTE0NjFDNy4wNzg4NCA3LjExNDYxIDYuMzgwMjYgNy40NzkxNCA2LjM4MDI2IDcuOTYzODhWMTAuMzUwN0M2LjM4MDI2IDEwLjgzNTUgNy4wNzg4NCAxMS4yIDguMDA0NjUgMTEuMkM4LjkzMDQ2IDExLjIgOS42MjkwNCAxMC44MzU1IDkuNjI5MDQgMTAuMzUwN1Y5LjkzMTkyQzkuMTU5NjMgMTAuMjg3OCA4LjU4NjQxIDEwLjQ2NzEgOC4wMDQ2NSAxMC40Mzk5QzcuNjIwNzYgMTAuNDQ2OCA3LjIzODkgMTAuMzgxIDYuODc3OTEgMTAuMjQ2VjkuOTEwNTlDNy4yMzM2MSAxMC4wNjggNy42MTc3MiAxMC4xNDU0IDguMDA0NjUgMTAuMTM3NUM4Ljc5NTI1IDEwLjEzNzUgOS40NDEyNSA5Ljg5ODk2IDkuNjI1MjggOS41MTExN1Y4Ljk3OTg5QzkuMjgxNjIgOS4yNzY1NSA4LjcwMzIzIDkuNDcwNDUgOC4wMDQ2NSA5LjQ3MDQ1QzcuNjIwNzYgOS40NzcyOCA3LjIzODkgOS40MTE1NiA2Ljg3NzkxIDkuMjc2NTVWOC45MzMzNkM3LjIzMzYxIDkuMDkwNzkgNy42MTc3MiA5LjE2ODEzIDguMDA0NjUgOS4xNjAyMkM4Ljc5NTI1IDkuMTYwMjIgOS40NDEyNSA4Ljk0NDk5IDkuNjI1MjggOC41NTcyVjcuOTYzODhDOS42MjkwNCA3LjQ3OTE0IDguOTMwNDYgNy4xMTQ2MSA4LjAwNDY1IDcuMTE0NjFaIiBmaWxsPSIjMDg1NEEwIi8+CjxwYXRoIGQ9Ik04LjE5MjQ0IDYuNTQ0NDJDOC4xOTI0NCA2LjA1Nzc0IDguOTAwNDEgNS44MDE4IDkuNjAwODcgNS44MDE4QzEwLjMwMTMgNS44MDE4IDExLjAwOTMgNi4wNTc3NCAxMC45OTk5IDYuNTQ0NDJWOC41NDkzQzEwLjk5OTkgOC45NjYxOCAxMC40Nzk3IDkuMjE0MzYgOS44OTE5NCA5LjI3NjQxTDkuODgyNTUgOS4yNjQ3OFY3Ljk2NTY3QzkuODgyNTUgNy4zNTI5NiA5LjE4NzczIDYuODk5MjUgOC4xOTI0NCA2Ljg0ODgzVjYuNTQ0NDJaIiBmaWxsPSIjMDg1NEEwIi8+Cjwvc3ZnPg==",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/DataIngestionforIndustryCloudSolutions/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | Data Ingestion for Industry Cloud Solutions | SAP API Business Hub"
+    },
+    {
+      "value": "https://help.sap.com/docs/DI_ICS",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/di",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/latest/569af8a32dcb4ca291c37a60b1de3dfb",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Reuse Service for Data Ingestion for Industry Cloud Solutions",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": [
+    {
+      "name": "ABC Indicator Codes",
+      "url": "https://api.sap.com/api/CST_ABCIndicatorCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Accruals",
+      "url": "https://api.sap.com/api/CST_Accrual/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Aggregated Order Forecasts",
+      "url": "https://api.sap.com/api/CST_AggregatedOrderPlan/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Agreements",
+      "url": "https://api.sap.com/api/CST_Agreement/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Agreement Types",
+      "url": "https://api.sap.com/api/CST_AgreementTypes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Accounts Receivable Open Items",
+      "url": "https://api.sap.com/api/CST_ArOpenItem/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Article Hierarchy Directories",
+      "url": "https://api.sap.com/api/CST_ArticleHierarchyDirectories/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Product Assignments to Article Hierarchy Nodes",
+      "url": "https://api.sap.com/api/CST_ArticleHierarchyNode2Products/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Article Hierarchy Nodes",
+      "url": "https://api.sap.com/api/CST_ArticleHierarchyNodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Article Hierarchy Tree Level Codes",
+      "url": "https://api.sap.com/api/CST_ArticleHierarchyTreeLevelCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "ATP Snapshots",
+      "url": "https://api.sap.com/api/CST_AtpSnapshot/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Bill Of Material",
+      "url": "https://api.sap.com/api/CST_BillOfMaterial/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Business Partners",
+      "url": "https://api.sap.com/api/CST_BusinessPartner/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Calendars",
+      "url": "https://api.sap.com/api/CST_Calendar/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Calendar Days",
+      "url": "https://api.sap.com/api/CST_CalendarDay/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Characteristic Codes",
+      "url": "https://api.sap.com/api/CST_CharacteristicCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Characteristic Value Codes",
+      "url": "https://api.sap.com/api/CST_CharacteristicValueCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Company Codes",
+      "url": "https://api.sap.com/api/CST_CompanyCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Country/Region Codes",
+      "url": "https://api.sap.com/api/CST_CountryCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Country/Region Subdivision Codes",
+      "url": "https://api.sap.com/api/CST_CountrySubdivisionCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Currency Codes",
+      "url": "https://api.sap.com/api/CST_CurrencyCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Customer Hierarchy Directories",
+      "url": "https://api.sap.com/api/CST_CustomerHierarchyDirectory/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Customer Hierarchy Nodes",
+      "url": "https://api.sap.com/api/CST_CustomerHierarchyNode/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Customer Hierarchy Type Codes",
+      "url": "https://api.sap.com/api/CST_CustomerHierarchyTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Customer Orders",
+      "url": "https://api.sap.com/api/CST_CustomerOrder/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Customer Order Item Type Codes",
+      "url": "https://api.sap.com/api/CST_CustomerOrderItemTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Customer Order Mapping E Commons",
+      "url": "https://api.sap.com/api/CST_CustomerOrderMapping/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Customer Order Type Codes",
+      "url": "https://api.sap.com/api/CST_CustomerOrderTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Demand Forecast",
+      "url": "https://api.sap.com/api/CST_DemandForecast/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Demand Plans",
+      "url": "https://api.sap.com/api/CST_DemandPlan/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Digital Assets Aspect",
+      "url": "https://api.sap.com/api/CST_DigitalAssetsAspect/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Discount Types",
+      "url": "https://api.sap.com/api/CST_DiscountTypes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Distribution Chains",
+      "url": "https://api.sap.com/api/CST_DistributionChain/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Distribution Channel Codes",
+      "url": "https://api.sap.com/api/CST_DistributionChannelCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Distribution Profile Codes",
+      "url": "https://api.sap.com/api/CST_DistributionProfileCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Division Codes",
+      "url": "https://api.sap.com/api/CST_DivisionCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Document Flow Entries",
+      "url": "https://api.sap.com/api/CST_DocumentFlowEntry/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Document Types",
+      "url": "https://api.sap.com/api/CST_DocumentTypes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Expense Type Codes",
+      "url": "https://api.sap.com/api/CST_ExpenseTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Goods Movement Type Codes",
+      "url": "https://api.sap.com/api/CST_GoodsMovementTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Holiday Codes",
+      "url": "https://api.sap.com/api/CST_HolidayCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Inventory Snapshots",
+      "url": "https://api.sap.com/api/CST_InventorySnapshot/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Language Codes",
+      "url": "https://api.sap.com/api/CST_LanguageCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Loading Group Codes",
+      "url": "https://api.sap.com/api/CST_LoadingGroupCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Logistical Rounding Profile Codes",
+      "url": "https://api.sap.com/api/CST_LogisticalRoundingProfileCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Logistical Rounding Rule Codes",
+      "url": "https://api.sap.com/api/CST_LogisticalRoundingRuleCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "MRP Controller Codes",
+      "url": "https://api.sap.com/api/CST_MRPControllerCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "MRP Type Codes",
+      "url": "https://api.sap.com/api/CST_MRPTypeCode/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Material Documents",
+      "url": "https://api.sap.com/api/CST_MaterialDocument/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Merchandise Category Hierarchy Nodes",
+      "url": "https://api.sap.com/api/CST_MerchandiseCategoryHierarchyNode/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Order and Delivery Schedules",
+      "url": "https://api.sap.com/api/CST_OrderDeliverySchedule/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Outbound Deliveries",
+      "url": "https://api.sap.com/api/CST_OutboundDelivery/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Payment Block Codes",
+      "url": "https://api.sap.com/api/CST_PaymentBlockCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Payment Method Codes",
+      "url": "https://api.sap.com/api/CST_PaymentMethodCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Payment Terms",
+      "url": "https://api.sap.com/api/CST_PaymentTerms/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Plants",
+      "url": "https://api.sap.com/api/CST_Plant/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Price Lists for Plants",
+      "url": "https://api.sap.com/api/CST_PlantPriceList/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Posting Status Codes",
+      "url": "https://api.sap.com/api/CST_PostingStatusCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Products",
+      "url": "https://api.sap.com/api/CST_Product/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Product Consumption Quantities",
+      "url": "https://api.sap.com/api/CST_ProductConsumptionQuantity/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Product Hierarchy Directories",
+      "url": "https://api.sap.com/api/CST_ProductHierarchyDirectory/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Product Hierarchy Nodes",
+      "url": "https://api.sap.com/api/CST_ProductHierarchyNode/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Product Hierarchy Type Codes",
+      "url": "https://api.sap.com/api/CST_ProductHierarchyTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Product Plants",
+      "url": "https://api.sap.com/api/CST_ProductPlant/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Purchase Orders",
+      "url": "https://api.sap.com/api/CST_PurchaseOrder/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Purchasing Groups",
+      "url": "https://api.sap.com/api/CST_PurchasingGroup/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Purchasing Organizations",
+      "url": "https://api.sap.com/api/CST_PurchasingOrganization/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Regular Sales Prices for Retail Products",
+      "url": "https://api.sap.com/api/CST_RetailProductRegularSalesPrice/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Return Orders",
+      "url": "https://api.sap.com/api/CST_ReturnOrder/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Sales Areas",
+      "url": "https://api.sap.com/api/CST_SalesArea/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Sales Organizations",
+      "url": "https://api.sap.com/api/CST_SalesOrganization/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Sample Codes",
+      "url": "https://api.sap.com/api/CST_SampleCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Scheduling Groups",
+      "url": "https://api.sap.com/api/CST_SchedulingGroup/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Scheduling Group Assignments",
+      "url": "https://api.sap.com/api/CST_SchedulingGroupAssignment/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Sources of Supply",
+      "url": "https://api.sap.com/api/CST_SourceOfSupply/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Spend Category Codes",
+      "url": "https://api.sap.com/api/CST_SpendCategoryCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Spend Method Codes",
+      "url": "https://api.sap.com/api/CST_SpendMethodCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Spend Type Codes",
+      "url": "https://api.sap.com/api/CST_SpendTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Storage Locations",
+      "url": "https://api.sap.com/api/CST_StorageLocation/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Tactic Type Codes",
+      "url": "https://api.sap.com/api/CST_TacticsTypeCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Tax Codes",
+      "url": "https://api.sap.com/api/CST_TaxCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Temperature Condition Indicator Codes",
+      "url": "https://api.sap.com/api/CST_TemperatureConditionIndicatorCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Trade Spends",
+      "url": "https://api.sap.com/api/CST_TradeSpends/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Transportation Aspects",
+      "url": "https://api.sap.com/api/CST_TransportationAspects/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Transportation Group Codes",
+      "url": "https://api.sap.com/api/CST_TransportationGroupCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Unit of Measurement Codes",
+      "url": "https://api.sap.com/api/CST_UnitofMeasureCodes/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Users",
+      "url": "https://api.sap.com/api/CST_User/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Workforce Persons",
+      "url": "https://api.sap.com/api/CST_WorkforcePerson/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

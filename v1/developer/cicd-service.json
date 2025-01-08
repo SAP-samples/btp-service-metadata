@@ -1,0 +1,338 @@
+{
+  "name": "cicd-service",
+  "displayName": "SAP Continuous Integration and Delivery",
+  "description": "Continuous Integration & Delivery",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/JdOW7m8dSozBZuRfJaOw4ixJTjzOYvC_bExu7ItgIBc4RzMvaQNV10mJGWiRYByY.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPContinuousIntegrationandDelivery/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Continuous Integration and Delivery | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Continuous%20Integration%20and%20Delivery",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Continuous%20Integration%20and%20Delivery",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/continuous-integration--delivery?region=all",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "Discovery Center"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/continuous-integration-delivery",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Continuous Integration & Delivery"
+    },
+    {
+      "value": "https://help.sap.com/doc/df5da36fc42a4722a57daa1eac6275c0/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/CONTINUOUS_DELIVERY",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/CONTINUOUS_DELIVERY/99c72101f7ee40d0b2deb4df72ba1ad3/618ca03fdca24e56924cc87cfbb7673a.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/CONTINUOUS_DELIVERY/99c72101f7ee40d0b2deb4df72ba1ad3/6e10ad426e434180a0c62d4e7b6115bc.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/docs/continuous-integration-and-delivery/sap-continuous-integration-and-delivery/using-api?language=en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "API Documentation"
+    },
+    {
+      "value": "https://developers.sap.com/tutorials/cicd-corporate-git.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Connect SAP Continuous Integration and Delivery with Your Corporate Git"
+    },
+    {
+      "value": "https://developers.sap.com/tutorials/cicd-start-cap.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Get Started with an SAP Cloud Application Programming Model Project in SAP Continuous Integration and Delivery"
+    },
+    {
+      "value": "https://developers.sap.com/tutorials/cicd-start-fiori.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Get Started with an SAP Fiori Project in SAP Continuous Integration and Delivery"
+    },
+    {
+      "value": "https://developers.sap.com/tutorials/cicd-wdi5-cap.html",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Create Automated System Tests for SAP Cloud Application Programming Model Projects"
+    },
+    {
+      "value": "https://learning.sap.com/learning-journey/discovering-devops-with-sap-btp?url_id=text-gl-lh",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Discovering DevOps with SAP BTP"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/99c72101f7ee40d0b2deb4df72ba1ad3/618ca03fdca24e56924cc87cfbb7673a.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is SAP Continuous Integration and Delivery"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/99c72101f7ee40d0b2deb4df72ba1ad3/719acaf61e4b4bf0a496483155c52570.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/CICD_OVERVIEW",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Continuous Integration and Delivery by SAP"
+    },
+    {
+      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Continuous%20Integration%20%26%20Delivery",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://sapvideo.cfapps.eu10-004.hana.ondemand.com/?entry_id=1_vu8robzc",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Introduction to SAP Continuous Integration and Delivery"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "When subscribed together with the SAP Continuous Integration and Delivery Application Plan, the Service Plan additionally provides access to the SAP Continuous Integration and Delivery API.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "reuse",
+      "displayName": "reuse",
+      "category": "SERVICE",
+      "description": "Reuse Scenario Plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-CP-CF-CICD"
+    }
+  ],
+  "apis": [
+    {
+      "name": "SAP Continuous Integration and Delivery Service",
+      "url": "https://api.sap.com/api/CloudCiApiSuite/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

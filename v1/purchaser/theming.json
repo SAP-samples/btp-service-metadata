@@ -1,0 +1,980 @@
+{
+  "name": "theming",
+  "displayName": "UI theme designer",
+  "description": "The UI theme designer lets you apply your corporate branding to applications built with SAP UI technologies. You can make changes to theme templates supplied by SAP to create custom themes that use your own color scheme, background images, and company logo. You can apply a custom theme to various SAP UI clients and technologies. Additionally, you can include your own custom CSS files without having to modify any of your applications.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Pkvb8xoGb1UNLxHojukGJ-cT3evtUGp0Tuel0T3oNBaddD5YtIq3d8kr4WD0Yj32.svg",
+  "servicePlans": [
+    {
+      "name": "saas-standard",
+      "displayName": "saas-standard",
+      "category": "SERVICE",
+      "description": "Deprecated; use standard",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Provides the theming service using one repository per tenant. The repository is created by creating a service instance or via SaaS subscription of the theming service.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8000792",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000857",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8000940",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001018",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001020",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001021",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8001021",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002075",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002075",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002076",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002077",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002078",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002079",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002081",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002082",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002083",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002084",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002086",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002087",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002088",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002089",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002091",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002092",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002093",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8002094",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003366",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003367",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003368",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003369",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003370",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003371",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003372",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003374",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003375",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003376",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003382",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003385",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003386",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003513",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003514",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003515",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003516",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003517",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003546",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003948",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003949",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003950",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003951",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003952",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8003953",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004158",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004159",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004504",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004504",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004505",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004742",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004743",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004744",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004745",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004745",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004746",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004746",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8004747",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005320",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005383",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005384",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005564",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005565",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005571",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005577",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005725",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005883",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005884",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005886",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005887",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005889",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8005890",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006226",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006227",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006228",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006229",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006230",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006231",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006232",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006233",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007061",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007115",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007131",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007132",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007132",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007135",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007135",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007736",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007736",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007737",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007737",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007738",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007874",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007874",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007964",
+          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8007978",
+          "commercialModel": "ppu_ms_azure_hyperscaler"
+        },
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008012",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008110",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008428",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008428",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008442",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008442",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008443",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008443",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008444",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008444",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008466",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008810",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008811",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008853",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008853",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008874",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008875",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008948",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009210",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8009360",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009360",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010827",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010827",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010833",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010836",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010840",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010925",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010925",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010958",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010959",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011270",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011270",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011559",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012324",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012331",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012590",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014014",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014014",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014033",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014046",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014046",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014072",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014155",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014162",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014221",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014491",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014491",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014761",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014771",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014797",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014802",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014802",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014813",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014831",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014831",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014852",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014921",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016411",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016421",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017424",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017424",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018418",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018501",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018511",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018511",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018831",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018832",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8018834",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "ProdDummy19",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

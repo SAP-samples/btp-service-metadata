@@ -1,0 +1,85 @@
+{
+  "name": "e-mobility",
+  "displayName": "SAP E-Mobility",
+  "description": "SAP E-Mobility",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0iZS1tb2JpbGl0eV9TQVBfIiBkYXRhLW5hbWU9ImUtbW9iaWxpdHkgKFNBUCkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDU2IDU2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzA1M2I3MDt9LmNscy0ye2ZpbGw6IzBhNmVkMTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNDYuOTMsMjMuNzExbDMuMjYxLTQuODgzYTMsMywwLDAsMC0xLjE1Ny00LjM0OEw0Ni4wNjksMTMsNDkuMyw3LjAwNSw0My4wNjQsNGwtNC4wMDYsNi42NjZhOC45NzEsOC45NzEsMCwwLDAsMy4zNTcsMTIuNDYybC0uMDExLjAyYTEzLjU4MywxMy41ODMsMCwwLDEsNy4wMSwxNC45NDJjLS40NiwxLjgyOS0xLjU3OCwzLjc4NS0zLjM0NSwzLjc4NS0zLjMxMywwLTQuMDYxLTMuMDQ1LTQuOS04LjA2LS43NzctNC42NTktMS42NjEtOS45NC03LjEyMi05Ljk0VjEwLjIyN0E2LjIzMiw2LjIzMiwwLDAsMCwyNy44MTMsNEgxMy4yNDJhNi4yMzIsNi4yMzIsMCwwLDAtNi4yMzcsNi4yMjdWNDNhMywzLDAsMCwwLTMsM3Y2SDM3LjA1NFY0NmEzLDMsMCwwLDAtMy4wMDUtM1YyNi4xMjVjMy4zMTMsMCw0LjA2MiwzLjA0NSw0LjksOC4wNi43NzgsNC42NTksMS42NjEsOS45NCw3LjEyMiw5Ljk0LDIuNTYyLDAsNC42ODEtMi4xLDUuNTMyLTUuNDg3QTE1LjczNCwxNS43MzQsMCwwLDAsNDYuOTMsMjMuNzExWk00MC4zLDE3LjE4NGE2LjY3Miw2LjY3MiwwLDAsMSwuNjk0LTUuMzZsMi45NDgtNC45TDQ2LjIsOC4wMDlsLTIuMTE1LDMuOTI1LTEuMSwyLjA0MSwyLjA3NywxLjAzOCwyLjk2NiwxLjQ4YS43NDkuNzQ5LDAsMCwxLC4yODksMS4wODZMNDUuMywyMi4xbC0xLjUzMy0uNzY1QTYuNjg1LDYuNjg1LDAsMCwxLDQwLjMsMTcuMTg0Wk0zNC4wNDksNDlINy4wMDVWNDZIMzQuMDQ5Wk0xMC4wMSw0M1YxMC4yMjdBMy4yMzMsMy4yMzMsMCwwLDEsMTMuMjQyLDdIMjcuODEzYTMuMjMyLDMuMjMyLDAsMCwxLDMuMjMxLDMuMjI3VjQzWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxOC41MjQgMTEuNSAxNC41MTcgMjUgMTguNTI0IDI1IDE0LjUxNyAzOC41IDI2LjUzNyAyMS42MjUgMjIuNTMgMjEuNjI1IDI2LjUzNyAxMS41IDE4LjUyNCAxMS41Ii8+PC9zdmc+",
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "The standard service plan offers all the required features of SAP E-Mobility for managing the technical and business processes of your charging infrastructures.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8011463",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011463",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012225",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012567",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013696",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014266",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "tandd",
+      "displayName": "Test & Demo",
+      "category": "APPLICATION",
+      "description": "With this service plan, you are limited in the number of EVSEs managed by SAP E-Mobility.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8012567",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

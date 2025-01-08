@@ -1,0 +1,255 @@
+{
+  "name": "one-inbox-service",
+  "displayName": "SAP Task Center",
+  "description": "SAP Task Center",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/igE4URgXbkjbeD2oo_OaB80JNdNT1os512EUFHsLl1-1zom1VeooQ2HmLvuvoqoq.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/SAPTaskCenter/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Task Center | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Task%20Center",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Task%20Center",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-task-center",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - SAP Task Center"
+    },
+    {
+      "value": "https://help.sap.com/doc/1599f0308de2496582b9da1680f3519e/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/TASK_CENTER/08cbda59b4954e93abb2ec85f1db399d/2ab214247ec942a7a5be16ac88b4dbdb.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security"
+    },
+    {
+      "value": "https://blogs.sap.com/tag/sap-task-center/",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "See all SAP Task Center Blogs"
+    },
+    {
+      "value": "https://d.dam.sap.com/a/a2x3zwM/SAP%20Task%20Center_L3%20Presentation.pdf?rc=10",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Task Center Detailed Presentation"
+    },
+    {
+      "value": "https://news.sap.com/2021/12/sap-task-center-click-read-approve-repeat/",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Task Center: Click, Read, Approve, Repeat!"
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=CF1ADKt4l3k&t=1700s",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Integrate Solutions in Your Intelligent Enterprise: What's Trending?"
+    },
+    {
+      "value": "https://www.youtube.com/watch?v=Epc-EfTO-rI",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Simplifying approvals across the Intelligent Suite in One Workflow Inbox (SAP Task Center) \u2013 SAP Garage 2022"
+    },
+    {
+      "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is SAP Task Center?"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/1bcdd459f84d4323a27581226d1d210e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/834769400794464489f390350a82bbd6.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/89c09a4067bd4c62a5a4b2f5c0da48c5.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Troubleshooting"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/9693186f1fe54cbe801085d6bdfe8287.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/TASK_CENTER/Cloud",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/TASK_CENTER",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.youtube.com/embed/ai3G7ejuiB4",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Task Center"
+    },
+    {
+      "value": "https://www.youtube.com/embed/sv_q64zJ5cA",
+      "classification": "External",
+      "type": "Link",
+      "text": "SAP Mobile Start \u2013 Your native entry point to the Intelligent Enterprise"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "Default plan for using the SAP Task Center",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-INB-TSK"
+    },
+    {
+      "value": "LOD-BPM-INB"
+    }
+  ],
+  "apis": [
+    {
+      "name": "SAP Task Center API",
+      "url": "https://api.sap.com/api/TaskCenterAPIForCloudFoundry/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "name": "IRPA",
+  "displayName": "SAP Intelligent Robotic Process Automation",
+  "description": "SAP Intelligent Robotic Process Automation",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zQJLeoFsMDqnO-7-CrcXzobF9BuWRX0e1M48iaTIubPupUFQp3dFGSCfsq3eBVDL.svg",
+  "servicePlans": [
+    {
+      "name": "concurrent",
+      "displayName": "Concurrent",
+      "category": "APPLICATION",
+      "description": "Design, configure, and execute automation projects",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8009276",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009277",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010772",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011025",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "concurrent-attended",
+      "displayName": "concurrent-attended",
+      "category": "SERVICE",
+      "description": "Number of concurrent attended runs (in blocks of 10)",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007714",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8009276",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009277",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009277",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010772",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011025",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011152",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011176",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011177",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011178",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "concurrent-unattended",
+      "displayName": "concurrent-unattended",
+      "category": "SERVICE",
+      "description": "Number of concurrent unattended runs (in blocks of 1)",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007714",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8009276",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009276",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009277",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010772",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011025",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011025",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011152",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011176",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011177",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011178",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "APPLICATION",
+      "description": "Default application plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007714",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007714",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8008261",
+          "commercialModel": "ppu_oem"
+        },
+        {
+          "materialNumber": "8008817",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009276",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009277",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011025",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011152",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011176",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011177",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011178",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "free",
+      "displayName": "Free",
+      "category": "APPLICATION",
+      "description": "Design, configure, and execute automation projects (free edition). Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007714",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8009276",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009277",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8009282",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8011024",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011025",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011152",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011152",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011176",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011177",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8011178",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016044",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017606",
+          "commercialModel": "btpea"
+        },
+        {
+          "materialNumber": "8017640",
+          "commercialModel": "pure_ppu"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    "C5",
+    "ISO 22301",
+    "ISO 27001",
+    "ISO 27017",
+    "ISO 27018",
+    "SOC 1",
+    "SOC 2"
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "name": "sapappstudio",
+  "displayName": "SAP Business Application Studio",
+  "description": "SAP Business Application Studio",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/K86UjB1kMF074aMU5dEJl3p2FWNokLhkOe_noRsSpjeppeZv8j7kj6LXQeRhzftK.svg",
+  "links": [
+    {
+      "value": "https://api.sap.com/package/BusinessApplicationStudio/overview",
+      "classification": "API Hub",
+      "type": "Link",
+      "text": "Overview | SAP Business Application Studio | SAP API Business Hub"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Business%20Application%20Studio",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Business%20Application%20Studio",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://discovery-center.cloud.sap/serviceCatalog/business-application-studio",
+      "classification": "Discovery Center",
+      "type": "Link",
+      "text": "SAP Discovery Center - Business Application Studio"
+    },
+    {
+      "value": "https://help.sap.com/doc/8e3365afb6c143118a1c2f1eed1f56cb/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/7b2bdd5e38e64f129988b86e8e2836e3.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Security Guide"
+    },
+    {
+      "value": "https://help.sap.com/docs/bas/sap-business-application-studio/commercial-information",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Understanding Service Plans and Metering"
+    },
+    {
+      "value": "https://help.sap.com/docs/bas/sap-business-application-studio/what-is-sap-business-application-studio",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://community.sap.com/topics/business-application-studio",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Business Application Studio Homepage"
+    },
+    {
+      "value": "https://developers.sap.com/tutorial-navigator.html?tag=products:technology-platform/sap-business-application-studio",
+      "classification": "Tutorial",
+      "type": "Link",
+      "text": "Tutorials"
+    },
+    {
+      "value": "https://open.sap.com/courses/cp7",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "Building Applications with SAP Cloud Application Programming Model"
+    },
+    {
+      "value": "https://open.sap.com/courses/fiori3",
+      "classification": "Learning",
+      "type": "Link",
+      "text": "SAP Fiori Overview: Design, Develop and Deploy"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/9d1db9835307451daa8c930fbd9ab264/19611ddbe82f4bf2b493283e0ed602e5.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/9d1db9835307451daa8c930fbd9ab264/8f46c6e6f86641cc900871c903761fd4.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What is SAP Business Application Studio"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/9d1db9835307451daa8c930fbd9ab264/a3467fe642ce4f6bb36de0a100440602.html",
+      "classification": "Support",
+      "type": "Link",
+      "text": "Support"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/9d1db9835307451daa8c930fbd9ab264/ed631d4ee2214e9f932b03d40b2c7e41.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP%20Business%20Application%20Studio/Cloud/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Help Portal Product Page"
+    },
+    {
+      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+      "classification": "Legal",
+      "type": "Link",
+      "text": "Legal"
+    },
+    {
+      "value": "https://www.youtube.com/embed/ulukOikw53I",
+      "classification": "External",
+      "type": "Link",
+      "text": "Introduction to SAP Business Application Studio"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "build-code",
+      "displayName": "build-code",
+      "category": "APPLICATION",
+      "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with SAP Build Code, use the build-code plan. Please note if you use the standard plan, it will incur charges outside the build code capacity units metric. Use the build-code plan for productive AI-based development.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "build-code-free",
+      "displayName": "Build Code Free",
+      "category": "APPLICATION",
+      "description": "Use the build-code-free plan for evaluation AI-based development. This option is available only if your subaccount is subscribed to SAP Build Code.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "free",
+      "displayName": "free",
+      "category": "APPLICATION",
+      "description": "Develop applications in preconfigured dev spaces for evaluation purposes. Restrictions apply to the development environments. Only community support is available for free tier service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard-edition",
+      "displayName": "standard-edition",
+      "category": "APPLICATION",
+      "description": "Develop applications in preconfigured dev spaces for productive development.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "CA-BAS"
+    }
+  ],
+  "apis": [
+    {
+      "name": "SAP Business Application Studio Dev Space Management",
+      "url": "https://api.sap.com/api/BASAPIdetails/overview",
+      "apiType": "RESTful"
+    }
+  ]
+}

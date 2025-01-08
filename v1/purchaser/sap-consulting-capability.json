@@ -1,0 +1,33 @@
+{
+  "name": "sap-consulting-capability",
+  "displayName": "SAP Consulting Capability",
+  "description": "SAP Consulting Capability",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Standard plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8018985",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

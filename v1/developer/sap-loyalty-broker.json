@@ -1,0 +1,33 @@
+{
+  "name": "sap-loyalty-broker",
+  "displayName": "SAP Loyalty Marketing",
+  "description": "SAP Loyalty Marketing",
+  "icon": null,
+  "links": [],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "SAP Loyalty Marketing - Service Broker for APIs",
+      "category": "SERVICE",
+      "description": "SAP Loyalty Marketing - Service Broker for APIs",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

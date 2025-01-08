@@ -1,0 +1,73 @@
+{
+  "name": "cloudforenergy-api",
+  "displayName": "SAP Cloud for Energy",
+  "description": "Establish connection to the Cloud for Energy API",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "audit",
+      "displayName": "audit",
+      "category": "SERVICE",
+      "description": "audit",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8006176",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006198",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013690",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "standard",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8006176",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8006198",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013690",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

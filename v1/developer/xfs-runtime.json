@@ -1,0 +1,272 @@
+{
+  "name": "xfs-runtime",
+  "displayName": "SAP BTP, serverless runtime",
+  "description": "Allows you to create, manage, and configure extensions on SAP Business Technology Platform and provides runtime access to OData services exposed by the OData Provisioning capability in SAP Integration Suite.",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7YQE_MtaPbytsAoSGtVpszwnUCM1bxvhL6xU3-Mp5TRxXhfpxa7rz8aTVkERO0-o.svg",
+  "links": [
+    {
+      "value": "https://blogs.sap.com/?s=serverless+runtime",
+      "classification": "Blog",
+      "type": "Link",
+      "text": "Blogs"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20BTP%2C%20serverless%20runtime",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20BTP%2C%20serverless%20runtime",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    },
+    {
+      "value": "https://help.sap.com/doc/5e8107bf49684962b897217040398007/",
+      "classification": "Documentation",
+      "type": "PDF",
+      "text": "Feature Scope Description"
+    },
+    {
+      "value": "https://help.sap.com/docs/integration-suite/sap-integration-suite/odata-provisioning",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/612f4ceafcdf45bfac40a8fc0b1a88ae.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "Serverless Runtime Development Tools"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/61834baadfcc45a2b4bf6675b518e6f9.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What's New"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/7b8cc2b0e8d141d6aa37c7dff4d70b82.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "What Is SAP BTP, Serverless Runtime"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/80f67e476a8447378a72b3fcfbce8f3e.html",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Initial Setup"
+    },
+    {
+      "value": "https://help.sap.com/docs/BTP/bf7b2ff68518427c85b30ac3184ad215/8400ccd0efc94c3096a9468c1e5f63ce.html",
+      "classification": "Tool",
+      "type": "Link",
+      "text": "SAP Business Technology Platform Serverless Runtime CLI"
+    },
+    {
+      "value": "https://help.sap.com/docs/XF_SERVERLESS_RUNTIME",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Product Page"
+    },
+    {
+      "value": "https://www.youtube.com/embed/hUx3Miq29XQ",
+      "classification": "External",
+      "type": "Link",
+      "text": "Overview"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "SERVICE",
+      "description": "Default plan for productive usage",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "reuse",
+      "displayName": "reuse",
+      "category": "SERVICE",
+      "description": "This is a reuse plan",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [
+    {
+      "value": "BC-CP-XF-SRT"
+    }
+  ],
+  "apis": []
+}

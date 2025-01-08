@@ -1,0 +1,84 @@
+{
+  "name": "pdms-services",
+  "displayName": "SAP Predictive Asset Insights",
+  "description": "SAP Predictive Asset Insights",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/aRCS-8vbrTc72VC5EYQiFmKVRRn2hHuE3VgDwCTgCDi9edmsJfoBB5tUMyl4wWBq.svg",
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_PREDICTIVE_ASSET_INSIGHTS",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/viewer/product/SAP_PREDICTIVE_ASSET_INSIGHTS/latest/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "provisioning-admin",
+      "displayName": "provisioning-admin",
+      "category": "SERVICE",
+      "description": "SAP Predictive Asset Insights - Provisioning",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "standard",
+      "displayName": "standard",
+      "category": "SERVICE",
+      "description": "SAP Predictive Asset Insights - Standard",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

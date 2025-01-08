@@ -1,0 +1,149 @@
+{
+  "name": "epd-product-structure",
+  "displayName": "Enterprise Product Structure",
+  "description": "Enterprise Product Structure",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogbm9uZTsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiAjMGE2ZWQxOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICMzNTRhNWY7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgeT0iLjExIiB3aWR0aD0iMzIiIGhlaWdodD0iMzEuODkiLz4KICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTUgMTMuNTcgMTEuNSAxMS41NyAxMS41IDkuMDggMTUgMTEuMDcgMTUgMTMuNTciLz4KICA8cmVjdCBjbGFzcz0iY2xzLTMiIHg9IjMiIHk9IjIwLjA0IiB3aWR0aD0iMjYiIGhlaWdodD0iMS45OSIvPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMjksMjQuMDN2LTEuOTloLTJ2MS45OWgtNHY3Ljk3aDl2LTcuOTdoLTNabTEsNS45OGgtNXYtMy45OWg1djMuOTlaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNywxNi44aC0ydjcuMjJoLTMuNXY3Ljk3aDl2LTcuOTdoLTMuNXYtNy4yMlptMS41LDEzLjJoLTV2LTMuOTloNXYzLjk5WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNSwyMi4wNEgzdjEuOTlIMHY3Ljk3SDl2LTcuOTdINXYtMS45OVptMiw3Ljk3SDJ2LTMuOTlIN3YzLjk5WiIvPgogIDwvZz4KICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTYgMTguMiA4IDEzLjY1IDggNC41MiAxMS45OCAyLjI2IDIwIDYuNDkgMjAgOC41OCAxOCA5LjU4IDE4IDcuNjkgMTIuMDIgNC41MyAxMCA1LjY4IDEwIDEyLjQ5IDE2IDE1LjkxIDIyIDEyLjQ5IDIyIDQuNzYgMTYuMDYgMi4yMiAxNS40NSAyLjU2IDEzLjQ5IDEuNCAxNS45NCAwIDI0IDMuNDQgMjQgMTMuNjUgMTYgMTguMiIvPgo8L3N2Zz4=",
+  "servicePlans": [
+    {
+      "name": "production",
+      "displayName": "Production",
+      "category": "APPLICATION",
+      "description": "For productive use. No preliminary features for preview or early testing. Consumed capacity units for this tenant are calculated and priced according to the Supplement Terms and Conditions.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8017574",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Standard application plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008476",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008647",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008647",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "tandd",
+      "displayName": "Test and Demo",
+      "category": "APPLICATION",
+      "description": "For test and development purposes. No preliminary features for preview or early testing. Consumed capacity units for this tenant are calculated according to the Supplement Terms and Conditions.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008946",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8017674",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "displayName": "Test",
+      "category": "APPLICATION",
+      "description": "For preview and early testing of the preliminary release of new and changed features. Consumed capacity units for this tenant are calculated but no costs incurred. For additional limitations, see Supplement Terms and Conditions.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8017574",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

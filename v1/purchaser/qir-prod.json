@@ -1,0 +1,33 @@
+{
+  "name": "qir-prod",
+  "displayName": "SAP Quality Issue Resolution",
+  "description": "SAP Quality Issue Resolution",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM1OTU5NTk7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5ncm91cDwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9Imdyb3VwIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xOCwyN2ExMS42MzQsMTEuNjM0LDAsMCwxLDQuNjg4LjkzOCwxMi4yMjEsMTIuMjIxLDAsMCwxLDYuMzc1LDYuMzc0QTExLjY1MSwxMS42NTEsMCwwLDEsMzAsMzl2OUgwVjM5YTExLjYxNywxMS42MTcsMCwwLDEsLjkzOC00LjY4OCwxMi4xNjcsMTIuMTY3LDAsMCwxLDIuNTc4LTMuOCwxMi4wMjksMTIuMDI5LDAsMCwxLDMuODQzLTIuNTc4QTExLjcyNiwxMS43MjYsMCwwLDEsMTIsMjdoNlptOSwxMmE4Ljk2Myw4Ljk2MywwLDAsMC05LTlIMTJhOC40OTMsOC40OTMsMCwwLDAtMy40NjkuNyw5LjgsOS44LDAsMCwwLTIuODU5LDEuOTIyQTguNjg3LDguNjg3LDAsMCwwLDMuNywzNS40ODQsOC44MjgsOC44MjgsMCwwLDAsMywzOXY2SDI3Wk0yNCwxOGE4LjY3OCw4LjY3OCwwLDAsMS0yLjYyNSw2LjM3NUE4LjY4MSw4LjY4MSwwLDAsMSwxNSwyN2E4LjY3OCw4LjY3OCwwLDAsMS02LjM3NS0yLjYyNUE4LjY3OCw4LjY3OCwwLDAsMSw2LDE4YTguNjgxLDguNjgxLDAsMCwxLDIuNjI1LTYuMzc1QTguNjgyLDguNjgyLDAsMCwxLDE1LDlhOC42ODUsOC42ODUsMCwwLDEsNi4zNzUsMi42MjVBOC42ODEsOC42ODEsMCwwLDEsMjQsMThabS05LDZhNS43MjEsNS43MjEsMCwwLDAsNC4yNjYtMS43ODFBNS44NDIsNS44NDIsMCwwLDAsMjEsMThhNS45MjIsNS45MjIsMCwwLDAtNi02LDUuODQ2LDUuODQ2LDAsMCwwLTQuMjE5LDEuNzM0LDUuOTQzLDUuOTQzLDAsMCwwLDAsOC40ODVBNS43NjIsNS43NjIsMCwwLDAsMTUsMjRaTTQyLDcuNWE3LjMsNy4zLDAsMCwxLTIuMTU2LDUuMyw3LjUyNSw3LjUyNSwwLDAsMS0xMC42NCwwQTcuMjIyLDcuMjIyLDAsMCwxLDI3LDcuNWE3LjIyMyw3LjIyMywwLDAsMSwyLjItNS4zLDcuNTI1LDcuNTI1LDAsMCwxLDEwLjY0LDBBNy4zLDcuMywwLDAsMSw0Miw3LjVaTTM2LDE1YTExLjYzMSwxMS42MzEsMCwwLDEsNC42ODguOTM4LDEyLjIyMSwxMi4yMjEsMCwwLDEsNi4zNzUsNi4zNzRBMTEuNjUxLDExLjY1MSwwLDAsMSw0OCwyN3Y2SDMzLjA5NFYzMEg0NVYyN2E4Ljk2Myw4Ljk2MywwLDAsMC05LTlIMzNhOC41MzksOC41MzksMCwwLDAtNiwyLjM0NFYxNi42ODhBMTAuODQ0LDEwLjg0NCwwLDAsMSwzMywxNWgzWm0tMS41LTNhNC4zNDIsNC4zNDIsMCwwLDAsMy4xODgtMS4zMTJBNC4zMzksNC4zMzksMCwwLDAsMzksNy41YTQuMzQyLDQuMzQyLDAsMCwwLTEuMzEyLTMuMTg4LDQuNTI4LDQuNTI4LDAsMCwwLTYuMzc1LDBBNC4zMzksNC4zMzksMCwwLDAsMzAsNy41YTQuMzM2LDQuMzM2LDAsMCwwLDEuMzEzLDMuMTg4QTQuMzM4LDQuMzM4LDAsMCwwLDM0LjUsMTJaIi8+PC9nPjwvZz48L3N2Zz4=",
+  "servicePlans": [
+    {
+      "name": "psp-api",
+      "displayName": "psp-api",
+      "category": "SERVICE",
+      "description": "API to manage problem-solving processes.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8009213",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8014073",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

@@ -1,0 +1,37 @@
+{
+  "name": "csi-sam-SAP",
+  "displayName": "Consumer Sales Intelligence Sales Audit Manager",
+  "description": "Consumer Sales Intelligence Sales Audit Manager",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Consumer Sales Intelligence Sales Audit Manager",
+      "category": "APPLICATION",
+      "description": "Consumer Sales Intelligence Sales Audit Manager",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8007918",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008168",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008372",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

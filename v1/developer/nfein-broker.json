@@ -1,0 +1,36 @@
+{
+  "name": "nfein-broker",
+  "displayName": "SAP Document and Reporting Compliance inbound nota fiscal",
+  "description": "SAP Document and Reporting Compliance inbound nota fiscal",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ibG9jYWxpemF0aW9uLWh1Yi1uZmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDU2IDU2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzA1M2I3MDt9LmNscy0ye2ZpbGw6IzBhNmVkMTt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmxvY2FsaXphdGlvbi1odWItbmZlPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00Myw0NnYzYTIuODg5LDIuODg5LDAsMCwxLTMsM0gxMGEyLjg4OSwyLjg4OSwwLDAsMS0zLTNWMTZMMTksNEg0MGEyLjk2MiwyLjk2MiwwLDAsMSwyLjEwOS44NDRBMi44NDgsMi44NDgsMCwwLDEsNDMsN3Y2SDQwVjdIMjJ2OWEyLjg0NCwyLjg0NCwwLDAsMS0uODkxLDIuMTU2LDMuMDgyLDMuMDgyLDAsMCwxLTIuMi44NDRIMTBWNDlINDBWNDZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjMuNTc4LDQzSDE0LjVhMS41LDEuNSwwLDAsMCwwLDNoOS4wNzhhMS41LDEuNSwwLDEsMCwwLTNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzAuMTU2LDMxaDEuNjg4VjI5LjAzMWE2LjY2Niw2LjY2NiwwLDAsMCwzLjk4NC0xLjc4MUE1LjAxOSw1LjAxOSwwLDAsMCwzNywyMy43ODFhNC44NzUsNC44NzUsMCwwLDAtMS4wMzEtMy4wOTNxLS44NDUtLjkzNy00LjEyNS0xLjk2OXYtNC41YTIuNzc4LDIuNzc4LDAsMCwxLDEuNzgxLDEuODc1bDIuOTA2LS4zNzVhNC45NTQsNC45NTQsMCwwLDAtMS4zNTktMi43NjYsNS4xODMsNS4xODMsMCwwLDAtMy4zMjgtMS4yNjVWMTAuNDY5SDMwLjE1NnYxLjIxOWE0LjkzMiw0LjkzMiwwLDAsMC0zLjQyMiwxLjUsNC42MTYsNC42MTYsMCwwLDAtMS4xNzIsMy4xODcsNS4yMjcsNS4yMjcsMCwwLDAsLjkzOCwzLjA0Nyw2LjMwNyw2LjMwNywwLDAsMCwzLjY1NiwyLjEwOXY0Ljg3NWE0Ljk3Miw0Ljk3MiwwLDAsMS0xLjUtMS4xNzIsMy42MjgsMy42MjgsMCwwLDEtLjU2Mi0xLjQ1M2wtMywuMzc1YTUuNDUyLDUuNDUyLDAsMCwwLDUuMDYyLDQuOTY5Wm0xLjY4OC05YTQsNCwwLDAsMSwxLjk2OC45ODQsMi4xLDIuMSwwLDAsMSwuMzc2LDEuMjY2LDIuMjQsMi4yNCwwLDAsMS0uNTYzLDEuNSwzLjE2NSwzLjE2NSwwLDAsMS0xLjc4MS44NDRabS0zLjE4OC00LjczNGExLjkwOCwxLjkwOCwwLDAsMS0uMjgxLTEuMDc4LDIuMDc0LDIuMDc0LDAsMCwxLC4zMjgtMS4wMzIsMi41NDgsMi41NDgsMCwwLDEsMS40NTMtLjkzN1YxOC4yNUEzLjg3MywzLjg3MywwLDAsMSwyOC42NTYsMTcuMjY2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTIzLjU3OCwzN0gxNC41YTEuNSwxLjUsMCwwLDAsMCwzaDkuMDc4YTEuNSwxLjUsMCwxLDAsMC0zWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI0NiAyOCAzNi41MzEgMzkuOTA2IDMxLjg0NCAzNS4xMjUgMjguODQ0IDM4LjAzMSAzNi42MjUgNDUuOTA2IDQ5IDMxIDQ2IDI4Ii8+PC9zdmc+",
+  "links": [
+    {
+      "value": "https://help.sap.com/viewer/product/DC_NFe/1812/en-US",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    }
+  ],
+  "servicePlans": [
+    {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "SERVICE",
+      "description": "Inbound invoicing option for Brazil Standard",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

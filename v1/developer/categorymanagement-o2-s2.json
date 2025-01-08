@@ -1,0 +1,47 @@
+{
+  "name": "categorymanagement-o2-s2",
+  "displayName": "SAP Category Management",
+  "description": "Provides tools and data insights across all phases of category strategy development and execution.",
+  "icon": null,
+  "links": [],
+  "servicePlans": [
+    {
+      "name": "CategoryManagement",
+      "displayName": "Category Management",
+      "category": "APPLICATION",
+      "description": "Category Management",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    },
+    {
+      "name": "OpportunityAnalysis",
+      "displayName": "Opportunity Analysis",
+      "category": "APPLICATION",
+      "description": "Opportunity Analysis",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

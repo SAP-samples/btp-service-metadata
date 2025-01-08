@@ -1,0 +1,45 @@
+{
+  "name": "ipf-service",
+  "displayName": "SAP Industry Process Framework",
+  "description": "SAP Industry Process Framework",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/a1PU5QIItDZbky4SxYDEWjD3My4J5g6e7hIcouZ_H56KAszMz3wm9Bd2iHDnUPhq.svg",
+  "servicePlans": [
+    {
+      "name": "api-access",
+      "displayName": "api-access",
+      "category": "SERVICE",
+      "description": "This plan allows you to access runtime APIs for consumer scenarios.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8012140",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013399",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013399",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013697",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8013749",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

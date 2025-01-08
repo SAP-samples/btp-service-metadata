@@ -1,0 +1,257 @@
+{
+  "name": "secure-login-service",
+  "displayName": "SAP Secure Login Service for SAP GUI",
+  "description": "Get client certificates via Secure Login Client (SLC) to log-on with SAP GUI.",
+  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc5NjQpIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02LjQ4MDkgMC42NjE5NTJDNy4zMTk1NSAtMC4xNzY3MDQgOC42NzkyOCAtMC4xNzY3MDYgOS41MTc5NCAwLjY2MTk1TDE1LjMzOTYgNi40ODM1OEMxNi4xNzgyIDcuMzIyMjQgMTYuMTc4MiA4LjY4MTk3IDE1LjMzOTYgOS41MjA2Mkw5LjUxNzk0IDE1LjM0MjNDOC42NzkyOCAxNi4xODA5IDcuMzE5NTUgMTYuMTgwOSA2LjQ4MDkgMTUuMzQyM0wwLjY1OTI2NiA5LjUyMDYzQy0wLjE3OTM4OSA4LjY4MTk3IC0wLjE3OTM5MiA3LjMyMjI0IDAuNjU5MjY0IDYuNDgzNThMNi40ODA5IDAuNjYxOTUyWk0zLjg1Mjk3IDYuOTk3NDRDNC42MzEyMiA2LjIxMzYgNS44OTc1NCA2LjIwOTA5IDYuNjgxMzcgNi45ODczNEw3LjAwNDc0IDcuMzA4NDFMOC44Mzk1MyA1LjUxOTk2QzkuNjMwNTEgNC43NDg5NyAxMC44OTY3IDQuNzY1MTcgMTEuNjY3NyA1LjU1NjE0QzEyLjQzODcgNi4zNDcxMiAxMi40MjI1IDcuNjEzMzQgMTEuNjMxNSA4LjM4NDM0TDguMzg3ODEgMTEuNTQ2MUM3LjYwNTk3IDEyLjMwODIgNi4zNTc0MiAxMi4zMDI1IDUuNTgyNjQgMTEuNTMzMkwzLjg2MzA2IDkuODI1ODVDMy4wNzkyMyA5LjA0NzU5IDMuMDc0NzEgNy43ODEyNyAzLjg1Mjk3IDYuOTk3NDRaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMzg2MF8xNzk2NCkiLz4KPHBhdGggZD0iTTEwLjIzNTMgNi45NTIxNUw2Ljk5MTU2IDEwLjExMzlMNS4yNzE5NyA4LjQwNjU5IiBzdHJva2U9InVybCgjcGFpbnQxX2xpbmVhcl8zODYwXzE3OTY0KSIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMzg2MF8xNzk2NCIgeDE9IjIuNDE5NDkiIHkxPSIyLjQxNjQzIiB4Mj0iMTMuNTc5NCIgeTI9IjEzLjU4MDIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAxOTVGRiIvPgo8c3RvcCBvZmZzZXQ9IjAuOTkxMDI4IiBzdG9wLWNvbG9yPSIjMTE0N0U5Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQxX2xpbmVhcl8zODYwXzE3OTY0IiB4MT0iNi4wMDU3NyIgeTE9IjcuNDE3MzIiIHgyPSI4LjAwNzUzIiB5Mj0iMTAuNTczMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMTM0OEZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA2MjM4RCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzM4NjBfMTc5NjQiPgo8cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDA0ODgyODEgMC4wMDE5NTMxMikiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "default",
+      "category": "APPLICATION",
+      "description": "Access to default profile",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8015461",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8015461",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8016110",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
+      "name": "test-and-demo",
+      "displayName": "test-and-demo",
+      "category": "APPLICATION",
+      "description": "Test and demo access for playground scenarios",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "cf-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "br30",
+          "name": "cf-br30"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "cf-jp30"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8016110",
+          "commercialModel": "Subscription"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}

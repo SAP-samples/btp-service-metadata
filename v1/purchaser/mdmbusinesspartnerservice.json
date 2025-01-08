@@ -1,0 +1,61 @@
+{
+  "name": "MDMBusinessPartnerService",
+  "displayName": "SAP Master Data service for business partners",
+  "description": "SAP Business Partner Service",
+  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ncLShvnSya-qHIzKV8azsqu-ybTYeCsYrmtgO6-GUz9oMhmtWUj4GIWelsGzkFo-.svg",
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "SAP Cloud Platform Master Data Management for business partners",
+      "category": "SERVICE",
+      "description": "SAP Business Technology Platform Master Data Management for business partners",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8005605",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8005606",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8007001",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007001",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007002",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8007848",
+          "commercialModel": "pure_ppu"
+        },
+        {
+          "materialNumber": "8007905",
+          "commercialModel": "ppu"
+        },
+        {
+          "materialNumber": "8010751",
+          "commercialModel": "ppu"
+        }
+      ]
+    }
+  ],
+  "certifications": []
+}
