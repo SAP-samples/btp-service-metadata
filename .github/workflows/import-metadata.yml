@@ -2,10 +2,10 @@ name: Update Metadata Files
 # Update the metadata information
 
 on:
-  #schedule:
-  # - cron: "0 6 * * *"
+  schedule:
+   - cron: "0 6 * * *"
   workflow_dispatch: {}
-  
+
 jobs:
   fetch-metadata:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
       - name: "Setup Node.js"
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
       - name: "Prepare collection of data from metadata repository"
         run: |
           cd .github/scripts
@@ -25,10 +25,10 @@ jobs:
       - name: "Execute collection of data from metadata repository"
         run: |
           cd .github/scripts
-          export GH_ENTERPRISE_TOKEN=${{ secrets.GH_ENTERPRISE_TOKEN }} 
+          export GH_ENTERPRISE_TOKEN=${{ secrets.GH_ENTERPRISE_TOKEN }}
           export GH_ENTERPRISE_API_URL=${{ secrets.GH_ENTERPRISE_API_URL }}
           export METADATA_SOURCE_VERSION=${{ secrets.METADATA_SOURCE_VERSION }}
-          export METADATA_SOURCE_DIR=${{ secrets.METADATA_SOURCE_DIR }} 
+          export METADATA_SOURCE_DIR=${{ secrets.METADATA_SOURCE_DIR }}
           export METADATA_SOURCE_REPO=${{ secrets.METADATA_SOURCE_REPO }}
           export METADATA_SOURCE_OWNER=${{ secrets.METADATA_SOURCE_OWNER }}
           npm run fetch:metadata
