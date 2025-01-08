@@ -4,11 +4,14 @@
 
 ## Description
 
-You are working with SAP BTP and looking for the metadata of the services in a *machine-readable* format? Then you are at the right place: this repository contains the **metadata of the SAP BTP services** available via an SAP BTP *pay-as-you-go* account.
+> [!IMPORTANT]
+> 08.01.2025: We updated the metadata to **v1**. The `v0` directory will no longer be updated. The schema of the data changed e.g., you can now also find the commercial model per service plan is part of the data.
 
-As different personas need different metadata when exploring the service metadata we decided to curate it for you. As criterion we use a *persona*+*-based approach as we are convinced that this will give the optimal support for the task at hand.
+You are working with SAP BTP and looking for the metadata of the services in a *machine-readable* format? Then you are at the right place: this repository contains the **metadata of the SAP BTP services**.
 
-We start with the persona *"developer"*. Based on the requirements of this persona we collected the metadata per service in the folder `v0/developer` as JSON files. In addition, we provide an [`inventory list`](v0/inventory.json) as an overview of all available services to enable to have a quick overview what is available and what is not.
+As different personas need different metadata when exploring the service metadata we decided to curate it for you. As criterion we use a *persona*-based approach as we are convinced that this will give the optimal support for the task at hand.
+
+We start with the persona *"developer"*. Based on the requirements of this persona we collected the metadata per service in the folder `v1/developer` as JSON files. In addition, we provide an [`inventory list`](v1/inventory.json) as an overview of all available services to enable to have a quick overview what is available and what is not.
 
 Based on [your feedback](https://github.com/SAP-samples/btp-service-metadata/issues/new/choose) we will add additional personas and additional curated metadata.
 
