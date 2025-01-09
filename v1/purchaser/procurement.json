@@ -149,25 +149,6 @@
       ]
     },
     {
-      "name": "production-catalogcontenthub",
-      "displayName": "Production-CatalogContentHub",
-      "category": "APPLICATION",
-      "description": "Plan for using the catalog content for SAP Ariba Buying.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": []
-    },
-    {
       "name": "production-expansion",
       "displayName": "Production-Expansion",
       "category": "APPLICATION",
@@ -190,25 +171,6 @@
           "commercialModel": "Subscription"
         }
       ]
-    },
-    {
-      "name": "production-suite",
-      "displayName": "Production-Suite",
-      "category": "APPLICATION",
-      "description": "Standard plan for SAP Ariba Buying (suite).",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": []
     },
     {
       "name": "test",
@@ -359,25 +321,6 @@
       ]
     },
     {
-      "name": "test-catalogcontenthub",
-      "displayName": "Test-CatalogContentHub",
-      "category": "APPLICATION",
-      "description": "Test plan for using the catalog content for SAP Ariba Buying. This is for non-productive purposes only. ",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": []
-    },
-    {
       "name": "test-expansion",
       "displayName": "Test-Expansion",
       "category": "APPLICATION",
@@ -400,25 +343,6 @@
           "commercialModel": "Subscription"
         }
       ]
-    },
-    {
-      "name": "test-suite",
-      "displayName": "Test-Suite",
-      "category": "APPLICATION",
-      "description": "Test plan for SAP Ariba Buying (suite). This is for non-productive purposes only.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": []
     }
   ],
   "certifications": []

@@ -55,24 +55,6 @@
   ],
   "servicePlans": [
     {
-      "name": "admin-api-access",
-      "displayName": "admin-api-access",
-      "category": "SERVICE",
-      "description": "SAP HANA Cloud, admin api access",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
-    },
-    {
       "name": "hana",
       "displayName": "hana",
       "category": "SERVICE",
@@ -811,24 +793,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "landscape-read-api-access",
-      "displayName": "landscape-read-api-access",
-      "category": "SERVICE",
-      "description": "SAP HANA Cloud, landscape read api access",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
     },
     {
       "name": "relational-data-lake",

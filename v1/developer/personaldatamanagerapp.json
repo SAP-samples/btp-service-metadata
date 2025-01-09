@@ -61,24 +61,6 @@
   ],
   "servicePlans": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "APPLICATION",
-      "description": "Default Plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        }
-      ],
-      "schemas": null
-    },
-    {
       "name": "standard",
       "displayName": "standard",
       "category": "APPLICATION",
@@ -132,36 +114,6 @@
         {
           "region": "us30",
           "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "tdd",
-      "displayName": "Test and Development",
-      "category": "APPLICATION",
-      "description": "Manage requests and inform data subjects about their personal data in processing.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
         }
       ],
       "schemas": null

@@ -5,21 +5,6 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/YnA0Vk_eSBtxAq3h07o0F47Laj9so8tYueTZs3ODfL83CJL0rSpUObhqOXRniILC.svg",
   "servicePlans": [
     {
-      "name": "emcsintegration",
-      "displayName": "emcsintegration",
-      "category": "SERVICE",
-      "description": "Service plan for providing read access to Business Partner and Material Master data. Additionally provides access to save ARC code",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": []
-    },
-    {
       "name": "extend",
       "displayName": "extend",
       "category": "SERVICE",
@@ -102,21 +87,6 @@
           "commercialModel": "Subscription"
         }
       ]
-    },
-    {
-      "name": "transportdata",
-      "displayName": "transportdata",
-      "category": "SERVICE",
-      "description": "Manages data transfer between tenants",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": []
     }
   ],
   "certifications": []

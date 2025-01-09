@@ -5,37 +5,6 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/lSybCFIbq8DVrawicxvA-2OHMx6Qc64CMs8LNnlxSY7DUVwk5YZzl3QhwDpwdjzR.svg",
   "servicePlans": [
     {
-      "name": "internal",
-      "displayName": "SAP Leonardo Machine Learning Foundation services",
-      "category": "SERVICE",
-      "description": "SAP Leonardo Machine Learning Foundation services",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": []
-    },
-    {
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
@@ -110,37 +79,6 @@
           "commercialModel": "ppu"
         }
       ]
-    },
-    {
-      "name": "standard_new",
-      "displayName": "ML Foundation Standard",
-      "category": "SERVICE",
-      "description": "ML Foundation Standard",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": []
     }
   ],
   "certifications": [

@@ -55,24 +55,6 @@
   ],
   "servicePlans": [
     {
-      "name": "emcsintegration",
-      "displayName": "emcsintegration",
-      "category": "SERVICE",
-      "description": "Service plan for providing read access to Business Partner and Material Master data. Additionally provides access to save ARC code",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
-    },
-    {
       "name": "extend",
       "displayName": "extend",
       "category": "SERVICE",
@@ -113,24 +95,6 @@
       "displayName": "taxcalculation",
       "category": "SERVICE",
       "description": "Service plan for Excise Tax Calculation",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "transportdata",
-      "displayName": "transportdata",
-      "category": "SERVICE",
-      "description": "Manages data transfer between tenants",
       "isFree": null,
       "isBeta": false,
       "deprecated": false,

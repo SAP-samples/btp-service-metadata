@@ -43,78 +43,10 @@
   ],
   "servicePlans": [
     {
-      "name": "internal",
-      "displayName": "SAP Leonardo Machine Learning Foundation services",
-      "category": "SERVICE",
-      "description": "SAP Leonardo Machine Learning Foundation services",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    },
-    {
       "name": "standard",
       "displayName": "standard",
       "category": "SERVICE",
       "description": "Default standard plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "standard_new",
-      "displayName": "ML Foundation Standard",
-      "category": "SERVICE",
-      "description": "ML Foundation Standard",
       "isFree": null,
       "isBeta": false,
       "deprecated": false,

@@ -19,50 +19,6 @@
   ],
   "servicePlans": [
     {
-      "name": "hdi-shared",
-      "displayName": "hdi-shared",
-      "category": "SERVICE",
-      "description": "HDI container on a HANA database",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "schema",
-      "displayName": "schema",
-      "category": "SERVICE",
-      "description": "Schema on a HANA database",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
-    },
-    {
       "name": "securestore",
       "displayName": "securestore",
       "category": "SERVICE",
