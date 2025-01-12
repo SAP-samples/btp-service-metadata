@@ -1,6 +1,6 @@
 {
   "name": "enterprise-messaging",
-  "displayName": "SAP Event Mesh",
+  "displayName": "Event Mesh",
   "description": "Event Mesh",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zqNiW8FlrR-JGOOd8nulSIA8lIovd3XOEbP1Z8bl2SHYQ_gT36RFK-V0bqVvrfsD.svg",
   "links": [
@@ -9,18 +9,6 @@
       "classification": "API Hub",
       "type": "Link",
       "text": "Overview | SAP Event Mesh Default Plan | SAP API Business Hub"
-    },
-    {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Event%20Mesh",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
-    },
-    {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Event%20Mesh",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
     },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/event-mesh",
@@ -443,84 +431,6 @@
         {
           "region": "us10",
           "name": "cf-us10"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "lite",
-      "displayName": "Event Mesh - lite plan",
-      "category": "SERVICE",
-      "description": "(deprecated) for productive usage, with high availability",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": true,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "neo-ae1",
-          "name": "neo-ae1"
-        },
-        {
-          "region": "neo-ap1",
-          "name": "neo-ap1"
-        },
-        {
-          "region": "neo-br1",
-          "name": "neo-br1"
-        },
-        {
-          "region": "neo-ca1",
-          "name": "neo-ca1"
-        },
-        {
-          "region": "neo-cn1",
-          "name": "neo-cn1"
-        },
-        {
-          "region": "neo-eu1",
-          "name": "neo-eu1"
-        },
-        {
-          "region": "neo-eu2",
-          "name": "neo-eu2"
-        },
-        {
-          "region": "neo-eu3",
-          "name": "neo-eu3"
-        },
-        {
-          "region": "neo-jp1",
-          "name": "neo-jp1"
-        },
-        {
-          "region": "neo-sa1",
-          "name": "neo-sa1"
-        },
-        {
-          "region": "neo-us1",
-          "name": "neo-us1"
-        },
-        {
-          "region": "neo-us2",
-          "name": "neo-us2"
-        },
-        {
-          "region": "neo-us3",
-          "name": "neo-us3"
-        },
-        {
-          "region": "neo-us4",
-          "name": "neo-us4"
         }
       ],
       "schemas": null

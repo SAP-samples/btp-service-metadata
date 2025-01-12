@@ -1,21 +1,9 @@
 {
   "name": "postgresql-db",
-  "displayName": "PostgreSQL on SAP BTP, hyperscaler option",
+  "displayName": "PostgreSQL, Hyperscaler Option",
   "description": "PostgreSQL on SAP BTP, hyperscaler option provides a managed relational database service, based on native PostgreSQL offerings from cloud providers AWS, Microsoft Azure, Google Cloud Platform and Alicloud.",
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/PwJ4x14FoLsA0xkl_k-kjvBJmnpaf7bYFHyjd0TmIxLXzNcLvsOIoYPO316EUJaq.svg",
   "links": [
-    {
-      "value": "https://community.sap.com/search/?ct=blog&q=PostgreSQL%20on%20SAP%20BTP%2C%20hyperscaler%20option",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
-    },
-    {
-      "value": "https://community.sap.com/search/?ct=qa&q=PostgreSQL%20on%20SAP%20BTP%2C%20hyperscaler%20option",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
-    },
     {
       "value": "https://discovery-center.cloud.sap/serviceCatalog/postgresql-hyperscaler-option",
       "classification": "Discovery Center",
@@ -2138,6 +2126,15 @@
                     "default": 14,
                     "minimum": 7,
                     "maximum": 35
+                  },
+                  "allow_access": {
+                    "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP except CF Domain of instance's landscape.",
+                    "type": "string"
+                  },
+                  "public_access": {
+                    "description": "Indicates whether the instance is publicly accessible. If not provided, it is defaulted to false.",
+                    "type": "boolean",
+                    "default": false
                   }
                 }
               }
@@ -2268,6 +2265,10 @@
                     "type": "integer",
                     "minimum": 7,
                     "maximum": 35
+                  },
+                  "allow_access": {
+                    "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. It will overide the access list provided during previous create/update operation",
+                    "type": "string"
                   }
                 },
                 "_load_current_config": true
@@ -3832,6 +3833,15 @@
                     "default": 14,
                     "minimum": 7,
                     "maximum": 35
+                  },
+                  "allow_access": {
+                    "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP except CF Domain of instance's landscape.",
+                    "type": "string"
+                  },
+                  "public_access": {
+                    "description": "Indicates whether the instance is publicly accessible. If not provided, it is defaulted to false.",
+                    "type": "boolean",
+                    "default": false
                   }
                 }
               }
@@ -3938,6 +3948,10 @@
                     "type": "integer",
                     "minimum": 7,
                     "maximum": 35
+                  },
+                  "allow_access": {
+                    "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. It will overide the access list provided during previous create/update operation",
+                    "type": "string"
                   }
                 },
                 "_load_current_config": true
