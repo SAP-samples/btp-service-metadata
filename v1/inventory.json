@@ -288,28 +288,28 @@
   },
   {
     "technicalId": "auditlog",
-    "displayName": "Audit Log Service",
+    "displayName": "SAP Audit Log service",
     "description": "Allow users to ingest compliance audit data from SAP BTP services and applications and store it for a default retention time of 90 days (with no additional costs applied). The ability to retrieve and download this data within this period is part of Auditlog Management Service. The service serves to support audit activities by prove wrongdoing and identifying malicious activities and provision of forensic evidence that can be used at Court. The scope of the service are secure and configuration change information records, data privacy specific logs, logs motivated by Multiple Regulations. The service is following each SAP Product standards and GDPR Compliance regulations.",
     "fileName": "auditlog.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "auditlog-api",
-    "displayName": "[DEPRECATED] Audit Log Retrieval",
+    "displayName": "SAP Audit Log service",
     "description": "[DEPRECATED] Audit Log Retrieval",
     "fileName": "auditlog-api.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "auditlog-management",
-    "displayName": "Audit Log Management Service",
+    "displayName": "SAP Audit Log service",
     "description": "Audit Log Management Service",
     "fileName": "auditlog-management.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "auditlog-viewer",
-    "displayName": "Audit Log Viewer Service",
+    "displayName": "SAP Audit Log service",
     "description": "Audit Log Viewer Service",
     "fileName": "auditlog-viewer.json",
     "category": "APPLICATION"
@@ -2479,21 +2479,21 @@
   },
   {
     "technicalId": "MDMBusinessPartnerApplication",
-    "displayName": "Master Data Service for Business Partners",
+    "displayName": "SAP Master Data service for business partners",
     "description": "Master Data Service for Business Partners",
     "fileName": "mdmbusinesspartnerapplication.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "MDMBusinessPartnerService",
-    "displayName": "SAP Business Partner Service",
+    "displayName": "SAP Master Data service for business partners",
     "description": "SAP Business Partner Service",
     "fileName": "mdmbusinesspartnerservice.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "mdo-one-mds-master",
-    "displayName": "Master Data Integration (Orchestration)",
+    "displayName": "Business Data Orchestration",
     "description": "Master Data Integration (Orchestration)",
     "fileName": "mdo-one-mds-master.json",
     "category": "APPLICATION"
@@ -2829,8 +2829,8 @@
   },
   {
     "technicalId": "osta-api-service",
-    "displayName": "SAP Omnichannel Sales Transfer and Audit (API)",
-    "description": "SAP Omnichannel Sales Transfer and Audit (API)",
+    "displayName": "SAP Omnichannel Sales Transfer and Audit",
+    "description": "SAP Omnichannel Sales Transfer and Audit",
     "fileName": "osta-api-service.json",
     "category": "SERVICE"
   },
@@ -2892,14 +2892,14 @@
   },
   {
     "technicalId": "personal-data-manager-service",
-    "displayName": "Personal Data Manager",
+    "displayName": "SAP Personal Data Manager",
     "description": "Personal Data Manager",
     "fileName": "personal-data-manager-service.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "PersonalDataManagerApp",
-    "displayName": "Personal Data Manager",
+    "displayName": "SAP Personal Data Manager",
     "description": "Personal Data Manager",
     "fileName": "personaldatamanagerapp.json",
     "category": "APPLICATION"
@@ -3074,7 +3074,7 @@
   },
   {
     "technicalId": "privatelink",
-    "displayName": "Private Link Service",
+    "displayName": "SAP Private Link service",
     "description": "Private Link Service",
     "fileName": "privatelink.json",
     "category": "SERVICE"
@@ -3277,14 +3277,14 @@
   },
   {
     "technicalId": "responsibilitymanagement-application",
-    "displayName": "Responsibility Management Service",
+    "displayName": "SAP Responsibility Management service",
     "description": "As we move toward an intelligent enterprise, intelligent systems need to determine agents who are responsible for business processes and objects, and automatically notify them. It is essential to define and manage these responsibilities for various contexts and retrieve responsible agents who can respond to tasks and activities.",
     "fileName": "responsibilitymanagement-application.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "responsibilitymanagement-service",
-    "displayName": "Responsibility Management Service",
+    "displayName": "SAP Responsibility Management service",
     "description": "As we move toward an intelligent enterprise, intelligent systems need to determine agents who are responsible for business processes and objects, and automatically notify them. It is essential to define and manage these responsibilities for various contexts and retrieve responsible agents who can respond to tasks and activities.",
     "fileName": "responsibilitymanagement-service.json",
     "category": "SERVICE"
@@ -3718,21 +3718,21 @@
   },
   {
     "technicalId": "sdm",
-    "displayName": "Document Management Service, Integration Option",
+    "displayName": "free tier option for SAP Document Management service, integration option",
     "description": "Document Management Service, Integration Option",
     "fileName": "sdm.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "sdm-repository",
-    "displayName": "Document Management Service, Repository Option",
+    "displayName": "SAP Document service",
     "description": "Document Management Service, Repository Option",
     "fileName": "sdm-repository.json",
     "category": "SERVICE"
   },
   {
     "technicalId": "sdm-web",
-    "displayName": "Document Management Service, Application Option",
+    "displayName": "SAP Document Management service",
     "description": "Document Management Service, Application Option",
     "fileName": "sdm-web.json",
     "category": "APPLICATION"
@@ -3767,7 +3767,7 @@
   },
   {
     "technicalId": "service-manager",
-    "displayName": "Service Manager",
+    "displayName": "SAP Service Manager",
     "description": "SAP Service Manager service allows you to consume platform services in any connected runtime environment, track service instances creation, and share services and service instances between different environments.",
     "fileName": "service-manager.json",
     "category": "SERVICE"
@@ -3907,14 +3907,14 @@
   },
   {
     "technicalId": "tpi-prod",
-    "displayName": "SAP Trading Platform Integration",
+    "displayName": "SAP trading platform integration",
     "description": "SAP Trading Platform Integration",
     "fileName": "tpi-prod.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "tpi-service-prod",
-    "displayName": "SAP Trading Platform Integration",
+    "displayName": "SAP trading platform integration",
     "description": "SAP Trading Platform Integration",
     "fileName": "tpi-service-prod.json",
     "category": "SERVICE"
