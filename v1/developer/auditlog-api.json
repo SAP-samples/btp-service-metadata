@@ -1,9 +1,22 @@
 {
   "name": "auditlog-api",
-  "displayName": "[DEPRECATED] Audit Log Retrieval",
+  "displayName": "SAP Audit Log service",
   "description": "[DEPRECATED] Audit Log Retrieval",
   "icon": null,
-  "links": [],
+  "links": [
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Audit%20Log%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Audit%20Log%20service",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    }
+  ],
   "servicePlans": [
     {
       "name": "default",
