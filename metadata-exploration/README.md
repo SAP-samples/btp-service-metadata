@@ -13,9 +13,9 @@ The metadata information is provided in JSON format. There are various ways to p
 
 ## Exploration examples
 
-These explorations are in a mix of [JavaScript](https://nodejs.org/en/) and [jq](https://stedolan.github.io/jq/). If you want to use `jq`, you can optionally (for a more interactive environment) take a look at [ijq](https://sr.ht/~gpanders/ijq/). If you're running the [BTP Setup Automator](https://github.com/SAP-samples/btp-setup-automator/), you'll be pleased to know that both `jq` and `ijq` tools are in the Docker image too, all ready for you to use. 
+These explorations are in a mix of [JavaScript](https://nodejs.org/en/) and [jq](https://stedolan.github.io/jq/). If you want to use `jq`, you can optionally (for a more interactive environment) take a look at [ijq](https://sr.ht/~gpanders/ijq/). If you're running the [BTP Setup Automator](https://github.com/SAP-samples/btp-setup-automator/), you'll be pleased to know that both `jq` and `ijq` tools are in the Docker image too, all ready for you to use.
 
-> There are some issues running `jq` with glob patterns on Windows shells (PowerShell and CMD) - see the [Wildcards on Windows](https://github.com/stedolan/jq/issues/1644) issue for more information. We recommend you use WSL2 on Windows.
+> There are some issues running `jq` with glob patterns on Windows shells (PowerShell and CMD) - see the [Wildcards on Windows](https://github.com/jqlang/jq/issues/1644) issue for more information. We recommend you use WSL2 on Windows.
 
 All the metadata files used in these examples are within the [v0/](../v0/) directory in this repository.
 
@@ -79,7 +79,7 @@ There's an `inventory.json` file which contains a summary of all the services, a
 
 ### Entries by category
 
-Note the `category` property; we can use this to get a list of entries, grouped by category (i.e. an organized list of all the services, applications and so on). 
+Note the `category` property; we can use this to get a list of entries, grouped by category (i.e. an organized list of all the services, applications and so on).
 
 #### With jq
 
@@ -155,7 +155,7 @@ This will show you the first inventory item, like this:
   "description": "Access an instance to build custom ABAP cloud apps, leveraging newest innovations powered by SAP HANA.",
   "fileName": "abap.json",
   "category": "SERVICE"
-} 
+}
 ```
 
 To get a collection of entries by category in JavaScript, you can use the `groupby` function supplied in `slurp.js` to perform the initial grouping, like this:
@@ -207,8 +207,8 @@ This produces output like this:
     "SAP AI Launchpad",
     "..."
   ],
-  "ENVIRONMENT": [ 
-    "SAP BTP, Cloud Foundry runtime", 
+  "ENVIRONMENT": [
+    "SAP BTP, Cloud Foundry runtime",
     "SAP BTP, Kyma runtime"
   ]
 }
@@ -218,7 +218,7 @@ This is almost, but not exactly, the same as what we got with the `jq` filter. C
 
 ## Individual service file explorations
 
-Within the [developer/](../v0/developer/) directory there are many JSON files, one for each service, application and environment offering. 
+Within the [developer/](../v0/developer/) directory there are many JSON files, one for each service, application and environment offering.
 
 Each file has a similar structure, which looks like this:
 
@@ -291,12 +291,12 @@ Each file has a similar structure, which looks like this:
 }
 ```
 
-While these are individually useful, they are even more useful to explore together. With the `jq` [slurp](https://stedolan.github.io/jq/manual/#Invokingjq) feature, all of the JSON files can be read in together and placed into an enclosing array. Then filters can be applied as appropriate. 
+While these are individually useful, they are even more useful to explore together. With the `jq` [slurp](https://stedolan.github.io/jq/manual/#Invokingjq) feature, all of the JSON files can be read in together and placed into an enclosing array. Then filters can be applied as appropriate.
 
 
 ### Applications with a free subscription plan
 
-Entries that we think of as "subscriptions", rather than services, are referred to in the metadata as "applications" (to which one subscribes). 
+Entries that we think of as "subscriptions", rather than services, are referred to in the metadata as "applications" (to which one subscribes).
 
 #### With jq
 
@@ -313,7 +313,7 @@ map(
 This filter is available, with accompanying comments, in [services/free-subscription-plans.jq](services/free-subscription-plans.jq), and can be executed, using the slurp option, like this:
 
 ```bash
-jq --from-file services/free-subscription-plans.jq -s ../v0/developer/*.json 
+jq --from-file services/free-subscription-plans.jq -s ../v0/developer/*.json
 ```
 
 The equivalent of the invocation we've just shown, is the execution of the convenience script [free-subscription-plans](./free-subscription-plans):
@@ -365,10 +365,10 @@ def arrange:
     | .key |= $region
     | .value |= (map(.service) | unique)
     ;
-    
+
 def main:
     map(
-        .displayName as $service 
+        .displayName as $service
         | .servicePlans
         | map(.dataCenters[]|("\(.name) (\(.region))"))
         | map({service: $service, region:.})
@@ -475,7 +475,7 @@ map(
 
 You can invoke the filter on the metadata files with this corresponding convenience script like this (noting that a region must be specified - in this example, the value `eu10` is given):
 
-```bash 
+```bash
 ./services-in-region eu10
 ```
 
@@ -495,7 +495,7 @@ jq \
 
 Notice the use of the variable `$region` which is set via the `--arg` option when `jq` is invoked.
 
-To get a flat, simple list of resource names, the array of results is expanded by the array iterator (`.[]`) in [the filter](services/in-region.jq), and the `--raw-output` option is used when `jq` is invoked, to stop `jq` doing what it does by default, which is to try to produce JSON elements (`"hello world"` is valid JSON, whereas `hello world`, without the enclosing double quotes, is not). 
+To get a flat, simple list of resource names, the array of results is expanded by the array iterator (`.[]`) in [the filter](services/in-region.jq), and the `--raw-output` option is used when `jq` is invoked, to stop `jq` doing what it does by default, which is to try to produce JSON elements (`"hello world"` is valid JSON, whereas `hello world`, without the enclosing double quotes, is not).
 
 Example output looks like this (heavily reduced for brevity):
 
@@ -521,7 +521,7 @@ Document Information Extraction
 
 #### In JavaScript
 
-The JavaScript equivalent is similar in that there's a nested "any" type selection, owing to the original structure of. 
+The JavaScript equivalent is similar in that there's a nested "any" type selection, owing to the original structure of.
 
 ```text
 resource
@@ -619,7 +619,7 @@ First, we could use a `unique` style function, which we don't have as standard, 
 unique = (x, i, a) => a.indexOf(x) === i
 ```
 
-This is a predicate function, in that it returns a boolean, which means it can be used as an argument to functions like `filter` (remember, in JavaScript, functions are first class citizens). 
+This is a predicate function, in that it returns a boolean, which means it can be used as an argument to functions like `filter` (remember, in JavaScript, functions are first class citizens).
 
 Next we can create a function to list the service regions for a given resource:
 
@@ -740,9 +740,9 @@ There's a convenience script [kyma-availability](kyma-availability) that you can
 
 ### Services with the most plans
 
-This is a somewhat arbitrary query but it illustrates a more mainstream language approach to exploring the metadata. 
+This is a somewhat arbitrary query but it illustrates a more mainstream language approach to exploring the metadata.
 
-The file [slurp.js](slurp.js) provides a function `slurp` and a directory name in `metadatadir`. It also combines these to provide a constant `m` containing the metadata from all the files in the [developer/](../v0/developer/) directory. 
+The file [slurp.js](slurp.js) provides a function `slurp` and a directory name in `metadatadir`. It also combines these to provide a constant `m` containing the metadata from all the files in the [developer/](../v0/developer/) directory.
 
 It can be then used in a Node.js REPL to explore. One simple example is to find out the services with the most plans.
 
