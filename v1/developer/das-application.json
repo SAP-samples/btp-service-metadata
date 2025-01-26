@@ -68,7 +68,70 @@
           "name": "cf-us30"
         }
       ],
-      "schemas": null
+      "schemas": [
+        {
+          "subscription": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "_show_standard_config_view": true,
+                "additionalProperties": false,
+                "properties": {
+                  "conversationInsightsConsent": {
+                    "description": "Store conversation data submitted by users for the improvement of Joule.",
+                    "title": "Conversation Insights",
+                    "type": "boolean"
+                  },
+                  "integrationLandscape": {
+                    "_enumDisplayName": {
+                      "Production": "Production",
+                      "Testing": "Testing"
+                    },
+                    "description": "This integration is used for testing/production landscape.",
+                    "enum": [
+                      "Testing",
+                      "Production"
+                    ],
+                    "title": "Integration Landscape",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_form_view": true,
+                "_show_standard_config_view": true,
+                "additionalProperties": false,
+                "properties": {
+                  "conversationInsightsConsent": {
+                    "description": "Store conversation data submitted by users for the improvement of Joule.",
+                    "title": "Conversation Insights",
+                    "type": "boolean"
+                  },
+                  "integrationLandscape": {
+                    "_enumDisplayName": {
+                      "Production": "Production",
+                      "Testing": "Testing"
+                    },
+                    "description": "This integration is used for testing/production landscape.",
+                    "enum": [
+                      "Testing",
+                      "Production"
+                    ],
+                    "title": "Integration Landscape",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
     }
   ],
   "supportComponents": [],

@@ -1,9 +1,28 @@
 {
   "name": "SAPEntitlementManagementPartner",
-  "displayName": "SAP Entitlement Management System Partner Edition",
+  "displayName": "SAP Entitlement Management, standard edition",
   "description": "SAP Entitlement Management System Partner Edition",
   "icon": null,
-  "links": [],
+  "links": [
+    {
+      "value": "https://brand.sap.com/naming-center/requests/7098",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "SAP Naming Center"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Entitlement%20Management%2C%20standard%20edition",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Blog Posts"
+    },
+    {
+      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Entitlement%20Management%2C%20standard%20edition",
+      "classification": "SAP Community",
+      "type": "Link",
+      "text": "SAP Community Questions and Answers"
+    }
+  ],
   "servicePlans": [
     {
       "name": "default",
