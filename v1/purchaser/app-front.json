@@ -1,0 +1,24 @@
+{
+  "name": "app-front",
+  "displayName": "Application Frontend Service",
+  "description": "Application Frontend Service",
+  "icon": null,
+  "servicePlans": [
+    {
+      "name": "developer",
+      "displayName": "Developer",
+      "category": "SERVICE",
+      "description": "Deploy, modify, and delete frontend applications and their versions.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        }
+      ],
+      "materialNumberMapping": []
+    }
+  ],
+  "certifications": []
+}
