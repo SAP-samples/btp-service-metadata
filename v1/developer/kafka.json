@@ -226,6 +226,13 @@
                   "secret": {
                     "description": "The secret to use for encrypting the private key",
                     "type": "string"
+                  },
+                  "credential-type": {
+                    "description": "The type of credentials to create. By default, all types are created.",
+                    "type": "string",
+                    "enum": [
+                      "x509"
+                    ]
                   }
                 }
               }
@@ -293,13 +300,6 @@
                   "secret": {
                     "description": "The secret to use for encrypting the private key",
                     "type": "string"
-                  },
-                  "credential-type": {
-                    "description": "The type of credentials to create. By default, all types are created.",
-                    "type": "string",
-                    "enum": [
-                      "x509"
-                    ]
                   }
                 }
               }
