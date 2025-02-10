@@ -401,7 +401,7 @@
                     "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                   },
                   "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
+                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
                     "type": "string",
                     "enum": [
                       "ariba",
@@ -418,7 +418,8 @@
                       "sfsf",
                       "ci",
                       "omf",
-                      "cdp"
+                      "cdp",
+                      "fsm"
                     ]
                   }
                 }
@@ -462,7 +463,7 @@
                     "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                   },
                   "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
+                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
                     "type": "string",
                     "enum": [
                       "ariba",
@@ -479,7 +480,8 @@
                       "sfsf",
                       "ci",
                       "omf",
-                      "cdp"
+                      "cdp",
+                      "fsm"
                     ]
                   }
                 }
@@ -527,7 +529,7 @@
                     "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                   },
                   "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
+                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
                     "type": "string",
                     "enum": [
                       "ariba",
@@ -544,8 +546,7 @@
                       "sfsf",
                       "ci",
                       "omf",
-                      "cdp",
-                      "fsm"
+                      "cdp"
                     ]
                   }
                 }
@@ -589,7 +590,7 @@
                     "pattern": "^[A-Za-z0-9-._~]{1,40}$"
                   },
                   "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
+                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
                     "type": "string",
                     "enum": [
                       "ariba",
@@ -606,8 +607,7 @@
                       "sfsf",
                       "ci",
                       "omf",
-                      "cdp",
-                      "fsm"
+                      "cdp"
                     ]
                   }
                 }
