@@ -144,6 +144,54 @@
                 "$schema": "http://json-schema.org/draft-04/schema#",
                 "_controlsOrder": [
                   "keyRef",
+                  "cmkMode",
+                  "allowUnderlyingKeySwitch",
+                  "skipCredentialActivation"
+                ],
+                "_show_form_view": true,
+                "_show_standard_config_view": true,
+                "properties": {
+                  "allowUnderlyingKeySwitch": {
+                    "description": "Allows key rotation and DKR repointing",
+                    "title": "General - Allow Underlying Key Switch",
+                    "type": "boolean"
+                  },
+                  "cmkMode": {
+                    "description": "Enables CMK-Tenant Mode",
+                    "title": "CMK Tenant",
+                    "type": "boolean"
+                  },
+                  "keyRef": {
+                    "description": "KeyID (or DKR ID) for Single-Tenant instances",
+                    "title": "Single Tenant - KeyID (Optional)",
+                    "type": "string"
+                  },
+                  "skipCredentialActivation": {
+                    "description": "Skip credential activation for AppTU",
+                    "title": "General - Skip Credential Activation",
+                    "type": "boolean"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": null
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": null
+            }
+          }
+        },
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "keyRef",
                   "allowUnderlyingKeySwitch",
                   "skipCredentialActivation"
                 ],
