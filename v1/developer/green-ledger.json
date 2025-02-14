@@ -25,6 +25,28 @@
   ],
   "servicePlans": [
     {
+      "name": "demo",
+      "displayName": "Demo",
+      "category": "APPLICATION",
+      "description": "The Application Plan enables full use of SAP Green Ledger for your demo system landscape.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "standard",
       "displayName": "Standard",
       "category": "APPLICATION",
