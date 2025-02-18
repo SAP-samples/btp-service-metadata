@@ -37,6 +37,42 @@
       ]
     },
     {
+      "name": "standard",
+      "displayName": "Standard",
+      "category": "APPLICATION",
+      "description": "Standard application plan",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8008476",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8008647",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
       "name": "tandd",
       "displayName": "Test and Demo",
       "category": "APPLICATION",
@@ -62,6 +98,10 @@
         }
       ],
       "materialNumberMapping": [
+        {
+          "materialNumber": "8008946",
+          "commercialModel": "Subscription"
+        },
         {
           "materialNumber": "8017674",
           "commercialModel": "Subscription"
