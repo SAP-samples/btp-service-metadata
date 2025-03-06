@@ -29,6 +29,12 @@
       "text": "SAP Discovery Center - Destination"
     },
     {
+      "value": "https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-and-bind-destination-service-instance",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/34010ace6ac84574a4ad02f5055d3597.html",
       "classification": "Documentation",
       "type": "Link",
@@ -176,7 +182,54 @@
           "name": "cf-us30"
         }
       ],
-      "schemas": null
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "_show_form_view": true,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": true,
+                "type": "object",
+                "properties": {
+                  "HTML5Runtime_enabled": {
+                    "default": false,
+                    "description": "Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.",
+                    "title": "Enable instance for usage from HTML5 runtime",
+                    "type": "boolean"
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "_show_form_view": true,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": true,
+                "type": "object",
+                "properties": {
+                  "HTML5Runtime_enabled": {
+                    "default": false,
+                    "description": "Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.",
+                    "title": "Enable instance for usage from HTML5 runtime",
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "_show_form_view": false,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": true,
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
     }
   ],
   "supportComponents": [

@@ -355,9 +355,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -711,9 +712,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -1309,9 +1311,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -1643,9 +1646,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -1779,6 +1783,10 @@
       "deprecationDate": null,
       "dataCenters": [
         {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
           "region": "ap10",
           "name": "kyma-ap10"
         },
@@ -1970,9 +1978,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -2206,6 +2215,7 @@
                     "_enumDisplayName": {
                       "australiaeast": "australiaeast (Australia, Sydney)",
                       "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
+                      "canadacentral": "canadacentral (Canada, Toronto)",
                       "centralus": "centralus (US Central, IA)",
                       "eastus": "eastus (US East, VA)",
                       "japaneast": "japaneast (Japan, Tokyo)",
@@ -2225,7 +2235,8 @@
                       "japaneast",
                       "southeastasia",
                       "australiaeast",
-                      "brazilsouth"
+                      "brazilsouth",
+                      "canadacentral"
                     ],
                     "minLength": 1,
                     "type": "string"
@@ -2318,9 +2329,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -2904,9 +2916,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -3234,9 +3247,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -3368,6 +3382,10 @@
       "deprecationDate": null,
       "dataCenters": [
         {
+          "region": "ca20",
+          "name": "cf-ca20"
+        },
+        {
           "region": "ap10",
           "name": "kyma-ap10"
         },
@@ -3530,9 +3548,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -3743,6 +3762,7 @@
                     "_enumDisplayName": {
                       "australiaeast": "australiaeast (Australia, Sydney)",
                       "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
+                      "canadacentral": "canadacentral (Canada, Toronto)",
                       "centralus": "centralus (US Central, IA)",
                       "eastus": "eastus (US East, VA)",
                       "japaneast": "japaneast (Japan, Tokyo)",
@@ -3762,7 +3782,8 @@
                       "japaneast",
                       "southeastasia",
                       "australiaeast",
-                      "brazilsouth"
+                      "brazilsouth",
+                      "canadacentral"
                     ],
                     "minLength": 1,
                     "type": "string"
@@ -3826,9 +3847,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -4316,9 +4338,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -4594,9 +4617,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -5031,6 +5055,7 @@
                     "_enumDisplayName": {
                       "australiaeast": "australiaeast (Australia, Sydney)",
                       "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
+                      "canadacentral": "canadacentral (Canada, Toronto)",
                       "centralus": "centralus (US Central, IA)",
                       "eastus": "eastus (US East, VA)",
                       "japaneast": "japaneast (Japan, Tokyo)",
@@ -5319,6 +5344,7 @@
                     "_enumDisplayName": {
                       "australiaeast": "australiaeast (Australia, Sydney)",
                       "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
+                      "canadacentral": "canadacentral (Canada, Toronto)",
                       "centralus": "centralus (US Central, IA)",
                       "eastus": "eastus (US East, VA)",
                       "japaneast": "japaneast (Japan, Tokyo)",
@@ -5338,7 +5364,8 @@
                       "japaneast",
                       "southeastasia",
                       "australiaeast",
-                      "brazilsouth"
+                      "brazilsouth",
+                      "canadacentral"
                     ],
                     "minLength": 1,
                     "type": "string"
@@ -6254,6 +6281,14 @@
       "deprecationDate": null,
       "dataCenters": [
         {
+          "region": "jp31",
+          "name": "cf-jp31"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
           "region": "ap10",
           "name": "kyma-ap10"
         },
@@ -6433,9 +6468,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -6655,14 +6691,19 @@
                   },
                   "region": {
                     "_enumDisplayName": {
+                      "asia-northeast1": "asia-northeast1 (Japan, Tokyo)",
                       "asia-northeast2": "asia-northeast2 (Japan, Osaka)",
                       "asia-south1": "asia-south1 (India, Mumbai)",
+                      "asia-southeast1": "asia-southeast1 (Singapore, Jurong West)",
                       "australia-southeast1": "australia-southeast1 (Australia, Sydney)",
                       "europe-west3": "europe-west3 (Europe, Frankfurt)",
+                      "europe-west4": "europe-west4 (Europe, Netherlands)",
                       "me-central2": "me-central2 (KSA, Dammam)",
                       "me-west1": "me-west1 (Israel, Tel Aviv)",
                       "southamerica-east1": "southamerica-east1 (Brazil, S\u00e3o Paulo)",
-                      "us-central1": "us-central1 (US Central, IA)"
+                      "us-central1": "us-central1 (US Central, IA)",
+                      "us-east4": "us-east4 (North America, Virginia)",
+                      "us-west1": "us-west1 (North America, Oregon)"
                     },
                     "enum": [
                       "europe-west3",
@@ -6672,7 +6713,12 @@
                       "asia-northeast2",
                       "me-west1",
                       "southamerica-east1",
-                      "australia-southeast1"
+                      "australia-southeast1",
+                      "asia-northeast1",
+                      "asia-southeast1",
+                      "us-west1",
+                      "us-east4",
+                      "europe-west4"
                     ],
                     "minLength": 1,
                     "type": "string"
@@ -6753,9 +6799,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -7670,9 +7717,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -7977,9 +8025,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -8163,9 +8212,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -8470,9 +8520,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -8656,9 +8707,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -8963,9 +9015,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -9149,9 +9202,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -9456,9 +9510,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -9642,9 +9697,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -9949,9 +10005,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -10135,9 +10192,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -10442,9 +10500,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -10628,9 +10687,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -10935,9 +10995,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-zA-Z0-9-]*$",
+                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },

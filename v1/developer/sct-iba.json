@@ -1,0 +1,33 @@
+{
+  "name": "sct-iba",
+  "displayName": "SAP Sustainability Control Tower with Instance-Based Authorization",
+  "description": "SAP Sustainability Control Tower with Instance-Based Authorization",
+  "icon": null,
+  "links": [],
+  "servicePlans": [
+    {
+      "name": "default",
+      "displayName": "Default",
+      "category": "APPLICATION",
+      "description": "SAP Sustainability Control Tower with Instance-Based Authorization",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "schemas": null
+    }
+  ],
+  "supportComponents": [],
+  "apis": []
+}

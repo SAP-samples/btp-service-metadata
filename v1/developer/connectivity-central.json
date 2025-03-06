@@ -11,6 +11,12 @@
       "text": "Discovery Center"
     },
     {
+      "value": "https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-and-bind-connectivity-service-instance",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/e54cc8fbbb571014beb5caaf6aa31280.html",
       "classification": "Documentation",
       "type": "Link",
@@ -54,7 +60,20 @@
           "name": "cf-us10"
         }
       ],
-      "schemas": null
+      "schemas": [
+        {
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "_show_form_view": false,
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": true,
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
     }
   ],
   "supportComponents": [],
