@@ -228,11 +228,13 @@
                     "type": "string"
                   },
                   "credential-type": {
-                    "description": "The type of credentials to create. By default, all types are created.",
+                    "description": "The type of credentials to create. By default, only X.509 certificates are created, but passwords are no longer included in bindings.",
                     "type": "string",
                     "enum": [
-                      "x509"
-                    ]
+                      "x509",
+                      "x509, password"
+                    ],
+                    "default": "x509"
                   }
                 }
               }
@@ -302,13 +304,11 @@
                     "type": "string"
                   },
                   "credential-type": {
-                    "description": "The type of credentials to create. By default, only X.509 certificates are created, but passwords are no longer included in bindings.",
+                    "description": "The type of credentials to create. By default, all types are created.",
                     "type": "string",
                     "enum": [
-                      "x509",
-                      "x509, password"
-                    ],
-                    "default": "x509"
+                      "x509"
+                    ]
                   }
                 }
               }
