@@ -183,7 +183,16 @@
                           "dpserver": {
                             "type": "boolean"
                           },
+                          "nlp": {
+                            "type": "boolean"
+                          },
+                          "pal": {
+                            "type": "boolean"
+                          },
                           "scriptserver": {
+                            "type": "boolean"
+                          },
+                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -263,9 +272,6 @@
                         },
                         "type": "object"
                       },
-                      "project_name": {
-                        "type": "string"
-                      },
                       "requestedOperation": {
                         "additionalProperties": false,
                         "properties": {
@@ -309,8 +315,7 @@
                       "slaLevel": {
                         "description": "Availability of the HANA instance",
                         "enum": [
-                          "standard",
-                          "elevated"
+                          "standard"
                         ],
                         "type": "string"
                       },
@@ -325,9 +330,6 @@
                         "default": "",
                         "description": "Password to be set for tenant",
                         "minLength": 8,
-                        "type": "string"
-                      },
-                      "template_name": {
                         "type": "string"
                       },
                       "update_strategy": {
@@ -455,7 +457,16 @@
                           "dpserver": {
                             "type": "boolean"
                           },
+                          "nlp": {
+                            "type": "boolean"
+                          },
+                          "pal": {
+                            "type": "boolean"
+                          },
                           "scriptserver": {
+                            "type": "boolean"
+                          },
+                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -470,6 +481,14 @@
                             "name": {
                               "pattern": "^(ConnectivityProxy)$",
                               "type": "string"
+                            },
+                            "privateLinkAllowlist": {
+                              "items": {
+                                "maxLength": 40,
+                                "type": "string"
+                              },
+                              "maxItems": 100,
+                              "type": "array"
                             },
                             "whitelistIPs": {
                               "items": {
@@ -504,6 +523,14 @@
                             }
                           }
                         },
+                        "type": "array"
+                      },
+                      "privateLinkAllowlist": {
+                        "items": {
+                          "maxLength": 40,
+                          "type": "string"
+                        },
+                        "maxItems": 100,
                         "type": "array"
                       },
                       "productVersion": {
@@ -831,6 +858,48 @@
                         "description": "Describes if IQ backups are enabled or not",
                         "type": "boolean"
                       },
+                      "extensionServices": {
+                        "items": {
+                          "properties": {
+                            "allowlistIPs": {
+                              "items": {
+                                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                                "type": "string"
+                              },
+                              "maxItems": 250,
+                              "type": "array"
+                            },
+                            "credentials": {
+                              "additionalProperties": false,
+                              "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+                              "properties": {
+                                "type": {
+                                  "pattern": "^(serviceKey)$",
+                                  "type": "string"
+                                },
+                                "value": {
+                                  "additionalProperties": true,
+                                  "properties": {},
+                                  "type": "object"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "enabled": {
+                              "type": "boolean"
+                            },
+                            "name": {
+                              "pattern": "^(ConnectivityProxy)$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "enabled"
+                          ],
+                          "type": "object"
+                        }
+                      },
                       "fileContainer": {
                         "description": "Configuration of the Data Lake's default file container",
                         "properties": {
@@ -845,6 +914,15 @@
                                 },
                                 "roles": {
                                   "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "trustBindings": {
+                                  "description": "Trusts bindings to be established with other services",
+                                  "items": {
+                                    "description": "Trust group",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                     "type": "string"
                                   },
                                   "type": "array"
@@ -915,6 +993,14 @@
                           "trusts": {
                             "items": {
                               "properties": {
+                                "aggregateTo": {
+                                  "items": {
+                                    "description": "List of aliases to aggregate to",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
                                 "alias": {
                                   "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                   "type": "string"
@@ -1403,6 +1489,48 @@
                         "description": "Describes if IQ backups are enabled or not",
                         "type": "boolean"
                       },
+                      "extensionServices": {
+                        "items": {
+                          "properties": {
+                            "allowlistIPs": {
+                              "items": {
+                                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                                "type": "string"
+                              },
+                              "maxItems": 250,
+                              "type": "array"
+                            },
+                            "credentials": {
+                              "additionalProperties": false,
+                              "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+                              "properties": {
+                                "type": {
+                                  "pattern": "^(serviceKey)$",
+                                  "type": "string"
+                                },
+                                "value": {
+                                  "additionalProperties": true,
+                                  "properties": {},
+                                  "type": "object"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "enabled": {
+                              "type": "boolean"
+                            },
+                            "name": {
+                              "pattern": "^(ConnectivityProxy)$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "enabled"
+                          ],
+                          "type": "object"
+                        }
+                      },
                       "fileContainer": {
                         "description": "Configuration of the Data Lake's default file container",
                         "properties": {
@@ -1417,6 +1545,15 @@
                                 },
                                 "roles": {
                                   "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "trustBindings": {
+                                  "description": "Trusts bindings to be established with other services",
+                                  "items": {
+                                    "description": "Trust group",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                     "type": "string"
                                   },
                                   "type": "array"
@@ -1487,6 +1624,14 @@
                           "trusts": {
                             "items": {
                               "properties": {
+                                "aggregateTo": {
+                                  "items": {
+                                    "description": "List of aliases to aggregate to",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
                                 "alias": {
                                   "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                   "type": "string"
@@ -1881,13 +2026,28 @@
                           "arguments": {
                             "additionalProperties": false,
                             "description": "List of operation arguments",
-                            "properties": {},
+                            "properties": {
+                              "target_timestamp": {
+                                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
+                                "type": "string"
+                              },
+                              "upgrade_type": {
+                                "enum": [
+                                  "none",
+                                  "PREPARE_FOR_MULTI_AZ"
+                                ],
+                                "type": "string"
+                              }
+                            },
                             "type": "object"
                           },
                           "name": {
                             "description": "Update operation",
                             "enum": [
-                              "none"
+                              "none",
+                              "INFRASTRUCTURE_UPGRADE",
+                              "RECOVERY",
+                              "CANCEL_RECOVERY"
                             ],
                             "type": "string"
                           }
@@ -1981,6 +2141,11 @@
     {
       "name": "Metrics Service",
       "url": "https://api.sap.com/api/MetricsAPI/overview",
+      "apiType": "RESTful"
+    },
+    {
+      "name": "Identity Management",
+      "url": "https://api.sap.com/api/SCIMAPI/overview",
       "apiType": "RESTful"
     },
     {
