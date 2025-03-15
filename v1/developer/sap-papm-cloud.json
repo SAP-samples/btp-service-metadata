@@ -185,7 +185,7 @@
                         "description": "Bring Your Own Database",
                         "properties": {
                           "database_id": {
-                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 977ccc70-4cd4-452f-8be4-63b17564646b</li><li>CF space GUID: 6bcb3783-db7d-47fb-b59c-6a99c96194d1</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap11</strong>).",
+                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 977ccc70-4cd4-452f-8be4-63b17564646b</li><li>CF space GUID: 6bcb3783-db7d-47fb-b59c-6a99c96194d1</li></ul></li><li><strong>Universal Model:</strong><ul><li>CF organization GUID: 8e401647-9f24-46be-aa6a-5e77ae90c99a</li><li>CF space GUID: 7910a278-fcac-478d-9848-1df81556447e</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap11</strong>).",
                             "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
                             "title": "SAP HANA Cloud Database ID",
                             "type": "string",
@@ -385,7 +385,7 @@
                         "description": "Bring Your Own Database",
                         "properties": {
                           "database_id": {
-                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 24a909a2-b7ad-480d-9667-745ea1cb8e1b</li><li>CF space GUID: a898a1ce-702c-4102-a53f-90e762c8c08a</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap30</strong>).",
+                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 24a909a2-b7ad-480d-9667-745ea1cb8e1b</li><li>CF space GUID: a898a1ce-702c-4102-a53f-90e762c8c08a</li></ul></li><li><strong>Universal Model:</strong><ul><li>CF organization GUID: 8743e8bd-a436-4fcf-b636-e545d0107e9d</li><li>CF space GUID: 61c16157-00e8-4d45-af80-de6aa7714451</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap30</strong>).",
                             "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
                             "title": "SAP HANA Cloud Database ID",
                             "type": "string",
@@ -1230,7 +1230,7 @@
                         "description": "Bring Your Own Database",
                         "properties": {
                           "database_id": {
-                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 977ccc70-4cd4-452f-8be4-63b17564646b</li><li>CF space GUID: 6bcb3783-db7d-47fb-b59c-6a99c96194d1</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap11</strong>).",
+                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 977ccc70-4cd4-452f-8be4-63b17564646b</li><li>CF space GUID: 6bcb3783-db7d-47fb-b59c-6a99c96194d1</li></ul></li><li><strong>Universal Model:</strong><ul><li>CF organization GUID: 8e401647-9f24-46be-aa6a-5e77ae90c99a</li><li>CF space GUID: 7910a278-fcac-478d-9848-1df81556447e</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap11</strong>).",
                             "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
                             "title": "SAP HANA Cloud Database ID",
                             "type": "string",
@@ -1430,7 +1430,7 @@
                         "description": "Bring Your Own Database",
                         "properties": {
                           "database_id": {
-                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 24a909a2-b7ad-480d-9667-745ea1cb8e1b</li><li>CF space GUID: a898a1ce-702c-4102-a53f-90e762c8c08a</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap30</strong>).",
+                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 24a909a2-b7ad-480d-9667-745ea1cb8e1b</li><li>CF space GUID: a898a1ce-702c-4102-a53f-90e762c8c08a</li></ul></li><li><strong>Universal Model:</strong><ul><li>CF organization GUID: 8743e8bd-a436-4fcf-b636-e545d0107e9d</li><li>CF space GUID: 61c16157-00e8-4d45-af80-de6aa7714451</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap30</strong>).",
                             "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
                             "title": "SAP HANA Cloud Database ID",
                             "type": "string",
@@ -2275,7 +2275,7 @@
                         "description": "Bring Your Own Database",
                         "properties": {
                           "database_id": {
-                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 977ccc70-4cd4-452f-8be4-63b17564646b</li><li>CF space GUID: 6bcb3783-db7d-47fb-b59c-6a99c96194d1</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap11</strong>).",
+                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 977ccc70-4cd4-452f-8be4-63b17564646b</li><li>CF space GUID: 6bcb3783-db7d-47fb-b59c-6a99c96194d1</li></ul></li><li><strong>Universal Model:</strong><ul><li>CF organization GUID: 8e401647-9f24-46be-aa6a-5e77ae90c99a</li><li>CF space GUID: 7910a278-fcac-478d-9848-1df81556447e</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap11</strong>).",
                             "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
                             "title": "SAP HANA Cloud Database ID",
                             "type": "string",
@@ -2475,7 +2475,7 @@
                         "description": "Bring Your Own Database",
                         "properties": {
                           "database_id": {
-                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 24a909a2-b7ad-480d-9667-745ea1cb8e1b</li><li>CF space GUID: a898a1ce-702c-4102-a53f-90e762c8c08a</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap30</strong>).",
+                            "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 24a909a2-b7ad-480d-9667-745ea1cb8e1b</li><li>CF space GUID: a898a1ce-702c-4102-a53f-90e762c8c08a</li></ul></li><li><strong>Universal Model:</strong><ul><li>CF organization GUID: 8743e8bd-a436-4fcf-b636-e545d0107e9d</li><li>CF space GUID: 61c16157-00e8-4d45-af80-de6aa7714451</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ap30</strong>).",
                             "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
                             "title": "SAP HANA Cloud Database ID",
                             "type": "string",

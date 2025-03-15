@@ -553,6 +553,303 @@
       ]
     },
     {
+      "name": "build-runtime-aws",
+      "displayName": "Kyma Runtime AWS - Build Runtime",
+      "category": "ENVIRONMENT",
+      "description": "Kyma Runtime AWS. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "kyma-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "kyma-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "kyma-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "kyma-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "kyma-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "kyma-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "kyma-br10"
+        },
+        {
+          "region": "br20",
+          "name": "kyma-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "kyma-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "kyma-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "kyma-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "kyma-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "kyma-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "kyma-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "kyma-il30"
+        },
+        {
+          "region": "in30",
+          "name": "kyma-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "kyma-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "kyma-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "kyma-us10"
+        },
+        {
+          "region": "us20",
+          "name": "kyma-us20"
+        },
+        {
+          "region": "us21",
+          "name": "kyma-us21"
+        },
+        {
+          "region": "us30",
+          "name": "kyma-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "build-runtime-azure",
+      "displayName": "Kyma Runtime Azure - Build Runtime",
+      "category": "ENVIRONMENT",
+      "description": "Kyma Runtime Azure. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "kyma-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "kyma-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "kyma-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "kyma-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "kyma-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "kyma-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "kyma-br10"
+        },
+        {
+          "region": "br20",
+          "name": "kyma-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "kyma-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "kyma-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "kyma-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "kyma-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "kyma-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "kyma-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "kyma-il30"
+        },
+        {
+          "region": "in30",
+          "name": "kyma-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "kyma-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "kyma-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "kyma-us10"
+        },
+        {
+          "region": "us20",
+          "name": "kyma-us20"
+        },
+        {
+          "region": "us21",
+          "name": "kyma-us21"
+        },
+        {
+          "region": "us30",
+          "name": "kyma-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
+      "name": "build-runtime-gcp",
+      "displayName": "Kyma Runtime GCP - Build Runtime",
+      "category": "ENVIRONMENT",
+      "description": "Kyma Runtime GCP. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "kyma-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "kyma-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "kyma-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "kyma-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "kyma-ap21"
+        },
+        {
+          "region": "ap30",
+          "name": "kyma-ap30"
+        },
+        {
+          "region": "br10",
+          "name": "kyma-br10"
+        },
+        {
+          "region": "br20",
+          "name": "kyma-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "kyma-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "kyma-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "kyma-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "kyma-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "kyma-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "kyma-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "kyma-il30"
+        },
+        {
+          "region": "in30",
+          "name": "kyma-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "kyma-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "kyma-jp20"
+        },
+        {
+          "region": "us10",
+          "name": "kyma-us10"
+        },
+        {
+          "region": "us20",
+          "name": "kyma-us20"
+        },
+        {
+          "region": "us21",
+          "name": "kyma-us21"
+        },
+        {
+          "region": "us30",
+          "name": "kyma-us30"
+        }
+      ],
+      "materialNumberMapping": []
+    },
+    {
       "name": "default",
       "displayName": "Kyma Runtime",
       "category": "ENVIRONMENT",
