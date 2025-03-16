@@ -421,6 +421,301 @@
               }
             }
           }
+        },
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "type": "object",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_standard_config_view": true,
+                "additionalProperties": false,
+                "_controlsOrder": [
+                  "roles",
+                  "grant-types",
+                  "redirect-uris",
+                  "token-validity"
+                ],
+                "properties": {
+                  "roles": {
+                    "description": "Roles granted to the service instance. For details please check https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html",
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "AccessAllAccessPoliciesArtifacts",
+                        "AccessPoliciesEdit",
+                        "AccessPoliciesRead",
+                        "AuthGroup_Administrator",
+                        "AuthGroup_BusinessExpert",
+                        "AuthGroup_ContentPublisher",
+                        "AuthGroup_IntegrationDeveloper",
+                        "AuthGroup_ReadOnly",
+                        "AuthGroup_TenantPartnerDirectoryConfigurator",
+                        "CatalogPackageArtifactsRead",
+                        "CatalogPackagesCopy",
+                        "CatalogPackagesRead",
+                        "CredentialsEdit",
+                        "CredentialsRead",
+                        "DataArchivingActivate",
+                        "DataArchivingRead",
+                        "DataStorePayloadsRead",
+                        "DataStoresAndQueuesConfig",
+                        "DataStoresAndQueuesDelete",
+                        "DataStoresAndQueuesRead",
+                        "ExternalLoggingActivate",
+                        "ExternalLoggingActivationRead",
+                        "HealthCheckMonitoringDataRead",
+                        "MessagePayloadsRead",
+                        "MessageProcessingLocksDelete",
+                        "MessageProcessingLocksRead",
+                        "MonitoringArtifactsDeploy",
+                        "MonitoringDataRead",
+                        "QueuesActivate",
+                        "QueuesRetry",
+                        "SecurityMaterialDownload",
+                        "SecurityMaterialEdit",
+                        "TraceConfigurationEdit",
+                        "TraceConfigurationRead",
+                        "WorkspaceArtifactLocksDelete",
+                        "WorkspaceArtifactLocksRead",
+                        "WorkspaceArtifactsDeploy",
+                        "WorkspacePackagesConfigure",
+                        "WorkspacePackagesEdit",
+                        "WorkspacePackagesRead",
+                        "WorkspacePackagesTransport",
+                        "SecurityArtifactTransport"
+                      ]
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                  },
+                  "grant-types": {
+                    "description": "Grant-types related to the service instance",
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "authorization_code",
+                        "client_credentials",
+                        "password",
+                        "refresh_token",
+                        "urn:ietf:params:oauth:grant-type:saml2-bearer",
+                        "urn:ietf:params:oauth:grant-type:jwt-bearer"
+                      ],
+                      "_enumDisplayName": {
+                        "authorization_code": "Authorization Code",
+                        "client_credentials": "Client Credentials",
+                        "password": "Password",
+                        "refresh_token": "Refresh Token",
+                        "urn:ietf:params:oauth:grant-type:saml2-bearer": "SAML2 Bearer",
+                        "urn:ietf:params:oauth:grant-type:jwt-bearer": "JWT Bearer"
+                      }
+                    },
+                    "default": [
+                      "client_credentials"
+                    ],
+                    "minItems": 0,
+                    "uniqueItems": true
+                  },
+                  "redirect-uris": {
+                    "description": "Redirect-Uris for authorization code grant-type",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "default": [],
+                    "minItems": 0,
+                    "uniqueItems": true
+                  },
+                  "token-validity": {
+                    "title": "Access Token Validity (in seconds)",
+                    "type": "integer",
+                    "default": 43200,
+                    "minimum": 3600,
+                    "maximum": 86400,
+                    "description": "Defines the validity of the access token"
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "type": "object",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_standard_config_view": true,
+                "additionalProperties": false,
+                "_load_current_config": true,
+                "_controlsOrder": [
+                  "roles",
+                  "grant-types",
+                  "redirect-uris",
+                  "token-validity"
+                ],
+                "properties": {
+                  "roles": {
+                    "description": "Roles granted to the service instance. For details please check https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/556d5575d4b0483e85d4f3251f21d0ec.html",
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "AccessAllAccessPoliciesArtifacts",
+                        "AccessPoliciesEdit",
+                        "AccessPoliciesRead",
+                        "AuthGroup_Administrator",
+                        "AuthGroup_BusinessExpert",
+                        "AuthGroup_ContentPublisher",
+                        "AuthGroup_IntegrationDeveloper",
+                        "AuthGroup_ReadOnly",
+                        "AuthGroup_TenantPartnerDirectoryConfigurator",
+                        "CatalogPackageArtifactsRead",
+                        "CatalogPackagesCopy",
+                        "CatalogPackagesRead",
+                        "CredentialsEdit",
+                        "CredentialsRead",
+                        "DataArchivingActivate",
+                        "DataArchivingRead",
+                        "DataStorePayloadsRead",
+                        "DataStoresAndQueuesConfig",
+                        "DataStoresAndQueuesDelete",
+                        "DataStoresAndQueuesRead",
+                        "ExternalLoggingActivate",
+                        "ExternalLoggingActivationRead",
+                        "HealthCheckMonitoringDataRead",
+                        "MessagePayloadsRead",
+                        "MessageProcessingLocksDelete",
+                        "MessageProcessingLocksRead",
+                        "MonitoringArtifactsDeploy",
+                        "MonitoringDataRead",
+                        "QueuesActivate",
+                        "QueuesRetry",
+                        "SecurityMaterialDownload",
+                        "SecurityMaterialEdit",
+                        "TraceConfigurationEdit",
+                        "TraceConfigurationRead",
+                        "WorkspaceArtifactLocksDelete",
+                        "WorkspaceArtifactLocksRead",
+                        "WorkspaceArtifactsDeploy",
+                        "WorkspacePackagesConfigure",
+                        "WorkspacePackagesEdit",
+                        "WorkspacePackagesRead",
+                        "WorkspacePackagesTransport",
+                        "SecurityArtifactTransport"
+                      ]
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                  },
+                  "grant-types": {
+                    "description": "Grant-types related to the service instance",
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "authorization_code",
+                        "client_credentials",
+                        "password",
+                        "refresh_token",
+                        "urn:ietf:params:oauth:grant-type:saml2-bearer",
+                        "urn:ietf:params:oauth:grant-type:jwt-bearer"
+                      ],
+                      "_enumDisplayName": {
+                        "authorization_code": "Authorization Code",
+                        "client_credentials": "Client Credentials",
+                        "password": "Password",
+                        "refresh_token": "Refresh Token",
+                        "urn:ietf:params:oauth:grant-type:saml2-bearer": "SAML2 Bearer",
+                        "urn:ietf:params:oauth:grant-type:jwt-bearer": "JWT Bearer"
+                      }
+                    },
+                    "default": [
+                      "client_credentials"
+                    ],
+                    "minItems": 0,
+                    "uniqueItems": true
+                  },
+                  "redirect-uris": {
+                    "description": "Redirect-Uris for authorization code grant-type",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "default": [],
+                    "minItems": 0,
+                    "uniqueItems": true
+                  },
+                  "token-validity": {
+                    "title": "Access Token Validity (in seconds)",
+                    "type": "integer",
+                    "default": 43200,
+                    "minimum": 3600,
+                    "maximum": 86400,
+                    "description": "Defines the validity of the access token"
+                  }
+                }
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "type": "object",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_show_standard_config_view": true,
+                "additionalProperties": false,
+                "_controlsOrder": [
+                  "key-type",
+                  "X.509",
+                  "validity",
+                  "key-length"
+                ],
+                "properties": {
+                  "key-type": {
+                    "title": "Key Type",
+                    "type": "string",
+                    "description": "The key type determines the type of the credentials provided in the service key.\nClientId/Secret: A service key that contains a ClientId/Secret.\nCertificate: A service key which contains a X509 certificate (requires grant-type 'Client Credentials').\nExternal Certificate: A service key that is using a externally provided X509 certificate (requires grant-type 'Client Credentials')",
+                    "default": "client_id_secret",
+                    "enum": [
+                      "client_id_secret",
+                      "certificate",
+                      "certificate_external"
+                    ],
+                    "_enumDisplayName": {
+                      "client_id_secret": "ClientId/Secret",
+                      "certificate": "Certificate",
+                      "certificate_external": "External Certificate"
+                    }
+                  },
+                  "X.509": {
+                    "default": "",
+                    "title": "External Certificate (only applicable for Key Type 'External Certificate')",
+                    "description": "Only applicable for Key Type 'External Certificate'. Enter your PEM-encoded X.509 certificate (e.g -----BEGIN CERTIFICATE-----MIIHyDCCBrCgAwIB[...]CAq8Tn7kSFDmVnrXe6v8hcQ==-----END CERTIFICATE-----)",
+                    "type": "string"
+                  },
+                  "validity": {
+                    "title": "Validity in days (only applicable for Key Type 'Certificate')",
+                    "type": "integer",
+                    "default": 365,
+                    "minimum": 1,
+                    "maximum": 365,
+                    "description": "Only applicable for Key Type 'Certificate'. The validity of the issued certificate in days"
+                  },
+                  "key-length": {
+                    "title": "Key Size (only applicable for Key Type 'Certificate')",
+                    "type": "integer",
+                    "description": "Only applicable for Key Type 'Certificate'",
+                    "default": 2048,
+                    "enum": [
+                      1024,
+                      2048,
+                      3072,
+                      4096
+                    ]
+                  }
+                }
+              }
+            }
+          }
         }
       ]
     },
