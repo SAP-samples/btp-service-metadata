@@ -11764,39 +11764,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "serviceStopped": {
-                              "description": "Describes if the system should be running or stopped",
-                              "type": "boolean"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "databaseMappings": {
                         "items": {
                           "properties": {
@@ -11843,16 +11810,10 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "pal": {
                             "type": "boolean"
                           },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -11932,6 +11893,9 @@
                         },
                         "type": "object"
                       },
+                      "project_name": {
+                        "type": "string"
+                      },
                       "requestedOperation": {
                         "additionalProperties": false,
                         "properties": {
@@ -11991,6 +11955,9 @@
                         "default": "",
                         "description": "Password to be set for tenant",
                         "minLength": 8,
+                        "type": "string"
+                      },
+                      "template_name": {
                         "type": "string"
                       },
                       "update_strategy": {
@@ -12120,35 +12087,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "disasterRecoveryMode": {
                         "description": "Disaster Recovery of the HANA instance",
                         "enum": [
@@ -12167,16 +12105,10 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "pal": {
                             "type": "boolean"
                           },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -12284,9 +12216,6 @@
                               "secondary_az": {
                                 "type": "string"
                               },
-                              "source_instance_id": {
-                                "type": "string"
-                              },
                               "target_az": {
                                 "type": "string"
                               },
@@ -12310,7 +12239,6 @@
                               "DISASTER_KEEP_AZ_RECOVERY",
                               "disaster_recovery_takeover",
                               "TEMPLATE_BACKUP",
-                              "SYSTEM_COPY",
                               "synchronous_replication_takeover",
                               "TAKE_SNAPSHOT_FOR_FALLBACK",
                               "FALLBACK_TO_SNAPSHOT",
@@ -20518,39 +20446,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "serviceStopped": {
-                              "description": "Describes if the system should be running or stopped",
-                              "type": "boolean"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "databaseMappings": {
                         "items": {
                           "properties": {
@@ -20597,16 +20492,10 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "pal": {
                             "type": "boolean"
                           },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -20686,6 +20575,9 @@
                         },
                         "type": "object"
                       },
+                      "project_name": {
+                        "type": "string"
+                      },
                       "requestedOperation": {
                         "additionalProperties": false,
                         "properties": {
@@ -20745,6 +20637,9 @@
                         "default": "",
                         "description": "Password to be set for tenant",
                         "minLength": 8,
+                        "type": "string"
+                      },
+                      "template_name": {
                         "type": "string"
                       },
                       "update_strategy": {
@@ -20874,35 +20769,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "disasterRecoveryMode": {
                         "description": "Disaster Recovery of the HANA instance",
                         "enum": [
@@ -20921,16 +20787,10 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "pal": {
                             "type": "boolean"
                           },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -21038,9 +20898,6 @@
                               "secondary_az": {
                                 "type": "string"
                               },
-                              "source_instance_id": {
-                                "type": "string"
-                              },
                               "target_az": {
                                 "type": "string"
                               },
@@ -21064,7 +20921,6 @@
                               "DISASTER_KEEP_AZ_RECOVERY",
                               "disaster_recovery_takeover",
                               "TEMPLATE_BACKUP",
-                              "SYSTEM_COPY",
                               "synchronous_replication_takeover",
                               "TAKE_SNAPSHOT_FOR_FALLBACK",
                               "FALLBACK_TO_SNAPSHOT",
@@ -32903,39 +32759,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "serviceStopped": {
-                              "description": "Describes if the system should be running or stopped",
-                              "type": "boolean"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "databaseMappings": {
                         "items": {
                           "properties": {
@@ -32982,16 +32805,10 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "pal": {
                             "type": "boolean"
                           },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -33071,6 +32888,9 @@
                         },
                         "type": "object"
                       },
+                      "project_name": {
+                        "type": "string"
+                      },
                       "requestedOperation": {
                         "additionalProperties": false,
                         "properties": {
@@ -33130,6 +32950,9 @@
                         "default": "",
                         "description": "Password to be set for tenant",
                         "minLength": 8,
+                        "type": "string"
+                      },
+                      "template_name": {
                         "type": "string"
                       },
                       "update_strategy": {
@@ -33259,35 +33082,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "disasterRecoveryMode": {
                         "description": "Disaster Recovery of the HANA instance",
                         "enum": [
@@ -33306,16 +33100,10 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "pal": {
                             "type": "boolean"
                           },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -33423,9 +33211,6 @@
                               "secondary_az": {
                                 "type": "string"
                               },
-                              "source_instance_id": {
-                                "type": "string"
-                              },
                               "target_az": {
                                 "type": "string"
                               },
@@ -33449,7 +33234,6 @@
                               "DISASTER_KEEP_AZ_RECOVERY",
                               "disaster_recovery_takeover",
                               "TEMPLATE_BACKUP",
-                              "SYSTEM_COPY",
                               "synchronous_replication_takeover",
                               "TAKE_SNAPSHOT_FOR_FALLBACK",
                               "FALLBACK_TO_SNAPSHOT",
