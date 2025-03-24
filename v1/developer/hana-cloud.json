@@ -6555,39 +6555,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "serviceStopped": {
-                              "description": "Describes if the system should be running or stopped",
-                              "type": "boolean"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "databaseMappings": {
                         "items": {
                           "properties": {
@@ -6634,13 +6601,7 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -6678,11 +6639,11 @@
                         "type": "boolean"
                       },
                       "memory": {
-                        "default": 30,
+                        "default": 32,
                         "description": "HANA memory size (RAM) in GB",
                         "format": "int64",
-                        "maximum": 5970,
-                        "minimum": 30,
+                        "maximum": 1792,
+                        "minimum": 32,
                         "type": "integer"
                       },
                       "memoryScaleOut": {
@@ -6771,7 +6732,7 @@
                       "storage": {
                         "description": "Size of the Storage in GB",
                         "format": "int64",
-                        "maximum": 16000,
+                        "maximum": 4520,
                         "minimum": 120,
                         "type": "integer"
                       },
@@ -6888,35 +6849,6 @@
                         },
                         "type": "object"
                       },
-                      "computeNodes": {
-                        "description": "Items of Elastic Compute Nodes (ECNs)",
-                        "items": {
-                          "additionalProperties": false,
-                          "properties": {
-                            "memory": {
-                              "description": "Size of memory in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "name": {
-                              "description": "Name of ECN",
-                              "type": "string"
-                            },
-                            "storage": {
-                              "description": "Size of storage in GB",
-                              "format": "int64",
-                              "type": "integer"
-                            },
-                            "vcpu": {
-                              "description": "Number of vCPUs",
-                              "format": "int64",
-                              "type": "integer"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
                       "disasterRecoveryMode": {
                         "description": "Disaster Recovery of the HANA instance",
                         "enum": [
@@ -6935,13 +6867,7 @@
                           "dpserver": {
                             "type": "boolean"
                           },
-                          "nlp": {
-                            "type": "boolean"
-                          },
                           "scriptserver": {
-                            "type": "boolean"
-                          },
-                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -6956,14 +6882,6 @@
                             "name": {
                               "pattern": "^(ConnectivityProxy)$",
                               "type": "string"
-                            },
-                            "privateLinkAllowlist": {
-                              "items": {
-                                "maxLength": 40,
-                                "type": "string"
-                              },
-                              "maxItems": 100,
-                              "type": "array"
                             },
                             "whitelistIPs": {
                               "items": {
@@ -6984,8 +6902,8 @@
                       "memory": {
                         "description": "HANA memory size (RAM) in GB",
                         "format": "int64",
-                        "maximum": 5970,
-                        "minimum": 30,
+                        "maximum": 1792,
+                        "minimum": 32,
                         "type": "integer"
                       },
                       "plugins": {
@@ -6998,14 +6916,6 @@
                             }
                           }
                         },
-                        "type": "array"
-                      },
-                      "privateLinkAllowlist": {
-                        "items": {
-                          "maxLength": 40,
-                          "type": "string"
-                        },
-                        "maxItems": 100,
                         "type": "array"
                       },
                       "productVersion": {
@@ -7065,9 +6975,6 @@
                               "secondary_az": {
                                 "type": "string"
                               },
-                              "source_instance_id": {
-                                "type": "string"
-                              },
                               "target_az": {
                                 "type": "string"
                               },
@@ -7091,7 +6998,6 @@
                               "DISASTER_KEEP_AZ_RECOVERY",
                               "disaster_recovery_takeover",
                               "TEMPLATE_BACKUP",
-                              "SYSTEM_COPY",
                               "synchronous_replication_takeover",
                               "TAKE_SNAPSHOT_FOR_FALLBACK",
                               "FALLBACK_TO_SNAPSHOT",
@@ -7117,7 +7023,7 @@
                       "storage": {
                         "description": "Size of the Storage in GB",
                         "format": "int64",
-                        "maximum": 16000,
+                        "maximum": 4520,
                         "minimum": 120,
                         "type": "integer"
                       },
@@ -13158,6 +13064,18 @@
                         "additionalProperties": false,
                         "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
                         "properties": {
+                          "highAvailabilityCrossMultiAZEnabled": {
+                            "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+                            "type": "boolean"
+                          },
+                          "initialReplicaAvailabilityZone": {
+                            "description": "This zone will be used by the initial replica",
+                            "type": "string"
+                          },
+                          "initialSourceAvailabilityZone": {
+                            "description": "This zone will be used by the initial source",
+                            "type": "string"
+                          },
                           "primaryAvailabilityZone": {
                             "description": "This zone will be used by the primary instance",
                             "type": "string"
@@ -13182,6 +13100,39 @@
                           }
                         },
                         "type": "object"
+                      },
+                      "computeNodes": {
+                        "description": "Items of Elastic Compute Nodes (ECNs)",
+                        "items": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "memory": {
+                              "description": "Size of memory in GB",
+                              "format": "int64",
+                              "type": "integer"
+                            },
+                            "name": {
+                              "description": "Name of ECN",
+                              "type": "string"
+                            },
+                            "serviceStopped": {
+                              "description": "Describes if the system should be running or stopped",
+                              "type": "boolean"
+                            },
+                            "storage": {
+                              "description": "Size of storage in GB",
+                              "format": "int64",
+                              "type": "integer"
+                            },
+                            "vcpu": {
+                              "description": "Number of vCPUs",
+                              "format": "int64",
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
                       },
                       "databaseMappings": {
                         "items": {
@@ -13229,7 +13180,13 @@
                           "dpserver": {
                             "type": "boolean"
                           },
+                          "nlp": {
+                            "type": "boolean"
+                          },
                           "scriptserver": {
+                            "type": "boolean"
+                          },
+                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -13270,7 +13227,7 @@
                         "default": 32,
                         "description": "HANA memory size (RAM) in GB",
                         "format": "int64",
-                        "maximum": 1344,
+                        "maximum": 7552,
                         "minimum": 32,
                         "type": "integer"
                       },
@@ -13360,7 +13317,7 @@
                       "storage": {
                         "description": "Size of the Storage in GB",
                         "format": "int64",
-                        "maximum": 3400,
+                        "maximum": 16384,
                         "minimum": 120,
                         "type": "integer"
                       },
@@ -13440,6 +13397,18 @@
                         "additionalProperties": false,
                         "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
                         "properties": {
+                          "highAvailabilityCrossMultiAZEnabled": {
+                            "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+                            "type": "boolean"
+                          },
+                          "initialReplicaAvailabilityZone": {
+                            "description": "This zone will be used by the initial replica",
+                            "type": "string"
+                          },
+                          "initialSourceAvailabilityZone": {
+                            "description": "This zone will be used by the initial source",
+                            "type": "string"
+                          },
                           "primaryAvailabilityZone": {
                             "description": "This zone will be used by the primary instance",
                             "type": "string"
@@ -13465,6 +13434,35 @@
                         },
                         "type": "object"
                       },
+                      "computeNodes": {
+                        "description": "Items of Elastic Compute Nodes (ECNs)",
+                        "items": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "memory": {
+                              "description": "Size of memory in GB",
+                              "format": "int64",
+                              "type": "integer"
+                            },
+                            "name": {
+                              "description": "Name of ECN",
+                              "type": "string"
+                            },
+                            "storage": {
+                              "description": "Size of storage in GB",
+                              "format": "int64",
+                              "type": "integer"
+                            },
+                            "vcpu": {
+                              "description": "Number of vCPUs",
+                              "format": "int64",
+                              "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
                       "disasterRecoveryMode": {
                         "description": "Disaster Recovery of the HANA instance",
                         "enum": [
@@ -13483,7 +13481,13 @@
                           "dpserver": {
                             "type": "boolean"
                           },
+                          "nlp": {
+                            "type": "boolean"
+                          },
                           "scriptserver": {
+                            "type": "boolean"
+                          },
+                          "triplestore": {
                             "type": "boolean"
                           }
                         },
@@ -13518,7 +13522,7 @@
                       "memory": {
                         "description": "HANA memory size (RAM) in GB",
                         "format": "int64",
-                        "maximum": 1344,
+                        "maximum": 7552,
                         "minimum": 32,
                         "type": "integer"
                       },
@@ -13560,6 +13564,12 @@
                               "backup_encryption_passphrase": {
                                 "type": "string"
                               },
+                              "customer_initial_replica_az": {
+                                "type": "string"
+                              },
+                              "customer_initial_source_az": {
+                                "type": "string"
+                              },
                               "customer_secondary_az": {
                                 "type": "string"
                               },
@@ -13567,13 +13577,25 @@
                                 "type": "string"
                               },
                               "dummyForFeatureFlags": {},
+                              "ha_cross_multi_az_enabled": {
+                                "type": "boolean"
+                              },
                               "hdl_access_token": {
+                                "type": "string"
+                              },
+                              "initial_replica_az": {
+                                "type": "string"
+                              },
+                              "initial_source_az": {
                                 "type": "string"
                               },
                               "project_name": {
                                 "type": "string"
                               },
                               "secondary_az": {
+                                "type": "string"
+                              },
+                              "source_instance_id": {
                                 "type": "string"
                               },
                               "target_az": {
@@ -13599,6 +13621,8 @@
                               "DISASTER_KEEP_AZ_RECOVERY",
                               "disaster_recovery_takeover",
                               "TEMPLATE_BACKUP",
+                              "SYSTEM_COPY",
+                              "synchronous_replication_takeover",
                               "TAKE_SNAPSHOT_FOR_FALLBACK",
                               "FALLBACK_TO_SNAPSHOT",
                               "REMOVE_SNAPSHOT_FOR_FALLBACK"
@@ -13623,7 +13647,7 @@
                       "storage": {
                         "description": "Size of the Storage in GB",
                         "format": "int64",
-                        "maximum": 3400,
+                        "maximum": 16384,
                         "minimum": 120,
                         "type": "integer"
                       },
@@ -45273,15 +45297,6 @@
                                     "type": "string"
                                   },
                                   "type": "array"
-                                },
-                                "trustBindings": {
-                                  "description": "Trusts bindings to be established with other services",
-                                  "items": {
-                                    "description": "Trust group",
-                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                                    "type": "string"
-                                  },
-                                  "type": "array"
                                 }
                               },
                               "required": [
@@ -45349,14 +45364,6 @@
                           "trusts": {
                             "items": {
                               "properties": {
-                                "aggregateTo": {
-                                  "items": {
-                                    "description": "List of aliases to aggregate to",
-                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                                    "type": "string"
-                                  },
-                                  "type": "array"
-                                },
                                 "alias": {
                                   "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                   "type": "string"
@@ -45889,14 +45896,6 @@
                             "name": {
                               "pattern": "^(ConnectivityProxy)$",
                               "type": "string"
-                            },
-                            "privateLinkAllowlist": {
-                              "items": {
-                                "maxLength": 40,
-                                "type": "string"
-                              },
-                              "maxItems": 100,
-                              "type": "array"
                             }
                           },
                           "required": [
@@ -45920,15 +45919,6 @@
                                 },
                                 "roles": {
                                   "items": {
-                                    "type": "string"
-                                  },
-                                  "type": "array"
-                                },
-                                "trustBindings": {
-                                  "description": "Trusts bindings to be established with other services",
-                                  "items": {
-                                    "description": "Trust group",
-                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                     "type": "string"
                                   },
                                   "type": "array"
@@ -45999,14 +45989,6 @@
                           "trusts": {
                             "items": {
                               "properties": {
-                                "aggregateTo": {
-                                  "items": {
-                                    "description": "List of aliases to aggregate to",
-                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                                    "type": "string"
-                                  },
-                                  "type": "array"
-                                },
                                 "alias": {
                                   "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                   "type": "string"
@@ -46383,14 +46365,6 @@
                         "minimum": 1,
                         "type": "integer"
                       },
-                      "privateLinkAllowlist": {
-                        "items": {
-                          "maxLength": 40,
-                          "type": "string"
-                        },
-                        "maxItems": 100,
-                        "type": "array"
-                      },
                       "provisioned_size_gib": {
                         "description": "Size of IQ persistence in GB.",
                         "maximum": 92160,
@@ -46414,10 +46388,6 @@
                             "additionalProperties": false,
                             "description": "List of operation arguments",
                             "properties": {
-                              "target_timestamp": {
-                                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
-                                "type": "string"
-                              },
                               "upgrade_type": {
                                 "enum": [
                                   "none",
@@ -46433,9 +46403,7 @@
                             "description": "Update operation",
                             "enum": [
                               "none",
-                              "INFRASTRUCTURE_UPGRADE",
-                              "RECOVERY",
-                              "CANCEL_RECOVERY"
+                              "INFRASTRUCTURE_UPGRADE"
                             ],
                             "type": "string"
                           }
@@ -46445,6 +46413,14 @@
                       "serviceStopped": {
                         "description": "Describes if the system should be running or stopped",
                         "type": "boolean"
+                      },
+                      "storage_service_provider": {
+                        "description": "The storage service provider to use.",
+                        "type": "string"
+                      },
+                      "storage_service_tier": {
+                        "description": "The storage service tier to use.",
+                        "type": "string"
                       },
                       "updateStrategy": {
                         "description": "Preferred behaviour for iq version upgrade",
@@ -50523,6 +50499,15 @@
                                     "type": "string"
                                   },
                                   "type": "array"
+                                },
+                                "trustBindings": {
+                                  "description": "Trusts bindings to be established with other services",
+                                  "items": {
+                                    "description": "Trust group",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                    "type": "string"
+                                  },
+                                  "type": "array"
                                 }
                               },
                               "required": [
@@ -50590,6 +50575,14 @@
                           "trusts": {
                             "items": {
                               "properties": {
+                                "aggregateTo": {
+                                  "items": {
+                                    "description": "List of aliases to aggregate to",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
                                 "alias": {
                                   "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                   "type": "string"
@@ -51148,6 +51141,15 @@
                                     "type": "string"
                                   },
                                   "type": "array"
+                                },
+                                "trustBindings": {
+                                  "description": "Trusts bindings to be established with other services",
+                                  "items": {
+                                    "description": "Trust group",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                    "type": "string"
+                                  },
+                                  "type": "array"
                                 }
                               },
                               "required": [
@@ -51215,6 +51217,14 @@
                           "trusts": {
                             "items": {
                               "properties": {
+                                "aggregateTo": {
+                                  "items": {
+                                    "description": "List of aliases to aggregate to",
+                                    "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
                                 "alias": {
                                   "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                                   "type": "string"
@@ -51614,6 +51624,10 @@
                             "additionalProperties": false,
                             "description": "List of operation arguments",
                             "properties": {
+                              "target_timestamp": {
+                                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
+                                "type": "string"
+                              },
                               "upgrade_type": {
                                 "enum": [
                                   "none",
@@ -51629,7 +51643,9 @@
                             "description": "Update operation",
                             "enum": [
                               "none",
-                              "INFRASTRUCTURE_UPGRADE"
+                              "INFRASTRUCTURE_UPGRADE",
+                              "RECOVERY",
+                              "CANCEL_RECOVERY"
                             ],
                             "type": "string"
                           }
