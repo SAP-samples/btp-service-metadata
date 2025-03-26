@@ -231,13 +231,6 @@
     "category": "APPLICATION"
   },
   {
-    "technicalId": "app-front",
-    "displayName": "Application Frontend Service",
-    "description": "Application Frontend Service",
-    "fileName": "app-front.json",
-    "category": "SERVICE"
-  },
-  {
     "technicalId": "application-logs",
     "displayName": "SAP Application Logging service for SAP BTP",
     "description": "Application Logging Service",
@@ -1380,14 +1373,14 @@
   },
   {
     "technicalId": "epd-handover",
-    "displayName": "Intelligent Handover",
-    "description": "A SaaS application for PLM that lets you plan and initiate the handover of an engineering structure (Product Structure, engineering bill of material (EBOM) or Recipe) to a manufacturing structure (manufacturing bill of material (MBOM) and Routing).",
+    "displayName": "Product Handover",
+    "description": "A SaaS application for IPD that lets you plan and initiate the handover of an engineering structure (Product Structure, engineering bill of material (EBOM) or Recipe) to a manufacturing structure (manufacturing bill of material (MBOM) and Routing).",
     "fileName": "epd-handover.json",
     "category": "APPLICATION"
   },
   {
     "technicalId": "epd-handover-service",
-    "displayName": "Intelligent Handover",
+    "displayName": "Product Handover",
     "description": "A capability of SAP Integrated Product Development that facilitates you to plan and initiate handover of an engineering bill of material (EBOM) to a manufacturing bill of material (MBOM) in the product lifecycle management (PLM) process.",
     "fileName": "epd-handover-service.json",
     "category": "SERVICE"
@@ -3890,6 +3883,13 @@
     "description": "SAP Supplier Problem-Solving",
     "fileName": "supplier-problem-solving.json",
     "category": "APPLICATION"
+  },
+  {
+    "technicalId": "sustainability-data-integration",
+    "displayName": "Sustainability Data Integration",
+    "description": "Sustainability Data Integration",
+    "fileName": "sustainability-data-integration.json",
+    "category": "SERVICE"
   },
   {
     "technicalId": "theming",
