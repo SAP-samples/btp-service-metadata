@@ -47,6 +47,24 @@
       "text": "Feature Scope Description for Data Quality Management, Microservices for Location Data"
     },
     {
+      "value": "https://help.sap.com/docs/data-quality-services/data-quality-services/enabling-dqm-microservices-687506470c6f4becbd64334d1965b476#creating-a-service-instance",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/data-quality-services/data-quality-services/enabling-dqm-microservices-687506470c6f4becbd64334d1965b476#creating-a-service-key",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
+      "value": "https://help.sap.com/docs/data-quality-services/data-quality-services/upgrading-free-plan-service-to-standard-plan",
+      "classification": "Documentation",
+      "type": "Link",
+      "text": "Documentation"
+    },
+    {
       "value": "https://help.sap.com/docs/data-quality-services/data-quality-services/what-s-new-for-data-quality-services",
       "classification": "Documentation",
       "type": "Link",
@@ -128,7 +146,72 @@
           "name": "cf-us10"
         }
       ],
-      "schemas": null
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "additionalProperties": false,
+                "_show_standard_config_view": true,
+                "_show_form_view": true,
+                "properties": {
+                  "xs-security": {
+                    "type": "object",
+                    "title": "xs-security",
+                    "description": "",
+                    "required": [
+                      "oauth2-configuration"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "oauth2-configuration": {
+                        "type": "object",
+                        "title": "oauth2-configuration",
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "title": "token-validity",
+                            "description": "",
+                            "additionalProperties": false,
+                            "properties": {
+                              "token-validity": {
+                                "type": "integer",
+                                "description": "Token validity in seconds (default: 12 hours, maximum value: 86400 - 24 hours)",
+                                "default": 86400
+                              }
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "title": "credential-types",
+                            "description": "",
+                            "additionalProperties": false,
+                            "properties": {
+                              "credential-types": {
+                                "type": "array",
+                                "description": "Array of allowed credential types. Default is binding-secret.",
+                                "default": "x509",
+                                "items": {
+                                  "type": "string",
+                                  "enum": [
+                                    "x509"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "name": "professional",
@@ -150,7 +233,72 @@
           "name": "cf-us10"
         }
       ],
-      "schemas": null
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "additionalProperties": false,
+                "_show_standard_config_view": true,
+                "_show_form_view": true,
+                "properties": {
+                  "xs-security": {
+                    "type": "object",
+                    "title": "xs-security",
+                    "description": "",
+                    "required": [
+                      "oauth2-configuration"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "oauth2-configuration": {
+                        "type": "object",
+                        "title": "oauth2-configuration",
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "title": "token-validity",
+                            "description": "",
+                            "additionalProperties": false,
+                            "properties": {
+                              "token-validity": {
+                                "type": "integer",
+                                "description": "Token validity in seconds (default: 12 hours, maximum value: 86400 - 24 hours)",
+                                "default": 86400
+                              }
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "title": "credential-types",
+                            "description": "",
+                            "additionalProperties": false,
+                            "properties": {
+                              "credential-types": {
+                                "type": "array",
+                                "description": "Array of allowed credential types. Default is binding-secret.",
+                                "default": "x509",
+                                "items": {
+                                  "type": "string",
+                                  "enum": [
+                                    "x509"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "name": "standard",
@@ -172,7 +320,72 @@
           "name": "cf-us10"
         }
       ],
-      "schemas": null
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "object",
+                "additionalProperties": false,
+                "_show_standard_config_view": true,
+                "_show_form_view": true,
+                "properties": {
+                  "xs-security": {
+                    "type": "object",
+                    "title": "xs-security",
+                    "description": "",
+                    "required": [
+                      "oauth2-configuration"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "oauth2-configuration": {
+                        "type": "object",
+                        "title": "oauth2-configuration",
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "title": "token-validity",
+                            "description": "",
+                            "additionalProperties": false,
+                            "properties": {
+                              "token-validity": {
+                                "type": "integer",
+                                "description": "Token validity in seconds (default: 12 hours, maximum value: 86400 - 24 hours)",
+                                "default": 86400
+                              }
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "title": "credential-types",
+                            "description": "",
+                            "additionalProperties": false,
+                            "properties": {
+                              "credential-types": {
+                                "type": "array",
+                                "description": "Array of allowed credential types. Default is binding-secret.",
+                                "default": "x509",
+                                "items": {
+                                  "type": "string",
+                                  "enum": [
+                                    "x509"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ],
   "supportComponents": [

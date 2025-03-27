@@ -381,10 +381,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -557,19 +557,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -762,10 +762,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -874,7 +874,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -1387,10 +1386,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -1563,19 +1562,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -1748,10 +1747,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -1860,7 +1859,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -2102,10 +2100,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -2276,19 +2274,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -2475,10 +2473,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -2585,7 +2583,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -3084,10 +3081,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -3258,19 +3255,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -3437,10 +3434,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -3547,7 +3544,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -3738,10 +3734,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -3889,19 +3885,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -4037,10 +4033,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -4124,7 +4120,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -4528,10 +4523,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -4679,19 +4674,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -4807,10 +4802,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -4894,7 +4889,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -5126,10 +5120,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -5302,19 +5296,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -5507,10 +5501,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -5619,7 +5613,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -5744,10 +5737,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -5920,19 +5913,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -6105,10 +6098,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -6217,7 +6210,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -6443,10 +6435,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -6617,19 +6609,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -6816,10 +6808,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -6926,7 +6918,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -7045,10 +7036,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -7219,19 +7210,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -7398,10 +7389,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -7508,7 +7499,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -7726,10 +7716,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -7888,19 +7878,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -8083,10 +8073,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -8181,7 +8171,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -8469,19 +8458,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -8622,7 +8611,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -8757,19 +8745,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -8910,7 +8898,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -9331,19 +9318,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -9464,7 +9451,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -9599,19 +9585,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -9732,7 +9718,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -9970,10 +9955,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -10132,19 +10117,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -10327,10 +10312,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -10425,7 +10410,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -11245,10 +11229,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -11409,19 +11393,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -11553,10 +11537,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -11653,7 +11637,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -11740,10 +11723,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -11904,19 +11887,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -12048,10 +12031,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -12148,7 +12131,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -12235,10 +12217,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -12399,19 +12381,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -12543,10 +12525,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -12643,7 +12625,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -12730,10 +12711,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -12894,19 +12875,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -13038,10 +13019,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -13138,7 +13119,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -13225,10 +13205,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -13389,19 +13369,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -13533,10 +13513,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -13633,7 +13613,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -13720,10 +13699,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -13884,19 +13863,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -14028,10 +14007,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -14128,7 +14107,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -14215,10 +14193,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -14379,19 +14357,19 @@
                     "properties": {
                       "nodes": {
                         "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Nodes",
                         "type": "string"
                       },
                       "pods": {
                         "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Pods",
                         "type": "string"
                       },
                       "services": {
                         "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
                         "title": "CIDR range for Services",
                         "type": "string"
                       }
@@ -14523,10 +14501,10 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length.",
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
                           "maxLength": 15,
                           "minLength": 1,
-                          "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                           "type": "string"
                         }
                       },
@@ -14623,7 +14601,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
@@ -14970,7 +14947,6 @@
                     "type": "object"
                   }
                 },
-                "required": [],
                 "type": "object"
               }
             }
