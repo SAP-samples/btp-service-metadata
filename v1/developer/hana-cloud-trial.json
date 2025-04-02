@@ -1522,14 +1522,6 @@
                             "name": {
                               "pattern": "^(ConnectivityProxy)$",
                               "type": "string"
-                            },
-                            "privateLinkAllowlist": {
-                              "items": {
-                                "maxLength": 40,
-                                "type": "string"
-                              },
-                              "maxItems": 100,
-                              "type": "array"
                             }
                           },
                           "required": [
@@ -2015,14 +2007,6 @@
                         "maximum": 1,
                         "minimum": 1,
                         "type": "integer"
-                      },
-                      "privateLinkAllowlist": {
-                        "items": {
-                          "maxLength": 40,
-                          "type": "string"
-                        },
-                        "maxItems": 100,
-                        "type": "array"
                       },
                       "provisioned_size_gib": {
                         "description": "Size of IQ persistence in GB.",
