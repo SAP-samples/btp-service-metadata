@@ -231,13 +231,6 @@
     "category": "APPLICATION"
   },
   {
-    "technicalId": "app-front",
-    "displayName": "Application Frontend Service",
-    "description": "Application Frontend Service",
-    "fileName": "app-front.json",
-    "category": "SERVICE"
-  },
-  {
     "technicalId": "application-logs",
     "displayName": "SAP Application Logging service for SAP BTP",
     "description": "Application Logging Service",
@@ -2486,8 +2479,8 @@
   },
   {
     "technicalId": "MDOrchestrationApplication",
-    "displayName": "Business Data Orchestration",
-    "description": "Business Data Orchestration",
+    "displayName": "Master Data Orchestration",
+    "description": "Master Data Orchestration",
     "fileName": "mdorchestrationapplication.json",
     "category": "APPLICATION"
   },
@@ -3890,6 +3883,13 @@
     "description": "SAP Supplier Problem-Solving",
     "fileName": "supplier-problem-solving.json",
     "category": "APPLICATION"
+  },
+  {
+    "technicalId": "sustainability-data-integration",
+    "displayName": "sustainability data integration",
+    "description": "The sustainability data integration service provides APIs that let you integrate your source systems with SAP Sustainability solutions running on SAP BTP. The APIs import data from external systems into the sustainability management processes of the target solution.",
+    "fileName": "sustainability-data-integration.json",
+    "category": "SERVICE"
   },
   {
     "technicalId": "theming",
