@@ -202,6 +202,10 @@
           "name": "kyma-ca10"
         },
         {
+          "region": "ca20",
+          "name": "kyma-ca20"
+        },
+        {
           "region": "ch20",
           "name": "kyma-ch20"
         },
@@ -242,8 +246,16 @@
           "name": "kyma-jp30"
         },
         {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
           "region": "sa30",
           "name": "kyma-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -642,6 +654,603 @@
                       "ap-south-1",
                       "ap-southeast-1",
                       "ap-southeast-2"
+                    ],
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "region"
+                ],
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "machineType",
+                  "autoScalerMin",
+                  "autoScalerMax",
+                  "additionalWorkerNodePools",
+                  "oidc",
+                  "administrators"
+                ],
+                "_load_current_config": true,
+                "_show_form_view": true,
+                "properties": {
+                  "additionalWorkerNodePools": {
+                    "description": "Specifies the list of additional worker node pools.",
+                    "items": {
+                      "_controlsOrder": [
+                        "name",
+                        "machineType",
+                        "haZones",
+                        "autoScalerMin",
+                        "autoScalerMax"
+                      ],
+                      "properties": {
+                        "autoScalerMax": {
+                          "default": 20,
+                          "description": "Specifies the maximum number of virtual machines to create.",
+                          "maximum": 300,
+                          "minimum": 1,
+                          "type": "integer"
+                        },
+                        "autoScalerMin": {
+                          "default": 3,
+                          "description": "Specifies the minimum number of virtual machines to create.",
+                          "minimum": 1,
+                          "type": "integer"
+                        },
+                        "haZones": {
+                          "default": true,
+                          "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+                          "title": "HA zones",
+                          "type": "boolean"
+                        },
+                        "machineType": {
+                          "_enumDisplayName": {
+                            "c7i.12xlarge": "c7i.12xlarge (48vCPU, 96GB RAM)",
+                            "c7i.16xlarge": "c7i.16xlarge (64vCPU, 128GB RAM)",
+                            "c7i.2xlarge": "c7i.2xlarge (8vCPU, 16GB RAM)",
+                            "c7i.4xlarge": "c7i.4xlarge (16vCPU, 32GB RAM)",
+                            "c7i.8xlarge": "c7i.8xlarge (32vCPU, 64GB RAM)",
+                            "c7i.large": "c7i.large (2vCPU, 4GB RAM)",
+                            "c7i.xlarge": "c7i.xlarge (4vCPU, 8GB RAM)",
+                            "g6.12xlarge": "g6.12xlarge (4GPU, 48vCPU, 192GB RAM)*",
+                            "g6.16xlarge": "g6.16xlarge (1GPU, 64vCPU, 256GB RAM)*",
+                            "g6.2xlarge": "g6.2xlarge (1GPU, 8vCPU, 32GB RAM)*",
+                            "g6.4xlarge": "g6.4xlarge (1GPU, 16vCPU, 64GB RAM)*",
+                            "g6.8xlarge": "g6.8xlarge (1GPU, 32vCPU, 128GB RAM)*",
+                            "g6.xlarge": "g6.xlarge (1GPU, 4vCPU, 16GB RAM)*",
+                            "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
+                            "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
+                            "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
+                            "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
+                            "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
+                            "m5.large": "m5.large (2vCPU, 8GB RAM)",
+                            "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
+                            "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
+                            "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
+                            "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
+                            "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
+                            "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
+                            "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
+                            "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
+                          },
+                          "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+                          "enum": [
+                            "m6i.large",
+                            "m6i.xlarge",
+                            "m6i.2xlarge",
+                            "m6i.4xlarge",
+                            "m6i.8xlarge",
+                            "m6i.12xlarge",
+                            "m6i.16xlarge",
+                            "m5.large",
+                            "m5.xlarge",
+                            "m5.2xlarge",
+                            "m5.4xlarge",
+                            "m5.8xlarge",
+                            "m5.12xlarge",
+                            "m5.16xlarge",
+                            "c7i.large",
+                            "c7i.xlarge",
+                            "c7i.2xlarge",
+                            "c7i.4xlarge",
+                            "c7i.8xlarge",
+                            "c7i.12xlarge",
+                            "c7i.16xlarge",
+                            "g6.xlarge",
+                            "g6.2xlarge",
+                            "g6.4xlarge",
+                            "g6.8xlarge",
+                            "g6.12xlarge",
+                            "g6.16xlarge"
+                          ],
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "name": {
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
+                          "maxLength": 15,
+                          "minLength": 1,
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "machineType",
+                        "haZones",
+                        "autoScalerMin",
+                        "autoScalerMax"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array",
+                    "uniqueItems": true
+                  },
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "autoScalerMax": {
+                    "description": "Specifies the maximum number of virtual machines to create",
+                    "maximum": 300,
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "autoScalerMin": {
+                    "description": "Specifies the minimum number of virtual machines to create",
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "machineType": {
+                    "_enumDisplayName": {
+                      "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
+                      "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
+                      "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
+                      "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
+                      "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
+                      "m5.large": "m5.large (2vCPU, 8GB RAM)",
+                      "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
+                      "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
+                      "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
+                      "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
+                      "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
+                      "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
+                      "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
+                      "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
+                    },
+                    "description": "Specifies the type of the virtual machine.",
+                    "enum": [
+                      "m6i.large",
+                      "m6i.xlarge",
+                      "m6i.2xlarge",
+                      "m6i.4xlarge",
+                      "m6i.8xlarge",
+                      "m6i.12xlarge",
+                      "m6i.16xlarge",
+                      "m5.large",
+                      "m5.xlarge",
+                      "m5.2xlarge",
+                      "m5.4xlarge",
+                      "m5.8xlarge",
+                      "m5.12xlarge",
+                      "m5.16xlarge"
+                    ],
+                    "type": "string"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": null
+            }
+          }
+        },
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "name",
+                  "region",
+                  "machineType",
+                  "autoScalerMin",
+                  "autoScalerMax",
+                  "additionalWorkerNodePools",
+                  "modules",
+                  "networking",
+                  "oidc",
+                  "administrators"
+                ],
+                "_load_current_config": true,
+                "_show_form_view": true,
+                "properties": {
+                  "additionalWorkerNodePools": {
+                    "description": "Specifies the list of additional worker node pools.",
+                    "items": {
+                      "_controlsOrder": [
+                        "name",
+                        "machineType",
+                        "haZones",
+                        "autoScalerMin",
+                        "autoScalerMax"
+                      ],
+                      "properties": {
+                        "autoScalerMax": {
+                          "default": 20,
+                          "description": "Specifies the maximum number of virtual machines to create.",
+                          "maximum": 300,
+                          "minimum": 1,
+                          "type": "integer"
+                        },
+                        "autoScalerMin": {
+                          "default": 3,
+                          "description": "Specifies the minimum number of virtual machines to create.",
+                          "minimum": 1,
+                          "type": "integer"
+                        },
+                        "haZones": {
+                          "default": true,
+                          "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+                          "title": "HA zones",
+                          "type": "boolean"
+                        },
+                        "machineType": {
+                          "_enumDisplayName": {
+                            "c7i.12xlarge": "c7i.12xlarge (48vCPU, 96GB RAM)",
+                            "c7i.16xlarge": "c7i.16xlarge (64vCPU, 128GB RAM)",
+                            "c7i.2xlarge": "c7i.2xlarge (8vCPU, 16GB RAM)",
+                            "c7i.4xlarge": "c7i.4xlarge (16vCPU, 32GB RAM)",
+                            "c7i.8xlarge": "c7i.8xlarge (32vCPU, 64GB RAM)",
+                            "c7i.large": "c7i.large (2vCPU, 4GB RAM)",
+                            "c7i.xlarge": "c7i.xlarge (4vCPU, 8GB RAM)",
+                            "g6.12xlarge": "g6.12xlarge (4GPU, 48vCPU, 192GB RAM)*",
+                            "g6.16xlarge": "g6.16xlarge (1GPU, 64vCPU, 256GB RAM)*",
+                            "g6.2xlarge": "g6.2xlarge (1GPU, 8vCPU, 32GB RAM)*",
+                            "g6.4xlarge": "g6.4xlarge (1GPU, 16vCPU, 64GB RAM)*",
+                            "g6.8xlarge": "g6.8xlarge (1GPU, 32vCPU, 128GB RAM)*",
+                            "g6.xlarge": "g6.xlarge (1GPU, 4vCPU, 16GB RAM)*",
+                            "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
+                            "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
+                            "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
+                            "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
+                            "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
+                            "m5.large": "m5.large (2vCPU, 8GB RAM)",
+                            "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
+                            "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
+                            "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
+                            "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
+                            "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
+                            "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
+                            "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
+                            "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
+                          },
+                          "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+                          "enum": [
+                            "m6i.large",
+                            "m6i.xlarge",
+                            "m6i.2xlarge",
+                            "m6i.4xlarge",
+                            "m6i.8xlarge",
+                            "m6i.12xlarge",
+                            "m6i.16xlarge",
+                            "m5.large",
+                            "m5.xlarge",
+                            "m5.2xlarge",
+                            "m5.4xlarge",
+                            "m5.8xlarge",
+                            "m5.12xlarge",
+                            "m5.16xlarge",
+                            "c7i.large",
+                            "c7i.xlarge",
+                            "c7i.2xlarge",
+                            "c7i.4xlarge",
+                            "c7i.8xlarge",
+                            "c7i.12xlarge",
+                            "c7i.16xlarge",
+                            "g6.xlarge",
+                            "g6.2xlarge",
+                            "g6.4xlarge",
+                            "g6.8xlarge",
+                            "g6.12xlarge",
+                            "g6.16xlarge"
+                          ],
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "name": {
+                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
+                          "maxLength": 15,
+                          "minLength": 1,
+                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "machineType",
+                        "haZones",
+                        "autoScalerMin",
+                        "autoScalerMax"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array",
+                    "uniqueItems": true
+                  },
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "autoScalerMax": {
+                    "default": 20,
+                    "description": "Specifies the maximum number of virtual machines to create",
+                    "maximum": 300,
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "autoScalerMin": {
+                    "default": 3,
+                    "description": "Specifies the minimum number of virtual machines to create",
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "machineType": {
+                    "_enumDisplayName": {
+                      "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
+                      "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
+                      "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
+                      "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
+                      "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
+                      "m5.large": "m5.large (2vCPU, 8GB RAM)",
+                      "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
+                      "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
+                      "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
+                      "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
+                      "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
+                      "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
+                      "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
+                      "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
+                    },
+                    "description": "Specifies the type of the virtual machine.",
+                    "enum": [
+                      "m6i.large",
+                      "m6i.xlarge",
+                      "m6i.2xlarge",
+                      "m6i.4xlarge",
+                      "m6i.8xlarge",
+                      "m6i.12xlarge",
+                      "m6i.16xlarge",
+                      "m5.large",
+                      "m5.xlarge",
+                      "m5.2xlarge",
+                      "m5.4xlarge",
+                      "m5.8xlarge",
+                      "m5.12xlarge",
+                      "m5.16xlarge"
+                    ],
+                    "type": "string"
+                  },
+                  "modules": {
+                    "_controlsOrder": [
+                      "default",
+                      "list"
+                    ],
+                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                    "oneOf": [
+                      {
+                        "additionalProperties": false,
+                        "description": "Default modules",
+                        "properties": {
+                          "default": {
+                            "default": true,
+                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
+                            "readOnly": true,
+                            "title": "Use Default",
+                            "type": "boolean"
+                          }
+                        },
+                        "title": "Default",
+                        "type": "object"
+                      },
+                      {
+                        "additionalProperties": false,
+                        "description": "Define custom module list",
+                        "properties": {
+                          "list": {
+                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                            "items": {
+                              "_controlsOrder": [
+                                "name",
+                                "channel",
+                                "customResourcePolicy"
+                              ],
+                              "properties": {
+                                "channel": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "fast": "Fast - latest version",
+                                    "regular": "Regular - default version"
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred release channel or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "regular",
+                                    "fast"
+                                  ],
+                                  "type": "string"
+                                },
+                                "customResourcePolicy": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
+                                    "Ignore": "Ignore - module resource is not created."
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "CreateAndDelete",
+                                    "Ignore"
+                                  ],
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
+                                  "minLength": 1,
+                                  "title": "Name",
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array",
+                            "uniqueItems": true
+                          }
+                        },
+                        "title": "Custom",
+                        "type": "object"
+                      }
+                    ],
+                    "type": "object"
+                  },
+                  "name": {
+                    "_BTPdefaultTemplate": {
+                      "elements": [
+                        "saSubdomain"
+                      ]
+                    },
+                    "minLength": 1,
+                    "pattern": "^[a-zA-Z0-9-]*$",
+                    "title": "Cluster Name",
+                    "type": "string"
+                  },
+                  "networking": {
+                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
+                    "properties": {
+                      "nodes": {
+                        "default": "10.250.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
+                        "title": "CIDR range for Nodes",
+                        "type": "string"
+                      },
+                      "pods": {
+                        "default": "10.96.0.0/13",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
+                        "title": "CIDR range for Pods",
+                        "type": "string"
+                      },
+                      "services": {
+                        "default": "10.104.0.0/13",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
+                        "title": "CIDR range for Services",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "nodes"
+                    ],
+                    "type": "object"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  },
+                  "region": {
+                    "_enumDisplayName": {
+                      "eu-central-1": "eu-central-1 (Europe, Frankfurt)"
+                    },
+                    "enum": [
+                      "eu-central-1"
                     ],
                     "minLength": 1,
                     "type": "string"
@@ -1271,603 +1880,6 @@
               "parameters": null
             }
           }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "name",
-                  "region",
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
-                  "additionalWorkerNodePools",
-                  "modules",
-                  "networking",
-                  "oidc",
-                  "administrators"
-                ],
-                "_load_current_config": true,
-                "_show_form_view": true,
-                "properties": {
-                  "additionalWorkerNodePools": {
-                    "description": "Specifies the list of additional worker node pools.",
-                    "items": {
-                      "_controlsOrder": [
-                        "name",
-                        "machineType",
-                        "haZones",
-                        "autoScalerMin",
-                        "autoScalerMax"
-                      ],
-                      "properties": {
-                        "autoScalerMax": {
-                          "default": 20,
-                          "description": "Specifies the maximum number of virtual machines to create.",
-                          "maximum": 300,
-                          "minimum": 1,
-                          "type": "integer"
-                        },
-                        "autoScalerMin": {
-                          "default": 3,
-                          "description": "Specifies the minimum number of virtual machines to create.",
-                          "minimum": 1,
-                          "type": "integer"
-                        },
-                        "haZones": {
-                          "default": true,
-                          "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
-                          "title": "HA zones",
-                          "type": "boolean"
-                        },
-                        "machineType": {
-                          "_enumDisplayName": {
-                            "c7i.12xlarge": "c7i.12xlarge (48vCPU, 96GB RAM)",
-                            "c7i.16xlarge": "c7i.16xlarge (64vCPU, 128GB RAM)",
-                            "c7i.2xlarge": "c7i.2xlarge (8vCPU, 16GB RAM)",
-                            "c7i.4xlarge": "c7i.4xlarge (16vCPU, 32GB RAM)",
-                            "c7i.8xlarge": "c7i.8xlarge (32vCPU, 64GB RAM)",
-                            "c7i.large": "c7i.large (2vCPU, 4GB RAM)",
-                            "c7i.xlarge": "c7i.xlarge (4vCPU, 8GB RAM)",
-                            "g6.12xlarge": "g6.12xlarge (4GPU, 48vCPU, 192GB RAM)*",
-                            "g6.16xlarge": "g6.16xlarge (1GPU, 64vCPU, 256GB RAM)*",
-                            "g6.2xlarge": "g6.2xlarge (1GPU, 8vCPU, 32GB RAM)*",
-                            "g6.4xlarge": "g6.4xlarge (1GPU, 16vCPU, 64GB RAM)*",
-                            "g6.8xlarge": "g6.8xlarge (1GPU, 32vCPU, 128GB RAM)*",
-                            "g6.xlarge": "g6.xlarge (1GPU, 4vCPU, 16GB RAM)*",
-                            "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
-                            "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
-                            "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
-                            "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
-                            "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
-                            "m5.large": "m5.large (2vCPU, 8GB RAM)",
-                            "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
-                            "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
-                            "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
-                            "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
-                            "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
-                            "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
-                            "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
-                            "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
-                          },
-                          "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
-                          "enum": [
-                            "m6i.large",
-                            "m6i.xlarge",
-                            "m6i.2xlarge",
-                            "m6i.4xlarge",
-                            "m6i.8xlarge",
-                            "m6i.12xlarge",
-                            "m6i.16xlarge",
-                            "m5.large",
-                            "m5.xlarge",
-                            "m5.2xlarge",
-                            "m5.4xlarge",
-                            "m5.8xlarge",
-                            "m5.12xlarge",
-                            "m5.16xlarge",
-                            "c7i.large",
-                            "c7i.xlarge",
-                            "c7i.2xlarge",
-                            "c7i.4xlarge",
-                            "c7i.8xlarge",
-                            "c7i.12xlarge",
-                            "c7i.16xlarge",
-                            "g6.xlarge",
-                            "g6.2xlarge",
-                            "g6.4xlarge",
-                            "g6.8xlarge",
-                            "g6.12xlarge",
-                            "g6.16xlarge"
-                          ],
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
-                          "maxLength": 15,
-                          "minLength": 1,
-                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "name",
-                        "machineType",
-                        "haZones",
-                        "autoScalerMin",
-                        "autoScalerMax"
-                      ],
-                      "type": "object"
-                    },
-                    "type": "array",
-                    "uniqueItems": true
-                  },
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "default": 20,
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 300,
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "default": 3,
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
-                      "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
-                      "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
-                      "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
-                      "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
-                      "m5.large": "m5.large (2vCPU, 8GB RAM)",
-                      "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
-                      "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
-                      "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
-                      "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
-                      "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
-                      "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
-                      "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
-                      "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
-                    },
-                    "description": "Specifies the type of the virtual machine.",
-                    "enum": [
-                      "m6i.large",
-                      "m6i.xlarge",
-                      "m6i.2xlarge",
-                      "m6i.4xlarge",
-                      "m6i.8xlarge",
-                      "m6i.12xlarge",
-                      "m6i.16xlarge",
-                      "m5.large",
-                      "m5.xlarge",
-                      "m5.2xlarge",
-                      "m5.4xlarge",
-                      "m5.8xlarge",
-                      "m5.12xlarge",
-                      "m5.16xlarge"
-                    ],
-                    "type": "string"
-                  },
-                  "modules": {
-                    "_controlsOrder": [
-                      "default",
-                      "list"
-                    ],
-                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                    "oneOf": [
-                      {
-                        "additionalProperties": false,
-                        "description": "Default modules",
-                        "properties": {
-                          "default": {
-                            "default": true,
-                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
-                            "readOnly": true,
-                            "title": "Use Default",
-                            "type": "boolean"
-                          }
-                        },
-                        "title": "Default",
-                        "type": "object"
-                      },
-                      {
-                        "additionalProperties": false,
-                        "description": "Define custom module list",
-                        "properties": {
-                          "list": {
-                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                            "items": {
-                              "_controlsOrder": [
-                                "name",
-                                "channel",
-                                "customResourcePolicy"
-                              ],
-                              "properties": {
-                                "channel": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "fast": "Fast - latest version",
-                                    "regular": "Regular - default version"
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred release channel or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "regular",
-                                    "fast"
-                                  ],
-                                  "type": "string"
-                                },
-                                "customResourcePolicy": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
-                                    "Ignore": "Ignore - module resource is not created."
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "CreateAndDelete",
-                                    "Ignore"
-                                  ],
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
-                                  "minLength": 1,
-                                  "title": "Name",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "type": "array",
-                            "uniqueItems": true
-                          }
-                        },
-                        "title": "Custom",
-                        "type": "object"
-                      }
-                    ],
-                    "type": "object"
-                  },
-                  "name": {
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "saSubdomain"
-                      ]
-                    },
-                    "minLength": 1,
-                    "pattern": "^[a-zA-Z0-9-]*$",
-                    "title": "Cluster Name",
-                    "type": "string"
-                  },
-                  "networking": {
-                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
-                    "properties": {
-                      "nodes": {
-                        "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
-                        "title": "CIDR range for Nodes",
-                        "type": "string"
-                      },
-                      "pods": {
-                        "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
-                        "title": "CIDR range for Pods",
-                        "type": "string"
-                      },
-                      "services": {
-                        "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16, 192.168.123.0/24, 240.0.0.0/8",
-                        "title": "CIDR range for Services",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "nodes"
-                    ],
-                    "type": "object"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  },
-                  "region": {
-                    "_enumDisplayName": {
-                      "eu-central-1": "eu-central-1 (Europe, Frankfurt)"
-                    },
-                    "enum": [
-                      "eu-central-1"
-                    ],
-                    "minLength": 1,
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "name",
-                  "region"
-                ],
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
-                  "additionalWorkerNodePools",
-                  "oidc",
-                  "administrators"
-                ],
-                "_load_current_config": true,
-                "_show_form_view": true,
-                "properties": {
-                  "additionalWorkerNodePools": {
-                    "description": "Specifies the list of additional worker node pools.",
-                    "items": {
-                      "_controlsOrder": [
-                        "name",
-                        "machineType",
-                        "haZones",
-                        "autoScalerMin",
-                        "autoScalerMax"
-                      ],
-                      "properties": {
-                        "autoScalerMax": {
-                          "default": 20,
-                          "description": "Specifies the maximum number of virtual machines to create.",
-                          "maximum": 300,
-                          "minimum": 1,
-                          "type": "integer"
-                        },
-                        "autoScalerMin": {
-                          "default": 3,
-                          "description": "Specifies the minimum number of virtual machines to create.",
-                          "minimum": 1,
-                          "type": "integer"
-                        },
-                        "haZones": {
-                          "default": true,
-                          "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
-                          "title": "HA zones",
-                          "type": "boolean"
-                        },
-                        "machineType": {
-                          "_enumDisplayName": {
-                            "c7i.12xlarge": "c7i.12xlarge (48vCPU, 96GB RAM)",
-                            "c7i.16xlarge": "c7i.16xlarge (64vCPU, 128GB RAM)",
-                            "c7i.2xlarge": "c7i.2xlarge (8vCPU, 16GB RAM)",
-                            "c7i.4xlarge": "c7i.4xlarge (16vCPU, 32GB RAM)",
-                            "c7i.8xlarge": "c7i.8xlarge (32vCPU, 64GB RAM)",
-                            "c7i.large": "c7i.large (2vCPU, 4GB RAM)",
-                            "c7i.xlarge": "c7i.xlarge (4vCPU, 8GB RAM)",
-                            "g6.12xlarge": "g6.12xlarge (4GPU, 48vCPU, 192GB RAM)*",
-                            "g6.16xlarge": "g6.16xlarge (1GPU, 64vCPU, 256GB RAM)*",
-                            "g6.2xlarge": "g6.2xlarge (1GPU, 8vCPU, 32GB RAM)*",
-                            "g6.4xlarge": "g6.4xlarge (1GPU, 16vCPU, 64GB RAM)*",
-                            "g6.8xlarge": "g6.8xlarge (1GPU, 32vCPU, 128GB RAM)*",
-                            "g6.xlarge": "g6.xlarge (1GPU, 4vCPU, 16GB RAM)*",
-                            "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
-                            "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
-                            "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
-                            "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
-                            "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
-                            "m5.large": "m5.large (2vCPU, 8GB RAM)",
-                            "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
-                            "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
-                            "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
-                            "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
-                            "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
-                            "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
-                            "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
-                            "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
-                          },
-                          "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
-                          "enum": [
-                            "m6i.large",
-                            "m6i.xlarge",
-                            "m6i.2xlarge",
-                            "m6i.4xlarge",
-                            "m6i.8xlarge",
-                            "m6i.12xlarge",
-                            "m6i.16xlarge",
-                            "m5.large",
-                            "m5.xlarge",
-                            "m5.2xlarge",
-                            "m5.4xlarge",
-                            "m5.8xlarge",
-                            "m5.12xlarge",
-                            "m5.16xlarge",
-                            "c7i.large",
-                            "c7i.xlarge",
-                            "c7i.2xlarge",
-                            "c7i.4xlarge",
-                            "c7i.8xlarge",
-                            "c7i.12xlarge",
-                            "c7i.16xlarge",
-                            "g6.xlarge",
-                            "g6.2xlarge",
-                            "g6.4xlarge",
-                            "g6.8xlarge",
-                            "g6.12xlarge",
-                            "g6.16xlarge"
-                          ],
-                          "minLength": 1,
-                          "type": "string"
-                        },
-                        "name": {
-                          "description": "Specifies the unique name of the additional worker node pool. The name must consist of lowercase alphanumeric characters or '-', must start and end with an alphanumeric character, and can be a maximum of 15 characters in length. Do not use the name \u201ccpu-worker-0\u201d because it's reserved for the Kyma worker node pool.",
-                          "maxLength": 15,
-                          "minLength": 1,
-                          "pattern": "^(?!cpu-worker-0$)[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "name",
-                        "machineType",
-                        "haZones",
-                        "autoScalerMin",
-                        "autoScalerMax"
-                      ],
-                      "type": "object"
-                    },
-                    "type": "array",
-                    "uniqueItems": true
-                  },
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 300,
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
-                      "m5.16xlarge": "m5.16xlarge (64vCPU, 256GB RAM)",
-                      "m5.2xlarge": "m5.2xlarge (8vCPU, 32GB RAM)",
-                      "m5.4xlarge": "m5.4xlarge (16vCPU, 64GB RAM)",
-                      "m5.8xlarge": "m5.8xlarge (32vCPU, 128GB RAM)",
-                      "m5.large": "m5.large (2vCPU, 8GB RAM)",
-                      "m5.xlarge": "m5.xlarge (4vCPU, 16GB RAM)",
-                      "m6i.12xlarge": "m6i.12xlarge (48vCPU, 192GB RAM)",
-                      "m6i.16xlarge": "m6i.16xlarge (64vCPU, 256GB RAM)",
-                      "m6i.2xlarge": "m6i.2xlarge (8vCPU, 32GB RAM)",
-                      "m6i.4xlarge": "m6i.4xlarge (16vCPU, 64GB RAM)",
-                      "m6i.8xlarge": "m6i.8xlarge (32vCPU, 128GB RAM)",
-                      "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
-                      "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
-                    },
-                    "description": "Specifies the type of the virtual machine.",
-                    "enum": [
-                      "m6i.large",
-                      "m6i.xlarge",
-                      "m6i.2xlarge",
-                      "m6i.4xlarge",
-                      "m6i.8xlarge",
-                      "m6i.12xlarge",
-                      "m6i.16xlarge",
-                      "m5.large",
-                      "m5.xlarge",
-                      "m5.2xlarge",
-                      "m5.4xlarge",
-                      "m5.8xlarge",
-                      "m5.12xlarge",
-                      "m5.16xlarge"
-                    ],
-                    "type": "string"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "type": "object"
-              }
-            }
-          },
-          "service_binding": {
-            "create": {
-              "parameters": null
-            }
-          }
         }
       ]
     },
@@ -1882,10 +1894,6 @@
       "deprecationMessage": null,
       "deprecationDate": null,
       "dataCenters": [
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
         {
           "region": "ap10",
           "name": "kyma-ap10"
@@ -1925,6 +1933,10 @@
         {
           "region": "ca10",
           "name": "kyma-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "kyma-ca20"
         },
         {
           "region": "ch20",
@@ -1967,8 +1979,16 @@
           "name": "kyma-jp30"
         },
         {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
           "region": "sa30",
           "name": "kyma-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -2604,386 +2624,6 @@
                   "machineType",
                   "autoScalerMin",
                   "autoScalerMax",
-                  "modules",
-                  "networking",
-                  "oidc",
-                  "administrators"
-                ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "default": 20,
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 300,
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "default": 3,
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "Standard_D16_v3": "Standard_D16_v3 (16vCPU, 64GB RAM)",
-                      "Standard_D16s_v5": "Standard_D16s_v5 (16vCPU, 64GB RAM)",
-                      "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
-                      "Standard_D32_v3": "Standard_D32_v3 (32vCPU, 128GB RAM)",
-                      "Standard_D32s_v5": "Standard_D32s_v5 (32vCPU, 128GB RAM)",
-                      "Standard_D48_v3": "Standard_D48_v3 (48vCPU, 192GB RAM)",
-                      "Standard_D48s_v5": "Standard_D48s_v5 (48vCPU, 192GB RAM)",
-                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
-                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)",
-                      "Standard_D64_v3": "Standard_D64_v3 (64vCPU, 256GB RAM)",
-                      "Standard_D64s_v5": "Standard_D64s_v5 (64vCPU, 256GB RAM)",
-                      "Standard_D8_v3": "Standard_D8_v3 (8vCPU, 32GB RAM)",
-                      "Standard_D8s_v5": "Standard_D8s_v5 (8vCPU, 32GB RAM)"
-                    },
-                    "enum": [
-                      "Standard_D2s_v5",
-                      "Standard_D4s_v5",
-                      "Standard_D8s_v5",
-                      "Standard_D16s_v5",
-                      "Standard_D32s_v5",
-                      "Standard_D48s_v5",
-                      "Standard_D64s_v5",
-                      "Standard_D4_v3",
-                      "Standard_D8_v3",
-                      "Standard_D16_v3",
-                      "Standard_D32_v3",
-                      "Standard_D48_v3",
-                      "Standard_D64_v3"
-                    ],
-                    "type": "string"
-                  },
-                  "modules": {
-                    "_controlsOrder": [
-                      "default",
-                      "list"
-                    ],
-                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                    "oneOf": [
-                      {
-                        "additionalProperties": false,
-                        "description": "Default modules",
-                        "properties": {
-                          "default": {
-                            "default": true,
-                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
-                            "readOnly": true,
-                            "title": "Use Default",
-                            "type": "boolean"
-                          }
-                        },
-                        "title": "Default",
-                        "type": "object"
-                      },
-                      {
-                        "additionalProperties": false,
-                        "description": "Define custom module list",
-                        "properties": {
-                          "list": {
-                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                            "items": {
-                              "_controlsOrder": [
-                                "name",
-                                "channel",
-                                "customResourcePolicy"
-                              ],
-                              "properties": {
-                                "channel": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "fast": "Fast - latest version",
-                                    "regular": "Regular - default version"
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred release channel or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "regular",
-                                    "fast"
-                                  ],
-                                  "type": "string"
-                                },
-                                "customResourcePolicy": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
-                                    "Ignore": "Ignore - module resource is not created."
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "CreateAndDelete",
-                                    "Ignore"
-                                  ],
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
-                                  "minLength": 1,
-                                  "title": "Name",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "type": "array",
-                            "uniqueItems": true
-                          }
-                        },
-                        "title": "Custom",
-                        "type": "object"
-                      }
-                    ],
-                    "type": "object"
-                  },
-                  "name": {
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "saSubdomain"
-                      ]
-                    },
-                    "minLength": 1,
-                    "pattern": "^[a-zA-Z0-9-]*$",
-                    "title": "Cluster Name",
-                    "type": "string"
-                  },
-                  "networking": {
-                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
-                    "properties": {
-                      "nodes": {
-                        "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Nodes",
-                        "type": "string"
-                      },
-                      "pods": {
-                        "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Pods",
-                        "type": "string"
-                      },
-                      "services": {
-                        "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Services",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "nodes"
-                    ],
-                    "type": "object"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  },
-                  "region": {
-                    "_enumDisplayName": {
-                      "australiaeast": "australiaeast (Australia, Sydney)",
-                      "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
-                      "centralus": "centralus (US Central, IA)",
-                      "eastus": "eastus (US East, VA)",
-                      "japaneast": "japaneast (Japan, Tokyo)",
-                      "northeurope": "northeurope (Europe, Ireland)",
-                      "southeastasia": "southeastasia (Asia Pacific, Singapore)",
-                      "uksouth": "uksouth (UK South, London)",
-                      "westeurope": "westeurope (Europe, Netherlands)",
-                      "westus2": "westus2 (US West, WA)"
-                    },
-                    "enum": [
-                      "eastus",
-                      "centralus",
-                      "westus2",
-                      "uksouth",
-                      "northeurope",
-                      "westeurope",
-                      "japaneast",
-                      "southeastasia",
-                      "australiaeast",
-                      "brazilsouth"
-                    ],
-                    "minLength": 1,
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "name",
-                  "region"
-                ],
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
-                  "oidc",
-                  "administrators"
-                ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 300,
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "Standard_D16_v3": "Standard_D16_v3 (16vCPU, 64GB RAM)",
-                      "Standard_D16s_v5": "Standard_D16s_v5 (16vCPU, 64GB RAM)",
-                      "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
-                      "Standard_D32_v3": "Standard_D32_v3 (32vCPU, 128GB RAM)",
-                      "Standard_D32s_v5": "Standard_D32s_v5 (32vCPU, 128GB RAM)",
-                      "Standard_D48_v3": "Standard_D48_v3 (48vCPU, 192GB RAM)",
-                      "Standard_D48s_v5": "Standard_D48s_v5 (48vCPU, 192GB RAM)",
-                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
-                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)",
-                      "Standard_D64_v3": "Standard_D64_v3 (64vCPU, 256GB RAM)",
-                      "Standard_D64s_v5": "Standard_D64s_v5 (64vCPU, 256GB RAM)",
-                      "Standard_D8_v3": "Standard_D8_v3 (8vCPU, 32GB RAM)",
-                      "Standard_D8s_v5": "Standard_D8s_v5 (8vCPU, 32GB RAM)"
-                    },
-                    "enum": [
-                      "Standard_D2s_v5",
-                      "Standard_D4s_v5",
-                      "Standard_D8s_v5",
-                      "Standard_D16s_v5",
-                      "Standard_D32s_v5",
-                      "Standard_D48s_v5",
-                      "Standard_D64s_v5",
-                      "Standard_D4_v3",
-                      "Standard_D8_v3",
-                      "Standard_D16_v3",
-                      "Standard_D32_v3",
-                      "Standard_D48_v3",
-                      "Standard_D64_v3"
-                    ],
-                    "type": "string"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "required": [],
-                "type": "object"
-              }
-            }
-          },
-          "service_binding": {
-            "create": {
-              "parameters": null
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "name",
-                  "region",
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
                   "additionalWorkerNodePools",
                   "modules",
                   "networking",
@@ -3544,6 +3184,386 @@
                     "type": "object"
                   }
                 },
+                "type": "object"
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": null
+            }
+          }
+        },
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "name",
+                  "region",
+                  "machineType",
+                  "autoScalerMin",
+                  "autoScalerMax",
+                  "modules",
+                  "networking",
+                  "oidc",
+                  "administrators"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "autoScalerMax": {
+                    "default": 20,
+                    "description": "Specifies the maximum number of virtual machines to create",
+                    "maximum": 300,
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "autoScalerMin": {
+                    "default": 3,
+                    "description": "Specifies the minimum number of virtual machines to create",
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "machineType": {
+                    "_enumDisplayName": {
+                      "Standard_D16_v3": "Standard_D16_v3 (16vCPU, 64GB RAM)",
+                      "Standard_D16s_v5": "Standard_D16s_v5 (16vCPU, 64GB RAM)",
+                      "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
+                      "Standard_D32_v3": "Standard_D32_v3 (32vCPU, 128GB RAM)",
+                      "Standard_D32s_v5": "Standard_D32s_v5 (32vCPU, 128GB RAM)",
+                      "Standard_D48_v3": "Standard_D48_v3 (48vCPU, 192GB RAM)",
+                      "Standard_D48s_v5": "Standard_D48s_v5 (48vCPU, 192GB RAM)",
+                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
+                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)",
+                      "Standard_D64_v3": "Standard_D64_v3 (64vCPU, 256GB RAM)",
+                      "Standard_D64s_v5": "Standard_D64s_v5 (64vCPU, 256GB RAM)",
+                      "Standard_D8_v3": "Standard_D8_v3 (8vCPU, 32GB RAM)",
+                      "Standard_D8s_v5": "Standard_D8s_v5 (8vCPU, 32GB RAM)"
+                    },
+                    "enum": [
+                      "Standard_D2s_v5",
+                      "Standard_D4s_v5",
+                      "Standard_D8s_v5",
+                      "Standard_D16s_v5",
+                      "Standard_D32s_v5",
+                      "Standard_D48s_v5",
+                      "Standard_D64s_v5",
+                      "Standard_D4_v3",
+                      "Standard_D8_v3",
+                      "Standard_D16_v3",
+                      "Standard_D32_v3",
+                      "Standard_D48_v3",
+                      "Standard_D64_v3"
+                    ],
+                    "type": "string"
+                  },
+                  "modules": {
+                    "_controlsOrder": [
+                      "default",
+                      "list"
+                    ],
+                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                    "oneOf": [
+                      {
+                        "additionalProperties": false,
+                        "description": "Default modules",
+                        "properties": {
+                          "default": {
+                            "default": true,
+                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
+                            "readOnly": true,
+                            "title": "Use Default",
+                            "type": "boolean"
+                          }
+                        },
+                        "title": "Default",
+                        "type": "object"
+                      },
+                      {
+                        "additionalProperties": false,
+                        "description": "Define custom module list",
+                        "properties": {
+                          "list": {
+                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                            "items": {
+                              "_controlsOrder": [
+                                "name",
+                                "channel",
+                                "customResourcePolicy"
+                              ],
+                              "properties": {
+                                "channel": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "fast": "Fast - latest version",
+                                    "regular": "Regular - default version"
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred release channel or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "regular",
+                                    "fast"
+                                  ],
+                                  "type": "string"
+                                },
+                                "customResourcePolicy": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
+                                    "Ignore": "Ignore - module resource is not created."
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "CreateAndDelete",
+                                    "Ignore"
+                                  ],
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
+                                  "minLength": 1,
+                                  "title": "Name",
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array",
+                            "uniqueItems": true
+                          }
+                        },
+                        "title": "Custom",
+                        "type": "object"
+                      }
+                    ],
+                    "type": "object"
+                  },
+                  "name": {
+                    "_BTPdefaultTemplate": {
+                      "elements": [
+                        "saSubdomain"
+                      ]
+                    },
+                    "minLength": 1,
+                    "pattern": "^[a-zA-Z0-9-]*$",
+                    "title": "Cluster Name",
+                    "type": "string"
+                  },
+                  "networking": {
+                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
+                    "properties": {
+                      "nodes": {
+                        "default": "10.250.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Nodes",
+                        "type": "string"
+                      },
+                      "pods": {
+                        "default": "10.96.0.0/13",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Pods",
+                        "type": "string"
+                      },
+                      "services": {
+                        "default": "10.104.0.0/13",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Services",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "nodes"
+                    ],
+                    "type": "object"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  },
+                  "region": {
+                    "_enumDisplayName": {
+                      "australiaeast": "australiaeast (Australia, Sydney)",
+                      "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
+                      "centralus": "centralus (US Central, IA)",
+                      "eastus": "eastus (US East, VA)",
+                      "japaneast": "japaneast (Japan, Tokyo)",
+                      "northeurope": "northeurope (Europe, Ireland)",
+                      "southeastasia": "southeastasia (Asia Pacific, Singapore)",
+                      "uksouth": "uksouth (UK South, London)",
+                      "westeurope": "westeurope (Europe, Netherlands)",
+                      "westus2": "westus2 (US West, WA)"
+                    },
+                    "enum": [
+                      "eastus",
+                      "centralus",
+                      "westus2",
+                      "uksouth",
+                      "northeurope",
+                      "westeurope",
+                      "japaneast",
+                      "southeastasia",
+                      "australiaeast",
+                      "brazilsouth"
+                    ],
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "region"
+                ],
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "machineType",
+                  "autoScalerMin",
+                  "autoScalerMax",
+                  "oidc",
+                  "administrators"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "autoScalerMax": {
+                    "description": "Specifies the maximum number of virtual machines to create",
+                    "maximum": 300,
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "autoScalerMin": {
+                    "description": "Specifies the minimum number of virtual machines to create",
+                    "minimum": 3,
+                    "type": "integer"
+                  },
+                  "machineType": {
+                    "_enumDisplayName": {
+                      "Standard_D16_v3": "Standard_D16_v3 (16vCPU, 64GB RAM)",
+                      "Standard_D16s_v5": "Standard_D16s_v5 (16vCPU, 64GB RAM)",
+                      "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
+                      "Standard_D32_v3": "Standard_D32_v3 (32vCPU, 128GB RAM)",
+                      "Standard_D32s_v5": "Standard_D32s_v5 (32vCPU, 128GB RAM)",
+                      "Standard_D48_v3": "Standard_D48_v3 (48vCPU, 192GB RAM)",
+                      "Standard_D48s_v5": "Standard_D48s_v5 (48vCPU, 192GB RAM)",
+                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
+                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)",
+                      "Standard_D64_v3": "Standard_D64_v3 (64vCPU, 256GB RAM)",
+                      "Standard_D64s_v5": "Standard_D64s_v5 (64vCPU, 256GB RAM)",
+                      "Standard_D8_v3": "Standard_D8_v3 (8vCPU, 32GB RAM)",
+                      "Standard_D8s_v5": "Standard_D8s_v5 (8vCPU, 32GB RAM)"
+                    },
+                    "enum": [
+                      "Standard_D2s_v5",
+                      "Standard_D4s_v5",
+                      "Standard_D8s_v5",
+                      "Standard_D16s_v5",
+                      "Standard_D32s_v5",
+                      "Standard_D48s_v5",
+                      "Standard_D64s_v5",
+                      "Standard_D4_v3",
+                      "Standard_D8_v3",
+                      "Standard_D16_v3",
+                      "Standard_D32_v3",
+                      "Standard_D48_v3",
+                      "Standard_D64_v3"
+                    ],
+                    "type": "string"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [],
                 "type": "object"
               }
             }
@@ -3568,10 +3588,6 @@
       "deprecationDate": null,
       "dataCenters": [
         {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
           "region": "ap10",
           "name": "kyma-ap10"
         },
@@ -3610,6 +3626,10 @@
         {
           "region": "ca10",
           "name": "kyma-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "kyma-ca20"
         },
         {
           "region": "ch20",
@@ -3652,8 +3672,16 @@
           "name": "kyma-jp30"
         },
         {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
           "region": "sa30",
           "name": "kyma-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -4141,342 +4169,6 @@
                   "machineType",
                   "autoScalerMin",
                   "autoScalerMax",
-                  "modules",
-                  "networking",
-                  "oidc",
-                  "administrators"
-                ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "default": 10,
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 40,
-                    "minimum": 2,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "default": 2,
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 2,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
-                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
-                    },
-                    "enum": [
-                      "Standard_D4s_v5",
-                      "Standard_D4_v3"
-                    ],
-                    "type": "string"
-                  },
-                  "modules": {
-                    "_controlsOrder": [
-                      "default",
-                      "list"
-                    ],
-                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                    "oneOf": [
-                      {
-                        "additionalProperties": false,
-                        "description": "Default modules",
-                        "properties": {
-                          "default": {
-                            "default": true,
-                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
-                            "readOnly": true,
-                            "title": "Use Default",
-                            "type": "boolean"
-                          }
-                        },
-                        "title": "Default",
-                        "type": "object"
-                      },
-                      {
-                        "additionalProperties": false,
-                        "description": "Define custom module list",
-                        "properties": {
-                          "list": {
-                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                            "items": {
-                              "_controlsOrder": [
-                                "name",
-                                "channel",
-                                "customResourcePolicy"
-                              ],
-                              "properties": {
-                                "channel": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "fast": "Fast - latest version",
-                                    "regular": "Regular - default version"
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred release channel or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "regular",
-                                    "fast"
-                                  ],
-                                  "type": "string"
-                                },
-                                "customResourcePolicy": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
-                                    "Ignore": "Ignore - module resource is not created."
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "CreateAndDelete",
-                                    "Ignore"
-                                  ],
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
-                                  "minLength": 1,
-                                  "title": "Name",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "type": "array",
-                            "uniqueItems": true
-                          }
-                        },
-                        "title": "Custom",
-                        "type": "object"
-                      }
-                    ],
-                    "type": "object"
-                  },
-                  "name": {
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "saSubdomain"
-                      ]
-                    },
-                    "minLength": 1,
-                    "pattern": "^[a-zA-Z0-9-]*$",
-                    "title": "Cluster Name",
-                    "type": "string"
-                  },
-                  "networking": {
-                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
-                    "properties": {
-                      "nodes": {
-                        "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Nodes",
-                        "type": "string"
-                      },
-                      "pods": {
-                        "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Pods",
-                        "type": "string"
-                      },
-                      "services": {
-                        "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Services",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "nodes"
-                    ],
-                    "type": "object"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  },
-                  "region": {
-                    "_enumDisplayName": {
-                      "australiaeast": "australiaeast (Australia, Sydney)",
-                      "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
-                      "centralus": "centralus (US Central, IA)",
-                      "eastus": "eastus (US East, VA)",
-                      "japaneast": "japaneast (Japan, Tokyo)",
-                      "northeurope": "northeurope (Europe, Ireland)",
-                      "southeastasia": "southeastasia (Asia Pacific, Singapore)",
-                      "uksouth": "uksouth (UK South, London)",
-                      "westeurope": "westeurope (Europe, Netherlands)",
-                      "westus2": "westus2 (US West, WA)"
-                    },
-                    "enum": [
-                      "eastus",
-                      "centralus",
-                      "westus2",
-                      "uksouth",
-                      "northeurope",
-                      "westeurope",
-                      "japaneast",
-                      "southeastasia",
-                      "australiaeast",
-                      "brazilsouth"
-                    ],
-                    "minLength": 1,
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "name",
-                  "region"
-                ],
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
-                  "oidc",
-                  "administrators"
-                ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 40,
-                    "minimum": 2,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 2,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
-                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
-                    },
-                    "enum": [
-                      "Standard_D4s_v5",
-                      "Standard_D4_v3"
-                    ],
-                    "type": "string"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "required": [],
-                "type": "object"
-              }
-            }
-          },
-          "service_binding": {
-            "create": {
-              "parameters": null
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "name",
-                  "region",
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
                   "additionalWorkerNodePools",
                   "modules",
                   "networking",
@@ -4889,6 +4581,342 @@
                     "type": "object"
                   }
                 },
+                "type": "object"
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": null
+            }
+          }
+        },
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "name",
+                  "region",
+                  "machineType",
+                  "autoScalerMin",
+                  "autoScalerMax",
+                  "modules",
+                  "networking",
+                  "oidc",
+                  "administrators"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "autoScalerMax": {
+                    "default": 10,
+                    "description": "Specifies the maximum number of virtual machines to create",
+                    "maximum": 40,
+                    "minimum": 2,
+                    "type": "integer"
+                  },
+                  "autoScalerMin": {
+                    "default": 2,
+                    "description": "Specifies the minimum number of virtual machines to create",
+                    "minimum": 2,
+                    "type": "integer"
+                  },
+                  "machineType": {
+                    "_enumDisplayName": {
+                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
+                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
+                    },
+                    "enum": [
+                      "Standard_D4s_v5",
+                      "Standard_D4_v3"
+                    ],
+                    "type": "string"
+                  },
+                  "modules": {
+                    "_controlsOrder": [
+                      "default",
+                      "list"
+                    ],
+                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                    "oneOf": [
+                      {
+                        "additionalProperties": false,
+                        "description": "Default modules",
+                        "properties": {
+                          "default": {
+                            "default": true,
+                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
+                            "readOnly": true,
+                            "title": "Use Default",
+                            "type": "boolean"
+                          }
+                        },
+                        "title": "Default",
+                        "type": "object"
+                      },
+                      {
+                        "additionalProperties": false,
+                        "description": "Define custom module list",
+                        "properties": {
+                          "list": {
+                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                            "items": {
+                              "_controlsOrder": [
+                                "name",
+                                "channel",
+                                "customResourcePolicy"
+                              ],
+                              "properties": {
+                                "channel": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "fast": "Fast - latest version",
+                                    "regular": "Regular - default version"
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred release channel or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "regular",
+                                    "fast"
+                                  ],
+                                  "type": "string"
+                                },
+                                "customResourcePolicy": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
+                                    "Ignore": "Ignore - module resource is not created."
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "CreateAndDelete",
+                                    "Ignore"
+                                  ],
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
+                                  "minLength": 1,
+                                  "title": "Name",
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array",
+                            "uniqueItems": true
+                          }
+                        },
+                        "title": "Custom",
+                        "type": "object"
+                      }
+                    ],
+                    "type": "object"
+                  },
+                  "name": {
+                    "_BTPdefaultTemplate": {
+                      "elements": [
+                        "saSubdomain"
+                      ]
+                    },
+                    "minLength": 1,
+                    "pattern": "^[a-zA-Z0-9-]*$",
+                    "title": "Cluster Name",
+                    "type": "string"
+                  },
+                  "networking": {
+                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
+                    "properties": {
+                      "nodes": {
+                        "default": "10.250.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Nodes",
+                        "type": "string"
+                      },
+                      "pods": {
+                        "default": "10.96.0.0/13",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Pods",
+                        "type": "string"
+                      },
+                      "services": {
+                        "default": "10.104.0.0/13",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Services",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "nodes"
+                    ],
+                    "type": "object"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  },
+                  "region": {
+                    "_enumDisplayName": {
+                      "australiaeast": "australiaeast (Australia, Sydney)",
+                      "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
+                      "centralus": "centralus (US Central, IA)",
+                      "eastus": "eastus (US East, VA)",
+                      "japaneast": "japaneast (Japan, Tokyo)",
+                      "northeurope": "northeurope (Europe, Ireland)",
+                      "southeastasia": "southeastasia (Asia Pacific, Singapore)",
+                      "uksouth": "uksouth (UK South, London)",
+                      "westeurope": "westeurope (Europe, Netherlands)",
+                      "westus2": "westus2 (US West, WA)"
+                    },
+                    "enum": [
+                      "eastus",
+                      "centralus",
+                      "westus2",
+                      "uksouth",
+                      "northeurope",
+                      "westeurope",
+                      "japaneast",
+                      "southeastasia",
+                      "australiaeast",
+                      "brazilsouth"
+                    ],
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "region"
+                ],
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "machineType",
+                  "autoScalerMin",
+                  "autoScalerMax",
+                  "oidc",
+                  "administrators"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "autoScalerMax": {
+                    "description": "Specifies the maximum number of virtual machines to create",
+                    "maximum": 40,
+                    "minimum": 2,
+                    "type": "integer"
+                  },
+                  "autoScalerMin": {
+                    "description": "Specifies the minimum number of virtual machines to create",
+                    "minimum": 2,
+                    "type": "integer"
+                  },
+                  "machineType": {
+                    "_enumDisplayName": {
+                      "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
+                      "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
+                    },
+                    "enum": [
+                      "Standard_D4s_v5",
+                      "Standard_D4_v3"
+                    ],
+                    "type": "string"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [],
                 "type": "object"
               }
             }
@@ -4945,8 +4973,16 @@
           "name": "kyma-br20"
         },
         {
+          "region": "br30",
+          "name": "kyma-br30"
+        },
+        {
           "region": "ca10",
           "name": "kyma-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "kyma-ca20"
         },
         {
           "region": "ch20",
@@ -4983,6 +5019,18 @@
         {
           "region": "jp20",
           "name": "kyma-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "kyma-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -6266,8 +6314,16 @@
           "name": "kyma-br20"
         },
         {
+          "region": "br30",
+          "name": "kyma-br30"
+        },
+        {
           "region": "ca10",
           "name": "kyma-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "kyma-ca20"
         },
         {
           "region": "ch20",
@@ -6304,6 +6360,18 @@
         {
           "region": "jp20",
           "name": "kyma-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "kyma-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -7555,8 +7623,16 @@
           "name": "kyma-br20"
         },
         {
+          "region": "br30",
+          "name": "kyma-br30"
+        },
+        {
           "region": "ca10",
           "name": "kyma-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "kyma-ca20"
         },
         {
           "region": "ch20",
@@ -7593,6 +7669,18 @@
         {
           "region": "jp20",
           "name": "kyma-jp20"
+        },
+        {
+          "region": "jp30",
+          "name": "kyma-jp30"
+        },
+        {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -8269,6 +8357,10 @@
           "name": "kyma-ca10"
         },
         {
+          "region": "ca20",
+          "name": "kyma-ca20"
+        },
+        {
           "region": "ch20",
           "name": "kyma-ch20"
         },
@@ -8309,8 +8401,16 @@
           "name": "kyma-jp30"
         },
         {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
           "region": "sa30",
           "name": "kyma-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -8921,292 +9021,6 @@
                   "oidc",
                   "administrators"
                 ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "modules": {
-                    "_controlsOrder": [
-                      "default",
-                      "list"
-                    ],
-                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                    "oneOf": [
-                      {
-                        "additionalProperties": false,
-                        "description": "Default modules",
-                        "properties": {
-                          "default": {
-                            "default": true,
-                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
-                            "readOnly": true,
-                            "title": "Use Default",
-                            "type": "boolean"
-                          }
-                        },
-                        "title": "Default",
-                        "type": "object"
-                      },
-                      {
-                        "additionalProperties": false,
-                        "description": "Define custom module list",
-                        "properties": {
-                          "list": {
-                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                            "items": {
-                              "_controlsOrder": [
-                                "name",
-                                "channel",
-                                "customResourcePolicy"
-                              ],
-                              "properties": {
-                                "channel": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "fast": "Fast - latest version",
-                                    "regular": "Regular - default version"
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred release channel or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "regular",
-                                    "fast"
-                                  ],
-                                  "type": "string"
-                                },
-                                "customResourcePolicy": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
-                                    "Ignore": "Ignore - module resource is not created."
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "CreateAndDelete",
-                                    "Ignore"
-                                  ],
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
-                                  "minLength": 1,
-                                  "title": "Name",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "type": "array",
-                            "uniqueItems": true
-                          }
-                        },
-                        "title": "Custom",
-                        "type": "object"
-                      }
-                    ],
-                    "type": "object"
-                  },
-                  "name": {
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "saSubdomain"
-                      ]
-                    },
-                    "minLength": 1,
-                    "pattern": "^[a-zA-Z0-9-]*$",
-                    "title": "Cluster Name",
-                    "type": "string"
-                  },
-                  "networking": {
-                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
-                    "properties": {
-                      "nodes": {
-                        "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Nodes",
-                        "type": "string"
-                      },
-                      "pods": {
-                        "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Pods",
-                        "type": "string"
-                      },
-                      "services": {
-                        "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Services",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "nodes"
-                    ],
-                    "type": "object"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  },
-                  "region": {
-                    "_enumDisplayName": {
-                      "australiaeast": "australiaeast (Australia, Sydney)",
-                      "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
-                      "centralus": "centralus (US Central, IA)",
-                      "eastus": "eastus (US East, VA)",
-                      "japaneast": "japaneast (Japan, Tokyo)",
-                      "northeurope": "northeurope (Europe, Ireland)",
-                      "southeastasia": "southeastasia (Asia Pacific, Singapore)",
-                      "uksouth": "uksouth (UK South, London)",
-                      "westeurope": "westeurope (Europe, Netherlands)",
-                      "westus2": "westus2 (US West, WA)"
-                    },
-                    "enum": [
-                      "eu-central-1",
-                      "eu-west-2",
-                      "ca-central-1",
-                      "sa-east-1",
-                      "us-east-1",
-                      "us-west-1",
-                      "us-west-2",
-                      "ap-northeast-1",
-                      "ap-northeast-2",
-                      "ap-south-1",
-                      "ap-southeast-1",
-                      "ap-southeast-2"
-                    ],
-                    "minLength": 1,
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "name",
-                  "region"
-                ],
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "oidc",
-                  "administrators"
-                ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "required": [],
-                "type": "object"
-              }
-            }
-          },
-          "service_binding": {
-            "create": {
-              "parameters": null
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "name",
-                  "region",
-                  "modules",
-                  "networking",
-                  "oidc",
-                  "administrators"
-                ],
                 "_load_current_config": true,
                 "_show_form_view": true,
                 "properties": {
@@ -9727,6 +9541,292 @@
               "parameters": null
             }
           }
+        },
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "name",
+                  "region",
+                  "modules",
+                  "networking",
+                  "oidc",
+                  "administrators"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "modules": {
+                    "_controlsOrder": [
+                      "default",
+                      "list"
+                    ],
+                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                    "oneOf": [
+                      {
+                        "additionalProperties": false,
+                        "description": "Default modules",
+                        "properties": {
+                          "default": {
+                            "default": true,
+                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
+                            "readOnly": true,
+                            "title": "Use Default",
+                            "type": "boolean"
+                          }
+                        },
+                        "title": "Default",
+                        "type": "object"
+                      },
+                      {
+                        "additionalProperties": false,
+                        "description": "Define custom module list",
+                        "properties": {
+                          "list": {
+                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
+                            "items": {
+                              "_controlsOrder": [
+                                "name",
+                                "channel",
+                                "customResourcePolicy"
+                              ],
+                              "properties": {
+                                "channel": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "fast": "Fast - latest version",
+                                    "regular": "Regular - default version"
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred release channel or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "regular",
+                                    "fast"
+                                  ],
+                                  "type": "string"
+                                },
+                                "customResourcePolicy": {
+                                  "_enumDisplayName": {
+                                    "": "",
+                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
+                                    "Ignore": "Ignore - module resource is not created."
+                                  },
+                                  "default": "",
+                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
+                                  "enum": [
+                                    "",
+                                    "CreateAndDelete",
+                                    "Ignore"
+                                  ],
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
+                                  "minLength": 1,
+                                  "title": "Name",
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "type": "array",
+                            "uniqueItems": true
+                          }
+                        },
+                        "title": "Custom",
+                        "type": "object"
+                      }
+                    ],
+                    "type": "object"
+                  },
+                  "name": {
+                    "_BTPdefaultTemplate": {
+                      "elements": [
+                        "saSubdomain"
+                      ]
+                    },
+                    "minLength": 1,
+                    "pattern": "^[a-zA-Z0-9-]*$",
+                    "title": "Cluster Name",
+                    "type": "string"
+                  },
+                  "networking": {
+                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
+                    "properties": {
+                      "nodes": {
+                        "default": "10.250.0.0/16",
+                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Nodes",
+                        "type": "string"
+                      },
+                      "pods": {
+                        "default": "10.96.0.0/13",
+                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Pods",
+                        "type": "string"
+                      },
+                      "services": {
+                        "default": "10.104.0.0/13",
+                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
+                        "title": "CIDR range for Services",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "nodes"
+                    ],
+                    "type": "object"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  },
+                  "region": {
+                    "_enumDisplayName": {
+                      "australiaeast": "australiaeast (Australia, Sydney)",
+                      "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
+                      "centralus": "centralus (US Central, IA)",
+                      "eastus": "eastus (US East, VA)",
+                      "japaneast": "japaneast (Japan, Tokyo)",
+                      "northeurope": "northeurope (Europe, Ireland)",
+                      "southeastasia": "southeastasia (Asia Pacific, Singapore)",
+                      "uksouth": "uksouth (UK South, London)",
+                      "westeurope": "westeurope (Europe, Netherlands)",
+                      "westus2": "westus2 (US West, WA)"
+                    },
+                    "enum": [
+                      "eu-central-1",
+                      "eu-west-2",
+                      "ca-central-1",
+                      "sa-east-1",
+                      "us-east-1",
+                      "us-west-1",
+                      "us-west-2",
+                      "ap-northeast-1",
+                      "ap-northeast-2",
+                      "ap-south-1",
+                      "ap-southeast-1",
+                      "ap-southeast-2"
+                    ],
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "region"
+                ],
+                "type": "object"
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "_controlsOrder": [
+                  "oidc",
+                  "administrators"
+                ],
+                "_show_form_view": true,
+                "properties": {
+                  "administrators": {
+                    "description": "Specifies the list of runtime administrators",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Administrators",
+                    "type": "array"
+                  },
+                  "oidc": {
+                    "description": "OIDC configuration",
+                    "properties": {
+                      "clientID": {
+                        "description": "The client ID for the OpenID Connect client.",
+                        "type": "string"
+                      },
+                      "groupsClaim": {
+                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
+                        "type": "string"
+                      },
+                      "issuerURL": {
+                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
+                        "type": "string"
+                      },
+                      "signingAlgs": {
+                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "usernameClaim": {
+                        "description": "The OpenID claim to use as the user name.",
+                        "type": "string"
+                      },
+                      "usernamePrefix": {
+                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientID",
+                      "issuerURL"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [],
+                "type": "object"
+              }
+            }
+          },
+          "service_binding": {
+            "create": {
+              "parameters": null
+            }
+          }
         }
       ]
     },
@@ -9741,14 +9841,6 @@
       "deprecationMessage": null,
       "deprecationDate": null,
       "dataCenters": [
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
         {
           "region": "ap10",
           "name": "kyma-ap10"
@@ -9788,6 +9880,10 @@
         {
           "region": "ca10",
           "name": "kyma-ca10"
+        },
+        {
+          "region": "ca20",
+          "name": "kyma-ca20"
         },
         {
           "region": "ch20",
@@ -9830,8 +9926,16 @@
           "name": "kyma-jp30"
         },
         {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
           "region": "sa30",
           "name": "kyma-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",
@@ -10410,358 +10514,6 @@
                     "type": "object"
                   }
                 },
-                "type": "object"
-              }
-            }
-          },
-          "service_binding": {
-            "create": {
-              "parameters": null
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "name",
-                  "region",
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
-                  "modules",
-                  "networking",
-                  "oidc",
-                  "administrators"
-                ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "default": 20,
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 300,
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "default": 3,
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "n2-standard-16": "n2-standard-16 (16vCPU, 64GB RAM)",
-                      "n2-standard-2": "n2-standard-2 (2vCPU, 8GB RAM)",
-                      "n2-standard-32": "n2-standard-32 (32vCPU, 128GB RAM)",
-                      "n2-standard-4": "n2-standard-4 (4vCPU, 16GB RAM)",
-                      "n2-standard-48": "n2-standard-48 (48vCPU, 192GB RAM)",
-                      "n2-standard-64": "n2-standard-64 (64vCPU, 256GB RAM)",
-                      "n2-standard-8": "n2-standard-8 (8vCPU, 32GB RAM)"
-                    },
-                    "enum": [
-                      "n2-standard-2",
-                      "n2-standard-4",
-                      "n2-standard-8",
-                      "n2-standard-16",
-                      "n2-standard-32",
-                      "n2-standard-48",
-                      "n2-standard-64"
-                    ],
-                    "type": "string"
-                  },
-                  "modules": {
-                    "_controlsOrder": [
-                      "default",
-                      "list"
-                    ],
-                    "description": "Use default modules or provide your custom list of modules. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                    "oneOf": [
-                      {
-                        "additionalProperties": false,
-                        "description": "Default modules",
-                        "properties": {
-                          "default": {
-                            "default": true,
-                            "description": "Check the default modules in the <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>default modules table</a>.",
-                            "readOnly": true,
-                            "title": "Use Default",
-                            "type": "boolean"
-                          }
-                        },
-                        "title": "Default",
-                        "type": "object"
-                      },
-                      {
-                        "additionalProperties": false,
-                        "description": "Define custom module list",
-                        "properties": {
-                          "list": {
-                            "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once. Provide an empty custom list of modules if you don\u2019t want any modules enabled.",
-                            "items": {
-                              "_controlsOrder": [
-                                "name",
-                                "channel",
-                                "customResourcePolicy"
-                              ],
-                              "properties": {
-                                "channel": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "fast": "Fast - latest version",
-                                    "regular": "Regular - default version"
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred release channel or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "regular",
-                                    "fast"
-                                  ],
-                                  "type": "string"
-                                },
-                                "customResourcePolicy": {
-                                  "_enumDisplayName": {
-                                    "": "",
-                                    "CreateAndDelete": "CreateAndDelete - default module resource is created or deleted.",
-                                    "Ignore": "Ignore - module resource is not created."
-                                  },
-                                  "default": "",
-                                  "description": "Select your preferred CustomResourcePolicy setting or leave this field empty.",
-                                  "enum": [
-                                    "",
-                                    "CreateAndDelete",
-                                    "Ignore"
-                                  ],
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "description": "Check a module technical name on this <a href=https://help.sap.com/docs/btp/sap-business-technology-platform/kyma-modules?version=Cloud>website</a>. You can only use a module technical name once.",
-                                  "minLength": 1,
-                                  "title": "Name",
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "type": "array",
-                            "uniqueItems": true
-                          }
-                        },
-                        "title": "Custom",
-                        "type": "object"
-                      }
-                    ],
-                    "type": "object"
-                  },
-                  "name": {
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "saSubdomain"
-                      ]
-                    },
-                    "minLength": 1,
-                    "pattern": "^[a-zA-Z0-9-]*$",
-                    "title": "Cluster Name",
-                    "type": "string"
-                  },
-                  "networking": {
-                    "description": "Networking configuration. These values are immutable and cannot be updated later. All provided CIDR ranges must not overlap one another.",
-                    "properties": {
-                      "nodes": {
-                        "default": "10.250.0.0/16",
-                        "description": "CIDR range for Nodes, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Nodes",
-                        "type": "string"
-                      },
-                      "pods": {
-                        "default": "10.96.0.0/13",
-                        "description": "CIDR range for Pods, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Pods",
-                        "type": "string"
-                      },
-                      "services": {
-                        "default": "10.104.0.0/13",
-                        "description": "CIDR range for Services, must not overlap with the following CIDRs: 10.243.128.0/17, 10.242.0.0/16, 10.243.0.0/17, 10.64.0.0/11, 10.254.0.0/16, 10.243.0.0/16",
-                        "title": "CIDR range for Services",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "nodes"
-                    ],
-                    "type": "object"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  },
-                  "region": {
-                    "_enumDisplayName": {
-                      "asia-northeast2": "asia-northeast2 (Japan, Osaka)",
-                      "asia-south1": "asia-south1 (India, Mumbai)",
-                      "australia-southeast1": "australia-southeast1 (Australia, Sydney)",
-                      "europe-west3": "europe-west3 (Europe, Frankfurt)",
-                      "me-central2": "me-central2 (KSA, Dammam)",
-                      "me-west1": "me-west1 (Israel, Tel Aviv)",
-                      "southamerica-east1": "southamerica-east1 (Brazil, S\u00e3o Paulo)",
-                      "us-central1": "us-central1 (US Central, IA)"
-                    },
-                    "enum": [
-                      "europe-west3",
-                      "asia-south1",
-                      "us-central1",
-                      "me-central2",
-                      "asia-northeast2",
-                      "me-west1",
-                      "southamerica-east1",
-                      "australia-southeast1"
-                    ],
-                    "minLength": 1,
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "name",
-                  "region"
-                ],
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_controlsOrder": [
-                  "machineType",
-                  "autoScalerMin",
-                  "autoScalerMax",
-                  "oidc",
-                  "administrators"
-                ],
-                "_show_form_view": true,
-                "properties": {
-                  "administrators": {
-                    "description": "Specifies the list of runtime administrators",
-                    "items": {
-                      "type": "string"
-                    },
-                    "title": "Administrators",
-                    "type": "array"
-                  },
-                  "autoScalerMax": {
-                    "description": "Specifies the maximum number of virtual machines to create",
-                    "maximum": 300,
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "autoScalerMin": {
-                    "description": "Specifies the minimum number of virtual machines to create",
-                    "minimum": 3,
-                    "type": "integer"
-                  },
-                  "machineType": {
-                    "_enumDisplayName": {
-                      "n2-standard-16": "n2-standard-16 (16vCPU, 64GB RAM)",
-                      "n2-standard-2": "n2-standard-2 (2vCPU, 8GB RAM)",
-                      "n2-standard-32": "n2-standard-32 (32vCPU, 128GB RAM)",
-                      "n2-standard-4": "n2-standard-4 (4vCPU, 16GB RAM)",
-                      "n2-standard-48": "n2-standard-48 (48vCPU, 192GB RAM)",
-                      "n2-standard-64": "n2-standard-64 (64vCPU, 256GB RAM)",
-                      "n2-standard-8": "n2-standard-8 (8vCPU, 32GB RAM)"
-                    },
-                    "enum": [
-                      "n2-standard-2",
-                      "n2-standard-4",
-                      "n2-standard-8",
-                      "n2-standard-16",
-                      "n2-standard-32",
-                      "n2-standard-48",
-                      "n2-standard-64"
-                    ],
-                    "type": "string"
-                  },
-                  "oidc": {
-                    "description": "OIDC configuration",
-                    "properties": {
-                      "clientID": {
-                        "description": "The client ID for the OpenID Connect client.",
-                        "type": "string"
-                      },
-                      "groupsClaim": {
-                        "description": "If provided, the name of a custom OpenID Connect claim for specifying user groups.",
-                        "type": "string"
-                      },
-                      "issuerURL": {
-                        "description": "The URL of the OpenID issuer, only HTTPS scheme will be accepted.",
-                        "type": "string"
-                      },
-                      "signingAlgs": {
-                        "description": "Comma separated list of allowed JOSE asymmetric signing algorithms, for example, RS256, ES256",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "usernameClaim": {
-                        "description": "The OpenID claim to use as the user name.",
-                        "type": "string"
-                      },
-                      "usernamePrefix": {
-                        "description": "If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-' (dash character without additional characters).",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "clientID",
-                      "issuerURL"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "required": [],
                 "type": "object"
               }
             }
@@ -14665,6 +14417,10 @@
           "name": "kyma-ca10"
         },
         {
+          "region": "ca20",
+          "name": "kyma-ca20"
+        },
+        {
           "region": "ch20",
           "name": "kyma-ch20"
         },
@@ -14705,8 +14461,16 @@
           "name": "kyma-jp30"
         },
         {
+          "region": "jp31",
+          "name": "kyma-jp31"
+        },
+        {
           "region": "sa30",
           "name": "kyma-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "kyma-sa31"
         },
         {
           "region": "us10",

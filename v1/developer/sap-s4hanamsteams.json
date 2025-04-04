@@ -74,15 +74,15 @@
                 "additionalProperties": false,
                 "properties": {
                   "azure_tenant_id": {
+                    "$id": "azure_tenant_id",
                     "description": "Enter the value obtained from Microsoft Azure under the Microsoft Entra ID.",
-                    "id": "azure_tenant_id",
                     "minLength": 1,
                     "title": "Azure Tenant ID",
                     "type": "string"
                   },
                   "system": {
+                    "$id": "system_info",
                     "description": "Enter the value for the host name of the system, such as my12345.s4hana.ondemand.com.",
-                    "id": "system_info",
                     "minLength": 1,
                     "title": "Host Name",
                     "type": "string"
@@ -157,15 +157,15 @@
                 "additionalProperties": false,
                 "properties": {
                   "azure_tenant_id": {
+                    "$id": "azure_tenant_id",
                     "description": "Enter the value obtained from Microsoft Azure under the Microsoft Entra ID.",
-                    "id": "azure_tenant_id",
                     "minLength": 1,
                     "title": "Azure Tenant ID",
                     "type": "string"
                   },
                   "system": {
+                    "$id": "system_info",
                     "description": "Enter the value for the host name of the system, such as my12345.s4hana.ondemand.com.",
-                    "id": "system_info",
                     "minLength": 1,
                     "title": "Host Name",
                     "type": "string"

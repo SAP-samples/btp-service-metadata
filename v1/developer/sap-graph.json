@@ -92,7 +92,7 @@
   "servicePlans": [
     {
       "name": "api",
-      "displayName": "Api",
+      "displayName": "API of Graph",
       "category": "SERVICE",
       "description": "API of Graph",
       "isFree": null,
@@ -154,6 +154,10 @@
           "name": "cf-us10"
         },
         {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
           "region": "us30",
           "name": "cf-us30"
         }
@@ -162,9 +166,9 @@
     },
     {
       "name": "configuration",
-      "displayName": "Configuration",
+      "displayName": "Configuration of Graph",
       "category": "SERVICE",
-      "description": "Configuration of GRAPH",
+      "description": "Configuration of Graph",
       "isFree": null,
       "isBeta": false,
       "deprecated": false,
@@ -222,6 +226,10 @@
         {
           "region": "us10",
           "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
         },
         {
           "region": "us30",
