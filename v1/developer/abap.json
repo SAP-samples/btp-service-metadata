@@ -248,162 +248,6 @@
                   },
                   "size_of_persistence": {
                     "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory",
-                    "type": "integer",
-                    "default": 4,
-                    "enum": [
-                      4
-                    ]
-                  },
-                  "elastic": {
-                    "title": "Elastic Scaling of ABAP Application Server",
-                    "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "admin_user_name": {
-                    "title": "Admin User Name",
-                    "description": "Optionally enter the username of the administrator. The username must not begin with SAP_ or _, must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 40 characters.",
-                    "type": "string",
-                    "minLength": 0,
-                    "maxLength": 40,
-                    "pattern": "^(?!SAP_|_)[\\.A-Z0-9_-]{0,40}$"
-                  },
-                  "login_attribute": {
-                    "title": "Login Attribute",
-                    "description": "Which attribute should be used for login.",
-                    "type": "string",
-                    "enum": [
-                      "email",
-                      "user_name"
-                    ],
-                    "default": "email"
-                  }
-                },
-                "required": [
-                  "admin_email",
-                  "size_of_persistence",
-                  "size_of_runtime"
-                ]
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "additionalProperties": false,
-                "type": "object",
-                "_load_current_config": true,
-                "_show_form_view": true,
-                "_controlsOrder": [
-                  "description",
-                  "size_of_runtime",
-                  "elastic",
-                  "size_of_persistence"
-                ],
-                "properties": {
-                  "description": {
-                    "title": "ABAP System Description",
-                    "description": "Enter a description for the ABAP system",
-                    "type": "string",
-                    "maxLength": 256,
-                    "pattern": "^[^'\\x00-\\x1f]*$"
-                  },
-                  "size_of_persistence": {
-                    "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
-                    "type": "integer",
-                    "default": 4,
-                    "enum": [
-                      4
-                    ]
-                  },
-                  "size_of_runtime": {
-                    "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-                    "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-                    "type": "integer",
-                    "default": 1,
-                    "enum": [
-                      1
-                    ]
-                  },
-                  "elastic": {
-                    "title": "Elastic Scaling of ABAP Application Server",
-                    "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
-                    "type": "boolean",
-                    "default": false
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "additionalProperties": false,
-                "type": "object",
-                "_show_form_view": true,
-                "_controlsOrder": [
-                  "admin_email",
-                  "description",
-                  "is_development_allowed",
-                  "sapsystemname",
-                  "size_of_runtime",
-                  "elastic",
-                  "size_of_persistence"
-                ],
-                "properties": {
-                  "admin_email": {
-                    "title": "Admin Email Address",
-                    "description": "Enter the administrator's email address",
-                    "type": "string",
-                    "minLength": 6,
-                    "maxLength": 256,
-                    "pattern": "^[^<>()\\[\\]\\\\,;:\\s@\"`]+@([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}$"
-                  },
-                  "admin_employee_id": {
-                    "title": "Admin Employee ID",
-                    "description": "Optionally enter the Employee ID of the initial administrator. The Employee ID must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 60 characters.",
-                    "type": "string",
-                    "minLength": 0,
-                    "maxLength": 60,
-                    "pattern": "^(?!_)[\\.A-Z0-9_-]{0,60}$"
-                  },
-                  "description": {
-                    "title": "ABAP System Description",
-                    "description": "Enter a description for the ABAP system",
-                    "type": "string",
-                    "maxLength": 256,
-                    "pattern": "^[^'\\x00-\\x1f]*$"
-                  },
-                  "sapsystemname": {
-                    "title": "ABAP System ID",
-                    "description": "Enter a valid system ID (SID) for the ABAP system. The ID must consist of exactly three alphanumeric characters. Only uppercase letters are allowed. The first character must be a letter (not a digit). The ID does not have to be technically unique. The following IDs are reserved and cannot be used: ADD ALL AMD AND ANY ARE ASC AUX AVG BIT CDC COM CON DBA END EPS FOR GET GID IBM INT KEY LOG LPT MAP MAX MIN MON NIX NOT NUL OFF OLD OMS OUT PAD PRN RAW REF ROW SAP SET SGA SHG SID SQL SUM SYS TMP TOP UID USE USR VAR.",
-                    "type": "string",
-                    "default": "H01",
-                    "minLength": 3,
-                    "maxLength": 3,
-                    "pattern": "^(?!ADD|ALL|AMD|ADM|AND|ANY|ARE|ASC|AUX|AVG|BIT|CDC|COM|CON|DAA|DBA|ECO|END|EPS|FOR|GET|GID|IBM|INT|KEY|LOG|LPT|MAP|MAX|MIN|MON|NIX|NOT|NUL|OFF|OLD|OMS|OUT|PAD|PRN|RAW|REF|ROW|SAP|SET|SGA|SHG|SID|SQL|SUM|SYS|TMP|TOP|UID|USE|USR|VAR)[A-Z][A-Z0-9]{2}$"
-                  },
-                  "is_development_allowed": {
-                    "title": "Development System",
-                    "description": "Specify, if development shall be allowed on this ABAP system",
-                    "type": "boolean",
-                    "default": true
-                  },
-                  "size_of_runtime": {
-                    "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-                    "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-                    "type": "integer",
-                    "default": 1,
-                    "enum": [
-                      1
-                    ]
-                  },
-                  "size_of_persistence": {
-                    "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
                     "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory",
                     "type": "integer",
                     "default": 4,
@@ -1100,410 +944,6 @@
                   },
                   "size_of_persistence": {
                     "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory",
-                    "type": "integer",
-                    "default": 2,
-                    "enum": [
-                      2,
-                      3,
-                      4,
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20,
-                      21,
-                      22,
-                      23,
-                      24,
-                      25,
-                      26,
-                      27,
-                      28,
-                      29,
-                      30,
-                      31,
-                      32,
-                      33,
-                      34,
-                      35,
-                      36,
-                      37,
-                      38,
-                      39,
-                      40,
-                      41,
-                      42,
-                      43,
-                      44,
-                      45,
-                      46,
-                      47,
-                      48,
-                      49,
-                      50,
-                      51,
-                      52,
-                      53,
-                      54,
-                      55,
-                      56,
-                      57,
-                      58,
-                      59,
-                      60,
-                      64,
-                      68,
-                      72,
-                      76,
-                      80,
-                      84,
-                      88,
-                      92,
-                      96,
-                      100,
-                      104,
-                      108,
-                      112,
-                      116,
-                      120
-                    ]
-                  },
-                  "elastic": {
-                    "title": "Elastic Scaling of ABAP Application Server",
-                    "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "size_of_application_server": {
-                    "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-                    "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
-                    "type": "string",
-                    "default": "auto",
-                    "enum": [
-                      "auto",
-                      "0.5",
-                      "2"
-                    ]
-                  },
-                  "admin_user_name": {
-                    "title": "Admin User Name",
-                    "description": "Optionally enter the username of the administrator. The username must not begin with SAP_ or _, must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 40 characters.",
-                    "type": "string",
-                    "minLength": 0,
-                    "maxLength": 40,
-                    "pattern": "^(?!SAP_|_)[\\.A-Z0-9_-]{0,40}$"
-                  },
-                  "login_attribute": {
-                    "title": "Login Attribute",
-                    "description": "Which attribute should be used for login.",
-                    "type": "string",
-                    "enum": [
-                      "email",
-                      "user_name"
-                    ],
-                    "default": "email"
-                  },
-                  "addon_product_name": {
-                    "description": "The name of the addon product",
-                    "type": "string",
-                    "pattern": "^[A-Z0-9-_/ ]*$"
-                  },
-                  "addon_product_version": {
-                    "description": "The version of the addon product - leave empty to use default version",
-                    "type": "string",
-                    "pattern": "^(\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})?$"
-                  },
-                  "consumer_tenant_limit": {
-                    "description": "Maximum number of allowed consumer tenants",
-                    "type": "integer"
-                  },
-                  "parent_saas_appname": {
-                    "description": "SaaS application name of the parent subscription - leave empty if parent is a service",
-                    "type": "string",
-                    "pattern": "^[a-zA-Z0-9-_]*$"
-                  },
-                  "parent_service_instance_guid": {
-                    "description": "Service GUID of the parent service - leave empty if parent is a SaaS subscription",
-                    "type": "string",
-                    "pattern": "^(?:[A-Fa-f0-9]{8}-([A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12})?$"
-                  },
-                  "parent_service_label": {
-                    "description": "Service label of the parent service - leave empty if parent is a SaaS subscription",
-                    "type": "string",
-                    "pattern": "^[a-zA-Z0-9-_]*$"
-                  },
-                  "parent_service_parameters": {
-                    "description": "Parameters handled by the parent service",
-                    "type": "object",
-                    "properties": {},
-                    "additionalProperties": true,
-                    "propertyNames": {
-                      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
-                    }
-                  },
-                  "consumer_id": {
-                    "description": "consumer ID is used by BW to decide about visibility of software components",
-                    "type": "string",
-                    "pattern": "^[^\\x00-\\x1f]*$"
-                  },
-                  "ui_host": {
-                    "description": "Enable custom domains",
-                    "type": "string",
-                    "pattern": "^[^\\x00-\\x1f]*$"
-                  },
-                  "size_of_persistence_disk": {
-                    "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-                    "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
-                    "type": "string",
-                    "pattern": "^(auto|\\d+)?$",
-                    "default": "auto"
-                  }
-                },
-                "required": [
-                  "admin_email",
-                  "size_of_persistence",
-                  "size_of_runtime"
-                ]
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "additionalProperties": false,
-                "type": "object",
-                "_load_current_config": true,
-                "_show_form_view": false,
-                "_controlsOrder": [
-                  "description",
-                  "size_of_runtime",
-                  "elastic",
-                  "size_of_application_server",
-                  "size_of_persistence",
-                  "size_of_persistence_disk"
-                ],
-                "properties": {
-                  "description": {
-                    "title": "ABAP System Description",
-                    "description": "Enter a description for the ABAP system",
-                    "type": "string",
-                    "maxLength": 256,
-                    "pattern": "^[^'\\x00-\\x1f]*$"
-                  },
-                  "size_of_persistence": {
-                    "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
-                    "type": "integer",
-                    "default": 2,
-                    "enum": [
-                      2,
-                      3,
-                      4,
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      16,
-                      17,
-                      18,
-                      19,
-                      20,
-                      21,
-                      22,
-                      23,
-                      24,
-                      25,
-                      26,
-                      27,
-                      28,
-                      29,
-                      30,
-                      31,
-                      32,
-                      33,
-                      34,
-                      35,
-                      36,
-                      37,
-                      38,
-                      39,
-                      40,
-                      41,
-                      42,
-                      43,
-                      44,
-                      45,
-                      46,
-                      47,
-                      48,
-                      49,
-                      50,
-                      51,
-                      52,
-                      53,
-                      54,
-                      55,
-                      56,
-                      57,
-                      58,
-                      59,
-                      60,
-                      64,
-                      68,
-                      72,
-                      76,
-                      80,
-                      84,
-                      88,
-                      92,
-                      96,
-                      100,
-                      104,
-                      108,
-                      112,
-                      116,
-                      120
-                    ]
-                  },
-                  "size_of_runtime": {
-                    "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-                    "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-                    "type": "integer",
-                    "default": 1,
-                    "enum": [
-                      1,
-                      2,
-                      4,
-                      6,
-                      8,
-                      16,
-                      24,
-                      32
-                    ]
-                  },
-                  "elastic": {
-                    "title": "Elastic Scaling of ABAP Application Server",
-                    "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "size_of_application_server": {
-                    "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-                    "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
-                    "type": "string",
-                    "default": "auto",
-                    "enum": [
-                      "auto",
-                      "0.5",
-                      "2"
-                    ]
-                  },
-                  "size_of_persistence_disk": {
-                    "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-                    "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
-                    "type": "string",
-                    "pattern": "^(auto|\\d+)?$",
-                    "default": "auto"
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "additionalProperties": false,
-                "type": "object",
-                "_show_form_view": false,
-                "_controlsOrder": [
-                  "admin_email",
-                  "description",
-                  "is_development_allowed",
-                  "sapsystemname",
-                  "size_of_runtime",
-                  "elastic",
-                  "size_of_application_server",
-                  "size_of_persistence",
-                  "size_of_persistence_disk"
-                ],
-                "properties": {
-                  "admin_email": {
-                    "title": "Admin Email Address",
-                    "description": "Enter the administrator's email address",
-                    "type": "string",
-                    "minLength": 6,
-                    "maxLength": 256,
-                    "pattern": "^[^<>()\\[\\]\\\\,;:\\s@\"`]+@([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}$"
-                  },
-                  "admin_employee_id": {
-                    "title": "Admin Employee ID",
-                    "description": "Optionally enter the Employee ID of the initial administrator. The Employee ID must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 60 characters.",
-                    "type": "string",
-                    "minLength": 0,
-                    "maxLength": 60,
-                    "pattern": "^(?!_)[\\.A-Z0-9_-]{0,60}$"
-                  },
-                  "description": {
-                    "title": "ABAP System Description",
-                    "description": "Enter a description for the ABAP system",
-                    "type": "string",
-                    "maxLength": 256,
-                    "pattern": "^[^'\\x00-\\x1f]*$"
-                  },
-                  "sapsystemname": {
-                    "title": "ABAP System ID",
-                    "description": "Enter a valid system ID (SID) for the ABAP system. The ID must consist of exactly three alphanumeric characters. Only uppercase letters are allowed. The first character must be a letter (not a digit). The ID does not have to be technically unique. The following IDs are reserved and cannot be used: ADD ALL AMD AND ANY ARE ASC AUX AVG BIT CDC COM CON DBA END EPS FOR GET GID IBM INT KEY LOG LPT MAP MAX MIN MON NIX NOT NUL OFF OLD OMS OUT PAD PRN RAW REF ROW SAP SET SGA SHG SID SQL SUM SYS TMP TOP UID USE USR VAR.",
-                    "type": "string",
-                    "default": "H01",
-                    "minLength": 3,
-                    "maxLength": 3,
-                    "pattern": "^(?!ADD|ALL|AMD|ADM|AND|ANY|ARE|ASC|AUX|AVG|BIT|CDC|COM|CON|DAA|DBA|ECO|END|EPS|FOR|GET|GID|IBM|INT|KEY|LOG|LPT|MAP|MAX|MIN|MON|NIX|NOT|NUL|OFF|OLD|OMS|OUT|PAD|PRN|RAW|REF|ROW|SAP|SET|SGA|SHG|SID|SQL|SUM|SYS|TMP|TOP|UID|USE|USR|VAR)[A-Z][A-Z0-9]{2}$"
-                  },
-                  "is_development_allowed": {
-                    "title": "Development System",
-                    "description": "Specify, if development shall be allowed on this ABAP system",
-                    "type": "boolean",
-                    "default": true
-                  },
-                  "size_of_runtime": {
-                    "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-                    "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-                    "type": "integer",
-                    "default": 1,
-                    "enum": [
-                      1,
-                      2,
-                      4,
-                      6,
-                      8,
-                      16,
-                      24,
-                      32
-                    ]
-                  },
-                  "size_of_persistence": {
-                    "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
                     "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory",
                     "type": "integer",
                     "default": 2,
@@ -1708,6 +1148,410 @@
                   "size_of_persistence": {
                     "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
                     "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+                    "type": "integer",
+                    "default": 2,
+                    "enum": [
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60,
+                      64,
+                      68,
+                      72,
+                      76,
+                      80,
+                      84,
+                      88,
+                      92,
+                      96,
+                      100,
+                      104,
+                      108,
+                      112,
+                      116,
+                      120
+                    ]
+                  },
+                  "size_of_runtime": {
+                    "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
+                    "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                    "type": "integer",
+                    "default": 1,
+                    "enum": [
+                      1,
+                      2,
+                      4,
+                      6,
+                      8,
+                      16,
+                      24,
+                      32
+                    ]
+                  },
+                  "elastic": {
+                    "title": "Elastic Scaling of ABAP Application Server",
+                    "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "size_of_application_server": {
+                    "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
+                    "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+                    "type": "string",
+                    "default": "auto",
+                    "enum": [
+                      "auto",
+                      "0.5",
+                      "2"
+                    ]
+                  },
+                  "size_of_persistence_disk": {
+                    "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
+                    "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+                    "type": "string",
+                    "pattern": "^(auto|\\d+)?$",
+                    "default": "auto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": false,
+                "type": "object",
+                "_show_form_view": false,
+                "_controlsOrder": [
+                  "admin_email",
+                  "description",
+                  "is_development_allowed",
+                  "sapsystemname",
+                  "size_of_runtime",
+                  "elastic",
+                  "size_of_application_server",
+                  "size_of_persistence",
+                  "size_of_persistence_disk"
+                ],
+                "properties": {
+                  "admin_email": {
+                    "title": "Admin Email Address",
+                    "description": "Enter the administrator's email address",
+                    "type": "string",
+                    "minLength": 6,
+                    "maxLength": 256,
+                    "pattern": "^[^<>()\\[\\]\\\\,;:\\s@\"`]+@([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}$"
+                  },
+                  "admin_employee_id": {
+                    "title": "Admin Employee ID",
+                    "description": "Optionally enter the Employee ID of the initial administrator. The Employee ID must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 60 characters.",
+                    "type": "string",
+                    "minLength": 0,
+                    "maxLength": 60,
+                    "pattern": "^(?!_)[\\.A-Z0-9_-]{0,60}$"
+                  },
+                  "description": {
+                    "title": "ABAP System Description",
+                    "description": "Enter a description for the ABAP system",
+                    "type": "string",
+                    "maxLength": 256,
+                    "pattern": "^[^'\\x00-\\x1f]*$"
+                  },
+                  "sapsystemname": {
+                    "title": "ABAP System ID",
+                    "description": "Enter a valid system ID (SID) for the ABAP system. The ID must consist of exactly three alphanumeric characters. Only uppercase letters are allowed. The first character must be a letter (not a digit). The ID does not have to be technically unique. The following IDs are reserved and cannot be used: ADD ALL AMD AND ANY ARE ASC AUX AVG BIT CDC COM CON DBA END EPS FOR GET GID IBM INT KEY LOG LPT MAP MAX MIN MON NIX NOT NUL OFF OLD OMS OUT PAD PRN RAW REF ROW SAP SET SGA SHG SID SQL SUM SYS TMP TOP UID USE USR VAR.",
+                    "type": "string",
+                    "default": "H01",
+                    "minLength": 3,
+                    "maxLength": 3,
+                    "pattern": "^(?!ADD|ALL|AMD|ADM|AND|ANY|ARE|ASC|AUX|AVG|BIT|CDC|COM|CON|DAA|DBA|ECO|END|EPS|FOR|GET|GID|IBM|INT|KEY|LOG|LPT|MAP|MAX|MIN|MON|NIX|NOT|NUL|OFF|OLD|OMS|OUT|PAD|PRN|RAW|REF|ROW|SAP|SET|SGA|SHG|SID|SQL|SUM|SYS|TMP|TOP|UID|USE|USR|VAR)[A-Z][A-Z0-9]{2}$"
+                  },
+                  "is_development_allowed": {
+                    "title": "Development System",
+                    "description": "Specify, if development shall be allowed on this ABAP system",
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "size_of_runtime": {
+                    "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
+                    "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
+                    "type": "integer",
+                    "default": 1,
+                    "enum": [
+                      1,
+                      2,
+                      4,
+                      6,
+                      8,
+                      16,
+                      24,
+                      32
+                    ]
+                  },
+                  "size_of_persistence": {
+                    "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
+                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory",
+                    "type": "integer",
+                    "default": 2,
+                    "enum": [
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60,
+                      64,
+                      68,
+                      72,
+                      76,
+                      80,
+                      84,
+                      88,
+                      92,
+                      96,
+                      100,
+                      104,
+                      108,
+                      112,
+                      116,
+                      120
+                    ]
+                  },
+                  "elastic": {
+                    "title": "Elastic Scaling of ABAP Application Server",
+                    "description": "Enable or disable elastic scaling for the ABAP system. When disabled, the service instance will have a fixed number of ABAP Application Servers with a total ABAP runtime size as defined by the parameter size_of_runtime. When enabled, the number of ABAP Application Servers will be dynamically adjusted based on the system load with the size_of_runtime parameter representing the maximum size of the ABAP runtime. In this case only the actually allocated ACUs and not the configured maximum will be charged at any time.",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "size_of_application_server": {
+                    "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
+                    "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+                    "type": "string",
+                    "default": "auto",
+                    "enum": [
+                      "auto",
+                      "0.5",
+                      "2"
+                    ]
+                  },
+                  "admin_user_name": {
+                    "title": "Admin User Name",
+                    "description": "Optionally enter the username of the administrator. The username must not begin with SAP_ or _, must only contain uppercase letters, digits, underscores, hyphens and periods, and must not be longer than 40 characters.",
+                    "type": "string",
+                    "minLength": 0,
+                    "maxLength": 40,
+                    "pattern": "^(?!SAP_|_)[\\.A-Z0-9_-]{0,40}$"
+                  },
+                  "login_attribute": {
+                    "title": "Login Attribute",
+                    "description": "Which attribute should be used for login.",
+                    "type": "string",
+                    "enum": [
+                      "email",
+                      "user_name"
+                    ],
+                    "default": "email"
+                  },
+                  "addon_product_name": {
+                    "description": "The name of the addon product",
+                    "type": "string",
+                    "pattern": "^[A-Z0-9-_/ ]*$"
+                  },
+                  "addon_product_version": {
+                    "description": "The version of the addon product - leave empty to use default version",
+                    "type": "string",
+                    "pattern": "^(\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})?$"
+                  },
+                  "consumer_tenant_limit": {
+                    "description": "Maximum number of allowed consumer tenants",
+                    "type": "integer"
+                  },
+                  "parent_saas_appname": {
+                    "description": "SaaS application name of the parent subscription - leave empty if parent is a service",
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9-_]*$"
+                  },
+                  "parent_service_instance_guid": {
+                    "description": "Service GUID of the parent service - leave empty if parent is a SaaS subscription",
+                    "type": "string",
+                    "pattern": "^(?:[A-Fa-f0-9]{8}-([A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12})?$"
+                  },
+                  "parent_service_label": {
+                    "description": "Service label of the parent service - leave empty if parent is a SaaS subscription",
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9-_]*$"
+                  },
+                  "parent_service_parameters": {
+                    "description": "Parameters handled by the parent service",
+                    "type": "object",
+                    "properties": {},
+                    "additionalProperties": true,
+                    "propertyNames": {
+                      "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+                    }
+                  },
+                  "consumer_id": {
+                    "description": "consumer ID is used by BW to decide about visibility of software components",
+                    "type": "string",
+                    "pattern": "^[^\\x00-\\x1f]*$"
+                  },
+                  "ui_host": {
+                    "description": "Enable custom domains",
+                    "type": "string",
+                    "pattern": "^[^\\x00-\\x1f]*$"
+                  },
+                  "size_of_persistence_disk": {
+                    "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
+                    "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+                    "type": "string",
+                    "pattern": "^(auto|\\d+)?$",
+                    "default": "auto"
+                  }
+                },
+                "required": [
+                  "admin_email",
+                  "size_of_persistence",
+                  "size_of_runtime"
+                ]
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": false,
+                "type": "object",
+                "_load_current_config": true,
+                "_show_form_view": false,
+                "_controlsOrder": [
+                  "description",
+                  "size_of_runtime",
+                  "elastic",
+                  "size_of_application_server",
+                  "size_of_persistence",
+                  "size_of_persistence_disk"
+                ],
+                "properties": {
+                  "description": {
+                    "title": "ABAP System Description",
+                    "description": "Enter a description for the ABAP system",
+                    "type": "string",
+                    "maxLength": 256,
+                    "pattern": "^[^'\\x00-\\x1f]*$"
+                  },
+                  "size_of_persistence": {
+                    "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
+                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                     "type": "integer",
                     "default": 2,
                     "enum": [
@@ -2019,7 +1863,7 @@
                   },
                   "size_of_persistence": {
                     "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory",
+                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory",
                     "type": "integer",
                     "default": 2,
                     "enum": [
@@ -2106,7 +1950,7 @@
                   },
                   "size_of_persistence": {
                     "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                     "type": "integer",
                     "default": 2,
                     "enum": [
@@ -2239,7 +2083,7 @@
                   },
                   "size_of_persistence": {
                     "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory",
+                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory",
                     "type": "integer",
                     "default": 2,
                     "enum": [
@@ -2326,7 +2170,7 @@
                   },
                   "size_of_persistence": {
                     "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+                    "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB on Azure and GCP, or 15 GB on AWS) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
                     "type": "integer",
                     "default": 2,
                     "enum": [
