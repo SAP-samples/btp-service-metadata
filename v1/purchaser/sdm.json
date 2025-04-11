@@ -129,6 +129,54 @@
       ]
     },
     {
+      "name": "build-runtime",
+      "displayName": "build-runtime",
+      "category": "SERVICE",
+      "description": "API calls in block size of 1000. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8019321",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",
