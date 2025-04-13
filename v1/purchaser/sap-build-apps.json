@@ -493,6 +493,34 @@
       ]
     },
     {
+      "name": "build-default",
+      "displayName": "Build default",
+      "category": "APPLICATION",
+      "description": "This is a dedicated plan for SAP Build, which allows AI-based development and automation. Note that if you also use other plans of this service, it will incur charges outside the SAP Build usage metrics.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8019311",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "APPLICATION",

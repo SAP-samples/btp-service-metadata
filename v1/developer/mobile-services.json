@@ -671,6 +671,52 @@
       "schemas": null
     },
     {
+      "name": "build-default",
+      "displayName": "Build default",
+      "category": "SERVICE",
+      "description": "This is a dedicated plan for SAP Build. If you want to use this service with the SAP Build, use the build-default plan. Please note if you use the regular plan, it will incur charges outside the build standard/advanced metric.",
+      "isFree": null,
+      "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "schemas": null
+    },
+    {
       "name": "free",
       "displayName": "free",
       "category": "SERVICE",
