@@ -529,6 +529,11 @@
                     "description": "Indicates the locale for the instance (TODO)",
                     "type": "string",
                     "default": "en_US"
+                  },
+                  "public_access": {
+                    "description": "Indicates whether the instance is publicly accessible. If not provided, it is defaulted to false.",
+                    "type": "boolean",
+                    "default": false
                   }
                 }
               }
@@ -693,6 +698,85 @@
                       }
                     },
                     "type": "object"
+                  }
+                },
+                "_load_current_config": true
+              }
+            }
+          }
+        },
+        {
+          "service_binding": {
+            "create": {
+              "parameters": {
+                "$id": "http://example.com/schemas/postgres-development-create-binding.json",
+                "$schema": "http://json-schema.org/draft-06/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "properties": {
+                  "show_cert_url": {
+                    "description": "Adds server and client certificate urls in the VCAP credentials",
+                    "type": "boolean",
+                    "default": false
+                  }
+                }
+              }
+            }
+          },
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$id": "http://example.com/schemas/postgres-development-create.json",
+                "$schema": "http://json-schema.org/draft-06/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "properties": {
+                  "engine_version": {
+                    "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 15",
+                    "type": "string",
+                    "enum": [
+                      "11",
+                      "12",
+                      "13",
+                      "14",
+                      "15",
+                      "16"
+                    ],
+                    "default": "15"
+                  },
+                  "locale": {
+                    "description": "Indicates the locale for the instance (TODO)",
+                    "type": "string",
+                    "default": "en_US"
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "$id": "http://example.com/schemas/postgres-development-update.json",
+                "$schema": "http://json-schema.org/draft-06/schema#",
+                "type": "object",
+                "_show_form_view": true,
+                "additionalProperties": true,
+                "properties": {
+                  "engine_version": {
+                    "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+                    "type": "string",
+                    "enum": [
+                      "11",
+                      "12",
+                      "13",
+                      "14",
+                      "15",
+                      "16"
+                    ]
+                  },
+                  "locale": {
+                    "description": "Indicates the locale for the instance (TODO)",
+                    "type": "string"
                   }
                 },
                 "_load_current_config": true
@@ -910,6 +994,11 @@
                     "description": "Indicates the locale for the instance (TODO)",
                     "type": "string",
                     "default": "en_US"
+                  },
+                  "public_access": {
+                    "description": "Indicates whether the instance is publicly accessible. If not provided, it is defaulted to false.",
+                    "type": "boolean",
+                    "default": false
                   }
                 }
               }

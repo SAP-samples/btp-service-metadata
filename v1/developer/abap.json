@@ -453,7 +453,7 @@
       "name": "build-runtime",
       "displayName": "Build Runtime",
       "category": "SERVICE",
-      "description": "For development, test, and productive ABAP systems. The minimum system size is 2 HANA Compute Units and 1 ABAP Compute Unit.This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service.",
+      "description": "Allows you to create projects for development, test, and productive ABAP systems. The minimum system size is 2 HANA Compute Units and 1 ABAP Compute Unit. It is mandatory to assign a combination of three entitlement service plans: ABAP Compute Unit, HANA Compute Unit and the Build Runtime Plan. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service (e.g. Standard or SaaS OEM), it will incur charges outside the SAP Build capacity unit metrics. An exception to this are the entitlements for the ABAP Compute Units and HANA Compute Units needed to create the ABAP environment instance that are already included in the SAP Build offering.",
       "isFree": null,
       "isBeta": false,
       "deprecated": false,
