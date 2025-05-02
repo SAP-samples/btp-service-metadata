@@ -5,6 +5,122 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MgknvYR59-0m5NlxicakHcJCI90SRhWxdkt0V5U0YQoNwAQieC9pH-S_9r03UGoN.svg",
   "servicePlans": [
     {
+      "name": "api_and_events_edition",
+      "displayName": "API and Events Edition",
+      "category": "APPLICATION",
+      "description": "Use a subscription of Integration Suite that includes up to 10,000 monthly transactions. You get the capabilities OData Provisioning and Event Mesh, and features like Developer Hub.",
+      "isFree": null,
+      "isBeta": false,
+      "dataCenters": [
+        {
+          "region": "ap10",
+          "name": "cf-ap10"
+        },
+        {
+          "region": "ap11",
+          "name": "cf-ap11"
+        },
+        {
+          "region": "ap12",
+          "name": "cf-ap12"
+        },
+        {
+          "region": "ap20",
+          "name": "cf-ap20"
+        },
+        {
+          "region": "ap21",
+          "name": "cf-ap21"
+        },
+        {
+          "region": "br10",
+          "name": "cf-br10"
+        },
+        {
+          "region": "br20",
+          "name": "cf-br20"
+        },
+        {
+          "region": "ca10",
+          "name": "cf-ca10"
+        },
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
+        {
+          "region": "eu10",
+          "name": "cf-eu10"
+        },
+        {
+          "region": "eu11",
+          "name": "cf-eu11"
+        },
+        {
+          "region": "eu20",
+          "name": "cf-eu20"
+        },
+        {
+          "region": "eu30",
+          "name": "cf-eu30"
+        },
+        {
+          "region": "il30",
+          "name": "cf-il30"
+        },
+        {
+          "region": "in30",
+          "name": "cf-in30"
+        },
+        {
+          "region": "jp10",
+          "name": "cf-jp10"
+        },
+        {
+          "region": "jp20",
+          "name": "cf-jp20"
+        },
+        {
+          "region": "sa30",
+          "name": "cf-sa30"
+        },
+        {
+          "region": "sa31",
+          "name": "cf-sa31"
+        },
+        {
+          "region": "us10",
+          "name": "cf-us10"
+        },
+        {
+          "region": "us11",
+          "name": "cf-us11"
+        },
+        {
+          "region": "us20",
+          "name": "cf-us20"
+        },
+        {
+          "region": "us21",
+          "name": "cf-us21"
+        },
+        {
+          "region": "us30",
+          "name": "cf-us30"
+        }
+      ],
+      "materialNumberMapping": [
+        {
+          "materialNumber": "8019753",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8019754",
+          "commercialModel": "Subscription"
+        }
+      ]
+    },
+    {
       "name": "basic_edition",
       "displayName": "Basic Edition",
       "category": "APPLICATION",
@@ -1100,6 +1216,14 @@
         },
         {
           "materialNumber": "8018921",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8019753",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8019754",
           "commercialModel": "Subscription"
         },
         {
