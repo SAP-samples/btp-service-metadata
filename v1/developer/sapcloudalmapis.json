@@ -45,7 +45,83 @@
           "name": "cf-us10"
         }
       ],
-      "schemas": null
+      "schemas": [
+        {
+          "service_instance": {
+            "create": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": false,
+                "_show_form_view": true,
+                "type": "object",
+                "properties": {
+                  "xs-security": {
+                    "type": "object",
+                    "properties": {
+                      "xsappname": {
+                        "type": "string",
+                        "default": "sap-cloud-alm-api"
+                      },
+                      "authorities": {
+                        "title": "CALMExtensionAPI",
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "$XSMASTERAPPNAME.calm-api.scope1.read",
+                            "$XSMASTERAPPNAME.calm-api.scope2.read"
+                          ],
+                          "_enumDisplayName": {
+                            "$XSMASTERAPPNAME.calm-api.scope1.read": "scope1.read",
+                            "$XSMASTERAPPNAME.calm-api.scope2.read": "scope2.read"
+                          }
+                        },
+                        "_description": "Custom Scopes",
+                        "description": "Custom Scopes"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "update": {
+              "parameters": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": false,
+                "_show_standard_config_view": true,
+                "_load_current_config": true,
+                "type": "object",
+                "properties": {
+                  "xs-security": {
+                    "type": "object",
+                    "properties": {
+                      "xsappname": {
+                        "type": "string",
+                        "default": "sap-cloud-alm-api"
+                      },
+                      "authorities": {
+                        "title": "CALMExtensionAPI",
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "$XSMASTERAPPNAME.calm-api.scope1.read",
+                            "$XSMASTERAPPNAME.calm-api.scope2.read"
+                          ],
+                          "_enumDisplayName": {
+                            "$XSMASTERAPPNAME.calm-api.scope1.read": "scope1.read",
+                            "$XSMASTERAPPNAME.calm-api.scope2.read": "scope2.read"
+                          }
+                        },
+                        "_description": "Custom Scopes",
+                        "description": "Custom Scopes"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ],
   "supportComponents": [],
