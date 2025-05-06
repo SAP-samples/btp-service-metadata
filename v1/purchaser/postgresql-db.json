@@ -5,194 +5,6 @@
   "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/PwJ4x14FoLsA0xkl_k-kjvBJmnpaf7bYFHyjd0TmIxLXzNcLvsOIoYPO316EUJaq.svg",
   "servicePlans": [
     {
-      "name": "development",
-      "displayName": "development",
-      "category": "SERVICE",
-      "description": "PostgreSQL service offering for internal development purposes",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008898",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008899",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008900",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008901",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011071",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011560",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011562",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011563",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011564",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012215",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012498",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
       "name": "free",
       "displayName": "Free",
       "category": "SERVICE",
@@ -263,6 +75,14 @@
           "commercialModel": "ppu"
         },
         {
+          "materialNumber": "8011071",
+          "commercialModel": "Subscription"
+        },
+        {
+          "materialNumber": "8012215",
+          "commercialModel": "Subscription"
+        },
+        {
           "materialNumber": "8016044",
           "commercialModel": "btpea"
         },
@@ -273,14 +93,6 @@
         {
           "materialNumber": "8017640",
           "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8012215",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8011071",
-          "commercialModel": null
         }
       ]
     },
@@ -439,60 +251,16 @@
           "commercialModel": "ppu_oem"
         },
         {
-          "materialNumber": "8008898",
-          "commercialModel": "Subscription"
-        },
-        {
           "materialNumber": "8008899",
           "commercialModel": "Subscription"
         },
         {
           "materialNumber": "8008899",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008900",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008901",
           "commercialModel": "Subscription"
         },
         {
           "materialNumber": "8010751",
           "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011071",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011560",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011562",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011563",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011564",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012215",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012498",
-          "commercialModel": "Subscription"
         },
         {
           "materialNumber": "8016044",
@@ -839,18 +607,6 @@
           "commercialModel": "Subscription"
         },
         {
-          "materialNumber": "8008899",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008900",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008901",
-          "commercialModel": "Subscription"
-        },
-        {
           "materialNumber": "8009282",
           "commercialModel": "pure_ppu"
         },
@@ -859,39 +615,7 @@
           "commercialModel": "ppu"
         },
         {
-          "materialNumber": "8011071",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011560",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011562",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011563",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011564",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012215",
-          "commercialModel": "Subscription"
-        },
-        {
           "materialNumber": "8012497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012498",
           "commercialModel": "Subscription"
         },
         {
@@ -1067,23 +791,11 @@
           "commercialModel": "ppu_oem"
         },
         {
-          "materialNumber": "8008898",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008899",
-          "commercialModel": "Subscription"
-        },
-        {
           "materialNumber": "8008900",
           "commercialModel": "Subscription"
         },
         {
           "materialNumber": "8008900",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008901",
           "commercialModel": "Subscription"
         },
         {
@@ -1095,39 +807,7 @@
           "commercialModel": "ppu"
         },
         {
-          "materialNumber": "8011071",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011560",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011562",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011563",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011564",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012215",
-          "commercialModel": "Subscription"
-        },
-        {
           "materialNumber": "8012497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012498",
           "commercialModel": "Subscription"
         },
         {
@@ -1303,18 +983,6 @@
           "commercialModel": "ppu_oem"
         },
         {
-          "materialNumber": "8008898",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008899",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008900",
-          "commercialModel": "Subscription"
-        },
-        {
           "materialNumber": "8008901",
           "commercialModel": "Subscription"
         },
@@ -1325,38 +993,6 @@
         {
           "materialNumber": "8010751",
           "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011071",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011560",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011562",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011563",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011564",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012215",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012498",
-          "commercialModel": "Subscription"
         },
         {
           "materialNumber": "8016044",
