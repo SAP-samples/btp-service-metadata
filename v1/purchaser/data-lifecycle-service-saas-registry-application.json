@@ -1,17 +1,21 @@
 {
   "name": "data-lifecycle-service-saas-registry-application",
-  "displayName": "Data Archiving",
-  "description": "Data Archiving",
+  "displayName": "Data Archiving Application",
+  "description": "Application to generate reports on archived data",
   "icon": null,
   "servicePlans": [
     {
       "name": "default",
       "displayName": "default",
       "category": "APPLICATION",
-      "description": "Default Plan",
+      "description": "Application plan of data archiving for Customers",
       "isFree": null,
       "isBeta": false,
       "dataCenters": [
+        {
+          "region": "ch20",
+          "name": "cf-ch20"
+        },
         {
           "region": "eu11",
           "name": "cf-eu11"
