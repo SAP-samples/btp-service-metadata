@@ -1,16 +1,20 @@
 {
-  "name": "credstore",
-  "displayName": "SAP Credential Store",
-  "description": "Credential Store",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/sgtsPlIF_uIeWuX9zjJ9_u5GA_-X6VN1oTN625aLKueeTuZLh7zBhneoVPLpAceh.svg",
+  "name": "customer-data-cloud",
+  "displayName": "Customer Data Cloud",
+  "description": "Customer Data Cloud",
+  "icon": null,
+  "links": [],
   "servicePlans": [
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "SERVICE",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+      "name": "consent",
+      "displayName": "SAP Customer Identity and Access Management for B2C consent option",
+      "category": "APPLICATION",
+      "description": "SAP Customer Identity and Access Management for B2C consent option",
       "isFree": null,
       "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
       "dataCenters": [
         {
           "region": "ap10",
@@ -57,24 +61,8 @@
           "name": "cf-ca10"
         },
         {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
           "region": "eu10",
           "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
         },
         {
           "region": "eu20",
@@ -141,52 +129,18 @@
           "name": "cf-us30"
         }
       ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011062",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+      "schemas": null
     },
     {
-      "name": "proxy",
-      "displayName": "proxy",
-      "category": "SERVICE",
-      "description": "Proxy plan",
+      "name": "core",
+      "displayName": "SAP Customer Identity and Access Management for B2C Core",
+      "category": "APPLICATION",
+      "description": "SAP Customer Identity and Access Management for B2C Core",
       "isFree": null,
       "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
       "dataCenters": [
         {
           "region": "ap10",
@@ -233,24 +187,8 @@
           "name": "cf-ca10"
         },
         {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
           "region": "eu10",
           "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
         },
         {
           "region": "eu20",
@@ -317,20 +255,18 @@
           "name": "cf-us30"
         }
       ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+      "schemas": null
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard plan",
+      "name": "enhanced",
+      "displayName": "SAP Customer Identity and Access Management for B2C enhanced option",
+      "category": "APPLICATION",
+      "description": "SAP Customer Identity and Access Management for B2C enhanced option",
       "isFree": null,
       "isBeta": false,
+      "deprecated": false,
+      "deprecationMessage": null,
+      "deprecationDate": null,
       "dataCenters": [
         {
           "region": "ap10",
@@ -377,24 +313,8 @@
           "name": "cf-ca10"
         },
         {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
           "region": "eu10",
           "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
         },
         {
           "region": "eu20",
@@ -461,105 +381,9 @@
           "name": "cf-us30"
         }
       ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007197",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007197",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007964",
-          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8007978",
-          "commercialModel": "ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008814",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
-    },
-    {
-      "name": "trial",
-      "displayName": "trial",
-      "category": "SERVICE",
-      "description": "Credential Store service trial",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+      "schemas": null
     }
   ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+  "supportComponents": [],
+  "apis": []
 }
