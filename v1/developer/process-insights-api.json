@@ -1,138 +1,138 @@
 {
-  "name": "process-insights-api",
-  "displayName": "SAP Signavio Process Insights",
-  "description": "Get insights to support continuous business process improvement.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/P4Un-KJC0no2kwWAB5tsU2wV7EH6FhZVUV69tbv8kU69KEM7zHMvgaflE4AiINez.svg",
-  "links": [
+ "name": "process-insights-api",
+ "displayName": "SAP Signavio Process Insights",
+ "description": "Get insights to support continuous business process improvement.",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/P4Un-KJC0no2kwWAB5tsU2wV7EH6FhZVUV69tbv8kU69KEM7zHMvgaflE4AiINez.svg",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Signavio%20Process%20Insights",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Signavio%20Process%20Insights",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/BPI",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "api-plan",
+   "displayName": "Analytical API",
+   "category": "SERVICE",
+   "description": "Get access to the analytical API of SAP Signavio Process Insights",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Signavio%20Process%20Insights",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Signavio%20Process%20Insights",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://help.sap.com/viewer/product/BPI",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "Get access to the APIs of SAP Signavio Process Insights",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "api-plan",
-      "displayName": "Analytical API",
-      "category": "SERVICE",
-      "description": "Get access to the analytical API of SAP Signavio Process Insights",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "Get access to the APIs of SAP Signavio Process Insights",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": null
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

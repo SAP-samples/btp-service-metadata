@@ -1,146 +1,146 @@
 {
-  "name": "spatialservices",
-  "displayName": "SAP HANA spatial services",
-  "description": "SAP HANA spatial services",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/SKmXEVU2yDY_yONZqMj7D4Lh2VZc44aZBEq9Fa-033wrHJNrvc2nm-_m4cWhplcp.svg",
-  "links": [
+ "name": "spatialservices",
+ "displayName": "SAP HANA spatial services",
+ "description": "SAP HANA spatial services",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/SKmXEVU2yDY_yONZqMj7D4Lh2VZc44aZBEq9Fa-033wrHJNrvc2nm-_m4cWhplcp.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPHANASpatialServices/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP HANA Spatial Services | SAP API Business Hub"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-hana-spatial-services",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - SAP HANA spatial services"
+  },
+  {
+   "value": "https://help.sap.com/doc/0e1f4bbaa9af4898a1fc50b7412cb49a/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Solution Brief"
+  },
+  {
+   "value": "https://help.sap.com/docs/r/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e129aa20c78c4a9fb379b9803b02e5f6.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://help.sap.com/viewer/4e2337c5371a4ac18195cfe751514735/Cloud/en-US",
+   "classification": "Onboarding",
+   "type": "Link",
+   "text": "Tutorial: Onboarding"
+  },
+  {
+   "value": "https://help.sap.com/viewer/c7837a0d78e24fb5b9f66a058ab9f730/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What are SAP HANA Spatial Services"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES/Cloud",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_HANA_SPATIAL_SERVICES",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES/latest/",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=SAP+HANA+Spatial+Services",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "lite",
+   "displayName": "lite",
+   "category": "SERVICE",
+   "description": "Provides access to HANA spatial services capabilities.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPHANASpatialServices/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP HANA Spatial Services | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-hana-spatial-services",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - SAP HANA spatial services"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/doc/0e1f4bbaa9af4898a1fc50b7412cb49a/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Solution Brief"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/r/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e129aa20c78c4a9fb379b9803b02e5f6.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
-    },
-    {
-      "value": "https://help.sap.com/viewer/4e2337c5371a4ac18195cfe751514735/Cloud/en-US",
-      "classification": "Onboarding",
-      "type": "Link",
-      "text": "Tutorial: Onboarding"
-    },
-    {
-      "value": "https://help.sap.com/viewer/c7837a0d78e24fb5b9f66a058ab9f730/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What are SAP HANA Spatial Services"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES/Cloud",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/SAP_HANA_SPATIAL_SERVICES",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_HANA_SPATIAL_SERVICES/latest/",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=SAP+HANA+Spatial+Services",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Provides full access to HANA spatial services capabilities.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "lite",
-      "displayName": "lite",
-      "category": "SERVICE",
-      "description": "Provides access to HANA spatial services capabilities.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Provides full access to HANA spatial services capabilities.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [
-    {
-      "value": "BC-CP-CF-HSS"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Geocoding",
-      "url": "https://api.sap.com/api/geocoding_api/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Mapping",
-      "url": "https://api.sap.com/api/mapping_api/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Routing",
-      "url": "https://api.sap.com/api/routing_api/overview",
-      "apiType": "RESTful"
-    }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-CF-HSS"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Geocoding",
+   "url": "https://api.sap.com/api/geocoding_api/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Mapping",
+   "url": "https://api.sap.com/api/mapping_api/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Routing",
+   "url": "https://api.sap.com/api/routing_api/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

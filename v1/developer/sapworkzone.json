@@ -1,301 +1,301 @@
 {
-  "name": "SAPWorkZone",
-  "displayName": "SAP Build Work Zone, advanced edition",
-  "description": "SAP Build Work Zone, advanced edition",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc4MDYpIj4KPG1hc2sgaWQ9Im1hc2swXzM4NjBfMTc4MDYiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9Ii0yIiB5PSItMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj4KPHBhdGggZD0iTTguNDIzNTUgMTEuOTc0NUM4Ljc4NzQ5IDEyLjk5OTMgOS44NTYyMiAxMy41ODIzIDExLjA1NDEgMTMuNTgyM0MxMi4yNTIgMTMuNTgyMyAxMy4yNjYgMTIuNzEyNCAxMy41NTIyIDExLjkzMDlMMTUuODE2NCA1LjY5MzM5QzE2LjI2NzMgNC40NTEyNSAxNS42Mjg2IDMuMDc3OCAxNC4zODk4IDIuNjI1N0MxMy4yNTA1IDIuMjA5OTEgMTIuMDAwNCAyLjcxODIyIDExLjQ1NjIgMy43Njg4MUMxMS4zNjk3IDMuOTY0NzIgMTEuMjgwOSA0LjI1OTQ2IDExLjM4NzEgNC41NzMzTDEyLjUyNTggNy43MjRDMTIuNTgyOSA3Ljg4MTk3IDEyLjUwOSA4LjA1NzM3IDEyLjM1NjIgOC4xMjY0M0MxMi4xNjc3IDguMjExNjQgMTEuOTQxOSA4LjEwMDI0IDExLjg5MjIgNy44OTkwMkMxMS41MjkgNi40Mjg5MiAxMC4zMTMxIDUuNDkwOTIgOC44MDk5MSA2LjA0NDUyQzcuMzA2NzEgNi41OTgxMyA2Ljk5MDIzIDguMDI1OTIgNy40NDExMyA5LjI2ODA2TDguNDIzNTUgMTEuOTc0NVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0wLjIzMjAxIDUuNjgzMzlDLTAuMjE4ODg1IDQuNDQxMjUgMC40MTk4NDUgMy4wNjc4IDEuNjU4NjYgMi42MTU3QzIuODk3NDcgMi4xNjM1OSA0LjI2NzI0IDIuODA0MDUgNC43MTgxNCA0LjA0NjE4TDYuOTgxMTcgMTAuMjgwNEM3LjQzMjA2IDExLjUyMjYgNi43OTMzMyAxMi44OTYgNS41NTQ1MiAxMy4zNDgxQzQuMzE1NzEgMTMuODAwMiAyLjk0NTkzIDEzLjE1OTggMi40OTUwNCAxMS45MTc2TDAuMjMyMDEgNS42ODMzOVoiIGZpbGw9ImJsYWNrIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8zODYwXzE3ODA2KSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfMzg2MF8xNzgwNikiPgo8cGF0aCBkPSJNNS40NjUzOCAtNC4zNDc3MUM4LjgzODg4IC01LjMwNjI2IDEyLjgyNzYgLTMuNjUyNzUgMTUuMjU5MiAwLjcyODUyMkMyMS41MTkyIDkuMTM3ODkgMjcuMTgwMyAxOC45MDM3IDE0LjI4MTggMjMuNDY3M0MxLjM4MzM3IDI4LjAzMDkgMS42ODU1MSAxOC42Njk2IC0yLjYxNTMzIDEwLjkyMDNDLTYuOTE2MTcgMy4xNzEwOSAyLjA5MTg5IC0zLjM4OTE3IDUuNDY1MzggLTQuMzQ3NzFaIiBmaWxsPSJ1cmwoI3BhaW50MF9yYWRpYWxfMzg2MF8xNzgwNikiLz4KPC9nPgo8ZyBmaWx0ZXI9InVybCgjZmlsdGVyMV9kXzM4NjBfMTc4MDYpIj4KPHBhdGggZD0iTTE1LjQyOTMgMTEuMjIzN0MxNC4wOTIgMTQuMDg4NiAxMC4yNjMyIDE3LjU0MDMgNy42NjU5OCAxNy43NzE0QzIuMzM5OTkgMTguOTIyOCAtNS45NDk2IDEzLjY1MjUgLTUuMjQwNTggMTAuMDczM0MtNC41MzE1NiA2LjQ5NDEgMi4yMDY5NiA0Ljc0NTYxIDYuODE5OTkgNC43ODUyNEMxMS40MzMgNC44MjQ4NyAxNi43NjY3IDguMzU4NzkgMTUuNDI5MyAxMS4yMjM3WiIgZmlsbD0idXJsKCNwYWludDFfcmFkaWFsXzM4NjBfMTc4MDYpIi8+CjwvZz4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjJfZF8zODYwXzE3ODA2KSI+CjxwYXRoIGQ9Ik0wLjAzNTQ4MDUgOC4xMTE2NEM2LjAwODAzIDYuNTMyOTUgMTEuMjIgNi4zMDMzNyAxMS44NDIxIDExLjkwMjNDMTIuMzQ2OSAxNi40NDYzIDUuOTk5NCAyMC4xMjU2IDEuNDU1NCAyMC42MzA0Qy0zLjA4ODYxIDIxLjEzNTMgLTUuNjg0NjUgOS42MjM2MSAwLjAzNTQ4MDUgOC4xMTE2NFoiIGZpbGw9InVybCgjcGFpbnQyX3JhZGlhbF8zODYwXzE3ODA2KSIvPgo8L2c+CjwvZz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzM4NjBfMTc4MDYiIHg9Ii00LjQ5ODA1IiB5PSItNS42NDk5IiB3aWR0aD0iMjguMDQxIiBoZWlnaHQ9IjMxLjUwNjMiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeD0iMC4zNzEwOTQiIGR5PSIwLjA3NDIxODciLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41NTY2NCIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuNCAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc4MDYiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzgwNiIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPGZpbHRlciBpZD0iZmlsdGVyMV9kXzM4NjBfMTc4MDYiIHg9Ii02LjAyNTM5IiB5PSIzLjc0NTQ4IiB3aWR0aD0iMjMuMTQ4NCIgaGVpZ2h0PSIxNS4zNzQ2IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzcxMDk0IiBkeT0iMC4wNzQyMTg3Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNTU2NjQiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3ODA2Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc4MDYiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjJfZF8zODYwXzE3ODA2IiB4PSItMy45ODc3OSIgeT0iNi4xMDA5NSIgd2lkdGg9IjE3LjM0MjgiIGhlaWdodD0iMTUuNzMzIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzcxMDk0IiBkeT0iMC4wNzQyMTg3Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNTU2NjQiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3ODA2Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc4MDYiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQwX3JhZGlhbF8zODYwXzE3ODA2IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMzA1OTcgMTEuNjA3MSkgcm90YXRlKC03NS42NTEzKSBzY2FsZSgyNi40MzQgMjYuMDY4NykiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMTM0OEZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA2MjM4RCIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50MV9yYWRpYWxfMzg2MF8xNzgwNiIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4yMzA1NTcgNi4yOTUxMSkgcm90YXRlKDMxLjk4KSBzY2FsZSgyNS4yNzIgNDUuNjQzMikiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDE5NUZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50Ml9yYWRpYWxfMzg2MF8xNzgwNiIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwLjg4MDg4NSAxOS40NTc3KSByb3RhdGUoLTQ2Ljk1NzkpIHNjYWxlKDE5LjQ3MjEgMjYuNzg0KSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMEJCRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDA4QkZGIi8+CjwvcmFkaWFsR3JhZGllbnQ+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMzg2MF8xNzgwNiI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMC4wMDIwNzUyKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=",
-  "links": [
+ "name": "SAPWorkZone",
+ "displayName": "SAP Build Work Zone, advanced edition",
+ "description": "SAP Build Work Zone, advanced edition",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc4MDYpIj4KPG1hc2sgaWQ9Im1hc2swXzM4NjBfMTc4MDYiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9Ii0yIiB5PSItMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj4KPHBhdGggZD0iTTguNDIzNTUgMTEuOTc0NUM4Ljc4NzQ5IDEyLjk5OTMgOS44NTYyMiAxMy41ODIzIDExLjA1NDEgMTMuNTgyM0MxMi4yNTIgMTMuNTgyMyAxMy4yNjYgMTIuNzEyNCAxMy41NTIyIDExLjkzMDlMMTUuODE2NCA1LjY5MzM5QzE2LjI2NzMgNC40NTEyNSAxNS42Mjg2IDMuMDc3OCAxNC4zODk4IDIuNjI1N0MxMy4yNTA1IDIuMjA5OTEgMTIuMDAwNCAyLjcxODIyIDExLjQ1NjIgMy43Njg4MUMxMS4zNjk3IDMuOTY0NzIgMTEuMjgwOSA0LjI1OTQ2IDExLjM4NzEgNC41NzMzTDEyLjUyNTggNy43MjRDMTIuNTgyOSA3Ljg4MTk3IDEyLjUwOSA4LjA1NzM3IDEyLjM1NjIgOC4xMjY0M0MxMi4xNjc3IDguMjExNjQgMTEuOTQxOSA4LjEwMDI0IDExLjg5MjIgNy44OTkwMkMxMS41MjkgNi40Mjg5MiAxMC4zMTMxIDUuNDkwOTIgOC44MDk5MSA2LjA0NDUyQzcuMzA2NzEgNi41OTgxMyA2Ljk5MDIzIDguMDI1OTIgNy40NDExMyA5LjI2ODA2TDguNDIzNTUgMTEuOTc0NVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0wLjIzMjAxIDUuNjgzMzlDLTAuMjE4ODg1IDQuNDQxMjUgMC40MTk4NDUgMy4wNjc4IDEuNjU4NjYgMi42MTU3QzIuODk3NDcgMi4xNjM1OSA0LjI2NzI0IDIuODA0MDUgNC43MTgxNCA0LjA0NjE4TDYuOTgxMTcgMTAuMjgwNEM3LjQzMjA2IDExLjUyMjYgNi43OTMzMyAxMi44OTYgNS41NTQ1MiAxMy4zNDgxQzQuMzE1NzEgMTMuODAwMiAyLjk0NTkzIDEzLjE1OTggMi40OTUwNCAxMS45MTc2TDAuMjMyMDEgNS42ODMzOVoiIGZpbGw9ImJsYWNrIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8zODYwXzE3ODA2KSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfMzg2MF8xNzgwNikiPgo8cGF0aCBkPSJNNS40NjUzOCAtNC4zNDc3MUM4LjgzODg4IC01LjMwNjI2IDEyLjgyNzYgLTMuNjUyNzUgMTUuMjU5MiAwLjcyODUyMkMyMS41MTkyIDkuMTM3ODkgMjcuMTgwMyAxOC45MDM3IDE0LjI4MTggMjMuNDY3M0MxLjM4MzM3IDI4LjAzMDkgMS42ODU1MSAxOC42Njk2IC0yLjYxNTMzIDEwLjkyMDNDLTYuOTE2MTcgMy4xNzEwOSAyLjA5MTg5IC0zLjM4OTE3IDUuNDY1MzggLTQuMzQ3NzFaIiBmaWxsPSJ1cmwoI3BhaW50MF9yYWRpYWxfMzg2MF8xNzgwNikiLz4KPC9nPgo8ZyBmaWx0ZXI9InVybCgjZmlsdGVyMV9kXzM4NjBfMTc4MDYpIj4KPHBhdGggZD0iTTE1LjQyOTMgMTEuMjIzN0MxNC4wOTIgMTQuMDg4NiAxMC4yNjMyIDE3LjU0MDMgNy42NjU5OCAxNy43NzE0QzIuMzM5OTkgMTguOTIyOCAtNS45NDk2IDEzLjY1MjUgLTUuMjQwNTggMTAuMDczM0MtNC41MzE1NiA2LjQ5NDEgMi4yMDY5NiA0Ljc0NTYxIDYuODE5OTkgNC43ODUyNEMxMS40MzMgNC44MjQ4NyAxNi43NjY3IDguMzU4NzkgMTUuNDI5MyAxMS4yMjM3WiIgZmlsbD0idXJsKCNwYWludDFfcmFkaWFsXzM4NjBfMTc4MDYpIi8+CjwvZz4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjJfZF8zODYwXzE3ODA2KSI+CjxwYXRoIGQ9Ik0wLjAzNTQ4MDUgOC4xMTE2NEM2LjAwODAzIDYuNTMyOTUgMTEuMjIgNi4zMDMzNyAxMS44NDIxIDExLjkwMjNDMTIuMzQ2OSAxNi40NDYzIDUuOTk5NCAyMC4xMjU2IDEuNDU1NCAyMC42MzA0Qy0zLjA4ODYxIDIxLjEzNTMgLTUuNjg0NjUgOS42MjM2MSAwLjAzNTQ4MDUgOC4xMTE2NFoiIGZpbGw9InVybCgjcGFpbnQyX3JhZGlhbF8zODYwXzE3ODA2KSIvPgo8L2c+CjwvZz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzM4NjBfMTc4MDYiIHg9Ii00LjQ5ODA1IiB5PSItNS42NDk5IiB3aWR0aD0iMjguMDQxIiBoZWlnaHQ9IjMxLjUwNjMiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeD0iMC4zNzEwOTQiIGR5PSIwLjA3NDIxODciLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41NTY2NCIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuNCAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc4MDYiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzgwNiIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPGZpbHRlciBpZD0iZmlsdGVyMV9kXzM4NjBfMTc4MDYiIHg9Ii02LjAyNTM5IiB5PSIzLjc0NTQ4IiB3aWR0aD0iMjMuMTQ4NCIgaGVpZ2h0PSIxNS4zNzQ2IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzcxMDk0IiBkeT0iMC4wNzQyMTg3Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNTU2NjQiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3ODA2Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc4MDYiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjJfZF8zODYwXzE3ODA2IiB4PSItMy45ODc3OSIgeT0iNi4xMDA5NSIgd2lkdGg9IjE3LjM0MjgiIGhlaWdodD0iMTUuNzMzIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzcxMDk0IiBkeT0iMC4wNzQyMTg3Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNTU2NjQiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3ODA2Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc4MDYiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQwX3JhZGlhbF8zODYwXzE3ODA2IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMzA1OTcgMTEuNjA3MSkgcm90YXRlKC03NS42NTEzKSBzY2FsZSgyNi40MzQgMjYuMDY4NykiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMTM0OEZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA2MjM4RCIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50MV9yYWRpYWxfMzg2MF8xNzgwNiIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4yMzA1NTcgNi4yOTUxMSkgcm90YXRlKDMxLjk4KSBzY2FsZSgyNS4yNzIgNDUuNjQzMikiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDE5NUZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50Ml9yYWRpYWxfMzg2MF8xNzgwNiIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwLjg4MDg4NSAxOS40NTc3KSByb3RhdGUoLTQ2Ljk1NzkpIHNjYWxlKDE5LjQ3MjEgMjYuNzg0KSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMEJCRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDA4QkZGIi8+CjwvcmFkaWFsR3JhZGllbnQ+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMzg2MF8xNzgwNiI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMC4wMDIwNzUyKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Build%20Work%20Zone%2C%20advanced%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Build%20Work%20Zone%2C%20advanced%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/sap-build-work-zone-advanced-edition",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "Discovery Center"
+  },
+  {
+   "value": "https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/commercial-models-and-metering",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/WZ",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "advanced",
+   "displayName": "advanced",
+   "category": "APPLICATION",
+   "description": "Integrate SAP Build Work Zone, advanced edition with other services using APIs. An instance of this service plan is automatically created during onboarding by the 'Get Started with SAP Build Work Zone, Advanced Edition' booster.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Build%20Work%20Zone%2C%20advanced%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Build%20Work%20Zone%2C%20advanced%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/sap-build-work-zone-advanced-edition",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/commercial-models-and-metering",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/docs/WZ",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "Build digital experience solutions.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "advanced",
-      "displayName": "advanced",
-      "category": "APPLICATION",
-      "description": "Integrate SAP Build Work Zone, advanced edition with other services using APIs. An instance of this service plan is automatically created during onboarding by the 'Get Started with SAP Build Work Zone, Advanced Edition' booster.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "Build digital experience solutions.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "EP-WZ"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "EP-WZ-LND"
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "EP-WZ"
+  },
+  {
+   "value": "EP-WZ-LND"
+  }
+ ],
+ "apis": []
 }

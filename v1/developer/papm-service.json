@@ -1,206 +1,206 @@
 {
-  "name": "papm-service",
-  "displayName": "SAP Profitability and Performance Management Cloud",
-  "description": "SAP Profitability and Performance Management Cloud",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0icHJvZml0YWJpbGl0eS1hbmQtcGVyZm9ybWFuY2UtbWFuYWdlbWVudC1jbG91ZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMzUuMTEgMzYuOTkyIDMzLjA0IDM4LjY3MiAzNS4xMSAzOS4yNDIgMzMuMDcgNDAuODkxIDM1LjExIDQxLjQ5MSAyNy43NiA0Ny40NiAyMiA0NS42OSAyMiA0NC4xNjEgMjcuNDMgNDUuODEgMzEuOTYgNDIuMTIxIDMxLjY2IDQyLjAzMSAyNy43NiA0NS4yMSAyMiA0My40NzEgMjIgNDEuOTExIDI3LjQzIDQzLjU2MSAzMS45IDM5LjkzMiAzMS42IDM5Ljg0MiAyNy43NiA0Mi45NjEgMjIgNDEuMjIxIDIyIDM5LjY2MiAyNy40MyA0MS4zMTEgMzEuOSAzNy42ODIgMzEuNiAzNy41OTIgMjcuNzYgNDAuNzQxIDIyIDM4Ljk3MiAyMiAzOC45MTIgMjMuMzggMzcuODMyIDI3LjQzIDM5LjA2MiAzMS45IDM1LjQzMyAyNy43OSAzNC4zNTMgMjkuMjYgMzMuMTgzIDM1LjExIDM0Ljc0MyAzMy4wNCAzNi40MjIgMzUuMTEgMzYuOTkyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjIxLjI4IDMxLjA1NCAxOS43MiAzMi4xOTQgMTUuNzkgMzEuMTQ0IDExLjQ3IDM0LjIwMyAxNS4zMSAzNS4zNzMgMTMuODQgMzYuNDIyIDEyLjE4NSAzNS45NTUgMTEuNDcgMzYuNDUyIDEzLjg0IDM3LjE3MiAxMy44NCAzOC42OTUgMTIuMTMgMzguMTkyIDExLjQ3IDM4LjY3MiAxMy44NCAzOS4zOTIgMTMuODQgNDAuOTgxIDExLjk1IDQwLjQxMiAxMS4zMiA0MC44OTEgMTMuODQgNDEuNjcxIDEzLjg0IDQzLjIzMSA4LjE0IDQxLjQ2MSAxMC4yMSAzOS44NzIgOC4xNCAzOS4yNDIgMTAuMzYgMzcuNjUyIDguMTQgMzYuOTkyIDEwLjM2IDM1LjQwMyA4LjE0IDM0Ljc0MyAxNS40OSAyOS40OTQgMjEuMjggMzEuMDU0Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI5LjI2IDMzLjE4MyAyNy43OSAzNC4zNTMgMjcuMTMgMzQuODYzIDI1LjY2IDM2LjAwMyAyNSAzNi41NDMgMjMuNTYgMzcuNjgyIDIzLjM4IDM3LjgzMiAyMy4xNCAzOC4wMTIgMjIgMzguOTEyIDIyIDQ1LjcyIDEzLjg0IDQzLjIzMSAxMy44NCAzNi40MjIgMTUuMzEgMzUuMzczIDE2Ljc1IDM0LjMyMyAxNy40NyAzMy44MTMgMTkuMDMgMzIuNjczIDE5LjcyIDMyLjE5NCAyMS4yOCAzMS4wNTQgMjkuMjYgMzMuMTgzIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNCw0Ny41MDlBNC41LDQuNSwwLDAsMCw4LjUyLDUybDI1LjEwNS0uMDg3aDEuMTI3YTQuNDg5LDQuNDg5LDAsMCwwLDQuNS00LjQ5MVY0MS40ODZhMi4yMjIsMi4yMjIsMCwwLDEsMi4yMzUtMS44MjZoLjM3NGExLjEzOCwxLjEzOCwwLDEsMCwwLTIuMjc2aC0uMzc0YTIuMjU3LDIuMjU3LDAsMCwxLTIuMjM1LTEuOVYyOS40NTZhNC40MzgsNC40MzgsMCwwLDAtNC41LTQuNDNMOC41MiwyNS4wNTFhNC40OTIsNC40OTIsMCwwLDAtNC41LDQuNDkyWm0yLjI0OSwwVjI5LjU0QTIuMjU4LDIuMjU4LDAsMCwxLDguNTIsMjcuM2wyNS4xMDUtLjA4N2gxLjEyN0EyLjI0NSwyLjI0NSwwLDAsMSwzNywyOS40NTZWMzUuNWE0LjMyNiw0LjMyNiwwLDAsMCwxLjU0NSwzLjAyNEE0LjMxLDQuMzEsMCwwLDAsMzcsNDEuNDg2djUuOTM2YTIuMjQ1LDIuMjQ1LDAsMCwxLTIuMjUsMi4yNDVIMzMuNjI1bC0yNS4xLjA4N0EyLjI2MSwyLjI2MSwwLDAsMSw2LjI0OSw0Ny41MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00OC4yNSwzNC43MTNWMjQuOTA1QTQuNTM1LDQuNTM1LDAsMCwwLDUyLDIwLjQ2Niw0LjQ4Nyw0LjQ4NywwLDAsMCw0Ny41LDE2YTQuMjg1LDQuMjg1LDAsMCwwLTIuMDQuNTFsLTMuNjktNC45MTlBNC41LDQuNSwwLDEsMCwzOC41LDEzYTMuOTksMy45OSwwLDAsMCwyLjA0LS41NGwzLjcyLDQuOTQ5YTMuOTc0LDMuOTc0LDAsMCwwLS45LDEuMzJsLTIxLjM5LTUuMUE0LjQzMSw0LjQzMSwwLDAsMCwyMiwxM2E2LjAzNSw2LjAzNSwwLDEsMC0uMzksMi4xbDIxLjQyLDUuMDY5YTEuMDIxLDEuMDIxLDAsMCwwLS4wMy4zLDQuNTM1LDQuNTM1LDAsMCwwLDMuNzUsNC40Mzl2OS44MDhhMy43NSwzLjc1LDAsMSwwLDEuNSwwWk00MC4zNiw5LjcyOXYuMDNhMi4xLDIuMSwwLDAsMS0xLjIuODcsMS42MTQsMS42MTQsMCwwLDEtLjY2LjExOUEyLjI1LDIuMjUsMCwxLDEsNDAuNzUsOC41LDIuMjE2LDIuMjE2LDAsMCwxLDQwLjM2LDkuNzI5Wk0xOS43NSwxMy4wODhhMy40MjksMy40MjksMCwwLDEtLjM2LDEuNDdBMy43MTQsMy43MTQsMCwxLDEsMTkuNzUsMTNabTI2LjQ5LDkuMjM4YTEuMjc5LDEuMjc5LDAsMCwxLS4zNi0uMzMsMS45MjksMS45MjksMCwwLDEtLjYtMS4yOS42NjEuNjYxLDAsMCwxLS4wMy0uMjQsMS40ODIsMS40ODIsMCwwLDEsLjE1LS43MmMuMDMtLjA5LjAzLS4xOC4wOS0uMjM5YS42LjYsMCwwLDEsLjEyLS4yNHMwLS4wMy4wMywwdi0uMDNhMi4xNSwyLjE1LDAsMCwxLDEuMi0uOWguMDZhMS45MzQsMS45MzQsMCwwLDEsLjYtLjA5LDIuMjQxLDIuMjQxLDAsMCwxLDIuMjUsMi4yMTksMi4xNzksMi4xNzksMCwwLDEtLjY2LDEuNTYuODA5LjgwOSwwLDAsMS0uMjQuMjEsMS42OTIsMS42OTIsMCwwLDEtLjYuMzMsMi4wODksMi4wODksMCwwLDEtLjc1LjE1LDEuNiwxLjYsMCwwLDEtLjc1LS4xNUExLjE0MiwxLjE0MiwwLDAsMSw0Ni4yNCwyMi4zMjZaTTQ3LjUsMzkuODcyYTEuNDg1LDEuNDg1LDAsMCwxLTEuNS0xLjUsMS4yODksMS4yODksMCwwLDEsLjIxLS43NS43NjIuNzYyLDAsMCwxLC4yNC0uMywxLjE3NSwxLjE3NSwwLDAsMSwuMy0uMjRoLjAzYS42NjYuNjY2LDAsMCwxLC4zMy0uMTUsMS41MiwxLjUyLDAsMCwxLC4zOS0uMDYsMS41NTksMS41NTksMCwwLDEsLjc1LjIxLDEuNDk0LDEuNDk0LDAsMCwxLS43NSwyLjc5WiIvPjwvc3ZnPg==",
-  "links": [
+ "name": "papm-service",
+ "displayName": "SAP Profitability and Performance Management Cloud",
+ "description": "SAP Profitability and Performance Management Cloud",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0icHJvZml0YWJpbGl0eS1hbmQtcGVyZm9ybWFuY2UtbWFuYWdlbWVudC1jbG91ZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMzUuMTEgMzYuOTkyIDMzLjA0IDM4LjY3MiAzNS4xMSAzOS4yNDIgMzMuMDcgNDAuODkxIDM1LjExIDQxLjQ5MSAyNy43NiA0Ny40NiAyMiA0NS42OSAyMiA0NC4xNjEgMjcuNDMgNDUuODEgMzEuOTYgNDIuMTIxIDMxLjY2IDQyLjAzMSAyNy43NiA0NS4yMSAyMiA0My40NzEgMjIgNDEuOTExIDI3LjQzIDQzLjU2MSAzMS45IDM5LjkzMiAzMS42IDM5Ljg0MiAyNy43NiA0Mi45NjEgMjIgNDEuMjIxIDIyIDM5LjY2MiAyNy40MyA0MS4zMTEgMzEuOSAzNy42ODIgMzEuNiAzNy41OTIgMjcuNzYgNDAuNzQxIDIyIDM4Ljk3MiAyMiAzOC45MTIgMjMuMzggMzcuODMyIDI3LjQzIDM5LjA2MiAzMS45IDM1LjQzMyAyNy43OSAzNC4zNTMgMjkuMjYgMzMuMTgzIDM1LjExIDM0Ljc0MyAzMy4wNCAzNi40MjIgMzUuMTEgMzYuOTkyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjIxLjI4IDMxLjA1NCAxOS43MiAzMi4xOTQgMTUuNzkgMzEuMTQ0IDExLjQ3IDM0LjIwMyAxNS4zMSAzNS4zNzMgMTMuODQgMzYuNDIyIDEyLjE4NSAzNS45NTUgMTEuNDcgMzYuNDUyIDEzLjg0IDM3LjE3MiAxMy44NCAzOC42OTUgMTIuMTMgMzguMTkyIDExLjQ3IDM4LjY3MiAxMy44NCAzOS4zOTIgMTMuODQgNDAuOTgxIDExLjk1IDQwLjQxMiAxMS4zMiA0MC44OTEgMTMuODQgNDEuNjcxIDEzLjg0IDQzLjIzMSA4LjE0IDQxLjQ2MSAxMC4yMSAzOS44NzIgOC4xNCAzOS4yNDIgMTAuMzYgMzcuNjUyIDguMTQgMzYuOTkyIDEwLjM2IDM1LjQwMyA4LjE0IDM0Ljc0MyAxNS40OSAyOS40OTQgMjEuMjggMzEuMDU0Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI5LjI2IDMzLjE4MyAyNy43OSAzNC4zNTMgMjcuMTMgMzQuODYzIDI1LjY2IDM2LjAwMyAyNSAzNi41NDMgMjMuNTYgMzcuNjgyIDIzLjM4IDM3LjgzMiAyMy4xNCAzOC4wMTIgMjIgMzguOTEyIDIyIDQ1LjcyIDEzLjg0IDQzLjIzMSAxMy44NCAzNi40MjIgMTUuMzEgMzUuMzczIDE2Ljc1IDM0LjMyMyAxNy40NyAzMy44MTMgMTkuMDMgMzIuNjczIDE5LjcyIDMyLjE5NCAyMS4yOCAzMS4wNTQgMjkuMjYgMzMuMTgzIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNCw0Ny41MDlBNC41LDQuNSwwLDAsMCw4LjUyLDUybDI1LjEwNS0uMDg3aDEuMTI3YTQuNDg5LDQuNDg5LDAsMCwwLDQuNS00LjQ5MVY0MS40ODZhMi4yMjIsMi4yMjIsMCwwLDEsMi4yMzUtMS44MjZoLjM3NGExLjEzOCwxLjEzOCwwLDEsMCwwLTIuMjc2aC0uMzc0YTIuMjU3LDIuMjU3LDAsMCwxLTIuMjM1LTEuOVYyOS40NTZhNC40MzgsNC40MzgsMCwwLDAtNC41LTQuNDNMOC41MiwyNS4wNTFhNC40OTIsNC40OTIsMCwwLDAtNC41LDQuNDkyWm0yLjI0OSwwVjI5LjU0QTIuMjU4LDIuMjU4LDAsMCwxLDguNTIsMjcuM2wyNS4xMDUtLjA4N2gxLjEyN0EyLjI0NSwyLjI0NSwwLDAsMSwzNywyOS40NTZWMzUuNWE0LjMyNiw0LjMyNiwwLDAsMCwxLjU0NSwzLjAyNEE0LjMxLDQuMzEsMCwwLDAsMzcsNDEuNDg2djUuOTM2YTIuMjQ1LDIuMjQ1LDAsMCwxLTIuMjUsMi4yNDVIMzMuNjI1bC0yNS4xLjA4N0EyLjI2MSwyLjI2MSwwLDAsMSw2LjI0OSw0Ny41MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00OC4yNSwzNC43MTNWMjQuOTA1QTQuNTM1LDQuNTM1LDAsMCwwLDUyLDIwLjQ2Niw0LjQ4Nyw0LjQ4NywwLDAsMCw0Ny41LDE2YTQuMjg1LDQuMjg1LDAsMCwwLTIuMDQuNTFsLTMuNjktNC45MTlBNC41LDQuNSwwLDEsMCwzOC41LDEzYTMuOTksMy45OSwwLDAsMCwyLjA0LS41NGwzLjcyLDQuOTQ5YTMuOTc0LDMuOTc0LDAsMCwwLS45LDEuMzJsLTIxLjM5LTUuMUE0LjQzMSw0LjQzMSwwLDAsMCwyMiwxM2E2LjAzNSw2LjAzNSwwLDEsMC0uMzksMi4xbDIxLjQyLDUuMDY5YTEuMDIxLDEuMDIxLDAsMCwwLS4wMy4zLDQuNTM1LDQuNTM1LDAsMCwwLDMuNzUsNC40Mzl2OS44MDhhMy43NSwzLjc1LDAsMSwwLDEuNSwwWk00MC4zNiw5LjcyOXYuMDNhMi4xLDIuMSwwLDAsMS0xLjIuODcsMS42MTQsMS42MTQsMCwwLDEtLjY2LjExOUEyLjI1LDIuMjUsMCwxLDEsNDAuNzUsOC41LDIuMjE2LDIuMjE2LDAsMCwxLDQwLjM2LDkuNzI5Wk0xOS43NSwxMy4wODhhMy40MjksMy40MjksMCwwLDEtLjM2LDEuNDdBMy43MTQsMy43MTQsMCwxLDEsMTkuNzUsMTNabTI2LjQ5LDkuMjM4YTEuMjc5LDEuMjc5LDAsMCwxLS4zNi0uMzMsMS45MjksMS45MjksMCwwLDEtLjYtMS4yOS42NjEuNjYxLDAsMCwxLS4wMy0uMjQsMS40ODIsMS40ODIsMCwwLDEsLjE1LS43MmMuMDMtLjA5LjAzLS4xOC4wOS0uMjM5YS42LjYsMCwwLDEsLjEyLS4yNHMwLS4wMy4wMywwdi0uMDNhMi4xNSwyLjE1LDAsMCwxLDEuMi0uOWguMDZhMS45MzQsMS45MzQsMCwwLDEsLjYtLjA5LDIuMjQxLDIuMjQxLDAsMCwxLDIuMjUsMi4yMTksMi4xNzksMi4xNzksMCwwLDEtLjY2LDEuNTYuODA5LjgwOSwwLDAsMS0uMjQuMjEsMS42OTIsMS42OTIsMCwwLDEtLjYuMzMsMi4wODksMi4wODksMCwwLDEtLjc1LjE1LDEuNiwxLjYsMCwwLDEtLjc1LS4xNUExLjE0MiwxLjE0MiwwLDAsMSw0Ni4yNCwyMi4zMjZaTTQ3LjUsMzkuODcyYTEuNDg1LDEuNDg1LDAsMCwxLTEuNS0xLjUsMS4yODksMS4yODksMCwwLDEsLjIxLS43NS43NjIuNzYyLDAsMCwxLC4yNC0uMywxLjE3NSwxLjE3NSwwLDAsMSwuMy0uMjRoLjAzYS42NjYuNjY2LDAsMCwxLC4zMy0uMTUsMS41MiwxLjUyLDAsMCwxLC4zOS0uMDYsMS41NTksMS41NTksMCwwLDEsLjc1LjIxLDEuNDk0LDEuNDk0LDAsMCwxLS43NSwyLjc5WiIvPjwvc3ZnPg==",
+ "links": [
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_PROFITABILITY_PERFORMANCE_MANAGEMENT_CLOUD/1.0/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Default service access",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/viewer/product/SAP_PROFITABILITY_PERFORMANCE_MANAGEMENT_CLOUD/1.0/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    }
-  ],
-  "servicePlans": [
-    {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Default service access",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "workbook",
-      "displayName": "workbook",
-      "category": "SERVICE",
-      "description": "Workbook calculation service",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  },
+  {
+   "name": "workbook",
+   "displayName": "workbook",
+   "category": "SERVICE",
+   "description": "Workbook calculation service",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

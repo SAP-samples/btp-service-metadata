@@ -1,41 +1,41 @@
 {
-  "name": "sap-intelligent-agriculture-api",
-  "displayName": "SAP Intelligent Agriculture",
-  "description": "SAP Intelligent Agriculture",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ZqknK8ECOiRy248GVMG2y55ODf8Rzx2-5WXP8bRnUc12a29ss0u_5Wzbp5mUTTbA.png",
-  "servicePlans": [
+ "name": "sap-intelligent-agriculture-api",
+ "displayName": "SAP Intelligent Agriculture",
+ "description": "SAP Intelligent Agriculture",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ZqknK8ECOiRy248GVMG2y55ODf8Rzx2-5WXP8bRnUc12a29ss0u_5Wzbp5mUTTbA.png",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard plan to consume SAP Intelligent Agriculture APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard plan to consume SAP Intelligent Agriculture APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012345",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017671",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012345",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017671",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

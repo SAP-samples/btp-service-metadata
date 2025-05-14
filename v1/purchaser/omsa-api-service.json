@@ -1,173 +1,173 @@
 {
-  "name": "omsa-api-service",
-  "displayName": "SAP Order Management for Sourcing and Availability",
-  "description": "SAP Order Management for Sourcing and Availability",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
-  "servicePlans": [
+ "name": "omsa-api-service",
+ "displayName": "SAP Order Management for Sourcing and Availability",
+ "description": "SAP Order Management for Sourcing and Availability",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+ "servicePlans": [
+  {
+   "name": "client-capacity",
+   "displayName": "client-capacity",
+   "category": "SERVICE",
+   "description": "For accessing the Site Capacity APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "client-capacity",
-      "displayName": "client-capacity",
-      "category": "SERVICE",
-      "description": "For accessing the Site Capacity APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012655",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017273",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "name": "client-unprocessed-sales",
-      "displayName": "client-unprocessed-sales",
-      "category": "SERVICE",
-      "description": "For accessing the Unprocessed Sales APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012655",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017273",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "client-webshop",
-      "displayName": "client-webshop",
-      "category": "SERVICE",
-      "description": "For accessing Sourcing, Reservation, and Availability to Sell by Site APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012655",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017273",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "custom",
-      "displayName": "custom",
-      "category": "SERVICE",
-      "description": "Plan to define an own set of scopes",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012655",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017273",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "API Default plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012655",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017273",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "tandd",
-      "displayName": "tandd",
-      "category": "SERVICE",
-      "description": "API tandd plan is intended to be used for Test, Demo & Development purposes for partners.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8017273",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012655",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017273",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "client-unprocessed-sales",
+   "displayName": "client-unprocessed-sales",
+   "category": "SERVICE",
+   "description": "For accessing the Unprocessed Sales APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012655",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017273",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "client-webshop",
+   "displayName": "client-webshop",
+   "category": "SERVICE",
+   "description": "For accessing Sourcing, Reservation, and Availability to Sell by Site APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012655",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017273",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "custom",
+   "displayName": "custom",
+   "category": "SERVICE",
+   "description": "Plan to define an own set of scopes",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012655",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017273",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "API Default plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012655",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017273",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "tandd",
+   "displayName": "tandd",
+   "category": "SERVICE",
+   "description": "API tandd plan is intended to be used for Test, Demo & Development purposes for partners.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8017273",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

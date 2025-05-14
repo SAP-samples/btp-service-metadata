@@ -1,65 +1,65 @@
 {
-  "name": "digital-manufacturing-services",
-  "displayName": "SAP Digital Manufacturing",
-  "description": "SAP Digital Manufacturing",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ARf8tsfIsgcXYytwgZ9WbbGIorAvccpHF8Ps57Th5JYRc-XGUr1z3ttn7p7DwwvZ.svg",
-  "servicePlans": [
+ "name": "digital-manufacturing-services",
+ "displayName": "SAP Digital Manufacturing",
+ "description": "SAP Digital Manufacturing",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ARf8tsfIsgcXYytwgZ9WbbGIorAvccpHF8Ps57Th5JYRc-XGUr1z3ttn7p7DwwvZ.svg",
+ "servicePlans": [
+  {
+   "name": "execution",
+   "displayName": "execution",
+   "category": "SERVICE",
+   "description": "Digital Manufacturing Services for Execution plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "execution",
-      "displayName": "execution",
-      "category": "SERVICE",
-      "description": "Digital Manufacturing Services for Execution plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8006143",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008938",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017193",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "name": "reo",
-      "displayName": "reo",
-      "category": "SERVICE",
-      "description": "SAP Digital Manufacturing for resource orchestration plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008940",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8006143",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008938",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017193",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "reo",
+   "displayName": "reo",
+   "category": "SERVICE",
+   "description": "SAP Digital Manufacturing for resource orchestration plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008940",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

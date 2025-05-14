@@ -1,29 +1,29 @@
 {
-  "name": "people-insights-release",
-  "displayName": "SAP Work-Life Release",
-  "description": "SAP Work-Life Release",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "people-insights-release",
+ "displayName": "SAP Work-Life Release",
+ "description": "SAP Work-Life Release",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "SAP Work-Life",
+   "category": "APPLICATION",
+   "description": "SAP Work-Life",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "SAP Work-Life",
-      "category": "APPLICATION",
-      "description": "SAP Work-Life",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

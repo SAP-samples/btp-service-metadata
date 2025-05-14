@@ -1,29 +1,29 @@
 {
-  "name": "valery_test",
-  "displayName": "Valery Test",
-  "description": "Valery Test",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "valery_test",
+ "displayName": "Valery Test",
+ "description": "Valery Test",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "APPLICATION",
+   "description": "standard",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "APPLICATION",
-      "description": "standard",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

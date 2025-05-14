@@ -1,29 +1,29 @@
 {
-  "name": "csi-tlogcollector-receiver-SAP",
-  "displayName": "Consumer Sales Intelligence TLOG Collector & Receiver",
-  "description": "Consumer Sales Intelligence TLOG Collector & Receiver",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "csi-tlogcollector-receiver-SAP",
+ "displayName": "Consumer Sales Intelligence TLOG Collector & Receiver",
+ "description": "Consumer Sales Intelligence TLOG Collector & Receiver",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Consumer Sales Intelligence TLOG Collector & Receiver",
+   "category": "SERVICE",
+   "description": "Consumer Sales Intelligence TLOG Collector & Receiver",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Consumer Sales Intelligence TLOG Collector & Receiver",
-      "category": "SERVICE",
-      "description": "Consumer Sales Intelligence TLOG Collector & Receiver",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

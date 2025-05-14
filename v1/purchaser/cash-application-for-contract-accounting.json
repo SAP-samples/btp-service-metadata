@@ -1,77 +1,77 @@
 {
-  "name": "cash-application-for-contract-accounting",
-  "displayName": "SAP Cash Application, add-on for contract accounting",
-  "description": "Cash Application, add-on for contract accounting",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zGREa-Z_eU5-mzjwdxgGoWUccEvanzAWzjEvHR3nB-dau06SOUZ7PaUWNVfjIQw5.svg",
-  "servicePlans": [
+ "name": "cash-application-for-contract-accounting",
+ "displayName": "SAP Cash Application, add-on for contract accounting",
+ "description": "Cash Application, add-on for contract accounting",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zGREa-Z_eU5-mzjwdxgGoWUccEvanzAWzjEvHR3nB-dau06SOUZ7PaUWNVfjIQw5.svg",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard Plan includes all finance closing features.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard Plan includes all finance closing features.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008797",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016461",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016532",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018145",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018592",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018915",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019164",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019241",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019458",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008797",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016461",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016532",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018145",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018592",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018915",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019164",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019241",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019458",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

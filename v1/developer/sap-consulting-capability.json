@@ -1,33 +1,33 @@
 {
-  "name": "sap-consulting-capability",
-  "displayName": "SAP Consulting Capability",
-  "description": "SAP Consulting Capability",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "sap-consulting-capability",
+ "displayName": "SAP Consulting Capability",
+ "description": "SAP Consulting Capability",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "standard-eac",
+   "displayName": "Standard-EAC",
+   "category": "APPLICATION",
+   "description": "Standard plan for early access (deprecated)",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": true,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard-eac",
-      "displayName": "Standard-EAC",
-      "category": "APPLICATION",
-      "description": "Standard plan for early access (deprecated)",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": true,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

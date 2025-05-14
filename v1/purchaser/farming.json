@@ -1,41 +1,41 @@
 {
-  "name": "farming",
-  "displayName": "SAP Intelligent Agriculture",
-  "description": "SAP Intelligent Agriculture",
-  "icon": "Icon too big. Service owner needs to reduce size.",
-  "servicePlans": [
+ "name": "farming",
+ "displayName": "SAP Intelligent Agriculture",
+ "description": "SAP Intelligent Agriculture",
+ "icon": "Icon too big. Service owner needs to reduce size.",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "The standard plan includes the full SAP Intelligent Agriculture solution",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "The standard plan includes the full SAP Intelligent Agriculture solution",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012345",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017671",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012345",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017671",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

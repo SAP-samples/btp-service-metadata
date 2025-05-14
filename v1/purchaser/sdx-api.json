@@ -1,45 +1,45 @@
 {
-  "name": "sdx-api",
-  "displayName": "SAP Sustainability Data Exchange",
-  "description": "SAP Sustainability Data Exchange",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
-  "servicePlans": [
+ "name": "sdx-api",
+ "displayName": "SAP Sustainability Data Exchange",
+ "description": "SAP Sustainability Data Exchange",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "Provides API access to SAP Sustainability Data Exchange application.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "Provides API access to SAP Sustainability Data Exchange application.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8017113",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017142",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019122",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019455",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019755",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu30",
+     "name": "cf-eu30"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8017113",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017142",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019122",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019455",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019755",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

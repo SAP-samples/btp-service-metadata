@@ -1,85 +1,85 @@
 {
-  "name": "dvh-prod",
-  "displayName": "SAP Digital Vehicle Hub",
-  "description": "SAP Digital Vehicle Hub",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/CQ1JRFmUwVki5OBwtPQa8aCFoXoHqloPlAi5Khp431Ujy-5XRvkGqBgy4dWSJBNW.svg",
-  "servicePlans": [
+ "name": "dvh-prod",
+ "displayName": "SAP Digital Vehicle Hub",
+ "description": "SAP Digital Vehicle Hub",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/CQ1JRFmUwVki5OBwtPQa8aCFoXoHqloPlAi5Khp431Ujy-5XRvkGqBgy4dWSJBNW.svg",
+ "servicePlans": [
+  {
+   "name": "authorization-controlled",
+   "displayName": "authorization-controlled",
+   "category": "SERVICE",
+   "description": "This is a plan to support scenarios with limited access to users (by restricting selective role assignments per user/user group) to SAP Digital Vehicle Hub data via API",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "authorization-controlled",
-      "displayName": "authorization-controlled",
-      "category": "SERVICE",
-      "description": "This is a plan to support scenarios with limited access to users (by restricting selective role assignments per user/user group) to SAP Digital Vehicle Hub data via API",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8007135",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008442",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010827",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010958",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014921",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8007135",
+     "commercialModel": "Subscription"
     },
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "This is a plan to support all scenarios to users to SAP Digital Vehicle Hub data via API",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8007135",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008442",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008443",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008444",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010827",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014921",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "materialNumber": "8008442",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010827",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010958",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014921",
+     "commercialModel": "Subscription"
     }
-  ],
-  "certifications": []
+   ]
+  },
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "This is a plan to support all scenarios to users to SAP Digital Vehicle Hub data via API",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8007135",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008442",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008443",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008444",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010827",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014921",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

@@ -1,257 +1,257 @@
 {
-  "name": "personal-data-manager-service",
-  "displayName": "Personal Data Manager",
-  "description": "Personal Data Manager",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jGHwckmzkyFfNICjAbczZr74akoRiaTsIBqrnMLSMG6Lb2qgjO_nmOMETRVPtq2G.svg",
-  "servicePlans": [
+ "name": "personal-data-manager-service",
+ "displayName": "Personal Data Manager",
+ "description": "Personal Data Manager",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/jGHwckmzkyFfNICjAbczZr74akoRiaTsIBqrnMLSMG6Lb2qgjO_nmOMETRVPtq2G.svg",
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "SERVICE",
+   "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "SERVICE",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011149",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard Plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005307",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005350",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8006140",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007133",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007215",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007217",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007227",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007828",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008821",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008848",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008851",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009213",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011426",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012527",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015495",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011149",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard Plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005307",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005350",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8006140",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007133",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007215",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007217",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007227",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007828",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008821",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008848",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008851",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009213",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011426",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012527",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015495",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "ProdDummy19",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

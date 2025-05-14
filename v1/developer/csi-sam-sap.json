@@ -1,29 +1,29 @@
 {
-  "name": "csi-sam-SAP",
-  "displayName": "Consumer Sales Intelligence Sales Audit Manager",
-  "description": "Consumer Sales Intelligence Sales Audit Manager",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "csi-sam-SAP",
+ "displayName": "Consumer Sales Intelligence Sales Audit Manager",
+ "description": "Consumer Sales Intelligence Sales Audit Manager",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Consumer Sales Intelligence Sales Audit Manager",
+   "category": "APPLICATION",
+   "description": "Consumer Sales Intelligence Sales Audit Manager",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Consumer Sales Intelligence Sales Audit Manager",
-      "category": "APPLICATION",
-      "description": "Consumer Sales Intelligence Sales Audit Manager",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

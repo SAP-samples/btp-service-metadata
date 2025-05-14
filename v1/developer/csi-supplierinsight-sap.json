@@ -1,29 +1,29 @@
 {
-  "name": "csi-supplierinsight-SAP",
-  "displayName": "Consumer Sales Intelligence Supplier Direct Inventory Data",
-  "description": "Consumer Sales Intelligence Supplier Direct Inventory Data",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "csi-supplierinsight-SAP",
+ "displayName": "Consumer Sales Intelligence Supplier Direct Inventory Data",
+ "description": "Consumer Sales Intelligence Supplier Direct Inventory Data",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard plan",
+   "category": "SERVICE",
+   "description": "Standard plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard plan",
-      "category": "SERVICE",
-      "description": "Standard plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

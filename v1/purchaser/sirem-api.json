@@ -1,57 +1,57 @@
 {
-  "name": "sirem-api",
-  "displayName": "SAP Cloud for Real Estate",
-  "description": "SAP Cloud for Real Estate",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/79MS2Ck3s3iGFKQ_FnjDPp8J0cnc-aZF8eOwce9qtdgPjf7H_8pcWoJRWYPbZIes.svg",
-  "servicePlans": [
+ "name": "sirem-api",
+ "displayName": "SAP Cloud for Real Estate",
+ "description": "SAP Cloud for Real Estate",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/79MS2Ck3s3iGFKQ_FnjDPp8J0cnc-aZF8eOwce9qtdgPjf7H_8pcWoJRWYPbZIes.svg",
+ "servicePlans": [
+  {
+   "name": "read",
+   "displayName": "Read only",
+   "category": "SERVICE",
+   "description": "Read only access to SAP Cloud for Real Estate's business APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "read",
-      "displayName": "Read only",
-      "category": "SERVICE",
-      "description": "Read only access to SAP Cloud for Real Estate's business APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8009206",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010890",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8009206",
+     "commercialModel": "Subscription"
     },
     {
-      "name": "readwrite",
-      "displayName": "Read & Write",
-      "category": "SERVICE",
-      "description": "Read and write access to SAP Cloud for Real Estate's business APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8009206",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010890",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "materialNumber": "8010890",
+     "commercialModel": "Subscription"
     }
-  ],
-  "certifications": []
+   ]
+  },
+  {
+   "name": "readwrite",
+   "displayName": "Read & Write",
+   "category": "SERVICE",
+   "description": "Read and write access to SAP Cloud for Real Estate's business APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8009206",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010890",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

@@ -1,265 +1,265 @@
 {
-  "name": "IRPA",
-  "displayName": "SAP Intelligent Robotic Process Automation",
-  "description": "SAP Intelligent Robotic Process Automation",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zQJLeoFsMDqnO-7-CrcXzobF9BuWRX0e1M48iaTIubPupUFQp3dFGSCfsq3eBVDL.svg",
-  "links": [
+ "name": "IRPA",
+ "displayName": "SAP Intelligent Robotic Process Automation",
+ "description": "SAP Intelligent Robotic Process Automation",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zQJLeoFsMDqnO-7-CrcXzobF9BuWRX0e1M48iaTIubPupUFQp3dFGSCfsq3eBVDL.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPIntelligentRoboticProcessAutomation/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Intelligent Robotic Process Automation | SAP API Business Hub"
+  },
+  {
+   "value": "https://help.sap.com/doc/7d0be7dad2854adb9e7f6d440254d090/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/IRPA/7d11fd4eb21e43309b8cff7033d23699/b559fbf2bec945299bce8598c1077f2e.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://community.sap.com/topics/intelligent-rpa",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Intelligent Robotic Process Automation Community"
+  },
+  {
+   "value": "https://irpa.store.sap.com/#/explore/order=last-updated%2Cdesc",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "SAP Intelligent RPA Store"
+  },
+  {
+   "value": "https://help.sap.com/viewer/6b9c8e86a0be43539b670de962834562/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Installation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/8ecea00c1f854fd0a433c4aef5da1ea2/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Desktop Studio Developer Guide"
+  },
+  {
+   "value": "https://help.sap.com/viewer/c836fab4182e45548b6c6c6d0d0a9146/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Factory User Guide"
+  },
+  {
+   "value": "https://help.sap.com/docs/IRPA",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/whats-new/a42e454619d84f1eb9867713e5d57b4d",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+   "classification": "Legal",
+   "type": "Link",
+   "text": "Legal"
+  },
+  {
+   "value": "https://www.youtube.com/embed/9wjBgFePoYk",
+   "classification": "External",
+   "type": "Link",
+   "text": "https://www.youtube.com/embed/9wjBgFePoYk"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "concurrent",
+   "displayName": "Concurrent",
+   "category": "APPLICATION",
+   "description": "Design, configure, and execute automation projects",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPIntelligentRoboticProcessAutomation/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Intelligent Robotic Process Automation | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://help.sap.com/doc/7d0be7dad2854adb9e7f6d440254d090/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/docs/IRPA/7d11fd4eb21e43309b8cff7033d23699/b559fbf2bec945299bce8598c1077f2e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://community.sap.com/topics/intelligent-rpa",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Intelligent Robotic Process Automation Community"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://irpa.store.sap.com/#/explore/order=last-updated%2Cdesc",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "SAP Intelligent RPA Store"
-    },
-    {
-      "value": "https://help.sap.com/viewer/6b9c8e86a0be43539b670de962834562/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Installation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/8ecea00c1f854fd0a433c4aef5da1ea2/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Desktop Studio Developer Guide"
-    },
-    {
-      "value": "https://help.sap.com/viewer/c836fab4182e45548b6c6c6d0d0a9146/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Factory User Guide"
-    },
-    {
-      "value": "https://help.sap.com/docs/IRPA",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://help.sap.com/whats-new/a42e454619d84f1eb9867713e5d57b4d",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
-    },
-    {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
-    },
-    {
-      "value": "https://www.youtube.com/embed/9wjBgFePoYk",
-      "classification": "External",
-      "type": "Link",
-      "text": "https://www.youtube.com/embed/9wjBgFePoYk"
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "concurrent-attended",
+   "displayName": "concurrent-attended",
+   "category": "SERVICE",
+   "description": "Number of concurrent attended runs (in blocks of 10)",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "concurrent",
-      "displayName": "Concurrent",
-      "category": "APPLICATION",
-      "description": "Design, configure, and execute automation projects",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "concurrent-attended",
-      "displayName": "concurrent-attended",
-      "category": "SERVICE",
-      "description": "Number of concurrent attended runs (in blocks of 10)",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "concurrent-unattended",
-      "displayName": "concurrent-unattended",
-      "category": "SERVICE",
-      "description": "Number of concurrent unattended runs (in blocks of 1)",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "APPLICATION",
-      "description": "Default application plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "name": "free",
-      "displayName": "Free",
-      "category": "APPLICATION",
-      "description": "Design, configure, and execute automation projects (free edition). Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "supportComponents": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "concurrent-unattended",
+   "displayName": "concurrent-unattended",
+   "category": "SERVICE",
+   "description": "Number of concurrent unattended runs (in blocks of 1)",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "CA-ML-IPA"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Monitoring",
-      "url": "https://api.sap.com/api/monitoring_api/overview",
-      "apiType": "RESTful"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "Runtime Bot Discovery and Execution",
-      "url": "https://api.sap.com/api/runtime_api/overview",
-      "apiType": "RESTful"
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ]
+   ],
+   "schemas": null
+  },
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "APPLICATION",
+   "description": "Default application plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "free",
+   "displayName": "Free",
+   "category": "APPLICATION",
+   "description": "Design, configure, and execute automation projects (free edition). Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-ML-IPA"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Monitoring",
+   "url": "https://api.sap.com/api/monitoring_api/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Runtime Bot Discovery and Execution",
+   "url": "https://api.sap.com/api/runtime_api/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

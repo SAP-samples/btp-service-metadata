@@ -1,202 +1,202 @@
 {
-  "name": "service-ticket-intelligence",
-  "displayName": "Service Ticket Intelligence",
-  "description": "Service Ticket Intelligence",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/RnNugZsLUT7jO3rJ_Tzg5Wyke2CFFH7GLNRwOqwgIvegMXaeLy9VYd_UgD6HjxXv.svg",
-  "links": [
+ "name": "service-ticket-intelligence",
+ "displayName": "Service Ticket Intelligence",
+ "description": "Service Ticket Intelligence",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/RnNugZsLUT7jO3rJ_Tzg5Wyke2CFFH7GLNRwOqwgIvegMXaeLy9VYd_UgD6HjxXv.svg",
+ "links": [
+  {
+   "value": "https://developers.sap.com/mission.cp-aibus-sti-service-requests.html",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Use Machine Learning to Process Service Requests"
+  },
+  {
+   "value": "https://community.sap.com/topics/service-ticket-intelligence",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Topic Page"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/service-ticket-intelligence",
+   "classification": "External",
+   "type": "Link",
+   "text": "External"
+  },
+  {
+   "value": "https://help.sap.com/doc/9339d4045988460d955b1a09f22d3c09/SHIP/en-US/Feature_Scope_Description_EN.pdf",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/2f0e49ac91c24d54acb694d967e0cfc0.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What Is Service Ticket Intelligence?"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/4fbe20662df24b66b798deb7e81781b5.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/82e2f597a179421296edcf46931131b6.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Monitoring and Troubleshooting"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/84cd88025efd4812ad7454a9e1a799e0.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Integrating with SAP CRM On-Premise"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/a029ae39ae0c455b8f30d603253eb095.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/cb422d6436504ad2b6efabd0945f6654.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "API Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/fc597030d6cc4fde98197189f7676046.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://help.sap.com/stint",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/934ccff77ddb4fa2bf268a0085984db0/LATEST/en-US/76a77fbf8d3645978d98711450f0b8bc.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SERVICE_TICKET_INTELLIGENCE",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://www.youtube.com/embed/Tx7jBawli64",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP AI Business Services - Service Ticket Intelligence Categories and Similar Tickets"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "blocks_of_100",
+   "displayName": "blocks_of_100",
+   "category": "SERVICE",
+   "description": "Blocks of 100 plan for Service Ticket Intelligence",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://developers.sap.com/mission.cp-aibus-sti-service-requests.html",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Use Machine Learning to Process Service Requests"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/topics/service-ticket-intelligence",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Topic Page"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/service-ticket-intelligence",
-      "classification": "External",
-      "type": "Link",
-      "text": "External"
+     "region": "us10",
+     "name": "cf-us10"
     },
     {
-      "value": "https://help.sap.com/doc/9339d4045988460d955b1a09f22d3c09/SHIP/en-US/Feature_Scope_Description_EN.pdf",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/2f0e49ac91c24d54acb694d967e0cfc0.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What Is Service Ticket Intelligence?"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/4fbe20662df24b66b798deb7e81781b5.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/82e2f597a179421296edcf46931131b6.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Monitoring and Troubleshooting"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/84cd88025efd4812ad7454a9e1a799e0.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Integrating with SAP CRM On-Premise"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/a029ae39ae0c455b8f30d603253eb095.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/cb422d6436504ad2b6efabd0945f6654.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/SERVICE_TICKET_INTELLIGENCE/934ccff77ddb4fa2bf268a0085984db0/fc597030d6cc4fde98197189f7676046.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
-    },
-    {
-      "value": "https://help.sap.com/stint",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/934ccff77ddb4fa2bf268a0085984db0/LATEST/en-US/76a77fbf8d3645978d98711450f0b8bc.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SERVICE_TICKET_INTELLIGENCE",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://www.youtube.com/embed/Tx7jBawli64",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP AI Business Services - Service Ticket Intelligence Categories and Similar Tickets"
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "free",
+   "displayName": "Free",
+   "category": "SERVICE",
+   "description": "Free plan for Service Ticket Intelligence",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "blocks_of_100",
-      "displayName": "blocks_of_100",
-      "category": "SERVICE",
-      "description": "Blocks of 100 plan for Service Ticket Intelligence",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "free",
-      "displayName": "Free",
-      "category": "SERVICE",
-      "description": "Free plan for Service Ticket Intelligence",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Default Plan for Service Ticket Intelligence",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
+     "region": "us10",
+     "name": "cf-us10"
+    },
     {
-      "value": "CA-ML-STI"
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "apis": []
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Default Plan for Service Ticket Intelligence",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-ML-STI"
+  }
+ ],
+ "apis": []
 }

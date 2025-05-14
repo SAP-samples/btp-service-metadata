@@ -1,139 +1,139 @@
 {
-  "name": "nfe",
-  "displayName": "SAP Document and Reporting Compliance outbound nota fiscal",
-  "description": "SAP Document and Reporting Compliance outbound nota fiscal",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/6f6DBQYQuhhmoZV_hPqxeD5MKhomnwEdfjDE-_t47BCpQW6DwDScuVpHB07dvJkz.svg",
-  "links": [
+ "name": "nfe",
+ "displayName": "SAP Document and Reporting Compliance outbound nota fiscal",
+ "description": "SAP Document and Reporting Compliance outbound nota fiscal",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/6f6DBQYQuhhmoZV_hPqxeD5MKhomnwEdfjDE-_t47BCpQW6DwDScuVpHB07dvJkz.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/NFEAPIS/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Document and Reporting Compliance Outbound Invoicing Option for Brazil | SAP API Business Hub"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/71b3b178e5cb4a50a88cf2985a14f17c/bcd60cb0576f41afb1422471485651ad.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SLH_NFe/",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SLH_NFe/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "Outbound invoicing option for Brazil Standard",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/NFEAPIS/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Document and Reporting Compliance Outbound Invoicing Option for Brazil | SAP API Business Hub"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/71b3b178e5cb4a50a88cf2985a14f17c/bcd60cb0576f41afb1422471485651ad.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SLH_NFe/",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SLH_NFe/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br10",
+     "name": "cf-br10"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "Outbound invoicing option for Brazil Standard",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "LOD-LH-NFE"
-    }
-  ],
-  "apis": [
-    {
-      "name": "CTe Authorize",
-      "url": "https://api.sap.com/api/cte_authorize/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "CTe Event",
-      "url": "https://api.sap.com/api/cte_event/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Transportation Document (CTe) Skipping",
-      "url": "https://api.sap.com/api/cte_skipping/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Distribution Service",
-      "url": "https://api.sap.com/api/distribution_service/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Document Orchestrator",
-      "url": "https://api.sap.com/api/electronic_document_orchestrator/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Document Partner Connector",
-      "url": "https://api.sap.com/api/electronic_document_partner_connector/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Manifest of Tax Documents (MDFe) Authorize",
-      "url": "https://api.sap.com/api/mdfe_authorize/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Manifest of Tax Documents (MDFe) Event",
-      "url": "https://api.sap.com/api/mdfe_event/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Nota Fiscal (NFe) Admin",
-      "url": "https://api.sap.com/api/nfe_admin/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Nota Fiscal (NFe) Authorize",
-      "url": "https://api.sap.com/api/nfe_authorize/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Nota Fiscal (NFe) Event",
-      "url": "https://api.sap.com/api/nfe_event/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Nota Fiscal (NFe) Inbound Simple",
-      "url": "https://api.sap.com/api/nfe_inbound_simple/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Nota Fiscal (NFe) Status Service Old",
-      "url": "https://api.sap.com/api/nfe_status_service/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Electronic Service Nota Fiscal (NFSe)",
-      "url": "https://api.sap.com/api/nfse/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "PDF Service",
-      "url": "https://api.sap.com/api/pdf_service/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Download Electronic Documents",
-      "url": "https://api.sap.com/api/storage_manager/overview",
-      "apiType": "RESTful"
-    }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "LOD-LH-NFE"
+  }
+ ],
+ "apis": [
+  {
+   "name": "CTe Authorize",
+   "url": "https://api.sap.com/api/cte_authorize/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "CTe Event",
+   "url": "https://api.sap.com/api/cte_event/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Transportation Document (CTe) Skipping",
+   "url": "https://api.sap.com/api/cte_skipping/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Distribution Service",
+   "url": "https://api.sap.com/api/distribution_service/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Document Orchestrator",
+   "url": "https://api.sap.com/api/electronic_document_orchestrator/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Document Partner Connector",
+   "url": "https://api.sap.com/api/electronic_document_partner_connector/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Manifest of Tax Documents (MDFe) Authorize",
+   "url": "https://api.sap.com/api/mdfe_authorize/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Manifest of Tax Documents (MDFe) Event",
+   "url": "https://api.sap.com/api/mdfe_event/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Nota Fiscal (NFe) Admin",
+   "url": "https://api.sap.com/api/nfe_admin/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Nota Fiscal (NFe) Authorize",
+   "url": "https://api.sap.com/api/nfe_authorize/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Nota Fiscal (NFe) Event",
+   "url": "https://api.sap.com/api/nfe_event/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Nota Fiscal (NFe) Inbound Simple",
+   "url": "https://api.sap.com/api/nfe_inbound_simple/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Nota Fiscal (NFe) Status Service Old",
+   "url": "https://api.sap.com/api/nfe_status_service/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Electronic Service Nota Fiscal (NFSe)",
+   "url": "https://api.sap.com/api/nfse/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "PDF Service",
+   "url": "https://api.sap.com/api/pdf_service/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Download Electronic Documents",
+   "url": "https://api.sap.com/api/storage_manager/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

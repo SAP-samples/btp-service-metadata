@@ -1,58 +1,58 @@
 {
-  "name": "cash-application-for-contract-accounting",
-  "displayName": "SAP Cash Application, add-on for contract accounting",
-  "description": "Cash Application, add-on for contract accounting",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zGREa-Z_eU5-mzjwdxgGoWUccEvanzAWzjEvHR3nB-dau06SOUZ7PaUWNVfjIQw5.svg",
-  "links": [
+ "name": "cash-application-for-contract-accounting",
+ "displayName": "SAP Cash Application, add-on for contract accounting",
+ "description": "Cash Application, add-on for contract accounting",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zGREa-Z_eU5-mzjwdxgGoWUccEvanzAWzjEvHR3nB-dau06SOUZ7PaUWNVfjIQw5.svg",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cash%20Application%2C%20add-on%20for%20contract%20accounting",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cash%20Application%2C%20add-on%20for%20contract%20accounting",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://help.sap.com/ficacashapp",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_CASH_APPLICATION_FOR_CONTRACT_ACCOUNTING",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard Plan includes all finance closing features.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cash%20Application%2C%20add-on%20for%20contract%20accounting",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cash%20Application%2C%20add-on%20for%20contract%20accounting",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
-    },
-    {
-      "value": "https://help.sap.com/ficacashapp",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_CASH_APPLICATION_FOR_CONTRACT_ACCOUNTING",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard Plan includes all finance closing features.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

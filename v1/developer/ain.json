@@ -1,209 +1,209 @@
 {
-  "name": "ain",
-  "displayName": "SAP Business Network Asset Collaboration",
-  "description": "SAP Business Network Asset Collaboration",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/HXhBt7qUYILB4A6MLbpC5kNTcE8k8T6go0efV9X1Wbp0xi8mpxWrATzF6e6Qq7FS.svg",
-  "links": [
+ "name": "ain",
+ "displayName": "SAP Business Network Asset Collaboration",
+ "description": "SAP Business Network Asset Collaboration",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/HXhBt7qUYILB4A6MLbpC5kNTcE8k8T6go0efV9X1Wbp0xi8mpxWrATzF6e6Qq7FS.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPAssetIntelligenceNetwork/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Business Network Asset Collaboration | SAP API Business Hub"
+  },
+  {
+   "value": "https://help.sap.com/ain",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_BUSINESS_NETWORK_ASSET_COLLABORATION",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_ASSET_INTELLIGENCE_NETWORK",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "SAP Business Network Asset Collaboration - Standard Plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPAssetIntelligenceNetwork/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Business Network Asset Collaboration | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://help.sap.com/ain",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_BUSINESS_NETWORK_ASSET_COLLABORATION",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_ASSET_INTELLIGENCE_NETWORK",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "SAP Business Network Asset Collaboration - Standard Plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "SBN-AIN-APL"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Company Profile",
-      "url": "https://api.sap.com/api/CompanyProfileAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Composite and Mass API",
-      "url": "https://api.sap.com/api/CompositeAndMassAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Confirmations API",
-      "url": "https://api.sap.com/api/ConfirmationsAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Documents API",
-      "url": "https://api.sap.com/api/DocumentV2API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Equipment API",
-      "url": "https://api.sap.com/api/EquipmentAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Equipment Request API",
-      "url": "https://api.sap.com/api/EquipmentRequestAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Equipment Sync API",
-      "url": "https://api.sap.com/api/EquipmentSyncAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "External ID API",
-      "url": "https://api.sap.com/api/ExternalIDsAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Failure Modes API",
-      "url": "https://api.sap.com/api/FailureModesAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Functions API",
-      "url": "https://api.sap.com/api/FunctionAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Functional Location",
-      "url": "https://api.sap.com/api/FunctionalLocationAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Groups API",
-      "url": "https://api.sap.com/api/GroupsAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Improvement Request API",
-      "url": "https://api.sap.com/api/ImprovementRequestAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Instructions",
-      "url": "https://api.sap.com/api/Instructions/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Location API",
-      "url": "https://api.sap.com/api/LocationAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Announcement API",
-      "url": "https://api.sap.com/api/ManageAnnouncementsAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Model",
-      "url": "https://api.sap.com/api/ModelAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Model Request API",
-      "url": "https://api.sap.com/api/ModelRequestAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Network Authorization API",
-      "url": "https://api.sap.com/api/NetworkAuthorizationAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Notifications API",
-      "url": "https://api.sap.com/api/NotificationsAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Organizational Structure",
-      "url": "https://api.sap.com/api/OrganizationalStructure/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Systems",
-      "url": "https://api.sap.com/api/Systems/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Template API",
-      "url": "https://api.sap.com/api/TemplateAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Unit of Measures API",
-      "url": "https://api.sap.com/api/UnitOfMeasuresAPI/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "User Authorizations API",
-      "url": "https://api.sap.com/api/UserAuthorizations/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Work Orders API",
-      "url": "https://api.sap.com/api/WorkOrdersAPI/overview",
-      "apiType": "RESTful"
-    }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "SBN-AIN-APL"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Company Profile",
+   "url": "https://api.sap.com/api/CompanyProfileAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Composite and Mass API",
+   "url": "https://api.sap.com/api/CompositeAndMassAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Confirmations API",
+   "url": "https://api.sap.com/api/ConfirmationsAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Documents API",
+   "url": "https://api.sap.com/api/DocumentV2API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Equipment API",
+   "url": "https://api.sap.com/api/EquipmentAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Equipment Request API",
+   "url": "https://api.sap.com/api/EquipmentRequestAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Equipment Sync API",
+   "url": "https://api.sap.com/api/EquipmentSyncAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "External ID API",
+   "url": "https://api.sap.com/api/ExternalIDsAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Failure Modes API",
+   "url": "https://api.sap.com/api/FailureModesAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Functions API",
+   "url": "https://api.sap.com/api/FunctionAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Functional Location",
+   "url": "https://api.sap.com/api/FunctionalLocationAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Groups API",
+   "url": "https://api.sap.com/api/GroupsAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Improvement Request API",
+   "url": "https://api.sap.com/api/ImprovementRequestAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Instructions",
+   "url": "https://api.sap.com/api/Instructions/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Location API",
+   "url": "https://api.sap.com/api/LocationAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Announcement API",
+   "url": "https://api.sap.com/api/ManageAnnouncementsAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Model",
+   "url": "https://api.sap.com/api/ModelAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Model Request API",
+   "url": "https://api.sap.com/api/ModelRequestAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Network Authorization API",
+   "url": "https://api.sap.com/api/NetworkAuthorizationAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Notifications API",
+   "url": "https://api.sap.com/api/NotificationsAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Organizational Structure",
+   "url": "https://api.sap.com/api/OrganizationalStructure/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Systems",
+   "url": "https://api.sap.com/api/Systems/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Template API",
+   "url": "https://api.sap.com/api/TemplateAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Unit of Measures API",
+   "url": "https://api.sap.com/api/UnitOfMeasuresAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "User Authorizations API",
+   "url": "https://api.sap.com/api/UserAuthorizations/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Work Orders API",
+   "url": "https://api.sap.com/api/WorkOrdersAPI/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

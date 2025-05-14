@@ -1,304 +1,304 @@
 {
-  "name": "processvisibility",
-  "displayName": "Process Visibility",
-  "description": "Process Visibility",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/KI-Y9qkEjVVQaGTkxgzWQ7347392GkLO2dIVI9td_2k60Ul7U239091ks8DQWwpu.svg",
-  "links": [
+ "name": "processvisibility",
+ "displayName": "Process Visibility",
+ "description": "Process Visibility",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/KI-Y9qkEjVVQaGTkxgzWQ7347392GkLO2dIVI9td_2k60Ul7U239091ks8DQWwpu.svg",
+ "links": [
+  {
+   "value": "https://blogs.sap.com/tags/5a7011ac-8031-4195-8250-704c3fd57599/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Blogs for Process Visibility"
+  },
+  {
+   "value": "https://developers.sap.com/mission.cp-visibility-get-started.html",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Tutorial: Get Started with Process Visibility"
+  },
+  {
+   "value": "https://launchpad.support.sap.com/#/notes/1888290",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support Components for SAP BTP"
+  },
+  {
+   "value": "https://api.sap.com/package/ContractLogistics/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | Process Visibility on Contract Logistics | SAP API Business Hub"
+  },
+  {
+   "value": "https://api.sap.com/package/InvoiceManagement/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | Process Visibility on Invoice Management | SAP API Business Hub"
+  },
+  {
+   "value": "https://api.sap.com/package/MetertoCash/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | Process Visibility on Meter to Cash | SAP API Business Hub"
+  },
+  {
+   "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/06b8fbcb3a464f02b11eae9468e69326.html",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "Learning Journey: Process Visibility"
+  },
+  {
+   "value": "https://help.sap.com/doc/7631de5808024cc2a16b00c5b15b6831/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/62fd39fa3eae4046b23dba285e84bfd4/2f72882f457a4b87a054bdf45d85fe52.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is Process Visibility?"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/62fd39fa3eae4046b23dba285e84bfd4/5d048d285e1b43d29efe04e2f9ab98fb.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/62fd39fa3eae4046b23dba285e84bfd4/82aa325d66d44d1c97737af8348f46c8.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Developer Guide"
+  },
+  {
+   "value": "https://help.sap.com/viewer/7ceb6d60b0f64b37b8a48b12ae9c452b/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/docs/VISIBILITY_SERVICE",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://smartprocessappsa636d78be.hana.ondemand.com/sap/opi/pv/workspace/?user=Lorin&password=1234Abcd#/scenarios/SCN0378ff049bbb4e23beac8cea36ac474f",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://smartprocessappsa636d78be.hana.ondemand.com/sap/opi/pv/workspace/?user=Lorin&password=1234Abcd#/scenarios/SCNf8f20510f84c421a9b8713ff326a953b",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://smartprocessappsa636d78be.hana.ondemand.com/sap/opi/pv/workspace/?user=Lorin&password=1234Abcd#/scenarios/SCNfbd2428a18d5466aa2cac194a43ff9d3",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Default plan for using process visibility",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://blogs.sap.com/tags/5a7011ac-8031-4195-8250-704c3fd57599/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Blogs for Process Visibility"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://developers.sap.com/mission.cp-visibility-get-started.html",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Tutorial: Get Started with Process Visibility"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://launchpad.support.sap.com/#/notes/1888290",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support Components for SAP BTP"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://api.sap.com/package/ContractLogistics/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | Process Visibility on Contract Logistics | SAP API Business Hub"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://api.sap.com/package/InvoiceManagement/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | Process Visibility on Invoice Management | SAP API Business Hub"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://api.sap.com/package/MetertoCash/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | Process Visibility on Meter to Cash | SAP API Business Hub"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/06b8fbcb3a464f02b11eae9468e69326.html",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "Learning Journey: Process Visibility"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/doc/7631de5808024cc2a16b00c5b15b6831/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/62fd39fa3eae4046b23dba285e84bfd4/2f72882f457a4b87a054bdf45d85fe52.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is Process Visibility?"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/62fd39fa3eae4046b23dba285e84bfd4/5d048d285e1b43d29efe04e2f9ab98fb.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "jp20",
+     "name": "cf-jp20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/62fd39fa3eae4046b23dba285e84bfd4/82aa325d66d44d1c97737af8348f46c8.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Developer Guide"
+     "region": "us10",
+     "name": "cf-us10"
     },
     {
-      "value": "https://help.sap.com/viewer/7ceb6d60b0f64b37b8a48b12ae9c452b/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "us20",
+     "name": "cf-us20"
     },
     {
-      "value": "https://help.sap.com/docs/VISIBILITY_SERVICE",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://smartprocessappsa636d78be.hana.ondemand.com/sap/opi/pv/workspace/?user=Lorin&password=1234Abcd#/scenarios/SCN0378ff049bbb4e23beac8cea36ac474f",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://smartprocessappsa636d78be.hana.ondemand.com/sap/opi/pv/workspace/?user=Lorin&password=1234Abcd#/scenarios/SCNf8f20510f84c421a9b8713ff326a953b",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://smartprocessappsa636d78be.hana.ondemand.com/sap/opi/pv/workspace/?user=Lorin&password=1234Abcd#/scenarios/SCNfbd2428a18d5466aa2cac194a43ff9d3",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "workflow",
+   "displayName": "workflow",
+   "category": "SERVICE",
+   "description": "Plan for usage of process visibility for customers with Workflow Management entitlement to enable Digital Process Automation",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Default plan for using process visibility",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "workflow",
-      "displayName": "workflow",
-      "category": "SERVICE",
-      "description": "Plan for usage of process visibility for customers with Workflow Management entitlement to enable Digital Process Automation",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
     {
-      "value": "LOD-BPM-VIS"
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "LOD-BPM-VIS"
+  }
+ ],
+ "apis": []
 }

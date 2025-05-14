@@ -1,223 +1,223 @@
 {
-  "name": "theming",
-  "displayName": "UI Theme Designer",
-  "description": "The UI theme designer lets you apply your corporate branding to applications built with SAP UI technologies. You can make changes to theme templates supplied by SAP to create custom themes that use your own color scheme, background images, and company logo. You can apply a custom theme to various SAP UI clients and technologies. Additionally, you can include your own custom CSS files without having to modify any of your applications.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Pkvb8xoGb1UNLxHojukGJ-cT3evtUGp0Tuel0T3oNBaddD5YtIq3d8kr4WD0Yj32.svg",
-  "links": [
+ "name": "theming",
+ "displayName": "UI Theme Designer",
+ "description": "The UI theme designer lets you apply your corporate branding to applications built with SAP UI technologies. You can make changes to theme templates supplied by SAP to create custom themes that use your own color scheme, background images, and company logo. You can apply a custom theme to various SAP UI clients and technologies. Additionally, you can include your own custom CSS files without having to modify any of your applications.",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Pkvb8xoGb1UNLxHojukGJ-cT3evtUGp0Tuel0T3oNBaddD5YtIq3d8kr4WD0Yj32.svg",
+ "links": [
+  {
+   "value": "https://community.sap.com/topics/ui-theme-designer",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "UI Theme Designer Community"
+  },
+  {
+   "value": "http://www.sap.com/community/topic/ui-theme-designer.html",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/ui-theme-designer",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - UI theme designer"
+  },
+  {
+   "value": "https://help.sap.com/http.svc/rc/d5f7a7837e96482796accb9ce75f7518/Cloud/en-US/loio1ff9350a0b864ae698037a1f5c2f525d.pdf",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/viewer/09f6818d8e064537973102d6289e2aca/Cloud",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/6803e8c72cce432d9d22d35acd7d5e7d.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/71e51058c0964399b88ec1ec740c1044.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Getting Support"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/827fd85f82b446cba35c2725d8830531.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Onboarding"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/935325fb130d41449362181fb6020dd0.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "UI Theme Designer"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/d756396894ef4f42b62b39efc00ffa83.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/docs/UI_THEME_DESIGNER",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Provides the theming service using one repository per tenant. The repository is created by creating a service instance or via SaaS subscription of the theming service.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/topics/ui-theme-designer",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "UI Theme Designer Community"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "http://www.sap.com/community/topic/ui-theme-designer.html",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/ui-theme-designer",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - UI theme designer"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://help.sap.com/http.svc/rc/d5f7a7837e96482796accb9ce75f7518/Cloud/en-US/loio1ff9350a0b864ae698037a1f5c2f525d.pdf",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/viewer/09f6818d8e064537973102d6289e2aca/Cloud",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/6803e8c72cce432d9d22d35acd7d5e7d.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/71e51058c0964399b88ec1ec740c1044.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Getting Support"
+     "region": "ap31",
+     "name": "cf-ap31"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/827fd85f82b446cba35c2725d8830531.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Onboarding"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/935325fb130d41449362181fb6020dd0.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "UI Theme Designer"
+     "region": "br20",
+     "name": "cf-br20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09f6818d8e064537973102d6289e2aca/d756396894ef4f42b62b39efc00ffa83.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "br30",
+     "name": "cf-br30"
     },
     {
-      "value": "https://help.sap.com/docs/UI_THEME_DESIGNER",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Provides the theming service using one repository per tenant. The repository is created by creating a service instance or via SaaS subscription of the theming service.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "CA-UI2-THD"
-    },
-    {
-      "value": "EP-WZ-SRB"
-    }
-  ],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-UI2-THD"
+  },
+  {
+   "value": "EP-WZ-SRB"
+  }
+ ],
+ "apis": []
 }

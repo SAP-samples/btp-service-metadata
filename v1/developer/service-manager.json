@@ -1,812 +1,812 @@
 {
-  "name": "service-manager",
-  "displayName": "Service Manager",
-  "description": "SAP Service Manager service allows you to consume platform services in any connected runtime environment, track service instances creation, and share services and service instances between different environments.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/K3ItS0XAKlDgo5PLOHqrqThoSqQ_zh5zGHyDfhIHWyVjL8EFIad72X9zAYmSfp-x.svg",
-  "links": [
+ "name": "service-manager",
+ "displayName": "Service Manager",
+ "description": "SAP Service Manager service allows you to consume platform services in any connected runtime environment, track service instances creation, and share services and service instances between different environments.",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/K3ItS0XAKlDgo5PLOHqrqThoSqQ_zh5zGHyDfhIHWyVjL8EFIad72X9zAYmSfp-x.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/api/APIServiceManagment/resource",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "API Documentation"
+  },
+  {
+   "value": "https://blogs.sap.com/2020/09/14/experience-the-new-way-of-consuming-and-managing-services-on-sap-cloud-platform/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Experience the New Way of Consuming and Managing Services on SAP BTP"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/#/serviceCatalog/service-manager",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "Discovery Center"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/service-management",
+   "classification": "External",
+   "type": "Link",
+   "text": "External"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/service-manager",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Service Manager"
+  },
+  {
+   "value": "https://help.sap.com/doc/f9809732e25740c3abd6158a57b8144e/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/917a8a7c926444cf99d0230c82db1831.html?state=PRODUCTION",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/0ccebd7cec24411dacd5ad17799534e0.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/1ca5bbeac19340ce959e82b51b2fde1e.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/3a27b85a47fc4dff99184dd5bf181e14.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is SAP Service Manager"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/c9d5c050a067476f896a631e7414e2c9.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/f13b6c63eef341bc8b7d25b352401c92.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SERVICEMANAGEMENT",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAP Service Manager Product Page"
+  },
+  {
+   "value": "https://operatorhub.io/operator/sap-btp-operator",
+   "classification": "External",
+   "type": "Link",
+   "text": "External"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "container",
+   "displayName": "container",
+   "category": "SERVICE",
+   "description": "Allows management of service instances and bindings in a reduced scope corresponding to the service instance. Instances created using the container-instance binding credentials are visible from the instance itself and from instances of the subaccount-* plans, but not from other container instances",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/api/APIServiceManagment/resource",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://blogs.sap.com/2020/09/14/experience-the-new-way-of-consuming-and-managing-services-on-sap-cloud-platform/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Experience the New Way of Consuming and Managing Services on SAP BTP"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/service-manager",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/service-management",
-      "classification": "External",
-      "type": "Link",
-      "text": "External"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/service-manager",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Service Manager"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://help.sap.com/doc/f9809732e25740c3abd6158a57b8144e/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/917a8a7c926444cf99d0230c82db1831.html?state=PRODUCTION",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap31",
+     "name": "cf-ap31"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/0ccebd7cec24411dacd5ad17799534e0.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/1ca5bbeac19340ce959e82b51b2fde1e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br20",
+     "name": "cf-br20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/3a27b85a47fc4dff99184dd5bf181e14.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is SAP Service Manager"
+     "region": "br30",
+     "name": "cf-br30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/09cc82baadc542a688176dce601398de/c9d5c050a067476f896a631e7414e2c9.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ca20",
+     "name": "cf-ca20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/f13b6c63eef341bc8b7d25b352401c92.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ch20",
+     "name": "cf-ch20"
     },
     {
-      "value": "https://help.sap.com/docs/SERVICEMANAGEMENT",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAP Service Manager Product Page"
+     "region": "eu01",
+     "name": "cf-eu01"
     },
     {
-      "value": "https://operatorhub.io/operator/sap-btp-operator",
-      "classification": "External",
-      "type": "Link",
-      "text": "External"
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "global-offerings-audit",
+   "displayName": "global-offerings-audit",
+   "category": "SERVICE",
+   "description": "Allows read-only access to all service offerings and service plans in a landscape.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "container",
-      "displayName": "container",
-      "category": "SERVICE",
-      "description": "Allows management of service instances and bindings in a reduced scope corresponding to the service instance. Instances created using the container-instance binding credentials are visible from the instance itself and from instances of the subaccount-* plans, but not from other container instances",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "global-offerings-audit",
-      "displayName": "global-offerings-audit",
-      "category": "SERVICE",
-      "description": "Allows read-only access to all service offerings and service plans in a landscape.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "name": "service-operator-access",
-      "displayName": "service-operator-access",
-      "category": "SERVICE",
-      "description": "Provides credentials for SAP BTP service operator to access SAP BTP from a Kubernetes cluster.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "name": "subaccount-admin",
-      "displayName": "subaccount-admin",
-      "category": "SERVICE",
-      "description": "Allows management of resources in the subaccount in which the service instance of this plan was created. This includes managing service instances, bindings and subaccount-scoped platforms.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "name": "subaccount-audit",
-      "displayName": "subaccount-audit",
-      "category": "SERVICE",
-      "description": "Allows read-only access to the resources in the subaccount in which the service instance was created. This includes reading service instances, bindings and subaccount-scoped platforms.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  },
+  {
+   "name": "service-operator-access",
+   "displayName": "service-operator-access",
+   "category": "SERVICE",
+   "description": "Provides credentials for SAP BTP service operator to access SAP BTP from a Kubernetes cluster.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "subaccount-admin",
+   "displayName": "subaccount-admin",
+   "category": "SERVICE",
+   "description": "Allows management of resources in the subaccount in which the service instance of this plan was created. This includes managing service instances, bindings and subaccount-scoped platforms.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "subaccount-audit",
+   "displayName": "subaccount-audit",
+   "category": "SERVICE",
+   "description": "Allows read-only access to the resources in the subaccount in which the service instance was created. This includes reading service instances, bindings and subaccount-scoped platforms.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

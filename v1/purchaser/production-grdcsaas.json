@@ -1,97 +1,97 @@
 {
-  "name": "production-grdcsaas",
-  "displayName": "SAP Group Reporting Data Collection",
-  "description": "Provide entry gate for all non S/4 data required for group closing purposes: manual data collection for financials and non financials, structured, semi-structured data, text.",
-  "icon": "Icon too big. Service owner needs to reduce size.",
-  "servicePlans": [
+ "name": "production-grdcsaas",
+ "displayName": "SAP Group Reporting Data Collection",
+ "description": "Provide entry gate for all non S/4 data required for group closing purposes: manual data collection for financials and non financials, structured, semi-structured data, text.",
+ "icon": "Icon too big. Service owner needs to reduce size.",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "Application plan.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "Application plan.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8007078",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007237",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007701",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8013628",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016432",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016461",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018511",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "name": "tandd",
-      "displayName": "Test and Demo",
-      "category": "APPLICATION",
-      "description": "Provide entry gate for all non S/4 data required for group closing purposes : data collection for financials and non financials, structured, semi-structured data, text.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8013951",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8007078",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007237",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007701",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8013628",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016432",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016461",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018511",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "tandd",
+   "displayName": "Test and Demo",
+   "category": "APPLICATION",
+   "description": "Provide entry gate for all non S/4 data required for group closing purposes : data collection for financials and non financials, structured, semi-structured data, text.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8013951",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

@@ -1,1188 +1,1188 @@
 {
-  "name": "cloud-logging",
-  "displayName": "SAP Cloud Logging",
-  "description": "Cloud Logging",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/o7G6GurvDBbxsUC_KEkq2SwbZpwBqkym4X4rAJq4F-pp_GbMoZL3SWrXwNWzQiLE.svg",
-  "links": [
+ "name": "cloud-logging",
+ "displayName": "SAP Cloud Logging",
+ "description": "Cloud Logging",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/o7G6GurvDBbxsUC_KEkq2SwbZpwBqkym4X4rAJq4F-pp_GbMoZL3SWrXwNWzQiLE.svg",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cloud%20Logging",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cloud%20Logging",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-logging",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Cloud Logging"
+  },
+  {
+   "value": "https://help.sap.com/doc/a1ed56770e394b8f8a0386c11d7b0196/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_CLOUD_LOGGING",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_CLOUD_LOGGING/d82d23dc499c44079e1e779c1d3a5191/ac5029751b074e15ab7d49e5b461fa79.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/btp-getting-support",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  },
+  {
+   "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "build-code",
+   "displayName": "build-code",
+   "category": "SERVICE",
+   "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric. Dedicated Cloud Logging instance for evaluation purposes with limited ingestion and storage capabilities that must not be used in production.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Cloud%20Logging",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Cloud%20Logging",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-logging",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Cloud Logging"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/doc/a1ed56770e394b8f8a0386c11d7b0196/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_CLOUD_LOGGING",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_CLOUD_LOGGING/d82d23dc499c44079e1e779c1d3a5191/ac5029751b074e15ab7d49e5b461fa79.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "br20",
+     "name": "cf-br20"
     },
     {
-      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/btp-getting-support",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "build-code",
-      "displayName": "build-code",
-      "category": "SERVICE",
-      "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric. Dedicated Cloud Logging instance for evaluation purposes with limited ingestion and storage capabilities that must not be used in production.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_binding": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "ingest": {
-                    "properties": {
-                      "certValidityDays": {
-                        "default": 90,
-                        "maximum": 180,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceBinding",
-                "type": "object"
-              }
-            }
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
           },
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "default": 2,
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "default": 2,
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "default": 7,
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "default": false,
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceInstance",
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "updateServiceInstance",
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "dev",
-      "displayName": "dev",
-      "category": "SERVICE",
-      "description": "Dedicated Cloud Logging instance for evaluation purposes with limited ingestion and storage capabilities that must not be used in production",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
+          "type": "object"
+         }
         },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_binding": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "ingest": {
-                    "properties": {
-                      "certValidityDays": {
-                        "default": 90,
-                        "maximum": 180,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceBinding",
-                "type": "object"
-              }
-            }
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
           },
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "default": 1,
-                        "maximum": 1,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "default": 1,
-                        "maximum": 1,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "default": 7,
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "default": false,
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceInstance",
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "maximum": 1,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "maximum": 1,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "updateServiceInstance",
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "large",
-      "displayName": "large",
-      "category": "SERVICE",
-      "description": "Dedicated large service instance with auto-scaling for use in production",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_binding": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "ingest": {
-                    "properties": {
-                      "certValidityDays": {
-                        "default": 90,
-                        "maximum": 180,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceBinding",
-                "type": "object"
-              }
-            }
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
           },
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "default": 2,
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "default": 2,
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "default": 7,
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "default": false,
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceInstance",
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "updateServiceInstance",
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Dedicated standard service instance with auto-scaling for use in production",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_binding": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "ingest": {
-                    "properties": {
-                      "certValidityDays": {
-                        "default": 90,
-                        "maximum": 180,
-                        "minimum": 1,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceBinding",
-                "type": "object"
-              }
-            }
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
           },
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "default": 2,
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "default": 2,
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "default": 7,
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "default": false,
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "default": false,
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "createServiceInstance",
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "additionalProperties": true,
-                "properties": {
-                  "backend": {
-                    "additionalProperties": true,
-                    "properties": {
-                      "max_data_nodes": {
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "dashboards": {
-                    "properties": {
-                      "custom_label": {
-                        "maxLength": 20,
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest": {
-                    "properties": {
-                      "max_instances": {
-                        "maximum": 10,
-                        "minimum": 2,
-                        "type": "integer"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "ingest_otlp": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "retention_period": {
-                    "maximum": 90,
-                    "minimum": 1,
-                    "type": "integer"
-                  },
-                  "rotate_root_ca": {
-                    "type": "boolean"
-                  },
-                  "saml": {
-                    "properties": {
-                      "enabled": {
-                        "type": "boolean"
-                      }
-                    },
-                    "required": [
-                      "enabled"
-                    ],
-                    "type": "object"
-                  }
-                },
-                "title": "updateServiceInstance",
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [
+   ]
+  },
+  {
+   "name": "dev",
+   "displayName": "dev",
+   "category": "SERVICE",
+   "description": "Dedicated Cloud Logging instance for evaluation purposes with limited ingestion and storage capabilities that must not be used in production",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "BC-CP-CLS"
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "apis": []
+   ],
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 1,
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 1,
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "large",
+   "displayName": "large",
+   "category": "SERVICE",
+   "description": "Dedicated large service instance with auto-scaling for use in production",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Dedicated standard service instance with auto-scaling for use in production",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-CLS"
+  }
+ ],
+ "apis": []
 }

@@ -1,129 +1,129 @@
 {
-  "name": "document-classification",
-  "displayName": "Document Classification",
-  "description": "Document Classification",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v-Rh9ccerps18JmPyD72WutH5qPY6PsUXVzSdPxb2G4loLrfqlhCe8JTcWsI6Eqo.svg",
-  "servicePlans": [
+ "name": "document-classification",
+ "displayName": "Document Classification",
+ "description": "Document Classification",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v-Rh9ccerps18JmPyD72WutH5qPY6PsUXVzSdPxb2G4loLrfqlhCe8JTcWsI6Eqo.svg",
+ "servicePlans": [
+  {
+   "name": "blocks_of_100",
+   "displayName": "blocks_of_100",
+   "category": "SERVICE",
+   "description": "Service plan 'blocks_of_100' for production usage of Document Classification, charged in blocks of 100 documents.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "blocks_of_100",
-      "displayName": "blocks_of_100",
-      "category": "SERVICE",
-      "description": "Service plan 'blocks_of_100' for production usage of Document Classification, charged in blocks of 100 documents.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008949",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010884",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008833",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8008107",
-          "commercialModel": null
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
     },
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Service plan 'default' for production usage of Document Classification, charged in blocks of 1000 documents.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008106",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008832",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008833",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8010884",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8008107",
-          "commercialModel": null
-        }
-      ]
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008949",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010884",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008833",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8008107",
+     "commercialModel": null
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ]
+  },
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Service plan 'default' for production usage of Document Classification, charged in blocks of 1000 documents.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008106",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008832",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008833",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8010884",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8008107",
+     "commercialModel": null
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

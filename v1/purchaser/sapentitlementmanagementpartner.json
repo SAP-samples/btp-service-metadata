@@ -1,61 +1,61 @@
 {
-  "name": "SAPEntitlementManagementPartner",
-  "displayName": "SAP Entitlement Management, standard edition",
-  "description": "SAP Entitlement Management System Partner Edition",
-  "icon": null,
-  "servicePlans": [
+ "name": "SAPEntitlementManagementPartner",
+ "displayName": "SAP Entitlement Management, standard edition",
+ "description": "SAP Entitlement Management System Partner Edition",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "SAP Entitlement Management System(Partner)",
+   "category": "APPLICATION",
+   "description": "SAP Entitlement Management System(Partner)",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "SAP Entitlement Management System(Partner)",
-      "category": "APPLICATION",
-      "description": "SAP Entitlement Management System(Partner)",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8007687",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8007687",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

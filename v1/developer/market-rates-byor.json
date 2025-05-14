@@ -1,163 +1,163 @@
 {
-  "name": "market-rates-byor",
-  "displayName": "SAP Market Rates Management, Bring Your Own Rates data option",
-  "description": "Market Rates, Bring Your Own Rates",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/YLjmpazGpRzSVTHatLSjxT8_benQ5P_CyEmtBnoPFdQ3pSfUpNbxVZVZHrw_LJiC.svg",
-  "links": [
+ "name": "market-rates-byor",
+ "displayName": "SAP Market Rates Management, Bring Your Own Rates data option",
+ "description": "Market Rates, Bring Your Own Rates",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/YLjmpazGpRzSVTHatLSjxT8_benQ5P_CyEmtBnoPFdQ3pSfUpNbxVZVZHrw_LJiC.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/MarketRatesManagementBYORAPI/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Market Rates Management, Bring Your Own Rates data option | SAP API Business Hub"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Market%20Rates%20Management%2C%20Bring%20Your%20Own%20Rates%20data%20option",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Market%20Rates%20Management%2C%20Bring%20Your%20Own%20Rates%20data%20option",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/market-rates-bring-your-own-rates",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Market Rates, Bring Your Own Rates"
+  },
+  {
+   "value": "https://help.sap.com/doc/1122089b68ae444d8154b94953d71904/LATEST/en-US/FSD_MRM_BYOR.pdf",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_APP/64e0eccf2d424543be76606dd5e5e460/3bafc3ead62a432fae08df1be1c3df43.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_APP/64e0eccf2d424543be76606dd5e5e460/8e68f4c28b8c401285b8050cff6929f4.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://api.sap.com/package/MarketRatesManagementBYORAPI",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "API Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/mrm-byor",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/64e0eccf2d424543be76606dd5e5e460/LATEST/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is the Bring Your Own Rates data option"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_APP",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_CP_BUS_REUSE_SERVICE_MRM_APP/LATEST/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+   "classification": "Legal",
+   "type": "Link",
+   "text": "Legal"
+  },
+  {
+   "value": "https://www.youtube.com/embed/h_0pIIPNhJY",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP Market Rates Management, Bring Your Own Rates Data Option"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Upload, download, and distribute your own market data in your landscapes.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/MarketRatesManagementBYORAPI/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Market Rates Management, Bring Your Own Rates data option | SAP API Business Hub"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Market%20Rates%20Management%2C%20Bring%20Your%20Own%20Rates%20data%20option",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Market%20Rates%20Management%2C%20Bring%20Your%20Own%20Rates%20data%20option",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
-    },
-    {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/market-rates-bring-your-own-rates",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Market Rates, Bring Your Own Rates"
-    },
-    {
-      "value": "https://help.sap.com/doc/1122089b68ae444d8154b94953d71904/LATEST/en-US/FSD_MRM_BYOR.pdf",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
-    },
-    {
-      "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_APP/64e0eccf2d424543be76606dd5e5e460/3bafc3ead62a432fae08df1be1c3df43.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
-    },
-    {
-      "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_APP/64e0eccf2d424543be76606dd5e5e460/8e68f4c28b8c401285b8050cff6929f4.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
-    },
-    {
-      "value": "https://api.sap.com/package/MarketRatesManagementBYORAPI",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/mrm-byor",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/64e0eccf2d424543be76606dd5e5e460/LATEST/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is the Bring Your Own Rates data option"
-    },
-    {
-      "value": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM_APP",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_CP_BUS_REUSE_SERVICE_MRM_APP/LATEST/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
-    },
-    {
-      "value": "https://www.youtube.com/embed/h_0pIIPNhJY",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP Market Rates Management, Bring Your Own Rates Data Option"
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "SERVICE",
+   "description": "Upload, download, and distribute your own market data in your landscapes in a restricted mode. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Upload, download, and distribute your own market data in your landscapes.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "SERVICE",
-      "description": "Upload, download, and distribute your own market data in your landscapes in a restricted mode. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "LOD-CBS-CS"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Market Data Download",
-      "url": "https://api.sap.com/api/DownloadAPI/overview",
-      "apiType": "RESTful"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "name": "Market Rates Upload",
-      "url": "https://api.sap.com/api/UploadAPI/overview",
-      "apiType": "RESTful"
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "LOD-CBS-CS"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Market Data Download",
+   "url": "https://api.sap.com/api/DownloadAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Market Rates Upload",
+   "url": "https://api.sap.com/api/UploadAPI/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

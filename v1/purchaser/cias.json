@@ -1,104 +1,104 @@
 {
-  "name": "cias",
-  "displayName": "Cloud Integration Automation",
-  "description": "Cloud Integration Automation",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/rzAz4R09RkdFHcdBbk72gmxcRjP-FzOClink_1_D5QY4Cz8eK30I8XDh6Md7mO0m.svg",
-  "servicePlans": [
+ "name": "cias",
+ "displayName": "Cloud Integration Automation",
+ "description": "Cloud Integration Automation",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/rzAz4R09RkdFHcdBbk72gmxcRjP-FzOClink_1_D5QY4Cz8eK30I8XDh6Md7mO0m.svg",
+ "servicePlans": [
+  {
+   "name": "oauth2",
+   "displayName": "oauth2",
+   "category": "SERVICE",
+   "description": "Plan to access Cloud Integration Automation Service APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "oauth2",
-      "displayName": "oauth2",
-      "category": "SERVICE",
-      "description": "Plan to access Cloud Integration Automation Service APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": []
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "Plan to use the Cloud Integration Automation Service - UI Application",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008203",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018603",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": []
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "Plan to use the Cloud Integration Automation Service - UI Application",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008203",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018603",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

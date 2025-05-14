@@ -1,28 +1,28 @@
 {
-  "name": "bmb-app",
-  "displayName": "business process model connector for SAP Signavio solutions",
-  "description": "Synchronize business process models between SAP Signavio Process Manager and SAP Solution Manager",
-  "icon": null,
-  "servicePlans": [
+ "name": "bmb-app",
+ "displayName": "business process model connector for SAP Signavio solutions",
+ "description": "Synchronize business process models between SAP Signavio Process Manager and SAP Solution Manager",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "Free",
+   "category": "APPLICATION",
+   "description": "free",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "Free",
-      "category": "APPLICATION",
-      "description": "free",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": []
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": []
+  }
+ ],
+ "certifications": []
 }

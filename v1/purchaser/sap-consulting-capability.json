@@ -1,33 +1,33 @@
 {
-  "name": "sap-consulting-capability",
-  "displayName": "SAP Consulting Capability",
-  "description": "SAP Consulting Capability",
-  "icon": null,
-  "servicePlans": [
+ "name": "sap-consulting-capability",
+ "displayName": "SAP Consulting Capability",
+ "description": "SAP Consulting Capability",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "standard-eac",
+   "displayName": "Standard-EAC",
+   "category": "APPLICATION",
+   "description": "Standard plan for early access (deprecated)",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard-eac",
-      "displayName": "Standard-EAC",
-      "category": "APPLICATION",
-      "description": "Standard plan for early access (deprecated)",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8018985",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8018985",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

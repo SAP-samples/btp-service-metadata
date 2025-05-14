@@ -1,241 +1,241 @@
 {
-  "name": "data-intelligence",
-  "displayName": "SAP Data Intelligence Cloud",
-  "description": "SAP Data Intelligence",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/TMZLkw4hPctHzIdZKsmJYUmjXZuMZ9T5pjYxM8F-MqV8_qpogvdtTJxVSrGNbzXj.svg",
-  "servicePlans": [
+ "name": "data-intelligence",
+ "displayName": "SAP Data Intelligence Cloud",
+ "description": "SAP Data Intelligence",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/TMZLkw4hPctHzIdZKsmJYUmjXZuMZ9T5pjYxM8F-MqV8_qpogvdtTJxVSrGNbzXj.svg",
+ "servicePlans": [
+  {
+   "name": "dedicated",
+   "displayName": "dedicated",
+   "category": "SERVICE",
+   "description": "Required for every new system. Provides a fully isolated cluster with dedicated hardware resources. The system automatically creates one tenant named default.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "dedicated",
-      "displayName": "dedicated",
-      "category": "SERVICE",
-      "description": "Required for every new system. Provides a fully isolated cluster with dedicated hardware resources. The system automatically creates one tenant named default.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8009361",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011057",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "enterprise",
-      "displayName": "enterprise",
-      "category": "SERVICE",
-      "description": "Deprecated service plan. We recommend that you switch to the new dedicated service plan when your service is up for renewal.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007881",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8009361",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        }
-      ]
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "name": "tenant",
-      "displayName": "tenant",
-      "category": "SERVICE",
-      "description": "(Optional) Used in combination with the dedicated service plan. Lets you add up to 19 tenants to the default tenant that run on the same cluster and share the same hardware resources. ",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007881",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8009361",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011057",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8009361",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011057",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "enterprise",
+   "displayName": "enterprise",
+   "category": "SERVICE",
+   "description": "Deprecated service plan. We recommend that you switch to the new dedicated service plan when your service is up for renewal.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007881",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8009361",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    }
+   ]
+  },
+  {
+   "name": "tenant",
+   "displayName": "tenant",
+   "category": "SERVICE",
+   "description": "(Optional) Used in combination with the dedicated service plan. Lets you add up to 19 tenants to the default tenant that run on the same cluster and share the same hardware resources. ",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007881",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8009361",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011057",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

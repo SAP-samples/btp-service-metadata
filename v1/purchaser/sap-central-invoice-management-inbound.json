@@ -1,49 +1,49 @@
 {
-  "name": "sap-central-invoice-management-inbound",
-  "displayName": "SAP Ariba Central Invoice Management, inbound processing module",
-  "description": "Inbound processing module is an additional module that allows users to upload invoice files, edit draft invoices and save supplier invoices to a connected system, directly from SAP Ariba Central Invoice Management apps.",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNzQuOSA4MS4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA3NC45IDgxLjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojNUU3ODk0O3N0cm9rZS13aWR0aDo1O30KCS5zdDF7ZmlsbDojNUU3ODk0O3N0cm9rZTojNUU3ODk0O30KCS5zdDJ7ZmlsbDojMzU4NkQyO30KCS5zdDN7ZmlsbDojMzU4NkQyO3N0cm9rZTojMzU4NkQyO30KCS5zdDR7ZmlsbDojMzU4NkQyO3N0cm9rZTojMzU4NkQyO3N0cm9rZS13aWR0aDoyO30KCS5zdDV7Zm9udC1mYW1pbHk6J1NGVUlEaXNwbGF5LU1lZGl1bSc7fQoJLnN0Nntmb250LXNpemU6MzFweDt9Cjwvc3R5bGU+CjxnIGlkPSJHcm91cF80MjU5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDcuNjIyIC0zMC41OSkiPgoJPHBhdGggaWQ9IlBhdGhfMSIgY2xhc3M9InN0MCIgZD0iTTEwOCw2Ni42djQyLjZINTAuMVY1My40TDY5LDM0LjVoMTQuOCIvPgoJPHBhdGggaWQ9IlBhdGhfMiIgY2xhc3M9InN0MSIgZD0iTTUwLjEsNTMuOWwxOS40LTE4LjF2MTguMUg1MC4xIi8+Cgk8Y2lyY2xlIGlkPSJFbGxpcHNlXzEiIGNsYXNzPSJzdDIiIGN4PSI2OSIgY3k9Ijc3IiByPSI3Ii8+Cgk8cGF0aCBpZD0iUGF0aF8zIiBjbGFzcz0ic3QyIiBkPSJNNjksODJjNSwwLDksNCw5LDljMCw1LTE4LDUtMTgsMEM2MCw4Niw2NCw4Miw2OSw4MnoiLz4KCTxwYXRoIGlkPSJQYXRoXzQiIGNsYXNzPSJzdDIiIGQ9Ik02MCw5MC45Vjk2aDE4di01LjFINjB6Ii8+Cgk8ZyBpZD0iR3JvdXBfNDI1NyI+CgkJPHBhdGggaWQ9IlBhdGhfNSIgY2xhc3M9InN0MyIgZD0iTTk2LjUsNDQuNWwtMTIuMiw3LjhsMTIuMiw4LjFWNDQuNXoiLz4KCQk8cGF0aCBpZD0iUGF0aF82IiBjbGFzcz0ic3QzIiBkPSJNOTQuNCw0OS41aDEwLjJ2Ni4ySDk0LjRWNDkuNXoiLz4KCTwvZz4KCTxnIGlkPSJHcm91cF80MjU4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDEuMzEzIDMxLjUpIj4KCQk8cGF0aCBpZD0iUGF0aF81LTIiIGNsYXNzPSJzdDMiIGQ9Ik04LjEsMGwxMi4yLDcuOEw4LjEsMTUuOVYweiIvPgoJCTxwYXRoIGlkPSJQYXRoXzYtMiIgY2xhc3M9InN0MyIgZD0iTTEwLjIsNUgwdjYuMmgxMC4yTDEwLjIsNXoiLz4KCTwvZz4KCTxwYXRoIGlkPSJQYXRoXzciIGNsYXNzPSJzdDQiIGQ9Ik05Mi41LDY5LjV2MjcuMyIvPgoJPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSA4MyA5NCkiIGNsYXNzPSJzdDIgc3Q1IHN0NiI+UzwvdGV4dD4KPC9nPgo8L3N2Zz4K",
-  "servicePlans": [
+ "name": "sap-central-invoice-management-inbound",
+ "displayName": "SAP Ariba Central Invoice Management, inbound processing module",
+ "description": "Inbound processing module is an additional module that allows users to upload invoice files, edit draft invoices and save supplier invoices to a connected system, directly from SAP Ariba Central Invoice Management apps.",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNzQuOSA4MS4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA3NC45IDgxLjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojNUU3ODk0O3N0cm9rZS13aWR0aDo1O30KCS5zdDF7ZmlsbDojNUU3ODk0O3N0cm9rZTojNUU3ODk0O30KCS5zdDJ7ZmlsbDojMzU4NkQyO30KCS5zdDN7ZmlsbDojMzU4NkQyO3N0cm9rZTojMzU4NkQyO30KCS5zdDR7ZmlsbDojMzU4NkQyO3N0cm9rZTojMzU4NkQyO3N0cm9rZS13aWR0aDoyO30KCS5zdDV7Zm9udC1mYW1pbHk6J1NGVUlEaXNwbGF5LU1lZGl1bSc7fQoJLnN0Nntmb250LXNpemU6MzFweDt9Cjwvc3R5bGU+CjxnIGlkPSJHcm91cF80MjU5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDcuNjIyIC0zMC41OSkiPgoJPHBhdGggaWQ9IlBhdGhfMSIgY2xhc3M9InN0MCIgZD0iTTEwOCw2Ni42djQyLjZINTAuMVY1My40TDY5LDM0LjVoMTQuOCIvPgoJPHBhdGggaWQ9IlBhdGhfMiIgY2xhc3M9InN0MSIgZD0iTTUwLjEsNTMuOWwxOS40LTE4LjF2MTguMUg1MC4xIi8+Cgk8Y2lyY2xlIGlkPSJFbGxpcHNlXzEiIGNsYXNzPSJzdDIiIGN4PSI2OSIgY3k9Ijc3IiByPSI3Ii8+Cgk8cGF0aCBpZD0iUGF0aF8zIiBjbGFzcz0ic3QyIiBkPSJNNjksODJjNSwwLDksNCw5LDljMCw1LTE4LDUtMTgsMEM2MCw4Niw2NCw4Miw2OSw4MnoiLz4KCTxwYXRoIGlkPSJQYXRoXzQiIGNsYXNzPSJzdDIiIGQ9Ik02MCw5MC45Vjk2aDE4di01LjFINjB6Ii8+Cgk8ZyBpZD0iR3JvdXBfNDI1NyI+CgkJPHBhdGggaWQ9IlBhdGhfNSIgY2xhc3M9InN0MyIgZD0iTTk2LjUsNDQuNWwtMTIuMiw3LjhsMTIuMiw4LjFWNDQuNXoiLz4KCQk8cGF0aCBpZD0iUGF0aF82IiBjbGFzcz0ic3QzIiBkPSJNOTQuNCw0OS41aDEwLjJ2Ni4ySDk0LjRWNDkuNXoiLz4KCTwvZz4KCTxnIGlkPSJHcm91cF80MjU4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDEuMzEzIDMxLjUpIj4KCQk8cGF0aCBpZD0iUGF0aF81LTIiIGNsYXNzPSJzdDMiIGQ9Ik04LjEsMGwxMi4yLDcuOEw4LjEsMTUuOVYweiIvPgoJCTxwYXRoIGlkPSJQYXRoXzYtMiIgY2xhc3M9InN0MyIgZD0iTTEwLjIsNUgwdjYuMmgxMC4yTDEwLjIsNXoiLz4KCTwvZz4KCTxwYXRoIGlkPSJQYXRoXzciIGNsYXNzPSJzdDQiIGQ9Ik05Mi41LDY5LjV2MjcuMyIvPgoJPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSA4MyA5NCkiIGNsYXNzPSJzdDIgc3Q1IHN0NiI+UzwvdGV4dD4KPC9nPgo8L3N2Zz4K",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "This plan will enable the inbound processing functionality in your existing SAP Ariba Central Invoice Management tenant. Note that this plan can't be used standalone.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "This plan will enable the inbound processing functionality in your existing SAP Ariba Central Invoice Management tenant. Note that this plan can't be used standalone.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8011730",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014761",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016068",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018146",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018575",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8011730",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014761",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016068",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018146",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018575",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

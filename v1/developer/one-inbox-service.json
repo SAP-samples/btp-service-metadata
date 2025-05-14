@@ -1,573 +1,573 @@
 {
-  "name": "one-inbox-service",
-  "displayName": "SAP Task Center",
-  "description": "SAP Task Center",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/igE4URgXbkjbeD2oo_OaB80JNdNT1os512EUFHsLl1-1zom1VeooQ2HmLvuvoqoq.svg",
-  "links": [
+ "name": "one-inbox-service",
+ "displayName": "SAP Task Center",
+ "description": "SAP Task Center",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/igE4URgXbkjbeD2oo_OaB80JNdNT1os512EUFHsLl1-1zom1VeooQ2HmLvuvoqoq.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPTaskCenter/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Task Center | SAP API Business Hub"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Task%20Center",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Task%20Center",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-task-center",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - SAP Task Center"
+  },
+  {
+   "value": "https://help.sap.com/doc/1599f0308de2496582b9da1680f3519e/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/TASK_CENTER/08cbda59b4954e93abb2ec85f1db399d/2ab214247ec942a7a5be16ac88b4dbdb.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://blogs.sap.com/tag/sap-task-center/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "See all SAP Task Center Blogs"
+  },
+  {
+   "value": "https://d.dam.sap.com/a/a2x3zwM/SAP%20Task%20Center_L3%20Presentation.pdf?rc=10",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAP Task Center Detailed Presentation"
+  },
+  {
+   "value": "https://news.sap.com/2021/12/sap-task-center-click-read-approve-repeat/",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAP Task Center: Click, Read, Approve, Repeat!"
+  },
+  {
+   "value": "https://www.youtube.com/watch?v=CF1ADKt4l3k&t=1700s",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Integrate Solutions in Your Intelligent Enterprise: What's Trending?"
+  },
+  {
+   "value": "https://www.youtube.com/watch?v=Epc-EfTO-rI",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Simplifying approvals across the Intelligent Suite in One Workflow Inbox (SAP Task Center) \u2013 SAP Garage 2022"
+  },
+  {
+   "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What Is SAP Task Center?"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/1bcdd459f84d4323a27581226d1d210e.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/834769400794464489f390350a82bbd6.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/89c09a4067bd4c62a5a4b2f5c0da48c5.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Troubleshooting"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/9693186f1fe54cbe801085d6bdfe8287.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/TASK_CENTER/Cloud",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/TASK_CENTER",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://www.youtube.com/embed/ai3G7ejuiB4",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP Task Center"
+  },
+  {
+   "value": "https://www.youtube.com/embed/sv_q64zJ5cA",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP Mobile Start \u2013 Your native entry point to the Intelligent Enterprise"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "all-tasks",
+   "displayName": "all-tasks",
+   "category": "SERVICE",
+   "description": "Integrate SAP Task Center with all supported task providers",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPTaskCenter/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Task Center | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Task%20Center",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Task%20Center",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-task-center",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - SAP Task Center"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/doc/1599f0308de2496582b9da1680f3519e/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://help.sap.com/docs/TASK_CENTER/08cbda59b4954e93abb2ec85f1db399d/2ab214247ec942a7a5be16ac88b4dbdb.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://blogs.sap.com/tag/sap-task-center/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "See all SAP Task Center Blogs"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://d.dam.sap.com/a/a2x3zwM/SAP%20Task%20Center_L3%20Presentation.pdf?rc=10",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAP Task Center Detailed Presentation"
+     "region": "br20",
+     "name": "cf-br20"
     },
     {
-      "value": "https://news.sap.com/2021/12/sap-task-center-click-read-approve-repeat/",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAP Task Center: Click, Read, Approve, Repeat!"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://www.youtube.com/watch?v=CF1ADKt4l3k&t=1700s",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Integrate Solutions in Your Intelligent Enterprise: What's Trending?"
+     "region": "ca20",
+     "name": "cf-ca20"
     },
     {
-      "value": "https://www.youtube.com/watch?v=Epc-EfTO-rI",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Simplifying approvals across the Intelligent Suite in One Workflow Inbox (SAP Task Center) \u2013 SAP Garage 2022"
+     "region": "ch20",
+     "name": "cf-ch20"
     },
     {
-      "value": "https://help.sap.com/viewer/08cbda59b4954e93abb2ec85f1db399d/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What Is SAP Task Center?"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/1bcdd459f84d4323a27581226d1d210e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/834769400794464489f390350a82bbd6.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/89c09a4067bd4c62a5a4b2f5c0da48c5.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Troubleshooting"
+     "region": "eu30",
+     "name": "cf-eu30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/08cbda59b4954e93abb2ec85f1db399d/9693186f1fe54cbe801085d6bdfe8287.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
-      "value": "https://help.sap.com/viewer/product/TASK_CENTER/Cloud",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "in30",
+     "name": "cf-in30"
     },
     {
-      "value": "https://help.sap.com/docs/TASK_CENTER",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://www.youtube.com/embed/ai3G7ejuiB4",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP Task Center"
+     "region": "jp20",
+     "name": "cf-jp20"
     },
     {
-      "value": "https://www.youtube.com/embed/sv_q64zJ5cA",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP Mobile Start \u2013 Your native entry point to the Intelligent Enterprise"
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "build-default",
+   "displayName": "build-default",
+   "category": "SERVICE",
+   "description": "Integrate SAP Task Center with all supported task providers. This is a dedicated plan for SAP Build, which allows AI-based development and automation. Note that if you also use other plans of this service, it will incur charges outside the SAP Build usage metrics.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "all-tasks",
-      "displayName": "all-tasks",
-      "category": "SERVICE",
-      "description": "Integrate SAP Task Center with all supported task providers",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "build-default",
-      "displayName": "build-default",
-      "category": "SERVICE",
-      "description": "Integrate SAP Task Center with all supported task providers. This is a dedicated plan for SAP Build, which allows AI-based development and automation. Note that if you also use other plans of this service, it will incur charges outside the SAP Build usage metrics.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ca20",
+     "name": "cf-ca20"
     },
     {
-      "name": "cloud-only-tasks",
-      "displayName": "cloud-only-tasks",
-      "category": "SERVICE",
-      "description": "To be used only with SAP Start. Integrate SAP Task Center with SAP cloud-only task providers",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "This service plan is scheduled to be removed from the list of Eligible Cloud Services as of December 1st. It will be available until the end of the current subscription term. It will not be available for renewal terms that begin after the removal date. You can use the All Tasks or Build Default service plans, which now include the features of the Standard and On-Premise and Third-Party service plans, or the Cloud-Only Tasks service plan if you want to integrate with the supported SAP cloud solutions.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "supportComponents": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "cloud-only-tasks",
+   "displayName": "cloud-only-tasks",
+   "category": "SERVICE",
+   "description": "To be used only with SAP Start. Integrate SAP Task Center with SAP cloud-only task providers",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "CA-INB-TSK"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "LOD-BPM-INB"
-    }
-  ],
-  "apis": [
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
     {
-      "name": "SAP Task Center API",
-      "url": "https://api.sap.com/api/TaskCenterAPIForCloudFoundry/overview",
-      "apiType": "RESTful"
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ]
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "This service plan is scheduled to be removed from the list of Eligible Cloud Services as of December 1st. It will be available until the end of the current subscription term. It will not be available for renewal terms that begin after the removal date. You can use the All Tasks or Build Default service plans, which now include the features of the Standard and On-Premise and Third-Party service plans, or the Cloud-Only Tasks service plan if you want to integrate with the supported SAP cloud solutions.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-INB-TSK"
+  },
+  {
+   "value": "LOD-BPM-INB"
+  }
+ ],
+ "apis": [
+  {
+   "name": "SAP Task Center API",
+   "url": "https://api.sap.com/api/TaskCenterAPIForCloudFoundry/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

@@ -1,44 +1,44 @@
 {
-  "name": "ccpapibroker-prod",
-  "displayName": "S/4HANA Cloud for Customer Payments",
-  "description": "S/4HANA Cloud for Customer Payments",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/JFSpAIOzZhzivbdj2vbfHHvIRcOdWAqWNpCpHyC2jxk_pDy-AivbnqLnmZX7nv2s.svg",
-  "links": [
+ "name": "ccpapibroker-prod",
+ "displayName": "S/4HANA Cloud for Customer Payments",
+ "description": "S/4HANA Cloud for Customer Payments",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/JFSpAIOzZhzivbdj2vbfHHvIRcOdWAqWNpCpHyC2jxk_pDy-AivbnqLnmZX7nv2s.svg",
+ "links": [
+  {
+   "value": "https://help.sap.com/customerpayments",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Default plan to be used by business reuse service",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/customerpayments",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    }
-  ],
-  "servicePlans": [
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Default plan to be used by business reuse service",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

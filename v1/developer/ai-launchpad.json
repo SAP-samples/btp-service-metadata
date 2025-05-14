@@ -1,218 +1,218 @@
 {
-  "name": "ai-launchpad",
-  "displayName": "SAP AI Launchpad",
-  "description": "SAP AI Launchpad",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/LWZFqm4iewpZO7_5mm9GTluZUYmBNyvQYTE0jkEz2yvA6f6COZUqFwJMhJ-r7epE.svg",
-  "links": [
+ "name": "ai-launchpad",
+ "displayName": "SAP AI Launchpad",
+ "description": "SAP AI Launchpad",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/LWZFqm4iewpZO7_5mm9GTluZUYmBNyvQYTE0jkEz2yvA6f6COZUqFwJMhJ-r7epE.svg",
+ "links": [
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - SAP AI Launchpad"
+  },
+  {
+   "value": "https://help.sap.com/doc/91f0266b09a04484be6b68e9a7802b7e/CLOUD/en-US/7f4faf6764d249fc862714dac919532f.pdf",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/ai-launchpad/sap-ai-launchpad/what-is-sap-ai-launchpad",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://blogs.sap.com/tags/73555000100800003283/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "SAP AI Launchpad Blogs"
+  },
+  {
+   "value": "https://developers.sap.com/group.ai-core-get-started-basics.html",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Get Started: Create Your First Machine Learning Project using SAP AI Core"
+  },
+  {
+   "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is SAP AI Launchpad?"
+  },
+  {
+   "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US/5d8adb6f43ea4eeca97c9a2b2bb93c6b.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US/7a0e5a53d32c462bab4e56adc2397623.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Monitoring and Troubleshooting"
+  },
+  {
+   "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US/8910a9b993f840278c8afb0e4f39f4fc.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/AI_LAUNCHPAD/CLOUD/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+   "classification": "Legal",
+   "type": "Link",
+   "text": "Legal"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "APPLICATION",
+   "description": "Free tier option for SAP AI Launchpad, with usage limits. To work without usage limits, migrate to standard plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - SAP AI Launchpad"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://help.sap.com/doc/91f0266b09a04484be6b68e9a7802b7e/CLOUD/en-US/7f4faf6764d249fc862714dac919532f.pdf",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://help.sap.com/docs/ai-launchpad/sap-ai-launchpad/what-is-sap-ai-launchpad",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://blogs.sap.com/tags/73555000100800003283/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "SAP AI Launchpad Blogs"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://developers.sap.com/group.ai-core-get-started-basics.html",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Get Started: Create Your First Machine Learning Project using SAP AI Core"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is SAP AI Launchpad?"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US/5d8adb6f43ea4eeca97c9a2b2bb93c6b.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "eu30",
+     "name": "cf-eu30"
     },
     {
-      "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US/7a0e5a53d32c462bab4e56adc2397623.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Monitoring and Troubleshooting"
+     "region": "in30",
+     "name": "cf-in30"
     },
     {
-      "value": "https://help.sap.com/viewer/92d77f26188e4582897b9106b9cb72e0/CLOUD/en-US/8910a9b993f840278c8afb0e4f39f4fc.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://help.sap.com/viewer/product/AI_LAUNCHPAD/CLOUD/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "us10",
+     "name": "cf-us10"
     },
     {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "Standard plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "APPLICATION",
-      "description": "Free tier option for SAP AI Launchpad, with usage limits. To work without usage limits, migrate to standard plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "Standard plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
     {
-      "value": "CA-ML-AILP"
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-ML-AILP"
+  }
+ ],
+ "apis": []
 }

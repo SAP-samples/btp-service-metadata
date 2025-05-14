@@ -1,44 +1,44 @@
 {
-  "name": "farming",
-  "displayName": "SAP Intelligent Agriculture",
-  "description": "SAP Intelligent Agriculture",
-  "icon": "Icon too big. Service owner needs to reduce size.",
-  "links": [
+ "name": "farming",
+ "displayName": "SAP Intelligent Agriculture",
+ "description": "SAP Intelligent Agriculture",
+ "icon": "Icon too big. Service owner needs to reduce size.",
+ "links": [
+  {
+   "value": "https://help.sap.com/docs/SAP_INTELLIGENT_AGRICULTURE",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "The standard plan includes the full SAP Intelligent Agriculture solution",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/docs/SAP_INTELLIGENT_AGRICULTURE",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    }
-  ],
-  "servicePlans": [
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "The standard plan includes the full SAP Intelligent Agriculture solution",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

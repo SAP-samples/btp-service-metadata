@@ -1,33 +1,33 @@
 {
-  "name": "sap-smartbusiness-service",
-  "displayName": "Smart Business Service",
-  "description": "Smart Business Service",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "sap-smartbusiness-service",
+ "displayName": "Smart Business Service",
+ "description": "Smart Business Service",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "Default",
+   "displayName": "Smart Business Service",
+   "category": "APPLICATION",
+   "description": "Smart Business Service",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "Default",
-      "displayName": "Smart Business Service",
-      "category": "APPLICATION",
-      "description": "Smart Business Service",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

@@ -1,41 +1,41 @@
 {
-  "name": "supplier-dmc-sap",
-  "displayName": "SAP Digital Manufacturing Network",
-  "description": "SAP Digital Manufacturing Network",
-  "icon": null,
-  "servicePlans": [
+ "name": "supplier-dmc-sap",
+ "displayName": "SAP Digital Manufacturing Network",
+ "description": "SAP Digital Manufacturing Network",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "production",
+   "displayName": "production",
+   "category": "APPLICATION",
+   "description": "production",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "production",
-      "displayName": "production",
-      "category": "APPLICATION",
-      "description": "production",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005333",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005333",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

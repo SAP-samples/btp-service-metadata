@@ -1,33 +1,33 @@
 {
-  "name": "cpr-service",
-  "displayName": "CPR Service Broker",
-  "description": "CPR Service Broker",
-  "icon": null,
-  "servicePlans": [
+ "name": "cpr-service",
+ "displayName": "CPR Service Broker",
+ "description": "CPR Service Broker",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "CPR Service Broker",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "CPR Service Broker",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012317",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8013903",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012317",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8013903",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

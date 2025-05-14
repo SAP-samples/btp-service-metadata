@@ -1,305 +1,305 @@
 {
-  "name": "processvisibility",
-  "displayName": "Process Visibility",
-  "description": "Process Visibility",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/KI-Y9qkEjVVQaGTkxgzWQ7347392GkLO2dIVI9td_2k60Ul7U239091ks8DQWwpu.svg",
-  "servicePlans": [
+ "name": "processvisibility",
+ "displayName": "Process Visibility",
+ "description": "Process Visibility",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/KI-Y9qkEjVVQaGTkxgzWQ7347392GkLO2dIVI9td_2k60Ul7U239091ks8DQWwpu.svg",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Default plan for using process visibility",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Default plan for using process visibility",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007969",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "workflow",
-      "displayName": "workflow",
-      "category": "SERVICE",
-      "description": "Plan for usage of process visibility for customers with Workflow Management entitlement to enable Digital Process Automation",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8004744",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005306",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005306",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005565",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007964",
-          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8007978",
-          "commercialModel": "ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008834",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011000",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011182",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014741",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015104",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007969",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    }
+   ]
+  },
+  {
+   "name": "workflow",
+   "displayName": "workflow",
+   "category": "SERVICE",
+   "description": "Plan for usage of process visibility for customers with Workflow Management entitlement to enable Digital Process Automation",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8004744",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005306",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005306",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005565",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007964",
+     "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+    },
+    {
+     "materialNumber": "8007978",
+     "commercialModel": "ppu_ms_azure_hyperscaler"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008834",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011000",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011182",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014741",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015104",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

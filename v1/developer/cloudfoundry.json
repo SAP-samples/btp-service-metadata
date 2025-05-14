@@ -1,810 +1,810 @@
 {
-  "name": "cloudfoundry",
-  "displayName": "SAP BTP, Cloud Foundry environment",
-  "description": "Cloud Foundry Environment",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MfBx5cdlo5e3uk3cN8GGOHbv0295Ntbz6rL3EsFTxqjkhMYoD27-aG6qRMAA2P0M.svg",
-  "links": [
+ "name": "cloudfoundry",
+ "displayName": "SAP BTP, Cloud Foundry environment",
+ "description": "Cloud Foundry Environment",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MfBx5cdlo5e3uk3cN8GGOHbv0295Ntbz6rL3EsFTxqjkhMYoD27-aG6qRMAA2P0M.svg",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20BTP%2C%20Cloud%20Foundry%20environment",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20BTP%2C%20Cloud%20Foundry%20environment",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/cloud-foundry-runtime",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "Discovery Center"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-foundry-runtime",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Cloud Foundry Runtime"
+  },
+  {
+   "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Application%20Programming%20Model;HTML5%20Application%20Repository;Multitenancy;Node.js%20System%20Buildpack;Python%20Buildpack;SAP%20Java%20Buildpack;SAPUI5&date=all",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/doc/5e8107bf49684962b897217040398007/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/CF_RUNTIME/4287333baaa6413a8ece0a8ed1196af4/935cceed98e74a7fa3ae170935736ca2.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/commercial-models",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Commercial Models"
+  },
+  {
+   "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/entitlements-and-quotas",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Entitlements and Quotas"
+  },
+  {
+   "value": "https://help.sap.com/docs/cf-runtime/cloud-foundry-runtime/commercial-information-for-cloud-foundry-runtime",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/cf-runtime/cloud-foundry-runtime/service-plans-and-metering-for-cloud-foundry-runtime",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Understanding Service Plans and Metering"
+  },
+  {
+   "value": "https://community.sap.com/topics/business-application-studio",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "Business Application Studio"
+  },
+  {
+   "value": "https://community.sap.com/topics/business-technology-platform",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP BTP"
+  },
+  {
+   "value": "https://community.sap.com/topics/cloud-application-programming",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Cloud Application Programming Model"
+  },
+  {
+   "value": "https://community.sap.com/topics/low-code-no-code",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "Low-Code/No-Code"
+  },
+  {
+   "value": "https://community.sap.com/topics/ui5/developing-sapui5-applications",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAPUI5"
+  },
+  {
+   "value": "https://developers.sap.com/group.deploy-full-stack-cap-application.html",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Deploy a Full-Stack CAP Application in SAP BTP, Cloud Foundry Runtime Following SAP BTP Developer\u2019s Guide"
+  },
+  {
+   "value": "https://developers.sap.com/group.scp-1-get-ready.html?url_id=text-us-recommendation",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Get Ready to Develop on SAP BTP"
+  },
+  {
+   "value": "https://developers.sap.com/mission.cap-java-app.html",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Build a Business Application Using CAP for Java"
+  },
+  {
+   "value": "https://developers.sap.com/mission.cp-starter-extensions-cap.html",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Build a Business Application Using CAP for Node.js"
+  },
+  {
+   "value": "https://github.com/SAP-samples/cap-sflight",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SFLIGHT Sample Application Using SAP Cloud Application Programming Model (CAP)"
+  },
+  {
+   "value": "https://github.com/SAP-samples/cloud-cap-samples",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Sample Node.js Application Using SAP Cloud Application Programming Model (CAP)"
+  },
+  {
+   "value": "https://github.com/SAP-samples/cloud-cap-samples-java",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Sample Java Application Using SAP Cloud Application Programming Model (CAP)"
+  },
+  {
+   "value": "https://learning.sap.com/learning-journeys/developing-applications-on-sap-btp-cloud-foundry-runtime",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "SAP BTP, Cloud Foundry Runtime Learning Journey"
+  },
+  {
+   "value": "https://open.sap.com/courses/cp1-2",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "Develop Node.js Applications"
+  },
+  {
+   "value": "https://open.sap.com/courses/cp7/resume",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "Building Applications with SAP Cloud Application Programming Model"
+  },
+  {
+   "value": "https://open.sap.com/courses/ui51/resume",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "Developing Web Apps with SAPUI5"
+  },
+  {
+   "value": "https://open.sap.com/courses/ui52/resume",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "Evolved Web Apps with SAPUI5"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/11d77aa154f64c2e83cc9652a78bb985.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Developing HTML5 Applications"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/40a8f8f6f1724e0ca0fd2a8777f45504.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Development in the Cloud Foundry Environment"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/9c7092c7b7ae4d49bc8ae35fdd0e0b18.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/CF_RUNTIME",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://sapui5.hana.ondemand.com/#/api",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAPUI5 API Reference"
+  },
+  {
+   "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+   "classification": "Legal",
+   "type": "Link",
+   "text": "Legal"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "build-code",
+   "displayName": "build-code",
+   "category": "SERVICE",
+   "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric. Create an org in your Cloud Foundry environment to start developing build code applications.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20BTP%2C%20Cloud%20Foundry%20environment",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20BTP%2C%20Cloud%20Foundry%20environment",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/cloud-foundry-runtime",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-foundry-runtime",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Cloud Foundry Runtime"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Application%20Programming%20Model;HTML5%20Application%20Repository;Multitenancy;Node.js%20System%20Buildpack;Python%20Buildpack;SAP%20Java%20Buildpack;SAPUI5&date=all",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://help.sap.com/doc/5e8107bf49684962b897217040398007/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://help.sap.com/docs/CF_RUNTIME/4287333baaa6413a8ece0a8ed1196af4/935cceed98e74a7fa3ae170935736ca2.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/commercial-models",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Commercial Models"
+     "region": "br20",
+     "name": "cf-br20"
     },
     {
-      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/entitlements-and-quotas",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Entitlements and Quotas"
+     "region": "br30",
+     "name": "cf-br30"
     },
     {
-      "value": "https://help.sap.com/docs/cf-runtime/cloud-foundry-runtime/commercial-information-for-cloud-foundry-runtime",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://help.sap.com/docs/cf-runtime/cloud-foundry-runtime/service-plans-and-metering-for-cloud-foundry-runtime",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Understanding Service Plans and Metering"
+     "region": "ca20",
+     "name": "cf-ca20"
     },
     {
-      "value": "https://community.sap.com/topics/business-application-studio",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "Business Application Studio"
+     "region": "ch20",
+     "name": "cf-ch20"
     },
     {
-      "value": "https://community.sap.com/topics/business-technology-platform",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP BTP"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/topics/cloud-application-programming",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Cloud Application Programming Model"
+     "region": "eu10",
+     "name": "cf-eu10-002"
     },
     {
-      "value": "https://community.sap.com/topics/low-code-no-code",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "Low-Code/No-Code"
+     "region": "eu10",
+     "name": "cf-eu10-003"
     },
     {
-      "value": "https://community.sap.com/topics/ui5/developing-sapui5-applications",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAPUI5"
+     "region": "eu10",
+     "name": "cf-eu10-004"
     },
     {
-      "value": "https://developers.sap.com/group.deploy-full-stack-cap-application.html",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Deploy a Full-Stack CAP Application in SAP BTP, Cloud Foundry Runtime Following SAP BTP Developer\u2019s Guide"
+     "region": "eu10",
+     "name": "cf-eu10-005"
     },
     {
-      "value": "https://developers.sap.com/group.scp-1-get-ready.html?url_id=text-us-recommendation",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Get Ready to Develop on SAP BTP"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://developers.sap.com/mission.cap-java-app.html",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Build a Business Application Using CAP for Java"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://developers.sap.com/mission.cp-starter-extensions-cap.html",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Build a Business Application Using CAP for Node.js"
+     "region": "eu20",
+     "name": "cf-eu20-001"
     },
     {
-      "value": "https://github.com/SAP-samples/cap-sflight",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SFLIGHT Sample Application Using SAP Cloud Application Programming Model (CAP)"
+     "region": "eu30",
+     "name": "cf-eu30"
     },
     {
-      "value": "https://github.com/SAP-samples/cloud-cap-samples",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Sample Node.js Application Using SAP Cloud Application Programming Model (CAP)"
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
-      "value": "https://github.com/SAP-samples/cloud-cap-samples-java",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Sample Java Application Using SAP Cloud Application Programming Model (CAP)"
+     "region": "in30",
+     "name": "cf-in30"
     },
     {
-      "value": "https://learning.sap.com/learning-journeys/developing-applications-on-sap-btp-cloud-foundry-runtime",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "SAP BTP, Cloud Foundry Runtime Learning Journey"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://open.sap.com/courses/cp1-2",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "Develop Node.js Applications"
+     "region": "jp20",
+     "name": "cf-jp20"
     },
     {
-      "value": "https://open.sap.com/courses/cp7/resume",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "Building Applications with SAP Cloud Application Programming Model"
+     "region": "jp30",
+     "name": "cf-jp30"
     },
     {
-      "value": "https://open.sap.com/courses/ui51/resume",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "Developing Web Apps with SAPUI5"
+     "region": "jp31",
+     "name": "cf-jp31"
     },
     {
-      "value": "https://open.sap.com/courses/ui52/resume",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "Evolved Web Apps with SAPUI5"
+     "region": "sa30",
+     "name": "cf-sa30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/11d77aa154f64c2e83cc9652a78bb985.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Developing HTML5 Applications"
+     "region": "sa31",
+     "name": "cf-sa31"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/40a8f8f6f1724e0ca0fd2a8777f45504.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Development in the Cloud Foundry Environment"
+     "region": "us10",
+     "name": "cf-us10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
+     "region": "us10",
+     "name": "cf-us10-001"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/9c7092c7b7ae4d49bc8ae35fdd0e0b18.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "us10",
+     "name": "cf-us10-002"
     },
     {
-      "value": "https://help.sap.com/docs/CF_RUNTIME",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "us11",
+     "name": "cf-us11"
     },
     {
-      "value": "https://sapui5.hana.ondemand.com/#/api",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAPUI5 API Reference"
+     "region": "us20",
+     "name": "cf-us20"
     },
     {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "build-code",
-      "displayName": "build-code",
-      "category": "SERVICE",
-      "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric. Create an org in your Cloud Foundry environment to start developing build code applications.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-002"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-003"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-004"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-005"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20-001"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10-001"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10-002"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "schema": "http://json-schema.org/draft-07/schema#",
-                "_show_form_view": true,
-                "type": "object",
-                "properties": {
-                  "instance_name": {
-                    "title": "Org Name",
-                    "description": "Cloud Foundry organization name",
-                    "type": "string",
-                    "minLength": 1,
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "gaDisplayName",
-                        "saSubdomain"
-                      ],
-                      "separator": "_"
-                    }
-                  }
-                },
-                "required": [
-                  "instance_name"
-                ]
-              }
-            }
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "schema": "http://json-schema.org/draft-07/schema#",
+        "_show_form_view": true,
+        "type": "object",
+        "properties": {
+         "instance_name": {
+          "title": "Org Name",
+          "description": "Cloud Foundry organization name",
+          "type": "string",
+          "minLength": 1,
+          "_BTPdefaultTemplate": {
+           "elements": [
+            "gaDisplayName",
+            "saSubdomain"
+           ],
+           "separator": "_"
           }
-        }
-      ]
-    },
-    {
-      "name": "build-runtime",
-      "displayName": "Build-runtime",
-      "category": "SERVICE",
-      "description": "This is a dedicated plan for the SAP Build. If you want to use this service with SAP Build use the build-runtime plan. Please note if you use any other plan, e.g. standard, it will incur charges outside the SAP Build capacity units metric.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-002"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-003"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-004"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-005"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20-001"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10-001"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10-002"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "schema": "http://json-schema.org/draft-07/schema#",
-                "_show_form_view": true,
-                "type": "object",
-                "properties": {
-                  "instance_name": {
-                    "title": "Org Name",
-                    "description": "Cloud Foundry organization name",
-                    "type": "string",
-                    "minLength": 1,
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "gaDisplayName",
-                        "saSubdomain"
-                      ],
-                      "separator": "_"
-                    }
-                  }
-                },
-                "required": [
-                  "instance_name"
-                ]
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "free",
-      "displayName": "free",
-      "category": "ENVIRONMENT",
-      "description": "Free Tier Plan for CPEA and Pay-As-You Go. Only community support is available for free tier service plans and these are not subject to SLAs. Use of free tier service plans is subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-002"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-003"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-004"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10-005"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20-001"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10-001"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10-002"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "schema": "http://json-schema.org/draft-07/schema#",
-                "_show_form_view": true,
-                "type": "object",
-                "properties": {
-                  "instance_name": {
-                    "title": "Org Name",
-                    "description": "Cloud Foundry organization name",
-                    "type": "string",
-                    "minLength": 1,
-                    "_BTPdefaultTemplate": {
-                      "elements": [
-                        "gaDisplayName",
-                        "saSubdomain"
-                      ],
-                      "separator": "_"
-                    }
-                  }
-                },
-                "required": [
-                  "instance_name"
-                ]
-              }
-            }
-          }
-        }
-      ]
+         }
+        },
+        "required": [
+         "instance_name"
+        ]
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [
+   ]
+  },
+  {
+   "name": "build-runtime",
+   "displayName": "Build-runtime",
+   "category": "SERVICE",
+   "description": "This is a dedicated plan for the SAP Build. If you want to use this service with SAP Build use the build-runtime plan. Please note if you use any other plan, e.g. standard, it will incur charges outside the SAP Build capacity units metric.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "BC-CP-CF"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "BC-CP-CF-CNTRLPLN"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "BC-CP-CF-CRTM"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "BC-CP-CF-LGGRGTR"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "BC-CP-CF-R"
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-002"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-003"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-004"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-005"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20-001"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10-001"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10-002"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "apis": []
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "schema": "http://json-schema.org/draft-07/schema#",
+        "_show_form_view": true,
+        "type": "object",
+        "properties": {
+         "instance_name": {
+          "title": "Org Name",
+          "description": "Cloud Foundry organization name",
+          "type": "string",
+          "minLength": 1,
+          "_BTPdefaultTemplate": {
+           "elements": [
+            "gaDisplayName",
+            "saSubdomain"
+           ],
+           "separator": "_"
+          }
+         }
+        },
+        "required": [
+         "instance_name"
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "ENVIRONMENT",
+   "description": "Free Tier Plan for CPEA and Pay-As-You Go. Only community support is available for free tier service plans and these are not subject to SLAs. Use of free tier service plans is subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-002"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-003"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-004"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-005"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20-001"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10-001"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10-002"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "schema": "http://json-schema.org/draft-07/schema#",
+        "_show_form_view": true,
+        "type": "object",
+        "properties": {
+         "instance_name": {
+          "title": "Org Name",
+          "description": "Cloud Foundry organization name",
+          "type": "string",
+          "minLength": 1,
+          "_BTPdefaultTemplate": {
+           "elements": [
+            "gaDisplayName",
+            "saSubdomain"
+           ],
+           "separator": "_"
+          }
+         }
+        },
+        "required": [
+         "instance_name"
+        ]
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-CF"
+  },
+  {
+   "value": "BC-CP-CF-CNTRLPLN"
+  },
+  {
+   "value": "BC-CP-CF-CRTM"
+  },
+  {
+   "value": "BC-CP-CF-LGGRGTR"
+  },
+  {
+   "value": "BC-CP-CF-R"
+  }
+ ],
+ "apis": []
 }

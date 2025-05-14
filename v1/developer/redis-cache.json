@@ -1,2068 +1,2068 @@
 {
-  "name": "redis-cache",
-  "displayName": "Redis, Hyperscaler Option",
-  "description": "Redis, Hyperscaler Option",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/rNKQE5T1WQDoKAUv6JddqmhJnBGVzpmnfnEH3l_Mzy0BbbyFVtScbEWBdDqNngW1.svg",
-  "links": [
+ "name": "redis-cache",
+ "displayName": "Redis, Hyperscaler Option",
+ "description": "Redis, Hyperscaler Option",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/rNKQE5T1WQDoKAUv6JddqmhJnBGVzpmnfnEH3l_Mzy0BbbyFVtScbEWBdDqNngW1.svg",
+ "links": [
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/redis-hyperscaler-option",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Redis, Hyperscaler Option"
+  },
+  {
+   "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Redis&from=2019-05-01",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/doc/796c683493bb4233906acd22d3c68110/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/082005ec29494234a42af221bc963a67/71399a37ccba45c5b41d35f5ba9490dc.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is Redis, Hyperscaler Option?"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/082005ec29494234a42af221bc963a67/a0a4e36f97694766a574dcb81c6ddf5e.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  },
+  {
+   "value": "https://help.sap.com/viewer/ad8f6ea81b714bbb9bf995dd2c2b424e/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/Redis/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "Free",
+   "category": "SERVICE",
+   "description": "Redis cache service for non-productive development usage",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/redis-hyperscaler-option",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Redis, Hyperscaler Option"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Redis&from=2019-05-01",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://help.sap.com/doc/796c683493bb4233906acd22d3c68110/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/082005ec29494234a42af221bc963a67/71399a37ccba45c5b41d35f5ba9490dc.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is Redis, Hyperscaler Option?"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/082005ec29494234a42af221bc963a67/a0a4e36f97694766a574dcb81c6ddf5e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://help.sap.com/viewer/ad8f6ea81b714bbb9bf995dd2c2b424e/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap31",
+     "name": "cf-ap31"
     },
     {
-      "value": "https://help.sap.com/viewer/product/Redis/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "free",
-      "displayName": "Free",
-      "category": "SERVICE",
-      "description": "Redis cache service for non-productive development usage",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-free-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         }
         }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-free-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-free-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-free-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         }
         },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-free-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance.",
-                    "type": "integer",
-                    "enum": [
-                      1
-                    ],
-                    "default": 1
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-free-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        }
-      ]
+        "_load_current_config": true
+       }
+      }
+     }
     },
     {
-      "name": "premium",
-      "displayName": "premium",
-      "category": "SERVICE",
-      "description": "Create production-ready Redis Cache instances with premium features.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-free-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance.",
+          "type": "integer",
+          "enum": [
+           1
+          ],
+          "default": 1
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         }
         }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-premium-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "cluster_mode": {
-                    "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
-                    "type": "boolean",
-                    "default": true
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  },
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      8,
-                      16,
-                      32,
-                      64
-                    ],
-                    "default": 8
-                  },
-                  "multi_az": {
-                    "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
-                    "type": "boolean",
-                    "default": true
-                  },
-                  "node_count": {
-                    "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 3,
-                    "maximum": 6,
-                    "default": 3
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$",
-                    "default": ""
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 90,
-                    "default": 1
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-premium-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  },
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
-                    "type": "integer",
-                    "enum": [
-                      8,
-                      16,
-                      32,
-                      64
-                    ]
-                  },
-                  "multi_az": {
-                    "description": "Indicates whether the instance is a multi-AZ deployment. Only non-multi-AZ to multi-AZ is allowed.",
-                    "type": "boolean"
-                  },
-                  "node_count": {
-                    "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 3,
-                    "maximum": 6
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$"
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 90
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-premium-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      8,
-                      16,
-                      32,
-                      64
-                    ],
-                    "default": 8
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "multi_az": {
-                    "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
-                    "type": "boolean",
-                    "default": true
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$",
-                    "default": ""
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 10,
-                    "default": 1
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  },
-                  "cluster_mode": {
-                    "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
-                    "type": "boolean",
-                    "default": true
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-premium-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
-                    "type": "integer",
-                    "enum": [
-                      8,
-                      16,
-                      32,
-                      64
-                    ]
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$"
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 10
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-premium-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      8,
-                      16,
-                      32,
-                      64
-                    ],
-                    "default": 8
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$",
-                    "default": ""
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-premium-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
-                    "type": "integer",
-                    "enum": [
-                      8,
-                      16,
-                      32,
-                      64
-                    ]
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$"
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      }
-                    }
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "reference",
-      "displayName": "reference",
-      "category": "SERVICE",
-      "description": "Reference Redis Cache of a source instance",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/reference-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "properties": {
-                  "source_instance_id": {
-                    "description": "GUID of the source instance. A reference instance would be created for a source instance",
-                    "type": "string"
-                  }
-                },
-                "oneOf": [
-                  {
-                    "required": [
-                      "source_instance_id"
-                    ]
-                  }
-                ]
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard Redis Cache service offering.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-standard-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "cluster_mode": {
-                    "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
-                    "type": "boolean",
-                    "default": true
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  },
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      2,
-                      4
-                    ],
-                    "default": 2
-                  },
-                  "multi_az": {
-                    "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
-                    "type": "boolean",
-                    "default": true
-                  },
-                  "node_count": {
-                    "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 3,
-                    "maximum": 6,
-                    "default": 3
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$",
-                    "default": ""
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 90,
-                    "default": 1
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-standard-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  },
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      2,
-                      4
-                    ]
-                  },
-                  "multi_az": {
-                    "description": "Indicates whether the instance is a multi-AZ deployment. Only non-multi-AZ to multi-AZ is allowed.",
-                    "type": "boolean"
-                  },
-                  "node_count": {
-                    "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 3,
-                    "maximum": 6
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$"
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 90
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-standard-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      2,
-                      4
-                    ],
-                    "default": 2
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$",
-                    "default": ""
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 10,
-                    "default": 1
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-standard-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      2,
-                      4
-                    ]
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  },
-                  "shard_count": {
-                    "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 10
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$"
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      },
-                      "duration": {
-                        "description": "Number of hours required for patching the Redis cache instance.",
-                        "type": "integer",
-                        "default": 5,
-                        "minimum": 5,
-                        "maximum": 23
-                      }
-                    }
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-standard-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      2,
-                      4
-                    ],
-                    "default": 2
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$",
-                    "default": ""
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-standard-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "memory": {
-                    "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-                    "type": "integer",
-                    "enum": [
-                      2,
-                      4
-                    ]
-                  },
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  },
-                  "notify_keyspace_events": {
-                    "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
-                    "type": "string",
-                    "pattern": "^[KEg$lshzxeA]*$"
-                  },
-                  "maintenance_window": {
-                    "description": "Indicates the maintenance window for the Redis cache.",
-                    "type": "object",
-                    "properties": {
-                      "day_of_week": {
-                        "description": "Day of the week when Redis cache instance can be patched.",
-                        "type": "string",
-                        "enum": [
-                          "Monday",
-                          "Tuesday",
-                          "Wednesday",
-                          "Thursday",
-                          "Friday",
-                          "Saturday",
-                          "Sunday"
-                        ],
-                        "default": "Sunday"
-                      },
-                      "start_hour_utc": {
-                        "description": "Start hour after which patching of the Redis cache instance can start.",
-                        "type": "integer",
-                        "default": 4,
-                        "minimum": 0,
-                        "maximum": 23
-                      }
-                    }
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "trial",
-      "displayName": "trial",
-      "category": "SERVICE",
-      "description": "Redis Cache service offering for trial accounts",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-trial-create.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
-                    "type": "string",
-                    "enum": [
-                      "6.0"
-                    ],
-                    "default": "6.0"
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ],
-                    "default": "noeviction"
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$id": "http://example.com/schemas/redis-trial-update.json",
-                "$schema": "http://json-schema.org/draft-06/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "additionalProperties": true,
-                "properties": {
-                  "engine_version": {
-                    "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
-                    "type": "string",
-                    "enum": [
-                      "4.0",
-                      "6.0"
-                    ]
-                  },
-                  "eviction_policy": {
-                    "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
-                    "type": "string",
-                    "enum": [
-                      "allkeys-lfu",
-                      "allkeys-lru",
-                      "allkeys-random",
-                      "noeviction",
-                      "volatile-lfu",
-                      "volatile-lru",
-                      "volatile-random",
-                      "volatile-ttl"
-                    ]
-                  }
-                },
-                "_load_current_config": true
-              }
-            }
-          }
-        }
-      ]
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-free-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [
+   ]
+  },
+  {
+   "name": "premium",
+   "displayName": "premium",
+   "category": "SERVICE",
+   "description": "Create production-ready Redis Cache instances with premium features.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "BC-CP-BSB-REDIS"
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "apis": []
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-premium-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "cluster_mode": {
+          "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
+          "type": "boolean",
+          "default": true
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64
+          ],
+          "default": 8
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
+          "type": "boolean",
+          "default": true
+         },
+         "node_count": {
+          "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 6,
+          "default": 3
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$",
+          "default": ""
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 90,
+          "default": 1
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-premium-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64
+          ]
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. Only non-multi-AZ to multi-AZ is allowed.",
+          "type": "boolean"
+         },
+         "node_count": {
+          "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 6
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$"
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 90
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-premium-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64
+          ],
+          "default": 8
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
+          "type": "boolean",
+          "default": true
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$",
+          "default": ""
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 1
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         },
+         "cluster_mode": {
+          "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
+          "type": "boolean",
+          "default": true
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-premium-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64
+          ]
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$"
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-premium-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64
+          ],
+          "default": 8
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$",
+          "default": ""
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           }
+          }
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-premium-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the premium plan's semantics. Note that memory cannot be downscaled",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64
+          ]
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$"
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           }
+          }
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "reference",
+   "displayName": "reference",
+   "category": "SERVICE",
+   "description": "Reference Redis Cache of a source instance",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/reference-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "properties": {
+         "source_instance_id": {
+          "description": "GUID of the source instance. A reference instance would be created for a source instance",
+          "type": "string"
+         }
+        },
+        "oneOf": [
+         {
+          "required": [
+           "source_instance_id"
+          ]
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard Redis Cache service offering.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-standard-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "cluster_mode": {
+          "description": "Indicates whether the instance is clustered redis deployment. If not provided, it is defaulted to true.",
+          "type": "boolean",
+          "default": true
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ],
+          "default": 2
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true.",
+          "type": "boolean",
+          "default": true
+         },
+         "node_count": {
+          "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 6,
+          "default": 3
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$",
+          "default": ""
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 90,
+          "default": 1
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-standard-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ]
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. Only non-multi-AZ to multi-AZ is allowed.",
+          "type": "boolean"
+         },
+         "node_count": {
+          "description": "Indicates the number of nodes per shard within the Redis cluster. If not provided, it is defaulted to 3. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 6
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$"
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 90
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-standard-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ],
+          "default": 2
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$",
+          "default": ""
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 1
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-standard-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ]
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         },
+         "shard_count": {
+          "description": "Indicates the number of shards within the Redis cluster. If not provided, it is defaulted to 1. For instances with multiple shards and nodes per shard, the number of storage SKU units deducted from available entitlements is equal to the total nodes count in the cluster.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$"
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Number of hours required for patching the Redis cache instance.",
+            "type": "integer",
+            "default": 5,
+            "minimum": 5,
+            "maximum": 23
+           }
+          }
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-standard-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ],
+          "default": 2
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$",
+          "default": ""
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           }
+          }
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-standard-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ]
+         },
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         },
+         "notify_keyspace_events": {
+          "description": "Indicates the keyspace events for which notifications are enabled. If not provided, notifications are disabled.",
+          "type": "string",
+          "pattern": "^[KEg$lshzxeA]*$"
+         },
+         "maintenance_window": {
+          "description": "Indicates the maintenance window for the Redis cache.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when Redis cache instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour after which patching of the Redis cache instance can start.",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           }
+          }
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "trial",
+   "displayName": "trial",
+   "category": "SERVICE",
+   "description": "Redis Cache service offering for trial accounts",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-trial-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
+          "type": "string",
+          "enum": [
+           "6.0"
+          ],
+          "default": "6.0"
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ],
+          "default": "noeviction"
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/redis-trial-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version number of the cache engine to be used for the clusters. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "4.0",
+           "6.0"
+          ]
+         },
+         "eviction_policy": {
+          "description": "The eviction policy for keys when maximum memory usage is reached. Default is 'noeviction'",
+          "type": "string",
+          "enum": [
+           "allkeys-lfu",
+           "allkeys-lru",
+           "allkeys-random",
+           "noeviction",
+           "volatile-lfu",
+           "volatile-lru",
+           "volatile-random",
+           "volatile-ttl"
+          ]
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-BSB-REDIS"
+  }
+ ],
+ "apis": []
 }

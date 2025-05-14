@@ -1,201 +1,201 @@
 {
-  "name": "drcc-app",
-  "displayName": "SAP Document and Reporting Compliance, Cloud Edition",
-  "description": "Exchange electronic documents between business systems and external communication parties.",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc4MDIpIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4zODQ4IDAuMDMzMzI1Mkg3LjY2MjU5QzcuNDg1ODIgMC4wMzMzMjUyIDcuMzE2MjkgMC4xMDM1NDcgNy4xOTEyOSAwLjIyODU0MkM3LjA2NjMgMC4zNTM1MzcgNi45OTYwOCAwLjUyMzA2NiA2Ljk5NjA4IDAuNjk5ODM2TDYuOTk2MDggMy4yODAxM0M2Ljk5NjA4IDMuODI2NzMgNi44MDA4NiA0LjI5NTI1IDYuNDEwNDMgNC42ODU2OUM2LjAyIDUuMDc2MTIgNS41NTE0OCA1LjI3MTM0IDUuMDA0ODcgNS4yNzEzNEgyLjY2NTA1QzIuNDg4MjggNS4yNzEzNCAyLjMxODc1IDUuMzQxNTYgMi4xOTM3NSA1LjQ2NjU1QzIuMDY4NzYgNS41OTE1NSAxLjk5ODU0IDUuNzYxMDggMS45OTg1NCA1LjkzNzg1VjE0LjQwMkMxLjk5ODU0IDE1LjI4NTcgMi43MTQ4OCAxNi4wMDIgMy41OTg1MyAxNi4wMDJINy4wMDA5MUM3Ljc0NzI5IDE2LjAwMiA4LjM5NDUyIDE1LjQ4NiA4LjU2MDczIDE0Ljc1ODNMOC45NTM1OCAxMy4wMzg1QzkuMTE5NzkgMTIuMzEwOSA5Ljc2NzAyIDExLjc5NDkgMTAuNTEzNCAxMS43OTQ5SDEyLjM4NDhDMTMuMjY4NSAxMS43OTQ5IDEzLjk4NDggMTEuMDc4NSAxMy45ODQ4IDEwLjE5NDlWMS42MzMzMkMxMy45ODQ4IDAuNzQ5NjY4IDEzLjI2ODUgMC4wMzMzMjUyIDEyLjM4NDggMC4wMzMzMjUyWk0xMS4wNzkzIDUuMzIxNTdMOC41Mzg4MiA1LjMyMTU3QzguMTA5OTkgNS4zMjE1NyA3Ljc1OTEyIDQuOTU5OTcgNy43NTkxMiA0LjUxODAyQzcuNzU5MTIgNC4wNzYwNyA4LjEwOTk5IDMuNzE0NDcgOC41Mzg4MiAzLjcxNDQ3TDExLjA3OTMgMy43MTQ0N0MxMS41MDgyIDMuNzE0NDcgMTEuODU5IDQuMDc2MDcgMTEuODU5IDQuNTE4MDJDMTEuODU5IDQuOTU5OTggMTEuNTA4MiA1LjMyMTU3IDExLjA3OTMgNS4zMjE1N1pNMTEuMTEwNCA3LjkyODY3SDQuODcyODNDNC40NDQgNy45Mjg2NyA0LjA5MzEzIDcuNTY3MDcgNC4wOTMxMyA3LjEyNTEyQzQuMDkzMTMgNi42ODMxNyA0LjQ0NCA2LjMyMTU3IDQuODcyODMgNi4zMjE1N0gxMS4xMTA0QzExLjUzOTIgNi4zMjE1NyAxMS44OTAxIDYuNjgzMTcgMTEuODkwMSA3LjEyNTEyQzExLjg5MDEgNy41NjcwNyAxMS41MzkyIDcuOTI4NjcgMTEuMTEwNCA3LjkyODY3Wk00Ljg3MjgzIDEwLjUzNThIMTEuMTEwNEMxMS41MzkyIDEwLjUzNTggMTEuODkwMSAxMC4xNzQyIDExLjg5MDEgOS43MzIyMkMxMS44OTAxIDkuMjkwMjcgMTEuNTM5MiA4LjkyODY3IDExLjExMDQgOC45Mjg2N0g0Ljg3MjgzQzQuNDQ0IDguOTI4NjcgNC4wOTMxMyA5LjI5MDI3IDQuMDkzMTMgOS43MzIyMkM0LjA5MzEzIDEwLjE3NDIgNC40NDQgMTAuNTM1OCA0Ljg3MjgzIDEwLjUzNThaTTcuMjExOSAxMy4xNDI5SDQuODcyODNDNC40NDQgMTMuMTQyOSA0LjA5MzEzIDEyLjc4MTMgNC4wOTMxMyAxMi4zMzkzQzQuMDkzMTMgMTEuODk3NCA0LjQ0NCAxMS41MzU4IDQuODcyODMgMTEuNTM1OEg3LjIxMTlDNy42NDA3MyAxMS41MzU4IDcuOTkxNiAxMS44OTc0IDcuOTkxNiAxMi4zMzkzQzcuOTkxNiAxMi43ODEzIDcuNjQwNzMgMTMuMTQyOSA3LjIxMTkgMTMuMTQyOVoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8zODYwXzE3ODAyKSIvPgo8cGF0aCBkPSJNNi4xNTg1MSAzLjEwMTYyVjEuMTY1MTZMMy4wMzQxOCA0LjQ1MTk2SDQuODA4MTZDNS4xNzg4NCA0LjQ1MTk2IDUuNDk2NTcgNC4zMTk1NyA1Ljc2MTM1IDQuMDU0OEM2LjAyNjEyIDMuNzkwMDMgNi4xNTg1MSAzLjQ3MjMgNi4xNTg1MSAzLjEwMTYyWiIgZmlsbD0idXJsKCNwYWludDFfbGluZWFyXzM4NjBfMTc4MDIpIi8+CjxwYXRoIGQ9Ik0xNC42MzQxIDExLjQ5NjFDMTQuNzk0MSAxMS4zMzA0IDE0Ljk3NCAxMS4yNDc2IDE1LjE3NCAxMS4yNDc2QzE1LjM3MzkgMTEuMjQ3NiAxNS41NTM5IDExLjMzMDQgMTUuNzEzOCAxMS40OTYxQzE1Ljg1MzggMTEuNjQxMiAxNS45MjM4IDExLjgxNzIgMTUuOTIzOCAxMi4wMjQ0QzE1LjkyMzggMTIuMjMxNSAxNS44NTM4IDEyLjQxOCAxNS43MTM4IDEyLjU4MzdMMTIuNjg0NiAxNS43MjIxQzEyLjU0NDYgMTUuODY3MSAxMi4zNjQ2IDE1LjkzOTYgMTIuMTQ0NyAxNS45Mzk2QzExLjkyNDcgMTUuOTM5NiAxMS43NDQ4IDE1Ljg2NzEgMTEuNjA0OCAxNS43MjIxTDEwLjEwNTIgMTQuMTY4NEM5Ljk0NTIyIDE0LjAwMjcgOS44NjUyMyAxMy44MTYzIDkuODY1MjMgMTMuNjA5MUM5Ljg2NTIzIDEzLjQwMiA5Ljk0NTIyIDEzLjIxNTUgMTAuMTA1MiAxMy4wNDk4QzEwLjI2NTEgMTIuODg0MSAxMC40NDUxIDEyLjgwMTIgMTAuNjQ1IDEyLjgwMTJDMTAuODQ1IDEyLjgwMTIgMTEuMDE1IDEyLjg4NDEgMTEuMTU0OSAxMy4wNDk4TDEyLjE0NDcgMTQuMDc1MkwxNC42MzQxIDExLjQ5NjFaIiBmaWxsPSJ1cmwoI3BhaW50Ml9saW5lYXJfMzg2MF8xNzgwMikiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzM4NjBfMTc4MDIiIHgxPSIzLjc5NTMzIiB5MT0iMi40MjEzNSIgeDI9IjE0LjUzMjgiIHkyPSIxMC40ODM4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjk5MTAyOCIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfMzg2MF8xNzgwMiIgeDE9IjMuNDk2MDkiIHkxPSIxLjY0ODcyIiB4Mj0iNS43OTM4OSIgeTI9IjMuODQyMzQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDJfbGluZWFyXzM4NjBfMTc4MDIiIHgxPSIxMC43NjEiIHkxPSIxMS45Mzc5IiB4Mj0iMTMuOTM2OCIgeTI9IjE2LjA1NjMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zODYwXzE3ODAyIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwLjAwMjA3NTIpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
-  "servicePlans": [
+ "name": "drcc-app",
+ "displayName": "SAP Document and Reporting Compliance, Cloud Edition",
+ "description": "Exchange electronic documents between business systems and external communication parties.",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc4MDIpIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4zODQ4IDAuMDMzMzI1Mkg3LjY2MjU5QzcuNDg1ODIgMC4wMzMzMjUyIDcuMzE2MjkgMC4xMDM1NDcgNy4xOTEyOSAwLjIyODU0MkM3LjA2NjMgMC4zNTM1MzcgNi45OTYwOCAwLjUyMzA2NiA2Ljk5NjA4IDAuNjk5ODM2TDYuOTk2MDggMy4yODAxM0M2Ljk5NjA4IDMuODI2NzMgNi44MDA4NiA0LjI5NTI1IDYuNDEwNDMgNC42ODU2OUM2LjAyIDUuMDc2MTIgNS41NTE0OCA1LjI3MTM0IDUuMDA0ODcgNS4yNzEzNEgyLjY2NTA1QzIuNDg4MjggNS4yNzEzNCAyLjMxODc1IDUuMzQxNTYgMi4xOTM3NSA1LjQ2NjU1QzIuMDY4NzYgNS41OTE1NSAxLjk5ODU0IDUuNzYxMDggMS45OTg1NCA1LjkzNzg1VjE0LjQwMkMxLjk5ODU0IDE1LjI4NTcgMi43MTQ4OCAxNi4wMDIgMy41OTg1MyAxNi4wMDJINy4wMDA5MUM3Ljc0NzI5IDE2LjAwMiA4LjM5NDUyIDE1LjQ4NiA4LjU2MDczIDE0Ljc1ODNMOC45NTM1OCAxMy4wMzg1QzkuMTE5NzkgMTIuMzEwOSA5Ljc2NzAyIDExLjc5NDkgMTAuNTEzNCAxMS43OTQ5SDEyLjM4NDhDMTMuMjY4NSAxMS43OTQ5IDEzLjk4NDggMTEuMDc4NSAxMy45ODQ4IDEwLjE5NDlWMS42MzMzMkMxMy45ODQ4IDAuNzQ5NjY4IDEzLjI2ODUgMC4wMzMzMjUyIDEyLjM4NDggMC4wMzMzMjUyWk0xMS4wNzkzIDUuMzIxNTdMOC41Mzg4MiA1LjMyMTU3QzguMTA5OTkgNS4zMjE1NyA3Ljc1OTEyIDQuOTU5OTcgNy43NTkxMiA0LjUxODAyQzcuNzU5MTIgNC4wNzYwNyA4LjEwOTk5IDMuNzE0NDcgOC41Mzg4MiAzLjcxNDQ3TDExLjA3OTMgMy43MTQ0N0MxMS41MDgyIDMuNzE0NDcgMTEuODU5IDQuMDc2MDcgMTEuODU5IDQuNTE4MDJDMTEuODU5IDQuOTU5OTggMTEuNTA4MiA1LjMyMTU3IDExLjA3OTMgNS4zMjE1N1pNMTEuMTEwNCA3LjkyODY3SDQuODcyODNDNC40NDQgNy45Mjg2NyA0LjA5MzEzIDcuNTY3MDcgNC4wOTMxMyA3LjEyNTEyQzQuMDkzMTMgNi42ODMxNyA0LjQ0NCA2LjMyMTU3IDQuODcyODMgNi4zMjE1N0gxMS4xMTA0QzExLjUzOTIgNi4zMjE1NyAxMS44OTAxIDYuNjgzMTcgMTEuODkwMSA3LjEyNTEyQzExLjg5MDEgNy41NjcwNyAxMS41MzkyIDcuOTI4NjcgMTEuMTEwNCA3LjkyODY3Wk00Ljg3MjgzIDEwLjUzNThIMTEuMTEwNEMxMS41MzkyIDEwLjUzNTggMTEuODkwMSAxMC4xNzQyIDExLjg5MDEgOS43MzIyMkMxMS44OTAxIDkuMjkwMjcgMTEuNTM5MiA4LjkyODY3IDExLjExMDQgOC45Mjg2N0g0Ljg3MjgzQzQuNDQ0IDguOTI4NjcgNC4wOTMxMyA5LjI5MDI3IDQuMDkzMTMgOS43MzIyMkM0LjA5MzEzIDEwLjE3NDIgNC40NDQgMTAuNTM1OCA0Ljg3MjgzIDEwLjUzNThaTTcuMjExOSAxMy4xNDI5SDQuODcyODNDNC40NDQgMTMuMTQyOSA0LjA5MzEzIDEyLjc4MTMgNC4wOTMxMyAxMi4zMzkzQzQuMDkzMTMgMTEuODk3NCA0LjQ0NCAxMS41MzU4IDQuODcyODMgMTEuNTM1OEg3LjIxMTlDNy42NDA3MyAxMS41MzU4IDcuOTkxNiAxMS44OTc0IDcuOTkxNiAxMi4zMzkzQzcuOTkxNiAxMi43ODEzIDcuNjQwNzMgMTMuMTQyOSA3LjIxMTkgMTMuMTQyOVoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8zODYwXzE3ODAyKSIvPgo8cGF0aCBkPSJNNi4xNTg1MSAzLjEwMTYyVjEuMTY1MTZMMy4wMzQxOCA0LjQ1MTk2SDQuODA4MTZDNS4xNzg4NCA0LjQ1MTk2IDUuNDk2NTcgNC4zMTk1NyA1Ljc2MTM1IDQuMDU0OEM2LjAyNjEyIDMuNzkwMDMgNi4xNTg1MSAzLjQ3MjMgNi4xNTg1MSAzLjEwMTYyWiIgZmlsbD0idXJsKCNwYWludDFfbGluZWFyXzM4NjBfMTc4MDIpIi8+CjxwYXRoIGQ9Ik0xNC42MzQxIDExLjQ5NjFDMTQuNzk0MSAxMS4zMzA0IDE0Ljk3NCAxMS4yNDc2IDE1LjE3NCAxMS4yNDc2QzE1LjM3MzkgMTEuMjQ3NiAxNS41NTM5IDExLjMzMDQgMTUuNzEzOCAxMS40OTYxQzE1Ljg1MzggMTEuNjQxMiAxNS45MjM4IDExLjgxNzIgMTUuOTIzOCAxMi4wMjQ0QzE1LjkyMzggMTIuMjMxNSAxNS44NTM4IDEyLjQxOCAxNS43MTM4IDEyLjU4MzdMMTIuNjg0NiAxNS43MjIxQzEyLjU0NDYgMTUuODY3MSAxMi4zNjQ2IDE1LjkzOTYgMTIuMTQ0NyAxNS45Mzk2QzExLjkyNDcgMTUuOTM5NiAxMS43NDQ4IDE1Ljg2NzEgMTEuNjA0OCAxNS43MjIxTDEwLjEwNTIgMTQuMTY4NEM5Ljk0NTIyIDE0LjAwMjcgOS44NjUyMyAxMy44MTYzIDkuODY1MjMgMTMuNjA5MUM5Ljg2NTIzIDEzLjQwMiA5Ljk0NTIyIDEzLjIxNTUgMTAuMTA1MiAxMy4wNDk4QzEwLjI2NTEgMTIuODg0MSAxMC40NDUxIDEyLjgwMTIgMTAuNjQ1IDEyLjgwMTJDMTAuODQ1IDEyLjgwMTIgMTEuMDE1IDEyLjg4NDEgMTEuMTU0OSAxMy4wNDk4TDEyLjE0NDcgMTQuMDc1MkwxNC42MzQxIDExLjQ5NjFaIiBmaWxsPSJ1cmwoI3BhaW50Ml9saW5lYXJfMzg2MF8xNzgwMikiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzM4NjBfMTc4MDIiIHgxPSIzLjc5NTMzIiB5MT0iMi40MjEzNSIgeDI9IjE0LjUzMjgiIHkyPSIxMC40ODM4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjk5MTAyOCIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfMzg2MF8xNzgwMiIgeDE9IjMuNDk2MDkiIHkxPSIxLjY0ODcyIiB4Mj0iNS43OTM4OSIgeTI9IjMuODQyMzQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDJfbGluZWFyXzM4NjBfMTc4MDIiIHgxPSIxMC43NjEiIHkxPSIxMS45Mzc5IiB4Mj0iMTMuOTM2OCIgeTI9IjE2LjA1NjMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zODYwXzE3ODAyIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwLjAwMjA3NTIpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+ "servicePlans": [
+  {
+   "name": "lite",
+   "displayName": "Lite",
+   "category": "APPLICATION",
+   "description": "Exchange electronic documents between SAP Concur and external communication parties. The service plan is for SAP Concur customers only and is limited to 10,000 documents per year.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "lite",
-      "displayName": "Lite",
-      "category": "APPLICATION",
-      "description": "Exchange electronic documents between SAP Concur and external communication parties. The service plan is for SAP Concur customers only and is limited to 10,000 documents per year.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8014521",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "lite-test",
-      "displayName": "Lite Test",
-      "category": "APPLICATION",
-      "description": "Test the exchange of electronic documents between SAP Concur and external communication parties. The service plan is for SAP Concur customers only and is limited to 10,000 documents per year.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8014521",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "sap-business-network",
-      "displayName": "SAP Business Network",
-      "category": "APPLICATION",
-      "description": "Receive supplier (inbound) invoices for SAP Business Network for productive purposes. The service plan is for SAP Business Network customers only.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8017876",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "sap-business-network-test",
-      "displayName": "SAP Business Network Test",
-      "category": "APPLICATION",
-      "description": "Receive supplier (inbound) invoices for SAP Business Network for test purposes. The service plan is for SAP Business Network customers only.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8017876",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "APPLICATION",
-      "description": "Exchange electronic documents between business systems and external communication parties for productive purposes.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8006220",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006221",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006222",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008260",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "test",
-      "displayName": "Test",
-      "category": "APPLICATION",
-      "description": "Test the exchange of electronic documents between business systems and external communication parties.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8006220",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006221",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006222",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008260",
-          "commercialModel": "Subscription"
-        }
-      ]
-    },
-    {
-      "name": "test-demo",
-      "displayName": "Test Demo",
-      "category": "APPLICATION",
-      "description": "Test and demonstrate the exchange of electronic documents between business systems and external communication parties.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8015570",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8014521",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "lite-test",
+   "displayName": "Lite Test",
+   "category": "APPLICATION",
+   "description": "Test the exchange of electronic documents between SAP Concur and external communication parties. The service plan is for SAP Concur customers only and is limited to 10,000 documents per year.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8014521",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "sap-business-network",
+   "displayName": "SAP Business Network",
+   "category": "APPLICATION",
+   "description": "Receive supplier (inbound) invoices for SAP Business Network for productive purposes. The service plan is for SAP Business Network customers only.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8017876",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "sap-business-network-test",
+   "displayName": "SAP Business Network Test",
+   "category": "APPLICATION",
+   "description": "Receive supplier (inbound) invoices for SAP Business Network for test purposes. The service plan is for SAP Business Network customers only.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8017876",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "APPLICATION",
+   "description": "Exchange electronic documents between business systems and external communication parties for productive purposes.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8006220",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006221",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006222",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008260",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "test",
+   "displayName": "Test",
+   "category": "APPLICATION",
+   "description": "Test the exchange of electronic documents between business systems and external communication parties.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8006220",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006221",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006222",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008260",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "test-demo",
+   "displayName": "Test Demo",
+   "category": "APPLICATION",
+   "description": "Test and demonstrate the exchange of electronic documents between business systems and external communication parties.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8015570",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

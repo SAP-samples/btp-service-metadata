@@ -1,61 +1,61 @@
 {
-  "name": "sap-calm",
-  "displayName": "SAP Cloud ALM, memory extension",
-  "description": "Add extensions for special use cases that exceed the standard functions of SAP Cloud ALM under Enterprise Support. Excessively store and extend data, e.g. to upload additional data, increase run retention time, add process management assets and tenants. Leverage the development environment of SAP BTP, for example, by your own, dashboards, or enhancements.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OFBmRB5P35YZ9rYyFB--x8wl_8hvIAkiBTvsRFJjaBeIJloCwfTC6QcQtacIeUxy.svg",
-  "servicePlans": [
+ "name": "sap-calm",
+ "displayName": "SAP Cloud ALM, memory extension",
+ "description": "Add extensions for special use cases that exceed the standard functions of SAP Cloud ALM under Enterprise Support. Excessively store and extend data, e.g. to upload additional data, increase run retention time, add process management assets and tenants. Leverage the development environment of SAP BTP, for example, by your own, dashboards, or enhancements.",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OFBmRB5P35YZ9rYyFB--x8wl_8hvIAkiBTvsRFJjaBeIJloCwfTC6QcQtacIeUxy.svg",
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Plan default",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Plan default",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011118",
-          "commercialModel": null
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011118",
+     "commercialModel": null
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

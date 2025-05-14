@@ -1,208 +1,208 @@
 {
-  "name": "saas-registry",
-  "displayName": "SAP Software-as-a-Service Provisioning service",
-  "description": "SaaS Provisioning Service",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/O3Fi9po4MfD7Q3_QDBk5TX8Zrtj0lpuHV07iwkDI5Z1uy4dcGbNvLH6GmGrgN5G0.svg",
-  "links": [
+ "name": "saas-registry",
+ "displayName": "SAP Software-as-a-Service Provisioning service",
+ "description": "SaaS Provisioning Service",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/O3Fi9po4MfD7Q3_QDBk5TX8Zrtj0lpuHV07iwkDI5Z1uy4dcGbNvLH6GmGrgN5G0.svg",
+ "links": [
+  {
+   "value": "https://blogs.sap.com/2018/09/17/developing-multitenant-applications-on-sap-cloud-platform-cloud-foundry-environment/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Developing Multitenant Applications on SAP BTP"
+  },
+  {
+   "value": "https://github.com/SAP-samples/cloud-cf-multitenant-saas-provisioning-sample",
+   "classification": "External",
+   "type": "Link",
+   "text": "Using SaaS Provisioning Service to develop a SaaS Multitenant Application on SAP BTP in the Cloud Foundry Environment-Hello World"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Software-as-a-Service%20Provisioning%20service",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Software-as-a-Service%20Provisioning%20service",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/#/serviceCatalog/saas-provisioning-service?service_plan=application&region=all",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "Discovery Center"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/saas-provisioning-service",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - SaaS Provisioning Service"
+  },
+  {
+   "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/register-multitenant-application-to-sap-saas-provisioning-service#procedure",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5e8a2b74e4f2442b8257c850ed912f48.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What Is SaaS Provisioning?"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/ed08c7dcb35d4082936c045e7d7b3ecd.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "API Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "application",
+   "displayName": "application",
+   "category": "SERVICE",
+   "description": "Service plan for SaaS application owners to manage the lifecycle of SaaS applications with SAP SaaS Provisioning APIs.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://blogs.sap.com/2018/09/17/developing-multitenant-applications-on-sap-cloud-platform-cloud-foundry-environment/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Developing Multitenant Applications on SAP BTP"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://github.com/SAP-samples/cloud-cf-multitenant-saas-provisioning-sample",
-      "classification": "External",
-      "type": "Link",
-      "text": "Using SaaS Provisioning Service to develop a SaaS Multitenant Application on SAP BTP in the Cloud Foundry Environment-Hello World"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Software-as-a-Service%20Provisioning%20service",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Software-as-a-Service%20Provisioning%20service",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/saas-provisioning-service?service_plan=application&region=all",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/saas-provisioning-service",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - SaaS Provisioning Service"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://help.sap.com/docs/btp/sap-business-technology-platform/register-multitenant-application-to-sap-saas-provisioning-service#procedure",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap31",
+     "name": "cf-ap31"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5e8a2b74e4f2442b8257c850ed912f48.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What Is SaaS Provisioning?"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/ed08c7dcb35d4082936c045e7d7b3ecd.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "application",
-      "displayName": "application",
-      "category": "SERVICE",
-      "description": "Service plan for SaaS application owners to manage the lifecycle of SaaS applications with SAP SaaS Provisioning APIs.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

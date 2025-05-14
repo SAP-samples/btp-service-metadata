@@ -1,453 +1,453 @@
 {
-  "name": "sap-document-information-extraction",
-  "displayName": "Document Information Extraction",
-  "description": "Document Information Extraction",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/0FfEVnl4H7pJa42jId9oMdwnNTN6eOPqtxUdD0_hCrHXV1vPdZ1aIX6dpH4dfZ3n.svg",
-  "servicePlans": [
+ "name": "sap-document-information-extraction",
+ "displayName": "Document Information Extraction",
+ "description": "Document Information Extraction",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/0FfEVnl4H7pJa42jId9oMdwnNTN6eOPqtxUdD0_hCrHXV1vPdZ1aIX6dpH4dfZ3n.svg",
+ "servicePlans": [
+  {
+   "name": "blocks_of_100",
+   "displayName": "blocks_of_100",
+   "category": "SERVICE",
+   "description": "Base edition plan intended for productive usage. Process business documents using pretrained machine learning models and templates.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "blocks_of_100",
-      "displayName": "blocks_of_100",
-      "category": "SERVICE",
-      "description": "Base edition plan intended for productive usage. Process business documents using pretrained machine learning models and templates.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008952",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008952",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010883",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011284",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Plan for production usage of Document Information Extraction, charged in blocks of 1000 documents. ",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008013",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008013",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008831",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011284",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "SERVICE",
-      "description": "Free plan intended for development and try-out purposes. Please note, only community support is available for free service plans, and these plans are not subject to SLAs. Use of free tier service plans is subject to additional terms and conditions as provided in the SAP Business Technology Platform Supplemental Terms and Conditions. (See SAP BTP Cockpit > Service Marketplace > Document Information Extraction tile > Additional Links)",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011066",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "name": "premium_edition",
-      "displayName": "premium_edition",
-      "category": "SERVICE",
-      "description": "Premium edition plan intended for productive usage. Process business documents using generative AI, pretrained machine learning models, and templates. This cloud service includes AI technologies or features therefore section 10 of the SAP Business Technology Platform Supplemental Terms and Conditions applies. (See SAP BTP Cockpit > Service Marketplace > Document Information Extraction tile > Additional Links)",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017365",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017365",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8018157",
-          "commercialModel": null
-        }
-      ]
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008952",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008952",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010883",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011284",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Plan for production usage of Document Information Extraction, charged in blocks of 1000 documents. ",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008013",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008013",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008831",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011284",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "SERVICE",
+   "description": "Free plan intended for development and try-out purposes. Please note, only community support is available for free service plans, and these plans are not subject to SLAs. Use of free tier service plans is subject to additional terms and conditions as provided in the SAP Business Technology Platform Supplemental Terms and Conditions. (See SAP BTP Cockpit > Service Marketplace > Document Information Extraction tile > Additional Links)",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011066",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "premium_edition",
+   "displayName": "premium_edition",
+   "category": "SERVICE",
+   "description": "Premium edition plan intended for productive usage. Process business documents using generative AI, pretrained machine learning models, and templates. This cloud service includes AI technologies or features therefore section 10 of the SAP Business Technology Platform Supplemental Terms and Conditions applies. (See SAP BTP Cockpit > Service Marketplace > Document Information Extraction tile > Additional Links)",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017365",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017365",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8018157",
+     "commercialModel": null
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

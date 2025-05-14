@@ -1,333 +1,333 @@
 {
-  "name": "cps-administration",
-  "displayName": "SAP Variant Configuration and Pricing",
-  "description": "SAP Variant Configuration and Pricing",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc1MjUpIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjYzMzY3IDAuNTYzMjY0QzcuODYwNDkgMC4xODQwOTkgOC4zNTE3MyAwLjA2MDU5NDUgOC43MzA5IDAuMjg3NDFMMTMuODA1MyAzLjMyMjg5QzE0LjU0NjMgMy43NjYxOCAxNSA0LjU2NjIxIDE1IDUuNDI5NzRMMTUgMTAuOTUwN0MxNSAxMS44MTU4IDE0LjU0NDcgMTIuNjE3MSAxMy44MDE0IDEzLjA1OTlMOS4yNTY0MyAxNS43NjczQzguNDgyMjggMTYuMjI4NSA3LjUxNzcxIDE2LjIyODUgNi43NDM1NyAxNS43NjczTDIuMTk4NiAxMy4wNTk5QzEuNDU1MzUgMTIuNjE3MSAxIDExLjgxNTggMSAxMC45NTA3TDEgNS40MzA4OEMxIDQuNTY2NDQgMS40NTQ2MyAzLjc2NTcgMi4xOTY5MyAzLjMyMjcxTDUuMTA5ODMgMS41ODQzN0M1LjQ4OTI0IDEuMzU3OTUgNS45ODAzNSAxLjQ4MTk3IDYuMjA2NzcgMS44NjEzN0M2LjQzMzE5IDIuMjQwNzggNi4zMDkxNyAyLjczMTg5IDUuOTI5NzcgMi45NTgzMUwzLjAxNjg3IDQuNjk2NjVDMi43NTgzNCA0Ljg1MDk0IDIuNiA1LjEyOTgyIDIuNiA1LjQzMDg4TDIuNiAxMC45NTA3QzIuNiAxMS4yNTIgMi43NTg1OSAxMS41MzExIDMuMDE3NDQgMTEuNjg1M0w3LjU2MjQxIDE0LjM5MjdDNy44MzIwMyAxNC41NTMzIDguMTY3OTcgMTQuNTUzMyA4LjQzNzU5IDE0LjM5MjdMMTIuOTgyNiAxMS42ODUzQzEzLjI0MTQgMTEuNTMxMSAxMy40IDExLjI1MiAxMy40IDEwLjk1MDdMMTMuNCA1LjQyOTc0QzEzLjQgNS4xMjg5OSAxMy4yNDIgNC44NTAzNiAxMi45ODM5IDQuNjk1OTdMNy45MDk1MyAxLjY2MDQ5QzcuNTMwMzYgMS40MzM2NyA3LjQwNjg2IDAuOTQyNDI5IDcuNjMzNjcgMC41NjMyNjRaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMzg2MF8xNzUyNSkiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42ODEzIDguMjQ5MjRDMTEuODYyNSA4LjMzMTU5IDExLjk1MzEgOC40NzE2IDExLjk1MzEgOC42NjkyNVY4LjcxODY3TDExLjgyOTYgOS4yMzc1MUMxMS43ODAyIDkuNDUxNjQgMTEuNjQ4NCA5LjU1ODcgMTEuNDM0MyA5LjU1ODdIMTEuMzg0OUwxMC41OTQyIDkuNDM1MTdDMTAuNDQ2IDkuNzQ4MTIgMTAuMjA3MiAxMC4wMzY0IDkuODc3NzMgMTAuMjk5OUwxMC4xNzQyIDExLjEzOTlDMTAuMTkwNyAxMS4xNzI5IDEwLjE5ODkgMTEuMjE0MSAxMC4xOTg5IDExLjI2MzVDMTAuMTk4OSAxMS40NjExIDEwLjEyNDggMTEuNTkyOSA5Ljk3NjU2IDExLjY1ODhMOS41MDcxMyAxMS45MDU5QzkuNDQxMjQgMTEuOTM4OCA5LjM5MTgzIDExLjk1NTMgOS4zNTg4OSAxMS45NTUzQzkuMjEwNjQgMTEuOTU1MyA5LjA5NTM1IDExLjg4MTEgOS4wMTI5OSAxMS43MzI5TDguNTQzNTUgMTAuOTE3NkM4LjQ2MTIgMTAuOTM0IDguMzcwNjEgMTAuOTUwNSA4LjI3MTc4IDEwLjk2N0g4SDcuNzUyOTNDNy42ODcwNCAxMC45NTA1IDcuNjEyOTIgMTAuOTM0IDcuNTMwNTcgMTAuOTE3Nkw3LjAzNjQzIDExLjc1NzZDNi45NTQwNyAxMS44ODk0IDYuODQ3MDEgMTEuOTU1MyA2LjcxNTIzIDExLjk1NTNDNi42MzI4OCAxMS45NTUzIDYuNTc1MjMgMTEuOTM4OCA2LjU0MjI5IDExLjkwNTlMNi4wNzI4NSAxMS42ODM1QzUuOTI0NjEgMTEuNjE3NiA1Ljg1MDQ5IDExLjUwMjMgNS44NTA0OSAxMS4zMzc2QzUuODUwNDkgMTEuMjcxNyA1Ljg1ODcyIDExLjIyMjMgNS44NzUyIDExLjE4OTRMNi4xNzE2OCAxMC4zNDkzQzUuODc1MiAxMC4xMzUyIDUuNjM2MzYgOS44NTUxOCA1LjQ1NTE4IDkuNTA5MjlMNC42MTUxNCA5LjYzMjgySDQuNTY1NzJDNC4zNTE2IDkuNjMyODIgNC4yMTk4MiA5LjUyNTc2IDQuMTcwNDEgOS4zMTE2M0w0LjA0Njg4IDguNzkyNzlWOC43NDMzN0M0LjA0Njg4IDguNTQ1NzIgNC4xMzc0NyA4LjQwNTcxIDQuMzE4NjUgOC4zMjMzNkw1LjAzNTE2IDguMTAxVjguMDAyMTdDNS4wMzUxNiA3LjU5MDM5IDUuMTA5MjggNy4yMTE1NSA1LjI1NzUyIDYuODY1NjVMNC43MTM5NiA2LjM3MTUyQzQuNjY0NTUgNi4zMjIxIDQuNjIzMzcgNi4yMzE1MSA0LjU5MDQzIDYuMDk5NzRDNC41OTA0MyA1Ljk4NDQ0IDQuNjIzMzcgNS44OTM4NSA0LjY4OTI2IDUuODI3OTdMNS4wMTA0NSA1LjQwNzk1QzUuMDkyODEgNS4zMDkxMiA1LjE5MTYzIDUuMjU5NzEgNS4zMDY5MyA1LjI1OTcxQzUuMzg5MjkgNS4yNTk3MSA1LjQ2MzQxIDUuMjg0NDEgNS41MjkzIDUuMzMzODNMNi4wOTc1NiA1LjcyOTE0QzYuNDQzNDYgNS40NDkxMyA2LjgyMjMgNS4yNTE0NyA3LjIzNDA4IDUuMTM2MTdMNy4yODM1IDQuNDE5NjhDNy4yOTk5NyA0LjMyMDg1IDcuMzQxMTUgNC4yMzg0OSA3LjQwNzAzIDQuMTcyNjFDNy40ODkzOSA0LjA5MDI1IDcuNTc5OTggNC4wNDkwNyA3LjY3ODgxIDQuMDQ5MDdIOC4xOTc2NkM4LjMxMjk2IDQuMDQ5MDcgOC40MDM1NSA0LjA5MDI1IDguNDY5NDMgNC4xNzI2MUM4LjU1MTc5IDQuMjM4NDkgOC41OTI5NyA0LjMyMDg1IDguNTkyOTcgNC40MTk2OEw4LjY0MjM4IDUuMTExNDdDOS4wNTQxNyA1LjIxMDI5IDkuNDQ5NDggNS4zOTE0OCA5LjgyODMyIDUuNjU1MDJMMTAuMzk2NiA1LjI1OTcxQzEwLjQ3ODkgNS4yMTAyOSAxMC41NTMxIDUuMTg1NTkgMTAuNjE4OSA1LjE4NTU5QzEwLjc1MDcgNS4xODU1OSAxMC44NDk1IDUuMjM1IDEwLjkxNTQgNS4zMzM4M0wxMS4yMzY2IDUuNzUzODVDMTEuMzAyNSA1LjgxOTczIDExLjMzNTQgNS45MTAzMiAxMS4zMzU0IDYuMDI1NjJDMTEuMzM1NCA2LjEyNDQ1IDExLjI5NDMgNi4yMTUwNCAxMS4yMTE5IDYuMjk3NEwxMC43MTc4IDYuNzkxNTNDMTAuODAwMSA2Ljk3MjcyIDEwLjg1NzggNy4xNjIxNCAxMC44OTA3IDcuMzU5NzlDMTAuOTQwMSA3LjU1NzQ1IDEwLjk2NDggNy43NzE1NyAxMC45NjQ4IDguMDAyMTdWOC4wMjY4OEwxMS42ODEzIDguMjQ5MjRaTTYuNzg5MzYgOS4yMTI4QzYuNDU5OTMgOC44ODMzOCA2LjI5NTIxIDguNDc5ODMgNi4yOTUyMSA4LjAwMjE3QzYuMjk1MjEgNy41MjQ1IDYuNDU5OTMgNy4xMjA5NiA2Ljc4OTM2IDYuNzkxNTNDNy4xMTg3OCA2LjQ2MjExIDcuNTIyMzMgNi4yOTc0IDggNi4yOTc0QzguNDc3NjcgNi4yOTc0IDguODgxMjIgNi40NjIxMSA5LjIxMDY0IDYuNzkxNTNDOS41NDAwNyA3LjEyMDk2IDkuNzA0NzkgNy41MjQ1IDkuNzA0NzkgOC4wMDIxN0M5LjcwNDc5IDguNDc5ODMgOS41NDAwNyA4Ljg4MzM4IDkuMjEwNjQgOS4yMTI4QzguODgxMjIgOS41NDIyMyA4LjQ3NzY3IDkuNzA2OTQgOCA5LjcwNjk0QzcuNTIyMzMgOS43MDY5NCA3LjExODc4IDkuNTQyMjMgNi43ODkzNiA5LjIxMjhaIiBmaWxsPSJ1cmwoI3BhaW50MV9saW5lYXJfMzg2MF8xNzUyNSkiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzM4NjBfMTc1MjUiIHgxPSIzLjA5ODY2IiB5MT0iMi41NTc0NiIgeDI9IjE0LjE2NjUiIHkyPSIxMi4yODIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjk5MTAyOCIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfMzg2MF8xNzUyNSIgeDE9IjUuMjE1NzYiIHkxPSI1LjIxMjI0IiB4Mj0iMTAuNzQ4OSIgeTI9IjEwLjc2OTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zODYwXzE3NTI1Ij4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDAwNDg4MjgxIDAuMDAyMDc1MikiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K",
-  "links": [
+ "name": "cps-administration",
+ "displayName": "SAP Variant Configuration and Pricing",
+ "description": "SAP Variant Configuration and Pricing",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc1MjUpIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjYzMzY3IDAuNTYzMjY0QzcuODYwNDkgMC4xODQwOTkgOC4zNTE3MyAwLjA2MDU5NDUgOC43MzA5IDAuMjg3NDFMMTMuODA1MyAzLjMyMjg5QzE0LjU0NjMgMy43NjYxOCAxNSA0LjU2NjIxIDE1IDUuNDI5NzRMMTUgMTAuOTUwN0MxNSAxMS44MTU4IDE0LjU0NDcgMTIuNjE3MSAxMy44MDE0IDEzLjA1OTlMOS4yNTY0MyAxNS43NjczQzguNDgyMjggMTYuMjI4NSA3LjUxNzcxIDE2LjIyODUgNi43NDM1NyAxNS43NjczTDIuMTk4NiAxMy4wNTk5QzEuNDU1MzUgMTIuNjE3MSAxIDExLjgxNTggMSAxMC45NTA3TDEgNS40MzA4OEMxIDQuNTY2NDQgMS40NTQ2MyAzLjc2NTcgMi4xOTY5MyAzLjMyMjcxTDUuMTA5ODMgMS41ODQzN0M1LjQ4OTI0IDEuMzU3OTUgNS45ODAzNSAxLjQ4MTk3IDYuMjA2NzcgMS44NjEzN0M2LjQzMzE5IDIuMjQwNzggNi4zMDkxNyAyLjczMTg5IDUuOTI5NzcgMi45NTgzMUwzLjAxNjg3IDQuNjk2NjVDMi43NTgzNCA0Ljg1MDk0IDIuNiA1LjEyOTgyIDIuNiA1LjQzMDg4TDIuNiAxMC45NTA3QzIuNiAxMS4yNTIgMi43NTg1OSAxMS41MzExIDMuMDE3NDQgMTEuNjg1M0w3LjU2MjQxIDE0LjM5MjdDNy44MzIwMyAxNC41NTMzIDguMTY3OTcgMTQuNTUzMyA4LjQzNzU5IDE0LjM5MjdMMTIuOTgyNiAxMS42ODUzQzEzLjI0MTQgMTEuNTMxMSAxMy40IDExLjI1MiAxMy40IDEwLjk1MDdMMTMuNCA1LjQyOTc0QzEzLjQgNS4xMjg5OSAxMy4yNDIgNC44NTAzNiAxMi45ODM5IDQuNjk1OTdMNy45MDk1MyAxLjY2MDQ5QzcuNTMwMzYgMS40MzM2NyA3LjQwNjg2IDAuOTQyNDI5IDcuNjMzNjcgMC41NjMyNjRaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMzg2MF8xNzUyNSkiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42ODEzIDguMjQ5MjRDMTEuODYyNSA4LjMzMTU5IDExLjk1MzEgOC40NzE2IDExLjk1MzEgOC42NjkyNVY4LjcxODY3TDExLjgyOTYgOS4yMzc1MUMxMS43ODAyIDkuNDUxNjQgMTEuNjQ4NCA5LjU1ODcgMTEuNDM0MyA5LjU1ODdIMTEuMzg0OUwxMC41OTQyIDkuNDM1MTdDMTAuNDQ2IDkuNzQ4MTIgMTAuMjA3MiAxMC4wMzY0IDkuODc3NzMgMTAuMjk5OUwxMC4xNzQyIDExLjEzOTlDMTAuMTkwNyAxMS4xNzI5IDEwLjE5ODkgMTEuMjE0MSAxMC4xOTg5IDExLjI2MzVDMTAuMTk4OSAxMS40NjExIDEwLjEyNDggMTEuNTkyOSA5Ljk3NjU2IDExLjY1ODhMOS41MDcxMyAxMS45MDU5QzkuNDQxMjQgMTEuOTM4OCA5LjM5MTgzIDExLjk1NTMgOS4zNTg4OSAxMS45NTUzQzkuMjEwNjQgMTEuOTU1MyA5LjA5NTM1IDExLjg4MTEgOS4wMTI5OSAxMS43MzI5TDguNTQzNTUgMTAuOTE3NkM4LjQ2MTIgMTAuOTM0IDguMzcwNjEgMTAuOTUwNSA4LjI3MTc4IDEwLjk2N0g4SDcuNzUyOTNDNy42ODcwNCAxMC45NTA1IDcuNjEyOTIgMTAuOTM0IDcuNTMwNTcgMTAuOTE3Nkw3LjAzNjQzIDExLjc1NzZDNi45NTQwNyAxMS44ODk0IDYuODQ3MDEgMTEuOTU1MyA2LjcxNTIzIDExLjk1NTNDNi42MzI4OCAxMS45NTUzIDYuNTc1MjMgMTEuOTM4OCA2LjU0MjI5IDExLjkwNTlMNi4wNzI4NSAxMS42ODM1QzUuOTI0NjEgMTEuNjE3NiA1Ljg1MDQ5IDExLjUwMjMgNS44NTA0OSAxMS4zMzc2QzUuODUwNDkgMTEuMjcxNyA1Ljg1ODcyIDExLjIyMjMgNS44NzUyIDExLjE4OTRMNi4xNzE2OCAxMC4zNDkzQzUuODc1MiAxMC4xMzUyIDUuNjM2MzYgOS44NTUxOCA1LjQ1NTE4IDkuNTA5MjlMNC42MTUxNCA5LjYzMjgySDQuNTY1NzJDNC4zNTE2IDkuNjMyODIgNC4yMTk4MiA5LjUyNTc2IDQuMTcwNDEgOS4zMTE2M0w0LjA0Njg4IDguNzkyNzlWOC43NDMzN0M0LjA0Njg4IDguNTQ1NzIgNC4xMzc0NyA4LjQwNTcxIDQuMzE4NjUgOC4zMjMzNkw1LjAzNTE2IDguMTAxVjguMDAyMTdDNS4wMzUxNiA3LjU5MDM5IDUuMTA5MjggNy4yMTE1NSA1LjI1NzUyIDYuODY1NjVMNC43MTM5NiA2LjM3MTUyQzQuNjY0NTUgNi4zMjIxIDQuNjIzMzcgNi4yMzE1MSA0LjU5MDQzIDYuMDk5NzRDNC41OTA0MyA1Ljk4NDQ0IDQuNjIzMzcgNS44OTM4NSA0LjY4OTI2IDUuODI3OTdMNS4wMTA0NSA1LjQwNzk1QzUuMDkyODEgNS4zMDkxMiA1LjE5MTYzIDUuMjU5NzEgNS4zMDY5MyA1LjI1OTcxQzUuMzg5MjkgNS4yNTk3MSA1LjQ2MzQxIDUuMjg0NDEgNS41MjkzIDUuMzMzODNMNi4wOTc1NiA1LjcyOTE0QzYuNDQzNDYgNS40NDkxMyA2LjgyMjMgNS4yNTE0NyA3LjIzNDA4IDUuMTM2MTdMNy4yODM1IDQuNDE5NjhDNy4yOTk5NyA0LjMyMDg1IDcuMzQxMTUgNC4yMzg0OSA3LjQwNzAzIDQuMTcyNjFDNy40ODkzOSA0LjA5MDI1IDcuNTc5OTggNC4wNDkwNyA3LjY3ODgxIDQuMDQ5MDdIOC4xOTc2NkM4LjMxMjk2IDQuMDQ5MDcgOC40MDM1NSA0LjA5MDI1IDguNDY5NDMgNC4xNzI2MUM4LjU1MTc5IDQuMjM4NDkgOC41OTI5NyA0LjMyMDg1IDguNTkyOTcgNC40MTk2OEw4LjY0MjM4IDUuMTExNDdDOS4wNTQxNyA1LjIxMDI5IDkuNDQ5NDggNS4zOTE0OCA5LjgyODMyIDUuNjU1MDJMMTAuMzk2NiA1LjI1OTcxQzEwLjQ3ODkgNS4yMTAyOSAxMC41NTMxIDUuMTg1NTkgMTAuNjE4OSA1LjE4NTU5QzEwLjc1MDcgNS4xODU1OSAxMC44NDk1IDUuMjM1IDEwLjkxNTQgNS4zMzM4M0wxMS4yMzY2IDUuNzUzODVDMTEuMzAyNSA1LjgxOTczIDExLjMzNTQgNS45MTAzMiAxMS4zMzU0IDYuMDI1NjJDMTEuMzM1NCA2LjEyNDQ1IDExLjI5NDMgNi4yMTUwNCAxMS4yMTE5IDYuMjk3NEwxMC43MTc4IDYuNzkxNTNDMTAuODAwMSA2Ljk3MjcyIDEwLjg1NzggNy4xNjIxNCAxMC44OTA3IDcuMzU5NzlDMTAuOTQwMSA3LjU1NzQ1IDEwLjk2NDggNy43NzE1NyAxMC45NjQ4IDguMDAyMTdWOC4wMjY4OEwxMS42ODEzIDguMjQ5MjRaTTYuNzg5MzYgOS4yMTI4QzYuNDU5OTMgOC44ODMzOCA2LjI5NTIxIDguNDc5ODMgNi4yOTUyMSA4LjAwMjE3QzYuMjk1MjEgNy41MjQ1IDYuNDU5OTMgNy4xMjA5NiA2Ljc4OTM2IDYuNzkxNTNDNy4xMTg3OCA2LjQ2MjExIDcuNTIyMzMgNi4yOTc0IDggNi4yOTc0QzguNDc3NjcgNi4yOTc0IDguODgxMjIgNi40NjIxMSA5LjIxMDY0IDYuNzkxNTNDOS41NDAwNyA3LjEyMDk2IDkuNzA0NzkgNy41MjQ1IDkuNzA0NzkgOC4wMDIxN0M5LjcwNDc5IDguNDc5ODMgOS41NDAwNyA4Ljg4MzM4IDkuMjEwNjQgOS4yMTI4QzguODgxMjIgOS41NDIyMyA4LjQ3NzY3IDkuNzA2OTQgOCA5LjcwNjk0QzcuNTIyMzMgOS43MDY5NCA3LjExODc4IDkuNTQyMjMgNi43ODkzNiA5LjIxMjhaIiBmaWxsPSJ1cmwoI3BhaW50MV9saW5lYXJfMzg2MF8xNzUyNSkiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzM4NjBfMTc1MjUiIHgxPSIzLjA5ODY2IiB5MT0iMi41NTc0NiIgeDI9IjE0LjE2NjUiIHkyPSIxMi4yODIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjk5MTAyOCIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfMzg2MF8xNzUyNSIgeDE9IjUuMjE1NzYiIHkxPSI1LjIxMjI0IiB4Mj0iMTAuNzQ4OSIgeTI9IjEwLjc2OTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zODYwXzE3NTI1Ij4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDAwNDg4MjgxIDAuMDAyMDc1MikiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K",
+ "links": [
+  {
+   "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/sap-variant-configuration-and-pricing",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "Discovery Center"
+  },
+  {
+   "value": "https://help.sap.com/viewer/f67b66eae9e7401e89917f9791051ce4/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "cpq-add-test",
+   "displayName": "cpq-add-test",
+   "category": "APPLICATION",
+   "description": "Additional implementation or test tenant for SAP CPQ integration, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://discovery-center.cloud.sap/index.html#/serviceCatalog/sap-variant-configuration-and-pricing",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://help.sap.com/viewer/f67b66eae9e7401e89917f9791051ce4/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "cpq-add-test",
-      "displayName": "cpq-add-test",
-      "category": "APPLICATION",
-      "description": "Additional implementation or test tenant for SAP CPQ integration, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema:": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "cpq-prod",
-      "displayName": "cpq-prod",
-      "category": "APPLICATION",
-      "description": "Productive tenant for SAP CPQ integration, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema:": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "cpq-test",
-      "displayName": "cpq-test",
-      "category": "APPLICATION",
-      "description": "Test tenant for SAP CPQ integration, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema:": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "cps-prod",
-      "displayName": "cps-prod",
-      "category": "APPLICATION",
-      "description": "Productive tenant, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema:": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "cps-test",
-      "displayName": "cps-test",
-      "category": "APPLICATION",
-      "description": "Non-productive tenant, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema:": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "default",
-      "displayName": "default",
-      "category": "APPLICATION",
-      "description": "Tenant for api-based integrations, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema:": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "partner",
-      "displayName": "partner",
-      "category": "APPLICATION",
-      "description": "Non-productive tenant, for test & demo, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema:": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": false,
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema:": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ]
+  },
+  {
+   "name": "cpq-prod",
+   "displayName": "cpq-prod",
+   "category": "APPLICATION",
+   "description": "Productive tenant for SAP CPQ integration, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema:": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "cpq-test",
+   "displayName": "cpq-test",
+   "category": "APPLICATION",
+   "description": "Test tenant for SAP CPQ integration, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema:": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "cps-prod",
+   "displayName": "cps-prod",
+   "category": "APPLICATION",
+   "description": "Productive tenant, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema:": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "cps-test",
+   "displayName": "cps-test",
+   "category": "APPLICATION",
+   "description": "Non-productive tenant, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema:": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "APPLICATION",
+   "description": "Tenant for api-based integrations, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema:": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "partner",
+   "displayName": "partner",
+   "category": "APPLICATION",
+   "description": "Non-productive tenant, for test & demo, one tenant per backend client needed, one subaccount per tenant with Cloud Foundry enabled",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema:": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

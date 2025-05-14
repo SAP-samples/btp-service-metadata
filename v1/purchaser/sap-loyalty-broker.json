@@ -1,33 +1,33 @@
 {
-  "name": "sap-loyalty-broker",
-  "displayName": "SAP Loyalty Marketing",
-  "description": "SAP Loyalty Marketing",
-  "icon": null,
-  "servicePlans": [
+ "name": "sap-loyalty-broker",
+ "displayName": "SAP Loyalty Marketing",
+ "description": "SAP Loyalty Marketing",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "SAP Loyalty Marketing - Service Broker for APIs",
+   "category": "SERVICE",
+   "description": "SAP Loyalty Marketing - Service Broker for APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "SAP Loyalty Marketing - Service Broker for APIs",
-      "category": "SERVICE",
-      "description": "SAP Loyalty Marketing - Service Broker for APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8006033",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8006033",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

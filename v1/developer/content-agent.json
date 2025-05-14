@@ -1,484 +1,484 @@
 {
-  "name": "content-agent",
-  "displayName": "Content Agent Service",
-  "description": "Content Agent Service",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/tgvrBuQEIdTDBsj-vaNAND3FOBUyFWdbtfrOOIn-nTKsIXSCIJAGirxOb1Inf7Yr.svg",
-  "links": [
+ "name": "content-agent",
+ "displayName": "Content Agent Service",
+ "description": "Content Agent Service",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/tgvrBuQEIdTDBsj-vaNAND3FOBUyFWdbtfrOOIn-nTKsIXSCIJAGirxOb1Inf7Yr.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPContentAgentService/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Content Agent Service | SAP API Business Hub"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/content-agent",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Content Agent"
+  },
+  {
+   "value": "https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/8addcbc7a1274bffa414858416b8e1c7.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://blogs.sap.com/2020/08/30/introducing-sap-cloud-platform-content-agent-enhanced-transport-capabilities-for-sap-cloud-platform-integration-suite-content/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Blog: SAP Content Agent Service"
+  },
+  {
+   "value": "https://blogs.sap.com/2022/08/09/new-user-interface-for-content-agent-service/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Blog: New User Interface for Content Agent Service"
+  },
+  {
+   "value": "https://blogs.sap.com/2022/09/05/how-to-use-sap-content-agent-service-video/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "How to use SAP Content Agent Service"
+  },
+  {
+   "value": "https://roadmaps.sap.com/board?range=CURRENT-LAST&PRODUCT=73555000100800002111#Q3%202022",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Roadmap"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/ae1a4f2d150d468d9ff56e13f9898e07/9d9f235a96a947f5986021bbcebcef8c.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/ae1a4f2d150d468d9ff56e13f9898e07/Latest/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAP Content Agent Service"
+  },
+  {
+   "value": "https://help.sap.com/viewer/ae1a4f2d150d468d9ff56e13f9898e07/Latest/en-US/15406a06dfac4c1fabd7845c703773ba.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/viewer/afbc0365ec0d41adaefc74714119149e/Latest/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/docs/CONTENT_AGENT_SERVICE",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/CONTENT_AGENT_SERVICE/Latest/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "application",
+   "displayName": "application",
+   "category": "SERVICE",
+   "description": "Provides programmatic access to generic content management APIs to view, export as download and push to Cloud Transport Management service, import content into respective SAP BTP tenant and view historic data of activities performed",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPContentAgentService/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Content Agent Service | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/content-agent",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Content Agent"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://help.sap.com/docs/CONTENT_AGENT_SERVICE/ae1a4f2d150d468d9ff56e13f9898e07/8addcbc7a1274bffa414858416b8e1c7.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://blogs.sap.com/2020/08/30/introducing-sap-cloud-platform-content-agent-enhanced-transport-capabilities-for-sap-cloud-platform-integration-suite-content/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Blog: SAP Content Agent Service"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://blogs.sap.com/2022/08/09/new-user-interface-for-content-agent-service/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Blog: New User Interface for Content Agent Service"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://blogs.sap.com/2022/09/05/how-to-use-sap-content-agent-service-video/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "How to use SAP Content Agent Service"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://roadmaps.sap.com/board?range=CURRENT-LAST&PRODUCT=73555000100800002111#Q3%202022",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Roadmap"
+     "region": "ap31",
+     "name": "cf-ap31"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/ae1a4f2d150d468d9ff56e13f9898e07/9d9f235a96a947f5986021bbcebcef8c.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/viewer/ae1a4f2d150d468d9ff56e13f9898e07/Latest/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAP Content Agent Service"
+     "region": "br20",
+     "name": "cf-br20"
     },
     {
-      "value": "https://help.sap.com/viewer/ae1a4f2d150d468d9ff56e13f9898e07/Latest/en-US/15406a06dfac4c1fabd7845c703773ba.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "br30",
+     "name": "cf-br30"
     },
     {
-      "value": "https://help.sap.com/viewer/afbc0365ec0d41adaefc74714119149e/Latest/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://help.sap.com/docs/CONTENT_AGENT_SERVICE",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ca20",
+     "name": "cf-ca20"
     },
     {
-      "value": "https://help.sap.com/viewer/product/CONTENT_AGENT_SERVICE/Latest/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "application",
-      "displayName": "application",
-      "category": "SERVICE",
-      "description": "Provides programmatic access to generic content management APIs to view, export as download and push to Cloud Transport Management service, import content into respective SAP BTP tenant and view historic data of activities performed",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": true,
-                "additionalProperties": false,
-                "type": "object",
-                "properties": {
-                  "roles": {
-                    "title": "roles",
-                    "description": "List of Roles for Current Instance",
-                    "minItems": 1,
-                    "type": "array",
-                    "items": {
-                      "enum": [
-                        "Admin",
-                        "Read",
-                        "Import",
-                        "Export",
-                        "Security Operator"
-                      ]
-                    }
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": true,
-                "additionalProperties": false,
-                "type": "object",
-                "properties": {
-                  "roles": {
-                    "title": "roles",
-                    "description": "List of Roles for Current Instance",
-                    "minItems": 1,
-                    "type": "array",
-                    "items": {
-                      "enum": [
-                        "Admin",
-                        "Read",
-                        "Import",
-                        "Export",
-                        "Security Operator"
-                      ]
-                    }
-                  }
-                }
-              }
-            }
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+         "roles": {
+          "title": "roles",
+          "description": "List of Roles for Current Instance",
+          "minItems": 1,
+          "type": "array",
+          "items": {
+           "enum": [
+            "Admin",
+            "Read",
+            "Import",
+            "Export",
+            "Security Operator"
+           ]
           }
+         }
         }
-      ]
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+         "roles": {
+          "title": "roles",
+          "description": "List of Roles for Current Instance",
+          "minItems": 1,
+          "type": "array",
+          "items": {
+           "enum": [
+            "Admin",
+            "Read",
+            "Import",
+            "Export",
+            "Security Operator"
+           ]
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard plan for content assembly and export for SAP Cloud Integration and SAP API Management content types using transport queues like Change Management System and SAP Transport Management Service",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard plan for content assembly and export for SAP Cloud Integration and SAP API Management content types using transport queues like Change Management System and SAP Transport Management Service",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": true,
-                "additionalProperties": false,
-                "type": "object",
-                "properties": {
-                  "roles": {
-                    "title": "roles",
-                    "description": "List of Roles for Current Instance",
-                    "minItems": 1,
-                    "type": "array",
-                    "items": {
-                      "enum": [
-                        "Assemble"
-                      ]
-                    },
-                    "default": [
-                      "Assemble"
-                    ]
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": true,
-                "additionalProperties": false,
-                "type": "object",
-                "properties": {
-                  "roles": {
-                    "title": "roles",
-                    "description": "List of Roles for Current Instance",
-                    "minItems": 1,
-                    "type": "array",
-                    "items": {
-                      "enum": [
-                        "Assemble"
-                      ]
-                    },
-                    "default": [
-                      "Assemble"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    }
-  ],
-  "supportComponents": [
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
     {
-      "value": "BC-CP-LCM-CAS"
-    }
-  ],
-  "apis": [
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
     {
-      "name": "SAP Content Agent Service",
-      "url": "https://api.sap.com/api/contentagentapi/overview",
-      "apiType": "RESTful"
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ]
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+         "roles": {
+          "title": "roles",
+          "description": "List of Roles for Current Instance",
+          "minItems": 1,
+          "type": "array",
+          "items": {
+           "enum": [
+            "Assemble"
+           ]
+          },
+          "default": [
+           "Assemble"
+          ]
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+         "roles": {
+          "title": "roles",
+          "description": "List of Roles for Current Instance",
+          "minItems": 1,
+          "type": "array",
+          "items": {
+           "enum": [
+            "Assemble"
+           ]
+          },
+          "default": [
+           "Assemble"
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-LCM-CAS"
+  }
+ ],
+ "apis": [
+  {
+   "name": "SAP Content Agent Service",
+   "url": "https://api.sap.com/api/contentagentapi/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

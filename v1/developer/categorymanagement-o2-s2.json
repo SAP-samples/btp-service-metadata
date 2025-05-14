@@ -1,60 +1,60 @@
 {
-  "name": "categorymanagement-o2-s2",
-  "displayName": "SAP Ariba Category Management",
-  "description": "Provides tools and data insights across all phases of category strategy development and execution.",
-  "icon": null,
-  "links": [
+ "name": "categorymanagement-o2-s2",
+ "displayName": "SAP Ariba Category Management",
+ "description": "Provides tools and data insights across all phases of category strategy development and execution.",
+ "icon": null,
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Ariba%20Category%20Management",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Ariba%20Category%20Management",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "CategoryManagement",
+   "displayName": "Category Management",
+   "category": "APPLICATION",
+   "description": "Category Management",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Ariba%20Category%20Management",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
-    },
-    {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Ariba%20Category%20Management",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "OpportunityAnalysis",
+   "displayName": "Opportunity Analysis",
+   "category": "APPLICATION",
+   "description": "Opportunity Analysis",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "CategoryManagement",
-      "displayName": "Category Management",
-      "category": "APPLICATION",
-      "description": "Category Management",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "OpportunityAnalysis",
-      "displayName": "Opportunity Analysis",
-      "category": "APPLICATION",
-      "description": "Opportunity Analysis",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

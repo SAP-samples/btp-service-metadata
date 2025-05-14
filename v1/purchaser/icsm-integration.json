@@ -1,37 +1,37 @@
 {
-  "name": "icsm-integration",
-  "displayName": "SAP Intelligent Clinical Supply Management",
-  "description": "SAP Intelligent Clinical Supply Management",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
-  "servicePlans": [
+ "name": "icsm-integration",
+ "displayName": "SAP Intelligent Clinical Supply Management",
+ "description": "SAP Intelligent Clinical Supply Management",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "SAP Intelligent Clinical Supply Management - Integration Service",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "SAP Intelligent Clinical Supply Management - Integration Service",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012522",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014691",
-          "commercialModel": null
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012522",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014691",
+     "commercialModel": null
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

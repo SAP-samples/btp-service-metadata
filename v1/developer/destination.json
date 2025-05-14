@@ -1,259 +1,259 @@
 {
-  "name": "destination",
-  "displayName": "SAP Destination service",
-  "description": "Destination Service",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OKF9QGmPpnZRehBCRGnzrB1I4SlPwk4uxBcyWVW7SYSscQrmKJNLOQIgMiEJPcox.svg",
-  "links": [
+ "name": "destination",
+ "displayName": "SAP Destination service",
+ "description": "Destination Service",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OKF9QGmPpnZRehBCRGnzrB1I4SlPwk4uxBcyWVW7SYSscQrmKJNLOQIgMiEJPcox.svg",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Destination%20service",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Destination%20service",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/#/serviceCatalog/destination",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "Discovery Center"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/destination",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Destination"
+  },
+  {
+   "value": "https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-and-bind-destination-service-instance",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/34010ace6ac84574a4ad02f5055d3597.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/82ca377549c5421a8199013ea5f0facc.html",
+   "classification": "Tool",
+   "type": "Link",
+   "text": "Destination Editor"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/e5580c5dbb5710149e53c6013301a9f2.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "lite",
+   "displayName": "lite",
+   "category": "SERVICE",
+   "description": "Shared resources across all apps",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Destination%20service",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Destination%20service",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/destination",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/destination",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Destination"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/create-and-bind-destination-service-instance",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/34010ace6ac84574a4ad02f5055d3597.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/82ca377549c5421a8199013ea5f0facc.html",
-      "classification": "Tool",
-      "type": "Link",
-      "text": "Destination Editor"
+     "region": "ap31",
+     "name": "cf-ap31"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/cca91383641e40ffbe03bdc78f00f681/e5580c5dbb5710149e53c6013301a9f2.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "lite",
-      "displayName": "lite",
-      "category": "SERVICE",
-      "description": "Shared resources across all apps",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "_show_form_view": true,
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "type": "object",
+        "properties": {
+         "HTML5Runtime_enabled": {
+          "default": false,
+          "description": "Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.",
+          "title": "Enable instance for usage from HTML5 runtime",
+          "type": "boolean"
+         }
         }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "_show_form_view": true,
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "additionalProperties": true,
-                "type": "object",
-                "properties": {
-                  "HTML5Runtime_enabled": {
-                    "default": false,
-                    "description": "Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.",
-                    "title": "Enable instance for usage from HTML5 runtime",
-                    "type": "boolean"
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "_show_form_view": true,
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "additionalProperties": true,
-                "type": "object",
-                "properties": {
-                  "HTML5Runtime_enabled": {
-                    "default": false,
-                    "description": "Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.",
-                    "title": "Enable instance for usage from HTML5 runtime",
-                    "type": "boolean"
-                  }
-                }
-              }
-            }
-          },
-          "service_binding": {
-            "create": {
-              "parameters": {
-                "_show_form_view": false,
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "additionalProperties": true,
-                "type": "object"
-              }
-            }
-          }
+       }
+      },
+      "update": {
+       "parameters": {
+        "_show_form_view": true,
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "type": "object",
+        "properties": {
+         "HTML5Runtime_enabled": {
+          "default": false,
+          "description": "Indicates whether the SAP BTP HTML5 runtime should be enabled to work with the service instance on behalf of the HTML5 applications associated with it during deployment.",
+          "title": "Enable instance for usage from HTML5 runtime",
+          "type": "boolean"
+         }
         }
-      ]
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "_show_form_view": false,
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [
-    {
-      "value": "BC-CP-DEST-CF"
-    },
-    {
-      "value": "BC-CP-DEST-CF-CLIBS"
-    },
-    {
-      "value": "BC-CP-DEST-CF-TOOLS"
-    }
-  ],
-  "apis": []
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-DEST-CF"
+  },
+  {
+   "value": "BC-CP-DEST-CF-CLIBS"
+  },
+  {
+   "value": "BC-CP-DEST-CF-TOOLS"
+  }
+ ],
+ "apis": []
 }

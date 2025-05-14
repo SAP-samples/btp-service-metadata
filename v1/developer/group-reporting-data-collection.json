@@ -1,82 +1,82 @@
 {
-  "name": "group-reporting-data-collection",
-  "displayName": "SAP Group Reporting Data Collection",
-  "description": "Provide entry gate for all non S/4 data required for group closing purposes: manual data collection for financials and non financials, structured, semi-structured data, text.",
-  "icon": "Icon too big. Service owner needs to reduce size.",
-  "links": [
+ "name": "group-reporting-data-collection",
+ "displayName": "SAP Group Reporting Data Collection",
+ "description": "Provide entry gate for all non S/4 data required for group closing purposes: manual data collection for financials and non financials, structured, semi-structured data, text.",
+ "icon": "Icon too big. Service owner needs to reduce size.",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Group%20Reporting%20Data%20Collection",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Group%20Reporting%20Data%20Collection",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_Group_Reporting_Data_Collection",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "datamapping",
+   "displayName": "datamapping",
+   "category": "SERVICE",
+   "description": "Access to Data Mapping API",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Group%20Reporting%20Data%20Collection",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Group%20Reporting%20Data%20Collection",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/viewer/product/SAP_Group_Reporting_Data_Collection",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "transportdata",
+   "displayName": "transportdata",
+   "category": "SERVICE",
+   "description": "Transport SAP Group Reporting Data Collection content API",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "datamapping",
-      "displayName": "datamapping",
-      "category": "SERVICE",
-      "description": "Access to Data Mapping API",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "schemas": null
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "name": "transportdata",
-      "displayName": "transportdata",
-      "category": "SERVICE",
-      "description": "Transport SAP Group Reporting Data Collection content API",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

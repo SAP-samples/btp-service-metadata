@@ -1,328 +1,328 @@
 {
-  "name": "kafka",
-  "displayName": "Apache Kafka",
-  "description": "Apache Kafka",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/vfRjHYiyuNX71Gadod_Lo5T5mjUo24DT9vCcUC9Sacq1KjfmQ7l6sNpS115krkdI.svg",
-  "links": [
+ "name": "kafka",
+ "displayName": "Apache Kafka",
+ "description": "Apache Kafka",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/vfRjHYiyuNX71Gadod_Lo5T5mjUo24DT9vCcUC9Sacq1KjfmQ7l6sNpS115krkdI.svg",
+ "links": [
+  {
+   "value": "https://help.sap.com/doc/fe8f39bf9b0640fe8ae37031a85a8d96/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Technical Documentation: Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/viewer/2a27e0b0dae8473d937b46a085202c4f/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Technical Documentation: What is Apache Kafka?"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/2a27e0b0dae8473d937b46a085202c4f/2294c9a0318e480ea86d0b2064ea5c4d.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Technical Documentation: Getting Started"
+  },
+  {
+   "value": "https://help.sap.com/docs/CP_KAFKA",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Technical Documentation: Overview"
+  },
+  {
+   "value": "https://wiki.one.int.sap/wiki/display/HCPBD/Getting+Started+With+Kafka",
+   "classification": "External",
+   "type": "Link",
+   "text": "External"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "reference",
+   "displayName": "reference",
+   "category": "SERVICE",
+   "description": "Get access to an advertised Kafka cluster.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/doc/fe8f39bf9b0640fe8ae37031a85a8d96/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Technical Documentation: Feature Scope Description"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://help.sap.com/viewer/2a27e0b0dae8473d937b46a085202c4f/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Technical Documentation: What is Apache Kafka?"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/2a27e0b0dae8473d937b46a085202c4f/2294c9a0318e480ea86d0b2064ea5c4d.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Technical Documentation: Getting Started"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://help.sap.com/docs/CP_KAFKA",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Technical Documentation: Overview"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://wiki.one.int.sap/wiki/display/HCPBD/Getting+Started+With+Kafka",
-      "classification": "External",
-      "type": "Link",
-      "text": "External"
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "reference",
-      "displayName": "reference",
-      "category": "SERVICE",
-      "description": "Get access to an advertised Kafka cluster.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu01",
-          "name": "cf-eu01"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_controlsOrder": [
+         "validity",
+         "cert_format",
+         "key_format",
+         "key_size",
+         "key_alg",
+         "secret"
+        ],
+        "properties": {
+         "validity": {
+          "description": "The desired lifetime of the certificate",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 365,
+          "default": 90
+         },
+         "cert_format": {
+          "description": "The desired output format for the certificate",
+          "type": "string",
+          "enum": [
+           "PEM",
+           "PKCS#7"
+          ],
+          "default": "PEM"
+         },
+         "key_format": {
+          "description": "The desired output format for the private key",
+          "type": "string",
+          "enum": [
+           "PKCS#8",
+           "PKCS#12"
+          ],
+          "default": "PKCS#8"
+         },
+         "key_size": {
+          "description": "The number of bits the private key shall have",
+          "type": "integer",
+          "minimum": 2048,
+          "default": 2048
+         },
+         "key_alg": {
+          "description": "The encryption algorithm to use for encrypting the private key",
+          "type": "string",
+          "enum": [
+           "AES256",
+           "AES192",
+           "AES128",
+           "3DES"
+          ],
+          "default": "AES256"
+         },
+         "secret": {
+          "description": "The secret to use for encrypting the private key",
+          "type": "string"
+         },
+         "credential-type": {
+          "description": "The type of credentials to create. By default, only X.509 certificates are created, but passwords are no longer included in bindings.",
+          "type": "string",
+          "enum": [
+           "x509",
+           "x509, password"
+          ],
+          "default": "x509"
+         }
         }
-      ],
-      "schemas": [
-        {
-          "service_binding": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "_controlsOrder": [
-                  "validity",
-                  "cert_format",
-                  "key_format",
-                  "key_size",
-                  "key_alg",
-                  "secret"
-                ],
-                "properties": {
-                  "validity": {
-                    "description": "The desired lifetime of the certificate",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 365,
-                    "default": 90
-                  },
-                  "cert_format": {
-                    "description": "The desired output format for the certificate",
-                    "type": "string",
-                    "enum": [
-                      "PEM",
-                      "PKCS#7"
-                    ],
-                    "default": "PEM"
-                  },
-                  "key_format": {
-                    "description": "The desired output format for the private key",
-                    "type": "string",
-                    "enum": [
-                      "PKCS#8",
-                      "PKCS#12"
-                    ],
-                    "default": "PKCS#8"
-                  },
-                  "key_size": {
-                    "description": "The number of bits the private key shall have",
-                    "type": "integer",
-                    "minimum": 2048,
-                    "default": 2048
-                  },
-                  "key_alg": {
-                    "description": "The encryption algorithm to use for encrypting the private key",
-                    "type": "string",
-                    "enum": [
-                      "AES256",
-                      "AES192",
-                      "AES128",
-                      "3DES"
-                    ],
-                    "default": "AES256"
-                  },
-                  "secret": {
-                    "description": "The secret to use for encrypting the private key",
-                    "type": "string"
-                  },
-                  "credential-type": {
-                    "description": "The type of credentials to create. By default, only X.509 certificates are created, but passwords are no longer included in bindings.",
-                    "type": "string",
-                    "enum": [
-                      "x509",
-                      "x509, password"
-                    ],
-                    "default": "x509"
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "service_binding": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "_show_form_view": true,
-                "_controlsOrder": [
-                  "validity",
-                  "cert_format",
-                  "key_format",
-                  "key_size",
-                  "key_alg",
-                  "secret"
-                ],
-                "properties": {
-                  "validity": {
-                    "description": "The desired lifetime of the certificate",
-                    "type": "integer",
-                    "minimum": 1,
-                    "maximum": 365,
-                    "default": 90
-                  },
-                  "cert_format": {
-                    "description": "The desired output format for the certificate",
-                    "type": "string",
-                    "enum": [
-                      "PEM",
-                      "PKCS#7"
-                    ],
-                    "default": "PEM"
-                  },
-                  "key_format": {
-                    "description": "The desired output format for the private key",
-                    "type": "string",
-                    "enum": [
-                      "PKCS#8",
-                      "PKCS#12"
-                    ],
-                    "default": "PKCS#8"
-                  },
-                  "key_size": {
-                    "description": "The number of bits the private key shall have",
-                    "type": "integer",
-                    "minimum": 2048,
-                    "default": 2048
-                  },
-                  "key_alg": {
-                    "description": "The encryption algorithm to use for encrypting the private key",
-                    "type": "string",
-                    "enum": [
-                      "AES256",
-                      "AES192",
-                      "AES128",
-                      "3DES"
-                    ],
-                    "default": "AES256"
-                  },
-                  "secret": {
-                    "description": "The secret to use for encrypting the private key",
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
+       }
+      }
+     }
+    },
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_controlsOrder": [
+         "validity",
+         "cert_format",
+         "key_format",
+         "key_size",
+         "key_alg",
+         "secret"
+        ],
+        "properties": {
+         "validity": {
+          "description": "The desired lifetime of the certificate",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 365,
+          "default": 90
+         },
+         "cert_format": {
+          "description": "The desired output format for the certificate",
+          "type": "string",
+          "enum": [
+           "PEM",
+           "PKCS#7"
+          ],
+          "default": "PEM"
+         },
+         "key_format": {
+          "description": "The desired output format for the private key",
+          "type": "string",
+          "enum": [
+           "PKCS#8",
+           "PKCS#12"
+          ],
+          "default": "PKCS#8"
+         },
+         "key_size": {
+          "description": "The number of bits the private key shall have",
+          "type": "integer",
+          "minimum": 2048,
+          "default": 2048
+         },
+         "key_alg": {
+          "description": "The encryption algorithm to use for encrypting the private key",
+          "type": "string",
+          "enum": [
+           "AES256",
+           "AES192",
+           "AES128",
+           "3DES"
+          ],
+          "default": "AES256"
+         },
+         "secret": {
+          "description": "The secret to use for encrypting the private key",
+          "type": "string"
+         }
         }
-      ]
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ]
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

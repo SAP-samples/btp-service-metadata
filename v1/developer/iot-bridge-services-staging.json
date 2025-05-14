@@ -1,29 +1,29 @@
 {
-  "name": "iot-bridge-services-staging",
-  "displayName": "SAP Leonardo IoT Bridge Services Staging",
-  "description": "SAP Leonardo IoT Bridge Services Staging",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "iot-bridge-services-staging",
+ "displayName": "SAP Leonardo IoT Bridge Services Staging",
+ "description": "SAP Leonardo IoT Bridge Services Staging",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "Leonardo IoT Bridge Services - Staging",
+   "category": "SERVICE",
+   "description": "Leonardo IoT Bridge Services - Staging",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "Leonardo IoT Bridge Services - Staging",
-      "category": "SERVICE",
-      "description": "Leonardo IoT Bridge Services - Staging",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

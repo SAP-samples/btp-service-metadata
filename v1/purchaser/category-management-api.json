@@ -1,73 +1,73 @@
 {
-  "name": "category-management-api",
-  "displayName": "SAP Ariba Category Management",
-  "description": "SAP Ariba Category Management",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
-  "servicePlans": [
+ "name": "category-management-api",
+ "displayName": "SAP Ariba Category Management",
+ "description": "SAP Ariba Category Management",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+ "servicePlans": [
+  {
+   "name": "api-access",
+   "displayName": "api-access",
+   "category": "SERVICE",
+   "description": "api-access",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "api-access",
-      "displayName": "api-access",
-      "category": "SERVICE",
-      "description": "api-access",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8015105",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018021",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019450",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu30",
+     "name": "cf-eu30"
     },
     {
-      "name": "scim",
-      "displayName": "scim",
-      "category": "SERVICE",
-      "description": "Access to SCIM API",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8015105",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018021",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019450",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8015105",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018021",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019450",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "scim",
+   "displayName": "scim",
+   "category": "SERVICE",
+   "description": "Access to SCIM API",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8015105",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018021",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019450",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

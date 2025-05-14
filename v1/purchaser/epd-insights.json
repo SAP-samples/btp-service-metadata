@@ -1,57 +1,57 @@
 {
-  "name": "epd-insights",
-  "displayName": "SAP Enterprise Product Development",
-  "description": "Insights",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Aa3knUTCdq0G8NGlfZcedsziUiQIiv8rWUQNFTpKXwCtvjob5I_S1iFNdBCHgMWb.svg",
-  "servicePlans": [
+ "name": "epd-insights",
+ "displayName": "SAP Enterprise Product Development",
+ "description": "Insights",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/Aa3knUTCdq0G8NGlfZcedsziUiQIiv8rWUQNFTpKXwCtvjob5I_S1iFNdBCHgMWb.svg",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "Standard service plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "Standard service plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008476",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017574",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017674",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008476",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017574",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017674",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

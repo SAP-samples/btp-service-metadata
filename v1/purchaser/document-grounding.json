@@ -1,117 +1,117 @@
 {
-  "name": "document-grounding",
-  "displayName": "document grounding",
-  "description": "Document Grounding",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/-cWn2VdLKPsXauVs_pAdG38QOui0rJUQOoZ_JINKa8s9xgptumLKAlVB434lG5OC.svg",
-  "servicePlans": [
+ "name": "document-grounding",
+ "displayName": "document grounding",
+ "description": "Document Grounding",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/-cWn2VdLKPsXauVs_pAdG38QOui0rJUQOoZ_JINKa8s9xgptumLKAlVB434lG5OC.svg",
+ "servicePlans": [
+  {
+   "name": "data-manager",
+   "displayName": "data-manager",
+   "category": "SERVICE",
+   "description": "Configure and access the data source for document grounding.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "data-manager",
-      "displayName": "data-manager",
-      "category": "SERVICE",
-      "description": "Configure and access the data source for document grounding.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8016532",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018145",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018592",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018915",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019164",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019241",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019458",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8016532",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018145",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018592",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018915",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019164",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019241",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019458",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

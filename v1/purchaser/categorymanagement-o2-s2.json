@@ -1,39 +1,39 @@
 {
-  "name": "categorymanagement-o2-s2",
-  "displayName": "SAP Ariba Category Management",
-  "description": "Provides tools and data insights across all phases of category strategy development and execution.",
-  "icon": null,
-  "servicePlans": [
+ "name": "categorymanagement-o2-s2",
+ "displayName": "SAP Ariba Category Management",
+ "description": "Provides tools and data insights across all phases of category strategy development and execution.",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "CategoryManagement",
+   "displayName": "Category Management",
+   "category": "APPLICATION",
+   "description": "Category Management",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "CategoryManagement",
-      "displayName": "Category Management",
-      "category": "APPLICATION",
-      "description": "Category Management",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": []
-    },
-    {
-      "name": "OpportunityAnalysis",
-      "displayName": "Opportunity Analysis",
-      "category": "APPLICATION",
-      "description": "Opportunity Analysis",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": []
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": []
+  },
+  {
+   "name": "OpportunityAnalysis",
+   "displayName": "Opportunity Analysis",
+   "category": "APPLICATION",
+   "description": "Opportunity Analysis",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": []
+  }
+ ],
+ "certifications": []
 }

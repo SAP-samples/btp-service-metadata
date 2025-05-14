@@ -1,49 +1,49 @@
 {
-  "name": "csi-site-SAP",
-  "displayName": "Consumer Sales Intelligence Site",
-  "description": "Consumer Sales Intelligence Site",
-  "icon": null,
-  "servicePlans": [
+ "name": "csi-site-SAP",
+ "displayName": "Consumer Sales Intelligence Site",
+ "description": "Consumer Sales Intelligence Site",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Consumer Sales Intelligence Site",
+   "category": "SERVICE",
+   "description": "Consumer Sales Intelligence Site",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Consumer Sales Intelligence Site",
-      "category": "SERVICE",
-      "description": "Consumer Sales Intelligence Site",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8006991",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007918",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008167",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008168",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008371",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008372",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8006991",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007918",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008167",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008168",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008371",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008372",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

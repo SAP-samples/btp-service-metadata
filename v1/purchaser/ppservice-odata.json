@@ -1,49 +1,49 @@
 {
-  "name": "ppservice-odata",
-  "displayName": "Promotion Pricing, Data Access",
-  "description": "Promotion Pricing, Data Access",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mOKm7w2M25rcYo-jLGEHW6CNsrBDzpKizjWdka5W0zdwiUa0ZzGKlNFxjld1-vuV.svg",
-  "servicePlans": [
+ "name": "ppservice-odata",
+ "displayName": "Promotion Pricing, Data Access",
+ "description": "Promotion Pricing, Data Access",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mOKm7w2M25rcYo-jLGEHW6CNsrBDzpKizjWdka5W0zdwiUa0ZzGKlNFxjld1-vuV.svg",
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Default service plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Default service plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8007699",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012253",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014286",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8007699",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012253",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014286",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

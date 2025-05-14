@@ -1,161 +1,161 @@
 {
-  "name": "process-insights-api",
-  "displayName": "SAP Signavio Process Insights",
-  "description": "Get insights to support continuous business process improvement.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/P4Un-KJC0no2kwWAB5tsU2wV7EH6FhZVUV69tbv8kU69KEM7zHMvgaflE4AiINez.svg",
-  "servicePlans": [
+ "name": "process-insights-api",
+ "displayName": "SAP Signavio Process Insights",
+ "description": "Get insights to support continuous business process improvement.",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/P4Un-KJC0no2kwWAB5tsU2wV7EH6FhZVUV69tbv8kU69KEM7zHMvgaflE4AiINez.svg",
+ "servicePlans": [
+  {
+   "name": "api-plan",
+   "displayName": "Analytical API",
+   "category": "SERVICE",
+   "description": "Get access to the analytical API of SAP Signavio Process Insights",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "api-plan",
-      "displayName": "Analytical API",
-      "category": "SERVICE",
-      "description": "Get access to the analytical API of SAP Signavio Process Insights",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8011443",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8013411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015441",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016622",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019554",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "Get access to the APIs of SAP Signavio Process Insights",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8011443",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011497",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8013411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015441",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016622",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019554",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8011443",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011497",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8013411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015441",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016622",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019554",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "Get access to the APIs of SAP Signavio Process Insights",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8011443",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011497",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8013411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015441",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016622",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019554",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

@@ -1,205 +1,205 @@
 {
-  "name": "auditlog",
-  "displayName": "Audit Log Service",
-  "description": "Allow users to ingest compliance audit data from SAP BTP services and applications and store it for a default retention time of 90 days (with no additional costs applied). The ability to retrieve and download this data within this period is part of Auditlog Management Service. The service serves to support audit activities by prove wrongdoing and identifying malicious activities and provision of forensic evidence that can be used at Court. The scope of the service are secure and configuration change information records, data privacy specific logs, logs motivated by Multiple Regulations. The service is following each SAP Product standards and GDPR Compliance regulations.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/oxOgnrDPu9i2kRAT9yjgLbVmEmjMGLHJgbAylc2e6uHqt9drVhj6nNxUgMdC4usM.svg",
-  "servicePlans": [
+ "name": "auditlog",
+ "displayName": "Audit Log Service",
+ "description": "Allow users to ingest compliance audit data from SAP BTP services and applications and store it for a default retention time of 90 days (with no additional costs applied). The ability to retrieve and download this data within this period is part of Auditlog Management Service. The service serves to support audit activities by prove wrongdoing and identifying malicious activities and provision of forensic evidence that can be used at Court. The scope of the service are secure and configuration change information records, data privacy specific logs, logs motivated by Multiple Regulations. The service is following each SAP Product standards and GDPR Compliance regulations.",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/oxOgnrDPu9i2kRAT9yjgLbVmEmjMGLHJgbAylc2e6uHqt9drVhj6nNxUgMdC4usM.svg",
+ "servicePlans": [
+  {
+   "name": "premium",
+   "displayName": "premium",
+   "category": "SERVICE",
+   "description": "Allows ingestion of audit data from customer owned BTP applications and the ability to configure flexible retention period (min. is 7 days). The premium service plan is being paid based on actual consumption (volumes of audit data being ingested/stored).",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "premium",
-      "displayName": "premium",
-      "category": "SERVICE",
-      "description": "Allows ingestion of audit data from customer owned BTP applications and the ability to configure flexible retention period (min. is 7 days). The premium service plan is being paid based on actual consumption (volumes of audit data being ingested/stored).",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8016088",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016088",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016101",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016101",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8016582",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8016581",
-          "commercialModel": null
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8016088",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016088",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016101",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016101",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8016582",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8016581",
+     "commercialModel": null
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

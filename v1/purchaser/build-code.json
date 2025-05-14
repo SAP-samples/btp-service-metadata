@@ -1,261 +1,261 @@
 {
-  "name": "build-code",
-  "displayName": "SAP Build Code",
-  "description": "SAP Build Code",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9Im1hc2swXzM4NjBfMTc3NzMiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjIiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMiI+CjxwYXRoIGQ9Ik03LjU2NTc5IDguMzk2ODZDNy4zNjQ5NSA4LjM4NDUgNy4yMDc2MiA4LjIwMjM0IDcuMjA3MzYgOC4wMDIwN0M3LjIwNzYyIDcuODAxOCA3LjM2NDk1IDcuNjE5NjMgNy41NjU3OSA3LjYwNzI3TDEwLjM3MzcgNy40MDkzNkMxMS45NjU3IDcuMzAwNDkgMTIuNzQ5IDYuMDcyNyAxMi43NDkgNC44MzcyMUMxMi43NDkgMy4yODQxNyAxMS41NjE1IDIuNDY0MTEgOS45MzI2MyAyLjQ2NDExQzcuOTk5MDEgMi40NjQxMSA2LjAzMjg0IDMuMDE3MDQgNC45NjUxMiAzLjk0NzA5QzMuNzg0MDggNC45NzU4NiAzLjI0OTQ5IDYuNDE0ODYgMy4yNDkwMiA4LjAwMzExQzMuMjQ5NDkgOS41OTEzNSAzLjc4NDA4IDExLjAyODMgNC45NjUxMiAxMi4wNTdDNi4wMzI4NCAxMi45ODcxIDcuOTk4NzIgMTMuNTQgOS45MzI2MyAxMy41NEMxMS41NjE1IDEzLjU0IDEyLjc0OSAxMi43MiAxMi43NDkgMTEuMTY2OUMxMi43NDkgOS45MzE0MyAxMS45NjU3IDguNzAzNjUgMTAuMzczNyA4LjU5NDc4TDcuNTY1NzkgOC4zOTY4NloiIGZpbGw9ImJsYWNrIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8zODYwXzE3NzczKSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfMzg2MF8xNzc3MykiPgo8cGF0aCBkPSJNMjIuNTg1IDIuMzg0OTlDMjAuOTgzOSAzLjg4MTk3IDE4LjYyMTEgNC40NTMzNCAxOC4zMzc2IDExLjIyNjZDMTguMDU0MSAxNy45OTk5IDkuODg5NCAxNS45MDM0IDguMTU3MDEgMTUuMTM1MUM1LjA5Mjg5IDEzLjc3NjMgMC42NDgyODYgNC44MTIzOSA1Ljc2OTM3IDIuMDA1MzdDMTAuODkwNSAtMC44MDE2NDkgMTQuMDQ0IC0zLjE0MDE1IDE3LjEwODEgLTEuNzgxMjdDMjAuMTcyMiAtMC40MjIzODcgMjQuMTg2MSAwLjg4ODAxNyAyMi41ODUgMi4zODQ5OVoiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF8zODYwXzE3NzczKSIvPgo8L2c+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIxX2RfMzg2MF8xNzc3MykiPgo8cGF0aCBkPSJNMy4wOTc4NSAtMS4xMTAyN0M0LjA4Nzk0IDAuNTI1OTYyIDMuNTg5ODQgNC43ODQ0NiA5LjMyMTYzIDYuMjQ0NzVDMTUuMDUzNCA3LjcwNTAzIDEyLjk3OSAxNC4yODk2IDEyLjAxMTQgMTUuNjMwNUMxMC4zMDAyIDE4LjAwMjEgMy4wNTA4IDIwLjEyOTUgMS41NzUzNCAxNS4yNTI0QzAuMDk5ODc5NCAxMC4zNzU0IC0wLjk2OTA0MiA0LjcyOTAzIDAuNzQyMjI1IDIuMzU3NDFDMi40NTM0OSAtMC4wMTQyMTU0IDIuMTA3NzcgLTIuNzQ2NSAzLjA5Nzg1IC0xLjExMDI3WiIgZmlsbD0idXJsKCNwYWludDFfcmFkaWFsXzM4NjBfMTc3NzMpIi8+CjwvZz4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjJfZF8zODYwXzE3NzczKSI+CjxwYXRoIGQ9Ik0xMi45MDk3IDEzLjMzODVDMTMuMDYzNiAxNy4wNzQyIDEwLjE2IDIwLjIyNzQgNi40MjQyIDIwLjM4MTRDMi42ODg0NSAyMC41MzUzIC02LjQ0NTE0IDE1LjgzMDEgLTYuNTk5MDcgMTIuMDk0NEMtNi43NTMgOC4zNTg2MyAtMC42MDM4NTQgLTMuNjU0ODcgMi45NTA5NCA0LjczMTQ3QzYuNTA1NzQgMTMuMTE3OCAxMi43MTA1IDguNTA0MDIgMTIuOTA5NyAxMy4zMzg1WiIgZmlsbD0idXJsKCNwYWludDJfcmFkaWFsXzM4NjBfMTc3NzMpIi8+CjwvZz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzM4NjBfMTc3NzMiIHg9IjIuNjQxNTYiIHk9Ii0zLjI4NDE0IiB3aWR0aD0iMjEuODg2OCIgaGVpZ2h0PSIyMC41OTk3IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzk0Nzk1IiBkeT0iMC4wNzg5NTkiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41OTIxOTMiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3NzczIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3NzMiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjFfZF8zODYwXzE3NzczIiB4PSItMC45MjUzMzIiIHk9Ii0yLjcxMjM2IiB3aWR0aD0iMTUuNjg4NiIgaGVpZ2h0PSIyMi4xNzM3IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzk0Nzk1IiBkeT0iMC4wNzg5NTkiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41OTIxOTMiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3NzczIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3NzMiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjJfZF8zODYwXzE3NzczIiB4PSItNy4zOTE2NCIgeT0iMC43MTMxNzciIHdpZHRoPSIyMS44ODYzIiBoZWlnaHQ9IjIwLjkzNTIiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeD0iMC4zOTQ3OTUiIGR5PSIwLjA3ODk1OSIvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIwLjU5MjE5MyIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuNCAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3NzMiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzc3MyIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDBfcmFkaWFsXzM4NjBfMTc3NzMiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuODc5IDQuMTg0MDUpIHJvdGF0ZSg3OS4wOTY3KSBzY2FsZSgxOS4yMDEzIDE3Ljc4MTQpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDFfcmFkaWFsXzM4NjBfMTc3NzMiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIuOTM0NjUgOC4yMDc5MSkgcm90YXRlKDAuMzQ0NjE2KSBzY2FsZSgyNS4yNzE5IDQ0Ljg0OTgpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAxOTVGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMTQ3RTkiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDJfcmFkaWFsXzM4NjBfMTc3NzMiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQuOTkzOTQgNi4zNDY1NSkgcm90YXRlKDQxLjUzNjIpIHNjYWxlKDI2LjM0MjUgMzYuNjM1MSkiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDBCQkZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwOEJGRiIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
-  "servicePlans": [
+ "name": "build-code",
+ "displayName": "SAP Build Code",
+ "description": "SAP Build Code",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9Im1hc2swXzM4NjBfMTc3NzMiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjIiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMiI+CjxwYXRoIGQ9Ik03LjU2NTc5IDguMzk2ODZDNy4zNjQ5NSA4LjM4NDUgNy4yMDc2MiA4LjIwMjM0IDcuMjA3MzYgOC4wMDIwN0M3LjIwNzYyIDcuODAxOCA3LjM2NDk1IDcuNjE5NjMgNy41NjU3OSA3LjYwNzI3TDEwLjM3MzcgNy40MDkzNkMxMS45NjU3IDcuMzAwNDkgMTIuNzQ5IDYuMDcyNyAxMi43NDkgNC44MzcyMUMxMi43NDkgMy4yODQxNyAxMS41NjE1IDIuNDY0MTEgOS45MzI2MyAyLjQ2NDExQzcuOTk5MDEgMi40NjQxMSA2LjAzMjg0IDMuMDE3MDQgNC45NjUxMiAzLjk0NzA5QzMuNzg0MDggNC45NzU4NiAzLjI0OTQ5IDYuNDE0ODYgMy4yNDkwMiA4LjAwMzExQzMuMjQ5NDkgOS41OTEzNSAzLjc4NDA4IDExLjAyODMgNC45NjUxMiAxMi4wNTdDNi4wMzI4NCAxMi45ODcxIDcuOTk4NzIgMTMuNTQgOS45MzI2MyAxMy41NEMxMS41NjE1IDEzLjU0IDEyLjc0OSAxMi43MiAxMi43NDkgMTEuMTY2OUMxMi43NDkgOS45MzE0MyAxMS45NjU3IDguNzAzNjUgMTAuMzczNyA4LjU5NDc4TDcuNTY1NzkgOC4zOTY4NloiIGZpbGw9ImJsYWNrIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8zODYwXzE3NzczKSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfMzg2MF8xNzc3MykiPgo8cGF0aCBkPSJNMjIuNTg1IDIuMzg0OTlDMjAuOTgzOSAzLjg4MTk3IDE4LjYyMTEgNC40NTMzNCAxOC4zMzc2IDExLjIyNjZDMTguMDU0MSAxNy45OTk5IDkuODg5NCAxNS45MDM0IDguMTU3MDEgMTUuMTM1MUM1LjA5Mjg5IDEzLjc3NjMgMC42NDgyODYgNC44MTIzOSA1Ljc2OTM3IDIuMDA1MzdDMTAuODkwNSAtMC44MDE2NDkgMTQuMDQ0IC0zLjE0MDE1IDE3LjEwODEgLTEuNzgxMjdDMjAuMTcyMiAtMC40MjIzODcgMjQuMTg2MSAwLjg4ODAxNyAyMi41ODUgMi4zODQ5OVoiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF8zODYwXzE3NzczKSIvPgo8L2c+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIxX2RfMzg2MF8xNzc3MykiPgo8cGF0aCBkPSJNMy4wOTc4NSAtMS4xMTAyN0M0LjA4Nzk0IDAuNTI1OTYyIDMuNTg5ODQgNC43ODQ0NiA5LjMyMTYzIDYuMjQ0NzVDMTUuMDUzNCA3LjcwNTAzIDEyLjk3OSAxNC4yODk2IDEyLjAxMTQgMTUuNjMwNUMxMC4zMDAyIDE4LjAwMjEgMy4wNTA4IDIwLjEyOTUgMS41NzUzNCAxNS4yNTI0QzAuMDk5ODc5NCAxMC4zNzU0IC0wLjk2OTA0MiA0LjcyOTAzIDAuNzQyMjI1IDIuMzU3NDFDMi40NTM0OSAtMC4wMTQyMTU0IDIuMTA3NzcgLTIuNzQ2NSAzLjA5Nzg1IC0xLjExMDI3WiIgZmlsbD0idXJsKCNwYWludDFfcmFkaWFsXzM4NjBfMTc3NzMpIi8+CjwvZz4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjJfZF8zODYwXzE3NzczKSI+CjxwYXRoIGQ9Ik0xMi45MDk3IDEzLjMzODVDMTMuMDYzNiAxNy4wNzQyIDEwLjE2IDIwLjIyNzQgNi40MjQyIDIwLjM4MTRDMi42ODg0NSAyMC41MzUzIC02LjQ0NTE0IDE1LjgzMDEgLTYuNTk5MDcgMTIuMDk0NEMtNi43NTMgOC4zNTg2MyAtMC42MDM4NTQgLTMuNjU0ODcgMi45NTA5NCA0LjczMTQ3QzYuNTA1NzQgMTMuMTE3OCAxMi43MTA1IDguNTA0MDIgMTIuOTA5NyAxMy4zMzg1WiIgZmlsbD0idXJsKCNwYWludDJfcmFkaWFsXzM4NjBfMTc3NzMpIi8+CjwvZz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzM4NjBfMTc3NzMiIHg9IjIuNjQxNTYiIHk9Ii0zLjI4NDE0IiB3aWR0aD0iMjEuODg2OCIgaGVpZ2h0PSIyMC41OTk3IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzk0Nzk1IiBkeT0iMC4wNzg5NTkiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41OTIxOTMiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3NzczIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3NzMiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjFfZF8zODYwXzE3NzczIiB4PSItMC45MjUzMzIiIHk9Ii0yLjcxMjM2IiB3aWR0aD0iMTUuNjg4NiIgaGVpZ2h0PSIyMi4xNzM3IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzk0Nzk1IiBkeT0iMC4wNzg5NTkiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41OTIxOTMiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3NzczIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3NzMiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjJfZF8zODYwXzE3NzczIiB4PSItNy4zOTE2NCIgeT0iMC43MTMxNzciIHdpZHRoPSIyMS44ODYzIiBoZWlnaHQ9IjIwLjkzNTIiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeD0iMC4zOTQ3OTUiIGR5PSIwLjA3ODk1OSIvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIwLjU5MjE5MyIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuNCAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3NzMiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzc3MyIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDBfcmFkaWFsXzM4NjBfMTc3NzMiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuODc5IDQuMTg0MDUpIHJvdGF0ZSg3OS4wOTY3KSBzY2FsZSgxOS4yMDEzIDE3Ljc4MTQpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzEzNDhGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjIzOEQiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDFfcmFkaWFsXzM4NjBfMTc3NzMiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIuOTM0NjUgOC4yMDc5MSkgcm90YXRlKDAuMzQ0NjE2KSBzY2FsZSgyNS4yNzE5IDQ0Ljg0OTgpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAxOTVGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMTQ3RTkiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDJfcmFkaWFsXzM4NjBfMTc3NzMiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQuOTkzOTQgNi4zNDY1NSkgcm90YXRlKDQxLjUzNjIpIHNjYWxlKDI2LjM0MjUgMzYuNjM1MSkiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDBCQkZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwOEJGRiIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "APPLICATION",
+   "description": "Use the free plan for evaluation purposes of the design time features. SAP Build code provides an easy way to create applications leveraging Generative AI capabilities. Restrictions apply. Only community support is available for free tier service plans, and these are not subject to SLAs.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "APPLICATION",
-      "description": "Use the free plan for evaluation purposes of the design time features. SAP Build code provides an easy way to create applications leveraging Generative AI capabilities. Restrictions apply. Only community support is available for free tier service plans, and these are not subject to SLAs.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8017794",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "SAP Build code provides an easy way to create applications leveraging Generative AI capabilities. It removes the need to understand the pricing plans of the consumed services. Instead, a specific set of services is available, and billing will be enforced based on consumption only.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8017771",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017771",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018204",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019091",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8017794",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "ProdDummy19",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "SAP Build code provides an easy way to create applications leveraging Generative AI capabilities. It removes the need to understand the pricing plans of the consumed services. Instead, a specific set of services is available, and billing will be enforced based on consumption only.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8017771",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017771",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018204",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019091",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

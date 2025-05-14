@@ -1,61 +1,61 @@
 {
-  "name": "etd-cloud-data-retrieval-service",
-  "displayName": "SAP Enterprise Threat Detection, cloud edition, data retriever",
-  "description": "SAP Enterprise Threat Detection, Cloud Edition, Data Retriever",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic2FwLWVudGVycHJpc2UtdGhyZWF0LWRldGVjdGlvbi1jbG91ZC1kYXRhLXJldHJpZXZlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48dGl0bGU+ZG9jdW1lbnQtaW5mb3JtYXRpb24tZXh0cmFjdGlvbjwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzcsNDUuOTVWNDlhMi44ODgsMi44ODgsMCwwLDEtMywzSDdhMi44ODgsMi44ODgsMCwwLDEtMy0zVjE2TDE2LDRIMzRhMi45NjYsMi45NjYsMCwwLDEsMi4xMDkuODQzQTIuODQ5LDIuODQ5LDAsMCwxLDM3LDd2NkgzNFY3SDE5djlhMi44NDUsMi44NDUsMCwwLDEtLjg5MSwyLjE1NiwzLjA4NiwzLjA4NiwwLDAsMS0yLjIuODQ0SDdWNDlIMzRWNDUuOTVaIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMTMuNjkzIiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMTguMjY4IiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMjUuNjkzIiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMzAuMjY4IiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMzcuNzI4IiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iNDIuMzAzIiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM5Ljk4NCA0NS45ODIgMzkuOTg0IDEyLjk4MiAyNC45ODQgMjkuNDgyIDM5Ljk4NCA0NS45ODIiLz48L3N2Zz4=",
-  "servicePlans": [
+ "name": "etd-cloud-data-retrieval-service",
+ "displayName": "SAP Enterprise Threat Detection, cloud edition, data retriever",
+ "description": "SAP Enterprise Threat Detection, Cloud Edition, Data Retriever",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic2FwLWVudGVycHJpc2UtdGhyZWF0LWRldGVjdGlvbi1jbG91ZC1kYXRhLXJldHJpZXZlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48dGl0bGU+ZG9jdW1lbnQtaW5mb3JtYXRpb24tZXh0cmFjdGlvbjwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzcsNDUuOTVWNDlhMi44ODgsMi44ODgsMCwwLDEtMywzSDdhMi44ODgsMi44ODgsMCwwLDEtMy0zVjE2TDE2LDRIMzRhMi45NjYsMi45NjYsMCwwLDEsMi4xMDkuODQzQTIuODQ5LDIuODQ5LDAsMCwxLDM3LDd2NkgzNFY3SDE5djlhMi44NDUsMi44NDUsMCwwLDEtLjg5MSwyLjE1NiwzLjA4NiwzLjA4NiwwLDAsMS0yLjIuODQ0SDdWNDlIMzRWNDUuOTVaIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMTMuNjkzIiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMTguMjY4IiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMjUuNjkzIiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMzAuMjY4IiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iMzcuNzI4IiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI0MyIgeT0iNDIuMzAzIiB3aWR0aD0iOSIgaGVpZ2h0PSIzIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM5Ljk4NCA0NS45ODIgMzkuOTg0IDEyLjk4MiAyNC45ODQgMjkuNDgyIDM5Ljk4NCA0NS45ODIiLz48L3N2Zz4=",
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Standard functionality",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Standard functionality",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8010984",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8013613",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014307",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015437",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8010984",
+     "commercialModel": "Subscription"
     },
     {
-      "name": "demo",
-      "displayName": "demo",
-      "category": "SERVICE",
-      "description": "Limited functionality for demonstration purposes only",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8018321",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "materialNumber": "8013613",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014307",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015437",
+     "commercialModel": "Subscription"
     }
-  ],
-  "certifications": []
+   ]
+  },
+  {
+   "name": "demo",
+   "displayName": "demo",
+   "category": "SERVICE",
+   "description": "Limited functionality for demonstration purposes only",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8018321",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

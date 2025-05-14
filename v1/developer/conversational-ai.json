@@ -1,186 +1,186 @@
 {
-  "name": "conversational-ai",
-  "displayName": "SAP Conversational AI",
-  "description": "SAP Conversational AI",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/GmiF60NwoELr8FSB1nhwotI2H_FikSz4Kf6BEeG-pF9mD7c0jvHMOHdpiwxB1SkT.svg",
-  "links": [
+ "name": "conversational-ai",
+ "displayName": "SAP Conversational AI",
+ "description": "SAP Conversational AI",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/GmiF60NwoELr8FSB1nhwotI2H_FikSz4Kf6BEeG-pF9mD7c0jvHMOHdpiwxB1SkT.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPConversationalAI/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Conversational AI | SAP API Business Hub"
+  },
+  {
+   "value": "https://api.sap.com/package/SAPConversationalAI?section=Artifacts",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "API Hub"
+  },
+  {
+   "value": "https://community.sap.com/topics/conversational-ai",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community"
+  },
+  {
+   "value": "https://help.sap.com/cai",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/72ff4b1e30414104ac9c315da1ecc6b5.html?collapse=",
+   "classification": "Learning",
+   "type": "Link",
+   "text": "Learning Journey"
+  },
+  {
+   "value": "https://help.sap.com/doc/5befc39ddee84fe681d565cadd98ce05/latest/en-US/KeyFeaturesOfSAPConversationalAI.pdf",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://answers.sap.com/tags/73555000100800001301",
+   "classification": "Support",
+   "type": "Link",
+   "text": "SAP Answers"
+  },
+  {
+   "value": "https://blogs.sap.com/tags/73555000100800001301/",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Blogs from SAP Community"
+  },
+  {
+   "value": "https://cai.tools.sap/docs/api-reference/",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "API Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/3aab817a03be4432abbfd00c42b23cb8/latest/en-US/e676f11574434ad984a335ad1f4b0bf5.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/viewer/7a8f56b0db554075a940d4b12019eb6f/latest/en-US/475bfc62d8e34d84b2983b376fcca6ea.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/7a8f56b0db554075a940d4b12019eb6f/latest/en-US/a517600a3c3f472396ba4cb7ad91f8bf.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/a4522a393d2b4643812b7caadfe90c18/",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is SAP Conversational AI"
+  },
+  {
+   "value": "https://help.sap.com/viewer/b2541bd8032b403c9c083ca20682dd3b/latest/en-US/f3b39a2e106a495d8324d98cb38a3e1a.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Onboarding"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_CONVERSATIONAL_AI",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://launchpad.support.sap.com",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "This plan is deprecated and only valid for the Community Edition (cai.tools.sap) legacy customers. For a new license of SAP Conversational AI, please subscribe to the Enterprise Edition by selecting the standard Application Plans below.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPConversationalAI/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Conversational AI | SAP API Business Hub"
-    },
-    {
-      "value": "https://api.sap.com/package/SAPConversationalAI?section=Artifacts",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "API Hub"
-    },
-    {
-      "value": "https://community.sap.com/topics/conversational-ai",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community"
-    },
-    {
-      "value": "https://help.sap.com/cai",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://help.sap.com/doc/221f8f84afef43d29ad37ef2af0c4adf/HP_2.0/en-US/72ff4b1e30414104ac9c315da1ecc6b5.html?collapse=",
-      "classification": "Learning",
-      "type": "Link",
-      "text": "Learning Journey"
-    },
-    {
-      "value": "https://help.sap.com/doc/5befc39ddee84fe681d565cadd98ce05/latest/en-US/KeyFeaturesOfSAPConversationalAI.pdf",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
-    },
-    {
-      "value": "https://answers.sap.com/tags/73555000100800001301",
-      "classification": "Support",
-      "type": "Link",
-      "text": "SAP Answers"
-    },
-    {
-      "value": "https://blogs.sap.com/tags/73555000100800001301/",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Blogs from SAP Community"
-    },
-    {
-      "value": "https://cai.tools.sap/docs/api-reference/",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/3aab817a03be4432abbfd00c42b23cb8/latest/en-US/e676f11574434ad984a335ad1f4b0bf5.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
-    },
-    {
-      "value": "https://help.sap.com/viewer/7a8f56b0db554075a940d4b12019eb6f/latest/en-US/475bfc62d8e34d84b2983b376fcca6ea.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/7a8f56b0db554075a940d4b12019eb6f/latest/en-US/a517600a3c3f472396ba4cb7ad91f8bf.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/a4522a393d2b4643812b7caadfe90c18/",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is SAP Conversational AI"
-    },
-    {
-      "value": "https://help.sap.com/viewer/b2541bd8032b403c9c083ca20682dd3b/latest/en-US/f3b39a2e106a495d8324d98cb38a3e1a.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Onboarding"
-    },
-    {
-      "value": "https://help.sap.com/docs/SAP_CONVERSATIONAL_AI",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://launchpad.support.sap.com",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "This plan is deprecated and only valid for the Community Edition (cai.tools.sap) legacy customers. For a new license of SAP Conversational AI, please subscribe to the Enterprise Edition by selecting the standard Application Plans below.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "CA-ML-CAI"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Bot Builder",
-      "url": "https://api.sap.com/api/BotBuilder_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Bot Connector",
-      "url": "https://api.sap.com/api/BotConnector_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Bot Testing",
-      "url": "https://api.sap.com/api/BotTest_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Bot Transport",
-      "url": "https://api.sap.com/api/BotTransport_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Bot Management",
-      "url": "https://api.sap.com/api/Bot_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Conversation Logs Management",
-      "url": "https://api.sap.com/api/ConversationLogs_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "FAQ Bot",
-      "url": "https://api.sap.com/api/FAQBot_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Natural Language Processing",
-      "url": "https://api.sap.com/api/NLP_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Runtime",
-      "url": "https://api.sap.com/api/Runtime_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Tenant Configurations",
-      "url": "https://api.sap.com/api/Tenantconfig_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "User Account Management",
-      "url": "https://api.sap.com/api/UserAccountManagement_API/overview",
-      "apiType": "RESTful"
-    }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-ML-CAI"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Bot Builder",
+   "url": "https://api.sap.com/api/BotBuilder_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Bot Connector",
+   "url": "https://api.sap.com/api/BotConnector_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Bot Testing",
+   "url": "https://api.sap.com/api/BotTest_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Bot Transport",
+   "url": "https://api.sap.com/api/BotTransport_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Bot Management",
+   "url": "https://api.sap.com/api/Bot_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Conversation Logs Management",
+   "url": "https://api.sap.com/api/ConversationLogs_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "FAQ Bot",
+   "url": "https://api.sap.com/api/FAQBot_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Natural Language Processing",
+   "url": "https://api.sap.com/api/NLP_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Runtime",
+   "url": "https://api.sap.com/api/Runtime_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Tenant Configurations",
+   "url": "https://api.sap.com/api/Tenantconfig_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "User Account Management",
+   "url": "https://api.sap.com/api/UserAccountManagement_API/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

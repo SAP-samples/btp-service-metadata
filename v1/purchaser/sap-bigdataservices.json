@@ -1,89 +1,89 @@
 {
-  "name": "sap-bigdataservices",
-  "displayName": "SAP Big Data Services",
-  "description": "Big Data Services",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ob1wSds5n3uTiV8RJNzp43Vssi0zqkYJ2Yvy5c_qRvm2Nhu_jZGsEtFwJnitLzaq.svg",
-  "servicePlans": [
+ "name": "sap-bigdataservices",
+ "displayName": "SAP Big Data Services",
+ "description": "Big Data Services",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/ob1wSds5n3uTiV8RJNzp43Vssi0zqkYJ2Yvy5c_qRvm2Nhu_jZGsEtFwJnitLzaq.svg",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Big Data Services",
+   "category": "SERVICE",
+   "description": "Big Data Services",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Big Data Services",
-      "category": "SERVICE",
-      "description": "Big Data Services",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007126",
-          "commercialModel": "ppu_ms_azure"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005210",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8005212",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8005211",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8005214",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8005215",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8006156",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8005213",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8006157",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8008174",
-          "commercialModel": null
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007126",
+     "commercialModel": "ppu_ms_azure"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005210",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8005212",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8005211",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8005214",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8005215",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8006156",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8005213",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8006157",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8008174",
+     "commercialModel": null
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

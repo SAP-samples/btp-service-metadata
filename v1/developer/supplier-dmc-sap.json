@@ -1,41 +1,41 @@
 {
-  "name": "supplier-dmc-sap",
-  "displayName": "SAP Digital Manufacturing Network",
-  "description": "SAP Digital Manufacturing Network",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "supplier-dmc-sap",
+ "displayName": "SAP Digital Manufacturing Network",
+ "description": "SAP Digital Manufacturing Network",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "production",
+   "displayName": "production",
+   "category": "APPLICATION",
+   "description": "production",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "production",
-      "displayName": "production",
-      "category": "APPLICATION",
-      "description": "production",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

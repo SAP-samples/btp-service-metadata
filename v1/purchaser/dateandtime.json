@@ -1,28 +1,28 @@
 {
-  "name": "dateandtime",
-  "displayName": "Date and Time",
-  "description": "Date and Time",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/RIsj05OpU1inSihIQoLFUbKi93z57FZ90F3W5SxLVunNLhX9fYQNJdQ7MfURCGsZ.svg",
-  "servicePlans": [
+ "name": "dateandtime",
+ "displayName": "Date and Time",
+ "description": "Date and Time",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/RIsj05OpU1inSihIQoLFUbKi93z57FZ90F3W5SxLVunNLhX9fYQNJdQ7MfURCGsZ.svg",
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Default Plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Default Plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": []
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": []
+  }
+ ],
+ "certifications": []
 }

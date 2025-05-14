@@ -1,1869 +1,1869 @@
 {
-  "name": "process-automation",
-  "displayName": "SAP Build Process Automation",
-  "description": "SAP Build Process Automation",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/iZMuAbfr2UD157L6DMvQk2wQChmQaMS450jp6DXOfhhwZO7VqODP9v5mblXSRHka.svg",
-  "servicePlans": [
+ "name": "process-automation",
+ "displayName": "SAP Build Process Automation",
+ "description": "SAP Build Process Automation",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/iZMuAbfr2UD157L6DMvQk2wQChmQaMS450jp6DXOfhhwZO7VqODP9v5mblXSRHka.svg",
+ "servicePlans": [
+  {
+   "name": "addon",
+   "displayName": "Addon",
+   "category": "SERVICE",
+   "description": "This plan enables you to connect to UiPath",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "addon",
-      "displayName": "Addon",
-      "category": "SERVICE",
-      "description": "This plan enables you to connect to UiPath",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8018904",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "advanced-user",
-      "displayName": "advanced-user",
-      "category": "SERVICE",
-      "description": "Allows you to create advanced users. They can design, monitor, or administrate the solution and access the process visibility workspace. The entitlement includes access to the SAP Build Work Zone, standard edition and a certain amount of API calls and storage. In API-driven use cases or with a very many process instances, additional licensing could be needed for API calls and storage.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008428",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008476",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010925",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011730",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012265",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012265",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012526",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014014",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014046",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014162",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014761",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014771",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014852",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8016068",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017574",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8017674",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018146",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018575",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019091",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019449",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "name": "api-calls",
-      "displayName": "api-calls",
-      "category": "SERVICE",
-      "description": "Allows you to increase the API calls quota if you need more API calls than provided by the already selected entitlements.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008476",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012267",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015466",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017574",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017674",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "name": "automation-attended",
-      "displayName": "automation-attended",
-      "category": "SERVICE",
-      "description": "Allows you to use automations (bots) in attended mode, which means you need to take action.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8012252",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012252",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012524",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014852",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8016411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019091",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ca20",
+     "name": "cf-ca20"
     },
     {
-      "name": "automation-unattended",
-      "displayName": "automation-unattended",
-      "category": "SERVICE",
-      "description": "Allows you to use automations (bots) in unattended mode, which means without your intervention.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011730",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012251",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012251",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012523",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014014",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014046",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014162",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014761",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014771",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014852",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8016068",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8018146",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018575",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019449",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "build-default",
-      "displayName": "Build Default",
-      "category": "APPLICATION",
-      "description": "Build plan for using SAP Build Process Automation",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8019291",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019301",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019311",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "APPLICATION",
-      "description": "Only community support is available for free tier service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile. Subscribe to the free service. To fully use all capabilities of SAP Build Process Automation, you also must subscribe to the standard entitlement at no additional cost.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8012362",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu30",
+     "name": "cf-eu30"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "Subscribe to the production service. Note that to fully use all capabilities of SAP Build Process Automation, you also must subscribe to the standard entitlement at no additional cost.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008428",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008476",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010925",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011730",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012251",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012252",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012264",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012265",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012266",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012267",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012523",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012524",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012525",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012526",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014014",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014046",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014162",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014761",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014771",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014852",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015466",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8016068",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017573",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017574",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8017674",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018146",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018575",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019091",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019449",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "name": "standard-user",
-      "displayName": "standard-user",
-      "category": "SERVICE",
-      "description": "Allows you to create standard users. They are process participants who trigger, approve, or contribute to a process instance. The entitlement includes the access to SAP Build Work Zone, standard edition and a certain amount of API calls and storage. In API-driven use cases or with a very many process instances, additional licensing could be needed for API calls and storage.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008428",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008476",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010925",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012264",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012264",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012525",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014014",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014046",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014162",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014761",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014771",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014852",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8016411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017574",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8017674",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019091",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019449",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "jp20",
+     "name": "cf-jp20"
     },
     {
-      "name": "storage",
-      "displayName": "storage",
-      "category": "SERVICE",
-      "description": "Allows you to increase the storage quota if you need more storage than provided by the already selected entitlements.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8012266",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019091",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8018904",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "advanced-user",
+   "displayName": "advanced-user",
+   "category": "SERVICE",
+   "description": "Allows you to create advanced users. They can design, monitor, or administrate the solution and access the process visibility workspace. The entitlement includes access to the SAP Build Work Zone, standard edition and a certain amount of API calls and storage. In API-driven use cases or with a very many process instances, additional licensing could be needed for API calls and storage.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008428",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008476",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010925",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011730",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012265",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012265",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012526",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014014",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014046",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014162",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014761",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014771",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014852",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8016068",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017574",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8017674",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018146",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018575",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019091",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019449",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "api-calls",
+   "displayName": "api-calls",
+   "category": "SERVICE",
+   "description": "Allows you to increase the API calls quota if you need more API calls than provided by the already selected entitlements.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008476",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012267",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015466",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017574",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017674",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "automation-attended",
+   "displayName": "automation-attended",
+   "category": "SERVICE",
+   "description": "Allows you to use automations (bots) in attended mode, which means you need to take action.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8012252",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012252",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012524",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014852",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8016411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019091",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "automation-unattended",
+   "displayName": "automation-unattended",
+   "category": "SERVICE",
+   "description": "Allows you to use automations (bots) in unattended mode, which means without your intervention.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011730",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012251",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012251",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012523",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014014",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014046",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014162",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014761",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014771",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014852",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8016068",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8018146",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018575",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019449",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "build-default",
+   "displayName": "Build Default",
+   "category": "APPLICATION",
+   "description": "Build plan for using SAP Build Process Automation",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8019291",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019301",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019311",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "APPLICATION",
+   "description": "Only community support is available for free tier service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile. Subscribe to the free service. To fully use all capabilities of SAP Build Process Automation, you also must subscribe to the standard entitlement at no additional cost.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8012362",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "ProdDummy19",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "Subscribe to the production service. Note that to fully use all capabilities of SAP Build Process Automation, you also must subscribe to the standard entitlement at no additional cost.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008428",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008476",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010925",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011730",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012251",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012252",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012264",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012265",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012266",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012267",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012523",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012524",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012525",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012526",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014014",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014046",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014162",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014761",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014771",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014852",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015466",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8016068",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017573",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017574",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8017674",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018146",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018575",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019091",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019449",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "standard-user",
+   "displayName": "standard-user",
+   "category": "SERVICE",
+   "description": "Allows you to create standard users. They are process participants who trigger, approve, or contribute to a process instance. The entitlement includes the access to SAP Build Work Zone, standard edition and a certain amount of API calls and storage. In API-driven use cases or with a very many process instances, additional licensing could be needed for API calls and storage.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008428",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008476",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010925",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012264",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012264",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012525",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014014",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014046",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014162",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014761",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014771",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014852",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8016411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017574",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8017674",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019091",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019449",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "storage",
+   "displayName": "storage",
+   "category": "SERVICE",
+   "description": "Allows you to increase the storage quota if you need more storage than provided by the already selected entitlements.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8012266",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019091",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

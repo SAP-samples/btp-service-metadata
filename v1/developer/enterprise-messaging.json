@@ -1,455 +1,455 @@
 {
-  "name": "enterprise-messaging",
-  "displayName": "Event Mesh",
-  "description": "Event Mesh",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zqNiW8FlrR-JGOOd8nulSIA8lIovd3XOEbP1Z8bl2SHYQ_gT36RFK-V0bqVvrfsD.svg",
-  "links": [
+ "name": "enterprise-messaging",
+ "displayName": "Event Mesh",
+ "description": "Event Mesh",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/zqNiW8FlrR-JGOOd8nulSIA8lIovd3XOEbP1Z8bl2SHYQ_gT36RFK-V0bqVvrfsD.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPEventMeshDefaultPlan/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Event Mesh Default Plan | SAP API Business Hub"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/event-mesh",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Event Mesh"
+  },
+  {
+   "value": "https://help.sap.com/doc/e56d7e676cc74906b813d226062d8634/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_EM/bf82e6b26456494cbdd197057c09979f/3af4f184bd054494876ece3b77eae8b7.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security Guide"
+  },
+  {
+   "value": "https://help.sap.com/docs/event-mesh/event-mesh/what-s-new-for-event-mesh",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://blogs.sap.com/tags/73554900100800000765/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Blogs"
+  },
+  {
+   "value": "https://developers.sap.com/group.cp-enterprisemessaging-app-create.html",
+   "classification": "Tutorial",
+   "type": "Link",
+   "text": "Tutorial: Develop a Node.js-Based Event Mesh App"
+  },
+  {
+   "value": "https://developers.sap.com/group.cp-enterprisemessaging-get-started.html",
+   "classification": "Onboarding",
+   "type": "Link",
+   "text": "Tutorial: Onboarding"
+  },
+  {
+   "value": "https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:26549:28901:35015",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Guided Answers for Event Mesh"
+  },
+  {
+   "value": "https://www.youtube.com/watch?v=lurri4pnW0c",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP BTP in the Garage | Event Mesh Service"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  },
+  {
+   "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What Is Event Mesh?"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/00d56d697c7549408cfacc8cb6a46b11.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/3ef34ffcbbe94d3e8fff0f9ea2d5911d.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/6a0e4c77e3014acb8738af039bd9df71.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/74cc07a56b974db4893e6b773fd1c02e.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Monitoring and Troubleshooting"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/dc18d8ebc226404c87db22e818f70145.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "API Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/df532e8735eb4322b00bfc7e42f84e8d.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_ENTERPRISE_MESSAGING",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Event Mesh - default plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPEventMeshDefaultPlan/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Event Mesh Default Plan | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/event-mesh",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Event Mesh"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://help.sap.com/doc/e56d7e676cc74906b813d226062d8634/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_EM/bf82e6b26456494cbdd197057c09979f/3af4f184bd054494876ece3b77eae8b7.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security Guide"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/docs/event-mesh/event-mesh/what-s-new-for-event-mesh",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://blogs.sap.com/tags/73554900100800000765/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Blogs"
+     "region": "ap30",
+     "name": "cf-ap30"
     },
     {
-      "value": "https://developers.sap.com/group.cp-enterprisemessaging-app-create.html",
-      "classification": "Tutorial",
-      "type": "Link",
-      "text": "Tutorial: Develop a Node.js-Based Event Mesh App"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://developers.sap.com/group.cp-enterprisemessaging-get-started.html",
-      "classification": "Onboarding",
-      "type": "Link",
-      "text": "Tutorial: Onboarding"
+     "region": "br20",
+     "name": "cf-br20"
     },
     {
-      "value": "https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:26549:28901:35015",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Guided Answers for Event Mesh"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://www.youtube.com/watch?v=lurri4pnW0c",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP BTP in the Garage | Event Mesh Service"
+     "region": "ca20",
+     "name": "cf-ca20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/5dd739823b824b539eee47b7860a00be.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
+     "region": "ch20",
+     "name": "cf-ch20"
     },
     {
-      "value": "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What Is Event Mesh?"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/00d56d697c7549408cfacc8cb6a46b11.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/3ef34ffcbbe94d3e8fff0f9ea2d5911d.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/6a0e4c77e3014acb8738af039bd9df71.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu30",
+     "name": "cf-eu30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/74cc07a56b974db4893e6b773fd1c02e.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Monitoring and Troubleshooting"
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/dc18d8ebc226404c87db22e818f70145.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
+     "region": "in30",
+     "name": "cf-in30"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/bf82e6b26456494cbdd197057c09979f/df532e8735eb4322b00bfc7e42f84e8d.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_ENTERPRISE_MESSAGING",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Event Mesh - default plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "emname": {
-                    "type": "string",
-                    "pattern": "^[a-zA-Z0-9_-]{1,100}$",
-                    "description": "It specifies the name of the message client. emname is used in the Event Mesh business application to identify message clients with ease."
-                  },
-                  "namespace": {
-                    "type": "string",
-                    "description": "It ensures that every message client within a subaccount is unique. The queues managed by the message client and topics used to publish by the message client have the namespace as prefix. Exactly three (firstSegment/secondSegment/thirdSegment)",
-                    "example": [
-                      "default/sap.myapp/1"
-                    ]
-                  },
-                  "version": {
-                    "type": "string",
-                    "pattern": "^1.0.0|1.1.0$",
-                    "description": "It specifies the version of the service descriptor."
-                  },
-                  "resources": {
-                    "type": "object",
-                    "description": "Resource Units is a collection of messaging resources such as queues, connections, and so on, required for a message client. You can specify this value in the service descriptor to allocate messaging resources based a specific business scenario.",
-                    "properties": {
-                      "units": {
-                        "type": "string",
-                        "default": "10",
-                        "pattern": "^([1-9][0-9]?[0-9]?[0-9])$"
-                      }
-                    },
-                    "required": [
-                      "units"
-                    ]
-                  },
-                  "options": {
-                    "type": "object",
-                    "description": "It\u2019s used to define the privileges and access channels for a message client.",
-                    "properties": {
-                      "management": {
-                        "type": "boolean",
-                        "default": false
-                      },
-                      "messagingrest": {
-                        "type": "boolean",
-                        "default": false
-                      },
-                      "messaging": {
-                        "type": "boolean",
-                        "default": true
-                      }
-                    },
-                    "required": [
-                      "management",
-                      "messagingrest",
-                      "messaging"
-                    ]
-                  },
-                  "rules": {
-                    "type": "object",
-                    "description": "It defines the publish or consume privileges for a message client.",
-                    "properties": {
-                      "topicRules": {
-                        "type": "object",
-                        "properties": {
-                          "publishFilter": {
-                            "type": "array",
-                            "items": [
-                              {
-                                "type": "string",
-                                "pattern": "[a-zA-Z*+/]",
-                                "example": [
-                                  "${namespace}/foo/bar/*",
-                                  "${namespace}/*",
-                                  "${namespace}/?",
-                                  "${namespace}/+"
-                                ]
-                              }
-                            ]
-                          },
-                          "subscribeFilter": {
-                            "type": "array",
-                            "items": [
-                              {
-                                "type": "string",
-                                "pattern": "[a-zA-Z*+/]",
-                                "example": [
-                                  "${namespace}/foo/bar/*",
-                                  "${namespace}/*",
-                                  "${namespace}/+",
-                                  "+/+/+/foo/bar/*"
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      },
-                      "queueRules": {
-                        "type": "object",
-                        "properties": {
-                          "publishFilter": {
-                            "type": "array",
-                            "items": [
-                              {
-                                "type": "string",
-                                "pattern": "[a-zA-Z*+/]",
-                                "example": [
-                                  "${namespace}/foo/bar/*",
-                                  "${namespace}/*",
-                                  "${namespace}/+"
-                                ]
-                              }
-                            ]
-                          },
-                          "subscribeFilter": {
-                            "type": "array",
-                            "items": [
-                              {
-                                "type": "string",
-                                "pattern": "[a-zA-Z*+/]",
-                                "example": [
-                                  "${namespace}/foo/bar/*",
-                                  "${namespace}/*",
-                                  "${namespace}/+"
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "xs-security": {
-                    "type": "object",
-                    "description": "The xs-security object is used to configure XSUAA-related properties, for example, the supported credential-types for an instance. The first credential-type in the array is set as default. ",
-                    "properties": {
-                      "oauth2-configuration": {
-                        "type": "object",
-                        "properties": {
-                          "credential-types": {
-                            "type": "array",
-                            "items": [
-                              {
-                                "type": "string",
-                                "example": "x509"
-                              },
-                              {
-                                "type": "string",
-                                "example": "binding-secret"
-                              }
-                            ]
-                          }
-                        },
-                        "required": [
-                          "credential-types"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "oauth2-configuration"
-                    ]
-                  }
-                },
-                "required": [
-                  "emname",
-                  "namespace"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "emname": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$",
+          "description": "It specifies the name of the message client. emname is used in the Event Mesh business application to identify message clients with ease."
+         },
+         "namespace": {
+          "type": "string",
+          "description": "It ensures that every message client within a subaccount is unique. The queues managed by the message client and topics used to publish by the message client have the namespace as prefix. Exactly three (firstSegment/secondSegment/thirdSegment)",
+          "example": [
+           "default/sap.myapp/1"
+          ]
+         },
+         "version": {
+          "type": "string",
+          "pattern": "^1.0.0|1.1.0$",
+          "description": "It specifies the version of the service descriptor."
+         },
+         "resources": {
+          "type": "object",
+          "description": "Resource Units is a collection of messaging resources such as queues, connections, and so on, required for a message client. You can specify this value in the service descriptor to allocate messaging resources based a specific business scenario.",
+          "properties": {
+           "units": {
+            "type": "string",
+            "default": "10",
+            "pattern": "^([1-9][0-9]?[0-9]?[0-9])$"
+           }
+          },
+          "required": [
+           "units"
+          ]
+         },
+         "options": {
+          "type": "object",
+          "description": "It\u2019s used to define the privileges and access channels for a message client.",
+          "properties": {
+           "management": {
+            "type": "boolean",
+            "default": false
+           },
+           "messagingrest": {
+            "type": "boolean",
+            "default": false
+           },
+           "messaging": {
+            "type": "boolean",
+            "default": true
+           }
+          },
+          "required": [
+           "management",
+           "messagingrest",
+           "messaging"
+          ]
+         },
+         "rules": {
+          "type": "object",
+          "description": "It defines the publish or consume privileges for a message client.",
+          "properties": {
+           "topicRules": {
+            "type": "object",
+            "properties": {
+             "publishFilter": {
+              "type": "array",
+              "items": [
+               {
+                "type": "string",
+                "pattern": "[a-zA-Z*+/]",
+                "example": [
+                 "${namespace}/foo/bar/*",
+                 "${namespace}/*",
+                 "${namespace}/?",
+                 "${namespace}/+"
                 ]
-              }
+               }
+              ]
+             },
+             "subscribeFilter": {
+              "type": "array",
+              "items": [
+               {
+                "type": "string",
+                "pattern": "[a-zA-Z*+/]",
+                "example": [
+                 "${namespace}/foo/bar/*",
+                 "${namespace}/*",
+                 "${namespace}/+",
+                 "+/+/+/foo/bar/*"
+                ]
+               }
+              ]
+             }
             }
+           },
+           "queueRules": {
+            "type": "object",
+            "properties": {
+             "publishFilter": {
+              "type": "array",
+              "items": [
+               {
+                "type": "string",
+                "pattern": "[a-zA-Z*+/]",
+                "example": [
+                 "${namespace}/foo/bar/*",
+                 "${namespace}/*",
+                 "${namespace}/+"
+                ]
+               }
+              ]
+             },
+             "subscribeFilter": {
+              "type": "array",
+              "items": [
+               {
+                "type": "string",
+                "pattern": "[a-zA-Z*+/]",
+                "example": [
+                 "${namespace}/foo/bar/*",
+                 "${namespace}/*",
+                 "${namespace}/+"
+                ]
+               }
+              ]
+             }
+            }
+           }
           }
-        }
-      ]
+         },
+         "xs-security": {
+          "type": "object",
+          "description": "The xs-security object is used to configure XSUAA-related properties, for example, the supported credential-types for an instance. The first credential-type in the array is set as default. ",
+          "properties": {
+           "oauth2-configuration": {
+            "type": "object",
+            "properties": {
+             "credential-types": {
+              "type": "array",
+              "items": [
+               {
+                "type": "string",
+                "example": "x509"
+               },
+               {
+                "type": "string",
+                "example": "binding-secret"
+               }
+              ]
+             }
+            },
+            "required": [
+             "credential-types"
+            ]
+           }
+          },
+          "required": [
+           "oauth2-configuration"
+          ]
+         }
+        },
+        "required": [
+         "emname",
+         "namespace"
+        ]
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [
-    {
-      "value": "BC-CP-EM-MES"
-    },
-    {
-      "value": "OPU-GW-OD-MES"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Webhook Credentials Management",
-      "url": "https://api.sap.com/api/SAPEventMeshDefaultCredentialsAPIs/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Eventing",
-      "url": "https://api.sap.com/api/SAPEventMeshDefaultEventingAPIs/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Management",
-      "url": "https://api.sap.com/api/SAPEventMeshDefaultManagementAPIs/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Messaging",
-      "url": "https://api.sap.com/api/SAPEventMeshDefaultMessagingAPIs/overview",
-      "apiType": "RESTful"
-    }
-  ]
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-EM-MES"
+  },
+  {
+   "value": "OPU-GW-OD-MES"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Webhook Credentials Management",
+   "url": "https://api.sap.com/api/SAPEventMeshDefaultCredentialsAPIs/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Eventing",
+   "url": "https://api.sap.com/api/SAPEventMeshDefaultEventingAPIs/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Management",
+   "url": "https://api.sap.com/api/SAPEventMeshDefaultManagementAPIs/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Messaging",
+   "url": "https://api.sap.com/api/SAPEventMeshDefaultMessagingAPIs/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

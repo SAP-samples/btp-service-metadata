@@ -1,29 +1,29 @@
 {
-  "name": "Model-Management-UI-partner",
-  "displayName": "SAP Cash Application Model Manager for partner",
-  "description": "SAP Cash Application Model Manager for partner",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "Model-Management-UI-partner",
+ "displayName": "SAP Cash Application Model Manager for partner",
+ "description": "SAP Cash Application Model Manager for partner",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard Plan includes all cash application ui features",
+   "category": "APPLICATION",
+   "description": "Standard Plan includes all cash application ui features",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard Plan includes all cash application ui features",
-      "category": "APPLICATION",
-      "description": "Standard Plan includes all cash application ui features",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

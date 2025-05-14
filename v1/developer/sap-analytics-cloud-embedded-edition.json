@@ -1,262 +1,262 @@
 {
-  "name": "sap-analytics-cloud-embedded-edition",
-  "displayName": "SAP Analytics Cloud, embedded edition",
-  "description": "SAP Analytics Cloud, embedded edition",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7uH8Uf6cvNKWPiWvxz9S-zxLArnybv6O-XcUPkXfBkvb3rKTNZx95-plL6L7w-eP.svg",
-  "links": [
+ "name": "sap-analytics-cloud-embedded-edition",
+ "displayName": "SAP Analytics Cloud, embedded edition",
+ "description": "SAP Analytics Cloud, embedded edition",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/7uH8Uf6cvNKWPiWvxz9S-zxLArnybv6O-XcUPkXfBkvb3rKTNZx95-plL6L7w-eP.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPAnalyticsCloud/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Analytics Cloud | SAP API Business Hub"
+  },
+  {
+   "value": "https://api.sap.com/package/SAPAnalyticsCloudEmbeddedEdition/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Analytics Cloud, Embedded Edition | SAP API Business Hub"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Analytics%20Cloud%2C%20embedded%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Analytics%20Cloud%2C%20embedded%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAC_EMBEDDED_EDITION",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://apps.support.sap.com/sap/support/knowledge/public/en/2487011",
+   "classification": "Support",
+   "type": "Link",
+   "text": "What information do I need to provide when opening an incident for SAP Analytics Cloud?"
+  },
+  {
+   "value": "https://community.sap.com/topics/cloud-analytics",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Analytics Cloud Community"
+  },
+  {
+   "value": "https://saphanajourney.com/sap-analytics-cloud/learning-track/",
+   "classification": "Onboarding",
+   "type": "Link",
+   "text": "Tutorial: Onboarding"
+  },
+  {
+   "value": "https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/837228942b504eeeb75efee930727914.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Get More Help and SAP Support"
+  },
+  {
+   "value": "https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/c96a267c5da04fff90bb55313ee9f77c.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/viewer/7466893ec68641198fc189757dc5f7a6/1.0/en-US/842009c3f599432a8f6c6e248267380d.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAP Analytics Cloud, Embedded Edition Service on SAP BTP: Getting Started Guide"
+  },
+  {
+   "value": "https://help.sap.com/viewer/7466893ec68641198fc189757dc5f7a6/1.0/en-US/ce081403aaf14feca286d7d0b4af2b86.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/777b4c63a7da46d3ad92b123a83c0673/1.0/en-US/3c0960ff0516426c8ffca7d18c7b060d.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Feature Scope Description SAP Analytics Cloud, Embedded Edition on SAP BTP"
+  },
+  {
+   "value": "https://help.sap.com/viewer/8c9fe042688a4354876cc536267d442f/1.0/en-US/738ee174a5244573a3f52848cba0e926.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAP Analytics Cloud, Embedded Service on SAP BTP: Development"
+  },
+  {
+   "value": "https://help.sap.com/viewer/8c9fe042688a4354876cc536267d442f/1.1/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAC_EMBEDDED_EDITION/1.0/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_ANALYTICS_CLOUD/release/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://www.sapanalytics.cloud/",
+   "classification": "External",
+   "type": "Link",
+   "text": "External"
+  },
+  {
+   "value": "https://www.youtube.com/embed/26xTLnkymFA",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP Analytics Cloud \u2013 Act with Confidence"
+  },
+  {
+   "value": "https://www.youtube.com/embed/QXK4qRh7qTc",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP Analytics Cloud, Embedded Edition"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard plan with max. 150 concurrent sessions",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPAnalyticsCloud/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Analytics Cloud | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://api.sap.com/package/SAPAnalyticsCloudEmbeddedEdition/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Analytics Cloud, Embedded Edition | SAP API Business Hub"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Analytics%20Cloud%2C%20embedded%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Analytics%20Cloud%2C%20embedded%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/docs/SAC_EMBEDDED_EDITION",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://apps.support.sap.com/sap/support/knowledge/public/en/2487011",
-      "classification": "Support",
-      "type": "Link",
-      "text": "What information do I need to provide when opening an incident for SAP Analytics Cloud?"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/topics/cloud-analytics",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Analytics Cloud Community"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://saphanajourney.com/sap-analytics-cloud/learning-track/",
-      "classification": "Onboarding",
-      "type": "Link",
-      "text": "Tutorial: Onboarding"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/837228942b504eeeb75efee930727914.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Get More Help and SAP Support"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://help.sap.com/viewer/00f68c2e08b941f081002fd3691d86a7/release/en-US/c96a267c5da04fff90bb55313ee9f77c.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "us10",
+     "name": "cf-us10"
     },
     {
-      "value": "https://help.sap.com/viewer/7466893ec68641198fc189757dc5f7a6/1.0/en-US/842009c3f599432a8f6c6e248267380d.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAP Analytics Cloud, Embedded Edition Service on SAP BTP: Getting Started Guide"
+     "region": "us20",
+     "name": "cf-us20"
     },
     {
-      "value": "https://help.sap.com/viewer/7466893ec68641198fc189757dc5f7a6/1.0/en-US/ce081403aaf14feca286d7d0b4af2b86.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/777b4c63a7da46d3ad92b123a83c0673/1.0/en-US/3c0960ff0516426c8ffca7d18c7b060d.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Feature Scope Description SAP Analytics Cloud, Embedded Edition on SAP BTP"
-    },
-    {
-      "value": "https://help.sap.com/viewer/8c9fe042688a4354876cc536267d442f/1.0/en-US/738ee174a5244573a3f52848cba0e926.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAP Analytics Cloud, Embedded Service on SAP BTP: Development"
-    },
-    {
-      "value": "https://help.sap.com/viewer/8c9fe042688a4354876cc536267d442f/1.1/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAC_EMBEDDED_EDITION/1.0/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_ANALYTICS_CLOUD/release/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://www.sapanalytics.cloud/",
-      "classification": "External",
-      "type": "Link",
-      "text": "External"
-    },
-    {
-      "value": "https://www.youtube.com/embed/26xTLnkymFA",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP Analytics Cloud \u2013 Act with Confidence"
-    },
-    {
-      "value": "https://www.youtube.com/embed/QXK4qRh7qTc",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP Analytics Cloud, Embedded Edition"
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard plan with max. 150 concurrent sessions",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "LOD-ANA-OEM-CP"
-    },
-    {
-      "value": "LOD-ANA-PL"
-    }
-  ],
-  "apis": [
-    {
-      "name": "SAP Analytics Cloud Activities Service",
-      "url": "https://api.sap.com/api/Activities_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Calendar Service",
-      "url": "https://api.sap.com/api/Calendar_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Data Export Service",
-      "url": "https://api.sap.com/api/DataExport_API/overview",
-      "apiType": "OData V2"
-    },
-    {
-      "name": "Data Import Service",
-      "url": "https://api.sap.com/api/DataImport_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "File Repository Service",
-      "url": "https://api.sap.com/api/FileRepository_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Monitoring Export Service",
-      "url": "https://api.sap.com/api/Monitoring_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Multi Actions Service",
-      "url": "https://api.sap.com/api/MultiActions_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "OEM Tenant Management",
-      "url": "https://api.sap.com/api/OEM_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Configuration and REST APIs",
-      "url": "https://api.sap.com/api/SACEmbeddedEdition/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Tenant APIs",
-      "url": "https://api.sap.com/api/Story_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Open Story & Application URL",
-      "url": "https://api.sap.com/api/URL_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Versions Service",
-      "url": "https://api.sap.com/api/Version_API/overview",
-      "apiType": "RESTful"
-    }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "LOD-ANA-OEM-CP"
+  },
+  {
+   "value": "LOD-ANA-PL"
+  }
+ ],
+ "apis": [
+  {
+   "name": "SAP Analytics Cloud Activities Service",
+   "url": "https://api.sap.com/api/Activities_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Calendar Service",
+   "url": "https://api.sap.com/api/Calendar_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Data Export Service",
+   "url": "https://api.sap.com/api/DataExport_API/overview",
+   "apiType": "OData V2"
+  },
+  {
+   "name": "Data Import Service",
+   "url": "https://api.sap.com/api/DataImport_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "File Repository Service",
+   "url": "https://api.sap.com/api/FileRepository_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Monitoring Export Service",
+   "url": "https://api.sap.com/api/Monitoring_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Multi Actions Service",
+   "url": "https://api.sap.com/api/MultiActions_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "OEM Tenant Management",
+   "url": "https://api.sap.com/api/OEM_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Configuration and REST APIs",
+   "url": "https://api.sap.com/api/SACEmbeddedEdition/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Tenant APIs",
+   "url": "https://api.sap.com/api/Story_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Open Story & Application URL",
+   "url": "https://api.sap.com/api/URL_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Versions Service",
+   "url": "https://api.sap.com/api/Version_API/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

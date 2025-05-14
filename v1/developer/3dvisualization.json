@@ -1,60 +1,60 @@
 {
-  "name": "3dvisualization",
-  "displayName": "SAP 3D Visual Enterprise, cloud edition",
-  "description": "SAP 3D Visual Enterprise, Cloud Edition",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0iXzNkLXZpc3VhbGl6YXRpb24iIGRhdGEtbmFtZT0iM2QtdmlzdWFsaXphdGlvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48dGl0bGU+M2QtdmlzdWFsaXphdGlvbjwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzEuMDg1LDUxLjk3OWExLjQ5MSwxLjQ5MSwwLDAsMS0uNzYxLS4yMDYsMS41MSwxLjUxLDAsMCwxLS43NDUtMS4zbC4wNTYtMjMuMjI5YTEuNTA4LDEuNTA4LDAsMCwxLC43MTktMS4yOGwxNC4yNzItOC43NTJMMjcuNjY1LDYuNzlhMS41MDYsMS41MDYsMCwxLDEsMS41NzYtMi41NjdsMTkuMDUzLDExLjdhMS41MDgsMS41MDgsMCwwLDEsMCwyLjU2OGwtMTUuNjUsOS41OTNMMzIuNiw0Ny45bDkuMDg1LTUuMTA5YTkuMDg2LDkuMDg2LDAsMCwwLDQuMzY1LTcuODE3VjI0LjczN2ExLjUwNiwxLjUwNiwwLDAsMSwzLjAxMiwwVjM0Ljk3MWExMi4xLDEyLjEsMCwwLDEtNS45MjcsMTAuNDU1TDMxLjgyMyw1MS43ODVBMS41LDEuNSwwLDAsMSwzMS4wODUsNTEuOTc5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI5Ljc1Myw0Ljc0OGExLjUsMS41LDAsMCwwLTIuMDU5LS41NDFsLTIwLDExLjY3MWExLjUwNiwxLjUwNiwwLDAsMC0uMDIxLDIuNTg5bDE2LjE2Myw5Ljc4Ni4wMjMsNy40MjItOC43MTctNC44MTNBMS41MDUsMS41MDUsMCwwLDAsMTMuNjgxLDMzLjVMMjMuODY1LDM5LjEybC4wMjgsOC43NjUtMTQuNDI1LTguM2ExLjUwNywxLjUwNywwLDAsMC0xLjUsMi42MTJsMTYuNjkxLDkuNmExLjUyNSwxLjUyNSwwLDAsMCwuNzUxLjIsMS41LDEuNSwwLDAsMCwxLjUwNi0xLjUxMkwyNi44NCwyNy40YTEuNTA3LDEuNTA3LDAsMCwwLS43MjctMS4yODRMMTEuMzk0LDE3LjJsMTcuODE4LTEwLjRBMS41LDEuNSwwLDAsMCwyOS43NTMsNC43NDhaIi8+PC9zdmc+",
-  "links": [
+ "name": "3dvisualization",
+ "displayName": "SAP 3D Visual Enterprise, cloud edition",
+ "description": "SAP 3D Visual Enterprise, Cloud Edition",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0iXzNkLXZpc3VhbGl6YXRpb24iIGRhdGEtbmFtZT0iM2QtdmlzdWFsaXphdGlvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTYgNTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48dGl0bGU+M2QtdmlzdWFsaXphdGlvbjwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzEuMDg1LDUxLjk3OWExLjQ5MSwxLjQ5MSwwLDAsMS0uNzYxLS4yMDYsMS41MSwxLjUxLDAsMCwxLS43NDUtMS4zbC4wNTYtMjMuMjI5YTEuNTA4LDEuNTA4LDAsMCwxLC43MTktMS4yOGwxNC4yNzItOC43NTJMMjcuNjY1LDYuNzlhMS41MDYsMS41MDYsMCwxLDEsMS41NzYtMi41NjdsMTkuMDUzLDExLjdhMS41MDgsMS41MDgsMCwwLDEsMCwyLjU2OGwtMTUuNjUsOS41OTNMMzIuNiw0Ny45bDkuMDg1LTUuMTA5YTkuMDg2LDkuMDg2LDAsMCwwLDQuMzY1LTcuODE3VjI0LjczN2ExLjUwNiwxLjUwNiwwLDAsMSwzLjAxMiwwVjM0Ljk3MWExMi4xLDEyLjEsMCwwLDEtNS45MjcsMTAuNDU1TDMxLjgyMyw1MS43ODVBMS41LDEuNSwwLDAsMSwzMS4wODUsNTEuOTc5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI5Ljc1Myw0Ljc0OGExLjUsMS41LDAsMCwwLTIuMDU5LS41NDFsLTIwLDExLjY3MWExLjUwNiwxLjUwNiwwLDAsMC0uMDIxLDIuNTg5bDE2LjE2Myw5Ljc4Ni4wMjMsNy40MjItOC43MTctNC44MTNBMS41MDUsMS41MDUsMCwwLDAsMTMuNjgxLDMzLjVMMjMuODY1LDM5LjEybC4wMjgsOC43NjUtMTQuNDI1LTguM2ExLjUwNywxLjUwNywwLDAsMC0xLjUsMi42MTJsMTYuNjkxLDkuNmExLjUyNSwxLjUyNSwwLDAsMCwuNzUxLjIsMS41LDEuNSwwLDAsMCwxLjUwNi0xLjUxMkwyNi44NCwyNy40YTEuNTA3LDEuNTA3LDAsMCwwLS43MjctMS4yODRMMTEuMzk0LDE3LjJsMTcuODE4LTEwLjRBMS41LDEuNSwwLDAsMCwyOS43NTMsNC43NDhaIi8+PC9zdmc+",
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%203D%20Visual%20Enterprise%2C%20cloud%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%203D%20Visual%20Enterprise%2C%20cloud%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/CP_3D_Visualization/Cloud/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard-saas",
+   "displayName": "standard-saas",
+   "category": "APPLICATION",
+   "description": "Application plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%203D%20Visual%20Enterprise%2C%20cloud%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%203D%20Visual%20Enterprise%2C%20cloud%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/viewer/product/CP_3D_Visualization/Cloud/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    }
-  ],
-  "servicePlans": [
+     "region": "us10",
+     "name": "cf-us10"
+    },
     {
-      "name": "standard-saas",
-      "displayName": "standard-saas",
-      "category": "APPLICATION",
-      "description": "Application plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": null
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

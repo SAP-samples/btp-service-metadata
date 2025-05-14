@@ -1,48 +1,48 @@
 {
-  "name": "sap-order-and-delivery-scheduling-api",
-  "displayName": "SAP Order and Delivery Scheduling",
-  "description": "SAP Order and Delivery Scheduling",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
-  "links": [
+ "name": "sap-order-and-delivery-scheduling-api",
+ "displayName": "SAP Order and Delivery Scheduling",
+ "description": "SAP Order and Delivery Scheduling",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+ "links": [
+  {
+   "value": "https://help.sap.com/docs/ORDER_DELIVERY_SCHEDULE_OD",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/ORDER_DELIVERY_SCHEDULE_OD/45fa03229bc0402ba1326cabcadcb5cb/a9f9661b7c6448918129e18861706cd0.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/ORDER_DELIVERY_SCHEDULE_OD/7ddeeefdcf4b4ae0ad42a5990a781c9e/fda84bc33acb47b59a248dd45f92651a.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Provides API access to a subscribed SAP Order and Delivery Scheduling application.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/docs/ORDER_DELIVERY_SCHEDULE_OD",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/ORDER_DELIVERY_SCHEDULE_OD/45fa03229bc0402ba1326cabcadcb5cb/a9f9661b7c6448918129e18861706cd0.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/ORDER_DELIVERY_SCHEDULE_OD/7ddeeefdcf4b4ae0ad42a5990a781c9e/fda84bc33acb47b59a248dd45f92651a.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
+     "region": "eu20",
+     "name": "cf-eu20"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Provides API access to a subscribed SAP Order and Delivery Scheduling application.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

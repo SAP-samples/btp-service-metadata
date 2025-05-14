@@ -1,33 +1,33 @@
 {
-  "name": "service-ticket-intelligence-partner",
-  "displayName": "Service Ticket Intelligence Partner",
-  "description": "Service Ticket Intelligence Partner",
-  "icon": null,
-  "servicePlans": [
+ "name": "service-ticket-intelligence-partner",
+ "displayName": "Service Ticket Intelligence Partner",
+ "description": "Service Ticket Intelligence Partner",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Service Ticket Intelligence helps to build a self-driven customer service powered by Machine Learning.",
+   "category": "SERVICE",
+   "description": "Service Ticket Intelligence helps to build a self-driven customer service powered by Machine Learning.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Service Ticket Intelligence helps to build a self-driven customer service powered by Machine Learning.",
-      "category": "SERVICE",
-      "description": "Service Ticket Intelligence helps to build a self-driven customer service powered by Machine Learning.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005691",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005691",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

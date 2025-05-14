@@ -1,65 +1,65 @@
 {
-  "name": "SAPCloudALMAPIs",
-  "displayName": "SAP Cloud ALM API",
-  "description": "SAP Cloud ALM API",
-  "icon": null,
-  "servicePlans": [
+ "name": "SAPCloudALMAPIs",
+ "displayName": "SAP Cloud ALM API",
+ "description": "SAP Cloud ALM API",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "SAP Cloud ALM API",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "SAP Cloud ALM API",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008203",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009999",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018603",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "spc-SAPCloudALMAPIs-standard",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008203",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009999",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018603",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "spc-SAPCloudALMAPIs-standard",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

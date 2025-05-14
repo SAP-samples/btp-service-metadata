@@ -1,33 +1,33 @@
 {
-  "name": "csi-supplierinsight-SAP",
-  "displayName": "Consumer Sales Intelligence Supplier Direct Inventory Data",
-  "description": "Consumer Sales Intelligence Supplier Direct Inventory Data",
-  "icon": null,
-  "servicePlans": [
+ "name": "csi-supplierinsight-SAP",
+ "displayName": "Consumer Sales Intelligence Supplier Direct Inventory Data",
+ "description": "Consumer Sales Intelligence Supplier Direct Inventory Data",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard plan",
+   "category": "SERVICE",
+   "description": "Standard plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "Standard plan",
-      "category": "SERVICE",
-      "description": "Standard plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008371",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008372",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008371",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008372",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

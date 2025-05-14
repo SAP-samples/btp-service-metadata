@@ -1,153 +1,153 @@
 {
-  "name": "content-agent-ui",
-  "displayName": "SAP Content Agent service",
-  "description": "Content Agent Service",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMuNiA0LjgxODY1QzMuNDI3MTUgMi41MjIyMyA1LjI2NzQxIDAuMDI4MzIwMyA3Ljg5NjQ5IDAuMDI4MzIwM0M5LjkzMzA4IDAuMDI4MzIwMyAxMS40Mjc1IDEuMjYyOTEgMTIuMTQwOCAzLjE3ODk4QzE0LjExOSAzLjA0MDc5IDE1Ljk5NTYgNC43MjM1NCAxNS45OTU2IDcuMTM5NzVDMTUuOTk1NiA5LjAwNDM1IDE0LjkyMDYgMTAuMzI0OCAxMy40OTQxIDEwLjg0NDJWOC4zMjQxOUMxMy40OTQxIDcuNTYxMiAxMy4wMzc3IDYuODcyMjEgMTIuMzM1MSA2LjU3NDY0TDguNzI1OSA1LjA0NTk5QzcuNzU5NjUgNC42MzY3NCA2LjY0NDU5IDUuMDg4MjggNi4yMzUzNCA2LjA1NDUzQzYuMTk5NjkgNi4xMzg3IDYuMTcwNTggNi4yMjQgNi4xNDc3NiA2LjMwOTg3TDUuOTQ2NTQgNi4yMjQyMkM1LjQ1OTY1IDYuMDE2OTkgNC45MDg0IDYuMDIyMTkgNC40MjU1MSA2LjIzODU3TDMuNTk5MTUgNi42MDg4NUMyLjkxNTg1IDYuOTE1MDMgMi40NzYwOSA3LjU5Mzk3IDIuNDc2MDkgOC4zNDI3NEwyLjQ3NjA5IDExLjAxNTVDMC44MzgyMjggMTAuNzI4NCAtMC4wMDQzOTQ1MyA5LjUxODIzIC0wLjAwNDM5NDUzIDcuOTA5NDhDLTAuMDA0Mzk0NTMgNS45NjkzOSAxLjQxMjYzIDQuNDM4MjQgMy42IDQuODE4NjVaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMzg2MF8xNzk2NSkiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjM4NzQxIDYuNTIyN0M3LjUzODE4IDYuMTY2NzEgNy45NDg5OSA2LjAwMDM2IDguMzA0OTggNi4xNTExM0wxMS45MTQyIDcuNjc5NzlDMTIuMTczIDcuNzg5NDIgMTIuMzQxMiA4LjA0MzI1IDEyLjM0MTIgOC4zMjQzNUwxMi4zNDEyIDEzLjUwNjhDMTIuMzQxMiAxMy43NzQ1IDEyLjE4ODQgMTQuMDE4OCAxMS45NDc3IDE0LjEzNjFMOC4zMzg2MiAxNS44OTQyQzguMTQ1MTIgMTUuOTg4NCA3LjkxOTAxIDE1Ljk4ODQgNy43MjU1MSAxNS44OTQxTDQuMTE2NjEgMTQuMTM2MUMzLjg3NTkgMTQuMDE4OCAzLjcyMzE3IDEzLjc3NDUgMy43MjMxNyAxMy41MDY4TDMuNzIzMTggOC4zNDI5QzMuNzIzMTggOC4wNjcwNCAzLjg4NTE5IDcuODE2OTEgNC4xMzY5NCA3LjcwNDFMNC45NjMyOSA3LjMzMzgyQzUuMTQxMiA3LjI1NDEgNS4zNDQyOSA3LjI1MjE5IDUuNTIzNjcgNy4zMjg1NEw5LjEzMjkxIDguODY0NzFDOS4zOTExNCA4Ljk3NDYzIDkuNTU4NzcgOS4yMjgxNSA5LjU1ODc3IDkuNTA4OEw5LjU1ODc3IDExLjA2MzVDOS41NTg3NyAxMS40NTAxIDkuMjQ1MzcgMTEuNzYzNSA4Ljg1ODc3IDExLjc2MzVDOC40NzIxNyAxMS43NjM1IDguMTU4NzcgMTEuNDUwMSA4LjE1ODc3IDExLjA2MzVMOC4xNTg3NyA5Ljk3MTYzTDUuMjU2NzQgOC43MzY0Nkw1LjEyMzE4IDguNzk2M0w1LjEyMzE3IDEzLjA2OTFMOC4wMzIwOCAxNC40ODYyTDEwLjk0MTIgMTMuMDY5MUwxMC45NDEyIDguNzg4MDdMNy43NTg5NyA3LjQ0MDI3QzcuNDAyOTkgNy4yODk1IDcuMjM2NjMgNi44Nzg2OCA3LjM4NzQxIDYuNTIyN1oiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcl8zODYwXzE3OTY1KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzM4NjBfMTc5NjUiIHgxPSIyLjM5NDA4IiB5MT0iMS42NzEzOCIgeDI9IjkuNTczMTQiIHkyPSIxMi4xMjk1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjk5MTAyOCIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfMzg2MF8xNzk2NSIgeDE9IjUuOTQ2NjkiIHkxPSI2LjY2NDciIHgyPSI5LjI5MTEiIHkyPSIxNS41OTQ5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxMzQ4RkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDYyMzhEIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==",
-  "servicePlans": [
+ "name": "content-agent-ui",
+ "displayName": "SAP Content Agent service",
+ "description": "Content Agent Service",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMuNiA0LjgxODY1QzMuNDI3MTUgMi41MjIyMyA1LjI2NzQxIDAuMDI4MzIwMyA3Ljg5NjQ5IDAuMDI4MzIwM0M5LjkzMzA4IDAuMDI4MzIwMyAxMS40Mjc1IDEuMjYyOTEgMTIuMTQwOCAzLjE3ODk4QzE0LjExOSAzLjA0MDc5IDE1Ljk5NTYgNC43MjM1NCAxNS45OTU2IDcuMTM5NzVDMTUuOTk1NiA5LjAwNDM1IDE0LjkyMDYgMTAuMzI0OCAxMy40OTQxIDEwLjg0NDJWOC4zMjQxOUMxMy40OTQxIDcuNTYxMiAxMy4wMzc3IDYuODcyMjEgMTIuMzM1MSA2LjU3NDY0TDguNzI1OSA1LjA0NTk5QzcuNzU5NjUgNC42MzY3NCA2LjY0NDU5IDUuMDg4MjggNi4yMzUzNCA2LjA1NDUzQzYuMTk5NjkgNi4xMzg3IDYuMTcwNTggNi4yMjQgNi4xNDc3NiA2LjMwOTg3TDUuOTQ2NTQgNi4yMjQyMkM1LjQ1OTY1IDYuMDE2OTkgNC45MDg0IDYuMDIyMTkgNC40MjU1MSA2LjIzODU3TDMuNTk5MTUgNi42MDg4NUMyLjkxNTg1IDYuOTE1MDMgMi40NzYwOSA3LjU5Mzk3IDIuNDc2MDkgOC4zNDI3NEwyLjQ3NjA5IDExLjAxNTVDMC44MzgyMjggMTAuNzI4NCAtMC4wMDQzOTQ1MyA5LjUxODIzIC0wLjAwNDM5NDUzIDcuOTA5NDhDLTAuMDA0Mzk0NTMgNS45NjkzOSAxLjQxMjYzIDQuNDM4MjQgMy42IDQuODE4NjVaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMzg2MF8xNzk2NSkiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjM4NzQxIDYuNTIyN0M3LjUzODE4IDYuMTY2NzEgNy45NDg5OSA2LjAwMDM2IDguMzA0OTggNi4xNTExM0wxMS45MTQyIDcuNjc5NzlDMTIuMTczIDcuNzg5NDIgMTIuMzQxMiA4LjA0MzI1IDEyLjM0MTIgOC4zMjQzNUwxMi4zNDEyIDEzLjUwNjhDMTIuMzQxMiAxMy43NzQ1IDEyLjE4ODQgMTQuMDE4OCAxMS45NDc3IDE0LjEzNjFMOC4zMzg2MiAxNS44OTQyQzguMTQ1MTIgMTUuOTg4NCA3LjkxOTAxIDE1Ljk4ODQgNy43MjU1MSAxNS44OTQxTDQuMTE2NjEgMTQuMTM2MUMzLjg3NTkgMTQuMDE4OCAzLjcyMzE3IDEzLjc3NDUgMy43MjMxNyAxMy41MDY4TDMuNzIzMTggOC4zNDI5QzMuNzIzMTggOC4wNjcwNCAzLjg4NTE5IDcuODE2OTEgNC4xMzY5NCA3LjcwNDFMNC45NjMyOSA3LjMzMzgyQzUuMTQxMiA3LjI1NDEgNS4zNDQyOSA3LjI1MjE5IDUuNTIzNjcgNy4zMjg1NEw5LjEzMjkxIDguODY0NzFDOS4zOTExNCA4Ljk3NDYzIDkuNTU4NzcgOS4yMjgxNSA5LjU1ODc3IDkuNTA4OEw5LjU1ODc3IDExLjA2MzVDOS41NTg3NyAxMS40NTAxIDkuMjQ1MzcgMTEuNzYzNSA4Ljg1ODc3IDExLjc2MzVDOC40NzIxNyAxMS43NjM1IDguMTU4NzcgMTEuNDUwMSA4LjE1ODc3IDExLjA2MzVMOC4xNTg3NyA5Ljk3MTYzTDUuMjU2NzQgOC43MzY0Nkw1LjEyMzE4IDguNzk2M0w1LjEyMzE3IDEzLjA2OTFMOC4wMzIwOCAxNC40ODYyTDEwLjk0MTIgMTMuMDY5MUwxMC45NDEyIDguNzg4MDdMNy43NTg5NyA3LjQ0MDI3QzcuNDAyOTkgNy4yODk1IDcuMjM2NjMgNi44Nzg2OCA3LjM4NzQxIDYuNTIyN1oiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcl8zODYwXzE3OTY1KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzM4NjBfMTc5NjUiIHgxPSIyLjM5NDA4IiB5MT0iMS42NzEzOCIgeDI9IjkuNTczMTQiIHkyPSIxMi4xMjk1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjk5MTAyOCIgc3RvcC1jb2xvcj0iIzExNDdFOSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfMzg2MF8xNzk2NSIgeDE9IjUuOTQ2NjkiIHkxPSI2LjY2NDciIHgyPSI5LjI5MTEiIHkyPSIxNS41OTQ5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxMzQ4RkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDYyMzhEIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==",
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "APPLICATION",
+   "description": "Standard User Interface for managing content operations for SAP BTP applications such as view, export as download and push to Cloud Transport Management service, import content into respective SAP BTP tenant and view historic data of activities performed. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "APPLICATION",
-      "description": "Standard User Interface for managing content operations for SAP BTP applications such as view, export as download and push to Cloud Transport Management service, import content into respective SAP BTP tenant and view historic data of activities performed. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": [
-    "C5",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "ProdDummy19",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

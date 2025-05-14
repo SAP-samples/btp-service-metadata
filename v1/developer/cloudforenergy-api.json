@@ -1,89 +1,89 @@
 {
-  "name": "cloudforenergy-api",
-  "displayName": "SAP Cloud for Energy API",
-  "description": "Establish connection to the Cloud for Energy API",
-  "icon": null,
-  "links": [
+ "name": "cloudforenergy-api",
+ "displayName": "SAP Cloud for Energy API",
+ "description": "Establish connection to the Cloud for Energy API",
+ "icon": null,
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPC4EEDSAPIs/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Cloud for Energy | SAP API Business Hub"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_C",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_Cloud_for_Energy",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "audit",
+   "displayName": "audit",
+   "category": "SERVICE",
+   "description": "audit",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPC4EEDSAPIs/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Cloud for Energy | SAP API Business Hub"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_C",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "standard",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/viewer/product/SAP_Cloud_for_Energy",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "audit",
-      "displayName": "audit",
-      "category": "SERVICE",
-      "description": "audit",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "standard",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "LOD-C4E"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Billing Integration",
-      "url": "https://api.sap.com/api/bi/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Energy Data Services",
-      "url": "https://api.sap.com/api/cim/overview",
-      "apiType": "RESTful"
-    }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "LOD-C4E"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Billing Integration",
+   "url": "https://api.sap.com/api/bi/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Energy Data Services",
+   "url": "https://api.sap.com/api/cim/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

@@ -1,53 +1,53 @@
 {
-  "name": "SAPHybrisRevenueCloud",
-  "displayName": "SAP Subscription Billing",
-  "description": "SAP Subscription Billing",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OWeJNH3m_Xjw_kbfMTlaEmJnuAcmqWLuCnuCwYDM94lYdoHDfqYF4LvJJvVTsr5H.svg",
-  "servicePlans": [
+ "name": "SAPHybrisRevenueCloud",
+ "displayName": "SAP Subscription Billing",
+ "description": "SAP Subscription Billing",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/OWeJNH3m_Xjw_kbfMTlaEmJnuAcmqWLuCnuCwYDM94lYdoHDfqYF4LvJJvVTsr5H.svg",
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "API Access SAP Subscription Billing functions and integrate with other applications.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "API Access SAP Subscription Billing functions and integrate with other applications.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005307",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006140",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006249",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007773",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011426",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005307",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006140",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006249",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007773",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011426",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

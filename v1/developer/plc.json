@@ -1,62 +1,62 @@
 {
-  "name": "PLC",
-  "displayName": "SAP Product Lifecycle Costing",
-  "description": "SAP Product Lifecycle Costing",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIKCSBpZD0ic3ZnNCIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA3MC43IDEwOC43IgoJIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDcwLjcgMTA4Ljc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojNDI3Q0FDO30KPC9zdHlsZT4KPHBhdGggaWQ9InBhdGgyIiBjbGFzcz0ic3QwIiBkPSJNNTYuOCw4My40djEyLjRjMS43LTAuNCwzLjEtMS4yLDQuMi0yLjRjMC45LTEsMS40LTIuMywxLjQtNGMwLTEuNy0wLjQtMy0xLjItMy44CglDNjAuNSw4NC43LDU5LDg0LDU2LjgsODMuNHogTTI0LjEsNjMuMWg1LjVsLTAuMSwwLjVjLTAuMywxLjUtMC41LDMuMS0wLjUsNC44YzAsMSwwLjEsMiwwLjIsM2wwLDAuMWgtNS4xTDI0LjEsNjMuMXogTTEyLjIsNjMuMQoJaDguOXY4LjRoLTguOVY2My4xeiBNNTIsNjEuOWMtMS40LDAuNC0yLjUsMS4xLTMuMywyLjJjLTAuNiwxLjItMSwyLjMtMSwzLjNzMC4zLDIuMSwxLDMuM2MwLjMsMC41LDAuNywwLjksMS4zLDEuMgoJYzAuNiwwLjMsMS4zLDAuNiwyLDFWNjEuOXogTTUyLDUxLjdoNC44VjU1YzMuNiwwLjQsNi40LDEuNSw4LjUsMy41YzIuMiwxLjcsMy42LDQuMiw0LjIsNy41TDYxLjEsNjdjLTAuNi0yLjUtMi4xLTQuMi00LjItNS4xCgl2MTIuNGM1LjMsMS4zLDksMy4yLDExLjIsNS41YzEuOCwyLjMsMi43LDUuMSwyLjcsOC40YzAsMy45LTEuMiw3LjItMy41LDkuOGMtMi42LDIuNS02LDQuMi0xMC40LDQuOXY1LjhINTJ2LTUuOAoJYy0zLjktMC40LTcuMS0xLjgtOS42LTQuMmMtMi4zLTIuMS0zLjgtNS4yLTQuNC05LjVsOC43LTAuOWMwLjQsMS41LDEsMi45LDEuOSw0LjJsMS43LDEuNmwxLjcsMS4xVjgxLjljLTQuNC0xLjItNy43LTMtOS44LTUuMwoJYy0xLjktMi41LTIuOS01LjUtMi45LTguOWMwLTMuNCwxLjEtNi4zLDMuMy04LjdjMi40LTIuMyw1LjYtMy42LDkuNS00VjUxLjd6IE0yNC4xLDUxLjdoOS4xdjMuNmwtMC42LDAuOQoJYy0wLjcsMS4xLTEuNCwyLjMtMS45LDMuNmwtMC4yLDAuNWgtNi40VjUxLjd6IE0xMi4yLDUxLjdoOC45djguNmgtOC45VjUxLjd6IE0zNi40LDQwLjNoOC45djZsLTAuNSwwLjJjLTEuMywwLjUtMi42LDEuMS0zLjgsMS44CglsLTAuOSwwLjVoLTMuOFY0MC4zeiBNMjQuMSw0MC4zaDkuMXY4LjRoLTkuMUwyNC4xLDQwLjN6IE0xMi4yLDQwLjNoOC45djguNGgtOC45VjQwLjN6IE0xMi4yLDIxLjFoMzIuOXYxMS40SDEyLjJWMjEuMXogTTkuMSw2LjEKCWgzOS4yYzIuMywwLDQuMSwwLjQsNS4zLDEuMmMxLjIsMC44LDIuMSwxLjgsMi42LDIuOHMwLjksMiwxLDNjMC4xLDAuOSwwLjIsMS41LDAuMiwxLjZWNDVsLTAuMiwwYy0xLTAuMS0yLjEtMC4yLTMuMi0wLjIKCWMtMC45LDAtMS43LDAtMi42LDAuMWwtMC4yLDBWMTQuOWMwLTAuMy0wLjItMC45LTAuNy0xLjdjLTAuNC0wLjgtMS4zLTEuMi0yLjYtMS4ySDkuNmMtMS4yLDAtMi4xLDAuMi0yLjcsMC43CgljLTAuNiwwLjUtMC45LDEtMC45LDEuNnY2MS4yYzAsMy4yLDEuMyw0LjgsMy44LDQuOGgyMi42bDAuMiwwLjRjMS4zLDEuOSwyLjgsMy43LDQuNiw1LjJsMC4yLDAuMkg5LjFjLTAuNiwwLTEuNC0wLjEtMi40LTAuNAoJcy0yLjEtMC43LTMuMS0xLjRzLTEuOC0xLjYtMi42LTIuN0MwLjQsODAuNSwwLDc5LDAsNzcuM1YxNC40YzAtMC43LDAuMi0xLjYsMC42LTIuNmMwLjQtMSwxLTEuOSwxLjctMi43QzMuMSw4LjMsNCw3LjUsNS4xLDcKCUM2LjIsNi40LDcuNiw2LjEsOS4xLDYuMXoiLz4KPC9zdmc+Cg==",
-  "links": [
+ "name": "PLC",
+ "displayName": "SAP Product Lifecycle Costing",
+ "description": "SAP Product Lifecycle Costing",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIKCSBpZD0ic3ZnNCIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA3MC43IDEwOC43IgoJIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDcwLjcgMTA4Ljc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojNDI3Q0FDO30KPC9zdHlsZT4KPHBhdGggaWQ9InBhdGgyIiBjbGFzcz0ic3QwIiBkPSJNNTYuOCw4My40djEyLjRjMS43LTAuNCwzLjEtMS4yLDQuMi0yLjRjMC45LTEsMS40LTIuMywxLjQtNGMwLTEuNy0wLjQtMy0xLjItMy44CglDNjAuNSw4NC43LDU5LDg0LDU2LjgsODMuNHogTTI0LjEsNjMuMWg1LjVsLTAuMSwwLjVjLTAuMywxLjUtMC41LDMuMS0wLjUsNC44YzAsMSwwLjEsMiwwLjIsM2wwLDAuMWgtNS4xTDI0LjEsNjMuMXogTTEyLjIsNjMuMQoJaDguOXY4LjRoLTguOVY2My4xeiBNNTIsNjEuOWMtMS40LDAuNC0yLjUsMS4xLTMuMywyLjJjLTAuNiwxLjItMSwyLjMtMSwzLjNzMC4zLDIuMSwxLDMuM2MwLjMsMC41LDAuNywwLjksMS4zLDEuMgoJYzAuNiwwLjMsMS4zLDAuNiwyLDFWNjEuOXogTTUyLDUxLjdoNC44VjU1YzMuNiwwLjQsNi40LDEuNSw4LjUsMy41YzIuMiwxLjcsMy42LDQuMiw0LjIsNy41TDYxLjEsNjdjLTAuNi0yLjUtMi4xLTQuMi00LjItNS4xCgl2MTIuNGM1LjMsMS4zLDksMy4yLDExLjIsNS41YzEuOCwyLjMsMi43LDUuMSwyLjcsOC40YzAsMy45LTEuMiw3LjItMy41LDkuOGMtMi42LDIuNS02LDQuMi0xMC40LDQuOXY1LjhINTJ2LTUuOAoJYy0zLjktMC40LTcuMS0xLjgtOS42LTQuMmMtMi4zLTIuMS0zLjgtNS4yLTQuNC05LjVsOC43LTAuOWMwLjQsMS41LDEsMi45LDEuOSw0LjJsMS43LDEuNmwxLjcsMS4xVjgxLjljLTQuNC0xLjItNy43LTMtOS44LTUuMwoJYy0xLjktMi41LTIuOS01LjUtMi45LTguOWMwLTMuNCwxLjEtNi4zLDMuMy04LjdjMi40LTIuMyw1LjYtMy42LDkuNS00VjUxLjd6IE0yNC4xLDUxLjdoOS4xdjMuNmwtMC42LDAuOQoJYy0wLjcsMS4xLTEuNCwyLjMtMS45LDMuNmwtMC4yLDAuNWgtNi40VjUxLjd6IE0xMi4yLDUxLjdoOC45djguNmgtOC45VjUxLjd6IE0zNi40LDQwLjNoOC45djZsLTAuNSwwLjJjLTEuMywwLjUtMi42LDEuMS0zLjgsMS44CglsLTAuOSwwLjVoLTMuOFY0MC4zeiBNMjQuMSw0MC4zaDkuMXY4LjRoLTkuMUwyNC4xLDQwLjN6IE0xMi4yLDQwLjNoOC45djguNGgtOC45VjQwLjN6IE0xMi4yLDIxLjFoMzIuOXYxMS40SDEyLjJWMjEuMXogTTkuMSw2LjEKCWgzOS4yYzIuMywwLDQuMSwwLjQsNS4zLDEuMmMxLjIsMC44LDIuMSwxLjgsMi42LDIuOHMwLjksMiwxLDNjMC4xLDAuOSwwLjIsMS41LDAuMiwxLjZWNDVsLTAuMiwwYy0xLTAuMS0yLjEtMC4yLTMuMi0wLjIKCWMtMC45LDAtMS43LDAtMi42LDAuMWwtMC4yLDBWMTQuOWMwLTAuMy0wLjItMC45LTAuNy0xLjdjLTAuNC0wLjgtMS4zLTEuMi0yLjYtMS4ySDkuNmMtMS4yLDAtMi4xLDAuMi0yLjcsMC43CgljLTAuNiwwLjUtMC45LDEtMC45LDEuNnY2MS4yYzAsMy4yLDEuMyw0LjgsMy44LDQuOGgyMi42bDAuMiwwLjRjMS4zLDEuOSwyLjgsMy43LDQuNiw1LjJsMC4yLDAuMkg5LjFjLTAuNiwwLTEuNC0wLjEtMi40LTAuNAoJcy0yLjEtMC43LTMuMS0xLjRzLTEuOC0xLjYtMi42LTIuN0MwLjQsODAuNSwwLDc5LDAsNzcuM1YxNC40YzAtMC43LDAuMi0xLjYsMC42LTIuNmMwLjQtMSwxLTEuOSwxLjctMi43QzMuMSw4LjMsNCw3LjUsNS4xLDcKCUM2LjIsNi40LDcuNiw2LjEsOS4xLDYuMXoiLz4KPC9zdmc+Cg==",
+ "links": [
+  {
+   "value": "https://help.sap.com/docs/SAP_PRODUCT_LIFECYCLE_COSTING",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "partner",
+   "displayName": "partner",
+   "category": "APPLICATION",
+   "description": "SAP Product Lifecycle Costing",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/docs/SAP_PRODUCT_LIFECYCLE_COSTING",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    }
-  ],
-  "servicePlans": [
-    {
-      "name": "partner",
-      "displayName": "partner",
-      "category": "APPLICATION",
-      "description": "SAP Product Lifecycle Costing",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "SAP Product Lifecycle Costing",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "SAP Product Lifecycle Costing",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

@@ -1,424 +1,424 @@
 {
-  "name": "ui5-flexibility-keyuser",
-  "displayName": "UI5 flexibility for key users",
-  "description": "The UI5 flexibility service for key users lets you provide UI adaptation capabilites for your UI5 applications on Cloud Foundry. Users of your applications can change the user interface of your applications in an upgrade-safe and modification-free way, without affecting any other customer.",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AmHAPKAy8mId_bRb5lDrBNlG9G0U7-G9KSU3_a46AyWeS1p4Prei-Sc_LvFYG1xu.svg",
-  "links": [
+ "name": "ui5-flexibility-keyuser",
+ "displayName": "UI5 flexibility for key users",
+ "description": "The UI5 flexibility service for key users lets you provide UI adaptation capabilites for your UI5 applications on Cloud Foundry. Users of your applications can change the user interface of your applications in an upgrade-safe and modification-free way, without affecting any other customer.",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/AmHAPKAy8mId_bRb5lDrBNlG9G0U7-G9KSU3_a46AyWeS1p4Prei-Sc_LvFYG1xu.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/UI5FlexibilityForKeyUsers/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | UI5 Flexibility for Key Users | SAP API Business Hub"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=UI5%20flexibility%20for%20key%20users",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=UI5%20flexibility%20for%20key%20users",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/ui5-flexibility-for-key-users",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - UI5 flexibility for key users"
+  },
+  {
+   "value": "https://help.sap.com/doc/d6b262dba5db484ea0b0ea1fcb53edd0/",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/UI5_FLEXIBILITY_KEY_USER/0f8b49c4dfc94bc0bda25a19aa93d5b2/3896117fb42f4602953c646090bc9447.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/UI5_FLEXIBILITY_KEY_USER",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://blogs.sap.com/2020/06/22/understanding-the-nuts-and-bolts-of-sap-fiori-development-for-cloud-foundry/",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Understanding the Nuts and Bolts of SAP Fiori Development in the Cloud Foundry Environment"
+  },
+  {
+   "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "SAP Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/commercial-information",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Understanding Service Plans and Metering"
+  },
+  {
+   "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/customer-controlled-encryption-keys",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Customer-Controlled Encryption Keys"
+  },
+  {
+   "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/initial-setup",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/security",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/what-is-ui5-flexibility-for-key-users",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What Is UI5 Flexibility for Key Users?"
+  },
+  {
+   "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/what-s-new-for-ui5-flexibility-for-key-users",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+   "classification": "Legal",
+   "type": "Link",
+   "text": "Legal"
+  },
+  {
+   "value": "https://www.youtube.com/embed/6_CQYtmRJNg",
+   "classification": "External",
+   "type": "Link",
+   "text": "What is SAPUI5?"
+  },
+  {
+   "value": "https://www.youtube.com/embed/VrFVB1b4kAI",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAPUI5 Flexibility - Key User Adaptation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "SERVICE",
+   "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/UI5FlexibilityForKeyUsers/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | UI5 Flexibility for Key Users | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=UI5%20flexibility%20for%20key%20users",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=UI5%20flexibility%20for%20key%20users",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ap12",
+     "name": "cf-ap12"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/ui5-flexibility-for-key-users",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - UI5 flexibility for key users"
+     "region": "ap20",
+     "name": "cf-ap20"
     },
     {
-      "value": "https://help.sap.com/doc/d6b262dba5db484ea0b0ea1fcb53edd0/",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://help.sap.com/docs/UI5_FLEXIBILITY_KEY_USER/0f8b49c4dfc94bc0bda25a19aa93d5b2/3896117fb42f4602953c646090bc9447.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "br10",
+     "name": "cf-br10"
     },
     {
-      "value": "https://help.sap.com/docs/UI5_FLEXIBILITY_KEY_USER",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "ca10",
+     "name": "cf-ca10"
     },
     {
-      "value": "https://blogs.sap.com/2020/06/22/understanding-the-nuts-and-bolts-of-sap-fiori-development-for-cloud-foundry/",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Understanding the Nuts and Bolts of SAP Fiori Development in the Cloud Foundry Environment"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "SAP Help Portal Product Page"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/commercial-information",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Understanding Service Plans and Metering"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/customer-controlled-encryption-keys",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Customer-Controlled Encryption Keys"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/initial-setup",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
+     "region": "jp20",
+     "name": "cf-jp20"
     },
     {
-      "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/security",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
+     "region": "us10",
+     "name": "cf-us10"
     },
     {
-      "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/what-is-ui5-flexibility-for-key-users",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What Is UI5 Flexibility for Key Users?"
+     "region": "us20",
+     "name": "cf-us20"
     },
     {
-      "value": "https://help.sap.com/docs/ui5-flexibility-for-key-users/ui5-flexibility-for-key-users/what-s-new-for-ui5-flexibility-for-key-users",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "us21",
+     "name": "cf-us21"
     },
     {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
-    },
-    {
-      "value": "https://www.youtube.com/embed/6_CQYtmRJNg",
-      "classification": "External",
-      "type": "Link",
-      "text": "What is SAPUI5?"
-    },
-    {
-      "value": "https://www.youtube.com/embed/VrFVB1b4kAI",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAPUI5 Flexibility - Key User Adaptation"
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "keyuser",
+   "displayName": "keyuser",
+   "category": "SERVICE",
+   "description": "Keyuser",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "SERVICE",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "keyuser",
-      "displayName": "keyuser",
-      "category": "SERVICE",
-      "description": "Keyuser",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "name": "trial",
-      "displayName": "trial",
-      "category": "SERVICE",
-      "description": "In the free trial plan, all key user changes are deleted from the database on the first day of every month.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "supportComponents": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "trial",
+   "displayName": "trial",
+   "category": "SERVICE",
+   "description": "In the free trial plan, all key user changes are deleted from the database on the first day of every month.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "CA-UI5-FL-CLS"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "CA-UI5-FL-OPS"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Translate Key User Adaptations (Cloud Foundry)",
-      "url": "https://api.sap.com/api/AdaptationTranslationCF/overview",
-      "apiType": "RESTful"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "name": "Migrating the User Origin (Cloud Foundry)",
-      "url": "https://api.sap.com/api/MigrationUserOriginCF/overview",
-      "apiType": "RESTful"
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-UI5-FL-CLS"
+  },
+  {
+   "value": "CA-UI5-FL-OPS"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Translate Key User Adaptations (Cloud Foundry)",
+   "url": "https://api.sap.com/api/AdaptationTranslationCF/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Migrating the User Origin (Cloud Foundry)",
+   "url": "https://api.sap.com/api/MigrationUserOriginCF/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

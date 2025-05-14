@@ -1,37 +1,37 @@
 {
-  "name": "sap-hybris-service-engagement-center",
-  "displayName": "SAP Customer Engagement Center",
-  "description": "SAP Customer Engagement Center",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMzNTVlODI7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5zYXAtaHlicmlzLXNlcnZpY2UtZW5nYWdlbWVudC1jZW50ZXI8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTExMC4xLDI2LjRWOTMuNkw1OSwxMTguOVY1MS41TDguNiwyNi40LDU5LjMsMS4xWk00My40LDYzLjdjMCw2LjEtMi40LDkuNC03LjEsOS43cTguMSw0LjgsMTAuMiw5LjNhMjMuODUsMjMuODUsMCwwLDEsMi4xLDEwLjJ2OC44bC0zMS0xNS4yVjc5LjRhMTcuNTYsMTcuNTYsMCwwLDEsMS02LjRjLjctMS44LDIuNC0yLjgsNS4yLTIuOGEyMi44NiwyMi44NiwwLDAsMSwyLjUuMiwxNS42NywxNS42NywwLDAsMCwzLjIuMiwyMiwyMiwwLDAsMS00LjgtNi4yLDE2LjA4LDE2LjA4LDAsMCwxLTEuOC03LjYsOS4zLDkuMywwLDAsMSwyLjYtNi42LDcuNjksNy42OSwwLDAsMSw1LjYtMi42YzMuNSwwLDYuNCwxLjYsOC44LDQuN2ExOC42MiwxOC42MiwwLDAsMSwzLjUsMTEuNFpNMzguMywxOS45LDcyLDM3bDguNi00LjQtMzQtMTYuOFptMjEsMjMuMyw4LjMtNC40TDUwLjcsMzAuNWwtOC4zLDQuMVptMC0yNS42TDg0LjgsMzAuNWw4LjMtNC4xTDY3LjYsMTMuN1pNOTcsODYuNWMtLjMtLjYtMS0yLTItNC4xYTE4LjA5LDE4LjA5LDAsMCwxLTEuNy03LjEsMzUuMSwzNS4xLDAsMCwwLDcuMy0xMC4xLDI0Ljc2LDI0Ljc2LDAsMCwwLDIuNi0xMC4xYzAtNi0yLjktOS04LjYtOWExOS4wNywxOS4wNywwLDAsMC0xMCwzLjEsNDQuODYsNDQuODYsMCwwLDAtOS4zLDcuNiw0MC4xMSw0MC4xMSwwLDAsMC02LjgsOS44LDIxLjY1LDIxLjY1LDAsMCwwLTIuNyw5LjdxMCw0LjY1LDIuNCw2LjlhOC44Nyw4Ljg3LDAsMCwwLDYuMywyLjMsMjYuNDEsMjYuNDEsMCwwLDAsNS4yLS44LDEwLjksMTAuOSwwLDAsMCw1LjQtMi45YzIuMSwzLjEsNC4yLDUuMSw2LjEsNmExOCwxOCwwLDAsMCwzLjMsMS40LDIsMiwwLDAsMCwxLjgtLjhBMi42NiwyLjY2LDAsMCwwLDk3LDg2LjVaIi8+PC9zdmc+Cg==",
-  "servicePlans": [
+ "name": "sap-hybris-service-engagement-center",
+ "displayName": "SAP Customer Engagement Center",
+ "description": "SAP Customer Engagement Center",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMzNTVlODI7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5zYXAtaHlicmlzLXNlcnZpY2UtZW5nYWdlbWVudC1jZW50ZXI8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTExMC4xLDI2LjRWOTMuNkw1OSwxMTguOVY1MS41TDguNiwyNi40LDU5LjMsMS4xWk00My40LDYzLjdjMCw2LjEtMi40LDkuNC03LjEsOS43cTguMSw0LjgsMTAuMiw5LjNhMjMuODUsMjMuODUsMCwwLDEsMi4xLDEwLjJ2OC44bC0zMS0xNS4yVjc5LjRhMTcuNTYsMTcuNTYsMCwwLDEsMS02LjRjLjctMS44LDIuNC0yLjgsNS4yLTIuOGEyMi44NiwyMi44NiwwLDAsMSwyLjUuMiwxNS42NywxNS42NywwLDAsMCwzLjIuMiwyMiwyMiwwLDAsMS00LjgtNi4yLDE2LjA4LDE2LjA4LDAsMCwxLTEuOC03LjYsOS4zLDkuMywwLDAsMSwyLjYtNi42LDcuNjksNy42OSwwLDAsMSw1LjYtMi42YzMuNSwwLDYuNCwxLjYsOC44LDQuN2ExOC42MiwxOC42MiwwLDAsMSwzLjUsMTEuNFpNMzguMywxOS45LDcyLDM3bDguNi00LjQtMzQtMTYuOFptMjEsMjMuMyw4LjMtNC40TDUwLjcsMzAuNWwtOC4zLDQuMVptMC0yNS42TDg0LjgsMzAuNWw4LjMtNC4xTDY3LjYsMTMuN1pNOTcsODYuNWMtLjMtLjYtMS0yLTItNC4xYTE4LjA5LDE4LjA5LDAsMCwxLTEuNy03LjEsMzUuMSwzNS4xLDAsMCwwLDcuMy0xMC4xLDI0Ljc2LDI0Ljc2LDAsMCwwLDIuNi0xMC4xYzAtNi0yLjktOS04LjYtOWExOS4wNywxOS4wNywwLDAsMC0xMCwzLjEsNDQuODYsNDQuODYsMCwwLDAtOS4zLDcuNiw0MC4xMSw0MC4xMSwwLDAsMC02LjgsOS44LDIxLjY1LDIxLjY1LDAsMCwwLTIuNyw5LjdxMCw0LjY1LDIuNCw2LjlhOC44Nyw4Ljg3LDAsMCwwLDYuMywyLjMsMjYuNDEsMjYuNDEsMCwwLDAsNS4yLS44LDEwLjksMTAuOSwwLDAsMCw1LjQtMi45YzIuMSwzLjEsNC4yLDUuMSw2LjEsNmExOCwxOCwwLDAsMCwzLjMsMS40LDIsMiwwLDAsMCwxLjgtLjhBMi42NiwyLjY2LDAsMCwwLDk3LDg2LjVaIi8+PC9zdmc+Cg==",
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "APPLICATION",
+   "description": "SAP Customer Engagement Center",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "APPLICATION",
-      "description": "SAP Customer Engagement Center",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005981",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005981",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

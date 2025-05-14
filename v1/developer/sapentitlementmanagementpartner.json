@@ -1,129 +1,129 @@
 {
-  "name": "SAPEntitlementManagementPartner",
-  "displayName": "SAP Entitlement Management, standard edition",
-  "description": "SAP Entitlement Management System Partner Edition",
-  "icon": null,
-  "links": [
+ "name": "SAPEntitlementManagementPartner",
+ "displayName": "SAP Entitlement Management, standard edition",
+ "description": "SAP Entitlement Management System Partner Edition",
+ "icon": null,
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Entitlement%20Management%2C%20standard%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Entitlement%20Management%2C%20standard%20edition",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "SAP Entitlement Management System(Partner)",
+   "category": "APPLICATION",
+   "description": "SAP Entitlement Management System(Partner)",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Entitlement%20Management%2C%20standard%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Entitlement%20Management%2C%20standard%20edition",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
-    }
-  ],
-  "servicePlans": [
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
     {
-      "name": "default",
-      "displayName": "SAP Entitlement Management System(Partner)",
-      "category": "APPLICATION",
-      "description": "SAP Entitlement Management System(Partner)",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": [
-        {
-          "subscription": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": true,
-                "additionalProperties": false,
-                "properties": {
-                  "cmk": {
-                    "description": "Enter Customer Managed Key(This needed if customer want to managed encryption key by SAP Data Custodian Central Key Management.).",
-                    "title": "Customer managed Key(Optional)",
-                    "type": "string"
-                  },
-                  "dataEncryptionMode": {
-                    "default": "NONE",
-                    "description": "Data Encryption Mode",
-                    "enum": [
-                      "NONE",
-                      "MANAGED_KEY"
-                    ],
-                    "title": "Data Encryption Mode(Optional)",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "_show_form_view": true,
-                "additionalProperties": false,
-                "properties": {
-                  "cmk": {
-                    "description": "Enter Customer Managed Key(This needed if customer want to managed encryption key by SAP Data Custodian Central Key Management.).",
-                    "title": "Customer managed Key(Optional)",
-                    "type": "string"
-                  },
-                  "dataEncryptionMode": {
-                    "default": "NONE",
-                    "description": "Data Encryption Mode",
-                    "enum": [
-                      "NONE",
-                      "MANAGED_KEY"
-                    ],
-                    "title": "Data Encryption Mode(Optional)",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
-              }
-            }
-          }
-        }
-      ]
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": [
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "properties": {
+         "cmk": {
+          "description": "Enter Customer Managed Key(This needed if customer want to managed encryption key by SAP Data Custodian Central Key Management.).",
+          "title": "Customer managed Key(Optional)",
+          "type": "string"
+         },
+         "dataEncryptionMode": {
+          "default": "NONE",
+          "description": "Data Encryption Mode",
+          "enum": [
+           "NONE",
+           "MANAGED_KEY"
+          ],
+          "title": "Data Encryption Mode(Optional)",
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "properties": {
+         "cmk": {
+          "description": "Enter Customer Managed Key(This needed if customer want to managed encryption key by SAP Data Custodian Central Key Management.).",
+          "title": "Customer managed Key(Optional)",
+          "type": "string"
+         },
+         "dataEncryptionMode": {
+          "default": "NONE",
+          "description": "Data Encryption Mode",
+          "enum": [
+           "NONE",
+           "MANAGED_KEY"
+          ],
+          "title": "Data Encryption Mode(Optional)",
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

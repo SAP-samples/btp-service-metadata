@@ -1,36 +1,36 @@
 {
-  "name": "greentoken-api",
-  "displayName": "SAP Green Token",
-  "description": "SAP Green Token",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/vsknY_Dvw5krNTrQQLl6kaakCmvkHbO01GtOFVVf2wg9fBTvXD-MD3YPTHANM-fZ.svg",
-  "links": [
+ "name": "greentoken-api",
+ "displayName": "SAP Green Token",
+ "description": "SAP Green Token",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/vsknY_Dvw5krNTrQQLl6kaakCmvkHbO01GtOFVVf2wg9fBTvXD-MD3YPTHANM-fZ.svg",
+ "links": [
+  {
+   "value": "https://help.sap.com/docs/greentoken",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "SERVICE",
+   "description": "Provides API access to the SAP Green Token application.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/docs/greentoken",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu30",
+     "name": "cf-eu30"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "standard",
-      "displayName": "Standard",
-      "category": "SERVICE",
-      "description": "Provides API access to the SAP Green Token application.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

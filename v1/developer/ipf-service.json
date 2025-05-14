@@ -1,79 +1,79 @@
 {
-  "name": "ipf-service",
-  "displayName": "SAP Industry Process Framework",
-  "description": "SAP Industry Process Framework",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/a1PU5QIItDZbky4SxYDEWjD3My4J5g6e7hIcouZ_H56KAszMz3wm9Bd2iHDnUPhq.svg",
-  "links": [
+ "name": "ipf-service",
+ "displayName": "SAP Industry Process Framework",
+ "description": "SAP Industry Process Framework",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/a1PU5QIItDZbky4SxYDEWjD3My4J5g6e7hIcouZ_H56KAszMz3wm9Bd2iHDnUPhq.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPIndustryProcessFramework/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Industry Process Framework | SAP API Business Hub"
+  },
+  {
+   "value": "https://api.sap.com/package/SAPIndustryProcessFrameworkEvents/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Industry Process Framework | SAP API Business Hub"
+  },
+  {
+   "value": "https://help.sap.com/viewer/20c1d50002e5453a85bb24192c7f50c4/SHIP/en-US/b794a6a5494e4f4ca40972ae19d36365.html",
+   "classification": "Support",
+   "type": "Link",
+   "text": "Support"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_IPF/SHIP/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "api-access",
+   "displayName": "api-access",
+   "category": "SERVICE",
+   "description": "This plan allows you to access runtime APIs for consumer scenarios.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPIndustryProcessFramework/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Industry Process Framework | SAP API Business Hub"
-    },
-    {
-      "value": "https://api.sap.com/package/SAPIndustryProcessFrameworkEvents/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Industry Process Framework | SAP API Business Hub"
-    },
-    {
-      "value": "https://help.sap.com/viewer/20c1d50002e5453a85bb24192c7f50c4/SHIP/en-US/b794a6a5494e4f4ca40972ae19d36365.html",
-      "classification": "Support",
-      "type": "Link",
-      "text": "Support"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_IPF/SHIP/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "servicePlans": [
-    {
-      "name": "api-access",
-      "displayName": "api-access",
-      "category": "SERVICE",
-      "description": "This plan allows you to access runtime APIs for consumer scenarios.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "LOD-DMO-IPF"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Standard Content Management",
-      "url": "https://api.sap.com/api/cdn_rest_api_final/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Process Execution",
-      "url": "https://api.sap.com/api/execute_api_final/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Runtime Information",
-      "url": "https://api.sap.com/api/runtime_api_v4_final/overview",
-      "apiType": "OData V2"
-    },
-    {
-      "name": "Scenario Activation and Deactivation",
-      "url": "https://api.sap.com/api/scenario_api_final/overview",
-      "apiType": "OData V2"
-    }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "LOD-DMO-IPF"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Standard Content Management",
+   "url": "https://api.sap.com/api/cdn_rest_api_final/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Process Execution",
+   "url": "https://api.sap.com/api/execute_api_final/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Runtime Information",
+   "url": "https://api.sap.com/api/runtime_api_v4_final/overview",
+   "apiType": "OData V2"
+  },
+  {
+   "name": "Scenario Activation and Deactivation",
+   "url": "https://api.sap.com/api/scenario_api_final/overview",
+   "apiType": "OData V2"
+  }
+ ]
 }

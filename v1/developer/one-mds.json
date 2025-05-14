@@ -1,968 +1,968 @@
 {
-  "name": "one-mds",
-  "displayName": "SAP Master Data Integration",
-  "description": "Master Data Integration",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/FCL0v7wwVTO49UhtC-rlB-dGJRBsqpBUPrQ8PSEH5uswHdPKqzMKJlffF9Losklk.svg",
-  "links": [
+ "name": "one-mds",
+ "displayName": "SAP Master Data Integration",
+ "description": "Master Data Integration",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/FCL0v7wwVTO49UhtC-rlB-dGJRBsqpBUPrQ8PSEH5uswHdPKqzMKJlffF9Losklk.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/sap-mdi-masterDataIntegration/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Master Data Integration | SAP API Business Hub"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Master%20Data%20Integration",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Master%20Data%20Integration",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/master-data-integration",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Master Data Integration"
+  },
+  {
+   "value": "https://help.sap.com/doc/343e91db93e64e6ab258a1e51adc6377/CLOUD/en-US/499a1a82e6134361b9922d989dfecff6.pdf",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Master%20Data%20Integration",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_MASTER_DATA_INTEGRATION",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_MASTER_DATA_INTEGRATION/c7713d6177ad479d9ea00958db9f2f81/656a278ba9e145b5a0b7c4b024bf8a34.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://help.sap.com/viewer/c7713d6177ad479d9ea00958db9f2f81/CLOUD/en-US/39c84a9a3ca947b695d15db11444d999.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/viewer/c7713d6177ad479d9ea00958db9f2f81/CLOUD/en-US/69ae614272654411a4c03acea8d488b3.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Onboarding"
+  },
+  {
+   "value": "https://help.sap.com/viewer/c7713d6177ad479d9ea00958db9f2f81/CLOUD/en-US/dab76d5506a44c8e85f314fc3be30e13.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is SAP Master Data Integration?"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_MASTER_DATA_INTEGRATION/CLOUD/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Default plan for reuse service scenarios",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/sap-mdi-masterDataIntegration/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Master Data Integration | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Master%20Data%20Integration",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Master%20Data%20Integration",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "ch20",
+     "name": "cf-ch20"
     },
     {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/master-data-integration",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Master Data Integration"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://help.sap.com/doc/343e91db93e64e6ab258a1e51adc6377/CLOUD/en-US/499a1a82e6134361b9922d989dfecff6.pdf",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
-      "value": "https://help.sap.com/doc/43b304f99a8145809c78f292bfc0bc58/Cloud/en-US/98bf747111574187a7c76f8ced51cfeb.html?Component=Master%20Data%20Integration",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_MASTER_DATA_INTEGRATION",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "sa30",
+     "name": "cf-sa30"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_MASTER_DATA_INTEGRATION/c7713d6177ad479d9ea00958db9f2f81/656a278ba9e145b5a0b7c4b024bf8a34.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
-    },
-    {
-      "value": "https://help.sap.com/viewer/c7713d6177ad479d9ea00958db9f2f81/CLOUD/en-US/39c84a9a3ca947b695d15db11444d999.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
-    },
-    {
-      "value": "https://help.sap.com/viewer/c7713d6177ad479d9ea00958db9f2f81/CLOUD/en-US/69ae614272654411a4c03acea8d488b3.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Onboarding"
-    },
-    {
-      "value": "https://help.sap.com/viewer/c7713d6177ad479d9ea00958db9f2f81/CLOUD/en-US/dab76d5506a44c8e85f314fc3be30e13.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is SAP Master Data Integration?"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_MASTER_DATA_INTEGRATION/CLOUD/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Default plan for reuse service scenarios",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  }
-                }
-              }
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
             }
+           }
           }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         }
         }
-      ]
-    },
-    {
-      "name": "s4hana-onpremise",
-      "displayName": "s4hana-onpremise",
-      "category": "SERVICE",
-      "description": "Service plan for SAP S/4HANA on-premise integrations",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  }
-                }
-              }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
             }
+           }
           }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         }
         }
-      ]
-    },
-    {
-      "name": "sap-integration",
-      "displayName": "sap-integration",
-      "category": "SERVICE",
-      "description": "Service plan for SAP-to-SAP integrations",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  },
-                  "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
-                    "type": "string",
-                    "enum": [
-                      "ariba",
-                      "c4c",
-                      "cdc",
-                      "commerceCloud",
-                      "concur",
-                      "fieldglass",
-                      "hrc",
-                      "mdg",
-                      "resource management",
-                      "s4",
-                      "cpq",
-                      "sfsf",
-                      "ci",
-                      "omf",
-                      "cdp",
-                      "fsm"
-                    ]
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  },
-                  "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
-                    "type": "string",
-                    "enum": [
-                      "ariba",
-                      "c4c",
-                      "cdc",
-                      "commerceCloud",
-                      "concur",
-                      "fieldglass",
-                      "hrc",
-                      "mdg",
-                      "resource management",
-                      "s4",
-                      "cpq",
-                      "sfsf",
-                      "ci",
-                      "omf",
-                      "cdp",
-                      "fsm"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  },
-                  "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
-                    "type": "string",
-                    "enum": [
-                      "ariba",
-                      "c4c",
-                      "cdc",
-                      "commerceCloud",
-                      "concur",
-                      "fieldglass",
-                      "hrc",
-                      "mdg",
-                      "resource management",
-                      "s4",
-                      "cpq",
-                      "sfsf",
-                      "ci",
-                      "omf",
-                      "cdp"
-                    ]
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  },
-                  "application": {
-                    "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
-                    "type": "string",
-                    "enum": [
-                      "ariba",
-                      "c4c",
-                      "cdc",
-                      "commerceCloud",
-                      "concur",
-                      "fieldglass",
-                      "hrc",
-                      "mdg",
-                      "resource management",
-                      "s4",
-                      "cpq",
-                      "sfsf",
-                      "ci",
-                      "omf",
-                      "cdp"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "sap-integration-ias",
-      "displayName": "sap-integration-ias",
-      "category": "SERVICE",
-      "description": "Service plan for SAP-to-SAP integrations with IAS",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  }
-                }
-              }
-            },
-            "update": {
-              "parameters": {
-                "$schema": "http://json-schema.org/draft-04/schema#",
-                "type": "object",
-                "properties": {
-                  "businessSystemId": {
-                    "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
-                    "type": "string",
-                    "pattern": "^.{1,60}$"
-                  },
-                  "enableTenantDeletion": {
-                    "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "writePermissions": {
-                    "description": "Array of entities the service instance has write permission for",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "entityType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  },
-                  "logSys": {
-                    "description": "The logical system.",
-                    "type": "string",
-                    "pattern": "^.{1,10}$"
-                  },
-                  "globalTenantId": {
-                    "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-                    "type": "string",
-                    "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [
+   ]
+  },
+  {
+   "name": "s4hana-onpremise",
+   "displayName": "s4hana-onpremise",
+   "category": "SERVICE",
+   "description": "Service plan for SAP S/4HANA on-premise integrations",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "BC-CP-CF-ONEMDS"
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "apis": [
+   ],
+   "schemas": [
     {
-      "name": "Equipment",
-      "url": "https://api.sap.com/api/sap-odm-assetmanagement-Equipment-5-1-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "FunctionalLocation",
-      "url": "https://api.sap.com/api/sap-odm-assetmanagement-FunctionalLocation-5-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "BusinessPartner",
-      "url": "https://api.sap.com/api/sap-odm-businesspartner-BusinessPartner-2-1-1-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "BusinessPartnerRelationship",
-      "url": "https://api.sap.com/api/sap-odm-businesspartner-BusinessPartnerRelationship-2-2-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "DataController",
-      "url": "https://api.sap.com/api/sap-odm-dpp-DataController-2-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Purpose",
-      "url": "https://api.sap.com/api/sap-odm-dpp-Purpose-2-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Purpose2DataController",
-      "url": "https://api.sap.com/api/sap-odm-dpp-Purpose2DataController-2-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "ExchangeRate",
-      "url": "https://api.sap.com/api/sap-odm-finance-ExchangeRate-4-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "ProfitCenter",
-      "url": "https://api.sap.com/api/sap-odm-finance-accounting-ProfitCenter-7-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "SymbolicGeneralLedgerAccount",
-      "url": "https://api.sap.com/api/sap-odm-finance-accounting-SymbolicGeneralLedgerAccount-6-1-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Bank",
-      "url": "https://api.sap.com/api/sap-odm-finance-bank-Bank-3-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "CostCenter",
-      "url": "https://api.sap.com/api/sap-odm-finance-costobject-CostCenter-1-0-2-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "ProjectControllingObject",
-      "url": "https://api.sap.com/api/sap-odm-finance-costobject-ProjectControllingObject-2-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "SalesControllingObject",
-      "url": "https://api.sap.com/api/sap-odm-finance-costobject-SalesControllingObject-4-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "BudgetPeriod",
-      "url": "https://api.sap.com/api/sap-odm-finance-publicsector-BudgetPeriod-1-1-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "FunctionalArea",
-      "url": "https://api.sap.com/api/sap-odm-finance-publicsector-FunctionalArea-1-1-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Fund",
-      "url": "https://api.sap.com/api/sap-odm-finance-publicsector-Fund-1-1-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "FundsCenter",
-      "url": "https://api.sap.com/api/sap-odm-finance-publicsector-FundsCenter-1-1-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Grant",
-      "url": "https://api.sap.com/api/sap-odm-finance-publicsector-Grant-1-1-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "CompanyCode",
-      "url": "https://api.sap.com/api/sap-odm-orgunit-CompanyCode-4-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Plant",
-      "url": "https://api.sap.com/api/sap-odm-orgunit-Plant-4-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "PurchasingCategory",
-      "url": "https://api.sap.com/api/sap-odm-procurement-PurchasingCategory-4-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "PurchasingGroup",
-      "url": "https://api.sap.com/api/sap-odm-procurement-orgunit-PurchasingGroup-6-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "PurchasingOrganization",
-      "url": "https://api.sap.com/api/sap-odm-procurement-orgunit-PurchasingOrganization-4-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Product",
-      "url": "https://api.sap.com/api/sap-odm-product-Product-5-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "ProductGroup",
-      "url": "https://api.sap.com/api/sap-odm-product-ProductGroup-5-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "ProjectServiceOrganization",
-      "url": "https://api.sap.com/api/sap-odm-project-ProjectServiceOrganization-7-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "RealEstateArchitectureObject",
-      "url": "https://api.sap.com/api/sap-odm-realestate-architecture-RealEstateArchitectureObject-7-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "RealEstateContract",
-      "url": "https://api.sap.com/api/sap-odm-realestate-contract-RealEstateContract-7-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "RealEstateRentableObject",
-      "url": "https://api.sap.com/api/sap-odm-realestate-rentalobject-RealEstateRentableObject-7-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "RealEstateUsableObject",
-      "url": "https://api.sap.com/api/sap-odm-realestate-rentalobject-RealEstateUsableObject-7-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "WorkforcePerson",
-      "url": "https://api.sap.com/api/sap-odm-workforce-WorkforcePerson-2-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "WorkforceCapability",
-      "url": "https://api.sap.com/api/sap-odm-workforce-capability-WorkforceCapability-5-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "WorkforceCapabilityCatalog",
-      "url": "https://api.sap.com/api/sap-odm-workforce-capability-WorkforceCapabilityCatalog-5-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "WorkforceCapabilityProficiencyScale",
-      "url": "https://api.sap.com/api/sap-odm-workforce-capability-WorkforceCapabilityProficiencyScale-5-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "JobClassification",
-      "url": "https://api.sap.com/api/sap-odm-workforce-foundation-JobClassification-2-0-0-v1/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "OrganizationalUnit",
-      "url": "https://api.sap.com/api/sap-odm-workforce-foundation-OrganizationalUnit-2-0-0-v1/overview",
-      "apiType": "RESTful"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         }
+        }
+       }
+      }
+     }
     }
-  ]
+   ]
+  },
+  {
+   "name": "sap-integration",
+   "displayName": "sap-integration",
+   "category": "SERVICE",
+   "description": "Service plan for SAP-to-SAP integrations",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         },
+         "application": {
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
+          "type": "string",
+          "enum": [
+           "ariba",
+           "c4c",
+           "cdc",
+           "commerceCloud",
+           "concur",
+           "fieldglass",
+           "hrc",
+           "mdg",
+           "resource management",
+           "s4",
+           "cpq",
+           "sfsf",
+           "ci",
+           "omf",
+           "cdp",
+           "fsm"
+          ]
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         },
+         "application": {
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\".",
+          "type": "string",
+          "enum": [
+           "ariba",
+           "c4c",
+           "cdc",
+           "commerceCloud",
+           "concur",
+           "fieldglass",
+           "hrc",
+           "mdg",
+           "resource management",
+           "s4",
+           "cpq",
+           "sfsf",
+           "ci",
+           "omf",
+           "cdp",
+           "fsm"
+          ]
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         },
+         "application": {
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
+          "type": "string",
+          "enum": [
+           "ariba",
+           "c4c",
+           "cdc",
+           "commerceCloud",
+           "concur",
+           "fieldglass",
+           "hrc",
+           "mdg",
+           "resource management",
+           "s4",
+           "cpq",
+           "sfsf",
+           "ci",
+           "omf",
+           "cdp"
+          ]
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         },
+         "application": {
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
+          "type": "string",
+          "enum": [
+           "ariba",
+           "c4c",
+           "cdc",
+           "commerceCloud",
+           "concur",
+           "fieldglass",
+           "hrc",
+           "mdg",
+           "resource management",
+           "s4",
+           "cpq",
+           "sfsf",
+           "ci",
+           "omf",
+           "cdp"
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "sap-integration-ias",
+   "displayName": "sap-integration-ias",
+   "category": "SERVICE",
+   "description": "Service plan for SAP-to-SAP integrations with IAS",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-CF-ONEMDS"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Equipment",
+   "url": "https://api.sap.com/api/sap-odm-assetmanagement-Equipment-5-1-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "FunctionalLocation",
+   "url": "https://api.sap.com/api/sap-odm-assetmanagement-FunctionalLocation-5-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "BusinessPartner",
+   "url": "https://api.sap.com/api/sap-odm-businesspartner-BusinessPartner-2-1-1-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "BusinessPartnerRelationship",
+   "url": "https://api.sap.com/api/sap-odm-businesspartner-BusinessPartnerRelationship-2-2-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "DataController",
+   "url": "https://api.sap.com/api/sap-odm-dpp-DataController-2-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Purpose",
+   "url": "https://api.sap.com/api/sap-odm-dpp-Purpose-2-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Purpose2DataController",
+   "url": "https://api.sap.com/api/sap-odm-dpp-Purpose2DataController-2-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "ExchangeRate",
+   "url": "https://api.sap.com/api/sap-odm-finance-ExchangeRate-4-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "ProfitCenter",
+   "url": "https://api.sap.com/api/sap-odm-finance-accounting-ProfitCenter-7-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "SymbolicGeneralLedgerAccount",
+   "url": "https://api.sap.com/api/sap-odm-finance-accounting-SymbolicGeneralLedgerAccount-6-1-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Bank",
+   "url": "https://api.sap.com/api/sap-odm-finance-bank-Bank-3-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "CostCenter",
+   "url": "https://api.sap.com/api/sap-odm-finance-costobject-CostCenter-1-0-2-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "ProjectControllingObject",
+   "url": "https://api.sap.com/api/sap-odm-finance-costobject-ProjectControllingObject-2-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "SalesControllingObject",
+   "url": "https://api.sap.com/api/sap-odm-finance-costobject-SalesControllingObject-4-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "BudgetPeriod",
+   "url": "https://api.sap.com/api/sap-odm-finance-publicsector-BudgetPeriod-1-1-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "FunctionalArea",
+   "url": "https://api.sap.com/api/sap-odm-finance-publicsector-FunctionalArea-1-1-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Fund",
+   "url": "https://api.sap.com/api/sap-odm-finance-publicsector-Fund-1-1-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "FundsCenter",
+   "url": "https://api.sap.com/api/sap-odm-finance-publicsector-FundsCenter-1-1-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Grant",
+   "url": "https://api.sap.com/api/sap-odm-finance-publicsector-Grant-1-1-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "CompanyCode",
+   "url": "https://api.sap.com/api/sap-odm-orgunit-CompanyCode-4-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Plant",
+   "url": "https://api.sap.com/api/sap-odm-orgunit-Plant-4-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "PurchasingCategory",
+   "url": "https://api.sap.com/api/sap-odm-procurement-PurchasingCategory-4-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "PurchasingGroup",
+   "url": "https://api.sap.com/api/sap-odm-procurement-orgunit-PurchasingGroup-6-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "PurchasingOrganization",
+   "url": "https://api.sap.com/api/sap-odm-procurement-orgunit-PurchasingOrganization-4-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Product",
+   "url": "https://api.sap.com/api/sap-odm-product-Product-5-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "ProductGroup",
+   "url": "https://api.sap.com/api/sap-odm-product-ProductGroup-5-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "ProjectServiceOrganization",
+   "url": "https://api.sap.com/api/sap-odm-project-ProjectServiceOrganization-7-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "RealEstateArchitectureObject",
+   "url": "https://api.sap.com/api/sap-odm-realestate-architecture-RealEstateArchitectureObject-7-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "RealEstateContract",
+   "url": "https://api.sap.com/api/sap-odm-realestate-contract-RealEstateContract-7-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "RealEstateRentableObject",
+   "url": "https://api.sap.com/api/sap-odm-realestate-rentalobject-RealEstateRentableObject-7-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "RealEstateUsableObject",
+   "url": "https://api.sap.com/api/sap-odm-realestate-rentalobject-RealEstateUsableObject-7-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "WorkforcePerson",
+   "url": "https://api.sap.com/api/sap-odm-workforce-WorkforcePerson-2-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "WorkforceCapability",
+   "url": "https://api.sap.com/api/sap-odm-workforce-capability-WorkforceCapability-5-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "WorkforceCapabilityCatalog",
+   "url": "https://api.sap.com/api/sap-odm-workforce-capability-WorkforceCapabilityCatalog-5-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "WorkforceCapabilityProficiencyScale",
+   "url": "https://api.sap.com/api/sap-odm-workforce-capability-WorkforceCapabilityProficiencyScale-5-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "JobClassification",
+   "url": "https://api.sap.com/api/sap-odm-workforce-foundation-JobClassification-2-0-0-v1/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "OrganizationalUnit",
+   "url": "https://api.sap.com/api/sap-odm-workforce-foundation-OrganizationalUnit-2-0-0-v1/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

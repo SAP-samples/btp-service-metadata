@@ -1,253 +1,253 @@
 {
-  "name": "iotae",
-  "displayName": "SAP IoT",
-  "description": "SAP IoT",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/aZPQp3Gu2jSQFurUad4tXJjKaNP2zLlgg1RnWXpfWomCms7d5NR8FPPLpnF6hSw2.svg",
-  "servicePlans": [
+ "name": "iotae",
+ "displayName": "SAP IoT",
+ "description": "SAP IoT",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/aZPQp3Gu2jSQFurUad4tXJjKaNP2zLlgg1RnWXpfWomCms7d5NR8FPPLpnF6hSw2.svg",
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "Default service plan which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier based on capacity units",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "Default service plan which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier based on capacity units",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005641",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005975",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006142",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006143",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007779",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007874",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008476",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008796",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008939",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008940",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010960",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011416",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012342",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012343",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012344",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012578",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "Standard service plan (for SAP Leonardo IoT) which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005118",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005119",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005120",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005188",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005255",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005296",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005297",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005298",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005317",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005350",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005567",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005606",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8005641",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "800564_old",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005975",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007227",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007233",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007779",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007874",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        }
-      ]
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005641",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005975",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006142",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006143",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007779",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007874",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008476",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008796",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008939",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008940",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010960",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011416",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012342",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012343",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012344",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012578",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "Standard service plan (for SAP Leonardo IoT) which is based on the total number of API calls measured in data streams as well as Time Series and Event Store and Time Series and Event Archive which is based on GB stored in each respective storage tier",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005118",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005119",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005120",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005188",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005255",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005296",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005297",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005298",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005317",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005350",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005567",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005606",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8005641",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "800564_old",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005975",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007227",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007233",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007779",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007874",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

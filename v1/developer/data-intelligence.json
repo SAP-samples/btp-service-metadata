@@ -1,594 +1,594 @@
 {
-  "name": "data-intelligence",
-  "displayName": "SAP Data Intelligence Cloud",
-  "description": "SAP Data Intelligence",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/TMZLkw4hPctHzIdZKsmJYUmjXZuMZ9T5pjYxM8F-MqV8_qpogvdtTJxVSrGNbzXj.svg",
-  "links": [
+ "name": "data-intelligence",
+ "displayName": "SAP Data Intelligence Cloud",
+ "description": "SAP Data Intelligence",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/TMZLkw4hPctHzIdZKsmJYUmjXZuMZ9T5pjYxM8F-MqV8_qpogvdtTJxVSrGNbzXj.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPDataIntelligence/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Data Intelligence | SAP API Business Hub"
+  },
+  {
+   "value": "https://api.sap.com/package/SAPDataIntelligenceCloud/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Data Intelligence Cloud | SAP API Business Hub"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Data%20Intelligence%20Cloud",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Data%20Intelligence%20Cloud",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://api.sap.com/package/SAPDataIntelligenceCloud/rest",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "API Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/305fdeeaf7e84ff38cfeff576184472c/a580f8d4ca804493ba6234f3c26f9254.html",
+   "classification": "Tool",
+   "type": "Link",
+   "text": "Metadata Explorer, SAP Data Intelligence Launchpad"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/ca509b7635484070a655738be408da63/1fd349c9b7a34bc58b55e5c7b871e92e.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/BTP/ca509b7635484070a655738be408da63/f0d7525dcea04c70b262521f2965ab1e.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_DATA_INTELLIGENCE/Cloud",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_DATA_INTELLIGENCE",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_DATA_INTELLIGENCE_ON-PREMISE",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/whats-new/3e9d9737be964d2dbef79d0751b2aeca?state=PRODUCTION",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://launchpad.support.sap.com/#/notes/2820555",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "dedicated",
+   "displayName": "dedicated",
+   "category": "SERVICE",
+   "description": "Required for every new system. Provides a fully isolated cluster with dedicated hardware resources. The system automatically creates one tenant named default.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPDataIntelligence/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Data Intelligence | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://api.sap.com/package/SAPDataIntelligenceCloud/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Data Intelligence Cloud | SAP API Business Hub"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Data%20Intelligence%20Cloud",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Data%20Intelligence%20Cloud",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://api.sap.com/package/SAPDataIntelligenceCloud/rest",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "API Documentation"
+     "region": "jp10",
+     "name": "cf-jp10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/305fdeeaf7e84ff38cfeff576184472c/a580f8d4ca804493ba6234f3c26f9254.html",
-      "classification": "Tool",
-      "type": "Link",
-      "text": "Metadata Explorer, SAP Data Intelligence Launchpad"
+     "region": "us10",
+     "name": "cf-us10"
     },
     {
-      "value": "https://help.sap.com/docs/BTP/ca509b7635484070a655738be408da63/1fd349c9b7a34bc58b55e5c7b871e92e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/BTP/ca509b7635484070a655738be408da63/f0d7525dcea04c70b262521f2965ab1e.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_DATA_INTELLIGENCE/Cloud",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/docs/SAP_DATA_INTELLIGENCE",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_DATA_INTELLIGENCE_ON-PREMISE",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/whats-new/3e9d9737be964d2dbef79d0751b2aeca?state=PRODUCTION",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
-    },
-    {
-      "value": "https://launchpad.support.sap.com/#/notes/2820555",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": [
     {
-      "name": "dedicated",
-      "displayName": "dedicated",
-      "category": "SERVICE",
-      "description": "Required for every new system. Provides a fully isolated cluster with dedicated hardware resources. The system automatically creates one tenant named default.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "adminUsername": {
+          "type": "string",
+          "description": "Admin username of the new cluster"
+         },
+         "adminPassword": {
+          "type": "string",
+          "description": "Admin password of the new cluster"
+         },
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "vpcCIDR": {
+          "type": "string",
+          "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         }
         },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      },
+      "update": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "enableHibernation": {
+          "type": "string",
+          "description": "enable Hibernation, true to enable, false to disable"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         }
         },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "adminUsername": {
-                    "type": "string",
-                    "description": "Admin username of the new cluster"
-                  },
-                  "adminPassword": {
-                    "type": "string",
-                    "description": "Admin password of the new cluster"
-                  },
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "vpcCIDR": {
-                    "type": "string",
-                    "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            },
-            "update": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "enableHibernation": {
-                    "type": "string",
-                    "description": "enable Hibernation, true to enable, false to disable"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "adminUsername": {
-                    "type": "string",
-                    "description": "Admin username of the new cluster"
-                  },
-                  "adminPassword": {
-                    "type": "string",
-                    "description": "Admin password of the new cluster"
-                  },
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "vpcCIDR": {
-                    "type": "string",
-                    "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  },
-                  "useCMK": {
-                    "type": "string",
-                    "description": "Use central key management service"
-                  },
-                  "keyRef": {
-                    "type": "string",
-                    "description": "Key reference from central key management service"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            },
-            "update": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "enableHibernation": {
-                    "type": "string",
-                    "description": "enable Hibernation, true to enable, false to disable"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            }
-          }
-        }
-      ]
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      }
+     }
     },
     {
-      "name": "enterprise",
-      "displayName": "enterprise",
-      "category": "SERVICE",
-      "description": "Deprecated service plan. We recommend that you switch to the new dedicated service plan when your service is up for renewal.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": true,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "adminUsername": {
+          "type": "string",
+          "description": "Admin username of the new cluster"
+         },
+         "adminPassword": {
+          "type": "string",
+          "description": "Admin password of the new cluster"
+         },
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "vpcCIDR": {
+          "type": "string",
+          "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         },
+         "useCMK": {
+          "type": "string",
+          "description": "Use central key management service"
+         },
+         "keyRef": {
+          "type": "string",
+          "description": "Key reference from central key management service"
+         }
         },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      },
+      "update": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "enableHibernation": {
+          "type": "string",
+          "description": "enable Hibernation, true to enable, false to disable"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         }
         },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "adminUsername": {
-                    "type": "string",
-                    "description": "Admin username of the new cluster"
-                  },
-                  "adminPassword": {
-                    "type": "string",
-                    "description": "Admin password of the new cluster"
-                  },
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "vpcCIDR": {
-                    "type": "string",
-                    "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            },
-            "update": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "enableHibernation": {
-                    "type": "string",
-                    "description": "enable Hibernation, true to enable, false to disable"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            }
-          }
-        },
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "adminUsername": {
-                    "type": "string",
-                    "description": "Admin username of the new cluster"
-                  },
-                  "adminPassword": {
-                    "type": "string",
-                    "description": "Admin password of the new cluster"
-                  },
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "vpcCIDR": {
-                    "type": "string",
-                    "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  },
-                  "useCMK": {
-                    "type": "string",
-                    "description": "Use central key management service"
-                  },
-                  "keyRef": {
-                    "type": "string",
-                    "description": "Key reference from central key management service"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            },
-            "update": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "minNodes": {
-                    "type": "string",
-                    "description": "The minimum number of nodes"
-                  },
-                  "maxNodes": {
-                    "type": "string",
-                    "description": "The maximum number of nodes"
-                  },
-                  "enableHibernation": {
-                    "type": "string",
-                    "description": "enable Hibernation, true to enable, false to disable"
-                  },
-                  "hibernationSchedules": {
-                    "type": "string",
-                    "description": "schedules for hibernation start and wake up"
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "tenant",
-      "displayName": "tenant",
-      "category": "SERVICE",
-      "description": "(Optional) Used in combination with the dedicated service plan. Lets you add up to 19 tenants to the default tenant that run on the same cluster and share the same hardware resources. ",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "schemas": [
-        {
-          "service_instance": {
-            "create": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "clusterName": {
-                    "type": "string",
-                    "description": "Name of the existing cluster where the new tenant will be created"
-                  },
-                  "tenantName": {
-                    "type": "string",
-                    "description": "Name of the new tenant"
-                  },
-                  "adminUsername": {
-                    "type": "string",
-                    "description": "Admin username of the new tenant"
-                  },
-                  "adminPassword": {
-                    "type": "string",
-                    "description": "Admin password of the new tenant"
-                  },
-                  "resourceQuotas": {
-                    "type": "array",
-                    "description": "resource quotas for the new tenant",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "limit": {
-                          "type": "string"
-                        },
-                        "resource": {
-                          "type": "string"
-                        },
-                        "target": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            },
-            "update": {
-              "parameters": {
-                "type": "object",
-                "properties": {
-                  "resourceQuotas": {
-                    "type": "array",
-                    "description": "resource quotas for the new tenant",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "limit": {
-                          "type": "string"
-                        },
-                        "resource": {
-                          "type": "string"
-                        },
-                        "target": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  }
-                },
-                "$schema": "http://json-schema.org/draft-04/schema#"
-              }
-            }
-          }
-        }
-      ]
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      }
+     }
     }
-  ],
-  "supportComponents": [
+   ]
+  },
+  {
+   "name": "enterprise",
+   "displayName": "enterprise",
+   "category": "SERVICE",
+   "description": "Deprecated service plan. We recommend that you switch to the new dedicated service plan when your service is up for renewal.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": true,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "CA-DI"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "CA-DI-DH"
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "value": "CA-DI-DL"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "CA-DI-ML"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "CA-DI-OPS"
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "apis": [
+   ],
+   "schemas": [
     {
-      "name": "Metadata Management (Cloud Edition)",
-      "url": "https://api.sap.com/api/metadata/overview",
-      "apiType": "RESTful"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "adminUsername": {
+          "type": "string",
+          "description": "Admin username of the new cluster"
+         },
+         "adminPassword": {
+          "type": "string",
+          "description": "Admin password of the new cluster"
+         },
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "vpcCIDR": {
+          "type": "string",
+          "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         }
+        },
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      },
+      "update": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "enableHibernation": {
+          "type": "string",
+          "description": "enable Hibernation, true to enable, false to disable"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         }
+        },
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      }
+     }
     },
     {
-      "name": "Monitoring Query (Cloud Edition)",
-      "url": "https://api.sap.com/api/monitoring_query/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Storage Gateway (Cloud Edition)",
-      "url": "https://api.sap.com/api/storagegateway/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Storage Gateway (On-Premise Edition)",
-      "url": "https://api.sap.com/api/storagegateway_on_premise/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Pipeline Engine (Cloud Edition)",
-      "url": "https://api.sap.com/api/vflow/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Pipeline Engine (On-Premise Edition)",
-      "url": "https://api.sap.com/api/vflow_on_premise/overview",
-      "apiType": "RESTful"
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "adminUsername": {
+          "type": "string",
+          "description": "Admin username of the new cluster"
+         },
+         "adminPassword": {
+          "type": "string",
+          "description": "Admin password of the new cluster"
+         },
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "vpcCIDR": {
+          "type": "string",
+          "description": "VPC cidr of the new cluster, defaults to 10.0.0.0/16 if not specified"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         },
+         "useCMK": {
+          "type": "string",
+          "description": "Use central key management service"
+         },
+         "keyRef": {
+          "type": "string",
+          "description": "Key reference from central key management service"
+         }
+        },
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      },
+      "update": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "minNodes": {
+          "type": "string",
+          "description": "The minimum number of nodes"
+         },
+         "maxNodes": {
+          "type": "string",
+          "description": "The maximum number of nodes"
+         },
+         "enableHibernation": {
+          "type": "string",
+          "description": "enable Hibernation, true to enable, false to disable"
+         },
+         "hibernationSchedules": {
+          "type": "string",
+          "description": "schedules for hibernation start and wake up"
+         }
+        },
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      }
+     }
     }
-  ]
+   ]
+  },
+  {
+   "name": "tenant",
+   "displayName": "tenant",
+   "category": "SERVICE",
+   "description": "(Optional) Used in combination with the dedicated service plan. Lets you add up to 19 tenants to the default tenant that run on the same cluster and share the same hardware resources. ",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    }
+   ],
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "clusterName": {
+          "type": "string",
+          "description": "Name of the existing cluster where the new tenant will be created"
+         },
+         "tenantName": {
+          "type": "string",
+          "description": "Name of the new tenant"
+         },
+         "adminUsername": {
+          "type": "string",
+          "description": "Admin username of the new tenant"
+         },
+         "adminPassword": {
+          "type": "string",
+          "description": "Admin password of the new tenant"
+         },
+         "resourceQuotas": {
+          "type": "array",
+          "description": "resource quotas for the new tenant",
+          "items": {
+           "type": "object",
+           "properties": {
+            "limit": {
+             "type": "string"
+            },
+            "resource": {
+             "type": "string"
+            },
+            "target": {
+             "type": "string"
+            }
+           }
+          }
+         }
+        },
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      },
+      "update": {
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "resourceQuotas": {
+          "type": "array",
+          "description": "resource quotas for the new tenant",
+          "items": {
+           "type": "object",
+           "properties": {
+            "limit": {
+             "type": "string"
+            },
+            "resource": {
+             "type": "string"
+            },
+            "target": {
+             "type": "string"
+            }
+           }
+          }
+         }
+        },
+        "$schema": "http://json-schema.org/draft-04/schema#"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "CA-DI"
+  },
+  {
+   "value": "CA-DI-DH"
+  },
+  {
+   "value": "CA-DI-DL"
+  },
+  {
+   "value": "CA-DI-ML"
+  },
+  {
+   "value": "CA-DI-OPS"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Metadata Management (Cloud Edition)",
+   "url": "https://api.sap.com/api/metadata/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Monitoring Query (Cloud Edition)",
+   "url": "https://api.sap.com/api/monitoring_query/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Storage Gateway (Cloud Edition)",
+   "url": "https://api.sap.com/api/storagegateway/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Storage Gateway (On-Premise Edition)",
+   "url": "https://api.sap.com/api/storagegateway_on_premise/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Pipeline Engine (Cloud Edition)",
+   "url": "https://api.sap.com/api/vflow/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Pipeline Engine (On-Premise Edition)",
+   "url": "https://api.sap.com/api/vflow_on_premise/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

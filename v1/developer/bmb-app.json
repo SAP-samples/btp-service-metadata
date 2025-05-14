@@ -1,33 +1,33 @@
 {
-  "name": "bmb-app",
-  "displayName": "business process model connector for SAP Signavio solutions",
-  "description": "Synchronize business process models between SAP Signavio Process Manager and SAP Solution Manager",
-  "icon": null,
-  "links": [],
-  "servicePlans": [
+ "name": "bmb-app",
+ "displayName": "business process model connector for SAP Signavio solutions",
+ "description": "Synchronize business process models between SAP Signavio Process Manager and SAP Solution Manager",
+ "icon": null,
+ "links": [],
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "Free",
+   "category": "APPLICATION",
+   "description": "free",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "Free",
-      "category": "APPLICATION",
-      "description": "free",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

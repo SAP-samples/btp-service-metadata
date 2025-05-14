@@ -1,62 +1,62 @@
 {
-  "name": "category-management-api",
-  "displayName": "SAP Ariba Category Management",
-  "description": "SAP Ariba Category Management",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
-  "links": [
+ "name": "category-management-api",
+ "displayName": "SAP Ariba Category Management",
+ "description": "SAP Ariba Category Management",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+ "links": [
+  {
+   "value": "https://help.sap.com/docs/CATMAN",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "api-access",
+   "displayName": "api-access",
+   "category": "SERVICE",
+   "description": "api-access",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/docs/CATMAN",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    }
-  ],
-  "servicePlans": [
-    {
-      "name": "api-access",
-      "displayName": "api-access",
-      "category": "SERVICE",
-      "description": "api-access",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "eu30",
+     "name": "cf-eu30"
     },
     {
-      "name": "scim",
-      "displayName": "scim",
-      "category": "SERVICE",
-      "description": "Access to SCIM API",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  },
+  {
+   "name": "scim",
+   "displayName": "scim",
+   "category": "SERVICE",
+   "description": "Access to SCIM API",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

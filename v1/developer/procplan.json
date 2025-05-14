@@ -1,72 +1,72 @@
 {
-  "name": "procplan",
-  "displayName": "SAP Ariba Procurement Planning",
-  "description": "SAP Ariba Procurement Planning",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic2FwLXNfNC1oYW5hLWZvci1wcm9jdXJlbWVudC1wbGFubmluZyIgZGF0YS1uYW1lPSJzYXAtcy80LWhhbmEtZm9yLXByb2N1cmVtZW50LXBsYW5uaW5nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NiA1NiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwNTNiNzA7fS5jbHMtMntmaWxsOiMwYTZlZDE7fTwvc3R5bGU+PC9kZWZzPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIyNi4yNDUgMzIuNDg1IDI2LjI0NSAzNS4yMTUgMjEuMjA1IDMyLjcyNSAyMS4yMDUgMjkuOTY1IDI2LjI0NSAzMi40ODUiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMzguMjE1IDIxLjIwNSAzOC4yMTUgMzQuNzk1IDI3Ljk4NSAzOS45NTUgMTcuNzg1IDM0Ljc5NSAxNy43ODUgMjEuMjA1IDIxLjIzNSAxOS40NjUgMjIuODU1IDE4LjYyNSAyNS43MDUgMjAuMDM1IDMzLjE0NSAyMy43MjUgMzMuMTQ1IDI5LjQ4NSAzMC44MzUgMzAuNTk1IDMwLjgzNSAyNS4xMzUgMjIuODg1IDIxLjE3NSAyMC4wMzUgMjIuNTU1IDIwLjAzNSAzMy40NzUgMjAuNjk1IDMzLjgwNSAyNy45ODUgMzcuNDA1IDM1LjkzNSAzMy40NzUgMzUuOTM1IDIyLjU1NSAyNy45ODUgMTguNTk1IDI2LjY2NSAxOS4yNTUgMjQuMTE1IDE3Ljk2NSAyNC43NzUgMTcuNjM1IDI3Ljk4NSAxNi4wNDUgMzguMjE1IDIxLjIwNSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ4LjE2LDIzLjU2QTIwLjc0MywyMC43NDMsMCwwLDAsMzIuNDQsNy44NGE0LjQ4Nyw0LjQ4NywwLDAsMC04Ljg4LDBBMjAuNzQzLDIwLjc0MywwLDAsMCw3Ljg0LDIzLjU2YTQuNDg3LDQuNDg3LDAsMCwwLDAsOC44OEEyMC43NDMsMjAuNzQzLDAsMCwwLDIzLjU2LDQ4LjE2YTQuNDg3LDQuNDg3LDAsMCwwLDguODgsMEEyMC43NDMsMjAuNzQzLDAsMCwwLDQ4LjE2LDMyLjQ0YTQuNDg3LDQuNDg3LDAsMCwwLDAtOC44OFpNMjgsNi4yNWEyLjIyMSwyLjIyMSwwLDAsMSwxLjk4LDEuMjMsMiwyLDAsMCwxLC4yNywxLjAyLDIuNDU2LDIuNDU2LDAsMCwxLS4zNiwxLjIzLDIuMjYxLDIuMjYxLDAsMCwxLTMuNzgsMCwyLjQ1NiwyLjQ1NiwwLDAsMS0uMzYtMS4yMywyLDIsMCwwLDEsLjI3LTEuMDJBMi4yMjEsMi4yMjEsMCwwLDEsMjgsNi4yNVpNNy40OCwyOS45OGEyLjIwOSwyLjIwOSwwLDAsMSwwLTMuOTYsMiwyLDAsMCwxLDEuMDItLjI3LDIuNDU2LDIuNDU2LDAsMCwxLDEuMjMuMzYsMi4yNjEsMi4yNjEsMCwwLDEsMCwzLjc4LDIuNDU2LDIuNDU2LDAsMCwxLTEuMjMuMzZBMiwyLDAsMCwxLDcuNDgsMjkuOThaTTI4LDQ5Ljc1YTIuMjIxLDIuMjIxLDAsMCwxLTEuOTgtMS4yMywyLDIsMCwwLDEtLjI3LTEuMDIsMi40NTYsMi40NTYsMCwwLDEsLjM2LTEuMjMsMi4yNjEsMi4yNjEsMCwwLDEsMy43OCwwLDIuNDU2LDIuNDU2LDAsMCwxLC4zNiwxLjIzLDIsMiwwLDAsMS0uMjcsMS4wMkEyLjIyMSwyLjIyMSwwLDAsMSwyOCw0OS43NVptNC4xNy0zLjg3YTQuNDU5LDQuNDU5LDAsMCwwLTguMzQsMEExOC40NDksMTguNDQ5LDAsMCwxLDEwLjEyLDMyLjE3YTQuNDU5LDQuNDU5LDAsMCwwLDAtOC4zNEExOC40NDksMTguNDQ5LDAsMCwxLDIzLjgzLDEwLjEyYTQuNDU5LDQuNDU5LDAsMCwwLDguMzQsMEExOC40NDksMTguNDQ5LDAsMCwxLDQ1Ljg4LDIzLjgzYTQuNDU5LDQuNDU5LDAsMCwwLDAsOC4zNEExOC40NDksMTguNDQ5LDAsMCwxLDMyLjE3LDQ1Ljg4Wm0xNi4zNS0xNS45YTIsMiwwLDAsMS0xLjAyLjI3LDIuNDU2LDIuNDU2LDAsMCwxLTEuMjMtLjM2LDIuMjYxLDIuMjYxLDAsMCwxLDAtMy43OCwyLjQ1NiwyLjQ1NiwwLDAsMSwxLjIzLS4zNiwyLDIsMCwwLDEsMS4wMi4yNywyLjIwOSwyLjIwOSwwLDAsMSwwLDMuOTZaIi8+PC9zdmc+",
-  "links": [
+ "name": "procplan",
+ "displayName": "SAP Ariba Procurement Planning",
+ "description": "SAP Ariba Procurement Planning",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyBpZD0ic2FwLXNfNC1oYW5hLWZvci1wcm9jdXJlbWVudC1wbGFubmluZyIgZGF0YS1uYW1lPSJzYXAtcy80LWhhbmEtZm9yLXByb2N1cmVtZW50LXBsYW5uaW5nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NiA1NiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwNTNiNzA7fS5jbHMtMntmaWxsOiMwYTZlZDE7fTwvc3R5bGU+PC9kZWZzPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIyNi4yNDUgMzIuNDg1IDI2LjI0NSAzNS4yMTUgMjEuMjA1IDMyLjcyNSAyMS4yMDUgMjkuOTY1IDI2LjI0NSAzMi40ODUiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMzguMjE1IDIxLjIwNSAzOC4yMTUgMzQuNzk1IDI3Ljk4NSAzOS45NTUgMTcuNzg1IDM0Ljc5NSAxNy43ODUgMjEuMjA1IDIxLjIzNSAxOS40NjUgMjIuODU1IDE4LjYyNSAyNS43MDUgMjAuMDM1IDMzLjE0NSAyMy43MjUgMzMuMTQ1IDI5LjQ4NSAzMC44MzUgMzAuNTk1IDMwLjgzNSAyNS4xMzUgMjIuODg1IDIxLjE3NSAyMC4wMzUgMjIuNTU1IDIwLjAzNSAzMy40NzUgMjAuNjk1IDMzLjgwNSAyNy45ODUgMzcuNDA1IDM1LjkzNSAzMy40NzUgMzUuOTM1IDIyLjU1NSAyNy45ODUgMTguNTk1IDI2LjY2NSAxOS4yNTUgMjQuMTE1IDE3Ljk2NSAyNC43NzUgMTcuNjM1IDI3Ljk4NSAxNi4wNDUgMzguMjE1IDIxLjIwNSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ4LjE2LDIzLjU2QTIwLjc0MywyMC43NDMsMCwwLDAsMzIuNDQsNy44NGE0LjQ4Nyw0LjQ4NywwLDAsMC04Ljg4LDBBMjAuNzQzLDIwLjc0MywwLDAsMCw3Ljg0LDIzLjU2YTQuNDg3LDQuNDg3LDAsMCwwLDAsOC44OEEyMC43NDMsMjAuNzQzLDAsMCwwLDIzLjU2LDQ4LjE2YTQuNDg3LDQuNDg3LDAsMCwwLDguODgsMEEyMC43NDMsMjAuNzQzLDAsMCwwLDQ4LjE2LDMyLjQ0YTQuNDg3LDQuNDg3LDAsMCwwLDAtOC44OFpNMjgsNi4yNWEyLjIyMSwyLjIyMSwwLDAsMSwxLjk4LDEuMjMsMiwyLDAsMCwxLC4yNywxLjAyLDIuNDU2LDIuNDU2LDAsMCwxLS4zNiwxLjIzLDIuMjYxLDIuMjYxLDAsMCwxLTMuNzgsMCwyLjQ1NiwyLjQ1NiwwLDAsMS0uMzYtMS4yMywyLDIsMCwwLDEsLjI3LTEuMDJBMi4yMjEsMi4yMjEsMCwwLDEsMjgsNi4yNVpNNy40OCwyOS45OGEyLjIwOSwyLjIwOSwwLDAsMSwwLTMuOTYsMiwyLDAsMCwxLDEuMDItLjI3LDIuNDU2LDIuNDU2LDAsMCwxLDEuMjMuMzYsMi4yNjEsMi4yNjEsMCwwLDEsMCwzLjc4LDIuNDU2LDIuNDU2LDAsMCwxLTEuMjMuMzZBMiwyLDAsMCwxLDcuNDgsMjkuOThaTTI4LDQ5Ljc1YTIuMjIxLDIuMjIxLDAsMCwxLTEuOTgtMS4yMywyLDIsMCwwLDEtLjI3LTEuMDIsMi40NTYsMi40NTYsMCwwLDEsLjM2LTEuMjMsMi4yNjEsMi4yNjEsMCwwLDEsMy43OCwwLDIuNDU2LDIuNDU2LDAsMCwxLC4zNiwxLjIzLDIsMiwwLDAsMS0uMjcsMS4wMkEyLjIyMSwyLjIyMSwwLDAsMSwyOCw0OS43NVptNC4xNy0zLjg3YTQuNDU5LDQuNDU5LDAsMCwwLTguMzQsMEExOC40NDksMTguNDQ5LDAsMCwxLDEwLjEyLDMyLjE3YTQuNDU5LDQuNDU5LDAsMCwwLDAtOC4zNEExOC40NDksMTguNDQ5LDAsMCwxLDIzLjgzLDEwLjEyYTQuNDU5LDQuNDU5LDAsMCwwLDguMzQsMEExOC40NDksMTguNDQ5LDAsMCwxLDQ1Ljg4LDIzLjgzYTQuNDU5LDQuNDU5LDAsMCwwLDAsOC4zNEExOC40NDksMTguNDQ5LDAsMCwxLDMyLjE3LDQ1Ljg4Wm0xNi4zNS0xNS45YTIsMiwwLDAsMS0xLjAyLjI3LDIuNDU2LDIuNDU2LDAsMCwxLTEuMjMtLjM2LDIuMjYxLDIuMjYxLDAsMCwxLDAtMy43OCwyLjQ1NiwyLjQ1NiwwLDAsMSwxLjIzLS4zNiwyLDIsMCwwLDEsMS4wMi4yNywyLjIwOSwyLjIwOSwwLDAsMSwwLDMuOTZaIi8+PC9zdmc+",
+ "links": [
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_PROCUREMENT_PLANNING/LATEST/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "SAP Ariba Procurement Planning, Production",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://help.sap.com/viewer/product/SAP_PROCUREMENT_PLANNING/LATEST/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "tandd",
+   "displayName": "tandd",
+   "category": "APPLICATION",
+   "description": "SAP Ariba Procurement Planning, Partner Demo and Development",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "SAP Ariba Procurement Planning, Production",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "tandd",
-      "displayName": "tandd",
-      "category": "APPLICATION",
-      "description": "SAP Ariba Procurement Planning, Partner Demo and Development",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "test",
-      "displayName": "test",
-      "category": "APPLICATION",
-      "description": "SAP Ariba Procurement Planning, Test",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "schemas": null
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "supportComponents": [],
-  "apis": []
+   ],
+   "schemas": null
+  },
+  {
+   "name": "test",
+   "displayName": "test",
+   "category": "APPLICATION",
+   "description": "SAP Ariba Procurement Planning, Test",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [],
+ "apis": []
 }

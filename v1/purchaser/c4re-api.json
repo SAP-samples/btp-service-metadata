@@ -1,73 +1,73 @@
 {
-  "name": "c4re-api",
-  "displayName": "SAP Cloud for Real Estate, location management option",
-  "description": "SAP Cloud for Real Estate, location management option",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/79MS2Ck3s3iGFKQ_FnjDPp8J0cnc-aZF8eOwce9qtdgPjf7H_8pcWoJRWYPbZIes.svg",
-  "servicePlans": [
+ "name": "c4re-api",
+ "displayName": "SAP Cloud for Real Estate, location management option",
+ "description": "SAP Cloud for Real Estate, location management option",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/79MS2Ck3s3iGFKQ_FnjDPp8J0cnc-aZF8eOwce9qtdgPjf7H_8pcWoJRWYPbZIes.svg",
+ "servicePlans": [
+  {
+   "name": "read",
+   "displayName": "Readonly",
+   "category": "SERVICE",
+   "description": "Readonly access to C4RE business APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "read",
-      "displayName": "Readonly",
-      "category": "SERVICE",
-      "description": "Readonly access to C4RE business APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8007076",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007079",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007080",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007228",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8007076",
+     "commercialModel": "Subscription"
     },
     {
-      "name": "readwrite",
-      "displayName": "Read & Write",
-      "category": "SERVICE",
-      "description": "Read and write access to C4RE business APIs",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8007076",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007079",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007080",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007228",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "materialNumber": "8007079",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007080",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007228",
+     "commercialModel": "Subscription"
     }
-  ],
-  "certifications": []
+   ]
+  },
+  {
+   "name": "readwrite",
+   "displayName": "Read & Write",
+   "category": "SERVICE",
+   "description": "Read and write access to C4RE business APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8007076",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007079",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007080",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007228",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

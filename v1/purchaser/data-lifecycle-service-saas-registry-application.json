@@ -1,45 +1,45 @@
 {
-  "name": "data-lifecycle-service-saas-registry-application",
-  "displayName": "Data Archiving Application",
-  "description": "Application to generate reports on archived data",
-  "icon": null,
-  "servicePlans": [
+ "name": "data-lifecycle-service-saas-registry-application",
+ "displayName": "Data Archiving Application",
+ "description": "Application to generate reports on archived data",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "APPLICATION",
+   "description": "Application plan of data archiving for Customers",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "default",
-      "category": "APPLICATION",
-      "description": "Application plan of data archiving for Customers",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8011558",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015801",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8011558",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015801",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

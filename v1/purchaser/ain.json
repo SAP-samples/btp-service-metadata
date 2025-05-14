@@ -1,121 +1,121 @@
 {
-  "name": "ain",
-  "displayName": "SAP Business Network Asset Collaboration",
-  "description": "SAP Business Network Asset Collaboration",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/HXhBt7qUYILB4A6MLbpC5kNTcE8k8T6go0efV9X1Wbp0xi8mpxWrATzF6e6Qq7FS.svg",
-  "servicePlans": [
+ "name": "ain",
+ "displayName": "SAP Business Network Asset Collaboration",
+ "description": "SAP Business Network Asset Collaboration",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/HXhBt7qUYILB4A6MLbpC5kNTcE8k8T6go0efV9X1Wbp0xi8mpxWrATzF6e6Qq7FS.svg",
+ "servicePlans": [
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "SERVICE",
+   "description": "SAP Business Network Asset Collaboration - Standard Plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "SERVICE",
-      "description": "SAP Business Network Asset Collaboration - Standard Plan",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8004504",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8004505",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8005333",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006142",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8006143",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007115",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007135",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008442",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008443",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008444",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008939",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008940",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010827",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010958",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014921",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "zalik",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8007874",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8011270",
-          "commercialModel": null
-        },
-        {
-          "materialNumber": "8007131",
-          "commercialModel": null
-        }
-      ]
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8004504",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8004505",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8005333",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006142",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8006143",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007115",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007135",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008442",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008443",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008444",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008939",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008940",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010827",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010958",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014921",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "zalik",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8007874",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8011270",
+     "commercialModel": null
+    },
+    {
+     "materialNumber": "8007131",
+     "commercialModel": null
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

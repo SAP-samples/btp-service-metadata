@@ -1,33 +1,33 @@
 {
-  "name": "grir-service",
-  "displayName": "SAP Goods and Invoice Receipt Reconciliation",
-  "description": "SAP Goods and Invoice Receipt Reconciliation",
-  "icon": null,
-  "servicePlans": [
+ "name": "grir-service",
+ "displayName": "SAP Goods and Invoice Receipt Reconciliation",
+ "description": "SAP Goods and Invoice Receipt Reconciliation",
+ "icon": null,
+ "servicePlans": [
+  {
+   "name": "default",
+   "displayName": "SAP Goods and Invoice Receipt Reconciliation",
+   "category": "SERVICE",
+   "description": "SAP Goods and Invoice Receipt Reconciliation",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "default",
-      "displayName": "SAP Goods and Invoice Receipt Reconciliation",
-      "category": "SERVICE",
-      "description": "SAP Goods and Invoice Receipt Reconciliation",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8006000",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008352",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "eu10",
+     "name": "cf-eu10"
     }
-  ],
-  "certifications": []
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8006000",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008352",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": []
 }

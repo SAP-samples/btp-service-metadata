@@ -1,237 +1,237 @@
 {
-  "name": "omsa-api-service",
-  "displayName": "SAP Order Management for Sourcing and Availability",
-  "description": "SAP Order Management for Sourcing and Availability",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
-  "links": [
+ "name": "omsa-api-service",
+ "displayName": "SAP Order Management for Sourcing and Availability",
+ "description": "SAP Order Management for Sourcing and Availability",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/MYGjJVvhmJtLIlCrBKz-uOMSFrlaSNB0o6xURJol3qsAG8AU46qVVdupdnnMl4Lm.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPOrderManagementForSourcingAndAvailability/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Order Management for Sourcing and Availability | SAP API Business Hub"
+  },
+  {
+   "value": "https://help.sap.com/docs/SAP_Order_Management_for_Sourcing_and_Availability",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/SAP_Order_Management_for_Sourcing_and_Availability/SHIP/en-US",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "client-capacity",
+   "displayName": "client-capacity",
+   "category": "SERVICE",
+   "description": "For accessing the Site Capacity APIs",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPOrderManagementForSourcingAndAvailability/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Order Management for Sourcing and Availability | SAP API Business Hub"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "value": "https://help.sap.com/docs/SAP_Order_Management_for_Sourcing_and_Availability",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/SAP_Order_Management_for_Sourcing_and_Availability/SHIP/en-US",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "client-unprocessed-sales",
+   "displayName": "client-unprocessed-sales",
+   "category": "SERVICE",
+   "description": "For accessing the Unprocessed Sales APIs",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "client-capacity",
-      "displayName": "client-capacity",
-      "category": "SERVICE",
-      "description": "For accessing the Site Capacity APIs",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "name": "client-unprocessed-sales",
-      "displayName": "client-unprocessed-sales",
-      "category": "SERVICE",
-      "description": "For accessing the Unprocessed Sales APIs",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "client-webshop",
-      "displayName": "client-webshop",
-      "category": "SERVICE",
-      "description": "For accessing Sourcing, Reservation, and Availability to Sell by Site APIs",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "custom",
-      "displayName": "custom",
-      "category": "SERVICE",
-      "description": "Plan to define an own set of scopes",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "default",
-      "displayName": "default",
-      "category": "SERVICE",
-      "description": "API Default plan",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
-    },
-    {
-      "name": "tandd",
-      "displayName": "tandd",
-      "category": "SERVICE",
-      "description": "API tandd plan is intended to be used for Test, Demo & Development purposes for partners.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "schemas": null
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "supportComponents": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "client-webshop",
+   "displayName": "client-webshop",
+   "category": "SERVICE",
+   "description": "For accessing Sourcing, Reservation, and Availability to Sell by Site APIs",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "IS-DFO"
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ],
-  "apis": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "custom",
+   "displayName": "custom",
+   "category": "SERVICE",
+   "description": "Plan to define an own set of scopes",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "ATP Snapshots",
-      "url": "https://api.sap.com/api/atpSnapshot_API/overview",
-      "apiType": "RESTful"
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
-      "name": "Available to Sell",
-      "url": "https://api.sap.com/api/ats_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Available to Sell by Site",
-      "url": "https://api.sap.com/api/atsbysite_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Availability Block",
-      "url": "https://api.sap.com/api/availabilityBlock_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Availability Calculation",
-      "url": "https://api.sap.com/api/availabilityCalculation_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Bill Of Material",
-      "url": "https://api.sap.com/api/masterDataBillOfMaterial_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Sites",
-      "url": "https://api.sap.com/api/masterDataSites_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Transportation Aspects",
-      "url": "https://api.sap.com/api/masterDataTransportationAspects_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Sourcing",
-      "url": "https://api.sap.com/api/optimizer_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Products",
-      "url": "https://api.sap.com/api/products_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Reservations",
-      "url": "https://api.sap.com/api/reservations_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Re-sourcing",
-      "url": "https://api.sap.com/api/resourcing_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Site Capacity",
-      "url": "https://api.sap.com/api/statistics_API/overview",
-      "apiType": "RESTful"
-    },
-    {
-      "name": "Unprocessed Products",
-      "url": "https://api.sap.com/api/unprocessedsales_API/overview",
-      "apiType": "RESTful"
+     "region": "us21",
+     "name": "cf-us21"
     }
-  ]
+   ],
+   "schemas": null
+  },
+  {
+   "name": "default",
+   "displayName": "default",
+   "category": "SERVICE",
+   "description": "API Default plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "tandd",
+   "displayName": "tandd",
+   "category": "SERVICE",
+   "description": "API tandd plan is intended to be used for Test, Demo & Development purposes for partners.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "IS-DFO"
+  }
+ ],
+ "apis": [
+  {
+   "name": "ATP Snapshots",
+   "url": "https://api.sap.com/api/atpSnapshot_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Available to Sell",
+   "url": "https://api.sap.com/api/ats_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Available to Sell by Site",
+   "url": "https://api.sap.com/api/atsbysite_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Availability Block",
+   "url": "https://api.sap.com/api/availabilityBlock_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Availability Calculation",
+   "url": "https://api.sap.com/api/availabilityCalculation_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Bill Of Material",
+   "url": "https://api.sap.com/api/masterDataBillOfMaterial_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Sites",
+   "url": "https://api.sap.com/api/masterDataSites_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Transportation Aspects",
+   "url": "https://api.sap.com/api/masterDataTransportationAspects_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Sourcing",
+   "url": "https://api.sap.com/api/optimizer_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Products",
+   "url": "https://api.sap.com/api/products_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Reservations",
+   "url": "https://api.sap.com/api/reservations_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Re-sourcing",
+   "url": "https://api.sap.com/api/resourcing_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Site Capacity",
+   "url": "https://api.sap.com/api/statistics_API/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Unprocessed Products",
+   "url": "https://api.sap.com/api/unprocessedsales_API/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

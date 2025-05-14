@@ -1,1447 +1,1447 @@
 {
-  "name": "kymaruntime",
-  "displayName": "SAP BTP, Kyma runtime",
-  "description": "Kyma Runtime",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/723ogaMzC-ubOE5AlRK-jUA9jEGmB6CqdOBEnPHEli9JF8J_BZLSqPJzxdh5eYU9.svg",
-  "servicePlans": [
+ "name": "kymaruntime",
+ "displayName": "SAP BTP, Kyma runtime",
+ "description": "Kyma Runtime",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/723ogaMzC-ubOE5AlRK-jUA9jEGmB6CqdOBEnPHEli9JF8J_BZLSqPJzxdh5eYU9.svg",
+ "servicePlans": [
+  {
+   "name": "aws",
+   "displayName": "aws",
+   "category": "ENVIRONMENT",
+   "description": "Select Amazon Web Services as the cloud provider where your Kyma cluster is deployed.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "aws",
-      "displayName": "aws",
-      "category": "ENVIRONMENT",
-      "description": "Select Amazon Web Services as the cloud provider where your Kyma cluster is deployed.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "kyma-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap10",
+     "name": "kyma-ap10"
     },
     {
-      "name": "azure",
-      "displayName": "azure",
-      "category": "ENVIRONMENT",
-      "description": "Select Microsoft Azure as the cloud provider where your Kyma cluster is deployed.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "kyma-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007964",
-          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8007978",
-          "commercialModel": "ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011352",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011354",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011359",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011361",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap11",
+     "name": "kyma-ap11"
     },
     {
-      "name": "azure_lite",
-      "displayName": "Kyma Runtime Partner TDD",
-      "category": "ENVIRONMENT",
-      "description": "Kyma Runtime Partner TDD",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "kyma-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8008873",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8012113",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap12",
+     "name": "kyma-ap12"
     },
     {
-      "name": "build-runtime-aws",
-      "displayName": "Kyma Runtime AWS - Build Runtime",
-      "category": "ENVIRONMENT",
-      "description": "Kyma Runtime AWS. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8019321",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap20",
+     "name": "kyma-ap20"
     },
     {
-      "name": "build-runtime-azure",
-      "displayName": "Kyma Runtime Azure - Build Runtime",
-      "category": "ENVIRONMENT",
-      "description": "Kyma Runtime Azure. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8019321",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap21",
+     "name": "kyma-ap21"
     },
     {
-      "name": "build-runtime-gcp",
-      "displayName": "Kyma Runtime GCP - Build Runtime",
-      "category": "ENVIRONMENT",
-      "description": "Kyma Runtime GCP. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8019321",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap30",
+     "name": "kyma-ap30"
     },
     {
-      "name": "default",
-      "displayName": "Kyma Runtime",
-      "category": "ENVIRONMENT",
-      "description": "Kyma Runtime",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        }
-      ],
-      "materialNumberMapping": []
+     "region": "br10",
+     "name": "kyma-br10"
     },
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "ENVIRONMENT",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "kyma-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011146",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "br20",
+     "name": "kyma-br20"
     },
     {
-      "name": "gcp",
-      "displayName": "gcp",
-      "category": "ENVIRONMENT",
-      "description": "Select Google Cloud as the cloud provider where your Kyma cluster is deployed.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap31",
-          "name": "cf-ap31"
-        },
-        {
-          "region": "eu31",
-          "name": "cf-eu31"
-        },
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "kyma-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008456",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8015296",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "br30",
+     "name": "kyma-br30"
     },
     {
-      "name": "sap-converged-cloud",
-      "displayName": "Kyma Runtime SAP Converged Cloud",
-      "category": "ENVIRONMENT",
-      "description": "Kyma Runtime SAP Converged Cloud",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        }
-      ],
-      "materialNumberMapping": []
+     "region": "ca10",
+     "name": "kyma-ca10"
     },
     {
-      "name": "trial",
-      "displayName": "Kyma Runtime Trial",
-      "category": "ENVIRONMENT",
-      "description": "Kyma Runtime Trial",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "kyma-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "kyma-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "kyma-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "kyma-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "kyma-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "kyma-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "kyma-br10"
-        },
-        {
-          "region": "br20",
-          "name": "kyma-br20"
-        },
-        {
-          "region": "br30",
-          "name": "kyma-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "kyma-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "kyma-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "kyma-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "kyma-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "kyma-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "kyma-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "kyma-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "kyma-il30"
-        },
-        {
-          "region": "in30",
-          "name": "kyma-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "kyma-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "kyma-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "kyma-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "kyma-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "kyma-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "kyma-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "kyma-us10"
-        },
-        {
-          "region": "us11",
-          "name": "kyma-us11"
-        },
-        {
-          "region": "us20",
-          "name": "kyma-us20"
-        },
-        {
-          "region": "us21",
-          "name": "kyma-us21"
-        },
-        {
-          "region": "us30",
-          "name": "kyma-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "kyma-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "azure",
+   "displayName": "azure",
+   "category": "ENVIRONMENT",
+   "description": "Select Microsoft Azure as the cloud provider where your Kyma cluster is deployed.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "kyma-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007964",
+     "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+    },
+    {
+     "materialNumber": "8007978",
+     "commercialModel": "ppu_ms_azure_hyperscaler"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011352",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011354",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011359",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011361",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "azure_lite",
+   "displayName": "Kyma Runtime Partner TDD",
+   "category": "ENVIRONMENT",
+   "description": "Kyma Runtime Partner TDD",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "kyma-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008873",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8012113",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "build-runtime-aws",
+   "displayName": "Kyma Runtime AWS - Build Runtime",
+   "category": "ENVIRONMENT",
+   "description": "Kyma Runtime AWS. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8019321",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "build-runtime-azure",
+   "displayName": "Kyma Runtime Azure - Build Runtime",
+   "category": "ENVIRONMENT",
+   "description": "Kyma Runtime Azure. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8019321",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "build-runtime-gcp",
+   "displayName": "Kyma Runtime GCP - Build Runtime",
+   "category": "ENVIRONMENT",
+   "description": "Kyma Runtime GCP. This is a dedicated plan for SAP Build and lets you access the runtime capabilities of the service. Note that if you also use other plans of this service, it will incur charges outside the SAP Build capacity unit metrics.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8019321",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "default",
+   "displayName": "Kyma Runtime",
+   "category": "ENVIRONMENT",
+   "description": "Kyma Runtime",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "materialNumberMapping": []
+  },
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "ENVIRONMENT",
+   "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "kyma-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011146",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "gcp",
+   "displayName": "gcp",
+   "category": "ENVIRONMENT",
+   "description": "Select Google Cloud as the cloud provider where your Kyma cluster is deployed.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap31",
+     "name": "cf-ap31"
+    },
+    {
+     "region": "eu31",
+     "name": "cf-eu31"
+    },
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "kyma-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008456",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8015296",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "sap-converged-cloud",
+   "displayName": "Kyma Runtime SAP Converged Cloud",
+   "category": "ENVIRONMENT",
+   "description": "Kyma Runtime SAP Converged Cloud",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    }
+   ],
+   "materialNumberMapping": []
+  },
+  {
+   "name": "trial",
+   "displayName": "Kyma Runtime Trial",
+   "category": "ENVIRONMENT",
+   "description": "Kyma Runtime Trial",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "kyma-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "kyma-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "kyma-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "kyma-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "kyma-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "kyma-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "kyma-br10"
+    },
+    {
+     "region": "br20",
+     "name": "kyma-br20"
+    },
+    {
+     "region": "br30",
+     "name": "kyma-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "kyma-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "kyma-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "kyma-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "kyma-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "kyma-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "kyma-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "kyma-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "kyma-il30"
+    },
+    {
+     "region": "in30",
+     "name": "kyma-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "kyma-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "kyma-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "kyma-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "kyma-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "kyma-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "kyma-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "kyma-us10"
+    },
+    {
+     "region": "us11",
+     "name": "kyma-us11"
+    },
+    {
+     "region": "us20",
+     "name": "kyma-us20"
+    },
+    {
+     "region": "us21",
+     "name": "kyma-us21"
+    },
+    {
+     "region": "us30",
+     "name": "kyma-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "ProdDummy19",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }

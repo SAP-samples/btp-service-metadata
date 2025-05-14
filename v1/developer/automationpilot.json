@@ -1,202 +1,202 @@
 {
-  "name": "automationpilot",
-  "displayName": "SAP Automation Pilot",
-  "description": "Automation Pilot",
-  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/9WhP6PAhPmL88xNE70jjLxS-dPQTQwj639FAklFmLyohiMrzn09V7SFK-VFwkpmw.svg",
-  "links": [
+ "name": "automationpilot",
+ "displayName": "SAP Automation Pilot",
+ "description": "Automation Pilot",
+ "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/9WhP6PAhPmL88xNE70jjLxS-dPQTQwj639FAklFmLyohiMrzn09V7SFK-VFwkpmw.svg",
+ "links": [
+  {
+   "value": "https://api.sap.com/package/SAPCloudPlatformAutomationPilot/overview",
+   "classification": "API Hub",
+   "type": "Link",
+   "text": "Overview | SAP Automation Pilot | SAP API Business Hub"
+  },
+  {
+   "value": "https://blogs.sap.com/tags/73554900100800002433",
+   "classification": "Blog",
+   "type": "Link",
+   "text": "Blog"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Automation%20Pilot",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Automation%20Pilot",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/#/serviceCatalog/automation-pilot",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "Discovery Center"
+  },
+  {
+   "value": "https://discovery-center.cloud.sap/serviceCatalog/automation-pilot",
+   "classification": "Discovery Center",
+   "type": "Link",
+   "text": "SAP Discovery Center - Automation Pilot"
+  },
+  {
+   "value": "https://github.com/SAP-samples/automation-pilot-examples",
+   "classification": "External",
+   "type": "Link",
+   "text": "External"
+  },
+  {
+   "value": "https://help.sap.com/doc/DRAFT/bed288d41a7949888b3b92648176f5b4/Cloud/en-US/FSD_Automation_Pilot_service_en.pdf",
+   "classification": "Documentation",
+   "type": "PDF",
+   "text": "Feature Scope Description"
+  },
+  {
+   "value": "https://help.sap.com/docs/AUTOMATION_PILOT",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Help Portal Product Page"
+  },
+  {
+   "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/170767a9fb874244b2caaa3730a6ec6d.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Security"
+  },
+  {
+   "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/4536e41c57aa442095ccbac977965f26.htmll",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What is SAP Automation Pilot"
+  },
+  {
+   "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/76e77c4563d042b2b46f6c622be3a091.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Initial Setup"
+  },
+  {
+   "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/e0809493f059463aa4fa3f3880224683.html",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "What's New"
+  },
+  {
+   "value": "https://readiness-at-scale.enable-now.cloud.sap/pub/20230621_ras/index.html?show=book!BO_EC8330B09B97CDBE#slide!SL_FF1D168DACDDD4BA",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Release Navigator"
+  },
+  {
+   "value": "https://help.sap.com/viewer/product/AUTOMATION_PILOT",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
+   "classification": "Legal",
+   "type": "Link",
+   "text": "Legal"
+  },
+  {
+   "value": "https://www.youtube.com/embed/BIS_OK1ZNXI",
+   "classification": "External",
+   "type": "Link",
+   "text": "SAP Automation Pilot - Introduction"
+  }
+ ],
+ "servicePlans": [
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "APPLICATION",
+   "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "value": "https://api.sap.com/package/SAPCloudPlatformAutomationPilot/overview",
-      "classification": "API Hub",
-      "type": "Link",
-      "text": "Overview | SAP Automation Pilot | SAP API Business Hub"
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "value": "https://blogs.sap.com/tags/73554900100800002433",
-      "classification": "Blog",
-      "type": "Link",
-      "text": "Blog"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Automation%20Pilot",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Blog Posts"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Automation%20Pilot",
-      "classification": "SAP Community",
-      "type": "Link",
-      "text": "SAP Community Questions and Answers"
+     "region": "sa30",
+     "name": "cf-sa30"
     },
     {
-      "value": "https://discovery-center.cloud.sap/#/serviceCatalog/automation-pilot",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "Discovery Center"
-    },
-    {
-      "value": "https://discovery-center.cloud.sap/serviceCatalog/automation-pilot",
-      "classification": "Discovery Center",
-      "type": "Link",
-      "text": "SAP Discovery Center - Automation Pilot"
-    },
-    {
-      "value": "https://github.com/SAP-samples/automation-pilot-examples",
-      "classification": "External",
-      "type": "Link",
-      "text": "External"
-    },
-    {
-      "value": "https://help.sap.com/doc/DRAFT/bed288d41a7949888b3b92648176f5b4/Cloud/en-US/FSD_Automation_Pilot_service_en.pdf",
-      "classification": "Documentation",
-      "type": "PDF",
-      "text": "Feature Scope Description"
-    },
-    {
-      "value": "https://help.sap.com/docs/AUTOMATION_PILOT",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Help Portal Product Page"
-    },
-    {
-      "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/170767a9fb874244b2caaa3730a6ec6d.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Security"
-    },
-    {
-      "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/4536e41c57aa442095ccbac977965f26.htmll",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What is SAP Automation Pilot"
-    },
-    {
-      "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/76e77c4563d042b2b46f6c622be3a091.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Initial Setup"
-    },
-    {
-      "value": "https://help.sap.com/docs/AUTOMATION_PILOT/de3900c419f5492a8802274c17e07049/e0809493f059463aa4fa3f3880224683.html",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "What's New"
-    },
-    {
-      "value": "https://readiness-at-scale.enable-now.cloud.sap/pub/20230621_ras/index.html?show=book!BO_EC8330B09B97CDBE#slide!SL_FF1D168DACDDD4BA",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Release Navigator"
-    },
-    {
-      "value": "https://help.sap.com/viewer/product/AUTOMATION_PILOT",
-      "classification": "Documentation",
-      "type": "Link",
-      "text": "Documentation"
-    },
-    {
-      "value": "https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?tag=language:english&search=Supplement%20Business%20Technology%20Platform&sort=latest_desc",
-      "classification": "Legal",
-      "type": "Link",
-      "text": "Legal"
-    },
-    {
-      "value": "https://www.youtube.com/embed/BIS_OK1ZNXI",
-      "classification": "External",
-      "type": "Link",
-      "text": "SAP Automation Pilot - Introduction"
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "servicePlans": [
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "Standard plan features",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "APPLICATION",
-      "description": "Free plan. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "Standard plan features",
-      "isFree": null,
-      "isBeta": false,
-      "deprecated": false,
-      "deprecationMessage": null,
-      "deprecationDate": null,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "schemas": null
-    }
-  ],
-  "supportComponents": [
-    {
-      "value": "BC-CP-LCM-AP"
-    }
-  ],
-  "apis": [
-    {
-      "name": "Content",
-      "url": "https://api.sap.com/api/APContentAPI/overview",
-      "apiType": "RESTful"
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
-      "name": "Executions",
-      "url": "https://api.sap.com/api/ExecutionsAPI/overview",
-      "apiType": "RESTful"
+     "region": "eu10",
+     "name": "cf-eu10"
     },
     {
-      "name": "Scheduled Executions",
-      "url": "https://api.sap.com/api/ScheduledExecutionsAPI/overview",
-      "apiType": "RESTful"
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ]
+   ],
+   "schemas": null
+  }
+ ],
+ "supportComponents": [
+  {
+   "value": "BC-CP-LCM-AP"
+  }
+ ],
+ "apis": [
+  {
+   "name": "Content",
+   "url": "https://api.sap.com/api/APContentAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Executions",
+   "url": "https://api.sap.com/api/ExecutionsAPI/overview",
+   "apiType": "RESTful"
+  },
+  {
+   "name": "Scheduled Executions",
+   "url": "https://api.sap.com/api/ScheduledExecutionsAPI/overview",
+   "apiType": "RESTful"
+  }
+ ]
 }

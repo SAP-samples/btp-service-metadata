@@ -1,692 +1,692 @@
 {
-  "name": "SAPLaunchpad",
-  "displayName": "SAP Build Work Zone, standard edition",
-  "description": "Provides users with a central point of access to applications from different sources.",
-  "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc3ODcpIj4KPG1hc2sgaWQ9Im1hc2swXzM4NjBfMTc3ODciIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9Ii0yIiB5PSItMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj4KPHBhdGggZD0iTTguNDIzMDYgMTEuOTc0MkM4Ljc4NyAxMi45OTkgOS44NTU3MyAxMy41ODIgMTEuMDUzNiAxMy41ODJDMTIuMjUxNSAxMy41ODIgMTMuMjY1NSAxMi43MTIyIDEzLjU1MTcgMTEuOTMwNkwxNS44MTU5IDUuNjkzMTVDMTYuMjY2OCA0LjQ1MTAxIDE1LjYyODEgMy4wNzc1NiAxNC4zODkzIDIuNjI1NDZDMTMuMjUgMi4yMDk2NiAxMS45OTk5IDIuNzE3OTggMTEuNDU1NyAzLjc2ODU2QzExLjM2OTIgMy45NjQ0OCAxMS4yODA1IDQuMjU5MjIgMTEuMzg2NiA0LjU3MzA2TDEyLjUyNTMgNy43MjM3NUMxMi41ODI0IDcuODgxNzIgMTIuNTA4NSA4LjA1NzEzIDEyLjM1NTcgOC4xMjYxOUMxMi4xNjczIDguMjExNCAxMS45NDE0IDguMSAxMS44OTE3IDcuODk4NzhDMTEuNTI4NSA2LjQyODY3IDEwLjMxMjYgNS40OTA2OCA4LjgwOTQyIDYuMDQ0MjhDNy4zMDYyMiA2LjU5Nzg4IDYuOTg5NzQgOC4wMjU2NyA3LjQ0MDY0IDkuMjY3ODFMOC40MjMwNiAxMS45NzQyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTAuMjMxNTIyIDUuNjgzMTVDLTAuMjE5Mzc0IDQuNDQxMDEgMC40MTkzNTcgMy4wNjc1NSAxLjY1ODE3IDIuNjE1NDVDMi44OTY5OCAyLjE2MzM1IDQuMjY2NzYgMi44MDM4IDQuNzE3NjUgNC4wNDU5NEw2Ljk4MDY4IDEwLjI4MDJDNy40MzE1NyAxMS41MjIzIDYuNzkyODQgMTIuODk1OCA1LjU1NDAzIDEzLjM0NzlDNC4zMTUyMiAxMy44IDIuOTQ1NDQgMTMuMTU5NSAyLjQ5NDU1IDExLjkxNzRMMC4yMzE1MjIgNS42ODMxNVoiIGZpbGw9ImJsYWNrIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8zODYwXzE3Nzg3KSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfMzg2MF8xNzc4NykiPgo8cGF0aCBkPSJNNS40NjQ4OSAtNC4zNDc5NkM4LjgzODM5IC01LjMwNjUgMTIuODI3MSAtMy42NTMgMTUuMjU4NyAwLjcyODI3OEMyMS41MTg3IDkuMTM3NjUgMjcuMTc5OCAxOC45MDM0IDE0LjI4MTMgMjMuNDY3MUMxLjM4Mjg4IDI4LjAzMDcgMS42ODUwMiAxOC42NjkzIC0yLjYxNTgyIDEwLjkyMDFDLTYuOTE2NjYgMy4xNzA4NSAyLjA5MTQgLTMuMzg5NDIgNS40NjQ4OSAtNC4zNDc5NloiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF8zODYwXzE3Nzg3KSIvPgo8L2c+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIxX2RfMzg2MF8xNzc4NykiPgo8cGF0aCBkPSJNMTUuNDI4OCAxMS4yMjM3QzE0LjA5MTUgMTQuMDg4NiAxMC4yNjI4IDE3LjU0MDMgNy42NjU0OSAxNy43NzE0QzIuMzM5NSAxOC45MjI4IC01Ljk1MDA5IDEzLjY1MjUgLTUuMjQxMDcgMTAuMDczM0MtNC41MzIwNSA2LjQ5NDEgMi4yMDY0NyA0Ljc0NTYxIDYuODE5NSA0Ljc4NTI0QzExLjQzMjUgNC44MjQ4NyAxNi43NjYyIDguMzU4NzkgMTUuNDI4OCAxMS4yMjM3WiIgZmlsbD0idXJsKCNwYWludDFfcmFkaWFsXzM4NjBfMTc3ODcpIi8+CjwvZz4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjJfZF8zODYwXzE3Nzg3KSI+CjxwYXRoIGQ9Ik0wLjAzNDk5MjIgOC4xMTE0QzYuMDA3NTQgNi41MzI3IDExLjIxOTUgNi4zMDMxMiAxMS44NDE2IDExLjkwMjFDMTIuMzQ2NCAxNi40NDYxIDUuOTk4OTEgMjAuMTI1MyAxLjQ1NDkxIDIwLjYzMDJDLTMuMDg5MDkgMjEuMTM1IC01LjY4NTE0IDkuNjIzMzcgMC4wMzQ5OTIyIDguMTExNFoiIGZpbGw9InVybCgjcGFpbnQyX3JhZGlhbF8zODYwXzE3Nzg3KSIvPgo8L2c+CjwvZz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzM4NjBfMTc3ODciIHg9Ii00LjQ5ODUzIiB5PSItNS42NTAxNSIgd2lkdGg9IjI4LjA0MSIgaGVpZ2h0PSIzMS41MDYzIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzcxMDk0IiBkeT0iMC4wNzQyMTg3Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNTU2NjQiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3Nzg3Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3ODciIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjFfZF8zODYwXzE3Nzg3IiB4PSItNi4wMjU4OCIgeT0iMy43NDU2MSIgd2lkdGg9IjIzLjE0ODQiIGhlaWdodD0iMTUuMzc0NSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPgo8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIgcmVzdWx0PSJoYXJkQWxwaGEiLz4KPGZlT2Zmc2V0IGR4PSIwLjM3MTA5NCIgZHk9IjAuMDc0MjE4NyIvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIwLjU1NjY0Ii8+CjxmZUNvbXBvc2l0ZSBpbjI9ImhhcmRBbHBoYSIgb3BlcmF0b3I9Im91dCIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC40IDAiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzc4NyIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3Nzg3IiByZXN1bHQ9InNoYXBlIi8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSJmaWx0ZXIyX2RfMzg2MF8xNzc4NyIgeD0iLTMuOTg4MjgiIHk9IjYuMTAwNTkiIHdpZHRoPSIxNy4zNDI4IiBoZWlnaHQ9IjE1LjczMzIiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeD0iMC4zNzEwOTQiIGR5PSIwLjA3NDIxODciLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41NTY2NCIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuNCAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3ODciLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzc4NyIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDBfcmFkaWFsXzM4NjBfMTc3ODciIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi4zMDU0OSAxMS42MDY4KSByb3RhdGUoLTc1LjY1MTMpIHNjYWxlKDI2LjQzNCAyNi4wNjg3KSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxMzQ4RkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDYyMzhEIi8+CjwvcmFkaWFsR3JhZGllbnQ+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQxX3JhZGlhbF8zODYwXzE3Nzg3IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjIzMTA0NiA2LjI5NTExKSByb3RhdGUoMzEuOTgpIHNjYWxlKDI1LjI3MiA0NS42NDMyKSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTE0N0U5Ii8+CjwvcmFkaWFsR3JhZGllbnQ+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQyX3JhZGlhbF8zODYwXzE3Nzg3IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODgwMzk3IDE5LjQ1NzQpIHJvdGF0ZSgtNDYuOTU3OSkgc2NhbGUoMTkuNDcyMSAyNi43ODQpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAwQkJGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMDhCRkYiLz4KPC9yYWRpYWxHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zODYwXzE3Nzg3Ij4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDAwNDg4MjgxIDAuMDAxOTUzMTIpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
-  "servicePlans": [
+ "name": "SAPLaunchpad",
+ "displayName": "SAP Build Work Zone, standard edition",
+ "description": "Provides users with a central point of access to applications from different sources.",
+ "icon": "data:image/svg+xml;base64,data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NjBfMTc3ODcpIj4KPG1hc2sgaWQ9Im1hc2swXzM4NjBfMTc3ODciIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9Ii0yIiB5PSItMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj4KPHBhdGggZD0iTTguNDIzMDYgMTEuOTc0MkM4Ljc4NyAxMi45OTkgOS44NTU3MyAxMy41ODIgMTEuMDUzNiAxMy41ODJDMTIuMjUxNSAxMy41ODIgMTMuMjY1NSAxMi43MTIyIDEzLjU1MTcgMTEuOTMwNkwxNS44MTU5IDUuNjkzMTVDMTYuMjY2OCA0LjQ1MTAxIDE1LjYyODEgMy4wNzc1NiAxNC4zODkzIDIuNjI1NDZDMTMuMjUgMi4yMDk2NiAxMS45OTk5IDIuNzE3OTggMTEuNDU1NyAzLjc2ODU2QzExLjM2OTIgMy45NjQ0OCAxMS4yODA1IDQuMjU5MjIgMTEuMzg2NiA0LjU3MzA2TDEyLjUyNTMgNy43MjM3NUMxMi41ODI0IDcuODgxNzIgMTIuNTA4NSA4LjA1NzEzIDEyLjM1NTcgOC4xMjYxOUMxMi4xNjczIDguMjExNCAxMS45NDE0IDguMSAxMS44OTE3IDcuODk4NzhDMTEuNTI4NSA2LjQyODY3IDEwLjMxMjYgNS40OTA2OCA4LjgwOTQyIDYuMDQ0MjhDNy4zMDYyMiA2LjU5Nzg4IDYuOTg5NzQgOC4wMjU2NyA3LjQ0MDY0IDkuMjY3ODFMOC40MjMwNiAxMS45NzQyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTAuMjMxNTIyIDUuNjgzMTVDLTAuMjE5Mzc0IDQuNDQxMDEgMC40MTkzNTcgMy4wNjc1NSAxLjY1ODE3IDIuNjE1NDVDMi44OTY5OCAyLjE2MzM1IDQuMjY2NzYgMi44MDM4IDQuNzE3NjUgNC4wNDU5NEw2Ljk4MDY4IDEwLjI4MDJDNy40MzE1NyAxMS41MjIzIDYuNzkyODQgMTIuODk1OCA1LjU1NDAzIDEzLjM0NzlDNC4zMTUyMiAxMy44IDIuOTQ1NDQgMTMuMTU5NSAyLjQ5NDU1IDExLjkxNzRMMC4yMzE1MjIgNS42ODMxNVoiIGZpbGw9ImJsYWNrIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8zODYwXzE3Nzg3KSI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfMzg2MF8xNzc4NykiPgo8cGF0aCBkPSJNNS40NjQ4OSAtNC4zNDc5NkM4LjgzODM5IC01LjMwNjUgMTIuODI3MSAtMy42NTMgMTUuMjU4NyAwLjcyODI3OEMyMS41MTg3IDkuMTM3NjUgMjcuMTc5OCAxOC45MDM0IDE0LjI4MTMgMjMuNDY3MUMxLjM4Mjg4IDI4LjAzMDcgMS42ODUwMiAxOC42NjkzIC0yLjYxNTgyIDEwLjkyMDFDLTYuOTE2NjYgMy4xNzA4NSAyLjA5MTQgLTMuMzg5NDIgNS40NjQ4OSAtNC4zNDc5NloiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF8zODYwXzE3Nzg3KSIvPgo8L2c+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIxX2RfMzg2MF8xNzc4NykiPgo8cGF0aCBkPSJNMTUuNDI4OCAxMS4yMjM3QzE0LjA5MTUgMTQuMDg4NiAxMC4yNjI4IDE3LjU0MDMgNy42NjU0OSAxNy43NzE0QzIuMzM5NSAxOC45MjI4IC01Ljk1MDA5IDEzLjY1MjUgLTUuMjQxMDcgMTAuMDczM0MtNC41MzIwNSA2LjQ5NDEgMi4yMDY0NyA0Ljc0NTYxIDYuODE5NSA0Ljc4NTI0QzExLjQzMjUgNC44MjQ4NyAxNi43NjYyIDguMzU4NzkgMTUuNDI4OCAxMS4yMjM3WiIgZmlsbD0idXJsKCNwYWludDFfcmFkaWFsXzM4NjBfMTc3ODcpIi8+CjwvZz4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjJfZF8zODYwXzE3Nzg3KSI+CjxwYXRoIGQ9Ik0wLjAzNDk5MjIgOC4xMTE0QzYuMDA3NTQgNi41MzI3IDExLjIxOTUgNi4zMDMxMiAxMS44NDE2IDExLjkwMjFDMTIuMzQ2NCAxNi40NDYxIDUuOTk4OTEgMjAuMTI1MyAxLjQ1NDkxIDIwLjYzMDJDLTMuMDg5MDkgMjEuMTM1IC01LjY4NTE0IDkuNjIzMzcgMC4wMzQ5OTIyIDguMTExNFoiIGZpbGw9InVybCgjcGFpbnQyX3JhZGlhbF8zODYwXzE3Nzg3KSIvPgo8L2c+CjwvZz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzM4NjBfMTc3ODciIHg9Ii00LjQ5ODUzIiB5PSItNS42NTAxNSIgd2lkdGg9IjI4LjA0MSIgaGVpZ2h0PSIzMS41MDYzIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHg9IjAuMzcxMDk0IiBkeT0iMC4wNzQyMTg3Ii8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjAuNTU2NjQiLz4KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjQgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3Nzg3Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3ODciIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjFfZF8zODYwXzE3Nzg3IiB4PSItNi4wMjU4OCIgeT0iMy43NDU2MSIgd2lkdGg9IjIzLjE0ODQiIGhlaWdodD0iMTUuMzc0NSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPgo8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIgcmVzdWx0PSJoYXJkQWxwaGEiLz4KPGZlT2Zmc2V0IGR4PSIwLjM3MTA5NCIgZHk9IjAuMDc0MjE4NyIvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIwLjU1NjY0Ii8+CjxmZUNvbXBvc2l0ZSBpbjI9ImhhcmRBbHBoYSIgb3BlcmF0b3I9Im91dCIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC40IDAiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzc4NyIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDFfZHJvcFNoYWRvd18zODYwXzE3Nzg3IiByZXN1bHQ9InNoYXBlIi8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSJmaWx0ZXIyX2RfMzg2MF8xNzc4NyIgeD0iLTMuOTg4MjgiIHk9IjYuMTAwNTkiIHdpZHRoPSIxNy4zNDI4IiBoZWlnaHQ9IjE1LjczMzIiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeD0iMC4zNzEwOTQiIGR5PSIwLjA3NDIxODciLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMC41NTY2NCIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuNCAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzM4NjBfMTc3ODciLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfMzg2MF8xNzc4NyIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDBfcmFkaWFsXzM4NjBfMTc3ODciIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi4zMDU0OSAxMS42MDY4KSByb3RhdGUoLTc1LjY1MTMpIHNjYWxlKDI2LjQzNCAyNi4wNjg3KSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxMzQ4RkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDYyMzhEIi8+CjwvcmFkaWFsR3JhZGllbnQ+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQxX3JhZGlhbF8zODYwXzE3Nzg3IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjIzMTA0NiA2LjI5NTExKSByb3RhdGUoMzEuOTgpIHNjYWxlKDI1LjI3MiA0NS42NDMyKSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMTk1RkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTE0N0U5Ii8+CjwvcmFkaWFsR3JhZGllbnQ+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQyX3JhZGlhbF8zODYwXzE3Nzg3IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODgwMzk3IDE5LjQ1NzQpIHJvdGF0ZSgtNDYuOTU3OSkgc2NhbGUoMTkuNDcyMSAyNi43ODQpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAwQkJGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMDhCRkYiLz4KPC9yYWRpYWxHcmFkaWVudD4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zODYwXzE3Nzg3Ij4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDAwNDg4MjgxIDAuMDAxOTUzMTIpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+ "servicePlans": [
+  {
+   "name": "foundation",
+   "displayName": "foundation",
+   "category": "APPLICATION",
+   "description": "Sets up the technical requirements for running SAP solutions that utilize the foundation service, such as SAP Start. Please don't manually subscribe to it.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
     {
-      "name": "foundation",
-      "displayName": "foundation",
-      "category": "APPLICATION",
-      "description": "Sets up the technical requirements for running SAP solutions that utilize the foundation service, such as SAP Start. Please don't manually subscribe to it.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": []
+     "region": "ap10",
+     "name": "cf-ap10"
     },
     {
-      "name": "free",
-      "displayName": "free",
-      "category": "APPLICATION",
-      "description": "The free plan has quota restrictions. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8011069",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        }
-      ]
+     "region": "ap11",
+     "name": "cf-ap11"
     },
     {
-      "name": "standard",
-      "displayName": "standard",
-      "category": "APPLICATION",
-      "description": "Build business sites that serve as a unified entry point to applications.",
-      "isFree": null,
-      "isBeta": false,
-      "dataCenters": [
-        {
-          "region": "ap10",
-          "name": "cf-ap10"
-        },
-        {
-          "region": "ap11",
-          "name": "cf-ap11"
-        },
-        {
-          "region": "ap12",
-          "name": "cf-ap12"
-        },
-        {
-          "region": "ap20",
-          "name": "cf-ap20"
-        },
-        {
-          "region": "ap21",
-          "name": "cf-ap21"
-        },
-        {
-          "region": "ap30",
-          "name": "cf-ap30"
-        },
-        {
-          "region": "br10",
-          "name": "cf-br10"
-        },
-        {
-          "region": "br20",
-          "name": "cf-br20"
-        },
-        {
-          "region": "br30",
-          "name": "cf-br30"
-        },
-        {
-          "region": "ca10",
-          "name": "cf-ca10"
-        },
-        {
-          "region": "ca20",
-          "name": "cf-ca20"
-        },
-        {
-          "region": "ch20",
-          "name": "cf-ch20"
-        },
-        {
-          "region": "eu10",
-          "name": "cf-eu10"
-        },
-        {
-          "region": "eu11",
-          "name": "cf-eu11"
-        },
-        {
-          "region": "eu20",
-          "name": "cf-eu20"
-        },
-        {
-          "region": "eu30",
-          "name": "cf-eu30"
-        },
-        {
-          "region": "il30",
-          "name": "cf-il30"
-        },
-        {
-          "region": "in30",
-          "name": "cf-in30"
-        },
-        {
-          "region": "jp10",
-          "name": "cf-jp10"
-        },
-        {
-          "region": "jp20",
-          "name": "cf-jp20"
-        },
-        {
-          "region": "jp30",
-          "name": "cf-jp30"
-        },
-        {
-          "region": "jp31",
-          "name": "cf-jp31"
-        },
-        {
-          "region": "sa30",
-          "name": "cf-sa30"
-        },
-        {
-          "region": "sa31",
-          "name": "cf-sa31"
-        },
-        {
-          "region": "us10",
-          "name": "cf-us10"
-        },
-        {
-          "region": "us11",
-          "name": "cf-us11"
-        },
-        {
-          "region": "us20",
-          "name": "cf-us20"
-        },
-        {
-          "region": "us21",
-          "name": "cf-us21"
-        },
-        {
-          "region": "us30",
-          "name": "cf-us30"
-        }
-      ],
-      "materialNumberMapping": [
-        {
-          "materialNumber": "8005605",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007848",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8007905",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8007964",
-          "commercialModel": "pure_ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8007978",
-          "commercialModel": "ppu_ms_azure_hyperscaler"
-        },
-        {
-          "materialNumber": "8008261",
-          "commercialModel": "ppu_oem"
-        },
-        {
-          "materialNumber": "8008466",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008466",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008476",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008647",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8008946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009206",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009210",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8009282",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8010751",
-          "commercialModel": "ppu"
-        },
-        {
-          "materialNumber": "8010833",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010836",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010840",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010890",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8010946",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8011000",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012264",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012265",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012324",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012331",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012579",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012580",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8012590",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8013660",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014014",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014033",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014044",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014046",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014072",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014155",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014162",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014321",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014371",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014491",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014761",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014771",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014813",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014813",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8014852",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015351",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8015352",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016044",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8016411",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8016421",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017424",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017574",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8017606",
-          "commercialModel": "btpea"
-        },
-        {
-          "materialNumber": "8017640",
-          "commercialModel": "pure_ppu"
-        },
-        {
-          "materialNumber": "8017674",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018418",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018501",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018511",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018831",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018832",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8018834",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019446",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "8019449",
-          "commercialModel": "Subscription"
-        },
-        {
-          "materialNumber": "ProdDummy19",
-          "commercialModel": "Subscription"
-        }
-      ]
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
     }
-  ],
-  "certifications": [
-    "C5",
-    "ISO 22301",
-    "ISO 27001",
-    "ISO 27017",
-    "ISO 27018",
-    "SOC 1",
-    "SOC 2"
-  ]
+   ],
+   "materialNumberMapping": []
+  },
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "APPLICATION",
+   "description": "The free plan has quota restrictions. Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked in the Additional Links tab displayed in the Service tile.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8011069",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    }
+   ]
+  },
+  {
+   "name": "standard",
+   "displayName": "standard",
+   "category": "APPLICATION",
+   "description": "Build business sites that serve as a unified entry point to applications.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "br30",
+     "name": "cf-br30"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "jp30",
+     "name": "cf-jp30"
+    },
+    {
+     "region": "jp31",
+     "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007964",
+     "commercialModel": "pure_ppu_ms_azure_hyperscaler"
+    },
+    {
+     "materialNumber": "8007978",
+     "commercialModel": "ppu_ms_azure_hyperscaler"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8008466",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008466",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008476",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008647",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009206",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009210",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8010833",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010836",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010840",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010890",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8010946",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8011000",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012264",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012265",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012324",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012331",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012579",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012580",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012590",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8013660",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014014",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014033",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014044",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014046",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014072",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014155",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014162",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014321",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014371",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014491",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014761",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014771",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014813",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014813",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8014852",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015351",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8015352",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8016411",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8016421",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017424",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017574",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8017674",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018418",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018501",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018511",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018831",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018832",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8018834",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019446",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019449",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "ProdDummy19",
+     "commercialModel": "Subscription"
+    }
+   ]
+  }
+ ],
+ "certifications": [
+  "C5",
+  "ISO 22301",
+  "ISO 27001",
+  "ISO 27017",
+  "ISO 27018",
+  "SOC 1",
+  "SOC 2"
+ ]
 }
