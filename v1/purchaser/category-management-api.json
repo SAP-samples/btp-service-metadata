@@ -37,6 +37,30 @@
    ]
   },
   {
+   "name": "public-api",
+   "displayName": "public-api",
+   "category": "SERVICE",
+   "description": "Access to SAP Ariba Category Management Public APIs",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8015105",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
    "name": "scim",
    "displayName": "scim",
    "category": "SERVICE",
