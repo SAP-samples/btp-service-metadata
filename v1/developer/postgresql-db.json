@@ -315,6 +315,10 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -1247,6 +1251,297 @@
           "default": 7,
           "minimum": 1,
           "maximum": 7
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           }
+          },
+          "uniqueItems": true
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-premium-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64,
+           128,
+           256,
+           384
+          ]
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
+          "type": "boolean"
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
+          "type": "integer"
+         },
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "11",
+           "12",
+           "13",
+           "14",
+           "15",
+           "16"
+          ]
+         },
+         "audit_log_level": {
+          "description": "Defines which classes of statements will be logged by session audit logging",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "ALL",
+            "DDL",
+            "FUNCTION",
+            "MISC",
+            "NONE",
+            "READ",
+            "ROLE",
+            "WRITE"
+           ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 7
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
+          "type": "object",
+          "properties": {
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           }
+          }
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           }
+          },
+          "uniqueItems": true
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-premium-create-binding.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "enable_session_replication": {
+          "description": "Enables session replication for database migrations",
+          "type": "boolean",
+          "default": false
+         },
+         "show_cert_url": {
+          "description": "Adds server and client certificate urls in the VCAP credentials",
+          "type": "boolean",
+          "default": false
+         }
+        }
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-premium-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64,
+           128,
+           256,
+           384
+          ],
+          "default": 8
+         },
+         "audit_log_level": {
+          "description": "Defines which classes of statements will be logged by session audit logging",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "ALL",
+            "DDL",
+            "FUNCTION",
+            "MISC",
+            "NONE",
+            "READ",
+            "ROLE",
+            "WRITE"
+           ]
+          },
+          "minItems": 1,
+          "default": [
+           "ROLE",
+           "DDL"
+          ],
+          "uniqueItems": true
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance",
+          "type": "integer",
+          "minimum": 10,
+          "default": 20
+         },
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 15",
+          "type": "string",
+          "enum": [
+           "11",
+           "12",
+           "13",
+           "14",
+           "15",
+           "16"
+          ],
+          "default": "15"
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+          "type": "boolean",
+          "default": true
+         },
+         "locale": {
+          "description": "Indicates the locale for the instance (TODO)",
+          "type": "string",
+          "default": "en_US"
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
+          "type": "object",
+          "properties": {
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           }
+          }
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "default": 7,
+          "minimum": 1,
+          "maximum": 7
          }
         }
        }
@@ -1637,297 +1932,6 @@
           "type": "integer",
           "minimum": 7,
           "maximum": 35
-         }
-        },
-        "_load_current_config": true
-       }
-      }
-     }
-    },
-    {
-     "service_binding": {
-      "create": {
-       "parameters": {
-        "$id": "http://example.com/schemas/postgres-premium-create-binding.json",
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
-         "enable_session_replication": {
-          "description": "Enables session replication for database migrations",
-          "type": "boolean",
-          "default": false
-         },
-         "show_cert_url": {
-          "description": "Adds server and client certificate urls in the VCAP credentials",
-          "type": "boolean",
-          "default": false
-         }
-        }
-       }
-      }
-     },
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$id": "http://example.com/schemas/postgres-premium-create.json",
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
-         "memory": {
-          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-          "type": "integer",
-          "enum": [
-           8,
-           16,
-           32,
-           64,
-           128,
-           256,
-           384
-          ],
-          "default": 8
-         },
-         "audit_log_level": {
-          "description": "Defines which classes of statements will be logged by session audit logging",
-          "type": "array",
-          "items": {
-           "type": "string",
-           "enum": [
-            "ALL",
-            "DDL",
-            "FUNCTION",
-            "MISC",
-            "NONE",
-            "READ",
-            "ROLE",
-            "WRITE"
-           ]
-          },
-          "minItems": 1,
-          "default": [
-           "ROLE",
-           "DDL"
-          ],
-          "uniqueItems": true
-         },
-         "storage": {
-          "description": "Amount of storage in GB to be allocated to the instance",
-          "type": "integer",
-          "minimum": 10,
-          "default": 20
-         },
-         "engine_version": {
-          "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 15",
-          "type": "string",
-          "enum": [
-           "11",
-           "12",
-           "13",
-           "14",
-           "15",
-           "16"
-          ],
-          "default": "15"
-         },
-         "multi_az": {
-          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
-          "type": "boolean",
-          "default": true
-         },
-         "locale": {
-          "description": "Indicates the locale for the instance (TODO)",
-          "type": "string",
-          "default": "en_US"
-         },
-         "maintenance_window": {
-          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
-          "type": "object",
-          "properties": {
-           "start_hour_utc": {
-            "description": "Start hour of the time block (in UTC).",
-            "type": "integer",
-            "default": 4,
-            "minimum": 0,
-            "maximum": 23
-           },
-           "day_of_week": {
-            "description": "Day of the week when the PostgreSQL database instance can be patched.",
-            "type": "string",
-            "enum": [
-             "Monday",
-             "Tuesday",
-             "Wednesday",
-             "Thursday",
-             "Friday",
-             "Saturday",
-             "Sunday"
-            ],
-            "default": "Sunday"
-           }
-          }
-         },
-         "backup_retention_period": {
-          "description": "Defines backup retention period for the PostgreSQL database instance",
-          "type": "integer",
-          "default": 7,
-          "minimum": 1,
-          "maximum": 7
-         },
-         "db_parameters": {
-          "description": "Database system configurations",
-          "type": "array",
-          "items": {
-           "type": "object",
-           "properties": {
-            "name": {
-             "description": "Name of the system configuration",
-             "enum": [
-              "max_wal_size",
-              "checkpoint_timeout",
-              "autovacuum_max_workers",
-              "autovacuum_vacuum_scale_factor",
-              "max_locks_per_transaction",
-              "idle_in_transaction_session_timeout",
-              "work_mem",
-              "maintenance_work_mem"
-             ],
-             "type": "string"
-            },
-            "value": {
-             "description": "Value of the system configuration",
-             "type": "string"
-            }
-           }
-          },
-          "uniqueItems": true
-         }
-        }
-       }
-      },
-      "update": {
-       "parameters": {
-        "$id": "http://example.com/schemas/postgres-premium-update.json",
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
-         "memory": {
-          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
-          "type": "integer",
-          "enum": [
-           8,
-           16,
-           32,
-           64,
-           128,
-           256,
-           384
-          ]
-         },
-         "multi_az": {
-          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
-          "type": "boolean"
-         },
-         "storage": {
-          "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
-          "type": "integer"
-         },
-         "engine_version": {
-          "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
-          "type": "string",
-          "enum": [
-           "11",
-           "12",
-           "13",
-           "14",
-           "15",
-           "16"
-          ]
-         },
-         "audit_log_level": {
-          "description": "Defines which classes of statements will be logged by session audit logging",
-          "type": "array",
-          "items": {
-           "type": "string",
-           "enum": [
-            "ALL",
-            "DDL",
-            "FUNCTION",
-            "MISC",
-            "NONE",
-            "READ",
-            "ROLE",
-            "WRITE"
-           ]
-          },
-          "minItems": 1,
-          "uniqueItems": true
-         },
-         "backup_retention_period": {
-          "description": "Defines backup retention period for the PostgreSQL database instance",
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 7
-         },
-         "maintenance_window": {
-          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
-          "type": "object",
-          "properties": {
-           "start_hour_utc": {
-            "description": "Start hour of the time block (in UTC).",
-            "type": "integer",
-            "default": 4,
-            "minimum": 0,
-            "maximum": 23
-           },
-           "day_of_week": {
-            "description": "Day of the week when the PostgreSQL database instance can be patched.",
-            "type": "string",
-            "enum": [
-             "Monday",
-             "Tuesday",
-             "Wednesday",
-             "Thursday",
-             "Friday",
-             "Saturday",
-             "Sunday"
-            ],
-            "default": "Sunday"
-           }
-          }
-         },
-         "db_parameters": {
-          "description": "Database system configurations",
-          "type": "array",
-          "items": {
-           "type": "object",
-           "properties": {
-            "name": {
-             "description": "Name of the system configuration",
-             "enum": [
-              "max_wal_size",
-              "checkpoint_timeout",
-              "autovacuum_max_workers",
-              "autovacuum_vacuum_scale_factor",
-              "max_locks_per_transaction",
-              "idle_in_transaction_session_timeout",
-              "work_mem",
-              "maintenance_work_mem"
-             ],
-             "type": "string"
-            },
-            "value": {
-             "description": "Value of the system configuration",
-             "type": "string"
-            }
-           }
-          },
-          "uniqueItems": true
          }
         },
         "_load_current_config": true
@@ -2418,6 +2422,10 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -3282,6 +3290,245 @@
           "default": 7,
           "minimum": 1,
           "maximum": 7
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           }
+          },
+          "uniqueItems": true
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-standard-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "11",
+           "12",
+           "13",
+           "14",
+           "15",
+           "16"
+          ]
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ]
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
+          "type": "boolean"
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
+          "type": "integer"
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 7
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
+          "type": "object",
+          "properties": {
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           }
+          }
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           }
+          },
+          "uniqueItems": true
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-standard-create-binding.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "enable_session_replication": {
+          "description": "Enables session replication for database migrations",
+          "type": "boolean",
+          "default": false
+         },
+         "show_cert_url": {
+          "description": "Adds server and client certificate urls in the VCAP credentials",
+          "type": "boolean",
+          "default": false
+         }
+        }
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-standard-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ],
+          "default": 2
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance",
+          "type": "integer",
+          "minimum": 10,
+          "default": 20
+         },
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 15",
+          "type": "string",
+          "enum": [
+           "11",
+           "12",
+           "13",
+           "14",
+           "15",
+           "16"
+          ],
+          "default": "15"
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+          "type": "boolean",
+          "default": true
+         },
+         "locale": {
+          "description": "Indicates the locale for the instance (TODO)",
+          "type": "string",
+          "default": "en_US"
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
+          "type": "object",
+          "properties": {
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           }
+          }
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "default": 7,
+          "minimum": 1,
+          "maximum": 7
          }
         }
        }
@@ -3635,245 +3882,6 @@
         "_show_form_view": true,
         "additionalProperties": true,
         "properties": {
-         "enable_session_replication": {
-          "description": "Enables session replication for database migrations",
-          "type": "boolean",
-          "default": false
-         },
-         "show_cert_url": {
-          "description": "Adds server and client certificate urls in the VCAP credentials",
-          "type": "boolean",
-          "default": false
-         }
-        }
-       }
-      }
-     },
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$id": "http://example.com/schemas/postgres-standard-create.json",
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
-         "memory": {
-          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
-          "type": "integer",
-          "enum": [
-           2,
-           4
-          ],
-          "default": 2
-         },
-         "storage": {
-          "description": "Amount of storage in GB to be allocated to the instance",
-          "type": "integer",
-          "minimum": 10,
-          "default": 20
-         },
-         "engine_version": {
-          "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 15",
-          "type": "string",
-          "enum": [
-           "11",
-           "12",
-           "13",
-           "14",
-           "15",
-           "16"
-          ],
-          "default": "15"
-         },
-         "multi_az": {
-          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
-          "type": "boolean",
-          "default": true
-         },
-         "locale": {
-          "description": "Indicates the locale for the instance (TODO)",
-          "type": "string",
-          "default": "en_US"
-         },
-         "maintenance_window": {
-          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
-          "type": "object",
-          "properties": {
-           "start_hour_utc": {
-            "description": "Start hour of the time block (in UTC).",
-            "type": "integer",
-            "default": 4,
-            "minimum": 0,
-            "maximum": 23
-           },
-           "day_of_week": {
-            "description": "Day of the week when the PostgreSQL database instance can be patched.",
-            "type": "string",
-            "enum": [
-             "Monday",
-             "Tuesday",
-             "Wednesday",
-             "Thursday",
-             "Friday",
-             "Saturday",
-             "Sunday"
-            ],
-            "default": "Sunday"
-           }
-          }
-         },
-         "backup_retention_period": {
-          "description": "Defines backup retention period for the PostgreSQL database instance",
-          "type": "integer",
-          "default": 7,
-          "minimum": 1,
-          "maximum": 7
-         },
-         "db_parameters": {
-          "description": "Database system configurations",
-          "type": "array",
-          "items": {
-           "type": "object",
-           "properties": {
-            "name": {
-             "description": "Name of the system configuration",
-             "enum": [
-              "max_wal_size",
-              "checkpoint_timeout",
-              "autovacuum_max_workers",
-              "autovacuum_vacuum_scale_factor",
-              "max_locks_per_transaction",
-              "idle_in_transaction_session_timeout",
-              "work_mem",
-              "maintenance_work_mem"
-             ],
-             "type": "string"
-            },
-            "value": {
-             "description": "Value of the system configuration",
-             "type": "string"
-            }
-           }
-          },
-          "uniqueItems": true
-         }
-        }
-       }
-      },
-      "update": {
-       "parameters": {
-        "$id": "http://example.com/schemas/postgres-standard-update.json",
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
-         "engine_version": {
-          "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
-          "type": "string",
-          "enum": [
-           "11",
-           "12",
-           "13",
-           "14",
-           "15",
-           "16"
-          ]
-         },
-         "memory": {
-          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
-          "type": "integer",
-          "enum": [
-           2,
-           4
-          ]
-         },
-         "multi_az": {
-          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
-          "type": "boolean"
-         },
-         "storage": {
-          "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
-          "type": "integer"
-         },
-         "backup_retention_period": {
-          "description": "Defines backup retention period for the PostgreSQL database instance",
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 7
-         },
-         "maintenance_window": {
-          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance.",
-          "type": "object",
-          "properties": {
-           "start_hour_utc": {
-            "description": "Start hour of the time block (in UTC).",
-            "type": "integer",
-            "default": 4,
-            "minimum": 0,
-            "maximum": 23
-           },
-           "day_of_week": {
-            "description": "Day of the week when the PostgreSQL database instance can be patched.",
-            "type": "string",
-            "enum": [
-             "Monday",
-             "Tuesday",
-             "Wednesday",
-             "Thursday",
-             "Friday",
-             "Saturday",
-             "Sunday"
-            ],
-            "default": "Sunday"
-           }
-          }
-         },
-         "db_parameters": {
-          "description": "Database system configurations",
-          "type": "array",
-          "items": {
-           "type": "object",
-           "properties": {
-            "name": {
-             "description": "Name of the system configuration",
-             "enum": [
-              "max_wal_size",
-              "checkpoint_timeout",
-              "autovacuum_max_workers",
-              "autovacuum_vacuum_scale_factor",
-              "max_locks_per_transaction",
-              "idle_in_transaction_session_timeout",
-              "work_mem",
-              "maintenance_work_mem"
-             ],
-             "type": "string"
-            },
-            "value": {
-             "description": "Value of the system configuration",
-             "type": "string"
-            }
-           }
-          },
-          "uniqueItems": true
-         }
-        },
-        "_load_current_config": true
-       }
-      }
-     }
-    },
-    {
-     "service_binding": {
-      "create": {
-       "parameters": {
-        "$id": "http://example.com/schemas/postgres-standard-create-binding.json",
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
          "enable_cmk": {
           "description": "Enables CMK features on a particular PostgreSQL Instance",
           "type": "boolean",
@@ -4172,6 +4180,10 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -4313,6 +4325,10 @@
    "deprecationMessage": null,
    "deprecationDate": null,
    "dataCenters": [
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
     {
      "region": "ap10",
      "name": "cf-ap10"

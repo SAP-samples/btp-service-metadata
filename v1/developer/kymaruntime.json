@@ -365,7 +365,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -758,7 +758,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -1006,7 +1006,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -1379,7 +1379,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -2137,7 +2137,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -2510,7 +2510,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -2738,7 +2738,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -3091,7 +3091,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -3801,7 +3801,7 @@
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D4s_v5",
               "Standard_D4_v3"
@@ -4100,7 +4100,7 @@
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D4s_v5",
               "Standard_D4_v3"
@@ -4254,7 +4254,7 @@
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D4s_v5",
               "Standard_D4_v3"
@@ -4533,7 +4533,7 @@
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D4s_v5",
               "Standard_D4_v3"
@@ -5188,7 +5188,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -5581,7 +5581,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -5829,7 +5829,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -6202,7 +6202,7 @@
               "m6i.large": "m6i.large (2vCPU, 8GB RAM)",
               "m6i.xlarge": "m6i.xlarge (4vCPU, 16GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "m6i.large",
               "m6i.xlarge",
@@ -6568,7 +6568,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -6941,7 +6941,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -7169,7 +7169,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -7522,7 +7522,7 @@
               "Standard_NC64as_T4_v3": "Standard_NC64as_T4_v3 (4GPU, 64vCPU, 440GB RAM)*",
               "Standard_NC8as_T4_v3": "Standard_NC8as_T4_v3 (1GPU, 8vCPU, 56GB RAM)*"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "Standard_D2s_v5",
               "Standard_D4s_v5",
@@ -7873,7 +7873,7 @@
               "n2-standard-64": "n2-standard-64 (64vCPU, 256GB RAM)",
               "n2-standard-8": "n2-standard-8 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "n2-standard-2",
               "n2-standard-4",
@@ -8230,7 +8230,7 @@
               "n2-standard-64": "n2-standard-64 (64vCPU, 256GB RAM)",
               "n2-standard-8": "n2-standard-8 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "n2-standard-2",
               "n2-standard-4",
@@ -10136,7 +10136,7 @@
               "n2-standard-64": "n2-standard-64 (64vCPU, 256GB RAM)",
               "n2-standard-8": "n2-standard-8 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "n2-standard-2",
               "n2-standard-4",
@@ -10493,7 +10493,7 @@
               "n2-standard-64": "n2-standard-64 (64vCPU, 256GB RAM)",
               "n2-standard-8": "n2-standard-8 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "n2-standard-2",
               "n2-standard-4",
@@ -11070,7 +11070,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -11378,7 +11378,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -11564,7 +11564,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -11872,7 +11872,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -12058,7 +12058,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -12366,7 +12366,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -12552,7 +12552,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -12860,7 +12860,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -13046,7 +13046,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -13354,7 +13354,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -13540,7 +13540,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -13848,7 +13848,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -14034,7 +14034,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",
@@ -14342,7 +14342,7 @@
               "g_c6_m24": "g_c6_m24 (6vCPU, 24GB RAM)",
               "g_c8_m32": "g_c8_m32 (8vCPU, 32GB RAM)"
              },
-             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost.",
+             "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
               "g_c2_m8",
               "g_c4_m16",

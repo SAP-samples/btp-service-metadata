@@ -247,6 +247,15 @@
            "x509, password"
           ],
           "default": "x509"
+         },
+         "binding_format": {
+          "description": "The format of the binding credentials. Compact format supresses advertised resources and quota in binding credentials.",
+          "type": "string",
+          "enum": [
+           "long",
+           "compact"
+          ],
+          "default": "long"
          }
         }
        }
@@ -323,15 +332,6 @@
            "x509, password"
           ],
           "default": "x509"
-         },
-         "binding_format": {
-          "description": "The format of the binding credentials. Compact format supresses advertised resources and quota in binding credentials.",
-          "type": "string",
-          "enum": [
-           "long",
-           "compact"
-          ],
-          "default": "long"
          }
         }
        }
