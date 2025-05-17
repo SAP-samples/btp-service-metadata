@@ -54,7 +54,45 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "role": {
+          "description": "Supported Roles are AuthGroup.API.Admin, AuthGroup.Content.Admin and AuthGroup.API.ApplicationDeveloper",
+          "type": "string",
+          "default": "AuthGroup.API.Admin"
+         }
+        }
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "properties": {
+           "credential-type": {
+            "description": "Supported Credential Type are binding-secret and x509",
+            "type": "string",
+            "default": "binding-secret"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   }
  ],
  "supportComponents": [],
