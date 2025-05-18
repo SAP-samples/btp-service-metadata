@@ -246,6 +246,176 @@
        "parameters": {
         "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
         "$schema": "http://json-schema.org/draft-06/schema#",
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
+    },
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
         "additionalProperties": true,
         "properties": {
          "backend": {
@@ -431,6 +601,176 @@
     }
    ],
    "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 1,
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 1,
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
+    },
     {
      "service_binding": {
       "create": {
@@ -822,6 +1162,176 @@
        "parameters": {
         "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
         "$schema": "http://json-schema.org/draft-06/schema#",
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
+    },
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
         "additionalProperties": true,
         "properties": {
          "backend": {
@@ -1007,6 +1517,176 @@
     }
    ],
    "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "ingest": {
+          "properties": {
+           "certValidityDays": {
+            "default": 90,
+            "maximum": 180,
+            "minimum": 1,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "title": "createServiceBinding",
+        "type": "object"
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "default": 2,
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "default": 7,
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "default": false,
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "default": false,
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "createServiceInstance",
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$ref": "#/definitions/check-saml-oidc-are-not-enabled-simultaneously",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "backend": {
+          "additionalProperties": true,
+          "properties": {
+           "max_data_nodes": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "dashboards": {
+          "properties": {
+           "custom_label": {
+            "maxLength": 20,
+            "type": "string"
+           }
+          },
+          "type": "object"
+         },
+         "ingest": {
+          "properties": {
+           "max_instances": {
+            "maximum": 10,
+            "minimum": 2,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "ingest_otlp": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "type": "object"
+         },
+         "retention_period": {
+          "maximum": 90,
+          "minimum": 1,
+          "type": "integer"
+         },
+         "rotate_root_ca": {
+          "type": "boolean"
+         },
+         "saml": {
+          "properties": {
+           "enabled": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "enabled"
+          ],
+          "type": "object"
+         }
+        },
+        "title": "updateServiceInstance",
+        "type": "object"
+       }
+      }
+     }
+    },
     {
      "service_binding": {
       "create": {
