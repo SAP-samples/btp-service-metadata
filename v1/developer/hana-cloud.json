@@ -3138,6 +3138,14 @@
              "type": "object"
             }
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "edition": {
             "default": "cloud",
             "description": "Image edition (cloud vs. orange)",
@@ -3460,6 +3468,14 @@
             },
             "type": "array"
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "enabledservices": {
             "additionalProperties": false,
             "description": "List of services of the HANA to be enabled",
@@ -3575,6 +3591,9 @@
                "customer_initial_source_az": {
                 "type": "string"
                },
+               "customer_secondary_az": {
+                "type": "string"
+               },
                "customer_target_az": {
                 "type": "string"
                },
@@ -3592,6 +3611,9 @@
                 "type": "string"
                },
                "project_name": {
+                "type": "string"
+               },
+               "secondary_az": {
                 "type": "string"
                },
                "source_instance_id": {
@@ -3618,6 +3640,7 @@
                "none",
                "POINT_IN_TIME_RECOVERY",
                "DISASTER_KEEP_AZ_RECOVERY",
+               "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
                "SYSTEM_COPY",
                "TEMPLATE_RECOVERY",
@@ -4589,6 +4612,14 @@
              "type": "object"
             }
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "edition": {
             "default": "cloud",
             "description": "Image edition (cloud vs. orange)",
@@ -4911,6 +4942,14 @@
             },
             "type": "array"
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "enabledservices": {
             "additionalProperties": false,
             "description": "List of services of the HANA to be enabled",
@@ -5026,6 +5065,9 @@
                "customer_initial_source_az": {
                 "type": "string"
                },
+               "customer_secondary_az": {
+                "type": "string"
+               },
                "customer_target_az": {
                 "type": "string"
                },
@@ -5043,6 +5085,9 @@
                 "type": "string"
                },
                "project_name": {
+                "type": "string"
+               },
+               "secondary_az": {
                 "type": "string"
                },
                "source_instance_id": {
@@ -5069,6 +5114,7 @@
                "none",
                "POINT_IN_TIME_RECOVERY",
                "DISASTER_KEEP_AZ_RECOVERY",
+               "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
                "SYSTEM_COPY",
                "TEMPLATE_RECOVERY",
@@ -7972,58 +8018,6 @@
             },
             "type": "object"
            },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "serviceStopped": {
-               "description": "Describes if the system should be running or stopped",
-               "type": "boolean"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "dataEncryption": {
-            "description": "Data Encryption Specifications",
-            "properties": {
-             "keyID": {
-              "description": "Encryption Key GUID",
-              "minLength": 1,
-              "type": "string"
-             },
-             "mode": {
-              "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-              "enum": [
-               "MANAGED_KEY",
-               "DEDICATED_KEY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
            "databaseMappings": {
             "items": {
              "properties": {
@@ -8042,14 +8036,6 @@
              ],
              "type": "object"
             }
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
            },
            "edition": {
             "default": "cloud",
@@ -8070,16 +8056,7 @@
              "dpserver": {
               "type": "boolean"
              },
-             "nlp": {
-              "type": "boolean"
-             },
-             "pal": {
-              "type": "boolean"
-             },
              "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
               "type": "boolean"
              }
             },
@@ -8120,7 +8097,7 @@
             "default": 32,
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 11150,
+            "maximum": 5750,
             "minimum": 32,
             "type": "integer"
            },
@@ -8210,7 +8187,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 55760,
+            "maximum": 28960,
             "minimum": 120,
             "type": "integer"
            },
@@ -8347,61 +8324,6 @@
             },
             "type": "object"
            },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "dataEncryption": {
-            "description": "Data Encryption Specifications",
-            "properties": {
-             "keyID": {
-              "description": "Encryption Key GUID",
-              "minLength": 1,
-              "type": "string"
-             },
-             "mode": {
-              "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-              "enum": [
-               "MANAGED_KEY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
-           },
            "enabledservices": {
             "additionalProperties": false,
             "description": "List of services of the HANA to be enabled",
@@ -8412,16 +8334,7 @@
              "dpserver": {
               "type": "boolean"
              },
-             "nlp": {
-              "type": "boolean"
-             },
-             "pal": {
-              "type": "boolean"
-             },
              "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
               "type": "boolean"
              }
             },
@@ -8456,7 +8369,7 @@
            "memory": {
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 11150,
+            "maximum": 5750,
             "minimum": 32,
             "type": "integer"
            },
@@ -8504,9 +8417,6 @@
                "customer_initial_source_az": {
                 "type": "string"
                },
-               "customer_secondary_az": {
-                "type": "string"
-               },
                "customer_target_az": {
                 "type": "string"
                },
@@ -8524,12 +8434,6 @@
                 "type": "string"
                },
                "project_name": {
-                "type": "string"
-               },
-               "secondary_az": {
-                "type": "string"
-               },
-               "source_instance_id": {
                 "type": "string"
                },
                "target_az": {
@@ -8553,10 +8457,7 @@
                "none",
                "POINT_IN_TIME_RECOVERY",
                "DISASTER_KEEP_AZ_RECOVERY",
-               "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
-               "SYSTEM_COPY",
-               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
@@ -8582,7 +8483,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 55760,
+            "maximum": 28960,
             "minimum": 120,
             "type": "integer"
            },
@@ -11958,751 +11859,6 @@
             "additionalProperties": false,
             "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
             "properties": {
-             "customerInitialReplicaAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the initial replica",
-              "type": "string"
-             },
-             "customerInitialSourceAvailabilityZone": {
-              "description": "This customer mapping zone of the initial source",
-              "type": "string"
-             },
-             "customerPrimaryAvailabilityZone": {
-              "description": "This customer mapping zone of primary instance",
-              "type": "string"
-             },
-             "customerSecondaryAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             },
-             "customerSubscriptionId": {
-              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
-              "type": "string"
-             },
-             "highAvailabilityCrossMultiAZEnabled": {
-              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
-              "type": "boolean"
-             },
-             "initialReplicaAvailabilityZone": {
-              "description": "This zone will be used by the initial replica",
-              "type": "string"
-             },
-             "initialSourceAvailabilityZone": {
-              "description": "This zone will be used by the initial source",
-              "type": "string"
-             },
-             "primaryAvailabilityZone": {
-              "description": "This zone will be used by the primary instance",
-              "type": "string"
-             },
-             "secondaryAvailabilityZone": {
-              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             },
-             "zoneMappingDryrun": {
-              "description": "This is a flag to mark a dry-run provision to get zone mapping result",
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 0,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "serviceStopped": {
-               "description": "Describes if the system should be running or stopped",
-               "type": "boolean"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "databaseMappings": {
-            "items": {
-             "properties": {
-              "organization_guid": {
-               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-               "type": "string"
-              },
-              "space_guid": {
-               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-               "type": "string"
-              }
-             },
-             "required": [
-              "organization_guid",
-              "space_guid"
-             ],
-             "type": "object"
-            }
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
-           },
-           "edition": {
-            "default": "cloud",
-            "description": "Image edition (cloud vs. orange)",
-            "enum": [
-             "cloud",
-             "orange"
-            ],
-            "type": "string"
-           },
-           "enabledservices": {
-            "additionalProperties": false,
-            "description": "List of services of the HANA to be enabled",
-            "properties": {
-             "docstore": {
-              "type": "boolean"
-             },
-             "dpserver": {
-              "type": "boolean"
-             },
-             "nlp": {
-              "type": "boolean"
-             },
-             "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "extensionservices": {
-            "items": {
-             "properties": {
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              },
-              "whitelistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "generateSystemPassword": {
-            "default": false,
-            "description": "Describes if the systempassword should be generated or not.",
-            "type": "boolean"
-           },
-           "memory": {
-            "default": 32,
-            "description": "HANA memory size (RAM) in GB",
-            "format": "int64",
-            "maximum": 5750,
-            "minimum": 32,
-            "type": "integer"
-           },
-           "memoryScaleOut": {
-            "description": "HANA memory size (RAM) in GB for scale out systems",
-            "format": "int64",
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "plugins": {
-            "description": "HANA Plugins list configured for HANA instance",
-            "items": {
-             "properties": {
-              "name": {
-               "description": "plugin version for installation",
-               "type": "string"
-              }
-             }
-            },
-            "type": "array"
-           },
-           "productVersion": {
-            "additionalProperties": false,
-            "description": "HANA Product Version",
-            "properties": {
-             "id": {
-              "type": "string"
-             },
-             "releaseCycle": {
-              "type": "string"
-             },
-             "track": {
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "requestedOperation": {
-            "additionalProperties": false,
-            "properties": {
-             "arguments": {
-              "additionalProperties": false,
-              "description": "List of operation arguments",
-              "properties": {
-               "backup_encryption_passphrase": {
-                "type": "string"
-               },
-               "hdl_access_token": {
-                "type": "string"
-               },
-               "project_name": {
-                "type": "string"
-               },
-               "template_name": {
-                "type": "string"
-               },
-               "template_storage_endpoint": {
-                "type": "string"
-               }
-              },
-              "type": "object"
-             },
-             "name": {
-              "description": "create instance for template recovery",
-              "enum": [
-               "none",
-               "TEMPLATE_RECOVERY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "slaLevel": {
-            "description": "Availability of the HANA instance",
-            "enum": [
-             "standard",
-             "elevated"
-            ],
-            "type": "string"
-           },
-           "storage": {
-            "description": "Size of the Storage in GB",
-            "format": "int64",
-            "maximum": 28960,
-            "minimum": 120,
-            "type": "integer"
-           },
-           "systempassword": {
-            "default": "",
-            "description": "Password to be set for tenant",
-            "minLength": 8,
-            "type": "string"
-           },
-           "update_strategy": {
-            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
-            "enum": [
-             "with_restart",
-             "without_restart"
-            ]
-           },
-           "vcpu": {
-            "description": "Number of vCPUs used by HANA",
-            "minimum": 2,
-            "type": "integer"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           }
-          },
-          "required": [
-           "edition",
-           "memory"
-          ],
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      },
-      "update": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "default": {},
-          "defaultProperties": [],
-          "properties": {
-           "additionalWorkers": {
-            "description": "Number of additional workers for scale out systems",
-            "format": "int64",
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "availabilityZonePlacement": {
-            "additionalProperties": false,
-            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
-            "properties": {
-             "customerInitialReplicaAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the initial replica",
-              "type": "string"
-             },
-             "customerInitialSourceAvailabilityZone": {
-              "description": "This customer mapping zone of the initial source",
-              "type": "string"
-             },
-             "customerPrimaryAvailabilityZone": {
-              "description": "This customer mapping zone of primary instance",
-              "type": "string"
-             },
-             "customerSecondaryAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             },
-             "customerSubscriptionId": {
-              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
-              "type": "string"
-             },
-             "highAvailabilityCrossMultiAZEnabled": {
-              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
-              "type": "boolean"
-             },
-             "initialReplicaAvailabilityZone": {
-              "description": "This zone will be used by the initial replica",
-              "type": "string"
-             },
-             "initialSourceAvailabilityZone": {
-              "description": "This zone will be used by the initial source",
-              "type": "string"
-             },
-             "primaryAvailabilityZone": {
-              "description": "This zone will be used by the primary instance",
-              "type": "string"
-             },
-             "secondaryAvailabilityZone": {
-              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 0,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
-           },
-           "enabledservices": {
-            "additionalProperties": false,
-            "description": "List of services of the HANA to be enabled",
-            "properties": {
-             "docstore": {
-              "type": "boolean"
-             },
-             "dpserver": {
-              "type": "boolean"
-             },
-             "nlp": {
-              "type": "boolean"
-             },
-             "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "extensionservices": {
-            "items": {
-             "properties": {
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              },
-              "privateLinkAllowlist": {
-               "items": {
-                "maxLength": 40,
-                "type": "string"
-               },
-               "maxItems": 100,
-               "type": "array"
-              },
-              "whitelistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "memory": {
-            "description": "HANA memory size (RAM) in GB",
-            "format": "int64",
-            "maximum": 5750,
-            "minimum": 32,
-            "type": "integer"
-           },
-           "plugins": {
-            "description": "HANA Plugins list configured for HANA instance",
-            "items": {
-             "properties": {
-              "name": {
-               "description": "plugin version for installation",
-               "type": "string"
-              }
-             }
-            },
-            "type": "array"
-           },
-           "privateLinkAllowlist": {
-            "items": {
-             "maxLength": 40,
-             "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-           },
-           "productVersion": {
-            "additionalProperties": false,
-            "description": "HANA Product Version",
-            "properties": {
-             "id": {
-              "type": "string"
-             },
-             "releaseCycle": {
-              "type": "string"
-             },
-             "track": {
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "requestedOperation": {
-            "additionalProperties": false,
-            "properties": {
-             "arguments": {
-              "additionalProperties": false,
-              "description": "List of operation arguments",
-              "properties": {
-               "backup_encryption_passphrase": {
-                "type": "string"
-               },
-               "customer_initial_replica_az": {
-                "type": "string"
-               },
-               "customer_initial_source_az": {
-                "type": "string"
-               },
-               "customer_secondary_az": {
-                "type": "string"
-               },
-               "customer_target_az": {
-                "type": "string"
-               },
-               "dummyForFeatureFlags": {},
-               "ha_cross_multi_az_enabled": {
-                "type": "boolean"
-               },
-               "hdl_access_token": {
-                "type": "string"
-               },
-               "initial_replica_az": {
-                "type": "string"
-               },
-               "initial_source_az": {
-                "type": "string"
-               },
-               "project_name": {
-                "type": "string"
-               },
-               "secondary_az": {
-                "type": "string"
-               },
-               "source_instance_id": {
-                "type": "string"
-               },
-               "target_az": {
-                "type": "string"
-               },
-               "target_timestamp": {
-                "type": "string"
-               },
-               "template_name": {
-                "type": "string"
-               },
-               "template_storage_endpoint": {
-                "type": "string"
-               }
-              },
-              "type": "object"
-             },
-             "name": {
-              "description": "Update operation",
-              "enum": [
-               "none",
-               "POINT_IN_TIME_RECOVERY",
-               "DISASTER_KEEP_AZ_RECOVERY",
-               "disaster_recovery_takeover",
-               "TEMPLATE_BACKUP",
-               "SYSTEM_COPY",
-               "TEMPLATE_RECOVERY",
-               "synchronous_replication_takeover",
-               "TAKE_SNAPSHOT_FOR_FALLBACK",
-               "FALLBACK_TO_SNAPSHOT",
-               "REMOVE_SNAPSHOT_FOR_FALLBACK"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "slaLevel": {
-            "description": "Availability of the HANA instance",
-            "enum": [
-             "standard",
-             "elevated"
-            ],
-            "type": "string"
-           },
-           "storage": {
-            "description": "Size of the Storage in GB",
-            "format": "int64",
-            "maximum": 28960,
-            "minimum": 120,
-            "type": "integer"
-           },
-           "update_strategy": {
-            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
-            "enum": [
-             "with_restart",
-             "without_restart"
-            ]
-           },
-           "vcpu": {
-            "description": "Number of vCPUs used by HANA",
-            "minimum": 2,
-            "type": "integer"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use.",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           },
-           "workerNodes": {
-            "description": "Items of additional workers for scale out systems",
-            "items": {
-             "alias": {
-              "description": "Worker node alias",
-              "maxLength": 16,
-              "minLength": 1,
-              "type": "string"
-             },
-             "name": {
-              "description": "Worker node name",
-              "maxLength": 16,
-              "minLength": 1,
-              "type": "string"
-             }
-            },
-            "maxItems": 15,
-            "type": "array"
-           }
-          },
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      }
-     },
-     "service_binding": {
-      "create": {
-       "parameters": null
-      }
-     }
-    },
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "defaultProperties": [
-           "memory",
-           "systempassword",
-           "edition"
-          ],
-          "properties": {
-           "additionalWorkers": {
-            "description": "Number of additional workers for scale out systems",
-            "format": "int64",
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "availabilityZonePlacement": {
-            "additionalProperties": false,
-            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
-            "properties": {
              "highAvailabilityCrossMultiAZEnabled": {
               "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
               "type": "boolean"
@@ -15426,6 +14582,38 @@
             "additionalProperties": false,
             "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
             "properties": {
+             "customerInitialReplicaAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the initial replica",
+              "type": "string"
+             },
+             "customerInitialSourceAvailabilityZone": {
+              "description": "This customer mapping zone of the initial source",
+              "type": "string"
+             },
+             "customerPrimaryAvailabilityZone": {
+              "description": "This customer mapping zone of primary instance",
+              "type": "string"
+             },
+             "customerSecondaryAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             },
+             "customerSubscriptionId": {
+              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
+              "type": "string"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
              "primaryAvailabilityZone": {
               "description": "This zone will be used by the primary instance",
               "type": "string"
@@ -15433,6 +14621,10 @@
              "secondaryAvailabilityZone": {
               "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
               "type": "string"
+             },
+             "zoneMappingDryrun": {
+              "description": "This is a flag to mark a dry-run provision to get zone mapping result",
+              "type": "boolean"
              }
             },
             "type": "object"
@@ -15450,6 +14642,39 @@
              }
             },
             "type": "object"
+           },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
            },
            "databaseMappings": {
             "items": {
@@ -15497,7 +14722,13 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -15538,7 +14769,7 @@
             "default": 32,
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 1344,
+            "maximum": 11520,
             "minimum": 32,
             "type": "integer"
            },
@@ -15628,7 +14859,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 3400,
+            "maximum": 57920,
             "minimum": 120,
             "type": "integer"
            },
@@ -15708,6 +14939,38 @@
             "additionalProperties": false,
             "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
             "properties": {
+             "customerInitialReplicaAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the initial replica",
+              "type": "string"
+             },
+             "customerInitialSourceAvailabilityZone": {
+              "description": "This customer mapping zone of the initial source",
+              "type": "string"
+             },
+             "customerPrimaryAvailabilityZone": {
+              "description": "This customer mapping zone of primary instance",
+              "type": "string"
+             },
+             "customerSecondaryAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             },
+             "customerSubscriptionId": {
+              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
+              "type": "string"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
              "primaryAvailabilityZone": {
               "description": "This zone will be used by the primary instance",
               "type": "string"
@@ -15733,6 +14996,35 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "disasterRecoveryMode": {
             "description": "Disaster Recovery of the HANA instance",
             "enum": [
@@ -15751,7 +15043,13 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -15766,6 +15064,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               },
               "whitelistIPs": {
                "items": {
@@ -15786,7 +15092,7 @@
            "memory": {
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 1344,
+            "maximum": 11520,
             "minimum": 32,
             "type": "integer"
            },
@@ -15800,6 +15106,14 @@
               }
              }
             },
+            "type": "array"
+           },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
             "type": "array"
            },
            "productVersion": {
@@ -15828,6 +15142,12 @@
                "backup_encryption_passphrase": {
                 "type": "string"
                },
+               "customer_initial_replica_az": {
+                "type": "string"
+               },
+               "customer_initial_source_az": {
+                "type": "string"
+               },
                "customer_secondary_az": {
                 "type": "string"
                },
@@ -15835,13 +15155,25 @@
                 "type": "string"
                },
                "dummyForFeatureFlags": {},
+               "ha_cross_multi_az_enabled": {
+                "type": "boolean"
+               },
                "hdl_access_token": {
+                "type": "string"
+               },
+               "initial_replica_az": {
+                "type": "string"
+               },
+               "initial_source_az": {
                 "type": "string"
                },
                "project_name": {
                 "type": "string"
                },
                "secondary_az": {
+                "type": "string"
+               },
+               "source_instance_id": {
                 "type": "string"
                },
                "target_az": {
@@ -15867,6 +15199,9 @@
                "DISASTER_KEEP_AZ_RECOVERY",
                "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
+               "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
                "REMOVE_SNAPSHOT_FOR_FALLBACK"
@@ -15891,7 +15226,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 3400,
+            "maximum": 57920,
             "minimum": 120,
             "type": "integer"
            },
@@ -21470,39 +20805,6 @@
             },
             "type": "object"
            },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "serviceStopped": {
-               "description": "Describes if the system should be running or stopped",
-               "type": "boolean"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -21568,16 +20870,7 @@
              "dpserver": {
               "type": "boolean"
              },
-             "nlp": {
-              "type": "boolean"
-             },
-             "pal": {
-              "type": "boolean"
-             },
              "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
               "type": "boolean"
              }
             },
@@ -21657,6 +20950,9 @@
             },
             "type": "object"
            },
+           "project_name": {
+            "type": "string"
+           },
            "requestedOperation": {
             "additionalProperties": false,
             "properties": {
@@ -21716,6 +21012,9 @@
             "default": "",
             "description": "Password to be set for tenant",
             "minLength": 8,
+            "type": "string"
+           },
+           "template_name": {
             "type": "string"
            },
            "update_strategy": {
@@ -21845,35 +21144,6 @@
             },
             "type": "object"
            },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -21910,16 +21180,7 @@
              "dpserver": {
               "type": "boolean"
              },
-             "nlp": {
-              "type": "boolean"
-             },
-             "pal": {
-              "type": "boolean"
-             },
              "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
               "type": "boolean"
              }
             },
@@ -22027,9 +21288,6 @@
                "secondary_az": {
                 "type": "string"
                },
-               "source_instance_id": {
-                "type": "string"
-               },
                "target_az": {
                 "type": "string"
                },
@@ -22053,8 +21311,6 @@
                "DISASTER_KEEP_AZ_RECOVERY",
                "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
-               "SYSTEM_COPY",
-               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
@@ -27897,6 +27153,14 @@
              "type": "object"
             }
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "edition": {
             "default": "cloud",
             "description": "Image edition (cloud vs. orange)",
@@ -28219,6 +27483,14 @@
             },
             "type": "array"
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "enabledservices": {
             "additionalProperties": false,
             "description": "List of services of the HANA to be enabled",
@@ -28334,6 +27606,9 @@
                "customer_initial_source_az": {
                 "type": "string"
                },
+               "customer_secondary_az": {
+                "type": "string"
+               },
                "customer_target_az": {
                 "type": "string"
                },
@@ -28351,6 +27626,9 @@
                 "type": "string"
                },
                "project_name": {
+                "type": "string"
+               },
+               "secondary_az": {
                 "type": "string"
                },
                "source_instance_id": {
@@ -28377,6 +27655,7 @@
                "none",
                "POINT_IN_TIME_RECOVERY",
                "DISASTER_KEEP_AZ_RECOVERY",
+               "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
                "SYSTEM_COPY",
                "TEMPLATE_RECOVERY",
@@ -29348,6 +28627,14 @@
              "type": "object"
             }
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "edition": {
             "default": "cloud",
             "description": "Image edition (cloud vs. orange)",
@@ -29670,6 +28957,14 @@
             },
             "type": "array"
            },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
            "enabledservices": {
             "additionalProperties": false,
             "description": "List of services of the HANA to be enabled",
@@ -29785,6 +29080,9 @@
                "customer_initial_source_az": {
                 "type": "string"
                },
+               "customer_secondary_az": {
+                "type": "string"
+               },
                "customer_target_az": {
                 "type": "string"
                },
@@ -29802,6 +29100,9 @@
                 "type": "string"
                },
                "project_name": {
+                "type": "string"
+               },
+               "secondary_az": {
                 "type": "string"
                },
                "source_instance_id": {
@@ -29828,6 +29129,7 @@
                "none",
                "POINT_IN_TIME_RECOVERY",
                "DISASTER_KEEP_AZ_RECOVERY",
+               "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
                "SYSTEM_COPY",
                "TEMPLATE_RECOVERY",
@@ -32125,58 +31427,6 @@
             },
             "type": "object"
            },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "serviceStopped": {
-               "description": "Describes if the system should be running or stopped",
-               "type": "boolean"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "dataEncryption": {
-            "description": "Data Encryption Specifications",
-            "properties": {
-             "keyID": {
-              "description": "Encryption Key GUID",
-              "minLength": 1,
-              "type": "string"
-             },
-             "mode": {
-              "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-              "enum": [
-               "MANAGED_KEY",
-               "DEDICATED_KEY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
            "databaseMappings": {
             "items": {
              "properties": {
@@ -32195,14 +31445,6 @@
              ],
              "type": "object"
             }
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
            },
            "edition": {
             "default": "cloud",
@@ -32223,16 +31465,7 @@
              "dpserver": {
               "type": "boolean"
              },
-             "nlp": {
-              "type": "boolean"
-             },
-             "pal": {
-              "type": "boolean"
-             },
              "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
               "type": "boolean"
              }
             },
@@ -32273,7 +31506,7 @@
             "default": 32,
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 11150,
+            "maximum": 5750,
             "minimum": 32,
             "type": "integer"
            },
@@ -32363,7 +31596,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 55760,
+            "maximum": 28960,
             "minimum": 120,
             "type": "integer"
            },
@@ -32500,61 +31733,6 @@
             },
             "type": "object"
            },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "dataEncryption": {
-            "description": "Data Encryption Specifications",
-            "properties": {
-             "keyID": {
-              "description": "Encryption Key GUID",
-              "minLength": 1,
-              "type": "string"
-             },
-             "mode": {
-              "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-              "enum": [
-               "MANAGED_KEY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
-           },
            "enabledservices": {
             "additionalProperties": false,
             "description": "List of services of the HANA to be enabled",
@@ -32565,16 +31743,7 @@
              "dpserver": {
               "type": "boolean"
              },
-             "nlp": {
-              "type": "boolean"
-             },
-             "pal": {
-              "type": "boolean"
-             },
              "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
               "type": "boolean"
              }
             },
@@ -32609,7 +31778,7 @@
            "memory": {
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 11150,
+            "maximum": 5750,
             "minimum": 32,
             "type": "integer"
            },
@@ -32657,9 +31826,6 @@
                "customer_initial_source_az": {
                 "type": "string"
                },
-               "customer_secondary_az": {
-                "type": "string"
-               },
                "customer_target_az": {
                 "type": "string"
                },
@@ -32677,12 +31843,6 @@
                 "type": "string"
                },
                "project_name": {
-                "type": "string"
-               },
-               "secondary_az": {
-                "type": "string"
-               },
-               "source_instance_id": {
                 "type": "string"
                },
                "target_az": {
@@ -32706,10 +31866,7 @@
                "none",
                "POINT_IN_TIME_RECOVERY",
                "DISASTER_KEEP_AZ_RECOVERY",
-               "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
-               "SYSTEM_COPY",
-               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
@@ -32735,7 +31892,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 55760,
+            "maximum": 28960,
             "minimum": 120,
             "type": "integer"
            },
@@ -36111,751 +35268,6 @@
             "additionalProperties": false,
             "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
             "properties": {
-             "customerInitialReplicaAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the initial replica",
-              "type": "string"
-             },
-             "customerInitialSourceAvailabilityZone": {
-              "description": "This customer mapping zone of the initial source",
-              "type": "string"
-             },
-             "customerPrimaryAvailabilityZone": {
-              "description": "This customer mapping zone of primary instance",
-              "type": "string"
-             },
-             "customerSecondaryAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             },
-             "customerSubscriptionId": {
-              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
-              "type": "string"
-             },
-             "highAvailabilityCrossMultiAZEnabled": {
-              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
-              "type": "boolean"
-             },
-             "initialReplicaAvailabilityZone": {
-              "description": "This zone will be used by the initial replica",
-              "type": "string"
-             },
-             "initialSourceAvailabilityZone": {
-              "description": "This zone will be used by the initial source",
-              "type": "string"
-             },
-             "primaryAvailabilityZone": {
-              "description": "This zone will be used by the primary instance",
-              "type": "string"
-             },
-             "secondaryAvailabilityZone": {
-              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             },
-             "zoneMappingDryrun": {
-              "description": "This is a flag to mark a dry-run provision to get zone mapping result",
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 0,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "serviceStopped": {
-               "description": "Describes if the system should be running or stopped",
-               "type": "boolean"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "databaseMappings": {
-            "items": {
-             "properties": {
-              "organization_guid": {
-               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-               "type": "string"
-              },
-              "space_guid": {
-               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
-               "type": "string"
-              }
-             },
-             "required": [
-              "organization_guid",
-              "space_guid"
-             ],
-             "type": "object"
-            }
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
-           },
-           "edition": {
-            "default": "cloud",
-            "description": "Image edition (cloud vs. orange)",
-            "enum": [
-             "cloud",
-             "orange"
-            ],
-            "type": "string"
-           },
-           "enabledservices": {
-            "additionalProperties": false,
-            "description": "List of services of the HANA to be enabled",
-            "properties": {
-             "docstore": {
-              "type": "boolean"
-             },
-             "dpserver": {
-              "type": "boolean"
-             },
-             "nlp": {
-              "type": "boolean"
-             },
-             "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "extensionservices": {
-            "items": {
-             "properties": {
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              },
-              "whitelistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "generateSystemPassword": {
-            "default": false,
-            "description": "Describes if the systempassword should be generated or not.",
-            "type": "boolean"
-           },
-           "memory": {
-            "default": 32,
-            "description": "HANA memory size (RAM) in GB",
-            "format": "int64",
-            "maximum": 5750,
-            "minimum": 32,
-            "type": "integer"
-           },
-           "memoryScaleOut": {
-            "description": "HANA memory size (RAM) in GB for scale out systems",
-            "format": "int64",
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "plugins": {
-            "description": "HANA Plugins list configured for HANA instance",
-            "items": {
-             "properties": {
-              "name": {
-               "description": "plugin version for installation",
-               "type": "string"
-              }
-             }
-            },
-            "type": "array"
-           },
-           "productVersion": {
-            "additionalProperties": false,
-            "description": "HANA Product Version",
-            "properties": {
-             "id": {
-              "type": "string"
-             },
-             "releaseCycle": {
-              "type": "string"
-             },
-             "track": {
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "requestedOperation": {
-            "additionalProperties": false,
-            "properties": {
-             "arguments": {
-              "additionalProperties": false,
-              "description": "List of operation arguments",
-              "properties": {
-               "backup_encryption_passphrase": {
-                "type": "string"
-               },
-               "hdl_access_token": {
-                "type": "string"
-               },
-               "project_name": {
-                "type": "string"
-               },
-               "template_name": {
-                "type": "string"
-               },
-               "template_storage_endpoint": {
-                "type": "string"
-               }
-              },
-              "type": "object"
-             },
-             "name": {
-              "description": "create instance for template recovery",
-              "enum": [
-               "none",
-               "TEMPLATE_RECOVERY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "slaLevel": {
-            "description": "Availability of the HANA instance",
-            "enum": [
-             "standard",
-             "elevated"
-            ],
-            "type": "string"
-           },
-           "storage": {
-            "description": "Size of the Storage in GB",
-            "format": "int64",
-            "maximum": 28960,
-            "minimum": 120,
-            "type": "integer"
-           },
-           "systempassword": {
-            "default": "",
-            "description": "Password to be set for tenant",
-            "minLength": 8,
-            "type": "string"
-           },
-           "update_strategy": {
-            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
-            "enum": [
-             "with_restart",
-             "without_restart"
-            ]
-           },
-           "vcpu": {
-            "description": "Number of vCPUs used by HANA",
-            "minimum": 2,
-            "type": "integer"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           }
-          },
-          "required": [
-           "edition",
-           "memory"
-          ],
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      },
-      "update": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "default": {},
-          "defaultProperties": [],
-          "properties": {
-           "additionalWorkers": {
-            "description": "Number of additional workers for scale out systems",
-            "format": "int64",
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "availabilityZonePlacement": {
-            "additionalProperties": false,
-            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
-            "properties": {
-             "customerInitialReplicaAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the initial replica",
-              "type": "string"
-             },
-             "customerInitialSourceAvailabilityZone": {
-              "description": "This customer mapping zone of the initial source",
-              "type": "string"
-             },
-             "customerPrimaryAvailabilityZone": {
-              "description": "This customer mapping zone of primary instance",
-              "type": "string"
-             },
-             "customerSecondaryAvailabilityZone": {
-              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             },
-             "customerSubscriptionId": {
-              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
-              "type": "string"
-             },
-             "highAvailabilityCrossMultiAZEnabled": {
-              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
-              "type": "boolean"
-             },
-             "initialReplicaAvailabilityZone": {
-              "description": "This zone will be used by the initial replica",
-              "type": "string"
-             },
-             "initialSourceAvailabilityZone": {
-              "description": "This zone will be used by the initial source",
-              "type": "string"
-             },
-             "primaryAvailabilityZone": {
-              "description": "This zone will be used by the primary instance",
-              "type": "string"
-             },
-             "secondaryAvailabilityZone": {
-              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 0,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
-           },
-           "disasterRecoveryMode": {
-            "description": "Disaster Recovery of the HANA instance",
-            "enum": [
-             "no_disaster_recovery",
-             "one_secondary_async"
-            ],
-            "type": "string"
-           },
-           "enabledservices": {
-            "additionalProperties": false,
-            "description": "List of services of the HANA to be enabled",
-            "properties": {
-             "docstore": {
-              "type": "boolean"
-             },
-             "dpserver": {
-              "type": "boolean"
-             },
-             "nlp": {
-              "type": "boolean"
-             },
-             "scriptserver": {
-              "type": "boolean"
-             },
-             "triplestore": {
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "extensionservices": {
-            "items": {
-             "properties": {
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              },
-              "privateLinkAllowlist": {
-               "items": {
-                "maxLength": 40,
-                "type": "string"
-               },
-               "maxItems": 100,
-               "type": "array"
-              },
-              "whitelistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "memory": {
-            "description": "HANA memory size (RAM) in GB",
-            "format": "int64",
-            "maximum": 5750,
-            "minimum": 32,
-            "type": "integer"
-           },
-           "plugins": {
-            "description": "HANA Plugins list configured for HANA instance",
-            "items": {
-             "properties": {
-              "name": {
-               "description": "plugin version for installation",
-               "type": "string"
-              }
-             }
-            },
-            "type": "array"
-           },
-           "privateLinkAllowlist": {
-            "items": {
-             "maxLength": 40,
-             "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-           },
-           "productVersion": {
-            "additionalProperties": false,
-            "description": "HANA Product Version",
-            "properties": {
-             "id": {
-              "type": "string"
-             },
-             "releaseCycle": {
-              "type": "string"
-             },
-             "track": {
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "requestedOperation": {
-            "additionalProperties": false,
-            "properties": {
-             "arguments": {
-              "additionalProperties": false,
-              "description": "List of operation arguments",
-              "properties": {
-               "backup_encryption_passphrase": {
-                "type": "string"
-               },
-               "customer_initial_replica_az": {
-                "type": "string"
-               },
-               "customer_initial_source_az": {
-                "type": "string"
-               },
-               "customer_secondary_az": {
-                "type": "string"
-               },
-               "customer_target_az": {
-                "type": "string"
-               },
-               "dummyForFeatureFlags": {},
-               "ha_cross_multi_az_enabled": {
-                "type": "boolean"
-               },
-               "hdl_access_token": {
-                "type": "string"
-               },
-               "initial_replica_az": {
-                "type": "string"
-               },
-               "initial_source_az": {
-                "type": "string"
-               },
-               "project_name": {
-                "type": "string"
-               },
-               "secondary_az": {
-                "type": "string"
-               },
-               "source_instance_id": {
-                "type": "string"
-               },
-               "target_az": {
-                "type": "string"
-               },
-               "target_timestamp": {
-                "type": "string"
-               },
-               "template_name": {
-                "type": "string"
-               },
-               "template_storage_endpoint": {
-                "type": "string"
-               }
-              },
-              "type": "object"
-             },
-             "name": {
-              "description": "Update operation",
-              "enum": [
-               "none",
-               "POINT_IN_TIME_RECOVERY",
-               "DISASTER_KEEP_AZ_RECOVERY",
-               "disaster_recovery_takeover",
-               "TEMPLATE_BACKUP",
-               "SYSTEM_COPY",
-               "TEMPLATE_RECOVERY",
-               "synchronous_replication_takeover",
-               "TAKE_SNAPSHOT_FOR_FALLBACK",
-               "FALLBACK_TO_SNAPSHOT",
-               "REMOVE_SNAPSHOT_FOR_FALLBACK"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "slaLevel": {
-            "description": "Availability of the HANA instance",
-            "enum": [
-             "standard",
-             "elevated"
-            ],
-            "type": "string"
-           },
-           "storage": {
-            "description": "Size of the Storage in GB",
-            "format": "int64",
-            "maximum": 28960,
-            "minimum": 120,
-            "type": "integer"
-           },
-           "update_strategy": {
-            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
-            "enum": [
-             "with_restart",
-             "without_restart"
-            ]
-           },
-           "vcpu": {
-            "description": "Number of vCPUs used by HANA",
-            "minimum": 2,
-            "type": "integer"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use.",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           },
-           "workerNodes": {
-            "description": "Items of additional workers for scale out systems",
-            "items": {
-             "alias": {
-              "description": "Worker node alias",
-              "maxLength": 16,
-              "minLength": 1,
-              "type": "string"
-             },
-             "name": {
-              "description": "Worker node name",
-              "maxLength": 16,
-              "minLength": 1,
-              "type": "string"
-             }
-            },
-            "maxItems": 15,
-            "type": "array"
-           }
-          },
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      }
-     },
-     "service_binding": {
-      "create": {
-       "parameters": null
-      }
-     }
-    },
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "defaultProperties": [
-           "memory",
-           "systempassword",
-           "edition"
-          ],
-          "properties": {
-           "additionalWorkers": {
-            "description": "Number of additional workers for scale out systems",
-            "format": "int64",
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "availabilityZonePlacement": {
-            "additionalProperties": false,
-            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
-            "properties": {
              "highAvailabilityCrossMultiAZEnabled": {
               "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
               "type": "boolean"
@@ -39640,6 +38052,39 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "databaseMappings": {
             "items": {
              "properties": {
@@ -39686,7 +38131,13 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -39954,6 +38405,35 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "disasterRecoveryMode": {
             "description": "Disaster Recovery of the HANA instance",
             "enum": [
@@ -39972,7 +38452,13 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -39987,6 +38473,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               },
               "whitelistIPs": {
                "items": {
@@ -40021,6 +38515,14 @@
               }
              }
             },
+            "type": "array"
+           },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
             "type": "array"
            },
            "productVersion": {
@@ -40080,6 +38582,9 @@
                "secondary_az": {
                 "type": "string"
                },
+               "source_instance_id": {
+                "type": "string"
+               },
                "target_az": {
                 "type": "string"
                },
@@ -40103,6 +38608,8 @@
                "DISASTER_KEEP_AZ_RECOVERY",
                "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
