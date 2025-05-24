@@ -320,12 +320,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -442,6 +443,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -713,12 +715,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -833,6 +836,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -961,12 +965,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -1083,6 +1088,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -1334,12 +1340,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -1454,6 +1461,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -2101,12 +2109,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -2205,6 +2214,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -2474,12 +2484,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -2576,6 +2587,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -2702,12 +2714,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -2806,6 +2819,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -3055,12 +3069,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -3157,6 +3172,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -3793,7 +3809,8 @@
             "autoScalerMin": {
              "default": 2,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 40,
+             "minimum": 0,
              "type": "integer"
             },
             "machineType": {
@@ -3846,6 +3863,7 @@
          "autoScalerMin": {
           "default": 2,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 40,
           "minimum": 2,
           "type": "integer"
          },
@@ -4092,7 +4110,8 @@
             "autoScalerMin": {
              "default": 2,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 40,
+             "minimum": 0,
              "type": "integer"
             },
             "machineType": {
@@ -4143,6 +4162,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 40,
           "minimum": 2,
           "type": "integer"
          },
@@ -4246,7 +4266,8 @@
             "autoScalerMin": {
              "default": 2,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 40,
+             "minimum": 0,
              "type": "integer"
             },
             "machineType": {
@@ -4299,6 +4320,7 @@
          "autoScalerMin": {
           "default": 2,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 40,
           "minimum": 2,
           "type": "integer"
          },
@@ -4525,7 +4547,8 @@
             "autoScalerMin": {
              "default": 2,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 40,
+             "minimum": 0,
              "type": "integer"
             },
             "machineType": {
@@ -4576,6 +4599,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 40,
           "minimum": 2,
           "type": "integer"
          },
@@ -5143,12 +5167,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -5265,6 +5290,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -5536,12 +5562,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -5656,6 +5683,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -5784,12 +5812,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -5906,6 +5935,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -6157,12 +6187,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -6277,6 +6308,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -6532,12 +6564,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -6636,6 +6669,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -6905,12 +6939,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -7007,6 +7042,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -7133,12 +7169,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -7237,6 +7274,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -7486,12 +7524,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -7588,6 +7627,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -7841,12 +7881,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -7937,6 +7978,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -8198,12 +8240,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -8292,6 +8335,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -10104,12 +10148,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -10200,6 +10245,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -10461,12 +10507,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -10555,6 +10602,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -11050,12 +11098,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -11122,6 +11171,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -11358,12 +11408,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -11428,6 +11479,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -11544,12 +11596,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -11616,6 +11669,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -11852,12 +11906,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -11922,6 +11977,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -12038,12 +12094,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -12110,6 +12167,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -12346,12 +12404,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -12416,6 +12475,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -12532,12 +12592,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -12604,6 +12665,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -12840,12 +12902,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -12910,6 +12973,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -13026,12 +13090,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -13098,6 +13163,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -13334,12 +13400,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -13404,6 +13471,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -13520,12 +13588,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -13592,6 +13661,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -13828,12 +13898,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -13898,6 +13969,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -14014,12 +14086,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -14086,6 +14159,7 @@
          "autoScalerMin": {
           "default": 3,
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
@@ -14322,12 +14396,13 @@
             "autoScalerMin": {
              "default": 3,
              "description": "Specifies the minimum number of virtual machines to create.",
-             "minimum": 1,
+             "maximum": 300,
+             "minimum": 0,
              "type": "integer"
             },
             "haZones": {
              "default": true,
-             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting both autoScalerMin and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
+             "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
             },
@@ -14392,6 +14467,7 @@
          },
          "autoScalerMin": {
           "description": "Specifies the minimum number of virtual machines to create",
+          "maximum": 300,
           "minimum": 3,
           "type": "integer"
          },
