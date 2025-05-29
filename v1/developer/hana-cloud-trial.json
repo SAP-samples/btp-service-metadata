@@ -366,9 +366,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -691,9 +689,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -956,6 +952,13 @@
                }
               },
               "type": "object"
+             },
+             "retentionDays": {
+              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 15,
+              "type": "integer"
              },
              "roles": {
               "items": {
@@ -1595,6 +1598,13 @@
                }
               },
               "type": "object"
+             },
+             "retentionDays": {
+              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 15,
+              "type": "integer"
              },
              "roles": {
               "items": {

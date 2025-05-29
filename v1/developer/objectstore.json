@@ -29,6 +29,24 @@
    "text": "Feature Scope Description"
   },
   {
+   "value": "https://help.sap.com/docs/object-store/object-store-service-on-sap-btp/capabilities-of-object-store-on-aws",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/object-store/object-store-service-on-sap-btp/capabilities-of-object-store-on-azure",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
+   "value": "https://help.sap.com/docs/object-store/object-store-service-on-sap-btp/capabilities-of-object-store-on-google-cloud-platform",
+   "classification": "Documentation",
+   "type": "Link",
+   "text": "Documentation"
+  },
+  {
    "value": "https://help.sap.com/viewer/2ee77ef7ea4648f9ab2c54ee3aef0a29/Cloud/en-US",
    "classification": "Documentation",
    "type": "Link",
@@ -366,7 +384,402 @@
      "name": "cf-us30"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of Azure Storage Account",
+          "type": "boolean",
+          "default": false
+         }
+        },
+        "not": {
+         "required": [
+          "autoExpiration",
+          "deleteAutoExpiration"
+         ]
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "versioning": {
+          "type": "boolean",
+          "description": "Flag to Enable/Disable Versioning for the Azure Storage Account",
+          "default": true
+         },
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of Azure Storage Account",
+          "type": "boolean",
+          "default": false
+         },
+         "autoExpiration": {
+          "type": "array",
+          "description": "Lifecycle rules to Auto-Expire objects in AWS S3 Bucket",
+          "items": {
+           "type": "object"
+          }
+         },
+         "deleteAutoExpiration": {
+          "type": "array",
+          "description": "List of Lifecycle rule IDs to delete",
+          "items": {
+           "type": "string"
+          }
+         },
+         "kms_encryption": {
+          "type": "object",
+          "description": "KMS 2.0 Encryption",
+          "properties": {
+           "enable_encryption": {
+            "type": "boolean",
+            "default": false
+           },
+           "subaccount_id": {
+            "type": "string"
+           }
+          }
+         }
+        },
+        "allOf": [
+         {
+          "if": {
+           "required": [
+            "deleteAutoExpiration"
+           ]
+          },
+          "then": {
+           "not": {
+            "anyOf": [
+             {
+              "required": [
+               "versioning"
+              ]
+             },
+             {
+              "required": [
+               "preventDeletion"
+              ]
+             },
+             {
+              "required": [
+               "autoExpiration"
+              ]
+             },
+             {
+              "required": [
+               "kms_encryption"
+              ]
+             }
+            ]
+           }
+          }
+         }
+        ]
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "role": {
+          "description": "Role required for the binding",
+          "type": "string",
+          "enum": [
+           "read",
+           "write"
+          ]
+         }
+        },
+        "maxProperties": 1
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of AWS S3 Buckets",
+          "type": "boolean",
+          "default": false
+         },
+         "enableSAL": {
+          "description": "Enable Server Access Logging",
+          "type": "boolean",
+          "default": false
+         },
+         "salLogsRetentionPeriod": {
+          "description": "Retention period for SAL Logs in Days",
+          "type": "integer"
+         },
+         "backupEnabled": {
+          "description": "Enabling AWS S3 Backup for the service",
+          "type": "boolean",
+          "default": false
+         },
+         "backupRetentionPeriod": {
+          "description": "Retention period for AWS S3 Backups in days (1-35)",
+          "type": "integer",
+          "default": 1,
+          "minimum": 0,
+          "maximum": 35
+         },
+         "kms_encryption": {
+          "type": "object",
+          "description": "KMS 2.0 Encryption",
+          "properties": {
+           "enable_encryption": {
+            "type": "boolean",
+            "default": false
+           },
+           "subaccount_id": {
+            "type": "string"
+           }
+          }
+         }
+        },
+        "not": {
+         "required": [
+          "autoExpiration",
+          "deleteAutoExpiration"
+         ]
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "versioning": {
+          "type": "boolean",
+          "description": "Flag to Enable/Disable Versioning for the Bucket",
+          "default": true
+         },
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of AWS S3 Bucket",
+          "type": "boolean",
+          "default": false
+         },
+         "autoExpiration": {
+          "type": "array",
+          "description": "Lifecycle rules to Auto-Expire objects in AWS S3 Bucket",
+          "items": {
+           "type": "object"
+          }
+         },
+         "deleteAutoExpiration": {
+          "type": "array",
+          "description": "List of Lifecycle rule IDs to delete",
+          "items": {
+           "type": "string"
+          }
+         },
+         "enableSAL": {
+          "type": "boolean",
+          "description": "Enable Server Access Logging",
+          "default": false
+         },
+         "salLogsRetentionPeriod": {
+          "description": "Retention period for SAL Logs in Days",
+          "type": "integer"
+         },
+         "backupEnabled": {
+          "description": "Enabling AWS S3 Backup for the service",
+          "type": "boolean",
+          "default": false
+         },
+         "backupRetentionPeriod": {
+          "type": "integer",
+          "description": "Retention period for AWS S3 Backups in days",
+          "default": 1,
+          "minimum": 0,
+          "maximum": 35
+         },
+         "kms_encryption": {
+          "type": "object",
+          "description": "KMS 2.0 Encryption",
+          "properties": {
+           "enable_encryption": {
+            "type": "boolean",
+            "default": false
+           },
+           "subaccount_id": {
+            "type": "string"
+           }
+          }
+         }
+        },
+        "allOf": [
+         {
+          "if": {
+           "required": [
+            "deleteAutoExpiration"
+           ]
+          },
+          "then": {
+           "not": {
+            "anyOf": [
+             {
+              "required": [
+               "versioning"
+              ]
+             },
+             {
+              "required": [
+               "preventDeletion"
+              ]
+             },
+             {
+              "required": [
+               "autoExpiration"
+              ]
+             },
+             {
+              "required": [
+               "enableSAL"
+              ]
+             },
+             {
+              "required": [
+               "salLogsRetentionPeriod"
+              ]
+             },
+             {
+              "required": [
+               "backupEnabled"
+              ]
+             },
+             {
+              "required": [
+               "backupRetentionPeriod"
+              ]
+             },
+             {
+              "required": [
+               "kms_encryption"
+              ]
+             }
+            ]
+           }
+          }
+         }
+        ]
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "role": {
+          "description": "Role required for the binding",
+          "type": "string",
+          "enum": [
+           "read",
+           "write"
+          ]
+         }
+        },
+        "maxProperties": 1
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of GCP Buckets",
+          "type": "boolean",
+          "default": false
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "versioning": {
+          "type": "boolean",
+          "description": "Flag to Enable/Disable Versioning for the Bucket",
+          "default": true
+         },
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of GCP Buckets",
+          "type": "boolean",
+          "default": false
+         }
+        }
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "role": {
+          "description": "Role required for the binding",
+          "type": "string",
+          "enum": [
+           "read",
+           "write"
+          ]
+         }
+        },
+        "maxProperties": 1
+       }
+      }
+     }
+    }
+   ]
   }
  ],
  "supportComponents": [
