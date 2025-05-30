@@ -256,6 +256,10 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -385,135 +389,6 @@
     }
    ],
    "schemas": [
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
-         "preventDeletion": {
-          "description": "Flag to Prevent Accidental Deletion of Azure Storage Account",
-          "type": "boolean",
-          "default": false
-         }
-        },
-        "not": {
-         "required": [
-          "autoExpiration",
-          "deleteAutoExpiration"
-         ]
-        }
-       }
-      },
-      "update": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "_load_current_config": true,
-        "additionalProperties": true,
-        "properties": {
-         "versioning": {
-          "type": "boolean",
-          "description": "Flag to Enable/Disable Versioning for the Azure Storage Account",
-          "default": true
-         },
-         "preventDeletion": {
-          "description": "Flag to Prevent Accidental Deletion of Azure Storage Account",
-          "type": "boolean",
-          "default": false
-         },
-         "autoExpiration": {
-          "type": "array",
-          "description": "Lifecycle rules to Auto-Expire objects in AWS S3 Bucket",
-          "items": {
-           "type": "object"
-          }
-         },
-         "deleteAutoExpiration": {
-          "type": "array",
-          "description": "List of Lifecycle rule IDs to delete",
-          "items": {
-           "type": "string"
-          }
-         },
-         "kms_encryption": {
-          "type": "object",
-          "description": "KMS 2.0 Encryption",
-          "properties": {
-           "enable_encryption": {
-            "type": "boolean",
-            "default": false
-           },
-           "subaccount_id": {
-            "type": "string"
-           }
-          }
-         }
-        },
-        "allOf": [
-         {
-          "if": {
-           "required": [
-            "deleteAutoExpiration"
-           ]
-          },
-          "then": {
-           "not": {
-            "anyOf": [
-             {
-              "required": [
-               "versioning"
-              ]
-             },
-             {
-              "required": [
-               "preventDeletion"
-              ]
-             },
-             {
-              "required": [
-               "autoExpiration"
-              ]
-             },
-             {
-              "required": [
-               "kms_encryption"
-              ]
-             }
-            ]
-           }
-          }
-         }
-        ]
-       }
-      }
-     },
-     "service_binding": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-06/schema#",
-        "type": "object",
-        "_show_form_view": true,
-        "additionalProperties": true,
-        "properties": {
-         "role": {
-          "description": "Role required for the binding",
-          "type": "string",
-          "enum": [
-           "read",
-           "write"
-          ]
-         }
-        },
-        "maxProperties": 1
-       }
-      }
-     }
-    },
     {
      "service_instance": {
       "create": {
@@ -681,6 +556,135 @@
              {
               "required": [
                "backupRetentionPeriod"
+              ]
+             },
+             {
+              "required": [
+               "kms_encryption"
+              ]
+             }
+            ]
+           }
+          }
+         }
+        ]
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "role": {
+          "description": "Role required for the binding",
+          "type": "string",
+          "enum": [
+           "read",
+           "write"
+          ]
+         }
+        },
+        "maxProperties": 1
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of Azure Storage Account",
+          "type": "boolean",
+          "default": false
+         }
+        },
+        "not": {
+         "required": [
+          "autoExpiration",
+          "deleteAutoExpiration"
+         ]
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "versioning": {
+          "type": "boolean",
+          "description": "Flag to Enable/Disable Versioning for the Azure Storage Account",
+          "default": true
+         },
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of Azure Storage Account",
+          "type": "boolean",
+          "default": false
+         },
+         "autoExpiration": {
+          "type": "array",
+          "description": "Lifecycle rules to Auto-Expire objects in AWS S3 Bucket",
+          "items": {
+           "type": "object"
+          }
+         },
+         "deleteAutoExpiration": {
+          "type": "array",
+          "description": "List of Lifecycle rule IDs to delete",
+          "items": {
+           "type": "string"
+          }
+         },
+         "kms_encryption": {
+          "type": "object",
+          "description": "KMS 2.0 Encryption",
+          "properties": {
+           "enable_encryption": {
+            "type": "boolean",
+            "default": false
+           },
+           "subaccount_id": {
+            "type": "string"
+           }
+          }
+         }
+        },
+        "allOf": [
+         {
+          "if": {
+           "required": [
+            "deleteAutoExpiration"
+           ]
+          },
+          "then": {
+           "not": {
+            "anyOf": [
+             {
+              "required": [
+               "versioning"
+              ]
+             },
+             {
+              "required": [
+               "preventDeletion"
+              ]
+             },
+             {
+              "required": [
+               "autoExpiration"
               ]
              },
              {
