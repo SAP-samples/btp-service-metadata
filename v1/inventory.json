@@ -302,7 +302,7 @@
  },
  {
   "technicalId": "auditlog-api",
-  "displayName": "[DEPRECATED] Audit Log Retrieval",
+  "displayName": "SAP Audit Log service",
   "description": "[DEPRECATED] Audit Log Retrieval",
   "fileName": "auditlog-api.json",
   "category": "SERVICE"
@@ -316,7 +316,7 @@
  },
  {
   "technicalId": "auditlog-viewer",
-  "displayName": "SAP Audit Log service",
+  "displayName": "Audit Log Viewer Service",
   "description": "Audit Log Viewer Service",
   "fileName": "auditlog-viewer.json",
   "category": "APPLICATION"
@@ -729,14 +729,14 @@
  },
  {
   "technicalId": "connectivity",
-  "displayName": "SAP Connectivity service",
+  "displayName": "Connectivity Service",
   "description": "Connectivity Service",
   "fileName": "connectivity.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "connectivity-central",
-  "displayName": "Connectivity Service",
+  "displayName": "SAP Connectivity service",
   "description": "Connectivity Service",
   "fileName": "connectivity-central.json",
   "category": "SERVICE"
@@ -1009,14 +1009,14 @@
  },
  {
   "technicalId": "data-privacy-integration-application",
-  "displayName": "Data Privacy Integration",
+  "displayName": "SAP Data Privacy Integration",
   "description": "Data Privacy Integration",
   "fileName": "data-privacy-integration-application.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "data-privacy-integration-service",
-  "displayName": "SAP Data Privacy Integration",
+  "displayName": "Data Privacy Integration",
   "description": "Data Privacy Integration",
   "fileName": "data-privacy-integration-service.json",
   "category": "SERVICE"
@@ -1212,7 +1212,7 @@
  },
  {
   "technicalId": "dvh-test",
-  "displayName": "SAP Digital Vehicle Hub Test",
+  "displayName": "SAP Digital Vehicle Hub",
   "description": "(Test) SAP Digital Vehicle Hub application represents the digital twin for any ground transportation object, which integrates and interacts seamlessly along the automotive & mobility value chain in the cloud.",
   "fileName": "dvh-test.json",
   "category": "SERVICE"
@@ -1604,14 +1604,14 @@
  },
  {
   "technicalId": "feature-flags",
-  "displayName": "Feature Flags Service",
+  "displayName": "SAP Feature Flags service",
   "description": "Feature Flags Service",
   "fileName": "feature-flags.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "feature-flags-dashboard",
-  "displayName": "SAP Feature Flags service",
+  "displayName": "Feature Flags Service",
   "description": "Feature Flags Service",
   "fileName": "feature-flags-dashboard.json",
   "category": "APPLICATION"
@@ -2157,7 +2157,7 @@
  },
  {
   "technicalId": "it-rt",
-  "displayName": "SAP Process Integration Runtime",
+  "displayName": "Cloud Integration Automation",
   "description": "Provides access to the integration flow endpoints and public APIs of the Cloud Integration capability of Integration Suite. You need this service instance only if you want to execute the integration flows or access Cloud Integration resources via APIs.",
   "fileName": "it-rt.json",
   "category": "SERVICE"
@@ -2479,14 +2479,14 @@
  },
  {
   "technicalId": "MDMBusinessPartnerApplication",
-  "displayName": "Master Data Service for Business Partners",
+  "displayName": "SAP Master Data service for business partners",
   "description": "Master Data Service for Business Partners",
   "fileName": "mdmbusinesspartnerapplication.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "MDMBusinessPartnerService",
-  "displayName": "SAP Master Data service for business partners",
+  "displayName": "SAP Business Partner Service",
   "description": "SAP Business Partner Service",
   "fileName": "mdmbusinesspartnerservice.json",
   "category": "SERVICE"
@@ -2808,14 +2808,14 @@
  },
  {
   "technicalId": "one-mds",
-  "displayName": "SAP Master Data Integration",
+  "displayName": "Master Data Integration",
   "description": "Master Data Integration",
   "fileName": "one-mds.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "one-mds-master",
-  "displayName": "SAP Master Data Integration Tenant",
+  "displayName": "SAP Master Data Integration",
   "description": "SAP Master Data Integration Tenant",
   "fileName": "one-mds-master.json",
   "category": "APPLICATION"
@@ -3634,7 +3634,7 @@
  },
  {
   "technicalId": "SAPEntitlementManagementBeta",
-  "displayName": "SAP Entitlement Management",
+  "displayName": "SAP Entitlement Management Test",
   "description": "SAP Entitlement Management Test",
   "fileName": "sapentitlementmanagementbeta.json",
   "category": "APPLICATION"
@@ -3809,7 +3809,7 @@
  },
  {
   "technicalId": "service-ticket-intelligence-trial",
-  "displayName": "Service Ticket Intelligence",
+  "displayName": "Service Ticket Intelligence Trial",
   "description": "Service Ticket Intelligence Trial",
   "fileName": "service-ticket-intelligence-trial.json",
   "category": "SERVICE"
@@ -4047,14 +4047,14 @@
  },
  {
   "technicalId": "workflow",
-  "displayName": "Workflow",
+  "displayName": "SAP Workflow Management",
   "description": "SAP Workflow service allows you to build, run, and manage workflows, from simple approvals to end-to-end processes that span across different organizations and applications. With an inbox application and custom-built user interfaces, you involve end users into business processes for decision making and data entry. The workflow service comes with web-based tools for workflow modeling, APIs for consumption in custom applications, monitoring tools, and a set of Fiori-based applications for end-user access. You can use JavaScript to embed custom business logic.",
   "fileName": "workflow.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "workflowmanagement",
-  "displayName": "SAP Workflow Management",
+  "displayName": "Workflow Management",
   "description": "Digitize workflows, manage decisions and gain end-to-end process visibility.",
   "fileName": "workflowmanagement.json",
   "category": "SERVICE"
@@ -4096,14 +4096,14 @@
  },
  {
   "technicalId": "xfs-runtime",
-  "displayName": "Serverless Runtime",
+  "displayName": "SAP BTP, serverless runtime",
   "description": "Provides runtime access to OData services exposed by the OData Provisioning capability in SAP Integration Suite. Please note that the extension capability is deprecated.",
   "fileName": "xfs-runtime.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "xfs-runtime-trial",
-  "displayName": "SAP BTP, serverless runtime",
+  "displayName": "Serverless Runtime",
   "description": "Provides runtime access to OData services exposed by the OData Provisioning capability in SAP Integration Suite. Please note that the extension capability is deprecated.",
   "fileName": "xfs-runtime-trial.json",
   "category": "SERVICE"
