@@ -294,7 +294,8 @@
          "modules",
          "networking",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -446,6 +447,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -689,7 +696,8 @@
          "autoScalerMax",
          "additionalWorkerNodePools",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -840,6 +848,12 @@
           "minimum": 3,
           "type": "integer"
          },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
+         },
          "machineType": {
           "_enumDisplayName": {
            "m5.12xlarge": "m5.12xlarge (48vCPU, 192GB RAM)",
@@ -939,7 +953,8 @@
          "modules",
          "networking",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -1091,6 +1106,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -1314,7 +1335,8 @@
          "autoScalerMax",
          "additionalWorkerNodePools",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -1464,6 +1486,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -2083,7 +2111,8 @@
          "modules",
          "networking",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -2217,6 +2246,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -2458,7 +2493,8 @@
          "autoScalerMax",
          "additionalWorkerNodePools",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -2591,6 +2627,12 @@
           "minimum": 3,
           "type": "integer"
          },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
+         },
          "machineType": {
           "_enumDisplayName": {
            "Standard_D16_v3": "Standard_D16_v3 (16vCPU, 64GB RAM)",
@@ -2688,7 +2730,8 @@
          "modules",
          "networking",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -2822,6 +2865,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -3043,7 +3092,8 @@
          "autoScalerMax",
          "additionalWorkerNodePools",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -3175,6 +3225,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -3815,11 +3871,13 @@
             },
             "machineType": {
              "_enumDisplayName": {
+              "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
              "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
+              "Standard_D2s_v5",
               "Standard_D4s_v5",
               "Standard_D4_v3"
              ],
@@ -3869,11 +3927,13 @@
          },
          "machineType": {
           "_enumDisplayName": {
+           "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
            "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
            "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
           },
           "description": "Specifies the type of the virtual machine.",
           "enum": [
+           "Standard_D2s_v5",
            "Standard_D4s_v5",
            "Standard_D4_v3"
           ],
@@ -4116,11 +4176,13 @@
             },
             "machineType": {
              "_enumDisplayName": {
+              "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
              "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
+              "Standard_D2s_v5",
               "Standard_D4s_v5",
               "Standard_D4_v3"
              ],
@@ -4168,11 +4230,13 @@
          },
          "machineType": {
           "_enumDisplayName": {
+           "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
            "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
            "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
           },
           "description": "Specifies the type of the virtual machine.",
           "enum": [
+           "Standard_D2s_v5",
            "Standard_D4s_v5",
            "Standard_D4_v3"
           ],
@@ -4272,11 +4336,13 @@
             },
             "machineType": {
              "_enumDisplayName": {
+              "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
              "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
+              "Standard_D2s_v5",
               "Standard_D4s_v5",
               "Standard_D4_v3"
              ],
@@ -4326,11 +4392,13 @@
          },
          "machineType": {
           "_enumDisplayName": {
+           "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
            "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
            "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
           },
           "description": "Specifies the type of the virtual machine.",
           "enum": [
+           "Standard_D2s_v5",
            "Standard_D4s_v5",
            "Standard_D4_v3"
           ],
@@ -4553,11 +4621,13 @@
             },
             "machineType": {
              "_enumDisplayName": {
+              "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
               "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
               "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
              },
              "description": "Specifies the type of the virtual machine. The machine type marked with \u201c*\u201d has limited availability and generates high cost. This setting is permanent, and you cannot change it later. To use a different machine type, you must create a new worker node pool, migrate workloads to it, and decommission the old one.",
              "enum": [
+              "Standard_D2s_v5",
               "Standard_D4s_v5",
               "Standard_D4_v3"
              ],
@@ -4605,11 +4675,13 @@
          },
          "machineType": {
           "_enumDisplayName": {
+           "Standard_D2s_v5": "Standard_D2s_v5 (2vCPU, 8GB RAM)",
            "Standard_D4_v3": "Standard_D4_v3 (4vCPU, 16GB RAM)",
            "Standard_D4s_v5": "Standard_D4s_v5 (4vCPU, 16GB RAM)"
           },
           "description": "Specifies the type of the virtual machine.",
           "enum": [
+           "Standard_D2s_v5",
            "Standard_D4s_v5",
            "Standard_D4_v3"
           ],
@@ -8759,17 +8831,17 @@
          },
          "region": {
           "_enumDisplayName": {
-           "australiaeast": "australiaeast (Australia, Sydney)",
-           "brazilsouth": "brazilsouth (Brazil, S\u00e3o Paulo)",
-           "canadacentral": "canadacentral (Canada, Toronto)",
-           "centralus": "centralus (US Central, IA)",
-           "eastus": "eastus (US East, VA)",
-           "japaneast": "japaneast (Japan, Tokyo)",
-           "northeurope": "northeurope (Europe, Ireland)",
-           "southeastasia": "southeastasia (Asia Pacific, Singapore)",
-           "uksouth": "uksouth (UK South, London)",
-           "westeurope": "westeurope (Europe, Netherlands)",
-           "westus2": "westus2 (US West, WA)"
+           "ap-northeast-1": "ap-northeast-1 (Asia Pacific, Tokyo)",
+           "ap-northeast-2": "ap-northeast-2 (Asia Pacific, Seoul)",
+           "ap-south-1": "ap-south-1 (Asia Pacific, Mumbai)",
+           "ap-southeast-1": "ap-southeast-1 (Asia Pacific, Singapore)",
+           "ap-southeast-2": "ap-southeast-2 (Asia Pacific, Sydney)",
+           "ca-central-1": "ca-central-1 (Canada, Montreal)",
+           "eu-central-1": "eu-central-1 (Europe, Frankfurt)",
+           "eu-west-2": "eu-west-2 (Europe, London)",
+           "sa-east-1": "sa-east-1 (Brazil, S\u00e3o Paulo)",
+           "us-east-1": "us-east-1 (US East, N. Virginia)",
+           "us-west-2": "us-west-2 (US West, Oregon)"
           },
           "enum": [
            "eu-central-1",
@@ -9600,7 +9672,7 @@
          },
          "region": {
           "_enumDisplayName": {
-           "switzerlandnorth": "switzerlandnorth (Switzerland, Zurich)"
+           "eu-central-1": "eu-central-1 (Europe, Frankfurt)"
           },
           "enum": [
            "eu-central-1"
@@ -10122,7 +10194,8 @@
          "modules",
          "networking",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -10248,6 +10321,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -10481,7 +10560,8 @@
          "autoScalerMax",
          "additionalWorkerNodePools",
          "oidc",
-         "administrators"
+         "administrators",
+         "ingressFiltering"
         ],
         "_load_current_config": true,
         "_show_form_view": true,
@@ -10605,6 +10685,12 @@
           "maximum": 300,
           "minimum": 3,
           "type": "integer"
+         },
+         "ingressFiltering": {
+          "default": false,
+          "description": "If set to true ingress traffic from embargoed countries will be blocked.",
+          "title": "Enable ingress geo-blocking",
+          "type": "boolean"
          },
          "machineType": {
           "_enumDisplayName": {
@@ -11359,6 +11445,9 @@
           "type": "object"
          },
          "region": {
+          "_enumDisplayName": {
+           "ap-au-1": "ap-au-1"
+          },
           "enum": [
            "ap-au-1"
           ],
@@ -11857,6 +11946,9 @@
           "type": "object"
          },
          "region": {
+          "_enumDisplayName": {
+           "eu-de-2": "eu-de-2"
+          },
           "enum": [
            "eu-de-2"
           ],
@@ -12355,6 +12447,9 @@
           "type": "object"
          },
          "region": {
+          "_enumDisplayName": {
+           "eu-de-1": "eu-de-1"
+          },
           "enum": [
            "eu-de-1"
           ],
@@ -12853,6 +12948,9 @@
           "type": "object"
          },
          "region": {
+          "_enumDisplayName": {
+           "ap-ae-1": "ap-ae-1"
+          },
           "enum": [
            "ap-ae-1"
           ],
@@ -13351,6 +13449,9 @@
           "type": "object"
          },
          "region": {
+          "_enumDisplayName": {
+           "ap-jp-1": "ap-jp-1"
+          },
           "enum": [
            "ap-jp-1"
           ],
@@ -13849,6 +13950,9 @@
           "type": "object"
          },
          "region": {
+          "_enumDisplayName": {
+           "na-us-1": "na-us-1"
+          },
           "enum": [
            "na-us-1"
           ],
@@ -14347,6 +14451,9 @@
           "type": "object"
          },
          "region": {
+          "_enumDisplayName": {
+           "na-us-2": "na-us-2"
+          },
           "enum": [
            "na-us-2"
           ],
