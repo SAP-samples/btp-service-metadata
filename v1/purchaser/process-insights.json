@@ -177,7 +177,47 @@
     {
      "materialNumber": "8016622",
      "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "standard-new",
+   "displayName": "Standard",
+   "category": "APPLICATION",
+   "description": "This plan offers the full product functionality without limitations.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
     },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "materialNumberMapping": [
     {
      "materialNumber": "8019554",
      "commercialModel": "Subscription"
