@@ -471,6 +471,39 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -536,10 +569,16 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "pal": {
               "type": "boolean"
              },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -619,9 +658,6 @@
             },
             "type": "object"
            },
-           "project_name": {
-            "type": "string"
-           },
            "requestedOperation": {
             "additionalProperties": false,
             "properties": {
@@ -683,9 +719,6 @@
             "minLength": 8,
             "type": "string"
            },
-           "template_name": {
-            "type": "string"
-           },
            "update_strategy": {
             "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
             "enum": [
@@ -720,9 +753,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -793,6 +824,35 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -829,10 +889,16 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "pal": {
               "type": "boolean"
              },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -847,6 +913,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               },
               "whitelistIPs": {
                "items": {
@@ -881,6 +955,14 @@
               }
              }
             },
+            "type": "array"
+           },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
             "type": "array"
            },
            "productVersion": {
@@ -940,6 +1022,9 @@
                "secondary_az": {
                 "type": "string"
                },
+               "source_instance_id": {
+                "type": "string"
+               },
                "target_az": {
                 "type": "string"
                },
@@ -963,6 +1048,8 @@
                "DISASTER_KEEP_AZ_RECOVERY",
                "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
@@ -1041,9 +1128,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -6734,6 +6819,39 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "databaseMappings": {
             "items": {
              "properties": {
@@ -6780,7 +6898,13 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -6818,11 +6942,11 @@
             "type": "boolean"
            },
            "memory": {
-            "default": 32,
+            "default": 30,
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 1792,
-            "minimum": 32,
+            "maximum": 5970,
+            "minimum": 30,
             "type": "integer"
            },
            "memoryScaleOut": {
@@ -6911,7 +7035,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 4520,
+            "maximum": 16000,
             "minimum": 120,
             "type": "integer"
            },
@@ -6955,9 +7079,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -7028,6 +7150,35 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "disasterRecoveryMode": {
             "description": "Disaster Recovery of the HANA instance",
             "enum": [
@@ -7046,7 +7197,13 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -7061,6 +7218,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               },
               "whitelistIPs": {
                "items": {
@@ -7081,8 +7246,8 @@
            "memory": {
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 1792,
-            "minimum": 32,
+            "maximum": 5970,
+            "minimum": 30,
             "type": "integer"
            },
            "plugins": {
@@ -7095,6 +7260,14 @@
               }
              }
             },
+            "type": "array"
+           },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
             "type": "array"
            },
            "productVersion": {
@@ -7154,6 +7327,9 @@
                "secondary_az": {
                 "type": "string"
                },
+               "source_instance_id": {
+                "type": "string"
+               },
                "target_az": {
                 "type": "string"
                },
@@ -7177,6 +7353,8 @@
                "DISASTER_KEEP_AZ_RECOVERY",
                "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
@@ -7202,7 +7380,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 4520,
+            "maximum": 16000,
             "minimum": 120,
             "type": "integer"
            },
@@ -7255,9 +7433,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -15336,6 +15512,39 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -15401,10 +15610,16 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "pal": {
               "type": "boolean"
              },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -15484,9 +15699,6 @@
             },
             "type": "object"
            },
-           "project_name": {
-            "type": "string"
-           },
            "requestedOperation": {
             "additionalProperties": false,
             "properties": {
@@ -15548,9 +15760,6 @@
             "minLength": 8,
             "type": "string"
            },
-           "template_name": {
-            "type": "string"
-           },
            "update_strategy": {
             "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
             "enum": [
@@ -15585,9 +15794,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -15658,6 +15865,35 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -15694,10 +15930,16 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "pal": {
               "type": "boolean"
              },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -15712,6 +15954,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               },
               "whitelistIPs": {
                "items": {
@@ -15746,6 +15996,14 @@
               }
              }
             },
+            "type": "array"
+           },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
             "type": "array"
            },
            "productVersion": {
@@ -15805,6 +16063,9 @@
                "secondary_az": {
                 "type": "string"
                },
+               "source_instance_id": {
+                "type": "string"
+               },
                "target_az": {
                 "type": "string"
                },
@@ -15828,6 +16089,8 @@
                "DISASTER_KEEP_AZ_RECOVERY",
                "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
@@ -15906,9 +16169,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -23238,6 +23499,39 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -23303,10 +23597,16 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "pal": {
               "type": "boolean"
              },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -23386,9 +23686,6 @@
             },
             "type": "object"
            },
-           "project_name": {
-            "type": "string"
-           },
            "requestedOperation": {
             "additionalProperties": false,
             "properties": {
@@ -23450,9 +23747,6 @@
             "minLength": 8,
             "type": "string"
            },
-           "template_name": {
-            "type": "string"
-           },
            "update_strategy": {
             "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
             "enum": [
@@ -23487,9 +23781,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -23560,6 +23852,35 @@
             },
             "type": "object"
            },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
@@ -23596,10 +23917,16 @@
              "dpserver": {
               "type": "boolean"
              },
+             "nlp": {
+              "type": "boolean"
+             },
              "pal": {
               "type": "boolean"
              },
              "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
               "type": "boolean"
              }
             },
@@ -23614,6 +23941,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               },
               "whitelistIPs": {
                "items": {
@@ -23648,6 +23983,14 @@
               }
              }
             },
+            "type": "array"
+           },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
             "type": "array"
            },
            "productVersion": {
@@ -23707,6 +24050,9 @@
                "secondary_az": {
                 "type": "string"
                },
+               "source_instance_id": {
+                "type": "string"
+               },
                "target_az": {
                 "type": "string"
                },
@@ -23730,6 +24076,8 @@
                "DISASTER_KEEP_AZ_RECOVERY",
                "disaster_recovery_takeover",
                "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
                "synchronous_replication_takeover",
                "TAKE_SNAPSHOT_FOR_FALLBACK",
                "FALLBACK_TO_SNAPSHOT",
@@ -23808,9 +24156,7 @@
          "metadata": {
           "additionalProperties": true,
           "properties": {},
-          "propertyNames": {
-           "pattern": "^(hc.sap.com/webide_subscription|ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
+          "propertyNames": {},
           "type": "object"
          }
         },
@@ -37129,6 +37475,15 @@
                   "type": "string"
                  },
                  "type": "array"
+                },
+                "trustBindings": {
+                 "description": "Trusts bindings to be established with other services",
+                 "items": {
+                  "description": "Trust group",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                  "type": "string"
+                 },
+                 "type": "array"
                 }
                },
                "required": [
@@ -37159,6 +37514,13 @@
                }
               },
               "type": "object"
+             },
+             "retentionDays": {
+              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 15,
+              "type": "integer"
              },
              "roles": {
               "items": {
@@ -37196,6 +37558,14 @@
              "trusts": {
               "items": {
                "properties": {
+                "aggregateTo": {
+                 "items": {
+                  "description": "List of aliases to aggregate to",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                  "type": "string"
+                 },
+                 "type": "array"
+                },
                 "alias": {
                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                  "type": "string"
@@ -37728,6 +38098,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               }
              },
              "required": [
@@ -37751,6 +38129,15 @@
                 },
                 "roles": {
                  "items": {
+                  "type": "string"
+                 },
+                 "type": "array"
+                },
+                "trustBindings": {
+                 "description": "Trusts bindings to be established with other services",
+                 "items": {
+                  "description": "Trust group",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                   "type": "string"
                  },
                  "type": "array"
@@ -37784,6 +38171,13 @@
                }
               },
               "type": "object"
+             },
+             "retentionDays": {
+              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 15,
+              "type": "integer"
              },
              "roles": {
               "items": {
@@ -37821,6 +38215,14 @@
              "trusts": {
               "items": {
                "properties": {
+                "aggregateTo": {
+                 "items": {
+                  "description": "List of aliases to aggregate to",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                  "type": "string"
+                 },
+                 "type": "array"
+                },
                 "alias": {
                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                  "type": "string"
@@ -38197,6 +38599,14 @@
             "minimum": 1,
             "type": "integer"
            },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array"
+           },
            "provisioned_size_gib": {
             "description": "Size of IQ persistence in GB.",
             "maximum": 92160,
@@ -38220,6 +38630,10 @@
               "additionalProperties": false,
               "description": "List of operation arguments",
               "properties": {
+               "target_timestamp": {
+                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
+                "type": "string"
+               },
                "upgrade_type": {
                 "enum": [
                  "none",
@@ -38235,7 +38649,9 @@
               "description": "Update operation",
               "enum": [
                "none",
-               "INFRASTRUCTURE_UPGRADE"
+               "INFRASTRUCTURE_UPGRADE",
+               "RECOVERY",
+               "CANCEL_RECOVERY"
               ],
               "type": "string"
              }
@@ -47383,11 +47799,6 @@
            "dataEncryption": {
             "description": "Data Encryption Specifications",
             "properties": {
-             "keyID": {
-              "description": "Encryption Key GUID",
-              "minLength": 1,
-              "type": "string"
-             },
              "mode": {
               "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
               "enum": [
@@ -48648,1289 +49059,6 @@
            "serviceStopped": {
             "description": "Describes if the system should be running or stopped",
             "type": "boolean"
-           },
-           "updateStrategy": {
-            "description": "Preferred behaviour for iq version upgrade",
-            "enum": [
-             "withRollingRestart",
-             "withRestart"
-            ],
-            "type": "string"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use.",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           },
-           "writer_type": {
-            "description": "Node size for IQ writers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           }
-          },
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      }
-     },
-     "service_binding": {
-      "create": {
-       "parameters": null
-      }
-     }
-    },
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "defaultProperties": [
-           "systempassword"
-          ],
-          "properties": {
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 1,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "coordinator_type": {
-            "description": "Node type for IQ co-ordinators.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "enableBackups": {
-            "description": "Describes if IQ backups are enabled or not",
-            "type": "boolean"
-           },
-           "extensionServices": {
-            "items": {
-             "properties": {
-              "allowlistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              },
-              "credentials": {
-               "additionalProperties": false,
-               "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
-               "properties": {
-                "type": {
-                 "pattern": "^(serviceKey)$",
-                 "type": "string"
-                },
-                "value": {
-                 "additionalProperties": true,
-                 "properties": {},
-                 "type": "object"
-                }
-               },
-               "type": "object"
-              },
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "fileContainer": {
-            "description": "Configuration of the Data Lake's default file container",
-            "properties": {
-             "authorizations": {
-              "items": {
-               "properties": {
-                "pattern": {
-                 "type": "string"
-                },
-                "rank": {
-                 "type": "integer"
-                },
-                "roles": {
-                 "items": {
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "pattern",
-                "roles",
-                "rank"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "capabilities": {
-              "properties": {
-               "homeDirectories": {
-                "properties": {
-                 "prefix": {
-                  "pattern": "^/[\\S]+/$",
-                  "type": "string"
-                 }
-                },
-                "required": [
-                 "prefix"
-                ],
-                "type": [
-                 "object",
-                 "null"
-                ]
-               }
-              },
-              "type": "object"
-             },
-             "roles": {
-              "items": {
-               "properties": {
-                "name": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "privileges": {
-                 "items": {
-                  "enum": [
-                   "browse",
-                   "open",
-                   "create",
-                   "append",
-                   "rename",
-                   "delete",
-                   "restore",
-                   "impersonate",
-                   "authorize"
-                  ],
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "name",
-                "privileges"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "trusts": {
-              "items": {
-               "properties": {
-                "alias": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "certData": {
-                 "pattern": "^-----BEGIN CERTIFICATE-----\\s[A-Za-z0-9+/\\s]+={0,2}\\s-----END CERTIFICATE-----$",
-                 "type": "string"
-                }
-               },
-               "required": [
-                "alias",
-                "certData"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             }
-            },
-            "type": "object"
-           },
-           "generateSystemPassword": {
-            "default": false,
-            "description": "Describes if the systempassword should be generated or not.",
-            "type": "boolean"
-           },
-           "highAvailability": {
-            "additionalProperties": false,
-            "description": "HDL High Availability service",
-            "properties": {
-             "enabled": {
-              "description": "Describes if the IQ instance should allocate extra resources in order to be resilient to availability zone outages",
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "initOptions": {
-            "additionalProperties": false,
-            "properties": {
-             "blankPadding": {
-              "description": "blank padding to be set in HDL",
-              "enum": [
-               "ON",
-               "OFF"
-              ],
-              "type": "string"
-             },
-             "caseSensitivity": {
-              "description": "case sensitivity to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect"
-              ],
-              "type": "string"
-             },
-             "collation": {
-              "description": "collation to be set in HDL",
-              "enum": [
-               "874THAIBIN",
-               "932JPN",
-               "936ZHO",
-               "949KOR",
-               "950ZHO_HK",
-               "950ZHO_TW",
-               "1250LATIN2",
-               "1250POL",
-               "1251CYR",
-               "1252BIN",
-               "1252LATIN1",
-               "1252LT1ACC",
-               "1252NOR",
-               "1252SPA",
-               "1252SWEFIN",
-               "1253ELL",
-               "1254TRK",
-               "1254TRKALT",
-               "1255HEB",
-               "1256ARA",
-               "1257LIT",
-               "CESU8BIN",
-               "EUC_CHINA",
-               "EUC_JAPAN",
-               "EUC_KOREA",
-               "EUC_TAIWAN",
-               "ISO1LATIN1",
-               "ISO9LATIN1",
-               "ISO_1",
-               "ISO_BINENG",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharAccentSensitivity": {
-              "description": "AccentSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "French"
-              ],
-              "type": "string"
-             },
-             "ncharCaseSensitivity": {
-              "description": "CaseSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "UpperFirst",
-               "LowerFirst"
-              ],
-              "type": "string"
-             },
-             "ncharCollation": {
-              "description": "nchar collation to be set in HDL",
-              "enum": [
-               "UCA",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharLocale": {
-              "description": "locale to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ar_AE",
-               "ar_BH",
-               "ar_DZ",
-               "ar_EG",
-               "ar_IN",
-               "ar_IQ",
-               "ar_JO",
-               "ar_KW",
-               "ar_LB",
-               "ar_LY",
-               "ar_MA",
-               "ar_OM",
-               "ar_QA",
-               "ar_SA",
-               "ar_SD",
-               "ar_SY",
-               "ar_TN",
-               "ar",
-               "ar_YE",
-               "be_BY",
-               "be",
-               "bg_BG",
-               "bg",
-               "ca_ES",
-               "ca",
-               "cs_CZ",
-               "cs",
-               "da_DK",
-               "da",
-               "de_AT",
-               "de_BE",
-               "de_CH",
-               "de_DE",
-               "de_LU",
-               "de__PHONEBOOK",
-               "de",
-               "el_GR",
-               "el",
-               "en_AU",
-               "en_BE",
-               "en_BW",
-               "en_CA",
-               "en_GB",
-               "en_HK",
-               "en_IE",
-               "en_IN",
-               "en_MT",
-               "en_NZ",
-               "en_PH",
-               "en_SG",
-               "en",
-               "en_US_POSIX",
-               "en_US",
-               "en_VI",
-               "en_ZA",
-               "en_ZW",
-               "eo",
-               "es_AR",
-               "es_BO",
-               "es_CL",
-               "es_CO",
-               "es_CR",
-               "es_DO",
-               "es_EC",
-               "es_ES",
-               "es_GT",
-               "es_HN",
-               "es_MX",
-               "es_NI",
-               "es_PA",
-               "es_PE",
-               "es_PR",
-               "es_PY",
-               "es_SV",
-               "es__TRADITIONAL",
-               "es",
-               "es_US",
-               "es_UY",
-               "es_VE",
-               "et_EE",
-               "et",
-               "fa_AF",
-               "fa_IR",
-               "fa",
-               "fi_FI",
-               "fi",
-               "fo_FO",
-               "fo",
-               "fr_BE",
-               "fr_CA",
-               "fr_CH",
-               "fr_FR",
-               "fr_LU",
-               "fr",
-               "ga_IE",
-               "ga",
-               "gu_IN",
-               "gu",
-               "he_IL",
-               "he",
-               "hi__DIRECT",
-               "hi_IN",
-               "hi",
-               "hr_HR",
-               "hr",
-               "hu_HU",
-               "hu",
-               "id_ID",
-               "id",
-               "is_IS",
-               "is",
-               "it_CH",
-               "it_IT",
-               "it",
-               "ja__DIRECT",
-               "ja_JP",
-               "ja",
-               "kk_KZ",
-               "kk",
-               "kl_GL",
-               "kl",
-               "kn_IN",
-               "kn",
-               "ko_KR",
-               "ko",
-               "lt_LT",
-               "lt",
-               "lv_LV",
-               "lv",
-               "mk_MK",
-               "mk",
-               "ml",
-               "mr_IN",
-               "mr",
-               "ms_BN",
-               "ms_MY",
-               "ms",
-               "mt_MT",
-               "mt",
-               "nb_NO",
-               "nb",
-               "nl_BE",
-               "nl_NL",
-               "nl",
-               "nn_NO",
-               "nn",
-               "om_ET",
-               "om_KE",
-               "om",
-               "or",
-               "pa_IN",
-               "pa",
-               "pl_PL",
-               "pl",
-               "ps_AF",
-               "ps",
-               "pt_BR",
-               "pt_PT",
-               "pt",
-               "root",
-               "ro_RO",
-               "ro",
-               "ru_RU",
-               "ru",
-               "ru_UA",
-               "sh_BA",
-               "sh",
-               "sh_YU",
-               "sk_SK",
-               "sk",
-               "sl_SI",
-               "sl",
-               "sq_AL",
-               "sq",
-               "sr_BA",
-               "sr_Cyrl_BA",
-               "sr_Cyrl",
-               "sr_Cyrl_YU",
-               "sr",
-               "sr_YU",
-               "sv_FI",
-               "sv__PHONEBOOK",
-               "sv_SE",
-               "sv",
-               "ta_IN",
-               "ta",
-               "te_IN",
-               "te",
-               "th_TH",
-               "th",
-               "tr_TR",
-               "tr",
-               "uk",
-               "uk_UA",
-               "vi",
-               "vi_VN",
-               "zh_CN",
-               "zh_Hant",
-               "zh_HK",
-               "zh_MO",
-               "zh__PINYIN",
-               "zh_SG",
-               "zh_TW_STROKE",
-               "zh_TW",
-               "zh"
-              ],
-              "type": "string"
-             },
-             "ncharPunctuationSensitivity": {
-              "description": "PunctuationSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "primary",
-               "quaternary"
-              ],
-              "type": "string"
-             },
-             "ncharSortType": {
-              "description": "SortType to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "phonebook",
-               "traditional",
-               "standard",
-               "pinyin",
-               "stroke",
-               "direct",
-               "posix",
-               "big5han",
-               "gb2312han"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "iqEnabled": {
-            "description": "Whether to provision an iq instance for the datalake or not.",
-            "type": "boolean"
-           },
-           "num_coordinators": {
-            "maximum": 1,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "num_readers": {
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "num_writers": {
-            "maximum": 10,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "provisioned_size_gib": {
-            "description": "Size of IQ persistence in GB",
-            "maximum": 92160,
-            "minimum": 1024,
-            "type": "integer"
-           },
-           "reader_type": {
-            "description": "Node size for IQ readers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "storage_service_provider": {
-            "description": "The storage service provider to use.",
-            "type": "string"
-           },
-           "storage_service_tier": {
-            "description": "The storage service tier to use.",
-            "type": "string"
-           },
-           "systempassword": {
-            "default": "",
-            "description": "Password to be set for tenant",
-            "minLength": 6,
-            "type": "string"
-           },
-           "updateStrategy": {
-            "description": "Preferred behaviour for iq version upgrade",
-            "enum": [
-             "withRollingRestart",
-             "withRestart"
-            ],
-            "type": "string"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           },
-           "writer_type": {
-            "description": "Node size for IQ writers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           }
-          },
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      },
-      "update": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "default": {},
-          "defaultProperties": [],
-          "properties": {
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 1,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "coordinator_type": {
-            "description": "Node type for IQ co-ordinators.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "enableBackups": {
-            "description": "Describes if IQ backups are enabled or not",
-            "type": "boolean"
-           },
-           "extensionServices": {
-            "items": {
-             "properties": {
-              "allowlistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              },
-              "credentials": {
-               "additionalProperties": false,
-               "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
-               "properties": {
-                "type": {
-                 "pattern": "^(serviceKey)$",
-                 "type": "string"
-                },
-                "value": {
-                 "additionalProperties": true,
-                 "properties": {},
-                 "type": "object"
-                }
-               },
-               "type": "object"
-              },
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "fileContainer": {
-            "description": "Configuration of the Data Lake's default file container",
-            "properties": {
-             "authorizations": {
-              "items": {
-               "properties": {
-                "pattern": {
-                 "type": "string"
-                },
-                "rank": {
-                 "type": "integer"
-                },
-                "roles": {
-                 "items": {
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "pattern",
-                "roles",
-                "rank"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "capabilities": {
-              "properties": {
-               "homeDirectories": {
-                "properties": {
-                 "prefix": {
-                  "pattern": "^/[\\S]+/$",
-                  "type": "string"
-                 }
-                },
-                "required": [
-                 "prefix"
-                ],
-                "type": [
-                 "object",
-                 "null"
-                ]
-               }
-              },
-              "type": "object"
-             },
-             "roles": {
-              "items": {
-               "properties": {
-                "name": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "privileges": {
-                 "items": {
-                  "enum": [
-                   "browse",
-                   "open",
-                   "create",
-                   "append",
-                   "rename",
-                   "delete",
-                   "restore",
-                   "impersonate",
-                   "authorize"
-                  ],
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "name",
-                "privileges"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "trusts": {
-              "items": {
-               "properties": {
-                "alias": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "certData": {
-                 "pattern": "^-----BEGIN CERTIFICATE-----\\s[A-Za-z0-9+/\\s]+={0,2}\\s-----END CERTIFICATE-----$",
-                 "type": "string"
-                }
-               },
-               "required": [
-                "alias",
-                "certData"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             }
-            },
-            "type": "object"
-           },
-           "generateSystemPassword": {
-            "default": false,
-            "description": "Describes if the systempassword should be generated or not.",
-            "type": "boolean"
-           },
-           "highAvailability": {
-            "additionalProperties": false,
-            "description": "HDL High Availability service",
-            "properties": {
-             "enabled": {
-              "description": "Describes if the IQ instance should allocate extra resources in order to be resilient to availability zone outages",
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "initOptions": {
-            "additionalProperties": false,
-            "properties": {
-             "blankPadding": {
-              "description": "blank padding to be set in HDL",
-              "enum": [
-               "ON",
-               "OFF"
-              ],
-              "type": "string"
-             },
-             "caseSensitivity": {
-              "description": "case sensitivity to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect"
-              ],
-              "type": "string"
-             },
-             "collation": {
-              "description": "collation to be set in HDL",
-              "enum": [
-               "874THAIBIN",
-               "932JPN",
-               "936ZHO",
-               "949KOR",
-               "950ZHO_HK",
-               "950ZHO_TW",
-               "1250LATIN2",
-               "1250POL",
-               "1251CYR",
-               "1252BIN",
-               "1252LATIN1",
-               "1252LT1ACC",
-               "1252NOR",
-               "1252SPA",
-               "1252SWEFIN",
-               "1253ELL",
-               "1254TRK",
-               "1254TRKALT",
-               "1255HEB",
-               "1256ARA",
-               "1257LIT",
-               "CESU8BIN",
-               "EUC_CHINA",
-               "EUC_JAPAN",
-               "EUC_KOREA",
-               "EUC_TAIWAN",
-               "ISO1LATIN1",
-               "ISO9LATIN1",
-               "ISO_1",
-               "ISO_BINENG",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharAccentSensitivity": {
-              "description": "AccentSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "French"
-              ],
-              "type": "string"
-             },
-             "ncharCaseSensitivity": {
-              "description": "CaseSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "UpperFirst",
-               "LowerFirst"
-              ],
-              "type": "string"
-             },
-             "ncharCollation": {
-              "description": "nchar collation to be set in HDL",
-              "enum": [
-               "UCA",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharLocale": {
-              "description": "locale to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ar_AE",
-               "ar_BH",
-               "ar_DZ",
-               "ar_EG",
-               "ar_IN",
-               "ar_IQ",
-               "ar_JO",
-               "ar_KW",
-               "ar_LB",
-               "ar_LY",
-               "ar_MA",
-               "ar_OM",
-               "ar_QA",
-               "ar_SA",
-               "ar_SD",
-               "ar_SY",
-               "ar_TN",
-               "ar",
-               "ar_YE",
-               "be_BY",
-               "be",
-               "bg_BG",
-               "bg",
-               "ca_ES",
-               "ca",
-               "cs_CZ",
-               "cs",
-               "da_DK",
-               "da",
-               "de_AT",
-               "de_BE",
-               "de_CH",
-               "de_DE",
-               "de_LU",
-               "de__PHONEBOOK",
-               "de",
-               "el_GR",
-               "el",
-               "en_AU",
-               "en_BE",
-               "en_BW",
-               "en_CA",
-               "en_GB",
-               "en_HK",
-               "en_IE",
-               "en_IN",
-               "en_MT",
-               "en_NZ",
-               "en_PH",
-               "en_SG",
-               "en",
-               "en_US_POSIX",
-               "en_US",
-               "en_VI",
-               "en_ZA",
-               "en_ZW",
-               "eo",
-               "es_AR",
-               "es_BO",
-               "es_CL",
-               "es_CO",
-               "es_CR",
-               "es_DO",
-               "es_EC",
-               "es_ES",
-               "es_GT",
-               "es_HN",
-               "es_MX",
-               "es_NI",
-               "es_PA",
-               "es_PE",
-               "es_PR",
-               "es_PY",
-               "es_SV",
-               "es__TRADITIONAL",
-               "es",
-               "es_US",
-               "es_UY",
-               "es_VE",
-               "et_EE",
-               "et",
-               "fa_AF",
-               "fa_IR",
-               "fa",
-               "fi_FI",
-               "fi",
-               "fo_FO",
-               "fo",
-               "fr_BE",
-               "fr_CA",
-               "fr_CH",
-               "fr_FR",
-               "fr_LU",
-               "fr",
-               "ga_IE",
-               "ga",
-               "gu_IN",
-               "gu",
-               "he_IL",
-               "he",
-               "hi__DIRECT",
-               "hi_IN",
-               "hi",
-               "hr_HR",
-               "hr",
-               "hu_HU",
-               "hu",
-               "id_ID",
-               "id",
-               "is_IS",
-               "is",
-               "it_CH",
-               "it_IT",
-               "it",
-               "ja__DIRECT",
-               "ja_JP",
-               "ja",
-               "kk_KZ",
-               "kk",
-               "kl_GL",
-               "kl",
-               "kn_IN",
-               "kn",
-               "ko_KR",
-               "ko",
-               "lt_LT",
-               "lt",
-               "lv_LV",
-               "lv",
-               "mk_MK",
-               "mk",
-               "ml",
-               "mr_IN",
-               "mr",
-               "ms_BN",
-               "ms_MY",
-               "ms",
-               "mt_MT",
-               "mt",
-               "nb_NO",
-               "nb",
-               "nl_BE",
-               "nl_NL",
-               "nl",
-               "nn_NO",
-               "nn",
-               "om_ET",
-               "om_KE",
-               "om",
-               "or",
-               "pa_IN",
-               "pa",
-               "pl_PL",
-               "pl",
-               "ps_AF",
-               "ps",
-               "pt_BR",
-               "pt_PT",
-               "pt",
-               "root",
-               "ro_RO",
-               "ro",
-               "ru_RU",
-               "ru",
-               "ru_UA",
-               "sh_BA",
-               "sh",
-               "sh_YU",
-               "sk_SK",
-               "sk",
-               "sl_SI",
-               "sl",
-               "sq_AL",
-               "sq",
-               "sr_BA",
-               "sr_Cyrl_BA",
-               "sr_Cyrl",
-               "sr_Cyrl_YU",
-               "sr",
-               "sr_YU",
-               "sv_FI",
-               "sv__PHONEBOOK",
-               "sv_SE",
-               "sv",
-               "ta_IN",
-               "ta",
-               "te_IN",
-               "te",
-               "th_TH",
-               "th",
-               "tr_TR",
-               "tr",
-               "uk",
-               "uk_UA",
-               "vi",
-               "vi_VN",
-               "zh_CN",
-               "zh_Hant",
-               "zh_HK",
-               "zh_MO",
-               "zh__PINYIN",
-               "zh_SG",
-               "zh_TW_STROKE",
-               "zh_TW",
-               "zh"
-              ],
-              "type": "string"
-             },
-             "ncharPunctuationSensitivity": {
-              "description": "PunctuationSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "primary",
-               "quaternary"
-              ],
-              "type": "string"
-             },
-             "ncharSortType": {
-              "description": "SortType to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "phonebook",
-               "traditional",
-               "standard",
-               "pinyin",
-               "stroke",
-               "direct",
-               "posix",
-               "big5han",
-               "gb2312han"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "iqEnabled": {
-            "description": "Whether to provision an iq instance for the datalake or not.",
-            "type": "boolean"
-           },
-           "num_coordinators": {
-            "maximum": 1,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "num_readers": {
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "num_writers": {
-            "maximum": 10,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "provisioned_size_gib": {
-            "description": "Size of IQ persistence in GB.",
-            "maximum": 92160,
-            "minimum": 1024,
-            "type": "integer"
-           },
-           "reader_type": {
-            "description": "Node size for IQ readers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "requestedOperation": {
-            "additionalProperties": false,
-            "properties": {
-             "arguments": {
-              "additionalProperties": false,
-              "description": "List of operation arguments",
-              "properties": {
-               "upgrade_type": {
-                "enum": [
-                 "none",
-                 "CLDDBSPC_MIGRATION_BEGIN",
-                 "PREPARE_FOR_MULTI_AZ"
-                ],
-                "type": "string"
-               }
-              },
-              "type": "object"
-             },
-             "name": {
-              "description": "Update operation",
-              "enum": [
-               "none",
-               "INFRASTRUCTURE_UPGRADE"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "storage_service_provider": {
-            "description": "The storage service provider to use.",
-            "type": "string"
-           },
-           "storage_service_tier": {
-            "description": "The storage service tier to use.",
-            "type": "string"
            },
            "updateStrategy": {
             "description": "Preferred behaviour for iq version upgrade",
@@ -55144,6 +54272,1289 @@
            "serviceStopped": {
             "description": "Describes if the system should be running or stopped",
             "type": "boolean"
+           },
+           "updateStrategy": {
+            "description": "Preferred behaviour for iq version upgrade",
+            "enum": [
+             "withRollingRestart",
+             "withRestart"
+            ],
+            "type": "string"
+           },
+           "versionIndicator": {
+            "description": "The version of the service to use.",
+            "type": "string"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 250,
+            "type": "array"
+           },
+           "writer_type": {
+            "description": "Node size for IQ writers.",
+            "enum": [
+             "small",
+             "medium",
+             "large",
+             "xlarge",
+             "2xlarge"
+            ]
+           }
+          },
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {
+           "pattern": "^(ui.hc.sap.com/[a-zA-Z0-9_]*)$"
+          },
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": null
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "defaultProperties": [
+           "systempassword"
+          ],
+          "properties": {
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 1,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "coordinator_type": {
+            "description": "Node type for IQ co-ordinators.",
+            "enum": [
+             "small",
+             "medium",
+             "large",
+             "xlarge",
+             "2xlarge"
+            ]
+           },
+           "enableBackups": {
+            "description": "Describes if IQ backups are enabled or not",
+            "type": "boolean"
+           },
+           "extensionServices": {
+            "items": {
+             "properties": {
+              "allowlistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 250,
+               "type": "array"
+              },
+              "credentials": {
+               "additionalProperties": false,
+               "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+               "properties": {
+                "type": {
+                 "pattern": "^(serviceKey)$",
+                 "type": "string"
+                },
+                "value": {
+                 "additionalProperties": true,
+                 "properties": {},
+                 "type": "object"
+                }
+               },
+               "type": "object"
+              },
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "fileContainer": {
+            "description": "Configuration of the Data Lake's default file container",
+            "properties": {
+             "authorizations": {
+              "items": {
+               "properties": {
+                "pattern": {
+                 "type": "string"
+                },
+                "rank": {
+                 "type": "integer"
+                },
+                "roles": {
+                 "items": {
+                  "type": "string"
+                 },
+                 "type": "array"
+                }
+               },
+               "required": [
+                "pattern",
+                "roles",
+                "rank"
+               ],
+               "type": "object"
+              },
+              "type": "array"
+             },
+             "capabilities": {
+              "properties": {
+               "homeDirectories": {
+                "properties": {
+                 "prefix": {
+                  "pattern": "^/[\\S]+/$",
+                  "type": "string"
+                 }
+                },
+                "required": [
+                 "prefix"
+                ],
+                "type": [
+                 "object",
+                 "null"
+                ]
+               }
+              },
+              "type": "object"
+             },
+             "roles": {
+              "items": {
+               "properties": {
+                "name": {
+                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                 "type": "string"
+                },
+                "privileges": {
+                 "items": {
+                  "enum": [
+                   "browse",
+                   "open",
+                   "create",
+                   "append",
+                   "rename",
+                   "delete",
+                   "restore",
+                   "impersonate",
+                   "authorize"
+                  ],
+                  "type": "string"
+                 },
+                 "type": "array"
+                }
+               },
+               "required": [
+                "name",
+                "privileges"
+               ],
+               "type": "object"
+              },
+              "type": "array"
+             },
+             "trusts": {
+              "items": {
+               "properties": {
+                "alias": {
+                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                 "type": "string"
+                },
+                "certData": {
+                 "pattern": "^-----BEGIN CERTIFICATE-----\\s[A-Za-z0-9+/\\s]+={0,2}\\s-----END CERTIFICATE-----$",
+                 "type": "string"
+                }
+               },
+               "required": [
+                "alias",
+                "certData"
+               ],
+               "type": "object"
+              },
+              "type": "array"
+             }
+            },
+            "type": "object"
+           },
+           "generateSystemPassword": {
+            "default": false,
+            "description": "Describes if the systempassword should be generated or not.",
+            "type": "boolean"
+           },
+           "highAvailability": {
+            "additionalProperties": false,
+            "description": "HDL High Availability service",
+            "properties": {
+             "enabled": {
+              "description": "Describes if the IQ instance should allocate extra resources in order to be resilient to availability zone outages",
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "initOptions": {
+            "additionalProperties": false,
+            "properties": {
+             "blankPadding": {
+              "description": "blank padding to be set in HDL",
+              "enum": [
+               "ON",
+               "OFF"
+              ],
+              "type": "string"
+             },
+             "caseSensitivity": {
+              "description": "case sensitivity to be set in HDL",
+              "enum": [
+               "ignore",
+               "respect"
+              ],
+              "type": "string"
+             },
+             "collation": {
+              "description": "collation to be set in HDL",
+              "enum": [
+               "874THAIBIN",
+               "932JPN",
+               "936ZHO",
+               "949KOR",
+               "950ZHO_HK",
+               "950ZHO_TW",
+               "1250LATIN2",
+               "1250POL",
+               "1251CYR",
+               "1252BIN",
+               "1252LATIN1",
+               "1252LT1ACC",
+               "1252NOR",
+               "1252SPA",
+               "1252SWEFIN",
+               "1253ELL",
+               "1254TRK",
+               "1254TRKALT",
+               "1255HEB",
+               "1256ARA",
+               "1257LIT",
+               "CESU8BIN",
+               "EUC_CHINA",
+               "EUC_JAPAN",
+               "EUC_KOREA",
+               "EUC_TAIWAN",
+               "ISO1LATIN1",
+               "ISO9LATIN1",
+               "ISO_1",
+               "ISO_BINENG",
+               "UTF8BIN"
+              ],
+              "type": "string"
+             },
+             "ncharAccentSensitivity": {
+              "description": "AccentSensitivity to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ignore",
+               "respect",
+               "French"
+              ],
+              "type": "string"
+             },
+             "ncharCaseSensitivity": {
+              "description": "CaseSensitivity to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ignore",
+               "respect",
+               "UpperFirst",
+               "LowerFirst"
+              ],
+              "type": "string"
+             },
+             "ncharCollation": {
+              "description": "nchar collation to be set in HDL",
+              "enum": [
+               "UCA",
+               "UTF8BIN"
+              ],
+              "type": "string"
+             },
+             "ncharLocale": {
+              "description": "locale to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ar_AE",
+               "ar_BH",
+               "ar_DZ",
+               "ar_EG",
+               "ar_IN",
+               "ar_IQ",
+               "ar_JO",
+               "ar_KW",
+               "ar_LB",
+               "ar_LY",
+               "ar_MA",
+               "ar_OM",
+               "ar_QA",
+               "ar_SA",
+               "ar_SD",
+               "ar_SY",
+               "ar_TN",
+               "ar",
+               "ar_YE",
+               "be_BY",
+               "be",
+               "bg_BG",
+               "bg",
+               "ca_ES",
+               "ca",
+               "cs_CZ",
+               "cs",
+               "da_DK",
+               "da",
+               "de_AT",
+               "de_BE",
+               "de_CH",
+               "de_DE",
+               "de_LU",
+               "de__PHONEBOOK",
+               "de",
+               "el_GR",
+               "el",
+               "en_AU",
+               "en_BE",
+               "en_BW",
+               "en_CA",
+               "en_GB",
+               "en_HK",
+               "en_IE",
+               "en_IN",
+               "en_MT",
+               "en_NZ",
+               "en_PH",
+               "en_SG",
+               "en",
+               "en_US_POSIX",
+               "en_US",
+               "en_VI",
+               "en_ZA",
+               "en_ZW",
+               "eo",
+               "es_AR",
+               "es_BO",
+               "es_CL",
+               "es_CO",
+               "es_CR",
+               "es_DO",
+               "es_EC",
+               "es_ES",
+               "es_GT",
+               "es_HN",
+               "es_MX",
+               "es_NI",
+               "es_PA",
+               "es_PE",
+               "es_PR",
+               "es_PY",
+               "es_SV",
+               "es__TRADITIONAL",
+               "es",
+               "es_US",
+               "es_UY",
+               "es_VE",
+               "et_EE",
+               "et",
+               "fa_AF",
+               "fa_IR",
+               "fa",
+               "fi_FI",
+               "fi",
+               "fo_FO",
+               "fo",
+               "fr_BE",
+               "fr_CA",
+               "fr_CH",
+               "fr_FR",
+               "fr_LU",
+               "fr",
+               "ga_IE",
+               "ga",
+               "gu_IN",
+               "gu",
+               "he_IL",
+               "he",
+               "hi__DIRECT",
+               "hi_IN",
+               "hi",
+               "hr_HR",
+               "hr",
+               "hu_HU",
+               "hu",
+               "id_ID",
+               "id",
+               "is_IS",
+               "is",
+               "it_CH",
+               "it_IT",
+               "it",
+               "ja__DIRECT",
+               "ja_JP",
+               "ja",
+               "kk_KZ",
+               "kk",
+               "kl_GL",
+               "kl",
+               "kn_IN",
+               "kn",
+               "ko_KR",
+               "ko",
+               "lt_LT",
+               "lt",
+               "lv_LV",
+               "lv",
+               "mk_MK",
+               "mk",
+               "ml",
+               "mr_IN",
+               "mr",
+               "ms_BN",
+               "ms_MY",
+               "ms",
+               "mt_MT",
+               "mt",
+               "nb_NO",
+               "nb",
+               "nl_BE",
+               "nl_NL",
+               "nl",
+               "nn_NO",
+               "nn",
+               "om_ET",
+               "om_KE",
+               "om",
+               "or",
+               "pa_IN",
+               "pa",
+               "pl_PL",
+               "pl",
+               "ps_AF",
+               "ps",
+               "pt_BR",
+               "pt_PT",
+               "pt",
+               "root",
+               "ro_RO",
+               "ro",
+               "ru_RU",
+               "ru",
+               "ru_UA",
+               "sh_BA",
+               "sh",
+               "sh_YU",
+               "sk_SK",
+               "sk",
+               "sl_SI",
+               "sl",
+               "sq_AL",
+               "sq",
+               "sr_BA",
+               "sr_Cyrl_BA",
+               "sr_Cyrl",
+               "sr_Cyrl_YU",
+               "sr",
+               "sr_YU",
+               "sv_FI",
+               "sv__PHONEBOOK",
+               "sv_SE",
+               "sv",
+               "ta_IN",
+               "ta",
+               "te_IN",
+               "te",
+               "th_TH",
+               "th",
+               "tr_TR",
+               "tr",
+               "uk",
+               "uk_UA",
+               "vi",
+               "vi_VN",
+               "zh_CN",
+               "zh_Hant",
+               "zh_HK",
+               "zh_MO",
+               "zh__PINYIN",
+               "zh_SG",
+               "zh_TW_STROKE",
+               "zh_TW",
+               "zh"
+              ],
+              "type": "string"
+             },
+             "ncharPunctuationSensitivity": {
+              "description": "PunctuationSensitivity to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ignore",
+               "primary",
+               "quaternary"
+              ],
+              "type": "string"
+             },
+             "ncharSortType": {
+              "description": "SortType to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "phonebook",
+               "traditional",
+               "standard",
+               "pinyin",
+               "stroke",
+               "direct",
+               "posix",
+               "big5han",
+               "gb2312han"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "iqEnabled": {
+            "description": "Whether to provision an iq instance for the datalake or not.",
+            "type": "boolean"
+           },
+           "num_coordinators": {
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           },
+           "num_readers": {
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "num_writers": {
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer"
+           },
+           "provisioned_size_gib": {
+            "description": "Size of IQ persistence in GB",
+            "maximum": 92160,
+            "minimum": 1024,
+            "type": "integer"
+           },
+           "reader_type": {
+            "description": "Node size for IQ readers.",
+            "enum": [
+             "small",
+             "medium",
+             "large",
+             "xlarge",
+             "2xlarge"
+            ]
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "storage_service_provider": {
+            "description": "The storage service provider to use.",
+            "type": "string"
+           },
+           "storage_service_tier": {
+            "description": "The storage service tier to use.",
+            "type": "string"
+           },
+           "systempassword": {
+            "default": "",
+            "description": "Password to be set for tenant",
+            "minLength": 6,
+            "type": "string"
+           },
+           "updateStrategy": {
+            "description": "Preferred behaviour for iq version upgrade",
+            "enum": [
+             "withRollingRestart",
+             "withRestart"
+            ],
+            "type": "string"
+           },
+           "versionIndicator": {
+            "description": "The version of the service to use",
+            "type": "string"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 250,
+            "type": "array"
+           },
+           "writer_type": {
+            "description": "Node size for IQ writers.",
+            "enum": [
+             "small",
+             "medium",
+             "large",
+             "xlarge",
+             "2xlarge"
+            ]
+           }
+          },
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {
+           "pattern": "^(ui.hc.sap.com/[a-zA-Z0-9_]*)$"
+          },
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "default": {},
+          "defaultProperties": [],
+          "properties": {
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 1,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "coordinator_type": {
+            "description": "Node type for IQ co-ordinators.",
+            "enum": [
+             "small",
+             "medium",
+             "large",
+             "xlarge",
+             "2xlarge"
+            ]
+           },
+           "enableBackups": {
+            "description": "Describes if IQ backups are enabled or not",
+            "type": "boolean"
+           },
+           "extensionServices": {
+            "items": {
+             "properties": {
+              "allowlistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 250,
+               "type": "array"
+              },
+              "credentials": {
+               "additionalProperties": false,
+               "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
+               "properties": {
+                "type": {
+                 "pattern": "^(serviceKey)$",
+                 "type": "string"
+                },
+                "value": {
+                 "additionalProperties": true,
+                 "properties": {},
+                 "type": "object"
+                }
+               },
+               "type": "object"
+              },
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "fileContainer": {
+            "description": "Configuration of the Data Lake's default file container",
+            "properties": {
+             "authorizations": {
+              "items": {
+               "properties": {
+                "pattern": {
+                 "type": "string"
+                },
+                "rank": {
+                 "type": "integer"
+                },
+                "roles": {
+                 "items": {
+                  "type": "string"
+                 },
+                 "type": "array"
+                }
+               },
+               "required": [
+                "pattern",
+                "roles",
+                "rank"
+               ],
+               "type": "object"
+              },
+              "type": "array"
+             },
+             "capabilities": {
+              "properties": {
+               "homeDirectories": {
+                "properties": {
+                 "prefix": {
+                  "pattern": "^/[\\S]+/$",
+                  "type": "string"
+                 }
+                },
+                "required": [
+                 "prefix"
+                ],
+                "type": [
+                 "object",
+                 "null"
+                ]
+               }
+              },
+              "type": "object"
+             },
+             "roles": {
+              "items": {
+               "properties": {
+                "name": {
+                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                 "type": "string"
+                },
+                "privileges": {
+                 "items": {
+                  "enum": [
+                   "browse",
+                   "open",
+                   "create",
+                   "append",
+                   "rename",
+                   "delete",
+                   "restore",
+                   "impersonate",
+                   "authorize"
+                  ],
+                  "type": "string"
+                 },
+                 "type": "array"
+                }
+               },
+               "required": [
+                "name",
+                "privileges"
+               ],
+               "type": "object"
+              },
+              "type": "array"
+             },
+             "trusts": {
+              "items": {
+               "properties": {
+                "alias": {
+                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                 "type": "string"
+                },
+                "certData": {
+                 "pattern": "^-----BEGIN CERTIFICATE-----\\s[A-Za-z0-9+/\\s]+={0,2}\\s-----END CERTIFICATE-----$",
+                 "type": "string"
+                }
+               },
+               "required": [
+                "alias",
+                "certData"
+               ],
+               "type": "object"
+              },
+              "type": "array"
+             }
+            },
+            "type": "object"
+           },
+           "generateSystemPassword": {
+            "default": false,
+            "description": "Describes if the systempassword should be generated or not.",
+            "type": "boolean"
+           },
+           "highAvailability": {
+            "additionalProperties": false,
+            "description": "HDL High Availability service",
+            "properties": {
+             "enabled": {
+              "description": "Describes if the IQ instance should allocate extra resources in order to be resilient to availability zone outages",
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "initOptions": {
+            "additionalProperties": false,
+            "properties": {
+             "blankPadding": {
+              "description": "blank padding to be set in HDL",
+              "enum": [
+               "ON",
+               "OFF"
+              ],
+              "type": "string"
+             },
+             "caseSensitivity": {
+              "description": "case sensitivity to be set in HDL",
+              "enum": [
+               "ignore",
+               "respect"
+              ],
+              "type": "string"
+             },
+             "collation": {
+              "description": "collation to be set in HDL",
+              "enum": [
+               "874THAIBIN",
+               "932JPN",
+               "936ZHO",
+               "949KOR",
+               "950ZHO_HK",
+               "950ZHO_TW",
+               "1250LATIN2",
+               "1250POL",
+               "1251CYR",
+               "1252BIN",
+               "1252LATIN1",
+               "1252LT1ACC",
+               "1252NOR",
+               "1252SPA",
+               "1252SWEFIN",
+               "1253ELL",
+               "1254TRK",
+               "1254TRKALT",
+               "1255HEB",
+               "1256ARA",
+               "1257LIT",
+               "CESU8BIN",
+               "EUC_CHINA",
+               "EUC_JAPAN",
+               "EUC_KOREA",
+               "EUC_TAIWAN",
+               "ISO1LATIN1",
+               "ISO9LATIN1",
+               "ISO_1",
+               "ISO_BINENG",
+               "UTF8BIN"
+              ],
+              "type": "string"
+             },
+             "ncharAccentSensitivity": {
+              "description": "AccentSensitivity to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ignore",
+               "respect",
+               "French"
+              ],
+              "type": "string"
+             },
+             "ncharCaseSensitivity": {
+              "description": "CaseSensitivity to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ignore",
+               "respect",
+               "UpperFirst",
+               "LowerFirst"
+              ],
+              "type": "string"
+             },
+             "ncharCollation": {
+              "description": "nchar collation to be set in HDL",
+              "enum": [
+               "UCA",
+               "UTF8BIN"
+              ],
+              "type": "string"
+             },
+             "ncharLocale": {
+              "description": "locale to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ar_AE",
+               "ar_BH",
+               "ar_DZ",
+               "ar_EG",
+               "ar_IN",
+               "ar_IQ",
+               "ar_JO",
+               "ar_KW",
+               "ar_LB",
+               "ar_LY",
+               "ar_MA",
+               "ar_OM",
+               "ar_QA",
+               "ar_SA",
+               "ar_SD",
+               "ar_SY",
+               "ar_TN",
+               "ar",
+               "ar_YE",
+               "be_BY",
+               "be",
+               "bg_BG",
+               "bg",
+               "ca_ES",
+               "ca",
+               "cs_CZ",
+               "cs",
+               "da_DK",
+               "da",
+               "de_AT",
+               "de_BE",
+               "de_CH",
+               "de_DE",
+               "de_LU",
+               "de__PHONEBOOK",
+               "de",
+               "el_GR",
+               "el",
+               "en_AU",
+               "en_BE",
+               "en_BW",
+               "en_CA",
+               "en_GB",
+               "en_HK",
+               "en_IE",
+               "en_IN",
+               "en_MT",
+               "en_NZ",
+               "en_PH",
+               "en_SG",
+               "en",
+               "en_US_POSIX",
+               "en_US",
+               "en_VI",
+               "en_ZA",
+               "en_ZW",
+               "eo",
+               "es_AR",
+               "es_BO",
+               "es_CL",
+               "es_CO",
+               "es_CR",
+               "es_DO",
+               "es_EC",
+               "es_ES",
+               "es_GT",
+               "es_HN",
+               "es_MX",
+               "es_NI",
+               "es_PA",
+               "es_PE",
+               "es_PR",
+               "es_PY",
+               "es_SV",
+               "es__TRADITIONAL",
+               "es",
+               "es_US",
+               "es_UY",
+               "es_VE",
+               "et_EE",
+               "et",
+               "fa_AF",
+               "fa_IR",
+               "fa",
+               "fi_FI",
+               "fi",
+               "fo_FO",
+               "fo",
+               "fr_BE",
+               "fr_CA",
+               "fr_CH",
+               "fr_FR",
+               "fr_LU",
+               "fr",
+               "ga_IE",
+               "ga",
+               "gu_IN",
+               "gu",
+               "he_IL",
+               "he",
+               "hi__DIRECT",
+               "hi_IN",
+               "hi",
+               "hr_HR",
+               "hr",
+               "hu_HU",
+               "hu",
+               "id_ID",
+               "id",
+               "is_IS",
+               "is",
+               "it_CH",
+               "it_IT",
+               "it",
+               "ja__DIRECT",
+               "ja_JP",
+               "ja",
+               "kk_KZ",
+               "kk",
+               "kl_GL",
+               "kl",
+               "kn_IN",
+               "kn",
+               "ko_KR",
+               "ko",
+               "lt_LT",
+               "lt",
+               "lv_LV",
+               "lv",
+               "mk_MK",
+               "mk",
+               "ml",
+               "mr_IN",
+               "mr",
+               "ms_BN",
+               "ms_MY",
+               "ms",
+               "mt_MT",
+               "mt",
+               "nb_NO",
+               "nb",
+               "nl_BE",
+               "nl_NL",
+               "nl",
+               "nn_NO",
+               "nn",
+               "om_ET",
+               "om_KE",
+               "om",
+               "or",
+               "pa_IN",
+               "pa",
+               "pl_PL",
+               "pl",
+               "ps_AF",
+               "ps",
+               "pt_BR",
+               "pt_PT",
+               "pt",
+               "root",
+               "ro_RO",
+               "ro",
+               "ru_RU",
+               "ru",
+               "ru_UA",
+               "sh_BA",
+               "sh",
+               "sh_YU",
+               "sk_SK",
+               "sk",
+               "sl_SI",
+               "sl",
+               "sq_AL",
+               "sq",
+               "sr_BA",
+               "sr_Cyrl_BA",
+               "sr_Cyrl",
+               "sr_Cyrl_YU",
+               "sr",
+               "sr_YU",
+               "sv_FI",
+               "sv__PHONEBOOK",
+               "sv_SE",
+               "sv",
+               "ta_IN",
+               "ta",
+               "te_IN",
+               "te",
+               "th_TH",
+               "th",
+               "tr_TR",
+               "tr",
+               "uk",
+               "uk_UA",
+               "vi",
+               "vi_VN",
+               "zh_CN",
+               "zh_Hant",
+               "zh_HK",
+               "zh_MO",
+               "zh__PINYIN",
+               "zh_SG",
+               "zh_TW_STROKE",
+               "zh_TW",
+               "zh"
+              ],
+              "type": "string"
+             },
+             "ncharPunctuationSensitivity": {
+              "description": "PunctuationSensitivity to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "ignore",
+               "primary",
+               "quaternary"
+              ],
+              "type": "string"
+             },
+             "ncharSortType": {
+              "description": "SortType to be used in nchar UCA collation to be set in HDL",
+              "enum": [
+               "phonebook",
+               "traditional",
+               "standard",
+               "pinyin",
+               "stroke",
+               "direct",
+               "posix",
+               "big5han",
+               "gb2312han"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "iqEnabled": {
+            "description": "Whether to provision an iq instance for the datalake or not.",
+            "type": "boolean"
+           },
+           "num_coordinators": {
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+           },
+           "num_readers": {
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "num_writers": {
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer"
+           },
+           "provisioned_size_gib": {
+            "description": "Size of IQ persistence in GB.",
+            "maximum": 92160,
+            "minimum": 1024,
+            "type": "integer"
+           },
+           "reader_type": {
+            "description": "Node size for IQ readers.",
+            "enum": [
+             "small",
+             "medium",
+             "large",
+             "xlarge",
+             "2xlarge"
+            ]
+           },
+           "requestedOperation": {
+            "additionalProperties": false,
+            "properties": {
+             "arguments": {
+              "additionalProperties": false,
+              "description": "List of operation arguments",
+              "properties": {
+               "upgrade_type": {
+                "enum": [
+                 "none",
+                 "CLDDBSPC_MIGRATION_BEGIN",
+                 "PREPARE_FOR_MULTI_AZ"
+                ],
+                "type": "string"
+               }
+              },
+              "type": "object"
+             },
+             "name": {
+              "description": "Update operation",
+              "enum": [
+               "none",
+               "INFRASTRUCTURE_UPGRADE"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "storage_service_provider": {
+            "description": "The storage service provider to use.",
+            "type": "string"
+           },
+           "storage_service_tier": {
+            "description": "The storage service tier to use.",
+            "type": "string"
            },
            "updateStrategy": {
             "description": "Preferred behaviour for iq version upgrade",
@@ -55848,6 +56259,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               }
              },
              "required": [
@@ -56213,6 +56632,14 @@
             "minimum": 1,
             "type": "integer"
            },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array"
+           },
            "provisioned_size_gib": {
             "description": "Size of IQ persistence in GB.",
             "maximum": 256,
@@ -56232,6 +56659,10 @@
               "additionalProperties": false,
               "description": "List of operation arguments",
               "properties": {
+               "target_timestamp": {
+                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
+                "type": "string"
+               },
                "upgrade_type": {
                 "enum": [
                  "none",
@@ -56247,7 +56678,9 @@
               "description": "Update operation",
               "enum": [
                "none",
-               "INFRASTRUCTURE_UPGRADE"
+               "INFRASTRUCTURE_UPGRADE",
+               "RECOVERY",
+               "CANCEL_RECOVERY"
               ],
               "type": "string"
              }
@@ -62866,14 +63299,6 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
-              },
-              "privateLinkAllowlist": {
-               "items": {
-                "maxLength": 40,
-                "type": "string"
-               },
-               "maxItems": 100,
-               "type": "array"
               }
              },
              "required": [
@@ -63239,14 +63664,6 @@
             "minimum": 1,
             "type": "integer"
            },
-           "privateLinkAllowlist": {
-            "items": {
-             "maxLength": 40,
-             "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-           },
            "provisioned_size_gib": {
             "description": "Size of IQ persistence in GB.",
             "maximum": 256,
@@ -63266,10 +63683,6 @@
               "additionalProperties": false,
               "description": "List of operation arguments",
               "properties": {
-               "target_timestamp": {
-                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
-                "type": "string"
-               },
                "upgrade_type": {
                 "enum": [
                  "none",
@@ -63285,9 +63698,7 @@
               "description": "Update operation",
               "enum": [
                "none",
-               "INFRASTRUCTURE_UPGRADE",
-               "RECOVERY",
-               "CANCEL_RECOVERY"
+               "INFRASTRUCTURE_UPGRADE"
               ],
               "type": "string"
              }
@@ -63606,6 +64017,15 @@
                   "type": "string"
                  },
                  "type": "array"
+                },
+                "trustBindings": {
+                 "description": "Trusts bindings to be established with other services",
+                 "items": {
+                  "description": "Trust group",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                  "type": "string"
+                 },
+                 "type": "array"
                 }
                },
                "required": [
@@ -63636,6 +64056,13 @@
                }
               },
               "type": "object"
+             },
+             "retentionDays": {
+              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 15,
+              "type": "integer"
              },
              "roles": {
               "items": {
@@ -63673,6 +64100,14 @@
              "trusts": {
               "items": {
                "properties": {
+                "aggregateTo": {
+                 "items": {
+                  "description": "List of aliases to aggregate to",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                  "type": "string"
+                 },
+                 "type": "array"
+                },
                 "alias": {
                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                  "type": "string"
@@ -64205,6 +64640,14 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
               }
              },
              "required": [
@@ -64228,6 +64671,15 @@
                 },
                 "roles": {
                  "items": {
+                  "type": "string"
+                 },
+                 "type": "array"
+                },
+                "trustBindings": {
+                 "description": "Trusts bindings to be established with other services",
+                 "items": {
+                  "description": "Trust group",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                   "type": "string"
                  },
                  "type": "array"
@@ -64261,6 +64713,13 @@
                }
               },
               "type": "object"
+             },
+             "retentionDays": {
+              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 15,
+              "type": "integer"
              },
              "roles": {
               "items": {
@@ -64298,6 +64757,14 @@
              "trusts": {
               "items": {
                "properties": {
+                "aggregateTo": {
+                 "items": {
+                  "description": "List of aliases to aggregate to",
+                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
+                  "type": "string"
+                 },
+                 "type": "array"
+                },
                 "alias": {
                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
                  "type": "string"
@@ -64674,6 +65141,14 @@
             "minimum": 1,
             "type": "integer"
            },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array"
+           },
            "provisioned_size_gib": {
             "description": "Size of IQ persistence in GB.",
             "maximum": 92160,
@@ -64697,6 +65172,10 @@
               "additionalProperties": false,
               "description": "List of operation arguments",
               "properties": {
+               "target_timestamp": {
+                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
+                "type": "string"
+               },
                "upgrade_type": {
                 "enum": [
                  "none",
@@ -64712,7 +65191,9 @@
               "description": "Update operation",
               "enum": [
                "none",
-               "INFRASTRUCTURE_UPGRADE"
+               "INFRASTRUCTURE_UPGRADE",
+               "RECOVERY",
+               "CANCEL_RECOVERY"
               ],
               "type": "string"
              }
@@ -73711,1370 +74192,6 @@
             "description": "Size of IQ persistence in GB.",
             "maximum": 92160,
             "minimum": 4096,
-            "type": "integer"
-           },
-           "reader_type": {
-            "description": "Node size for IQ readers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "requestedOperation": {
-            "additionalProperties": false,
-            "properties": {
-             "arguments": {
-              "additionalProperties": false,
-              "description": "List of operation arguments",
-              "properties": {
-               "target_timestamp": {
-                "description": "timestamp to find most recent backups (before timestamp) for recovery in YYYY-MM-DD HH:MM:SS.FFF format",
-                "type": "string"
-               },
-               "upgrade_type": {
-                "enum": [
-                 "none",
-                 "CLDDBSPC_MIGRATION_BEGIN",
-                 "PREPARE_FOR_MULTI_AZ"
-                ],
-                "type": "string"
-               }
-              },
-              "type": "object"
-             },
-             "name": {
-              "description": "Update operation",
-              "enum": [
-               "none",
-               "INFRASTRUCTURE_UPGRADE",
-               "RECOVERY",
-               "CANCEL_RECOVERY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "updateStrategy": {
-            "description": "Preferred behaviour for iq version upgrade",
-            "enum": [
-             "withRollingRestart",
-             "withRestart"
-            ],
-            "type": "string"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use.",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           },
-           "writer_type": {
-            "description": "Node size for IQ writers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           }
-          },
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      }
-     },
-     "service_binding": {
-      "create": {
-       "parameters": null
-      }
-     }
-    },
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "defaultProperties": [
-           "systempassword"
-          ],
-          "properties": {
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 1,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "coordinator_type": {
-            "description": "Node type for IQ co-ordinators.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "dataEncryption": {
-            "description": "Data Encryption Specifications",
-            "properties": {
-             "keyID": {
-              "description": "Encryption Key GUID",
-              "minLength": 1,
-              "type": "string"
-             },
-             "mode": {
-              "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-              "enum": [
-               "MANAGED_KEY",
-               "DEDICATED_KEY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "enableBackups": {
-            "description": "Describes if IQ backups are enabled or not",
-            "type": "boolean"
-           },
-           "extensionServices": {
-            "items": {
-             "properties": {
-              "allowlistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              },
-              "credentials": {
-               "additionalProperties": false,
-               "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
-               "properties": {
-                "type": {
-                 "pattern": "^(serviceKey)$",
-                 "type": "string"
-                },
-                "value": {
-                 "additionalProperties": true,
-                 "properties": {},
-                 "type": "object"
-                }
-               },
-               "type": "object"
-              },
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "fileContainer": {
-            "description": "Configuration of the Data Lake's default file container",
-            "properties": {
-             "authorizations": {
-              "items": {
-               "properties": {
-                "pattern": {
-                 "type": "string"
-                },
-                "rank": {
-                 "type": "integer"
-                },
-                "roles": {
-                 "items": {
-                  "type": "string"
-                 },
-                 "type": "array"
-                },
-                "trustBindings": {
-                 "description": "Trusts bindings to be established with other services",
-                 "items": {
-                  "description": "Trust group",
-                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "pattern",
-                "roles",
-                "rank"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "capabilities": {
-              "properties": {
-               "homeDirectories": {
-                "properties": {
-                 "prefix": {
-                  "pattern": "^/[\\S]+/$",
-                  "type": "string"
-                 }
-                },
-                "required": [
-                 "prefix"
-                ],
-                "type": [
-                 "object",
-                 "null"
-                ]
-               }
-              },
-              "type": "object"
-             },
-             "retentionDays": {
-              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 15,
-              "type": "integer"
-             },
-             "roles": {
-              "items": {
-               "properties": {
-                "name": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "privileges": {
-                 "items": {
-                  "enum": [
-                   "browse",
-                   "open",
-                   "create",
-                   "append",
-                   "rename",
-                   "delete",
-                   "restore",
-                   "impersonate",
-                   "authorize"
-                  ],
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "name",
-                "privileges"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "trusts": {
-              "items": {
-               "properties": {
-                "aggregateTo": {
-                 "items": {
-                  "description": "List of aliases to aggregate to",
-                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                  "type": "string"
-                 },
-                 "type": "array"
-                },
-                "alias": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "certData": {
-                 "pattern": "^-----BEGIN CERTIFICATE-----\\s[A-Za-z0-9+/\\s]+={0,2}\\s-----END CERTIFICATE-----$",
-                 "type": "string"
-                }
-               },
-               "required": [
-                "alias",
-                "certData"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             }
-            },
-            "type": "object"
-           },
-           "generateSystemPassword": {
-            "default": false,
-            "description": "Describes if the systempassword should be generated or not.",
-            "type": "boolean"
-           },
-           "highAvailability": {
-            "additionalProperties": false,
-            "description": "HDL High Availability service",
-            "properties": {
-             "enabled": {
-              "description": "Describes if the IQ instance should allocate extra resources in order to be resilient to availability zone outages",
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "initOptions": {
-            "additionalProperties": false,
-            "properties": {
-             "blankPadding": {
-              "description": "blank padding to be set in HDL",
-              "enum": [
-               "ON",
-               "OFF"
-              ],
-              "type": "string"
-             },
-             "caseSensitivity": {
-              "description": "case sensitivity to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect"
-              ],
-              "type": "string"
-             },
-             "collation": {
-              "description": "collation to be set in HDL",
-              "enum": [
-               "874THAIBIN",
-               "932JPN",
-               "936ZHO",
-               "949KOR",
-               "950ZHO_HK",
-               "950ZHO_TW",
-               "1250LATIN2",
-               "1250POL",
-               "1251CYR",
-               "1252BIN",
-               "1252LATIN1",
-               "1252LT1ACC",
-               "1252NOR",
-               "1252SPA",
-               "1252SWEFIN",
-               "1253ELL",
-               "1254TRK",
-               "1254TRKALT",
-               "1255HEB",
-               "1256ARA",
-               "1257LIT",
-               "CESU8BIN",
-               "EUC_CHINA",
-               "EUC_JAPAN",
-               "EUC_KOREA",
-               "EUC_TAIWAN",
-               "ISO1LATIN1",
-               "ISO9LATIN1",
-               "ISO_1",
-               "ISO_BINENG",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharAccentSensitivity": {
-              "description": "AccentSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "French"
-              ],
-              "type": "string"
-             },
-             "ncharCaseSensitivity": {
-              "description": "CaseSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "UpperFirst",
-               "LowerFirst"
-              ],
-              "type": "string"
-             },
-             "ncharCollation": {
-              "description": "nchar collation to be set in HDL",
-              "enum": [
-               "UCA",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharLocale": {
-              "description": "locale to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ar_AE",
-               "ar_BH",
-               "ar_DZ",
-               "ar_EG",
-               "ar_IN",
-               "ar_IQ",
-               "ar_JO",
-               "ar_KW",
-               "ar_LB",
-               "ar_LY",
-               "ar_MA",
-               "ar_OM",
-               "ar_QA",
-               "ar_SA",
-               "ar_SD",
-               "ar_SY",
-               "ar_TN",
-               "ar",
-               "ar_YE",
-               "be_BY",
-               "be",
-               "bg_BG",
-               "bg",
-               "ca_ES",
-               "ca",
-               "cs_CZ",
-               "cs",
-               "da_DK",
-               "da",
-               "de_AT",
-               "de_BE",
-               "de_CH",
-               "de_DE",
-               "de_LU",
-               "de__PHONEBOOK",
-               "de",
-               "el_GR",
-               "el",
-               "en_AU",
-               "en_BE",
-               "en_BW",
-               "en_CA",
-               "en_GB",
-               "en_HK",
-               "en_IE",
-               "en_IN",
-               "en_MT",
-               "en_NZ",
-               "en_PH",
-               "en_SG",
-               "en",
-               "en_US_POSIX",
-               "en_US",
-               "en_VI",
-               "en_ZA",
-               "en_ZW",
-               "eo",
-               "es_AR",
-               "es_BO",
-               "es_CL",
-               "es_CO",
-               "es_CR",
-               "es_DO",
-               "es_EC",
-               "es_ES",
-               "es_GT",
-               "es_HN",
-               "es_MX",
-               "es_NI",
-               "es_PA",
-               "es_PE",
-               "es_PR",
-               "es_PY",
-               "es_SV",
-               "es__TRADITIONAL",
-               "es",
-               "es_US",
-               "es_UY",
-               "es_VE",
-               "et_EE",
-               "et",
-               "fa_AF",
-               "fa_IR",
-               "fa",
-               "fi_FI",
-               "fi",
-               "fo_FO",
-               "fo",
-               "fr_BE",
-               "fr_CA",
-               "fr_CH",
-               "fr_FR",
-               "fr_LU",
-               "fr",
-               "ga_IE",
-               "ga",
-               "gu_IN",
-               "gu",
-               "he_IL",
-               "he",
-               "hi__DIRECT",
-               "hi_IN",
-               "hi",
-               "hr_HR",
-               "hr",
-               "hu_HU",
-               "hu",
-               "id_ID",
-               "id",
-               "is_IS",
-               "is",
-               "it_CH",
-               "it_IT",
-               "it",
-               "ja__DIRECT",
-               "ja_JP",
-               "ja",
-               "kk_KZ",
-               "kk",
-               "kl_GL",
-               "kl",
-               "kn_IN",
-               "kn",
-               "ko_KR",
-               "ko",
-               "lt_LT",
-               "lt",
-               "lv_LV",
-               "lv",
-               "mk_MK",
-               "mk",
-               "ml",
-               "mr_IN",
-               "mr",
-               "ms_BN",
-               "ms_MY",
-               "ms",
-               "mt_MT",
-               "mt",
-               "nb_NO",
-               "nb",
-               "nl_BE",
-               "nl_NL",
-               "nl",
-               "nn_NO",
-               "nn",
-               "om_ET",
-               "om_KE",
-               "om",
-               "or",
-               "pa_IN",
-               "pa",
-               "pl_PL",
-               "pl",
-               "ps_AF",
-               "ps",
-               "pt_BR",
-               "pt_PT",
-               "pt",
-               "root",
-               "ro_RO",
-               "ro",
-               "ru_RU",
-               "ru",
-               "ru_UA",
-               "sh_BA",
-               "sh",
-               "sh_YU",
-               "sk_SK",
-               "sk",
-               "sl_SI",
-               "sl",
-               "sq_AL",
-               "sq",
-               "sr_BA",
-               "sr_Cyrl_BA",
-               "sr_Cyrl",
-               "sr_Cyrl_YU",
-               "sr",
-               "sr_YU",
-               "sv_FI",
-               "sv__PHONEBOOK",
-               "sv_SE",
-               "sv",
-               "ta_IN",
-               "ta",
-               "te_IN",
-               "te",
-               "th_TH",
-               "th",
-               "tr_TR",
-               "tr",
-               "uk",
-               "uk_UA",
-               "vi",
-               "vi_VN",
-               "zh_CN",
-               "zh_Hant",
-               "zh_HK",
-               "zh_MO",
-               "zh__PINYIN",
-               "zh_SG",
-               "zh_TW_STROKE",
-               "zh_TW",
-               "zh"
-              ],
-              "type": "string"
-             },
-             "ncharPunctuationSensitivity": {
-              "description": "PunctuationSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "primary",
-               "quaternary"
-              ],
-              "type": "string"
-             },
-             "ncharSortType": {
-              "description": "SortType to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "phonebook",
-               "traditional",
-               "standard",
-               "pinyin",
-               "stroke",
-               "direct",
-               "posix",
-               "big5han",
-               "gb2312han"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "iqEnabled": {
-            "description": "Whether to provision an iq instance for the datalake or not.",
-            "type": "boolean"
-           },
-           "num_coordinators": {
-            "maximum": 1,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "num_readers": {
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "num_writers": {
-            "maximum": 10,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "provisioned_size_gib": {
-            "description": "Size of IQ persistence in GB",
-            "maximum": 92160,
-            "minimum": 1024,
-            "type": "integer"
-           },
-           "reader_type": {
-            "description": "Node size for IQ readers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "serviceStopped": {
-            "description": "Describes if the system should be running or stopped",
-            "type": "boolean"
-           },
-           "storage_service_provider": {
-            "description": "The storage service provider to use.",
-            "type": "string"
-           },
-           "storage_service_tier": {
-            "description": "The storage service tier to use.",
-            "type": "string"
-           },
-           "systempassword": {
-            "default": "",
-            "description": "Password to be set for tenant",
-            "minLength": 6,
-            "type": "string"
-           },
-           "updateStrategy": {
-            "description": "Preferred behaviour for iq version upgrade",
-            "enum": [
-             "withRollingRestart",
-             "withRestart"
-            ],
-            "type": "string"
-           },
-           "versionIndicator": {
-            "description": "The version of the service to use",
-            "type": "string"
-           },
-           "whitelistIPs": {
-            "items": {
-             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-             "type": "string"
-            },
-            "maxItems": 250,
-            "type": "array"
-           },
-           "writer_type": {
-            "description": "Node size for IQ writers.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           }
-          },
-          "type": "object"
-         },
-         "metadata": {
-          "additionalProperties": true,
-          "properties": {},
-          "propertyNames": {
-           "pattern": "^(ui.hc.sap.com/[a-zA-Z0-9_]*)$"
-          },
-          "type": "object"
-         }
-        },
-        "required": [
-         "data"
-        ],
-        "type": "object"
-       }
-      },
-      "update": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "additionalProperties": false,
-        "defaultProperties": [
-         "data"
-        ],
-        "properties": {
-         "data": {
-          "additionalProperties": false,
-          "default": {},
-          "defaultProperties": [],
-          "properties": {
-           "backup": {
-            "additionalProperties": false,
-            "description": "Backup service properties",
-            "properties": {
-             "retentionDays": {
-              "description": "Specifies the retention period for a backup in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 1,
-              "type": "integer"
-             }
-            },
-            "type": "object"
-           },
-           "coordinator_type": {
-            "description": "Node type for IQ co-ordinators.",
-            "enum": [
-             "small",
-             "medium",
-             "large",
-             "xlarge",
-             "2xlarge"
-            ]
-           },
-           "enableBackups": {
-            "description": "Describes if IQ backups are enabled or not",
-            "type": "boolean"
-           },
-           "extensionServices": {
-            "items": {
-             "properties": {
-              "allowlistIPs": {
-               "items": {
-                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
-                "type": "string"
-               },
-               "maxItems": 250,
-               "type": "array"
-              },
-              "credentials": {
-               "additionalProperties": false,
-               "description": "Credentials of connectivity service offering with connectivity_proxy service plan",
-               "properties": {
-                "type": {
-                 "pattern": "^(serviceKey)$",
-                 "type": "string"
-                },
-                "value": {
-                 "additionalProperties": true,
-                 "properties": {},
-                 "type": "object"
-                }
-               },
-               "type": "object"
-              },
-              "enabled": {
-               "type": "boolean"
-              },
-              "name": {
-               "pattern": "^(ConnectivityProxy)$",
-               "type": "string"
-              },
-              "privateLinkAllowlist": {
-               "items": {
-                "maxLength": 40,
-                "type": "string"
-               },
-               "maxItems": 100,
-               "type": "array"
-              }
-             },
-             "required": [
-              "name",
-              "enabled"
-             ],
-             "type": "object"
-            }
-           },
-           "fileContainer": {
-            "description": "Configuration of the Data Lake's default file container",
-            "properties": {
-             "authorizations": {
-              "items": {
-               "properties": {
-                "pattern": {
-                 "type": "string"
-                },
-                "rank": {
-                 "type": "integer"
-                },
-                "roles": {
-                 "items": {
-                  "type": "string"
-                 },
-                 "type": "array"
-                },
-                "trustBindings": {
-                 "description": "Trusts bindings to be established with other services",
-                 "items": {
-                  "description": "Trust group",
-                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "pattern",
-                "roles",
-                "rank"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "capabilities": {
-              "properties": {
-               "homeDirectories": {
-                "properties": {
-                 "prefix": {
-                  "pattern": "^/[\\S]+/$",
-                  "type": "string"
-                 }
-                },
-                "required": [
-                 "prefix"
-                ],
-                "type": [
-                 "object",
-                 "null"
-                ]
-               }
-              },
-              "type": "object"
-             },
-             "retentionDays": {
-              "description": "Specifies the retention time for HDL-F deleted/older versioned files in days",
-              "format": "int32",
-              "maximum": 215,
-              "minimum": 15,
-              "type": "integer"
-             },
-             "roles": {
-              "items": {
-               "properties": {
-                "name": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "privileges": {
-                 "items": {
-                  "enum": [
-                   "browse",
-                   "open",
-                   "create",
-                   "append",
-                   "rename",
-                   "delete",
-                   "restore",
-                   "impersonate",
-                   "authorize"
-                  ],
-                  "type": "string"
-                 },
-                 "type": "array"
-                }
-               },
-               "required": [
-                "name",
-                "privileges"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             },
-             "trusts": {
-              "items": {
-               "properties": {
-                "aggregateTo": {
-                 "items": {
-                  "description": "List of aliases to aggregate to",
-                  "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                  "type": "string"
-                 },
-                 "type": "array"
-                },
-                "alias": {
-                 "pattern": "^[a-z0-9]{1}[a-z0-9-]{0,14}[a-z0-9]{1}$",
-                 "type": "string"
-                },
-                "certData": {
-                 "pattern": "^-----BEGIN CERTIFICATE-----\\s[A-Za-z0-9+/\\s]+={0,2}\\s-----END CERTIFICATE-----$",
-                 "type": "string"
-                }
-               },
-               "required": [
-                "alias",
-                "certData"
-               ],
-               "type": "object"
-              },
-              "type": "array"
-             }
-            },
-            "type": "object"
-           },
-           "generateSystemPassword": {
-            "default": false,
-            "description": "Describes if the systempassword should be generated or not.",
-            "type": "boolean"
-           },
-           "highAvailability": {
-            "additionalProperties": false,
-            "description": "HDL High Availability service",
-            "properties": {
-             "enabled": {
-              "description": "Describes if the IQ instance should allocate extra resources in order to be resilient to availability zone outages",
-              "type": "boolean"
-             }
-            },
-            "type": "object"
-           },
-           "initOptions": {
-            "additionalProperties": false,
-            "properties": {
-             "blankPadding": {
-              "description": "blank padding to be set in HDL",
-              "enum": [
-               "ON",
-               "OFF"
-              ],
-              "type": "string"
-             },
-             "caseSensitivity": {
-              "description": "case sensitivity to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect"
-              ],
-              "type": "string"
-             },
-             "collation": {
-              "description": "collation to be set in HDL",
-              "enum": [
-               "874THAIBIN",
-               "932JPN",
-               "936ZHO",
-               "949KOR",
-               "950ZHO_HK",
-               "950ZHO_TW",
-               "1250LATIN2",
-               "1250POL",
-               "1251CYR",
-               "1252BIN",
-               "1252LATIN1",
-               "1252LT1ACC",
-               "1252NOR",
-               "1252SPA",
-               "1252SWEFIN",
-               "1253ELL",
-               "1254TRK",
-               "1254TRKALT",
-               "1255HEB",
-               "1256ARA",
-               "1257LIT",
-               "CESU8BIN",
-               "EUC_CHINA",
-               "EUC_JAPAN",
-               "EUC_KOREA",
-               "EUC_TAIWAN",
-               "ISO1LATIN1",
-               "ISO9LATIN1",
-               "ISO_1",
-               "ISO_BINENG",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharAccentSensitivity": {
-              "description": "AccentSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "French"
-              ],
-              "type": "string"
-             },
-             "ncharCaseSensitivity": {
-              "description": "CaseSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "respect",
-               "UpperFirst",
-               "LowerFirst"
-              ],
-              "type": "string"
-             },
-             "ncharCollation": {
-              "description": "nchar collation to be set in HDL",
-              "enum": [
-               "UCA",
-               "UTF8BIN"
-              ],
-              "type": "string"
-             },
-             "ncharLocale": {
-              "description": "locale to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ar_AE",
-               "ar_BH",
-               "ar_DZ",
-               "ar_EG",
-               "ar_IN",
-               "ar_IQ",
-               "ar_JO",
-               "ar_KW",
-               "ar_LB",
-               "ar_LY",
-               "ar_MA",
-               "ar_OM",
-               "ar_QA",
-               "ar_SA",
-               "ar_SD",
-               "ar_SY",
-               "ar_TN",
-               "ar",
-               "ar_YE",
-               "be_BY",
-               "be",
-               "bg_BG",
-               "bg",
-               "ca_ES",
-               "ca",
-               "cs_CZ",
-               "cs",
-               "da_DK",
-               "da",
-               "de_AT",
-               "de_BE",
-               "de_CH",
-               "de_DE",
-               "de_LU",
-               "de__PHONEBOOK",
-               "de",
-               "el_GR",
-               "el",
-               "en_AU",
-               "en_BE",
-               "en_BW",
-               "en_CA",
-               "en_GB",
-               "en_HK",
-               "en_IE",
-               "en_IN",
-               "en_MT",
-               "en_NZ",
-               "en_PH",
-               "en_SG",
-               "en",
-               "en_US_POSIX",
-               "en_US",
-               "en_VI",
-               "en_ZA",
-               "en_ZW",
-               "eo",
-               "es_AR",
-               "es_BO",
-               "es_CL",
-               "es_CO",
-               "es_CR",
-               "es_DO",
-               "es_EC",
-               "es_ES",
-               "es_GT",
-               "es_HN",
-               "es_MX",
-               "es_NI",
-               "es_PA",
-               "es_PE",
-               "es_PR",
-               "es_PY",
-               "es_SV",
-               "es__TRADITIONAL",
-               "es",
-               "es_US",
-               "es_UY",
-               "es_VE",
-               "et_EE",
-               "et",
-               "fa_AF",
-               "fa_IR",
-               "fa",
-               "fi_FI",
-               "fi",
-               "fo_FO",
-               "fo",
-               "fr_BE",
-               "fr_CA",
-               "fr_CH",
-               "fr_FR",
-               "fr_LU",
-               "fr",
-               "ga_IE",
-               "ga",
-               "gu_IN",
-               "gu",
-               "he_IL",
-               "he",
-               "hi__DIRECT",
-               "hi_IN",
-               "hi",
-               "hr_HR",
-               "hr",
-               "hu_HU",
-               "hu",
-               "id_ID",
-               "id",
-               "is_IS",
-               "is",
-               "it_CH",
-               "it_IT",
-               "it",
-               "ja__DIRECT",
-               "ja_JP",
-               "ja",
-               "kk_KZ",
-               "kk",
-               "kl_GL",
-               "kl",
-               "kn_IN",
-               "kn",
-               "ko_KR",
-               "ko",
-               "lt_LT",
-               "lt",
-               "lv_LV",
-               "lv",
-               "mk_MK",
-               "mk",
-               "ml",
-               "mr_IN",
-               "mr",
-               "ms_BN",
-               "ms_MY",
-               "ms",
-               "mt_MT",
-               "mt",
-               "nb_NO",
-               "nb",
-               "nl_BE",
-               "nl_NL",
-               "nl",
-               "nn_NO",
-               "nn",
-               "om_ET",
-               "om_KE",
-               "om",
-               "or",
-               "pa_IN",
-               "pa",
-               "pl_PL",
-               "pl",
-               "ps_AF",
-               "ps",
-               "pt_BR",
-               "pt_PT",
-               "pt",
-               "root",
-               "ro_RO",
-               "ro",
-               "ru_RU",
-               "ru",
-               "ru_UA",
-               "sh_BA",
-               "sh",
-               "sh_YU",
-               "sk_SK",
-               "sk",
-               "sl_SI",
-               "sl",
-               "sq_AL",
-               "sq",
-               "sr_BA",
-               "sr_Cyrl_BA",
-               "sr_Cyrl",
-               "sr_Cyrl_YU",
-               "sr",
-               "sr_YU",
-               "sv_FI",
-               "sv__PHONEBOOK",
-               "sv_SE",
-               "sv",
-               "ta_IN",
-               "ta",
-               "te_IN",
-               "te",
-               "th_TH",
-               "th",
-               "tr_TR",
-               "tr",
-               "uk",
-               "uk_UA",
-               "vi",
-               "vi_VN",
-               "zh_CN",
-               "zh_Hant",
-               "zh_HK",
-               "zh_MO",
-               "zh__PINYIN",
-               "zh_SG",
-               "zh_TW_STROKE",
-               "zh_TW",
-               "zh"
-              ],
-              "type": "string"
-             },
-             "ncharPunctuationSensitivity": {
-              "description": "PunctuationSensitivity to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "ignore",
-               "primary",
-               "quaternary"
-              ],
-              "type": "string"
-             },
-             "ncharSortType": {
-              "description": "SortType to be used in nchar UCA collation to be set in HDL",
-              "enum": [
-               "phonebook",
-               "traditional",
-               "standard",
-               "pinyin",
-               "stroke",
-               "direct",
-               "posix",
-               "big5han",
-               "gb2312han"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
-           },
-           "iqEnabled": {
-            "description": "Whether to provision an iq instance for the datalake or not.",
-            "type": "boolean"
-           },
-           "num_coordinators": {
-            "maximum": 1,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "num_readers": {
-            "maximum": 0,
-            "minimum": 0,
-            "type": "integer"
-           },
-           "num_writers": {
-            "maximum": 10,
-            "minimum": 1,
-            "type": "integer"
-           },
-           "privateLinkAllowlist": {
-            "items": {
-             "maxLength": 40,
-             "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-           },
-           "provisioned_size_gib": {
-            "description": "Size of IQ persistence in GB.",
-            "maximum": 92160,
-            "minimum": 1024,
             "type": "integer"
            },
            "reader_type": {

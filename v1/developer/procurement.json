@@ -19,32 +19,6 @@
  ],
  "servicePlans": [
   {
-   "name": "production",
-   "displayName": "Production",
-   "category": "APPLICATION",
-   "description": "Production plan for SAP Ariba Buying.",
-   "isFree": null,
-   "isBeta": false,
-   "deprecated": false,
-   "deprecationMessage": null,
-   "deprecationDate": null,
-   "dataCenters": [
-    {
-     "region": "eu10",
-     "name": "cf-eu10"
-    },
-    {
-     "region": "eu11",
-     "name": "cf-eu11"
-    },
-    {
-     "region": "us10",
-     "name": "cf-us10"
-    }
-   ],
-   "schemas": null
-  },
-  {
    "name": "production-expansion",
    "displayName": "Production-Expansion",
    "category": "APPLICATION",
@@ -60,8 +34,50 @@
      "name": "cf-eu10"
     },
     {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "standard",
+   "displayName": "Standard",
+   "category": "APPLICATION",
+   "description": "Standard plan for Guided Buying.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
     }
    ],
    "schemas": null
@@ -86,8 +102,16 @@
      "name": "cf-eu11"
     },
     {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
     }
    ],
    "schemas": null
@@ -108,8 +132,16 @@
      "name": "cf-eu10"
     },
     {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
     }
    ],
    "schemas": null

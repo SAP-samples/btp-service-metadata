@@ -13,10 +13,10 @@
  ],
  "servicePlans": [
   {
-   "name": "default",
-   "displayName": "default",
+   "name": "standard",
+   "displayName": "Standard",
    "category": "APPLICATION",
-   "description": "default plan - Authorization Apps for Freight Collaboration",
+   "description": "SAP Logistics Business Network for Default Authorization",
    "isFree": null,
    "isBeta": false,
    "deprecated": false,
@@ -26,6 +26,10 @@
     {
      "region": "eu10",
      "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
     },
     {
      "region": "sa30",
