@@ -996,7 +996,7 @@
          "heimspiel_id": {
           "description": "To import match data from Heimspiel, enter your Heimspiel ID (a contract with Heimspiel is required in advance).",
           "minLength": 1,
-          "pattern": "^cl(\\d){1,4}$|^cl(\\d){1,4}-sp\\d$",
+          "pattern": "^cl(\\d){1,4}$|^cl(\\d){1,4}-sp\\d$|^n/a$",
           "title": "Heimspiel ID (data provider)",
           "type": "string",
           "validationMessage": "Please enter a valid Heimspiel ID."
@@ -2024,7 +2024,7 @@
          "heimspiel_id": {
           "description": "To import match data from Heimspiel, enter your Heimspiel ID (a contract with Heimspiel is required in advance).",
           "minLength": 1,
-          "pattern": "^cl(\\d){1,4}$|^cl(\\d){1,4}-sp\\d$",
+          "pattern": "^cl(\\d){1,4}$|^cl(\\d){1,4}-sp\\d$|^n/a$",
           "title": "Heimspiel ID (data provider)",
           "type": "string",
           "validationMessage": "Please enter a valid Heimspiel ID."
