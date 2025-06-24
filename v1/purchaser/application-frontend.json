@@ -17,6 +17,10 @@
      "name": "cf-ap10"
     },
     {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -56,6 +60,34 @@
     },
     {
      "materialNumber": "8019311",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8020096",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8020097",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "trial",
+   "displayName": "Trial",
+   "category": "APPLICATION",
+   "description": "Plan for managing and hosting frontend UI applications. Use this offering for evaluation purposes only.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "ProdDummy19",
      "commercialModel": "Subscription"
     }
    ]
