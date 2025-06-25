@@ -28,6 +28,10 @@
      "name": "cf-ap10"
     },
     {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -54,6 +58,24 @@
     {
      "region": "us30",
      "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "trial",
+   "displayName": "Trial",
+   "category": "APPLICATION",
+   "description": "Plan for managing and hosting frontend UI applications. Use this offering for evaluation purposes only.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
    ],
    "schemas": null
