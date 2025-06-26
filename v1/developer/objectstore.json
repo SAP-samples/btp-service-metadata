@@ -782,6 +782,79 @@
        }
       }
      }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of GCP Buckets",
+          "type": "boolean",
+          "default": false
+         }
+        },
+        "not": {
+         "required": [
+          "autoExpiration"
+         ]
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_load_current_config": true,
+        "additionalProperties": true,
+        "properties": {
+         "versioning": {
+          "type": "boolean",
+          "description": "Flag to Enable/Disable Versioning for the Bucket",
+          "default": true
+         },
+         "autoExpiration": {
+          "type": "array",
+          "description": "Lifecycle rules to Auto-Expire objects in GCP Bucket",
+          "items": {
+           "type": "object"
+          }
+         },
+         "preventDeletion": {
+          "description": "Flag to Prevent Accidental Deletion of GCP Buckets",
+          "type": "boolean",
+          "default": false
+         }
+        }
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "role": {
+          "description": "Role required for the binding",
+          "type": "string",
+          "enum": [
+           "read",
+           "write"
+          ]
+         }
+        },
+        "maxProperties": 1
+       }
+      }
+     }
     }
    ]
   }
