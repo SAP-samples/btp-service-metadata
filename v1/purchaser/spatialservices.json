@@ -5,6 +5,38 @@
  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/SKmXEVU2yDY_yONZqMj7D4Lh2VZc44aZBEq9Fa-033wrHJNrvc2nm-_m4cWhplcp.svg",
  "servicePlans": [
   {
+   "name": "byol",
+   "displayName": "byol",
+   "category": "SERVICE",
+   "description": "Provides access to HANA spatial services capabilities via the bring-your-own-license model. Please be aware that an additional license key from a supported third-party service provider is required.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8019914",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
    "name": "lite",
    "displayName": "lite",
    "category": "SERVICE",
