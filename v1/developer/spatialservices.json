@@ -85,6 +85,36 @@
  ],
  "servicePlans": [
   {
+   "name": "byol",
+   "displayName": "byol",
+   "category": "SERVICE",
+   "description": "Provides access to HANA spatial services capabilities via the bring-your-own-license model. Please be aware that an additional license key from a supported third-party service provider is required.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": null
+  },
+  {
    "name": "lite",
    "displayName": "lite",
    "category": "SERVICE",
