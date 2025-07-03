@@ -100,10 +100,6 @@
             "additionalProperties": false,
             "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
             "properties": {
-             "computeNodesFallbackCrossMultiAZEnabled": {
-              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
-              "type": "boolean"
-             },
              "highAvailabilityCrossMultiAZEnabled": {
               "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
               "type": "boolean"
@@ -140,39 +136,6 @@
              }
             },
             "type": "object"
-           },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "serviceStopped": {
-               "description": "Describes if the system should be running or stopped",
-               "type": "boolean"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
            },
            "databaseMappings": {
             "items": {
@@ -437,10 +400,6 @@
             "additionalProperties": false,
             "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
             "properties": {
-             "computeNodesFallbackCrossMultiAZEnabled": {
-              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
-              "type": "boolean"
-             },
              "highAvailabilityCrossMultiAZEnabled": {
               "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
               "type": "boolean"
@@ -477,35 +436,6 @@
              }
             },
             "type": "object"
-           },
-           "computeNodes": {
-            "description": "Items of Elastic Compute Nodes (ECNs)",
-            "items": {
-             "additionalProperties": false,
-             "properties": {
-              "memory": {
-               "description": "Size of memory in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "name": {
-               "description": "Name of ECN",
-               "type": "string"
-              },
-              "storage": {
-               "description": "Size of storage in GB",
-               "format": "int64",
-               "type": "integer"
-              },
-              "vcpu": {
-               "description": "Number of vCPUs",
-               "format": "int64",
-               "type": "integer"
-              }
-             },
-             "type": "object"
-            },
-            "type": "array"
            },
            "disasterRecoveryMode": {
             "description": "Disaster Recovery of the HANA instance",
