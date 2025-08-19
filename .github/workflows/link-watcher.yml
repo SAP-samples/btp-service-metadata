@@ -20,6 +20,6 @@ jobs:
         uses: lycheeverse/lychee-action@v2.5.0
         with:
           fail: true
-          args: --verbose --no-progress --exclude-mail --exclude-loopback .
+          args: --verbose --no-progress --exclude-loopback .
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
