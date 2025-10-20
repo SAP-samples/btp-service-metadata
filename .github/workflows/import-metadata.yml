@@ -15,7 +15,7 @@ jobs:
         name: "Checkout repository"
 
       - name: "Setup Node.js"
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
       - name: "Prepare collection of data from metadata repository"
