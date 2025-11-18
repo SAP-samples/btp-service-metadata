@@ -471,7 +471,7 @@
  ],
  "supportComponents": [
   {
-   "value": "DS-BB-ODATA"
+   "value": "DS-API"
   },
   {
    "value": "DWC-BB"
@@ -480,41 +480,5 @@
    "value": "LOD-ANA-ADM-APS"
   }
  ],
- "apis": [
-  {
-   "name": "Catalog",
-   "url": "https://api.sap.com/api/Catalog/overview",
-   "apiType": "OData V2"
-  },
-  {
-   "name": "Certificates",
-   "url": "https://api.sap.com/api/CertificateManagement/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Connections",
-   "url": "https://api.sap.com/api/ConnectionManagement/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Consumption",
-   "url": "https://api.sap.com/api/Consumption/overview",
-   "apiType": "OData V2"
-  },
-  {
-   "name": "Data Sharing Cockpit",
-   "url": "https://api.sap.com/api/DataSharingCockpit/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Catalog",
-   "url": "https://api.sap.com/api/DatasphereCatalog/overview",
-   "apiType": "OData V2"
-  },
-  {
-   "name": "Consumption",
-   "url": "https://api.sap.com/api/DatasphereConsumption/overview",
-   "apiType": "OData V2"
-  }
- ]
+ "apis": []
 }

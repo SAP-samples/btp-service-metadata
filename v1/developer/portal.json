@@ -8,7 +8,7 @@
    "value": "https://api.sap.com/package/SAPCLOUDPLATFORMPORTAL/overview",
    "classification": "API Hub",
    "type": "Link",
-   "text": "Overview | SAP Build Work Zone and SAP Cloud Portal Service | SAP API Business Hub"
+   "text": "Overview | SAP Cloud Portal Service | SAP API Business Hub"
   },
   {
    "value": "https://discovery-center.cloud.sap/serviceCatalog/cloud-portal-service",
@@ -35,19 +35,7 @@
    "text": "Security"
   },
   {
-   "value": "https://help.sap.com/docs/WZ",
-   "classification": "Documentation",
-   "type": "Link",
-   "text": "Documentation"
-  },
-  {
-   "value": "https://help.sap.com/docs/WZ_STD",
-   "classification": "Documentation",
-   "type": "Link",
-   "text": "Documentation"
-  },
-  {
-   "value": "https://help.sap.com/viewer/8422cb487c2146999a2a7dab9cc85cf7/Cloud/en-US",
+   "value": "https://help.sap.com/docs/cloud-portal-service/sap-cloud-portal-service-for-neo-environment/sap-cloud-portal-service",
    "classification": "Documentation",
    "type": "Link",
    "text": "Documentation"
@@ -227,57 +215,8 @@
  ],
  "supportComponents": [
   {
-   "value": "EP-CPP-CF-LND"
-  },
-  {
    "value": "EP-WZ-LND"
   }
  ],
- "apis": [
-  {
-   "name": "Export Business Content (CF)",
-   "url": "https://api.sap.com/api/ContentExport/overview",
-   "apiType": "OData V2"
-  },
-  {
-   "name": "Retrieve the content of web content widgets (Neo)",
-   "url": "https://api.sap.com/api/GetWCEWidgetsContent/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Manage SAP Fiori Launchpad Runtime Site Status (Neo)",
-   "url": "https://api.sap.com/api/ManageFlpRuntimeSiteStatus/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Manage SAP Fiori Launchpad Content Sharing Lifecycle (Neo)",
-   "url": "https://api.sap.com/api/ManageFlpSharedContent/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Manage SAP Fiori Launchpad Site Lifecycle (Neo)",
-   "url": "https://api.sap.com/api/ManageFlpSiteLifecycle/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Manage Translation Interface (Neo)",
-   "url": "https://api.sap.com/api/ManageTranslationInterface/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Set Default SAP Fiori Launchpad Site (Neo)",
-   "url": "https://api.sap.com/api/SetFlpDefaultSite/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Replicate HTML5 Apps to SAPUI5 Application Index Interface (Neo)",
-   "url": "https://api.sap.com/api/appindex/overview",
-   "apiType": "RESTful"
-  },
-  {
-   "name": "Manage a Custom SAPUI5 Version Interface (Neo)",
-   "url": "https://api.sap.com/api/customui5version/overview",
-   "apiType": "RESTful"
-  }
- ]
+ "apis": []
 }
