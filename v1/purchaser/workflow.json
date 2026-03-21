@@ -1,6 +1,6 @@
 {
  "name": "workflow",
- "displayName": "Workflow",
+ "displayName": "SAP Workflow Management",
  "description": "SAP Workflow service allows you to build, run, and manage workflows, from simple approvals to end-to-end processes that span across different organizations and applications. With an inbox application and custom-built user interfaces, you involve end users into business processes for decision making and data entry. The workflow service comes with web-based tools for workflow modeling, APIs for consumption in custom applications, monitoring tools, and a set of Fiori-based applications for end-user access. You can use JavaScript to embed custom business logic.",
  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/KUY7weA2FULbsayegkDrID76qi3Y4pD4UDU6vGRttGVNj5p0fgWagnudo_ry69Xw.svg",
  "servicePlans": [
@@ -12,6 +12,14 @@
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
     {
      "region": "ap10",
      "name": "cf-ap10"
@@ -57,6 +65,14 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -65,8 +81,16 @@
      "name": "cf-eu11"
     },
     {
+     "region": "eu13",
+     "name": "cf-eu13"
+    },
+    {
      "region": "eu20",
      "name": "cf-eu20"
+    },
+    {
+     "region": "eu22",
+     "name": "cf-eu22"
     },
     {
      "region": "eu30",
@@ -79,6 +103,10 @@
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
     },
     {
      "region": "jp10",
@@ -103,6 +131,18 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us01",
+     "name": "cf-us01"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -175,6 +215,10 @@
      "commercialModel": "ppu_oem"
     },
     {
+     "materialNumber": "8008261_Backup",
+     "commercialModel": "ppu_oem"
+    },
+    {
      "materialNumber": "8008476",
      "commercialModel": "Subscription"
     },
@@ -233,6 +277,10 @@
     {
      "materialNumber": "8017674",
      "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019141",
+     "commercialModel": "btpea"
     },
     {
      "materialNumber": "8020122",

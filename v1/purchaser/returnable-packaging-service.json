@@ -17,6 +17,10 @@
      "name": "cf-eu10"
     },
     {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
      "region": "us10",
      "name": "cf-us10"
     }
@@ -36,13 +40,17 @@
    "name": "free",
    "displayName": "Free",
    "category": "SERVICE",
-   "description": "Free Plan with Status Management",
+   "description": "free plan",
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
     {
      "region": "eu10",
      "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
      "region": "us10",
@@ -60,13 +68,17 @@
    "name": "production",
    "displayName": "Production",
    "category": "SERVICE",
-   "description": "Production Plan with Status Management",
+   "description": "production plan",
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
     {
      "region": "eu10",
      "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
      "region": "us10",

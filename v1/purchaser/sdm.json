@@ -1,7 +1,7 @@
 {
  "name": "sdm",
- "displayName": "Document Management Service, Integration Option",
- "description": "Document Management Service, Integration Option",
+ "displayName": "Document Management Service",
+ "description": "Document Management Service",
  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/0hcsYwZJnGw63M8x7hWdRQfXZKqb_kTNG19cd1RRyhjn7aF2eQEK1GBPHITUzaqy.svg",
  "servicePlans": [
   {
@@ -145,8 +145,40 @@
      "name": "cf-ap10"
     },
     {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
     },
     {
      "region": "eu20",
@@ -161,8 +193,20 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     },
     {
      "region": "us21",
@@ -175,7 +219,47 @@
    ],
    "materialNumberMapping": [
     {
+     "materialNumber": "8005605",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8007848",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8007905",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8008261",
+     "commercialModel": "ppu_oem"
+    },
+    {
+     "materialNumber": "8009282",
+     "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8010751",
+     "commercialModel": "ppu"
+    },
+    {
+     "materialNumber": "8016044",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017606",
+     "commercialModel": "btpea"
+    },
+    {
+     "materialNumber": "8017640",
+     "commercialModel": "pure_ppu"
+    },
+    {
      "materialNumber": "8019321",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019913",
      "commercialModel": "Subscription"
     },
     {
@@ -192,6 +276,14 @@
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
     {
      "region": "ap10",
      "name": "cf-ap10"
@@ -237,6 +329,14 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -245,8 +345,16 @@
      "name": "cf-eu11"
     },
     {
+     "region": "eu13",
+     "name": "cf-eu13"
+    },
+    {
      "region": "eu20",
      "name": "cf-eu20"
+    },
+    {
+     "region": "eu22",
+     "name": "cf-eu22"
     },
     {
      "region": "eu30",
@@ -259,6 +367,10 @@
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
     },
     {
      "region": "jp10",
@@ -283,6 +395,18 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us01",
+     "name": "cf-us01"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -357,6 +481,14 @@
    "isBeta": false,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -401,6 +533,14 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -409,8 +549,16 @@
      "name": "cf-eu11"
     },
     {
+     "region": "eu13",
+     "name": "cf-eu13"
+    },
+    {
      "region": "eu20",
      "name": "cf-eu20"
+    },
+    {
+     "region": "eu22",
+     "name": "cf-eu22"
     },
     {
      "region": "eu30",
@@ -423,6 +571,10 @@
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
     },
     {
      "region": "jp10",
@@ -447,6 +599,18 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us01",
+     "name": "cf-us01"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -499,6 +663,10 @@
      "commercialModel": "ppu_oem"
     },
     {
+     "materialNumber": "8008261_Backup",
+     "commercialModel": "ppu_oem"
+    },
+    {
      "materialNumber": "8008376",
      "commercialModel": "Subscription"
     },
@@ -545,6 +713,10 @@
     {
      "materialNumber": "8017640",
      "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8019141",
+     "commercialModel": "btpea"
     },
     {
      "materialNumber": "8008802",

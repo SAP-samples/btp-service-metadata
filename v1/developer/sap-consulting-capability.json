@@ -30,6 +30,10 @@
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
    ],
    "schemas": [
@@ -41,6 +45,13 @@
         "_show_form_view": true,
         "additionalProperties": false,
         "properties": {
+         "customer_id": {
+          "description": "Enter the CRM Account ID or ERP Account ID of the customer (max 50 characters)",
+          "maxLength": 300,
+          "minLength": 0,
+          "title": "CRM/ERP ID",
+          "type": "string"
+         },
          "customer_name": {
           "description": "Enter the name of the customer (max 50 characters)",
           "maxLength": 50,
@@ -49,8 +60,32 @@
           "type": "string"
          },
          "privacy_message": {
-          "description": "Enter a privacy message to show in the application (max 300 characters)",
+          "description": "Enter a privacy message to show in the application (max 1024 characters)",
+          "maxLength": 1024,
+          "minLength": 0,
+          "title": "Privacy Message",
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "properties": {
+         "customer_id": {
+          "description": "Enter the CRM Account ID or ERP Account ID of the customer (max 50 characters)",
           "maxLength": 300,
+          "minLength": 0,
+          "title": "CRM/ERP ID",
+          "type": "string"
+         },
+         "privacy_message": {
+          "description": "Enter a privacy message to show in the application (max 1024 characters)",
+          "maxLength": 1024,
           "minLength": 0,
           "title": "Privacy Message",
           "type": "string"
@@ -81,6 +116,10 @@
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
     }
    ],
    "schemas": [
@@ -92,6 +131,13 @@
         "_show_form_view": true,
         "additionalProperties": false,
         "properties": {
+         "customer_id": {
+          "description": "Enter the CRM Account ID or ERP Account ID of the customer (max 50 characters)",
+          "maxLength": 300,
+          "minLength": 0,
+          "title": "CRM/ERP ID",
+          "type": "string"
+         },
          "customer_name": {
           "description": "Enter the name of the customer (max 50 characters)",
           "maxLength": 50,
@@ -100,8 +146,32 @@
           "type": "string"
          },
          "privacy_message": {
-          "description": "Enter a privacy message to show in the application (max 300 characters)",
+          "description": "Enter a privacy message to show in the application (max 1024 characters)",
+          "maxLength": 1024,
+          "minLength": 0,
+          "title": "Privacy Message",
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "properties": {
+         "customer_id": {
+          "description": "Enter the CRM Account ID or ERP Account ID of the customer (max 50 characters)",
           "maxLength": 300,
+          "minLength": 0,
+          "title": "CRM/ERP ID",
+          "type": "string"
+         },
+         "privacy_message": {
+          "description": "Enter a privacy message to show in the application (max 1024 characters)",
+          "maxLength": 1024,
           "minLength": 0,
           "title": "Privacy Message",
           "type": "string"

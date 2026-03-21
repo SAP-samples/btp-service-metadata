@@ -45,7 +45,69 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "type": "object",
+        "properties": {
+         "xs-security": {
+          "type": "object",
+          "properties": {
+           "xsappname": {
+            "type": "string",
+            "default": "cloud-alm-api"
+           },
+           "authorities": {
+            "title": "Scopes List",
+            "type": "array",
+            "items": {
+             "type": "string"
+            },
+            "default": [],
+            "_description": "You can add your scopes as needed."
+           }
+          },
+          "additionalProperties": true
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "_load_current_config": true,
+        "type": "object",
+        "properties": {
+         "xs-security": {
+          "type": "object",
+          "properties": {
+           "xsappname": {
+            "type": "string",
+            "default": "cloud-alm-api"
+           },
+           "authorities": {
+            "title": "Scopes List",
+            "type": "array",
+            "items": {
+             "type": "string"
+            },
+            "default": [],
+            "_description": "Public Scopes -  You can modify, remove, or add custom scopes as needed."
+           }
+          },
+          "additionalProperties": true
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   }
  ],
  "supportComponents": [],

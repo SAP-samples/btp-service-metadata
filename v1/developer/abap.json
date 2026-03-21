@@ -239,12 +239,15 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1
-          ]
+           "1"
+          ],
+          "_enumDisplayName": {
+           "1": "1"
+          }
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
@@ -310,7 +313,7 @@
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-          "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+          "description": "Enter the number of HANA compute units (1 HCU = 16 GB) that should be used for the HANA Cloud memory. When you change 'size_of_persistence', the minimum and maximum allowed values for 'size_of_persistence_disk' are recalculated. You cannot decrease 'size_of_persistence_disk', but you may keep the current disk size even if it exceeds the recalculated maximum. If the disk size remains above the new minimum 'size_of_persistence_disk', each GB above that minimum consumes 0.002 HCU of your quota.",
           "type": "integer",
           "default": 4,
           "enum": [
@@ -319,12 +322,15 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1
-          ]
+           "1"
+          ],
+          "_enumDisplayName": {
+           "1": "1"
+          }
          },
          "elastic": {
           "title": "Elastic Scaling of ABAP Application Server",
@@ -391,8 +397,16 @@
      "name": "cf-ca10"
     },
     {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
      "region": "ch20",
      "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
     },
     {
      "region": "eu10",
@@ -407,8 +421,16 @@
      "name": "cf-eu20"
     },
     {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
      "region": "in30",
@@ -429,6 +451,14 @@
     {
      "region": "jp31",
      "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
     },
     {
      "region": "us10",
@@ -501,6 +531,10 @@
      "name": "cf-eu10"
     },
     {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
      "region": "eu20",
      "name": "cf-eu20"
     },
@@ -553,9 +587,11 @@
          "sapsystemname",
          "size_of_runtime",
          "elastic",
+         "multi_availability_zones",
          "size_of_application_server",
          "size_of_persistence",
-         "size_of_persistence_disk"
+         "size_of_persistence_disk",
+         "customer_managed_keys"
         ],
         "properties": {
          "admin_email": {
@@ -598,19 +634,37 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1,
-           2,
-           4,
-           6,
-           8,
-           16,
-           24,
-           32
-          ]
+           "1",
+           "24",
+           "32",
+           "64",
+           "1.5",
+           "2",
+           "3",
+           "4",
+           "4.5",
+           "6",
+           "8",
+           "16"
+          ],
+          "_enumDisplayName": {
+           "1": "1",
+           "2": "2",
+           "3": "3",
+           "4": "4",
+           "6": "6",
+           "8": "8",
+           "16": "16",
+           "24": "24",
+           "32": "32",
+           "64": "64",
+           "1.5": "1.5",
+           "4.5": "4.5"
+          }
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
@@ -632,9 +686,14 @@
           "type": "boolean",
           "default": false
          },
+         "multi_availability_zones": {
+          "description": "If set to true, multi availability zone will be enabled for the system",
+          "type": "boolean",
+          "default": false
+         },
          "size_of_application_server": {
           "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 32 times the size of the ABAP Runtime Size per Application Server.",
           "type": "string",
           "default": "auto",
           "enum": [
@@ -663,10 +722,16 @@
          },
          "size_of_persistence_disk": {
           "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-          "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+          "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '240 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
           "type": "string",
           "pattern": "^(auto|\\d+)?$",
           "default": "auto"
+         },
+         "customer_managed_keys": {
+          "title": "Customer-Managed Keys",
+          "description": "Enables integration with customer managed keys for data encryption in HANA Cloud via SAP Key Management Service. Attention: Once enabled, the feature can't be disabled.",
+          "type": "boolean",
+          "default": false
          }
         },
         "required": [
@@ -687,9 +752,11 @@
          "description",
          "size_of_runtime",
          "elastic",
+         "multi_availability_zones",
          "size_of_application_server",
          "size_of_persistence",
-         "size_of_persistence_disk"
+         "size_of_persistence_disk",
+         "customer_managed_keys"
         ],
         "properties": {
          "description": {
@@ -701,7 +768,7 @@
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-          "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+          "description": "Enter the number of HANA compute units (1 HCU = 16 GB) that should be used for the HANA Cloud memory. When you change 'size_of_persistence', the minimum and maximum allowed values for 'size_of_persistence_disk' are recalculated. You cannot decrease 'size_of_persistence_disk', but you may keep the current disk size even if it exceeds the recalculated maximum. If the disk size remains above the new minimum 'size_of_persistence_disk', each GB above that minimum consumes 0.002 HCU of your quota.",
           "type": "integer",
           "default": 2,
           "enum": [
@@ -715,19 +782,39 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1,
-           2,
-           4,
-           6,
-           8,
-           16,
-           24,
-           32
-          ]
+           "0.5",
+           "1",
+           "24",
+           "32",
+           "64",
+           "1.5",
+           "2",
+           "3",
+           "4",
+           "4.5",
+           "6",
+           "8",
+           "16"
+          ],
+          "_enumDisplayName": {
+           "1": "1",
+           "2": "2",
+           "3": "3",
+           "4": "4",
+           "6": "6",
+           "8": "8",
+           "16": "16",
+           "24": "24",
+           "32": "32",
+           "64": "64",
+           "0.5": "0.5 (single application server without SLA)",
+           "1.5": "1.5",
+           "4.5": "4.5"
+          }
          },
          "elastic": {
           "title": "Elastic Scaling of ABAP Application Server",
@@ -735,9 +822,14 @@
           "type": "boolean",
           "default": false
          },
+         "multi_availability_zones": {
+          "description": "If set to true, multi availability zone will be enabled for the system",
+          "type": "boolean",
+          "default": false
+         },
          "size_of_application_server": {
           "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 32 times the size of the ABAP Runtime Size per Application Server.",
           "type": "string",
           "default": "auto",
           "enum": [
@@ -748,10 +840,16 @@
          },
          "size_of_persistence_disk": {
           "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-          "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+          "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '240 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
           "type": "string",
           "pattern": "^(auto|\\d+)?$",
           "default": "auto"
+         },
+         "customer_managed_keys": {
+          "title": "Customer-Managed Keys",
+          "description": "Enables integration with customer managed keys for data encryption in HANA Cloud via SAP Key Management Service. Attention: Once enabled, the feature can't be disabled.",
+          "type": "boolean",
+          "default": false
          }
         }
        }
@@ -812,6 +910,18 @@
      "name": "cf-ca10"
     },
     {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -824,8 +934,16 @@
      "name": "cf-eu20"
     },
     {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
      "region": "in30",
@@ -846,6 +964,14 @@
     {
      "region": "jp31",
      "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
     },
     {
      "region": "us10",
@@ -1016,8 +1142,16 @@
      "name": "cf-ca10"
     },
     {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
      "region": "ch20",
      "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
     },
     {
      "region": "eu10",
@@ -1032,8 +1166,16 @@
      "name": "cf-eu20"
     },
     {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
      "region": "in30",
@@ -1054,6 +1196,14 @@
     {
      "region": "jp31",
      "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
     },
     {
      "region": "us10",
@@ -1130,8 +1280,16 @@
      "name": "cf-ca10"
     },
     {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
      "region": "ch20",
      "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
     },
     {
      "region": "eu10",
@@ -1146,8 +1304,16 @@
      "name": "cf-eu20"
     },
     {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
      "region": "in30",
@@ -1168,6 +1334,14 @@
     {
      "region": "jp31",
      "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
     },
     {
      "region": "us10",
@@ -1206,6 +1380,7 @@
          "sapsystemname",
          "size_of_runtime",
          "elastic",
+         "multi_availability_zones",
          "size_of_application_server",
          "size_of_persistence",
          "size_of_persistence_disk"
@@ -1251,19 +1426,37 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1,
-           2,
-           4,
-           6,
-           8,
-           16,
-           24,
-           32
-          ]
+           "1",
+           "1.5",
+           "32",
+           "64",
+           "2",
+           "3",
+           "4",
+           "4.5",
+           "6",
+           "8",
+           "16",
+           "24"
+          ],
+          "_enumDisplayName": {
+           "1": "1",
+           "2": "2",
+           "3": "3",
+           "4": "4",
+           "6": "6",
+           "8": "8",
+           "16": "16",
+           "24": "24",
+           "32": "32",
+           "64": "64",
+           "1.5": "1.5",
+           "4.5": "4.5"
+          }
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
@@ -1353,9 +1546,14 @@
           "type": "boolean",
           "default": false
          },
+         "multi_availability_zones": {
+          "description": "If set to true, multi availability zone will be enabled for the system",
+          "type": "boolean",
+          "default": false
+         },
          "size_of_application_server": {
           "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 32 times the size of the ABAP Runtime Size per Application Server.",
           "type": "string",
           "default": "auto",
           "enum": [
@@ -1432,7 +1630,7 @@
          },
          "size_of_persistence_disk": {
           "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-          "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+          "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '240 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
           "type": "string",
           "pattern": "^(auto|\\d+)?$",
           "default": "auto"
@@ -1456,6 +1654,7 @@
          "description",
          "size_of_runtime",
          "elastic",
+         "multi_availability_zones",
          "size_of_application_server",
          "size_of_persistence",
          "size_of_persistence_disk"
@@ -1470,7 +1669,7 @@
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-          "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+          "description": "Enter the number of HANA compute units (1 HCU = 16 GB) that should be used for the HANA Cloud memory. When you change 'size_of_persistence', the minimum and maximum allowed values for 'size_of_persistence_disk' are recalculated. You cannot decrease 'size_of_persistence_disk', but you may keep the current disk size even if it exceeds the recalculated maximum. If the disk size remains above the new minimum 'size_of_persistence_disk', each GB above that minimum consumes 0.002 HCU of your quota.",
           "type": "integer",
           "default": 2,
           "enum": [
@@ -1552,19 +1751,37 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1,
-           2,
-           4,
-           6,
-           8,
-           16,
-           24,
-           32
-          ]
+           "1",
+           "1.5",
+           "32",
+           "64",
+           "2",
+           "3",
+           "4",
+           "4.5",
+           "6",
+           "8",
+           "16",
+           "24"
+          ],
+          "_enumDisplayName": {
+           "1": "1",
+           "2": "2",
+           "3": "3",
+           "4": "4",
+           "6": "6",
+           "8": "8",
+           "16": "16",
+           "24": "24",
+           "32": "32",
+           "64": "64",
+           "1.5": "1.5",
+           "4.5": "4.5"
+          }
          },
          "elastic": {
           "title": "Elastic Scaling of ABAP Application Server",
@@ -1572,9 +1789,14 @@
           "type": "boolean",
           "default": false
          },
+         "multi_availability_zones": {
+          "description": "If set to true, multi availability zone will be enabled for the system",
+          "type": "boolean",
+          "default": false
+         },
          "size_of_application_server": {
           "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 32 times the size of the ABAP Runtime Size per Application Server.",
           "type": "string",
           "default": "auto",
           "enum": [
@@ -1583,9 +1805,14 @@
            "2"
           ]
          },
+         "consumer_id": {
+          "description": "consumer ID is used by BW to decide about visibility of software components",
+          "type": "string",
+          "pattern": "^[^\\x00-\\x1f]*$"
+         },
          "size_of_persistence_disk": {
           "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-          "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+          "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '240 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
           "type": "string",
           "pattern": "^(auto|\\d+)?$",
           "default": "auto"
@@ -1649,8 +1876,16 @@
      "name": "cf-ca10"
     },
     {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
      "region": "ch20",
      "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
     },
     {
      "region": "eu10",
@@ -1665,8 +1900,16 @@
      "name": "cf-eu20"
     },
     {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
     },
     {
      "region": "in30",
@@ -1687,6 +1930,14 @@
     {
      "region": "jp31",
      "name": "cf-jp31"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
     },
     {
      "region": "us10",
@@ -1725,9 +1976,11 @@
          "sapsystemname",
          "size_of_runtime",
          "elastic",
+         "multi_availability_zones",
          "size_of_application_server",
          "size_of_persistence",
-         "size_of_persistence_disk"
+         "size_of_persistence_disk",
+         "customer_managed_keys"
         ],
         "properties": {
          "admin_email": {
@@ -1770,19 +2023,37 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1,
-           2,
-           4,
-           6,
-           8,
-           16,
-           24,
-           32
-          ]
+           "1",
+           "24",
+           "32",
+           "64",
+           "1.5",
+           "2",
+           "3",
+           "4",
+           "4.5",
+           "6",
+           "8",
+           "16"
+          ],
+          "_enumDisplayName": {
+           "1": "1",
+           "2": "2",
+           "3": "3",
+           "4": "4",
+           "6": "6",
+           "8": "8",
+           "16": "16",
+           "24": "24",
+           "32": "32",
+           "64": "64",
+           "1.5": "1.5",
+           "4.5": "4.5"
+          }
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
@@ -1804,9 +2075,14 @@
           "type": "boolean",
           "default": false
          },
+         "multi_availability_zones": {
+          "description": "If set to true, multi availability zone will be enabled for the system",
+          "type": "boolean",
+          "default": false
+         },
          "size_of_application_server": {
           "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 32 times the size of the ABAP Runtime Size per Application Server.",
           "type": "string",
           "default": "auto",
           "enum": [
@@ -1835,10 +2111,16 @@
          },
          "size_of_persistence_disk": {
           "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-          "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+          "description": "Change the disk size of the HANA database (in GB). If 'auto' is selected it will be set to the minimum value '40 * size_of_persistence + 40'. The maximum value is '240 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
           "type": "string",
           "pattern": "^(auto|\\d+)?$",
           "default": "auto"
+         },
+         "customer_managed_keys": {
+          "title": "Customer-Managed Keys",
+          "description": "Enables integration with customer managed keys for data encryption in HANA Cloud via SAP Key Management Service. Attention: Once enabled, the feature can't be disabled.",
+          "type": "boolean",
+          "default": false
          }
         },
         "required": [
@@ -1859,9 +2141,11 @@
          "description",
          "size_of_runtime",
          "elastic",
+         "multi_availability_zones",
          "size_of_application_server",
          "size_of_persistence",
-         "size_of_persistence_disk"
+         "size_of_persistence_disk",
+         "customer_managed_keys"
         ],
         "properties": {
          "description": {
@@ -1873,7 +2157,7 @@
          },
          "size_of_persistence": {
           "title": "HANA Cloud Memory Size (size_of_persistence) in HCU",
-          "description": "Enter the number of HANA compute units (1 HCU = 1 block of 16 GB) that should be used for the HANA Cloud memory. Keep in mind that the minimum and maximum value for the 'size_of_persistence_disk' will be recalculated depending on the new 'size_of_persistence', but that the 'size_of_persistence_disk' itself cannot be decreased. This means that 0.002 of HANA compute unit quota will be consumed by the HANA Cloud disk for any GB exceeding the new minimum 'size_of_persistence_disk'.",
+          "description": "Enter the number of HANA compute units (1 HCU = 16 GB) that should be used for the HANA Cloud memory. When you change 'size_of_persistence', the minimum and maximum allowed values for 'size_of_persistence_disk' are recalculated. You cannot decrease 'size_of_persistence_disk', but you may keep the current disk size even if it exceeds the recalculated maximum. If the disk size remains above the new minimum 'size_of_persistence_disk', each GB above that minimum consumes 0.002 HCU of your quota.",
           "type": "integer",
           "default": 2,
           "enum": [
@@ -1887,19 +2171,39 @@
          },
          "size_of_runtime": {
           "title": "Total ABAP Runtime Size (size_of_runtime) in ACU",
-          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime.",
-          "type": "integer",
-          "default": 1,
+          "description": "Enter the total number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for the ABAP runtime over all application servers. If elastic scaling is disabled, this value represents the fixed size of the ABAP runtime. If elastic scaling is enabled, this value represents the maximum size of the ABAP runtime. Please make sure that the Total ABAP Runtime Size is less than or equal to twice the size of the HANA Cloud Memory Size.",
+          "type": "string",
+          "default": "1",
           "enum": [
-           1,
-           2,
-           4,
-           6,
-           8,
-           16,
-           24,
-           32
-          ]
+           "0.5",
+           "1",
+           "24",
+           "32",
+           "64",
+           "1.5",
+           "2",
+           "3",
+           "4",
+           "4.5",
+           "6",
+           "8",
+           "16"
+          ],
+          "_enumDisplayName": {
+           "1": "1",
+           "2": "2",
+           "3": "3",
+           "4": "4",
+           "6": "6",
+           "8": "8",
+           "16": "16",
+           "24": "24",
+           "32": "32",
+           "64": "64",
+           "0.5": "0.5 (single application server without SLA)",
+           "1.5": "1.5",
+           "4.5": "4.5"
+          }
          },
          "elastic": {
           "title": "Elastic Scaling of ABAP Application Server",
@@ -1907,9 +2211,14 @@
           "type": "boolean",
           "default": false
          },
+         "multi_availability_zones": {
+          "description": "If set to true, multi availability zone will be enabled for the system",
+          "type": "boolean",
+          "default": false
+         },
          "size_of_application_server": {
           "title": "ABAP Runtime Size per Application Server (size_of_application_server) in ACU",
-          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 16 times the size of the ABAP Runtime Size per Application Server.",
+          "description": "Enter the number of ABAP compute units (1 ACU = 1 block of 16 GB) that should be used for a single application server. If you choose a higher number you will get less but larger application servers while a lower number will give you more but smaller application servers for the same size_of_runtime. If 'auto' is chosen, then 0.5 ACU will be assigned per application server if size_of_runtime < 4 for systems without elastic scaling, or size_of_runtime < 8 for systems with elastic scaling; otherwise 2 ACU will be assigned per application server. Note that the Total ABAP Runtime Size must be a whole-numbered multiple between 2 and 32 times the size of the ABAP Runtime Size per Application Server.",
           "type": "string",
           "default": "auto",
           "enum": [
@@ -1920,10 +2229,16 @@
          },
          "size_of_persistence_disk": {
           "title": "HANA Cloud Disk Size (size_of_persistence_disk) in GB",
-          "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '120 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
+          "description": "Increase the disk size (in GB) of the HANA database (a decrease is currently not supported). If 'auto' is selected, the size you have set previously will remain unchanged except if it is lower than the minimum value '40 * size_of_persistence + 40', in which case it will be raised to the minimum value automatically. The maximum value is '240 * size_of_persistence + 40'. It will consume 0.002 of HANA compute unit quota for any GB exceeding the minimum value.",
           "type": "string",
           "pattern": "^(auto|\\d+)?$",
           "default": "auto"
+         },
+         "customer_managed_keys": {
+          "title": "Customer-Managed Keys",
+          "description": "Enables integration with customer managed keys for data encryption in HANA Cloud via SAP Key Management Service. Attention: Once enabled, the feature can't be disabled.",
+          "type": "boolean",
+          "default": false
          }
         }
        }

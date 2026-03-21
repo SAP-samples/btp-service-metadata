@@ -63,7 +63,7 @@
         "type": "object",
         "properties": {
          "role": {
-          "description": "Supported Roles are AuthGroup.API.Admin, AuthGroup.Content.Admin and AuthGroup.API.ApplicationDeveloper",
+          "description": "Supported Roles are AuthGroup.API.Admin, AuthGroup.Content.Admin, AuthGroup.External.Reviewer and AuthGroup.API.ApplicationDeveloper",
           "type": "string",
           "default": "AuthGroup.API.Admin"
          }

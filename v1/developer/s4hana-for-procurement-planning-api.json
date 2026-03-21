@@ -19,6 +19,24 @@
  ],
  "servicePlans": [
   {
+   "name": "bundle",
+   "displayName": "bundle",
+   "category": "SERVICE",
+   "description": "Access to Bundle Data Management for System Communication API",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "schemas": null
+  },
+  {
    "name": "default",
    "displayName": "default",
    "category": "SERVICE",

@@ -217,378 +217,6 @@
  ],
  "servicePlans": [
   {
-   "name": "build-code",
-   "displayName": "build-code",
-   "category": "SERVICE",
-   "description": "This is a dedicated plan for the SAP Build Code. If you want to use this service with the SAP Build Code, use the build-code plan. Please note if you use the regular plan, it will incur charges outside the build code capacity units metric. Create an org in your Cloud Foundry environment to start developing build code applications.",
-   "isFree": null,
-   "isBeta": false,
-   "deprecated": false,
-   "deprecationMessage": null,
-   "deprecationDate": null,
-   "dataCenters": [
-    {
-     "region": "ap10",
-     "name": "cf-ap10"
-    },
-    {
-     "region": "ap11",
-     "name": "cf-ap11"
-    },
-    {
-     "region": "ap12",
-     "name": "cf-ap12"
-    },
-    {
-     "region": "ap20",
-     "name": "cf-ap20"
-    },
-    {
-     "region": "ap21",
-     "name": "cf-ap21"
-    },
-    {
-     "region": "ap30",
-     "name": "cf-ap30"
-    },
-    {
-     "region": "br10",
-     "name": "cf-br10"
-    },
-    {
-     "region": "br20",
-     "name": "cf-br20"
-    },
-    {
-     "region": "br30",
-     "name": "cf-br30"
-    },
-    {
-     "region": "ca10",
-     "name": "cf-ca10"
-    },
-    {
-     "region": "ca20",
-     "name": "cf-ca20"
-    },
-    {
-     "region": "ch20",
-     "name": "cf-ch20"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-002"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-003"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-004"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-005"
-    },
-    {
-     "region": "eu11",
-     "name": "cf-eu11"
-    },
-    {
-     "region": "eu20",
-     "name": "cf-eu20"
-    },
-    {
-     "region": "eu20",
-     "name": "cf-eu20-001"
-    },
-    {
-     "region": "eu30",
-     "name": "cf-eu30"
-    },
-    {
-     "region": "il30",
-     "name": "cf-il30"
-    },
-    {
-     "region": "in30",
-     "name": "cf-in30"
-    },
-    {
-     "region": "jp10",
-     "name": "cf-jp10"
-    },
-    {
-     "region": "jp20",
-     "name": "cf-jp20"
-    },
-    {
-     "region": "jp30",
-     "name": "cf-jp30"
-    },
-    {
-     "region": "jp31",
-     "name": "cf-jp31"
-    },
-    {
-     "region": "sa30",
-     "name": "cf-sa30"
-    },
-    {
-     "region": "sa31",
-     "name": "cf-sa31"
-    },
-    {
-     "region": "us10",
-     "name": "cf-us10"
-    },
-    {
-     "region": "us10",
-     "name": "cf-us10-001"
-    },
-    {
-     "region": "us10",
-     "name": "cf-us10-002"
-    },
-    {
-     "region": "us11",
-     "name": "cf-us11"
-    },
-    {
-     "region": "us20",
-     "name": "cf-us20"
-    },
-    {
-     "region": "us21",
-     "name": "cf-us21"
-    },
-    {
-     "region": "us30",
-     "name": "cf-us30"
-    }
-   ],
-   "schemas": [
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "schema": "http://json-schema.org/draft-07/schema#",
-        "_show_form_view": true,
-        "type": "object",
-        "properties": {
-         "instance_name": {
-          "title": "Org Name",
-          "description": "Cloud Foundry organization name",
-          "type": "string",
-          "minLength": 1,
-          "_BTPdefaultTemplate": {
-           "elements": [
-            "gaDisplayName",
-            "saSubdomain"
-           ],
-           "separator": "_"
-          }
-         }
-        },
-        "required": [
-         "instance_name"
-        ]
-       }
-      }
-     }
-    }
-   ]
-  },
-  {
-   "name": "build-runtime",
-   "displayName": "Build-runtime",
-   "category": "SERVICE",
-   "description": "This is a dedicated plan for the SAP Build. If you want to use this service with SAP Build use the build-runtime plan. Please note if you use any other plan, e.g. standard, it will incur charges outside the SAP Build capacity units metric.",
-   "isFree": null,
-   "isBeta": false,
-   "deprecated": false,
-   "deprecationMessage": null,
-   "deprecationDate": null,
-   "dataCenters": [
-    {
-     "region": "ap10",
-     "name": "cf-ap10"
-    },
-    {
-     "region": "ap11",
-     "name": "cf-ap11"
-    },
-    {
-     "region": "ap12",
-     "name": "cf-ap12"
-    },
-    {
-     "region": "ap20",
-     "name": "cf-ap20"
-    },
-    {
-     "region": "ap21",
-     "name": "cf-ap21"
-    },
-    {
-     "region": "ap30",
-     "name": "cf-ap30"
-    },
-    {
-     "region": "br10",
-     "name": "cf-br10"
-    },
-    {
-     "region": "br20",
-     "name": "cf-br20"
-    },
-    {
-     "region": "br30",
-     "name": "cf-br30"
-    },
-    {
-     "region": "ca10",
-     "name": "cf-ca10"
-    },
-    {
-     "region": "ca20",
-     "name": "cf-ca20"
-    },
-    {
-     "region": "ch20",
-     "name": "cf-ch20"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-002"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-003"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-004"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-005"
-    },
-    {
-     "region": "eu11",
-     "name": "cf-eu11"
-    },
-    {
-     "region": "eu20",
-     "name": "cf-eu20"
-    },
-    {
-     "region": "eu20",
-     "name": "cf-eu20-001"
-    },
-    {
-     "region": "eu30",
-     "name": "cf-eu30"
-    },
-    {
-     "region": "il30",
-     "name": "cf-il30"
-    },
-    {
-     "region": "in30",
-     "name": "cf-in30"
-    },
-    {
-     "region": "jp10",
-     "name": "cf-jp10"
-    },
-    {
-     "region": "jp20",
-     "name": "cf-jp20"
-    },
-    {
-     "region": "jp30",
-     "name": "cf-jp30"
-    },
-    {
-     "region": "jp31",
-     "name": "cf-jp31"
-    },
-    {
-     "region": "sa31",
-     "name": "cf-sa31"
-    },
-    {
-     "region": "us10",
-     "name": "cf-us10"
-    },
-    {
-     "region": "us10",
-     "name": "cf-us10-001"
-    },
-    {
-     "region": "us10",
-     "name": "cf-us10-002"
-    },
-    {
-     "region": "us11",
-     "name": "cf-us11"
-    },
-    {
-     "region": "us20",
-     "name": "cf-us20"
-    },
-    {
-     "region": "us21",
-     "name": "cf-us21"
-    },
-    {
-     "region": "us30",
-     "name": "cf-us30"
-    }
-   ],
-   "schemas": [
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "schema": "http://json-schema.org/draft-07/schema#",
-        "_show_form_view": true,
-        "type": "object",
-        "properties": {
-         "instance_name": {
-          "title": "Org Name",
-          "description": "Cloud Foundry organization name",
-          "type": "string",
-          "minLength": 1,
-          "_BTPdefaultTemplate": {
-           "elements": [
-            "gaDisplayName",
-            "saSubdomain"
-           ],
-           "separator": "_"
-          }
-         }
-        },
-        "required": [
-         "instance_name"
-        ]
-       }
-      }
-     }
-    }
-   ]
-  },
-  {
    "name": "free",
    "displayName": "free",
    "category": "ENVIRONMENT",
@@ -599,6 +227,10 @@
    "deprecationMessage": null,
    "deprecationDate": null,
    "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
     {
      "region": "ap01",
      "name": "cf-ap01"
@@ -660,16 +292,12 @@
      "name": "cf-eu01"
     },
     {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-002"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-003"
     },
     {
      "region": "eu10",
@@ -696,6 +324,14 @@
      "name": "cf-eu20-001"
     },
     {
+     "region": "eu20",
+     "name": "cf-eu20-002"
+    },
+    {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
     },
@@ -710,6 +346,10 @@
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
     },
     {
      "region": "jp10",
@@ -734,6 +374,18 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us01",
+     "name": "cf-us01"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -766,6 +418,10 @@
     {
      "region": "us30",
      "name": "cf-us30"
+    },
+    {
+     "region": "us32",
+     "name": "cf-us32"
     }
    ],
    "schemas": [
@@ -812,6 +468,10 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
      "region": "ap01",
      "name": "cf-ap01"
     },
@@ -872,16 +532,12 @@
      "name": "cf-eu01"
     },
     {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-002"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-003"
     },
     {
      "region": "eu10",
@@ -908,6 +564,14 @@
      "name": "cf-eu20-001"
     },
     {
+     "region": "eu20",
+     "name": "cf-eu20-002"
+    },
+    {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
     },
@@ -922,6 +586,10 @@
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
     },
     {
      "region": "jp10",
@@ -948,6 +616,18 @@
      "name": "cf-sa31"
     },
     {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us01",
+     "name": "cf-us01"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
+    },
+    {
      "region": "us10",
      "name": "cf-us10"
     },
@@ -972,12 +652,20 @@
      "name": "cf-us21"
     },
     {
+     "region": "us21",
+     "name": "cf-us21-001"
+    },
+    {
      "region": "us22",
      "name": "cf-us22"
     },
     {
      "region": "us30",
      "name": "cf-us30"
+    },
+    {
+     "region": "us32",
+     "name": "cf-us32"
     }
    ],
    "schemas": [
@@ -1009,6 +697,70 @@
        }
       }
      }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+         "instance_name": {
+          "description": "The name for the requested organization",
+          "type": "string"
+         },
+         "quota_update": {
+          "description": "Update the organization quota (valid for Custom plan only).",
+          "type": "integer"
+         },
+         "users": {
+          "description": "The organization managers",
+          "type": "array",
+          "items": {
+           "id": {
+            "description": "The user's ID",
+            "type": "string"
+           },
+           "email": {
+            "description": "The user's email",
+            "type": "string"
+           }
+          }
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+         "quota_update": {
+          "description": "update the organization quota.",
+          "type": "integer"
+         },
+         "status": {
+          "description": "The organization status, possible values are [active] or [suspended]. Default value is active",
+          "type": "string"
+         },
+         "users": {
+          "description": "The organization managers",
+          "type": "array",
+          "items": {
+           "id": {
+            "description": "The user's ID",
+            "type": "string"
+           },
+           "email": {
+            "description": "The user's email",
+            "type": "string"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
     }
    ]
   },
@@ -1023,6 +775,10 @@
    "deprecationMessage": null,
    "deprecationDate": null,
    "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
     {
      "region": "ap01",
      "name": "cf-ap01"
@@ -1084,16 +840,12 @@
      "name": "cf-eu01"
     },
     {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-002"
-    },
-    {
-     "region": "eu10",
-     "name": "cf-eu10-003"
     },
     {
      "region": "eu10",
@@ -1120,6 +872,14 @@
      "name": "cf-eu20-001"
     },
     {
+     "region": "eu20",
+     "name": "cf-eu20-002"
+    },
+    {
+     "region": "eu22",
+     "name": "cf-eu22"
+    },
+    {
      "region": "eu30",
      "name": "cf-eu30"
     },
@@ -1134,6 +894,10 @@
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
     },
     {
      "region": "jp10",
@@ -1158,6 +922,18 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us01",
+     "name": "cf-us01"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -1190,6 +966,10 @@
     {
      "region": "us30",
      "name": "cf-us30"
+    },
+    {
+     "region": "us32",
+     "name": "cf-us32"
     }
    ],
    "schemas": [

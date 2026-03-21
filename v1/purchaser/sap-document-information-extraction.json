@@ -1,14 +1,14 @@
 {
  "name": "sap-document-information-extraction",
- "displayName": "Document Information Extraction",
- "description": "Document Information Extraction",
+ "displayName": "SAP Document AI",
+ "description": "SAP Document AI",
  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/0FfEVnl4H7pJa42jId9oMdwnNTN6eOPqtxUdD0_hCrHXV1vPdZ1aIX6dpH4dfZ3n.svg",
  "servicePlans": [
   {
    "name": "blocks_of_100",
    "displayName": "blocks_of_100",
    "category": "SERVICE",
-   "description": "Base edition plan intended for productive usage. Process business documents using pretrained machine learning models and templates.",
+   "description": "Service plan for production usage of SAP Document AI, charged in blocks of 100 documents.",
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
@@ -23,6 +23,10 @@
     {
      "region": "ap20",
      "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
      "region": "ap30",
@@ -91,6 +95,10 @@
      "commercialModel": "ppu_oem"
     },
     {
+     "materialNumber": "8008261_Backup",
+     "commercialModel": "ppu_oem"
+    },
+    {
      "materialNumber": "8008952",
      "commercialModel": "Subscription"
     },
@@ -129,6 +137,10 @@
     {
      "materialNumber": "8017640",
      "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8019141",
+     "commercialModel": "btpea"
     }
    ]
   },
@@ -136,7 +148,7 @@
    "name": "default",
    "displayName": "default",
    "category": "SERVICE",
-   "description": "Plan for production usage of Document Information Extraction, charged in blocks of 1000 documents. ",
+   "description": "Service plan for production usage of SAP Document AI, charged in blocks of 1000 documents.",
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
@@ -209,14 +221,18 @@
     {
      "materialNumber": "8017640",
      "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8019141",
+     "commercialModel": "btpea"
     }
    ]
   },
   {
-   "name": "free",
-   "displayName": "free",
+   "name": "embedded_edition",
+   "displayName": "embedded_edition",
    "category": "SERVICE",
-   "description": "Free plan intended for development and try-out purposes. Please note, only community support is available for free service plans, and these plans are not subject to SLAs. Use of free tier service plans is subject to additional terms and conditions as provided in the SAP Business Technology Platform Supplemental Terms and Conditions. (See SAP BTP Cockpit > Service Marketplace > Document Information Extraction tile > Additional Links)",
+   "description": "Service plan for production usage of SAP Document AI, charged in AI units. For details about the metrics please refer to the SAP Business AI catalog: https://discovery-center.cloud.sap/ai-catalog/.",
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
@@ -231,6 +247,94 @@
     {
      "region": "ap20",
      "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8019164",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8019670",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
+   "name": "free",
+   "displayName": "free",
+   "category": "SERVICE",
+   "description": "Please note, only community support is available for free service plans and these are not subject to SLAs. Use of free tier service plans are subject to additional terms and conditions as provided in the Business Technology Platform Supplemental Terms and Conditions linked below.",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
      "region": "ap30",
@@ -324,7 +428,7 @@
    "name": "premium_edition",
    "displayName": "premium_edition",
    "category": "SERVICE",
-   "description": "Premium edition plan intended for productive usage. Process business documents using generative AI, pretrained machine learning models, and templates. This cloud service includes AI technologies or features therefore section 10 of the SAP Business Technology Platform Supplemental Terms and Conditions applies. (See SAP BTP Cockpit > Service Marketplace > Document Information Extraction tile > Additional Links)",
+   "description": "Service plan for production usage of SAP Document AI, charged per document page.",
    "isFree": null,
    "isBeta": false,
    "dataCenters": [
@@ -339,6 +443,10 @@
     {
      "region": "ap20",
      "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
     },
     {
      "region": "ap30",
@@ -407,6 +515,10 @@
      "commercialModel": "ppu_oem"
     },
     {
+     "materialNumber": "8008261_Backup",
+     "commercialModel": "ppu_oem"
+    },
+    {
      "materialNumber": "8009282",
      "commercialModel": "pure_ppu"
     },
@@ -433,6 +545,18 @@
     {
      "materialNumber": "8017640",
      "commercialModel": "pure_ppu"
+    },
+    {
+     "materialNumber": "8020363",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8020401",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8021385",
+     "commercialModel": "Subscription"
     },
     {
      "materialNumber": "8018157",

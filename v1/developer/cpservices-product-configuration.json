@@ -106,7 +106,131 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "title": "Service Binding/Key Type",
+          "description": "Defines the type of credential you use to establish technical connectivity between applications.\n\n Using the \"X.509 Certificate\" is considered more secure as it works without the need to share secrets between the calling application and the service instance of SAP Authorization and Trust Management service (XSUAA).",
+          "oneOf": [
+           {
+            "type": "object",
+            "title": "Client ID/Secret",
+            "description": "Client ID/Secret",
+            "required": [
+             "credential-type"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "enum": [
+               "binding-secret"
+              ]
+             }
+            }
+           },
+           {
+            "type": "object",
+            "title": "X.509 Certificate",
+            "description": "X.509 Certificate",
+            "required": [
+             "credential-type",
+             "x509"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "title": "Credential Type",
+              "enum": [
+               "x509"
+              ]
+             },
+             "x509": {
+              "type": "object",
+              "title": "X.509 Certificate Type",
+              "description": "X.509 Certificate Type",
+              "oneOf": [
+               {
+                "type": "object",
+                "title": "External X.509 Certificate",
+                "description": "External X.509 Certificate",
+                "required": [
+                 "certificate",
+                 "certificate-pinning"
+                ],
+                "properties": {
+                 "certificate": {
+                  "type": "string",
+                  "title": "Certificate",
+                  "minLength": 1,
+                  "description": "Paste the public-key certificate in privacy-enhanced mail (PEM) format. Check completeness in the JSON view. Caution: Making manual changes to the certificate will invalidate the certificate."
+                 },
+                 "certificate-pinning": {
+                  "type": "string",
+                  "title": "Certificate Pinning",
+                  "description": "For API-based access to the service with an X.509 certificate. Certificate pinning is disabled by default (set to false), as this facilitates certificate switching. When clients request the access token, the certificate's subject and issuer Distinguished Name is compared to those of the stored credentials used for creating the service binding or service key. If they match and the certificate was issued on or after the stored issuer date, the authentication will be accepted.",
+                  "default": "false",
+                  "enum": [
+                   "false"
+                  ]
+                 }
+                }
+               },
+               {
+                "type": "object",
+                "title": "BTP Managed X.509 Certificate",
+                "description": "BTP Managed X.509 Certificate",
+                "required": [
+                 "key-length",
+                 "validity",
+                 "validity-type"
+                ],
+                "properties": {
+                 "key-length": {
+                  "type": "integer",
+                  "enum": [
+                   2048,
+                   4096
+                  ],
+                  "default": 2048,
+                  "description": "Specify the length of the generated private key in bits, defaults to 2048."
+                 },
+                 "validity": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "default": 7,
+                  "description": "Specify the validity of the certificate in units of the validity period type selected, defaults to 7."
+                 },
+                 "validity-type": {
+                  "type": "string",
+                  "enum": [
+                   "DAYS",
+                   "MONTHS"
+                  ],
+                  "default": "DAYS",
+                  "description": "Specify the validity time period unit, DAYS and MONTHS are supported, defaults to DAYS."
+                 }
+                }
+               }
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   },
   {
    "name": "cpq",
@@ -124,6 +248,10 @@
      "name": "cf-ap11"
     },
     {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -136,7 +264,131 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "title": "Service Binding/Key Type",
+          "description": "Defines the type of credential you use to establish technical connectivity between applications.\n\n Using the \"X.509 Certificate\" is considered more secure as it works without the need to share secrets between the calling application and the service instance of SAP Authorization and Trust Management service (XSUAA).",
+          "oneOf": [
+           {
+            "type": "object",
+            "title": "Client ID/Secret",
+            "description": "Client ID/Secret",
+            "required": [
+             "credential-type"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "enum": [
+               "binding-secret"
+              ]
+             }
+            }
+           },
+           {
+            "type": "object",
+            "title": "X.509 Certificate",
+            "description": "X.509 Certificate",
+            "required": [
+             "credential-type",
+             "x509"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "title": "Credential Type",
+              "enum": [
+               "x509"
+              ]
+             },
+             "x509": {
+              "type": "object",
+              "title": "X.509 Certificate Type",
+              "description": "X.509 Certificate Type",
+              "oneOf": [
+               {
+                "type": "object",
+                "title": "External X.509 Certificate",
+                "description": "External X.509 Certificate",
+                "required": [
+                 "certificate",
+                 "certificate-pinning"
+                ],
+                "properties": {
+                 "certificate": {
+                  "type": "string",
+                  "title": "Certificate",
+                  "minLength": 1,
+                  "description": "Paste the public-key certificate in privacy-enhanced mail (PEM) format. Check completeness in the JSON view. Caution: Making manual changes to the certificate will invalidate the certificate."
+                 },
+                 "certificate-pinning": {
+                  "type": "string",
+                  "title": "Certificate Pinning",
+                  "description": "For API-based access to the service with an X.509 certificate. Certificate pinning is disabled by default (set to false), as this facilitates certificate switching. When clients request the access token, the certificate's subject and issuer Distinguished Name is compared to those of the stored credentials used for creating the service binding or service key. If they match and the certificate was issued on or after the stored issuer date, the authentication will be accepted.",
+                  "default": "false",
+                  "enum": [
+                   "false"
+                  ]
+                 }
+                }
+               },
+               {
+                "type": "object",
+                "title": "BTP Managed X.509 Certificate",
+                "description": "BTP Managed X.509 Certificate",
+                "required": [
+                 "key-length",
+                 "validity",
+                 "validity-type"
+                ],
+                "properties": {
+                 "key-length": {
+                  "type": "integer",
+                  "enum": [
+                   2048,
+                   4096
+                  ],
+                  "default": 2048,
+                  "description": "Specify the length of the generated private key in bits, defaults to 2048."
+                 },
+                 "validity": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "default": 7,
+                  "description": "Specify the validity of the certificate in units of the validity period type selected, defaults to 7."
+                 },
+                 "validity-type": {
+                  "type": "string",
+                  "enum": [
+                   "DAYS",
+                   "MONTHS"
+                  ],
+                  "default": "DAYS",
+                  "description": "Specify the validity time period unit, DAYS and MONTHS are supported, defaults to DAYS."
+                 }
+                }
+               }
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   },
   {
    "name": "cps-prod",
@@ -154,6 +406,14 @@
      "name": "cf-ap11"
     },
     {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -170,7 +430,131 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "title": "Service Binding/Key Type",
+          "description": "Defines the type of credential you use to establish technical connectivity between applications.\n\n Using the \"X.509 Certificate\" is considered more secure as it works without the need to share secrets between the calling application and the service instance of SAP Authorization and Trust Management service (XSUAA).",
+          "oneOf": [
+           {
+            "type": "object",
+            "title": "Client ID/Secret",
+            "description": "Client ID/Secret",
+            "required": [
+             "credential-type"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "enum": [
+               "binding-secret"
+              ]
+             }
+            }
+           },
+           {
+            "type": "object",
+            "title": "X.509 Certificate",
+            "description": "X.509 Certificate",
+            "required": [
+             "credential-type",
+             "x509"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "title": "Credential Type",
+              "enum": [
+               "x509"
+              ]
+             },
+             "x509": {
+              "type": "object",
+              "title": "X.509 Certificate Type",
+              "description": "X.509 Certificate Type",
+              "oneOf": [
+               {
+                "type": "object",
+                "title": "External X.509 Certificate",
+                "description": "External X.509 Certificate",
+                "required": [
+                 "certificate",
+                 "certificate-pinning"
+                ],
+                "properties": {
+                 "certificate": {
+                  "type": "string",
+                  "title": "Certificate",
+                  "minLength": 1,
+                  "description": "Paste the public-key certificate in privacy-enhanced mail (PEM) format. Check completeness in the JSON view. Caution: Making manual changes to the certificate will invalidate the certificate."
+                 },
+                 "certificate-pinning": {
+                  "type": "string",
+                  "title": "Certificate Pinning",
+                  "description": "For API-based access to the service with an X.509 certificate. Certificate pinning is disabled by default (set to false), as this facilitates certificate switching. When clients request the access token, the certificate's subject and issuer Distinguished Name is compared to those of the stored credentials used for creating the service binding or service key. If they match and the certificate was issued on or after the stored issuer date, the authentication will be accepted.",
+                  "default": "false",
+                  "enum": [
+                   "false"
+                  ]
+                 }
+                }
+               },
+               {
+                "type": "object",
+                "title": "BTP Managed X.509 Certificate",
+                "description": "BTP Managed X.509 Certificate",
+                "required": [
+                 "key-length",
+                 "validity",
+                 "validity-type"
+                ],
+                "properties": {
+                 "key-length": {
+                  "type": "integer",
+                  "enum": [
+                   2048,
+                   4096
+                  ],
+                  "default": 2048,
+                  "description": "Specify the length of the generated private key in bits, defaults to 2048."
+                 },
+                 "validity": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "default": 7,
+                  "description": "Specify the validity of the certificate in units of the validity period type selected, defaults to 7."
+                 },
+                 "validity-type": {
+                  "type": "string",
+                  "enum": [
+                   "DAYS",
+                   "MONTHS"
+                  ],
+                  "default": "DAYS",
+                  "description": "Specify the validity time period unit, DAYS and MONTHS are supported, defaults to DAYS."
+                 }
+                }
+               }
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   },
   {
    "name": "cps-test",
@@ -188,6 +572,14 @@
      "name": "cf-ap11"
     },
     {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -204,7 +596,131 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "title": "Service Binding/Key Type",
+          "description": "Defines the type of credential you use to establish technical connectivity between applications.\n\n Using the \"X.509 Certificate\" is considered more secure as it works without the need to share secrets between the calling application and the service instance of SAP Authorization and Trust Management service (XSUAA).",
+          "oneOf": [
+           {
+            "type": "object",
+            "title": "Client ID/Secret",
+            "description": "Client ID/Secret",
+            "required": [
+             "credential-type"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "enum": [
+               "binding-secret"
+              ]
+             }
+            }
+           },
+           {
+            "type": "object",
+            "title": "X.509 Certificate",
+            "description": "X.509 Certificate",
+            "required": [
+             "credential-type",
+             "x509"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "title": "Credential Type",
+              "enum": [
+               "x509"
+              ]
+             },
+             "x509": {
+              "type": "object",
+              "title": "X.509 Certificate Type",
+              "description": "X.509 Certificate Type",
+              "oneOf": [
+               {
+                "type": "object",
+                "title": "External X.509 Certificate",
+                "description": "External X.509 Certificate",
+                "required": [
+                 "certificate",
+                 "certificate-pinning"
+                ],
+                "properties": {
+                 "certificate": {
+                  "type": "string",
+                  "title": "Certificate",
+                  "minLength": 1,
+                  "description": "Paste the public-key certificate in privacy-enhanced mail (PEM) format. Check completeness in the JSON view. Caution: Making manual changes to the certificate will invalidate the certificate."
+                 },
+                 "certificate-pinning": {
+                  "type": "string",
+                  "title": "Certificate Pinning",
+                  "description": "For API-based access to the service with an X.509 certificate. Certificate pinning is disabled by default (set to false), as this facilitates certificate switching. When clients request the access token, the certificate's subject and issuer Distinguished Name is compared to those of the stored credentials used for creating the service binding or service key. If they match and the certificate was issued on or after the stored issuer date, the authentication will be accepted.",
+                  "default": "false",
+                  "enum": [
+                   "false"
+                  ]
+                 }
+                }
+               },
+               {
+                "type": "object",
+                "title": "BTP Managed X.509 Certificate",
+                "description": "BTP Managed X.509 Certificate",
+                "required": [
+                 "key-length",
+                 "validity",
+                 "validity-type"
+                ],
+                "properties": {
+                 "key-length": {
+                  "type": "integer",
+                  "enum": [
+                   2048,
+                   4096
+                  ],
+                  "default": 2048,
+                  "description": "Specify the length of the generated private key in bits, defaults to 2048."
+                 },
+                 "validity": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "default": 7,
+                  "description": "Specify the validity of the certificate in units of the validity period type selected, defaults to 7."
+                 },
+                 "validity-type": {
+                  "type": "string",
+                  "enum": [
+                   "DAYS",
+                   "MONTHS"
+                  ],
+                  "default": "DAYS",
+                  "description": "Specify the validity time period unit, DAYS and MONTHS are supported, defaults to DAYS."
+                 }
+                }
+               }
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   },
   {
    "name": "default",
@@ -234,7 +750,131 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "title": "Service Binding/Key Type",
+          "description": "Defines the type of credential you use to establish technical connectivity between applications.\n\n Using the \"X.509 Certificate\" is considered more secure as it works without the need to share secrets between the calling application and the service instance of SAP Authorization and Trust Management service (XSUAA).",
+          "oneOf": [
+           {
+            "type": "object",
+            "title": "Client ID/Secret",
+            "description": "Client ID/Secret",
+            "required": [
+             "credential-type"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "enum": [
+               "binding-secret"
+              ]
+             }
+            }
+           },
+           {
+            "type": "object",
+            "title": "X.509 Certificate",
+            "description": "X.509 Certificate",
+            "required": [
+             "credential-type",
+             "x509"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "title": "Credential Type",
+              "enum": [
+               "x509"
+              ]
+             },
+             "x509": {
+              "type": "object",
+              "title": "X.509 Certificate Type",
+              "description": "X.509 Certificate Type",
+              "oneOf": [
+               {
+                "type": "object",
+                "title": "External X.509 Certificate",
+                "description": "External X.509 Certificate",
+                "required": [
+                 "certificate",
+                 "certificate-pinning"
+                ],
+                "properties": {
+                 "certificate": {
+                  "type": "string",
+                  "title": "Certificate",
+                  "minLength": 1,
+                  "description": "Paste the public-key certificate in privacy-enhanced mail (PEM) format. Check completeness in the JSON view. Caution: Making manual changes to the certificate will invalidate the certificate."
+                 },
+                 "certificate-pinning": {
+                  "type": "string",
+                  "title": "Certificate Pinning",
+                  "description": "For API-based access to the service with an X.509 certificate. Certificate pinning is disabled by default (set to false), as this facilitates certificate switching. When clients request the access token, the certificate's subject and issuer Distinguished Name is compared to those of the stored credentials used for creating the service binding or service key. If they match and the certificate was issued on or after the stored issuer date, the authentication will be accepted.",
+                  "default": "false",
+                  "enum": [
+                   "false"
+                  ]
+                 }
+                }
+               },
+               {
+                "type": "object",
+                "title": "BTP Managed X.509 Certificate",
+                "description": "BTP Managed X.509 Certificate",
+                "required": [
+                 "key-length",
+                 "validity",
+                 "validity-type"
+                ],
+                "properties": {
+                 "key-length": {
+                  "type": "integer",
+                  "enum": [
+                   2048,
+                   4096
+                  ],
+                  "default": 2048,
+                  "description": "Specify the length of the generated private key in bits, defaults to 2048."
+                 },
+                 "validity": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "default": 7,
+                  "description": "Specify the validity of the certificate in units of the validity period type selected, defaults to 7."
+                 },
+                 "validity-type": {
+                  "type": "string",
+                  "enum": [
+                   "DAYS",
+                   "MONTHS"
+                  ],
+                  "default": "DAYS",
+                  "description": "Specify the validity time period unit, DAYS and MONTHS are supported, defaults to DAYS."
+                 }
+                }
+               }
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   },
   {
    "name": "partner",
@@ -252,6 +892,10 @@
      "name": "cf-ap11"
     },
     {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -264,7 +908,131 @@
      "name": "cf-us10"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "title": "Service Binding/Key Type",
+          "description": "Defines the type of credential you use to establish technical connectivity between applications.\n\n Using the \"X.509 Certificate\" is considered more secure as it works without the need to share secrets between the calling application and the service instance of SAP Authorization and Trust Management service (XSUAA).",
+          "oneOf": [
+           {
+            "type": "object",
+            "title": "Client ID/Secret",
+            "description": "Client ID/Secret",
+            "required": [
+             "credential-type"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "enum": [
+               "binding-secret"
+              ]
+             }
+            }
+           },
+           {
+            "type": "object",
+            "title": "X.509 Certificate",
+            "description": "X.509 Certificate",
+            "required": [
+             "credential-type",
+             "x509"
+            ],
+            "properties": {
+             "credential-type": {
+              "type": "string",
+              "title": "Credential Type",
+              "enum": [
+               "x509"
+              ]
+             },
+             "x509": {
+              "type": "object",
+              "title": "X.509 Certificate Type",
+              "description": "X.509 Certificate Type",
+              "oneOf": [
+               {
+                "type": "object",
+                "title": "External X.509 Certificate",
+                "description": "External X.509 Certificate",
+                "required": [
+                 "certificate",
+                 "certificate-pinning"
+                ],
+                "properties": {
+                 "certificate": {
+                  "type": "string",
+                  "title": "Certificate",
+                  "minLength": 1,
+                  "description": "Paste the public-key certificate in privacy-enhanced mail (PEM) format. Check completeness in the JSON view. Caution: Making manual changes to the certificate will invalidate the certificate."
+                 },
+                 "certificate-pinning": {
+                  "type": "string",
+                  "title": "Certificate Pinning",
+                  "description": "For API-based access to the service with an X.509 certificate. Certificate pinning is disabled by default (set to false), as this facilitates certificate switching. When clients request the access token, the certificate's subject and issuer Distinguished Name is compared to those of the stored credentials used for creating the service binding or service key. If they match and the certificate was issued on or after the stored issuer date, the authentication will be accepted.",
+                  "default": "false",
+                  "enum": [
+                   "false"
+                  ]
+                 }
+                }
+               },
+               {
+                "type": "object",
+                "title": "BTP Managed X.509 Certificate",
+                "description": "BTP Managed X.509 Certificate",
+                "required": [
+                 "key-length",
+                 "validity",
+                 "validity-type"
+                ],
+                "properties": {
+                 "key-length": {
+                  "type": "integer",
+                  "enum": [
+                   2048,
+                   4096
+                  ],
+                  "default": 2048,
+                  "description": "Specify the length of the generated private key in bits, defaults to 2048."
+                 },
+                 "validity": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "default": 7,
+                  "description": "Specify the validity of the certificate in units of the validity period type selected, defaults to 7."
+                 },
+                 "validity-type": {
+                  "type": "string",
+                  "enum": [
+                   "DAYS",
+                   "MONTHS"
+                  ],
+                  "default": "DAYS",
+                  "description": "Specify the validity time period unit, DAYS and MONTHS are supported, defaults to DAYS."
+                 }
+                }
+               }
+              ]
+             }
+            }
+           }
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
   }
  ],
  "supportComponents": [],

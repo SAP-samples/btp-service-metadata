@@ -42,6 +42,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -86,6 +94,14 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -110,6 +126,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -124,6 +144,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -147,6 +175,43 @@
     }
    ],
    "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "role": {
+          "description": "Supported Roles are AuthGroup.API.Admin, AuthGroup.Content.Admin, AuthGroup.External.Reviewer and AuthGroup.API.ApplicationDeveloper",
+          "type": "string",
+          "default": "AuthGroup.API.Admin"
+         }
+        }
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "xsuaa": {
+          "type": "object",
+          "properties": {
+           "credential-type": {
+            "description": "Supported Credential Type are binding-secret and x509",
+            "type": "string",
+            "default": "binding-secret"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    },
     {
      "service_instance": {
       "create": {

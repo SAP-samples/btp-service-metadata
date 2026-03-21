@@ -82,10 +82,17 @@
          },
          "system": {
           "$id": "system_info",
-          "description": "Enter the value for the host name of the system, such as my12345.s4hana.ondemand.com.",
+          "description": "Enter the value for the host name of the S/4HANA system, such as my12345.s4hana.ondemand.com.",
           "minLength": 1,
-          "title": "Host Name",
+          "title": "S/4HANA Host Name",
           "type": "string"
+         },
+         "z_is_on_premise": {
+          "$id": "z_is_on_premise",
+          "description": "Check or uncheck this option to indicate whether the system is an S/4HANA Cloud Private Edition.",
+          "minLength": 1,
+          "title": "Is Private Cloud",
+          "type": "boolean"
          }
         },
         "type": "object"
@@ -165,10 +172,17 @@
          },
          "system": {
           "$id": "system_info",
-          "description": "Enter the value for the host name of the system, such as my12345.s4hana.ondemand.com.",
+          "description": "Enter the value for the host name of the S/4HANA system, such as my12345.s4hana.ondemand.com.",
           "minLength": 1,
-          "title": "Host Name",
+          "title": "S/4HANA Host Name",
           "type": "string"
+         },
+         "z_is_on_premise": {
+          "$id": "z_is_on_premise",
+          "description": "Check or uncheck this option to indicate whether the system is an S/4HANA Cloud Private Edition.",
+          "minLength": 1,
+          "title": "Is Private Cloud",
+          "type": "boolean"
          }
         },
         "type": "object"

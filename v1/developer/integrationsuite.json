@@ -144,6 +144,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -188,12 +196,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -212,6 +232,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -226,6 +250,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -255,6 +287,156 @@
    "displayName": "Basic Edition",
    "category": "APPLICATION",
    "description": "Use a subscription of Integration Suite with only Cloud Integration capability that includes up to 10,000 monthly transactions without JMS and B2B related features.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "dsi-package",
+   "displayName": "DSI Package",
+   "category": "SERVICE",
+   "description": "Enables connecting to data spaces through the activation of Data Space Integration and Decentralized Identity Verification in SAP Integration Suite.",
    "isFree": null,
    "isBeta": false,
    "deprecated": false,
@@ -467,16 +649,24 @@
    "schemas": null
   },
   {
-   "name": "enterprise_agreement",
-   "displayName": "Enterprise Agreement",
+   "name": "enhanced_edition",
+   "displayName": "Enhanced Edition ",
    "category": "APPLICATION",
-   "description": "Use a subscription of Integration Suite that includes up to 10,000 monthly transactions. You get all capabilities of Integration Suite and a separate entitlement for Edge Integration Cell.",
+   "description": "Use a subscription to SAP Integration Suite that includes all capabilities, all AI features, and up to 500,000 monthly transactions. The subscription includes separate entitlements for one Edge Integration Cell tenant, a quota of one Advanced Event Mesh Standard 100 broker per global account, the premium edition of Document AI with a block of 100 documents and one Document AI user, access to SAP Alert Notification service and SAP Cloud Transport Management service.",
    "isFree": null,
    "isBeta": false,
    "deprecated": false,
    "deprecationMessage": null,
    "deprecationDate": null,
    "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
     {
      "region": "ap10",
      "name": "cf-ap10"
@@ -522,12 +712,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -546,6 +748,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -560,6 +766,164 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us11",
+     "name": "cf-us11"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    },
+    {
+     "region": "us21",
+     "name": "cf-us21"
+    },
+    {
+     "region": "us30",
+     "name": "cf-us30"
+    }
+   ],
+   "schemas": null
+  },
+  {
+   "name": "enterprise_agreement",
+   "displayName": "Enterprise Agreement",
+   "category": "APPLICATION",
+   "description": "Use a subscription of Integration Suite that includes up to 10,000 monthly transactions. You get all capabilities of Integration Suite and a separate entitlement for Edge Integration Cell.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "ap12",
+     "name": "cf-ap12"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
+     "region": "ap30",
+     "name": "cf-ap30"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "br20",
+     "name": "cf-br20"
+    },
+    {
+     "region": "ca10",
+     "name": "cf-ca10"
+    },
+    {
+     "region": "ca20",
+     "name": "cf-ca20"
+    },
+    {
+     "region": "ch20",
+     "name": "cf-ch20"
+    },
+    {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "il30",
+     "name": "cf-il30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "jp20",
+     "name": "cf-jp20"
+    },
+    {
+     "region": "sa30",
+     "name": "cf-sa30"
+    },
+    {
+     "region": "sa31",
+     "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -596,6 +960,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -640,12 +1012,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -664,6 +1048,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -678,6 +1066,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -714,6 +1110,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -754,12 +1158,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -778,6 +1194,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -792,6 +1212,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -828,6 +1256,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -864,12 +1300,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -888,6 +1336,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -898,6 +1350,14 @@
     {
      "region": "sa30",
      "name": "cf-sa30"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -934,6 +1394,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -978,12 +1446,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -1002,6 +1482,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -1016,6 +1500,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -1052,6 +1544,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -1096,12 +1596,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -1120,6 +1632,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -1134,6 +1650,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -1162,13 +1686,21 @@
    "name": "starter_edition",
    "displayName": "Starter Edition",
    "category": "APPLICATION",
-   "description": "Use a subscription of Integration Suite with only Cloud Integration capability that includes up to 10,000 monthly transactions. You have full access to all standard content and can create a certain number of integration flows using a basic set of adapters.",
+   "description": "Use a subscription of Integration Suite with only Cloud Integration capability that includes up to 50,000 monthly transactions. You have full access to all standard content and can deploy a certain number of custom integration flows using a basic set of adapters.",
    "isFree": null,
    "isBeta": false,
    "deprecated": false,
    "deprecationMessage": null,
    "deprecationDate": null,
    "dataCenters": [
+    {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
     {
      "region": "ap10",
      "name": "cf-ap10"
@@ -1214,12 +1746,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -1238,6 +1782,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -1252,6 +1800,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -1288,6 +1844,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -1332,12 +1896,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -1356,6 +1932,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -1370,6 +1950,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -1406,6 +1994,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -1450,12 +2046,24 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
     {
      "region": "eu11",
      "name": "cf-eu11"
+    },
+    {
+     "region": "eu13",
+     "name": "cf-eu13"
     },
     {
      "region": "eu20",
@@ -1474,6 +2082,10 @@
      "name": "cf-in30"
     },
     {
+     "region": "jp01",
+     "name": "cf-jp01"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -1488,6 +2100,14 @@
     {
      "region": "sa31",
      "name": "cf-sa31"
+    },
+    {
+     "region": "uk20",
+     "name": "cf-uk20"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",

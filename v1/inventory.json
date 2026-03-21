@@ -43,7 +43,7 @@
  },
  {
   "technicalId": "ads",
-  "displayName": "SAP Forms service by Adobe",
+  "displayName": "Forms Service by Adobe",
   "description": "Forms Service by Adobe",
   "fileName": "ads.json",
   "category": "SERVICE"
@@ -57,7 +57,7 @@
  },
  {
   "technicalId": "adsrestapi",
-  "displayName": "Forms Service by Adobe API",
+  "displayName": "SAP Forms service by Adobe",
   "description": "Forms Service by Adobe API",
   "fileName": "adsrestapi.json",
   "category": "SERVICE"
@@ -252,6 +252,20 @@
   "category": "SERVICE"
  },
  {
+  "technicalId": "application-vulnerability-report",
+  "displayName": "Application Vulnerability Report",
+  "description": "Application Vulnerability Report",
+  "fileName": "application-vulnerability-report.json",
+  "category": "APPLICATION"
+ },
+ {
+  "technicalId": "application-vulnerability-report-service",
+  "displayName": "Application Vulnerability Report",
+  "description": "Application Vulnerability Report",
+  "fileName": "application-vulnerability-report-service.json",
+  "category": "SERVICE"
+ },
+ {
   "technicalId": "APPLICATION_RUNTIME",
   "displayName": "Cloud Foundry Runtime",
   "description": "Build on open standards with SAP Java, Python, and Node.js buildpacks or bring your own language with community buildpacks for PHP, Ruby, Go. Start, stop, scale and configure distributed cloud applications using standard Cloud Foundry tools, our cockpit and dev-ops capabilities.",
@@ -260,8 +274,8 @@
  },
  {
   "technicalId": "asp-vistex-gtms",
-  "displayName": "Sales Solutions by Vistex",
-  "description": "Sales Solutions by Vistex",
+  "displayName": "SAP margin optimization solutions by Vistex",
+  "description": "SAP margin optimization solutions by Vistex",
   "fileName": "asp-vistex-gtms.json",
   "category": "APPLICATION"
  },
@@ -294,8 +308,15 @@
   "category": "SERVICE"
  },
  {
+  "technicalId": "audit-log-search-api",
+  "displayName": "Audit Log Search API",
+  "description": "Audit Log Search API",
+  "fileName": "audit-log-search-api.json",
+  "category": "SERVICE"
+ },
+ {
   "technicalId": "auditlog",
-  "displayName": "Audit Log Service",
+  "displayName": "SAP Audit Log service",
   "description": "Allow users to ingest compliance audit data from SAP BTP services and applications and store it for a default retention time of 90 days (with no additional costs applied). The ability to retrieve and download this data within this period is part of Auditlog Management Service. The service serves to support audit activities by prove wrongdoing and identifying malicious activities and provision of forensic evidence that can be used at Court. The scope of the service are secure and configuration change information records, data privacy specific logs, logs motivated by Multiple Regulations. The service is following each SAP Product standards and GDPR Compliance regulations.",
   "fileName": "auditlog.json",
   "category": "SERVICE"
@@ -316,7 +337,7 @@
  },
  {
   "technicalId": "auditlog-viewer",
-  "displayName": "SAP Audit Log service",
+  "displayName": "Audit Log Viewer Service",
   "description": "Audit Log Viewer Service",
   "fileName": "auditlog-viewer.json",
   "category": "APPLICATION"
@@ -327,6 +348,13 @@
   "description": "Automation Pilot",
   "fileName": "automationpilot.json",
   "category": "APPLICATION"
+ },
+ {
+  "technicalId": "automationpilot-service",
+  "displayName": "Automation Pilot",
+  "description": "Automation Pilot",
+  "fileName": "automationpilot-service.json",
+  "category": "SERVICE"
  },
  {
   "technicalId": "autoscaler",
@@ -610,8 +638,8 @@
  },
  {
   "technicalId": "central-invoice-management-api",
-  "displayName": "SAP Ariba Central Invoice Management",
-  "description": "SAP Ariba Central Invoice Management",
+  "displayName": "SAP Ariba Invoicing",
+  "description": "SAP Ariba Invoicing",
   "fileName": "central-invoice-management-api.json",
   "category": "SERVICE"
  },
@@ -687,7 +715,7 @@
  },
  {
   "technicalId": "cloudforenergy-api",
-  "displayName": "SAP Cloud for Energy",
+  "displayName": "SAP Cloud for Energy API",
   "description": "Establish connection to the Cloud for Energy API",
   "fileName": "cloudforenergy-api.json",
   "category": "SERVICE"
@@ -697,7 +725,7 @@
   "displayName": "SAP BTP, Cloud Foundry environment",
   "description": "Cloud Foundry Environment",
   "fileName": "cloudfoundry.json",
-  "category": "SERVICE"
+  "category": "ENVIRONMENT"
  },
  {
   "technicalId": "cmh-service",
@@ -925,8 +953,8 @@
  },
  {
   "technicalId": "customer-data-cloud",
-  "displayName": "Customer Data Cloud",
-  "description": "Customer Data Cloud",
+  "displayName": "SAP Customer Identity and Access Management",
+  "description": "SAP Customer Identity and Access Management",
   "fileName": "customer-data-cloud.json",
   "category": "APPLICATION"
  },
@@ -1036,6 +1064,13 @@
   "category": "SERVICE"
  },
  {
+  "technicalId": "decentralized-identity-management",
+  "displayName": "Decentralized Identity Verification",
+  "description": "Decentralized Identity Verification",
+  "fileName": "decentralized-identity-management.json",
+  "category": "SERVICE"
+ },
+ {
   "technicalId": "destination",
   "displayName": "SAP Destination service",
   "description": "Destination Service",
@@ -1142,22 +1177,29 @@
  },
  {
   "technicalId": "document-information-extraction-application",
-  "displayName": "Document Information Extraction",
-  "description": "Document Information Extraction",
+  "displayName": "SAP Document AI",
+  "description": "SAP Document AI",
   "fileName": "document-information-extraction-application.json",
   "category": "APPLICATION"
  },
  {
+  "technicalId": "document-information-extraction-application-ias",
+  "displayName": "SAP Document AI",
+  "description": "SAP Document AI",
+  "fileName": "document-information-extraction-application-ias.json",
+  "category": "APPLICATION"
+ },
+ {
   "technicalId": "document-information-extraction-trial",
-  "displayName": "Document Information Extraction Trial",
-  "description": "Document Information Extraction Trial",
+  "displayName": "SAP Document AI Trial",
+  "description": "SAP Document AI Trial",
   "fileName": "document-information-extraction-trial.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "document-information-extraction-trial-application",
-  "displayName": "Document Information Extraction Trial",
-  "description": "Document Information Extraction Trial",
+  "displayName": "SAP Document AI",
+  "description": "SAP Document AI",
   "fileName": "document-information-extraction-trial-application.json",
   "category": "APPLICATION"
  },
@@ -1247,7 +1289,7 @@
  },
  {
   "technicalId": "dynamic-forms-trial",
-  "displayName": "SAP Dynamic Forms Trial",
+  "displayName": "SAP Dynamic Forms",
   "description": "SAP Dynamic Forms - Trial edition is a trial subscription to the SAP Dynamic Forms BTP Application, an all-in-one solution that allows users to create, manage, and use digital forms that change in real-time as they are being filled out. Designers will be guided through the steps required to create a data-driven and responsive form, and users will be guided through the steps required to complete forms based on these designs.",
   "fileName": "dynamic-forms-trial.json",
   "category": "APPLICATION"
@@ -1330,6 +1372,13 @@
   "category": "APPLICATION"
  },
  {
+  "technicalId": "EPA-CAS",
+  "displayName": "SAP Cloud Application Services",
+  "description": "SAP Cloud Application Services",
+  "fileName": "epa-cas.json",
+  "category": "APPLICATION"
+ },
+ {
   "technicalId": "epd-cm-prod",
   "displayName": "Configuration Management",
   "description": "A SaaS application for SAP IPD that lets you to describe the product\u00b4s composition at each life cycle phase to track relevant milestones.",
@@ -1408,15 +1457,15 @@
  },
  {
   "technicalId": "epd-inm",
-  "displayName": "Product Innovation Management",
-  "description": "Product Innovation Management",
+  "displayName": "[Deprecated] Product Innovation Management",
+  "description": "[Deprecated] Product Innovation Management",
   "fileName": "epd-inm.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "epd-inm-service",
-  "displayName": "Product Innovation Management",
-  "description": "Product Innovation Management",
+  "displayName": "[Deprecated] Product Innovation Management",
+  "description": "[Deprecated] Product Innovation Management",
   "fileName": "epd-inm-service.json",
   "category": "SERVICE"
  },
@@ -1778,20 +1827,6 @@
   "category": "APPLICATION"
  },
  {
-  "technicalId": "hana-cloud-tools-trial",
-  "displayName": "SAP HANA Cloud",
-  "description": "SAP HANA Cloud",
-  "fileName": "hana-cloud-tools-trial.json",
-  "category": "APPLICATION"
- },
- {
-  "technicalId": "hana-cloud-trial",
-  "displayName": "SAP HANA Cloud",
-  "description": "SAP HANA Cloud",
-  "fileName": "hana-cloud-trial.json",
-  "category": "SERVICE"
- },
- {
   "technicalId": "hana-db",
   "displayName": "SAP HANA Service",
   "description": "SAP HANA Service",
@@ -1926,15 +1961,15 @@
  },
  {
   "technicalId": "icsm-preprod",
-  "displayName": "SAP Intelligent Clinical Supply Management (Preprod)",
-  "description": "SAP Intelligent Clinical Supply Management (Preprod)",
+  "displayName": "SAP Intelligent Clinical Supply Management (Non-Production)",
+  "description": "SAP Intelligent Clinical Supply Management (Non-Production)",
   "fileName": "icsm-preprod.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "icsm-prodvalidation",
-  "displayName": "SAP Intelligent Clinical Supply Management (Prod Validation)",
-  "description": "SAP Intelligent Clinical Supply Management (Prod Validation)",
+  "displayName": "SAP Intelligent Clinical Supply Management (Non-Production Hotfix Testing)",
+  "description": "SAP Intelligent Clinical Supply Management (Non-Production Hotfix Testing)",
   "fileName": "icsm-prodvalidation.json",
   "category": "APPLICATION"
  },
@@ -2150,7 +2185,7 @@
  },
  {
   "technicalId": "it-prod",
-  "displayName": "SAP Process Integration",
+  "displayName": "Cloud Integration Automation",
   "description": "SAP Process Integration",
   "fileName": "it-prod.json",
   "category": "APPLICATION"
@@ -2163,10 +2198,24 @@
   "category": "SERVICE"
  },
  {
+  "technicalId": "j4d-abap",
+  "displayName": "SAP Joule for Developers, ABAP AI capabilities",
+  "description": "Provides SAP Joule for Developers, ABAP AI capabilities for ABAP development systems for SAP S/4HANA Cloud Private Edition only.",
+  "fileName": "j4d-abap.json",
+  "category": "APPLICATION"
+ },
+ {
   "technicalId": "jobscheduler",
   "displayName": "SAP Job Scheduling service",
   "description": "Job Scheduling Service",
   "fileName": "jobscheduler.json",
+  "category": "SERVICE"
+ },
+ {
+  "technicalId": "joule-deep-research",
+  "displayName": "Deep Research",
+  "description": "Deep Research",
+  "fileName": "joule-deep-research.json",
   "category": "SERVICE"
  },
  {
@@ -2486,14 +2535,14 @@
  },
  {
   "technicalId": "MDMBusinessPartnerApplication",
-  "displayName": "Master Data Service for Business Partners",
+  "displayName": "SAP Master Data service for business partners",
   "description": "Master Data Service for Business Partners",
   "fileName": "mdmbusinesspartnerapplication.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "MDMBusinessPartnerService",
-  "displayName": "SAP Master Data service for business partners",
+  "displayName": "SAP Business Partner Service",
   "description": "SAP Business Partner Service",
   "fileName": "mdmbusinesspartnerservice.json",
   "category": "SERVICE"
@@ -2906,14 +2955,14 @@
  },
  {
   "technicalId": "personal-data-manager-service",
-  "displayName": "Personal Data Manager",
+  "displayName": "SAP Personal Data Manager",
   "description": "Personal Data Manager",
   "fileName": "personal-data-manager-service.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "PersonalDataManagerApp",
-  "displayName": "SAP Personal Data Manager",
+  "displayName": "Personal Data Manager",
   "description": "Personal Data Manager",
   "fileName": "personaldatamanagerapp.json",
   "category": "APPLICATION"
@@ -2945,6 +2994,13 @@
   "description": "SAP Product Lifecycle Costing Staging",
   "fileName": "plctst.json",
   "category": "APPLICATION"
+ },
+ {
+  "technicalId": "plm-change-management-prod",
+  "displayName": "Change Management",
+  "description": "A capability of SAP Product Lifecycle Management that facilitates you to plan and describe the changes to track milestones.",
+  "fileName": "plm-change-management-prod.json",
+  "category": "SERVICE"
  },
  {
   "technicalId": "plm-change-mgmt-prod",
@@ -3050,6 +3106,13 @@
   "description": "Promotion Pricing, Data Access Trial",
   "fileName": "ppservice-odata-trial.json",
   "category": "SERVICE"
+ },
+ {
+  "technicalId": "preview-grdcsaas",
+  "displayName": "SAP Group Reporting Data Collection, Preview",
+  "description": "Not for productive use - Provide entry gate for all non S/4 data required for group closing purposes: manual data collection for financials and non financials, structured, semi-structured data, text.",
+  "fileName": "preview-grdcsaas.json",
+  "category": "APPLICATION"
  },
  {
   "technicalId": "price-calculation",
@@ -3431,14 +3494,14 @@
  },
  {
   "technicalId": "sap-cell-gene-therapy-orchestration-api-preprod",
-  "displayName": "SAP Cell and Gene Therapy Orchestration Preview",
+  "displayName": "SAP Cell and Gene Therapy Orchestration",
   "description": "SAP Cell and Gene Therapy Orchestration Preview",
   "fileName": "sap-cell-gene-therapy-orchestration-api-preprod.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "sap-cell-gene-therapy-orchestration-api-preprodext",
-  "displayName": "SAP Cell and Gene Therapy Orchestration",
+  "displayName": "SAP Cell and Gene Therapy Orchestration Preview Extension",
   "description": "SAP Cell and Gene Therapy Orchestration Preview Extension",
   "fileName": "sap-cell-gene-therapy-orchestration-api-preprodext.json",
   "category": "SERVICE"
@@ -3459,15 +3522,15 @@
  },
  {
   "technicalId": "sap-central-invoice-management",
-  "displayName": "SAP Ariba Central Invoice Management",
-  "description": "SAP Ariba Central Invoice Management",
+  "displayName": "SAP Ariba Invoicing",
+  "description": "SAP Ariba Invoicing",
   "fileName": "sap-central-invoice-management.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "sap-central-invoice-management-inbound",
-  "displayName": "SAP Ariba Central Invoice Management, inbound processing module",
-  "description": "Inbound processing module is an additional module that allows users to upload invoice files, edit draft invoices and save supplier invoices to a connected system, directly from SAP Ariba Central Invoice Management apps.",
+  "displayName": "SAP Ariba Invoicing, inbound processing module",
+  "description": "Inbound processing module is an additional module that allows users to upload invoice files, edit draft invoices and save supplier invoices to a connected system, directly from SAP Ariba Invoicing apps.",
   "fileName": "sap-central-invoice-management-inbound.json",
   "category": "APPLICATION"
  },
@@ -3480,8 +3543,8 @@
  },
  {
   "technicalId": "sap-document-information-extraction",
-  "displayName": "Document Information Extraction",
-  "description": "Document Information Extraction",
+  "displayName": "SAP Document AI",
+  "description": "SAP Document AI",
   "fileName": "sap-document-information-extraction.json",
   "category": "SERVICE"
  },
@@ -3581,6 +3644,20 @@
   "displayName": "SAP S/4HANA for Microsoft Teams",
   "description": "SAP S/4HANA for Microsoft Teams",
   "fileName": "sap-s4hanamsteams.json",
+  "category": "APPLICATION"
+ },
+ {
+  "technicalId": "sap-sf-askhr-prev",
+  "displayName": "SAP SuccessFactors EC Service Center (Preview)",
+  "description": "SAP SuccessFactors EC Service Center (Preview)",
+  "fileName": "sap-sf-askhr-prev.json",
+  "category": "APPLICATION"
+ },
+ {
+  "technicalId": "sap-sf-askhr-prod",
+  "displayName": "SAP SuccessFactors EC Service Center (Production)",
+  "description": "SAP SuccessFactors EC Service Center (Production)",
+  "fileName": "sap-sf-askhr-prod.json",
   "category": "APPLICATION"
  },
  {
@@ -3746,22 +3823,22 @@
  },
  {
   "technicalId": "sdm",
-  "displayName": "Document Management Service, Integration Option",
-  "description": "Document Management Service, Integration Option",
+  "displayName": "Document Management Service",
+  "description": "Document Management Service",
   "fileName": "sdm.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "sdm-repository",
-  "displayName": "Document Management Service, Repository Option",
-  "description": "Document Management Service, Repository Option",
+  "displayName": "Document Management Service",
+  "description": "Document Management Service",
   "fileName": "sdm-repository.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "sdm-web",
-  "displayName": "Document Management Service, Application Option",
-  "description": "Document Management Service, Application Option",
+  "displayName": "Document Management Service",
+  "description": "Document Management Service",
   "fileName": "sdm-web.json",
   "category": "APPLICATION"
  },
@@ -3809,7 +3886,7 @@
  },
  {
   "technicalId": "service-ticket-intelligence-partner",
-  "displayName": "Service Ticket Intelligence Partner",
+  "displayName": "Service Ticket Intelligence",
   "description": "Service Ticket Intelligence Partner",
   "fileName": "service-ticket-intelligence-partner.json",
   "category": "SERVICE"
@@ -3990,13 +4067,6 @@
   "category": "SERVICE"
  },
  {
-  "technicalId": "valery_test",
-  "displayName": "Valery Test",
-  "description": "Valery Test",
-  "fileName": "valery_test.json",
-  "category": "APPLICATION"
- },
- {
   "technicalId": "visualization-application",
   "displayName": "SAP 3D Visualization service",
   "description": "The Visualization Service enables customers to import, manage and connect their 3D data in their design, manufacturing, operations and other business workflows.",
@@ -4054,14 +4124,14 @@
  },
  {
   "technicalId": "workflow",
-  "displayName": "Workflow",
+  "displayName": "SAP Workflow Management",
   "description": "SAP Workflow service allows you to build, run, and manage workflows, from simple approvals to end-to-end processes that span across different organizations and applications. With an inbox application and custom-built user interfaces, you involve end users into business processes for decision making and data entry. The workflow service comes with web-based tools for workflow modeling, APIs for consumption in custom applications, monitoring tools, and a set of Fiori-based applications for end-user access. You can use JavaScript to embed custom business logic.",
   "fileName": "workflow.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "workflowmanagement",
-  "displayName": "SAP Workflow Management",
+  "displayName": "Workflow Management",
   "description": "Digitize workflows, manage decisions and gain end-to-end process visibility.",
   "fileName": "workflowmanagement.json",
   "category": "SERVICE"
@@ -4082,7 +4152,7 @@
  },
  {
   "technicalId": "wums-c4re-beta",
-  "displayName": "Workspace Utilization - BETA",
+  "displayName": "Workspace Utilization",
   "description": "The Workspace Utilization service lets you assign sensors to workplaces and spaces. These sensors measure how your workspaces are used. The Workspace Utilization service integrates with SAP Cloud for Real Estate and SAP Analytics Cloud to analyze, manage, and optimize your workspaces.",
   "fileName": "wums-c4re-beta.json",
   "category": "APPLICATION"

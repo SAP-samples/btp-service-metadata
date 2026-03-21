@@ -36,6 +36,10 @@
      "name": "cf-ap20"
     },
     {
+     "region": "ap21",
+     "name": "cf-ap21"
+    },
+    {
      "region": "ap30",
      "name": "cf-ap30"
     },
@@ -91,20 +95,23 @@
         "additionalProperties": false,
         "properties": {
          "conversationInsightsConsent": {
+          "default": true,
           "description": "Store conversation data submitted by users for the improvement of Joule.",
           "title": "Conversation Insights",
           "type": "boolean"
          },
          "integrationLandscape": {
           "_enumDisplayName": {
-           "Production": "Production",
-           "Testing": "Testing"
+           "production": "Production",
+           "testing": "Testing"
           },
-          "description": "This integration is used for testing/production landscape.",
+          "default": "production",
+          "description": "This integration is used for Testing/Production landscape.",
           "enum": [
-           "Testing",
-           "Production"
+           "testing",
+           "production"
           ],
+          "minLength": 1,
           "title": "Integration Landscape",
           "type": "string"
          }

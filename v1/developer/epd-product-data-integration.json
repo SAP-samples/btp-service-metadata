@@ -13,6 +13,40 @@
  ],
  "servicePlans": [
   {
+   "name": "preview",
+   "displayName": "Preview",
+   "category": "APPLICATION",
+   "description": "For previewing new and changed features. Consumed capacity units for this tenant are calculated but no costs incurred. For additional limitations, see Supplement Terms and Conditions.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu20",
+     "name": "cf-eu20"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
+    }
+   ],
+   "schemas": null
+  },
+  {
    "name": "production",
    "displayName": "Production",
    "category": "APPLICATION",
@@ -38,6 +72,10 @@
     {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
    ],
    "schemas": null
@@ -68,6 +106,10 @@
     {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
    ],
    "schemas": null
@@ -98,6 +140,10 @@
     {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
    ],
    "schemas": null
@@ -128,6 +174,10 @@
     {
      "region": "us10",
      "name": "cf-us10"
+    },
+    {
+     "region": "us20",
+     "name": "cf-us20"
     }
    ],
    "schemas": null
