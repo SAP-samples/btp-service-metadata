@@ -268,6 +268,228 @@
        }
       }
      }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_standard_config_view": true,
+        "additionalProperties": false,
+        "_controlsOrder": [
+         "roles",
+         "grant-types",
+         "connectorName"
+        ],
+        "properties": {
+         "roles": {
+          "description": "Roles granted to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "AssetRead",
+            "AssetWrite",
+            "AuthGroup_DataspaceConsumer",
+            "AuthGroup_DataspaceProvider",
+            "AuthGroup_DataspaceReadOnly",
+            "AuthGroup_DataspaceBusinessAdmin",
+            "AuthGroup_DataspaceTechnicalAdmin",
+            "BusinessPartnerGroupRead",
+            "BusinessPartnerGroupWrite",
+            "CatalogRead",
+            "ContractAgreementRead",
+            "ContractDefinitionRead",
+            "ContractDefinitionWrite",
+            "ContractNegotiationRead",
+            "ContractNegotiationWrite",
+            "CompanyPolicyAssignment",
+            "CompanyPolicyRead",
+            "CompanyPolicyWrite",
+            "ContractReferenceRead",
+            "ContractReferenceWrite",
+            "CredentialsRead",
+            "CredentialsWrite",
+            "EndpointDataReferenceRead",
+            "EndpointDataReferenceWrite",
+            "IntegrationContentRead",
+            "PolicyRead",
+            "PolicyWrite",
+            "RegistrationRead",
+            "RegistrationWrite",
+            "TransferProcessRead",
+            "TransferProcessWrite"
+           ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+         },
+         "grant-types": {
+          "description": "Grant-types related to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "client_credentials",
+            "password"
+           ],
+           "_enumDisplayName": {
+            "client_credentials": "Client Credentials",
+            "password": "Password"
+           }
+          },
+          "default": [
+           "client_credentials"
+          ],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "connectorName": {
+          "description": "The specific connector that the service instance should access. The connector name is defined during the onboarding in SAP Integration Suite.",
+          "type": "string",
+          "validationMessage": "The connector name must be alphanumeric and cannot exceed 20 characters.",
+          "pattern": "^[a-zA-Z0-9]*$",
+          "minLength": 0,
+          "maxLength": 20
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_standard_config_view": true,
+        "additionalProperties": false,
+        "_controlsOrder": [
+         "roles",
+         "grant-types",
+         "connectorName"
+        ],
+        "properties": {
+         "roles": {
+          "description": "Roles granted to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "AssetRead",
+            "AssetWrite",
+            "AuthGroup_DataspaceConsumer",
+            "AuthGroup_DataspaceProvider",
+            "AuthGroup_DataspaceReadOnly",
+            "AuthGroup_DataspaceTechnicalAdmin",
+            "AuthGroup_DataspaceBusinessAdmin",
+            "BusinessPartnerGroupRead",
+            "BusinessPartnerGroupWrite",
+            "CatalogRead",
+            "ContractAgreementRead",
+            "ContractDefinitionRead",
+            "ContractDefinitionWrite",
+            "ContractNegotiationRead",
+            "ContractNegotiationWrite",
+            "CompanyPolicyAssignment",
+            "CompanyPolicyRead",
+            "CompanyPolicyWrite",
+            "ContractReferenceRead",
+            "ContractReferenceWrite",
+            "CredentialsRead",
+            "CredentialsWrite",
+            "EndpointDataReferenceRead",
+            "EndpointDataReferenceWrite",
+            "IntegrationContentRead",
+            "PolicyRead",
+            "PolicyWrite",
+            "RegistrationRead",
+            "RegistrationWrite",
+            "TransferProcessRead",
+            "TransferProcessWrite"
+           ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+         },
+         "grant-types": {
+          "description": "Grant-types related to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "client_credentials",
+            "password"
+           ],
+           "_enumDisplayName": {
+            "client_credentials": "Client Credentials",
+            "password": "Password"
+           }
+          },
+          "default": [
+           "client_credentials"
+          ],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "connectorName": {
+          "description": "The specific connector that the service instance should access. The connector name is defined during the onboarding in SAP Integration Suite.",
+          "type": "string",
+          "validationMessage": "The connector name must be alphanumeric and cannot exceed 20 characters.",
+          "pattern": "^[a-zA-Z0-9]*$",
+          "minLength": 0,
+          "maxLength": 20
+         }
+        }
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_standard_config_view": true,
+        "additionalProperties": false,
+        "_controlsOrder": [
+         "key-type",
+         "validity",
+         "key-length"
+        ],
+        "properties": {
+         "key-type": {
+          "title": "Key Type",
+          "type": "string",
+          "description": "The key type determines the type of the credentials provided in the service key.\nClientId/Secret: A service key that contains a ClientId/Secret.\nCertificate: A service key which contains a X509 certificate (requires grant-type 'Client Credentials').\nExternal Certificate: A service key that is using a externally provided X509 certificate (requires grant-type 'Client Credentials')",
+          "default": "client_id_secret",
+          "enum": [
+           "client_id_secret",
+           "certificate"
+          ],
+          "_enumDisplayName": {
+           "client_id_secret": "ClientId/Secret",
+           "certificate": "Certificate"
+          }
+         },
+         "validity": {
+          "title": "Validity in days (only applicable for Key Type 'Certificate')",
+          "type": "integer",
+          "default": 365,
+          "minimum": 1,
+          "maximum": 365,
+          "description": "Only applicable for Key Type 'Certificate'. The validity of the issued certificate in days"
+         },
+         "key-length": {
+          "title": "Key Size (only applicable for Key Type 'Certificate')",
+          "type": "integer",
+          "description": "Only applicable for Key Type 'Certificate'",
+          "default": 2048,
+          "enum": [
+           2048
+          ]
+         }
+        }
+       }
+      }
+     }
     }
    ]
   }
