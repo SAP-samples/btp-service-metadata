@@ -1021,19 +1021,11 @@
          },
          "sports_type": {
           "_enumDisplayName": {
-           "Basketball": "Basketball",
-           "Handball": "Handball",
-           "IceHockey": "Ice Hockey",
-           "PublicSafety": "Public Safety",
-           "Soccer": "Soccer"
+           "PublicSafety": "Public Safety"
           },
-          "default": "Soccer",
+          "default": "PublicSafety",
           "description": "Your Sports Type.",
           "enum": [
-           "Soccer",
-           "IceHockey",
-           "Handball",
-           "Basketball",
            "PublicSafety"
           ],
           "minLength": 1,
