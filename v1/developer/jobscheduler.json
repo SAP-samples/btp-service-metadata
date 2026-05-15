@@ -290,6 +290,25 @@
         }
        }
       }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "credential-type": {
+          "type": "string",
+          "enum": [
+           "binding-secret",
+           "x509",
+           "x509_attested"
+          ],
+          "description": "Type of credential to create for the service binding"
+         }
+        }
+       }
+      }
      }
     },
     {
@@ -309,25 +328,6 @@
           ],
           "default": "xsuaa",
           "description": "Authentication method for the service instance"
-         }
-        }
-       }
-      }
-     },
-     "service_binding": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "type": "object",
-        "properties": {
-         "credential-type": {
-          "type": "string",
-          "enum": [
-           "binding-secret",
-           "x509",
-           "x509_attested"
-          ],
-          "description": "Type of credential to create for the service binding"
          }
         }
        }
@@ -728,6 +728,25 @@
         }
        }
       }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "credential-type": {
+          "type": "string",
+          "enum": [
+           "binding-secret",
+           "x509",
+           "x509_attested"
+          ],
+          "description": "Type of credential to create for the service binding"
+         }
+        }
+       }
+      }
      }
     },
     {
@@ -747,25 +766,6 @@
           ],
           "default": "xsuaa",
           "description": "Authentication method for the service instance"
-         }
-        }
-       }
-      }
-     },
-     "service_binding": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "type": "object",
-        "properties": {
-         "credential-type": {
-          "type": "string",
-          "enum": [
-           "binding-secret",
-           "x509",
-           "x509_attested"
-          ],
-          "description": "Type of credential to create for the service binding"
          }
         }
        }
