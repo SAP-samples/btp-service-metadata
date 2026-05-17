@@ -138,6 +138,10 @@
      "name": "cf-eu20"
     },
     {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
      "region": "jp10",
      "name": "cf-jp10"
     },
@@ -268,6 +272,50 @@
          "subResource": {
           "description": "Specifies the subresource for a specific Resource ID. Note that subresource is not required for Azure Private Link resources.\n\nExample: mysqlServer\n\nAll supported native Azure services including subresources can be found here: https://help.sap.com/viewer/product/PRIVATE_LINK/CLOUD/en-US",
           "title": "Subresource",
+          "type": "string"
+         }
+        },
+        "required": [
+         "resourceId"
+        ],
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": null
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": null
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "_controlsOrder": [
+         "resourceId",
+         "subResource",
+         "requestMessage",
+         "cosmosDb"
+        ],
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "properties": {
+         "requestMessage": {
+          "description": "Specifies the request message which is displayed to the approver.",
+          "maxLength": 60,
+          "title": "Request Message",
+          "type": "string"
+         },
+         "resourceId": {
+          "description": "Specifies the Google service attachment path of the published service for which the private endpoint should be created.\n\nExample: projects/<prodproject>/regions/<region>/serviceAttachments/<serviceAttachment>",
+          "minLength": 1,
+          "pattern": "projects/.+/regions/.+/serviceAttachments/.+",
+          "title": "Resource ID",
           "type": "string"
          }
         },

@@ -310,29 +310,6 @@
        }
       }
      }
-    },
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "_show_form_view": true,
-        "type": "object",
-        "properties": {
-         "authentication": {
-          "title": "Authentication Method",
-          "type": "string",
-          "enum": [
-           "xsuaa",
-           "ias"
-          ],
-          "default": "xsuaa",
-          "description": "Authentication method for the service instance"
-         }
-        }
-       }
-      }
-     }
     }
    ]
   },
@@ -743,29 +720,6 @@
            "x509_attested"
           ],
           "description": "Type of credential to create for the service binding"
-         }
-        }
-       }
-      }
-     }
-    },
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "_show_form_view": true,
-        "type": "object",
-        "properties": {
-         "authentication": {
-          "title": "Authentication Method",
-          "type": "string",
-          "enum": [
-           "xsuaa",
-           "ias"
-          ],
-          "default": "xsuaa",
-          "description": "Authentication method for the service instance"
          }
         }
        }
