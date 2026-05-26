@@ -12,6 +12,7 @@ permissions:
 jobs:
   fetch-metadata:
     runs-on: ubuntu-latest
+    environment: import-metadata
 
     steps:
       - uses: actions/checkout@v6
