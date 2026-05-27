@@ -3,7 +3,7 @@ name: Update Metadata Files
 
 on:
   schedule:
-   - cron: "0 6 * * *"
+    - cron: "0 6 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -15,8 +15,10 @@ jobs:
     environment: import-metadata
 
     steps:
-      - uses: actions/checkout@v6
-        name: "Checkout repository"
+      - name: "Checkout repository"
+        uses: actions/checkout@v6
+        with:
+          ssh-key: ${{ secrets.DEPLOY_SSH_KEY }}
 
       - name: "Setup Node.js"
         uses: actions/setup-node@v6
