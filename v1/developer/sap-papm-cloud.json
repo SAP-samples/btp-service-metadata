@@ -60,6 +60,10 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -536,6 +540,56 @@
             "properties": {
              "database_id": {
               "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: ea6e863e-ab7a-4c6e-8675-4334735f9193</li><li>CF space GUID: 3be96b19-46a2-4c8c-9348-e37417a3a23e</li></ul></li><li><strong>Universal Model:</strong><ul><li>CF organization GUID: dffa06ff-1c6f-4d81-9b96-22429797f9dd</li><li>CF space GUID: 8bbe23ed-7245-4463-a168-f8e7fa367e96</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>ch20</strong>).",
+              "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
+              "title": "SAP HANA Cloud Database ID",
+              "type": "string",
+              "validationMessage": "Database ID must be valid GUID!"
+             }
+            },
+            "title": "byod",
+            "type": "object"
+           }
+          ],
+          "title": "Choose your PLAN once again",
+          "type": "object"
+         }
+        },
+        "type": "object"
+       }
+      }
+     }
+    },
+    {
+     "subscription": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_form_view": true,
+        "additionalProperties": false,
+        "properties": {
+         "parameters": {
+          "description": "Choosing <strong>PLAN</strong> in wizard again will allow to display customized from to provide required parameters.",
+          "oneOf": [
+           {
+            "additionalProperties": false,
+            "description": "Default",
+            "properties": {},
+            "title": "default",
+            "type": "object"
+           },
+           {
+            "additionalProperties": false,
+            "description": "T&D tenant",
+            "properties": {},
+            "title": "tandd",
+            "type": "object"
+           },
+           {
+            "additionalProperties": false,
+            "description": "Bring Your Own Database",
+            "properties": {
+             "database_id": {
+              "description": "SAP HANA Cloud Database must have added instance mapping to:<ul><li><strong>Standard Model:</strong><ul><li>CF organization GUID: 273d3a00-7913-44f0-9e69-bedd4cc3975f</li><li>CF space GUID: 46f79fcf-a1b1-461a-abc2-9019f6976175</li></ul></li></ul>Instance mapping is only available for instances hosted in the same BTP region (<strong>eu01</strong>).",
               "pattern": "^[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?$",
               "title": "SAP HANA Cloud Database ID",
               "type": "string",
