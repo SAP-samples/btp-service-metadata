@@ -632,6 +632,82 @@
        }
       }
      }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "application": {
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\", \"intelligentAgriculture\".",
+          "type": "string",
+          "enum": [
+           "ariba",
+           "c4c",
+           "cdc",
+           "commerceCloud",
+           "concur",
+           "fieldglass",
+           "hrc",
+           "mdg",
+           "resource management",
+           "s4",
+           "cpq",
+           "sfsf",
+           "ci",
+           "omf",
+           "cdp",
+           "fsm",
+           "intelligentAgriculture"
+          ]
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+         "businessSystemId": {
+          "description": "Name to be displayed in SAP Master Data Orchestration UI. If not provided, a random UUID will be assigned.",
+          "type": "string",
+          "pattern": "^.{1,60}$"
+         },
+         "application": {
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\", \"intelligentAgriculture\".",
+          "type": "string",
+          "enum": [
+           "ariba",
+           "c4c",
+           "cdc",
+           "commerceCloud",
+           "concur",
+           "fieldglass",
+           "hrc",
+           "mdg",
+           "resource management",
+           "s4",
+           "cpq",
+           "sfsf",
+           "ci",
+           "omf",
+           "cdp",
+           "fsm",
+           "intelligentAgriculture"
+          ]
+         }
+        }
+       }
+      }
+     }
     }
    ]
   },

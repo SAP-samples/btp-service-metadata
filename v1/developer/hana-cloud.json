@@ -710,7 +710,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -730,7 +730,7 @@
             "default": 32,
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 7552,
+            "maximum": 2800,
             "minimum": 32,
             "type": "integer"
            },
@@ -847,7 +847,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -1042,7 +1042,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -1056,7 +1056,7 @@
            "memory": {
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 7552,
+            "maximum": 2800,
             "minimum": 32,
             "type": "integer"
            },
@@ -1210,7 +1210,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -7494,7 +7494,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -7631,7 +7631,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -7867,7 +7867,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -8043,7 +8043,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -9754,6 +9754,760 @@
                "maxValue": {
                 "description": "Maximum size the storage is upsized to in GiB",
                 "format": "int64",
+                "maximum": 16384,
+                "minimum": 120,
+                "type": "integer"
+               }
+              },
+              "required": [
+               "enabled",
+               "maxValue"
+              ],
+              "type": "object"
+             }
+            },
+            "type": "object"
+           },
+           "availabilityZonePlacement": {
+            "additionalProperties": false,
+            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
+            "properties": {
+             "computeNodesFallbackCrossMultiAZEnabled": {
+              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
+              "type": "boolean"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
+             "primaryAvailabilityZone": {
+              "description": "This zone will be used by the primary instance",
+              "type": "string"
+             },
+             "secondaryAvailabilityZone": {
+              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 0,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
+           "databaseMappings": {
+            "items": {
+             "properties": {
+              "organization_guid": {
+               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+               "type": "string"
+              },
+              "space_guid": {
+               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+               "type": "string"
+              }
+             },
+             "required": [
+              "organization_guid",
+              "space_guid"
+             ],
+             "type": "object"
+            }
+           },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
+           "edition": {
+            "default": "cloud",
+            "description": "Image edition (cloud vs. orange)",
+            "enum": [
+             "cloud",
+             "orange"
+            ],
+            "type": "string"
+           },
+           "enabledservices": {
+            "additionalProperties": false,
+            "description": "List of services of the HANA to be enabled",
+            "properties": {
+             "docstore": {
+              "type": "boolean"
+             },
+             "dpserver": {
+              "type": "boolean"
+             },
+             "nlp": {
+              "type": "boolean"
+             },
+             "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "extensionservices": {
+            "items": {
+             "properties": {
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              },
+              "whitelistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 500,
+               "type": "array"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "generateSystemPassword": {
+            "default": false,
+            "description": "Describes if the systempassword should be generated or not.",
+            "type": "boolean"
+           },
+           "memory": {
+            "default": 32,
+            "description": "HANA memory size (RAM) in GB",
+            "format": "int64",
+            "maximum": 7552,
+            "minimum": 32,
+            "type": "integer"
+           },
+           "memoryScaleOut": {
+            "description": "HANA memory size (RAM) in GB for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "plugins": {
+            "description": "HANA Plugins list configured for HANA instance",
+            "items": {
+             "properties": {
+              "name": {
+               "description": "plugin version for installation",
+               "type": "string"
+              }
+             }
+            },
+            "type": "array"
+           },
+           "productVersion": {
+            "additionalProperties": false,
+            "description": "HANA Product Version",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "releaseCycle": {
+              "type": "string"
+             },
+             "track": {
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "requestedOperation": {
+            "additionalProperties": false,
+            "properties": {
+             "arguments": {
+              "additionalProperties": false,
+              "description": "List of operation arguments",
+              "properties": {
+               "backup_encryption_passphrase": {
+                "type": "string"
+               },
+               "hdl_access_token": {
+                "type": "string"
+               },
+               "project_name": {
+                "type": "string"
+               },
+               "template_name": {
+                "type": "string"
+               },
+               "template_storage_endpoint": {
+                "type": "string"
+               }
+              },
+              "type": "object"
+             },
+             "name": {
+              "description": "create instance for template recovery",
+              "enum": [
+               "none",
+               "TEMPLATE_RECOVERY"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "slaLevel": {
+            "description": "Availability of the HANA instance",
+            "enum": [
+             "standard",
+             "elevated"
+            ],
+            "type": "string"
+           },
+           "storage": {
+            "description": "Size of the Storage in GB",
+            "format": "int64",
+            "maximum": 16384,
+            "minimum": 120,
+            "type": "integer"
+           },
+           "systempassword": {
+            "default": "",
+            "description": "Password to be set for tenant",
+            "minLength": 8,
+            "type": "string"
+           },
+           "update_strategy": {
+            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
+            "enum": [
+             "with_restart",
+             "without_restart"
+            ]
+           },
+           "vcpu": {
+            "description": "Number of vCPUs used by HANA",
+            "minimum": 2,
+            "type": "integer"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 500,
+            "type": "array"
+           }
+          },
+          "required": [
+           "edition",
+           "memory"
+          ],
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {},
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "default": {},
+          "defaultProperties": [],
+          "properties": {
+           "additionalWorkers": {
+            "description": "Number of additional workers for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "autoConfig": {
+            "description": "Settings for the hana-auto-config microservice (lifecycle automation)",
+            "properties": {
+             "storage": {
+              "additionalProperties": false,
+              "defaultProperties": [
+               "enabled",
+               "maxValue"
+              ],
+              "description": "Settings for the automatic disk resize",
+              "properties": {
+               "enabled": {
+                "default": false,
+                "description": "Automatic disk resize enablement",
+                "type": "boolean"
+               },
+               "maxValue": {
+                "description": "Maximum size the storage is upsized to in GiB",
+                "format": "int64",
+                "maximum": 16384,
+                "minimum": 120,
+                "type": "integer"
+               }
+              },
+              "required": [
+               "enabled",
+               "maxValue"
+              ],
+              "type": "object"
+             }
+            },
+            "type": "object"
+           },
+           "availabilityZonePlacement": {
+            "additionalProperties": false,
+            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
+            "properties": {
+             "computeNodesFallbackCrossMultiAZEnabled": {
+              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
+              "type": "boolean"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
+             "primaryAvailabilityZone": {
+              "description": "This zone will be used by the primary instance",
+              "type": "string"
+             },
+             "secondaryAvailabilityZone": {
+              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 0,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
+           "enabledservices": {
+            "additionalProperties": false,
+            "description": "List of services of the HANA to be enabled",
+            "properties": {
+             "docstore": {
+              "type": "boolean"
+             },
+             "dpserver": {
+              "type": "boolean"
+             },
+             "nlp": {
+              "type": "boolean"
+             },
+             "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "extensionservices": {
+            "items": {
+             "properties": {
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              },
+              "whitelistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 500,
+               "type": "array"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "memory": {
+            "description": "HANA memory size (RAM) in GB",
+            "format": "int64",
+            "maximum": 7552,
+            "minimum": 32,
+            "type": "integer"
+           },
+           "plugins": {
+            "description": "HANA Plugins list configured for HANA instance",
+            "items": {
+             "properties": {
+              "name": {
+               "description": "plugin version for installation",
+               "type": "string"
+              }
+             }
+            },
+            "type": "array"
+           },
+           "productVersion": {
+            "additionalProperties": false,
+            "description": "HANA Product Version",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "releaseCycle": {
+              "type": "string"
+             },
+             "track": {
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "requestedOperation": {
+            "additionalProperties": false,
+            "properties": {
+             "arguments": {
+              "additionalProperties": false,
+              "description": "List of operation arguments",
+              "properties": {
+               "backup_encryption_passphrase": {
+                "type": "string"
+               },
+               "customer_initial_replica_az": {
+                "type": "string"
+               },
+               "customer_initial_source_az": {
+                "type": "string"
+               },
+               "customer_secondary_az": {
+                "type": "string"
+               },
+               "customer_target_az": {
+                "type": "string"
+               },
+               "dummyForFeatureFlags": {},
+               "ha_cross_multi_az_enabled": {
+                "type": "boolean"
+               },
+               "hdl_access_token": {
+                "type": "string"
+               },
+               "initial_replica_az": {
+                "type": "string"
+               },
+               "initial_source_az": {
+                "type": "string"
+               },
+               "labels": {
+                "description": "Template backup labels",
+                "items": {
+                 "type": "string"
+                },
+                "type": "array"
+               },
+               "project_name": {
+                "type": "string"
+               },
+               "secondary_az": {
+                "type": "string"
+               },
+               "source_instance_id": {
+                "type": "string"
+               },
+               "target_az": {
+                "type": "string"
+               },
+               "target_timestamp": {
+                "type": "string"
+               },
+               "template_name": {
+                "type": "string"
+               },
+               "template_storage_endpoint": {
+                "type": "string"
+               }
+              },
+              "type": "object"
+             },
+             "name": {
+              "description": "Update operation",
+              "enum": [
+               "none",
+               "POINT_IN_TIME_RECOVERY",
+               "DISASTER_KEEP_AZ_RECOVERY",
+               "disaster_recovery_takeover",
+               "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
+               "synchronous_replication_takeover",
+               "TAKE_SNAPSHOT_FOR_FALLBACK",
+               "FALLBACK_TO_SNAPSHOT",
+               "REMOVE_SNAPSHOT_FOR_FALLBACK"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "slaLevel": {
+            "description": "Availability of the HANA instance",
+            "enum": [
+             "standard",
+             "elevated"
+            ],
+            "type": "string"
+           },
+           "storage": {
+            "description": "Size of the Storage in GB",
+            "format": "int64",
+            "maximum": 16384,
+            "minimum": 120,
+            "type": "integer"
+           },
+           "update_strategy": {
+            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
+            "enum": [
+             "with_restart",
+             "without_restart"
+            ]
+           },
+           "vcpu": {
+            "description": "Number of vCPUs used by HANA",
+            "minimum": 2,
+            "type": "integer"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 500,
+            "type": "array"
+           },
+           "workerNodes": {
+            "description": "Items of worker nodes for scale out systems",
+            "items": {
+             "alias": {
+              "description": "Worker node alias",
+              "maxLength": 16,
+              "minLength": 0,
+              "type": "string"
+             },
+             "name": {
+              "description": "Worker node name",
+              "maxLength": 9,
+              "minLength": 1,
+              "type": "string"
+             }
+            },
+            "maxItems": 15,
+            "type": "array"
+           }
+          },
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {},
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": null
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "defaultProperties": [
+           "memory",
+           "systempassword",
+           "edition"
+          ],
+          "properties": {
+           "additionalWorkers": {
+            "description": "Number of additional workers for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "autoConfig": {
+            "description": "Settings for the hana-auto-config microservice (lifecycle automation)",
+            "properties": {
+             "storage": {
+              "additionalProperties": false,
+              "defaultProperties": [
+               "enabled",
+               "maxValue"
+              ],
+              "description": "Settings for the automatic disk resize",
+              "properties": {
+               "enabled": {
+                "default": false,
+                "description": "Automatic disk resize enablement",
+                "type": "boolean"
+               },
+               "maxValue": {
+                "description": "Maximum size the storage is upsized to in GiB",
+                "format": "int64",
                 "maximum": 61440,
                 "minimum": 120,
                 "type": "integer"
@@ -10561,7 +11315,7 @@
                "maxValue": {
                 "description": "Maximum size the storage is upsized to in GiB",
                 "format": "int64",
-                "maximum": 16000,
+                "maximum": 16384,
                 "minimum": 120,
                 "type": "integer"
                }
@@ -10740,7 +11494,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -10757,11 +11511,11 @@
             "type": "boolean"
            },
            "memory": {
-            "default": 16,
+            "default": 32,
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 5970,
-            "minimum": 16,
+            "maximum": 7552,
+            "minimum": 32,
             "type": "integer"
            },
            "memoryScaleOut": {
@@ -10850,7 +11604,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 16000,
+            "maximum": 16384,
             "minimum": 120,
             "type": "integer"
            },
@@ -10877,7 +11631,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -10939,7 +11693,7 @@
                "maxValue": {
                 "description": "Maximum size the storage is upsized to in GiB",
                 "format": "int64",
-                "maximum": 16000,
+                "maximum": 16384,
                 "minimum": 120,
                 "type": "integer"
                }
@@ -11080,20 +11834,12 @@
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
               },
-              "privateLinkAllowlist": {
-               "items": {
-                "maxLength": 40,
-                "type": "string"
-               },
-               "maxItems": 100,
-               "type": "array"
-              },
               "whitelistIPs": {
                "items": {
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -11107,8 +11853,8 @@
            "memory": {
             "description": "HANA memory size (RAM) in GB",
             "format": "int64",
-            "maximum": 5970,
-            "minimum": 16,
+            "maximum": 7552,
+            "minimum": 32,
             "type": "integer"
            },
            "plugins": {
@@ -11121,14 +11867,6 @@
               }
              }
             },
-            "type": "array"
-           },
-           "privateLinkAllowlist": {
-            "items": {
-             "maxLength": 40,
-             "type": "string"
-            },
-            "maxItems": 100,
             "type": "array"
            },
            "productVersion": {
@@ -11248,7 +11986,7 @@
            "storage": {
             "description": "Size of the Storage in GB",
             "format": "int64",
-            "maximum": 16000,
+            "maximum": 16384,
             "minimum": 120,
             "type": "integer"
            },
@@ -11269,7 +12007,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -11540,7 +12278,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -11677,7 +12415,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -11922,7 +12660,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -12098,7 +12836,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -13189,7 +13927,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -13326,7 +14064,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -13578,7 +14316,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -13754,7 +14492,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -19058,6 +19796,760 @@
                "maxValue": {
                 "description": "Maximum size the storage is upsized to in GiB",
                 "format": "int64",
+                "maximum": 16384,
+                "minimum": 120,
+                "type": "integer"
+               }
+              },
+              "required": [
+               "enabled",
+               "maxValue"
+              ],
+              "type": "object"
+             }
+            },
+            "type": "object"
+           },
+           "availabilityZonePlacement": {
+            "additionalProperties": false,
+            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
+            "properties": {
+             "computeNodesFallbackCrossMultiAZEnabled": {
+              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
+              "type": "boolean"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
+             "primaryAvailabilityZone": {
+              "description": "This zone will be used by the primary instance",
+              "type": "string"
+             },
+             "secondaryAvailabilityZone": {
+              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 0,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
+           "databaseMappings": {
+            "items": {
+             "properties": {
+              "organization_guid": {
+               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+               "type": "string"
+              },
+              "space_guid": {
+               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+               "type": "string"
+              }
+             },
+             "required": [
+              "organization_guid",
+              "space_guid"
+             ],
+             "type": "object"
+            }
+           },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
+           "edition": {
+            "default": "cloud",
+            "description": "Image edition (cloud vs. orange)",
+            "enum": [
+             "cloud",
+             "orange"
+            ],
+            "type": "string"
+           },
+           "enabledservices": {
+            "additionalProperties": false,
+            "description": "List of services of the HANA to be enabled",
+            "properties": {
+             "docstore": {
+              "type": "boolean"
+             },
+             "dpserver": {
+              "type": "boolean"
+             },
+             "nlp": {
+              "type": "boolean"
+             },
+             "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "extensionservices": {
+            "items": {
+             "properties": {
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              },
+              "whitelistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 900,
+               "type": "array"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "generateSystemPassword": {
+            "default": false,
+            "description": "Describes if the systempassword should be generated or not.",
+            "type": "boolean"
+           },
+           "memory": {
+            "default": 32,
+            "description": "HANA memory size (RAM) in GB",
+            "format": "int64",
+            "maximum": 7552,
+            "minimum": 32,
+            "type": "integer"
+           },
+           "memoryScaleOut": {
+            "description": "HANA memory size (RAM) in GB for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "plugins": {
+            "description": "HANA Plugins list configured for HANA instance",
+            "items": {
+             "properties": {
+              "name": {
+               "description": "plugin version for installation",
+               "type": "string"
+              }
+             }
+            },
+            "type": "array"
+           },
+           "productVersion": {
+            "additionalProperties": false,
+            "description": "HANA Product Version",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "releaseCycle": {
+              "type": "string"
+             },
+             "track": {
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "requestedOperation": {
+            "additionalProperties": false,
+            "properties": {
+             "arguments": {
+              "additionalProperties": false,
+              "description": "List of operation arguments",
+              "properties": {
+               "backup_encryption_passphrase": {
+                "type": "string"
+               },
+               "hdl_access_token": {
+                "type": "string"
+               },
+               "project_name": {
+                "type": "string"
+               },
+               "template_name": {
+                "type": "string"
+               },
+               "template_storage_endpoint": {
+                "type": "string"
+               }
+              },
+              "type": "object"
+             },
+             "name": {
+              "description": "create instance for template recovery",
+              "enum": [
+               "none",
+               "TEMPLATE_RECOVERY"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "slaLevel": {
+            "description": "Availability of the HANA instance",
+            "enum": [
+             "standard",
+             "elevated"
+            ],
+            "type": "string"
+           },
+           "storage": {
+            "description": "Size of the Storage in GB",
+            "format": "int64",
+            "maximum": 16384,
+            "minimum": 120,
+            "type": "integer"
+           },
+           "systempassword": {
+            "default": "",
+            "description": "Password to be set for tenant",
+            "minLength": 8,
+            "type": "string"
+           },
+           "update_strategy": {
+            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
+            "enum": [
+             "with_restart",
+             "without_restart"
+            ]
+           },
+           "vcpu": {
+            "description": "Number of vCPUs used by HANA",
+            "minimum": 2,
+            "type": "integer"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 900,
+            "type": "array"
+           }
+          },
+          "required": [
+           "edition",
+           "memory"
+          ],
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {},
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "default": {},
+          "defaultProperties": [],
+          "properties": {
+           "additionalWorkers": {
+            "description": "Number of additional workers for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "autoConfig": {
+            "description": "Settings for the hana-auto-config microservice (lifecycle automation)",
+            "properties": {
+             "storage": {
+              "additionalProperties": false,
+              "defaultProperties": [
+               "enabled",
+               "maxValue"
+              ],
+              "description": "Settings for the automatic disk resize",
+              "properties": {
+               "enabled": {
+                "default": false,
+                "description": "Automatic disk resize enablement",
+                "type": "boolean"
+               },
+               "maxValue": {
+                "description": "Maximum size the storage is upsized to in GiB",
+                "format": "int64",
+                "maximum": 16384,
+                "minimum": 120,
+                "type": "integer"
+               }
+              },
+              "required": [
+               "enabled",
+               "maxValue"
+              ],
+              "type": "object"
+             }
+            },
+            "type": "object"
+           },
+           "availabilityZonePlacement": {
+            "additionalProperties": false,
+            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
+            "properties": {
+             "computeNodesFallbackCrossMultiAZEnabled": {
+              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
+              "type": "boolean"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
+             "primaryAvailabilityZone": {
+              "description": "This zone will be used by the primary instance",
+              "type": "string"
+             },
+             "secondaryAvailabilityZone": {
+              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 0,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
+           "enabledservices": {
+            "additionalProperties": false,
+            "description": "List of services of the HANA to be enabled",
+            "properties": {
+             "docstore": {
+              "type": "boolean"
+             },
+             "dpserver": {
+              "type": "boolean"
+             },
+             "nlp": {
+              "type": "boolean"
+             },
+             "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "extensionservices": {
+            "items": {
+             "properties": {
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              },
+              "whitelistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 900,
+               "type": "array"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "memory": {
+            "description": "HANA memory size (RAM) in GB",
+            "format": "int64",
+            "maximum": 7552,
+            "minimum": 32,
+            "type": "integer"
+           },
+           "plugins": {
+            "description": "HANA Plugins list configured for HANA instance",
+            "items": {
+             "properties": {
+              "name": {
+               "description": "plugin version for installation",
+               "type": "string"
+              }
+             }
+            },
+            "type": "array"
+           },
+           "productVersion": {
+            "additionalProperties": false,
+            "description": "HANA Product Version",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "releaseCycle": {
+              "type": "string"
+             },
+             "track": {
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "requestedOperation": {
+            "additionalProperties": false,
+            "properties": {
+             "arguments": {
+              "additionalProperties": false,
+              "description": "List of operation arguments",
+              "properties": {
+               "backup_encryption_passphrase": {
+                "type": "string"
+               },
+               "customer_initial_replica_az": {
+                "type": "string"
+               },
+               "customer_initial_source_az": {
+                "type": "string"
+               },
+               "customer_secondary_az": {
+                "type": "string"
+               },
+               "customer_target_az": {
+                "type": "string"
+               },
+               "dummyForFeatureFlags": {},
+               "ha_cross_multi_az_enabled": {
+                "type": "boolean"
+               },
+               "hdl_access_token": {
+                "type": "string"
+               },
+               "initial_replica_az": {
+                "type": "string"
+               },
+               "initial_source_az": {
+                "type": "string"
+               },
+               "labels": {
+                "description": "Template backup labels",
+                "items": {
+                 "type": "string"
+                },
+                "type": "array"
+               },
+               "project_name": {
+                "type": "string"
+               },
+               "secondary_az": {
+                "type": "string"
+               },
+               "source_instance_id": {
+                "type": "string"
+               },
+               "target_az": {
+                "type": "string"
+               },
+               "target_timestamp": {
+                "type": "string"
+               },
+               "template_name": {
+                "type": "string"
+               },
+               "template_storage_endpoint": {
+                "type": "string"
+               }
+              },
+              "type": "object"
+             },
+             "name": {
+              "description": "Update operation",
+              "enum": [
+               "none",
+               "POINT_IN_TIME_RECOVERY",
+               "DISASTER_KEEP_AZ_RECOVERY",
+               "disaster_recovery_takeover",
+               "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
+               "synchronous_replication_takeover",
+               "TAKE_SNAPSHOT_FOR_FALLBACK",
+               "FALLBACK_TO_SNAPSHOT",
+               "REMOVE_SNAPSHOT_FOR_FALLBACK"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "slaLevel": {
+            "description": "Availability of the HANA instance",
+            "enum": [
+             "standard",
+             "elevated"
+            ],
+            "type": "string"
+           },
+           "storage": {
+            "description": "Size of the Storage in GB",
+            "format": "int64",
+            "maximum": 16384,
+            "minimum": 120,
+            "type": "integer"
+           },
+           "update_strategy": {
+            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
+            "enum": [
+             "with_restart",
+             "without_restart"
+            ]
+           },
+           "vcpu": {
+            "description": "Number of vCPUs used by HANA",
+            "minimum": 2,
+            "type": "integer"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 900,
+            "type": "array"
+           },
+           "workerNodes": {
+            "description": "Items of worker nodes for scale out systems",
+            "items": {
+             "alias": {
+              "description": "Worker node alias",
+              "maxLength": 16,
+              "minLength": 0,
+              "type": "string"
+             },
+             "name": {
+              "description": "Worker node name",
+              "maxLength": 9,
+              "minLength": 1,
+              "type": "string"
+             }
+            },
+            "maxItems": 15,
+            "type": "array"
+           }
+          },
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {},
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": null
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "defaultProperties": [
+           "memory",
+           "systempassword",
+           "edition"
+          ],
+          "properties": {
+           "additionalWorkers": {
+            "description": "Number of additional workers for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "autoConfig": {
+            "description": "Settings for the hana-auto-config microservice (lifecycle automation)",
+            "properties": {
+             "storage": {
+              "additionalProperties": false,
+              "defaultProperties": [
+               "enabled",
+               "maxValue"
+              ],
+              "description": "Settings for the automatic disk resize",
+              "properties": {
+               "enabled": {
+                "default": false,
+                "description": "Automatic disk resize enablement",
+                "type": "boolean"
+               },
+               "maxValue": {
+                "description": "Maximum size the storage is upsized to in GiB",
+                "format": "int64",
                 "maximum": 61440,
                 "minimum": 120,
                 "type": "integer"
@@ -21503,6 +22995,820 @@
             "description": "Size of the Storage in GB",
             "format": "int64",
             "maximum": 27880,
+            "minimum": 120,
+            "type": "integer"
+           },
+           "update_strategy": {
+            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
+            "enum": [
+             "with_restart",
+             "without_restart"
+            ]
+           },
+           "vcpu": {
+            "description": "Number of vCPUs used by HANA",
+            "minimum": 2,
+            "type": "integer"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 250,
+            "type": "array"
+           },
+           "workerNodes": {
+            "description": "Items of worker nodes for scale out systems",
+            "items": {
+             "alias": {
+              "description": "Worker node alias",
+              "maxLength": 16,
+              "minLength": 0,
+              "type": "string"
+             },
+             "name": {
+              "description": "Worker node name",
+              "maxLength": 9,
+              "minLength": 1,
+              "type": "string"
+             }
+            },
+            "maxItems": 15,
+            "type": "array"
+           }
+          },
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {},
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": null
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "defaultProperties": [
+           "memory",
+           "systempassword",
+           "edition"
+          ],
+          "properties": {
+           "additionalWorkers": {
+            "description": "Number of additional workers for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "autoConfig": {
+            "description": "Settings for the hana-auto-config microservice (lifecycle automation)",
+            "properties": {
+             "storage": {
+              "additionalProperties": false,
+              "defaultProperties": [
+               "enabled",
+               "maxValue"
+              ],
+              "description": "Settings for the automatic disk resize",
+              "properties": {
+               "enabled": {
+                "default": false,
+                "description": "Automatic disk resize enablement",
+                "type": "boolean"
+               },
+               "maxValue": {
+                "description": "Maximum size the storage is upsized to in GiB",
+                "format": "int64",
+                "maximum": 57920,
+                "minimum": 120,
+                "type": "integer"
+               }
+              },
+              "required": [
+               "enabled",
+               "maxValue"
+              ],
+              "type": "object"
+             }
+            },
+            "type": "object"
+           },
+           "availabilityZonePlacement": {
+            "additionalProperties": false,
+            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
+            "properties": {
+             "computeNodesFallbackCrossMultiAZEnabled": {
+              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
+              "type": "boolean"
+             },
+             "customerInitialReplicaAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the initial replica",
+              "type": "string"
+             },
+             "customerInitialSourceAvailabilityZone": {
+              "description": "This customer mapping zone of the initial source",
+              "type": "string"
+             },
+             "customerPrimaryAvailabilityZone": {
+              "description": "This customer mapping zone of primary instance",
+              "type": "string"
+             },
+             "customerSecondaryAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             },
+             "customerSubscriptionId": {
+              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
+              "type": "string"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
+             "primaryAvailabilityZone": {
+              "description": "This zone will be used by the primary instance",
+              "type": "string"
+             },
+             "secondaryAvailabilityZone": {
+              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             },
+             "zoneMappingDryrun": {
+              "description": "This is a flag to mark a dry-run provision to get zone mapping result",
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 0,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "serviceStopped": {
+               "description": "Describes if the system should be running or stopped",
+               "type": "boolean"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
+           "databaseMappings": {
+            "items": {
+             "properties": {
+              "organization_guid": {
+               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+               "type": "string"
+              },
+              "space_guid": {
+               "pattern": "^[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}$",
+               "type": "string"
+              }
+             },
+             "required": [
+              "organization_guid",
+              "space_guid"
+             ],
+             "type": "object"
+            }
+           },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
+           "edition": {
+            "default": "cloud",
+            "description": "Image edition (cloud vs. orange)",
+            "enum": [
+             "cloud",
+             "orange"
+            ],
+            "type": "string"
+           },
+           "enabledservices": {
+            "additionalProperties": false,
+            "description": "List of services of the HANA to be enabled",
+            "properties": {
+             "docstore": {
+              "type": "boolean"
+             },
+             "dpserver": {
+              "type": "boolean"
+             },
+             "nlp": {
+              "type": "boolean"
+             },
+             "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "extensionservices": {
+            "items": {
+             "properties": {
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              },
+              "whitelistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 250,
+               "type": "array"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "generateSystemPassword": {
+            "default": false,
+            "description": "Describes if the systempassword should be generated or not.",
+            "type": "boolean"
+           },
+           "memory": {
+            "default": 32,
+            "description": "HANA memory size (RAM) in GB",
+            "format": "int64",
+            "maximum": 11520,
+            "minimum": 32,
+            "type": "integer"
+           },
+           "memoryScaleOut": {
+            "description": "HANA memory size (RAM) in GB for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "plugins": {
+            "description": "HANA Plugins list configured for HANA instance",
+            "items": {
+             "properties": {
+              "name": {
+               "description": "plugin version for installation",
+               "type": "string"
+              }
+             }
+            },
+            "type": "array"
+           },
+           "productVersion": {
+            "additionalProperties": false,
+            "description": "HANA Product Version",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "releaseCycle": {
+              "type": "string"
+             },
+             "track": {
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "requestedOperation": {
+            "additionalProperties": false,
+            "properties": {
+             "arguments": {
+              "additionalProperties": false,
+              "description": "List of operation arguments",
+              "properties": {
+               "backup_encryption_passphrase": {
+                "type": "string"
+               },
+               "hdl_access_token": {
+                "type": "string"
+               },
+               "project_name": {
+                "type": "string"
+               },
+               "template_name": {
+                "type": "string"
+               },
+               "template_storage_endpoint": {
+                "type": "string"
+               }
+              },
+              "type": "object"
+             },
+             "name": {
+              "description": "create instance for template recovery",
+              "enum": [
+               "none",
+               "TEMPLATE_RECOVERY"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "slaLevel": {
+            "description": "Availability of the HANA instance",
+            "enum": [
+             "standard",
+             "elevated"
+            ],
+            "type": "string"
+           },
+           "storage": {
+            "description": "Size of the Storage in GB",
+            "format": "int64",
+            "maximum": 57920,
+            "minimum": 120,
+            "type": "integer"
+           },
+           "systempassword": {
+            "default": "",
+            "description": "Password to be set for tenant",
+            "minLength": 8,
+            "type": "string"
+           },
+           "update_strategy": {
+            "description": "preferred behaviour for version upgrades. with_restart: the database will be shut down and started again during the upgrade; without_restart: at some point active write transactions will be cancelled, after that the upgrade is effective without further downtime",
+            "enum": [
+             "with_restart",
+             "without_restart"
+            ]
+           },
+           "vcpu": {
+            "description": "Number of vCPUs used by HANA",
+            "minimum": 2,
+            "type": "integer"
+           },
+           "whitelistIPs": {
+            "items": {
+             "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+             "type": "string"
+            },
+            "maxItems": 250,
+            "type": "array"
+           }
+          },
+          "required": [
+           "edition",
+           "memory"
+          ],
+          "type": "object"
+         },
+         "metadata": {
+          "additionalProperties": true,
+          "properties": {},
+          "propertyNames": {},
+          "type": "object"
+         }
+        },
+        "required": [
+         "data"
+        ],
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "defaultProperties": [
+         "data"
+        ],
+        "properties": {
+         "data": {
+          "additionalProperties": false,
+          "default": {},
+          "defaultProperties": [],
+          "properties": {
+           "additionalWorkers": {
+            "description": "Number of additional workers for scale out systems",
+            "format": "int64",
+            "maximum": 0,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "autoConfig": {
+            "description": "Settings for the hana-auto-config microservice (lifecycle automation)",
+            "properties": {
+             "storage": {
+              "additionalProperties": false,
+              "defaultProperties": [
+               "enabled",
+               "maxValue"
+              ],
+              "description": "Settings for the automatic disk resize",
+              "properties": {
+               "enabled": {
+                "default": false,
+                "description": "Automatic disk resize enablement",
+                "type": "boolean"
+               },
+               "maxValue": {
+                "description": "Maximum size the storage is upsized to in GiB",
+                "format": "int64",
+                "maximum": 57920,
+                "minimum": 120,
+                "type": "integer"
+               }
+              },
+              "required": [
+               "enabled",
+               "maxValue"
+              ],
+              "type": "object"
+             }
+            },
+            "type": "object"
+           },
+           "availabilityZonePlacement": {
+            "additionalProperties": false,
+            "description": "Settings that enable the customer to ensure spatial proximity between their applications and the HANA instance",
+            "properties": {
+             "computeNodesFallbackCrossMultiAZEnabled": {
+              "description": "A flag to determine if the ECN setup will be cross multi-availability zones or not at fallback",
+              "type": "boolean"
+             },
+             "customerInitialReplicaAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the initial replica",
+              "type": "string"
+             },
+             "customerInitialSourceAvailabilityZone": {
+              "description": "This customer mapping zone of the initial source",
+              "type": "string"
+             },
+             "customerPrimaryAvailabilityZone": {
+              "description": "This customer mapping zone of primary instance",
+              "type": "string"
+             },
+             "customerSecondaryAvailabilityZone": {
+              "description": "This customer mapping zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             },
+             "customerSubscriptionId": {
+              "description": "Subscription ID of customer application. The subscription ID will be used to create a mapping of availability zones from customer subscription to HANA Cloud subscription. If not provided, HANA Cloud will use the provided availability zones as-is",
+              "type": "string"
+             },
+             "highAvailabilityCrossMultiAZEnabled": {
+              "description": "A flag to determine if the HA setup will be cross multi-availability zones or not",
+              "type": "boolean"
+             },
+             "initialReplicaAvailabilityZone": {
+              "description": "This zone will be used by the initial replica",
+              "type": "string"
+             },
+             "initialSourceAvailabilityZone": {
+              "description": "This zone will be used by the initial source",
+              "type": "string"
+             },
+             "primaryAvailabilityZone": {
+              "description": "This zone will be used by the primary instance",
+              "type": "string"
+             },
+             "secondaryAvailabilityZone": {
+              "description": "This zone will be used by the secondary instance, if defined in .disasterRecoveryMode",
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "backup": {
+            "additionalProperties": false,
+            "description": "Backup service properties",
+            "properties": {
+             "retentionDays": {
+              "description": "Specifies the retention period for a backup in days",
+              "format": "int32",
+              "maximum": 215,
+              "minimum": 0,
+              "type": "integer"
+             }
+            },
+            "type": "object"
+           },
+           "computeNodes": {
+            "description": "Items of Elastic Compute Nodes (ECNs)",
+            "items": {
+             "additionalProperties": false,
+             "properties": {
+              "memory": {
+               "description": "Size of memory in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "name": {
+               "description": "Name of ECN",
+               "type": "string"
+              },
+              "storage": {
+               "description": "Size of storage in GB",
+               "format": "int64",
+               "type": "integer"
+              },
+              "vcpu": {
+               "description": "Number of vCPUs",
+               "format": "int64",
+               "type": "integer"
+              }
+             },
+             "type": "object"
+            },
+            "type": "array"
+           },
+           "disasterRecoveryMode": {
+            "description": "Disaster Recovery of the HANA instance",
+            "enum": [
+             "no_disaster_recovery",
+             "one_secondary_async"
+            ],
+            "type": "string"
+           },
+           "enabledservices": {
+            "additionalProperties": false,
+            "description": "List of services of the HANA to be enabled",
+            "properties": {
+             "docstore": {
+              "type": "boolean"
+             },
+             "dpserver": {
+              "type": "boolean"
+             },
+             "nlp": {
+              "type": "boolean"
+             },
+             "scriptserver": {
+              "type": "boolean"
+             },
+             "triplestore": {
+              "type": "boolean"
+             }
+            },
+            "type": "object"
+           },
+           "extensionservices": {
+            "items": {
+             "properties": {
+              "enabled": {
+               "type": "boolean"
+              },
+              "name": {
+               "pattern": "^(ConnectivityProxy)$",
+               "type": "string"
+              },
+              "privateLinkAllowlist": {
+               "items": {
+                "maxLength": 40,
+                "type": "string"
+               },
+               "maxItems": 100,
+               "type": "array"
+              },
+              "whitelistIPs": {
+               "items": {
+                "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
+                "type": "string"
+               },
+               "maxItems": 250,
+               "type": "array"
+              }
+             },
+             "required": [
+              "name",
+              "enabled"
+             ],
+             "type": "object"
+            }
+           },
+           "memory": {
+            "description": "HANA memory size (RAM) in GB",
+            "format": "int64",
+            "maximum": 11520,
+            "minimum": 32,
+            "type": "integer"
+           },
+           "plugins": {
+            "description": "HANA Plugins list configured for HANA instance",
+            "items": {
+             "properties": {
+              "name": {
+               "description": "plugin version for installation",
+               "type": "string"
+              }
+             }
+            },
+            "type": "array"
+           },
+           "privateLinkAllowlist": {
+            "items": {
+             "maxLength": 40,
+             "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array"
+           },
+           "productVersion": {
+            "additionalProperties": false,
+            "description": "HANA Product Version",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "releaseCycle": {
+              "type": "string"
+             },
+             "track": {
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "requestedOperation": {
+            "additionalProperties": false,
+            "properties": {
+             "arguments": {
+              "additionalProperties": false,
+              "description": "List of operation arguments",
+              "properties": {
+               "backup_encryption_passphrase": {
+                "type": "string"
+               },
+               "customer_initial_replica_az": {
+                "type": "string"
+               },
+               "customer_initial_source_az": {
+                "type": "string"
+               },
+               "customer_secondary_az": {
+                "type": "string"
+               },
+               "customer_target_az": {
+                "type": "string"
+               },
+               "dummyForFeatureFlags": {},
+               "ha_cross_multi_az_enabled": {
+                "type": "boolean"
+               },
+               "hdl_access_token": {
+                "type": "string"
+               },
+               "initial_replica_az": {
+                "type": "string"
+               },
+               "initial_source_az": {
+                "type": "string"
+               },
+               "labels": {
+                "description": "Template backup labels",
+                "items": {
+                 "type": "string"
+                },
+                "type": "array"
+               },
+               "project_name": {
+                "type": "string"
+               },
+               "secondary_az": {
+                "type": "string"
+               },
+               "source_instance_id": {
+                "type": "string"
+               },
+               "target_az": {
+                "type": "string"
+               },
+               "target_timestamp": {
+                "type": "string"
+               },
+               "template_name": {
+                "type": "string"
+               },
+               "template_storage_endpoint": {
+                "type": "string"
+               }
+              },
+              "type": "object"
+             },
+             "name": {
+              "description": "Update operation",
+              "enum": [
+               "none",
+               "POINT_IN_TIME_RECOVERY",
+               "DISASTER_KEEP_AZ_RECOVERY",
+               "disaster_recovery_takeover",
+               "TEMPLATE_BACKUP",
+               "SYSTEM_COPY",
+               "TEMPLATE_RECOVERY",
+               "synchronous_replication_takeover",
+               "TAKE_SNAPSHOT_FOR_FALLBACK",
+               "FALLBACK_TO_SNAPSHOT",
+               "REMOVE_SNAPSHOT_FOR_FALLBACK"
+              ],
+              "type": "string"
+             }
+            },
+            "type": "object"
+           },
+           "serviceStopped": {
+            "description": "Describes if the system should be running or stopped",
+            "type": "boolean"
+           },
+           "slaLevel": {
+            "description": "Availability of the HANA instance",
+            "enum": [
+             "standard",
+             "elevated"
+            ],
+            "type": "string"
+           },
+           "storage": {
+            "description": "Size of the Storage in GB",
+            "format": "int64",
+            "maximum": 57920,
             "minimum": 120,
             "type": "integer"
            },
@@ -28776,7 +31082,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -28913,7 +31219,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -29158,7 +31464,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -29334,7 +31640,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -30425,7 +32731,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -30562,7 +32868,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -30814,7 +33120,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -30990,7 +33296,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -41243,7 +43549,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -41380,7 +43686,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -41616,7 +43922,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -41792,7 +44098,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -44508,7 +46814,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -44645,7 +46951,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -44890,7 +47196,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -45066,7 +47372,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -46157,7 +48463,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -46294,7 +48600,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            }
           },
@@ -46546,7 +48852,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               }
              },
@@ -46722,7 +49028,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "workerNodes": {
@@ -55597,7 +57903,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -56180,7 +58486,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -56260,7 +58566,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -56858,7 +59164,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -66548,7 +68854,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -67131,7 +69437,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -67211,7 +69517,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -67817,7 +70123,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -69254,24 +71560,8 @@
              "medium",
              "large",
              "xlarge",
-             "2xlarge",
-             "xlarge_high_memory",
-             "2xlarge_high_memory"
+             "2xlarge"
             ]
-           },
-           "dataEncryption": {
-            "description": "Data Encryption Specifications",
-            "properties": {
-             "mode": {
-              "description": "Encryption Key Mode (MANAGED_KEY vs. DEDICATED_KEY)",
-              "enum": [
-               "MANAGED_KEY",
-               "DEDICATED_KEY"
-              ],
-              "type": "string"
-             }
-            },
-            "type": "object"
            },
            "enableBackups": {
             "description": "Describes if IQ backups are enabled or not",
@@ -69830,9 +72120,7 @@
              "medium",
              "large",
              "xlarge",
-             "2xlarge",
-             "xlarge_high_memory",
-             "2xlarge_high_memory"
+             "2xlarge"
             ]
            },
            "serviceStopped": {
@@ -69880,9 +72168,7 @@
              "medium",
              "large",
              "xlarge",
-             "2xlarge",
-             "xlarge_high_memory",
-             "2xlarge_high_memory"
+             "2xlarge"
             ]
            }
           },
@@ -69937,9 +72223,7 @@
              "medium",
              "large",
              "xlarge",
-             "2xlarge",
-             "xlarge_high_memory",
-             "2xlarge_high_memory"
+             "2xlarge"
             ]
            },
            "enableBackups": {
@@ -69979,14 +72263,6 @@
               "name": {
                "pattern": "^(ConnectivityProxy)$",
                "type": "string"
-              },
-              "privateLinkAllowlist": {
-               "items": {
-                "maxLength": 40,
-                "type": "string"
-               },
-               "maxItems": 100,
-               "type": "array"
               }
              },
              "required": [
@@ -70480,14 +72756,6 @@
             "minimum": 1,
             "type": "integer"
            },
-           "privateLinkAllowlist": {
-            "items": {
-             "maxLength": 40,
-             "type": "string"
-            },
-            "maxItems": 100,
-            "type": "array"
-           },
            "provisioned_size_gib": {
             "description": "Size of IQ persistence in GB.",
             "maximum": 92160,
@@ -70501,9 +72769,7 @@
              "medium",
              "large",
              "xlarge",
-             "2xlarge",
-             "xlarge_high_memory",
-             "2xlarge_high_memory"
+             "2xlarge"
             ]
            },
            "requestedOperation": {
@@ -70545,6 +72811,14 @@
             "description": "Describes if the system should be running or stopped",
             "type": "boolean"
            },
+           "storage_service_provider": {
+            "description": "The storage service provider to use.",
+            "type": "string"
+           },
+           "storage_service_tier": {
+            "description": "The storage service tier to use.",
+            "type": "string"
+           },
            "updateStrategy": {
             "description": "Preferred behaviour for iq version upgrade",
             "enum": [
@@ -70572,9 +72846,7 @@
              "medium",
              "large",
              "xlarge",
-             "2xlarge",
-             "xlarge_high_memory",
-             "2xlarge_high_memory"
+             "2xlarge"
             ]
            }
           },
@@ -70673,7 +72945,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -71256,7 +73528,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -71362,7 +73634,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -71968,7 +74240,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -72084,7 +74356,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -72667,7 +74939,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -72747,7 +75019,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -73353,7 +75625,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -85229,7 +87501,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -85680,7 +87952,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -85760,7 +88032,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -86234,7 +88506,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -86324,7 +88596,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -86775,7 +89047,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -86829,7 +89101,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -87303,7 +89575,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -97956,7 +100228,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -98539,7 +100811,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -98619,7 +100891,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -99225,7 +101497,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -102081,7 +104353,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -102664,7 +104936,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -102770,7 +105042,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -103376,7 +105648,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -103492,7 +105764,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -104075,7 +106347,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
@@ -104155,7 +106427,7 @@
                 "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
                 "type": "string"
                },
-               "maxItems": 500,
+               "maxItems": 900,
                "type": "array"
               },
               "credentials": {
@@ -104761,7 +107033,7 @@
              "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\/(30|31|32|[1-2][0-9]|[0-9]))?$",
              "type": "string"
             },
-            "maxItems": 500,
+            "maxItems": 900,
             "type": "array"
            },
            "writer_type": {
