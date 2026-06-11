@@ -308,6 +308,10 @@
      "name": "cf-eu10-005"
     },
     {
+     "region": "eu10",
+     "name": "cf-eu10-006"
+    },
+    {
      "region": "eu11",
      "name": "cf-eu11"
     },
@@ -713,70 +717,6 @@
        }
       }
      }
-    },
-    {
-     "service_instance": {
-      "create": {
-       "parameters": {
-        "schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "properties": {
-         "instance_name": {
-          "description": "The name for the requested organization",
-          "type": "string"
-         },
-         "quota_update": {
-          "description": "Update the organization quota (valid for Custom plan only).",
-          "type": "integer"
-         },
-         "users": {
-          "description": "The organization managers",
-          "type": "array",
-          "items": {
-           "id": {
-            "description": "The user's ID",
-            "type": "string"
-           },
-           "email": {
-            "description": "The user's email",
-            "type": "string"
-           }
-          }
-         }
-        }
-       }
-      },
-      "update": {
-       "parameters": {
-        "schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "properties": {
-         "quota_update": {
-          "description": "update the organization quota.",
-          "type": "integer"
-         },
-         "status": {
-          "description": "The organization status, possible values are [active] or [suspended]. Default value is active",
-          "type": "string"
-         },
-         "users": {
-          "description": "The organization managers",
-          "type": "array",
-          "items": {
-           "id": {
-            "description": "The user's ID",
-            "type": "string"
-           },
-           "email": {
-            "description": "The user's email",
-            "type": "string"
-           }
-          }
-         }
-        }
-       }
-      }
-     }
     }
    ]
   },
@@ -870,6 +810,10 @@
     {
      "region": "eu10",
      "name": "cf-eu10-005"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10-006"
     },
     {
      "region": "eu11",

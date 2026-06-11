@@ -519,35 +519,8 @@
           "type": "string",
           "pattern": "^.{1,60}$"
          },
-         "enableTenantDeletion": {
-          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-          "type": "boolean",
-          "default": false
-         },
-         "writePermissions": {
-          "description": "Array of entities the service instance has write permission for",
-          "type": "array",
-          "items": {
-           "type": "object",
-           "properties": {
-            "entityType": {
-             "type": "string"
-            }
-           }
-          }
-         },
-         "logSys": {
-          "description": "The logical system.",
-          "type": "string",
-          "pattern": "^.{1,10}$"
-         },
-         "globalTenantId": {
-          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-          "type": "string",
-          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-         },
          "application": {
-          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\", \"intelligentAgriculture\".",
           "type": "string",
           "enum": [
            "ariba",
@@ -564,7 +537,9 @@
            "sfsf",
            "ci",
            "omf",
-           "cdp"
+           "cdp",
+           "fsm",
+           "intelligentAgriculture"
           ]
          }
         }
@@ -580,35 +555,8 @@
           "type": "string",
           "pattern": "^.{1,60}$"
          },
-         "enableTenantDeletion": {
-          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
-          "type": "boolean",
-          "default": false
-         },
-         "writePermissions": {
-          "description": "Array of entities the service instance has write permission for",
-          "type": "array",
-          "items": {
-           "type": "object",
-           "properties": {
-            "entityType": {
-             "type": "string"
-            }
-           }
-          }
-         },
-         "logSys": {
-          "description": "The logical system.",
-          "type": "string",
-          "pattern": "^.{1,10}$"
-         },
-         "globalTenantId": {
-          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
-          "type": "string",
-          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
-         },
          "application": {
-          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\", \"intelligentAgriculture\".",
           "type": "string",
           "enum": [
            "ariba",
@@ -625,7 +573,9 @@
            "sfsf",
            "ci",
            "omf",
-           "cdp"
+           "cdp",
+           "fsm",
+           "intelligentAgriculture"
           ]
          }
         }
@@ -645,8 +595,35 @@
           "type": "string",
           "pattern": "^.{1,60}$"
          },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         },
          "application": {
-          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\", \"intelligentAgriculture\".",
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
           "type": "string",
           "enum": [
            "ariba",
@@ -663,9 +640,7 @@
            "sfsf",
            "ci",
            "omf",
-           "cdp",
-           "fsm",
-           "intelligentAgriculture"
+           "cdp"
           ]
          }
         }
@@ -681,8 +656,35 @@
           "type": "string",
           "pattern": "^.{1,60}$"
          },
+         "enableTenantDeletion": {
+          "description": "Boolean flag to be set to true for confirming deletion of last service instance for the tenant.",
+          "type": "boolean",
+          "default": false
+         },
+         "writePermissions": {
+          "description": "Array of entities the service instance has write permission for",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "entityType": {
+             "type": "string"
+            }
+           }
+          }
+         },
+         "logSys": {
+          "description": "The logical system.",
+          "type": "string",
+          "pattern": "^.{1,10}$"
+         },
+         "globalTenantId": {
+          "description": "A name for the last significant writer (client) following the Globally Unique Tenant ID (GTID) specification.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9-._~]{1,40}$"
+         },
          "application": {
-          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\", \"fsm\", \"intelligentAgriculture\".",
+          "description": "Name of the application you are connecting to MDI. Allowed values are: \"ariba\", \"c4c\", \"cdc\", \"commerceCloud\", \"concur\", \"fieldglass\", \"hrc\", \"mdg\", \"resource management\", \"s4\", \"cpq\", \"sfsf\", \"ci\", \"omf\", \"cdp\".",
           "type": "string",
           "enum": [
            "ariba",
@@ -699,9 +701,7 @@
            "sfsf",
            "ci",
            "omf",
-           "cdp",
-           "fsm",
-           "intelligentAgriculture"
+           "cdp"
           ]
          }
         }
