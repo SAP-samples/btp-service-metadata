@@ -388,6 +388,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -399,6 +401,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -433,6 +448,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -1145,6 +1173,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -1156,6 +1186,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -1190,6 +1233,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -1715,6 +1771,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -1726,6 +1784,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -1760,6 +1831,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -2450,6 +2534,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -2461,6 +2547,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -2495,6 +2594,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -4600,6 +4712,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -4611,6 +4725,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -4645,6 +4772,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -5290,6 +5430,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -5301,6 +5443,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -5335,6 +5490,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -5798,6 +5966,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -5809,6 +5979,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -5843,6 +6026,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -6466,6 +6662,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -6477,6 +6675,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -6511,6 +6722,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -8468,10 +8692,25 @@
             "machineType",
             "autoScalerMin",
             "autoScalerMax",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
            "properties": {
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
+            },
             "autoScalerMax": {
              "default": 10,
              "description": "Specifies the maximum number of virtual machines to create.",
@@ -8498,6 +8737,19 @@
              "required": [
               "enabled"
              ],
+             "type": "object"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
              "type": "object"
             },
             "machineType": {
@@ -9042,10 +9294,25 @@
             "machineType",
             "autoScalerMin",
             "autoScalerMax",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
            "properties": {
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
+            },
             "autoScalerMax": {
              "default": 10,
              "description": "Specifies the maximum number of virtual machines to create.",
@@ -9072,6 +9339,19 @@
              "required": [
               "enabled"
              ],
+             "type": "object"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
              "type": "object"
             },
             "machineType": {
@@ -9434,10 +9714,25 @@
             "machineType",
             "autoScalerMin",
             "autoScalerMax",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
            "properties": {
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
+            },
             "autoScalerMax": {
              "default": 10,
              "description": "Specifies the maximum number of virtual machines to create.",
@@ -9464,6 +9759,19 @@
              "required": [
               "enabled"
              ],
+             "type": "object"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
              "type": "object"
             },
             "machineType": {
@@ -9986,10 +10294,25 @@
             "machineType",
             "autoScalerMin",
             "autoScalerMax",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
            "properties": {
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
+            },
             "autoScalerMax": {
              "default": 10,
              "description": "Specifies the maximum number of virtual machines to create.",
@@ -10016,6 +10339,19 @@
              "required": [
               "enabled"
              ],
+             "type": "object"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
              "type": "object"
             },
             "machineType": {
@@ -11736,6 +12072,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -11747,6 +12085,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -11781,6 +12132,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -12493,6 +12857,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -12504,6 +12870,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -12538,6 +12917,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -13063,6 +13455,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -13074,6 +13468,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -13108,6 +13515,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -13798,6 +14218,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -13809,6 +14231,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -13843,6 +14278,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -15556,6 +16004,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -15567,6 +16017,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -15601,6 +16064,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -16246,6 +16722,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -16257,6 +16735,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -16291,6 +16782,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -16754,6 +17258,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -16765,6 +17271,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -16799,6 +17318,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -17422,6 +17954,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -17433,6 +17967,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -17467,6 +18014,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -19052,6 +19612,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -19063,6 +19625,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -19097,6 +19672,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -19708,6 +20296,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -19719,6 +20309,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -19753,6 +20356,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -25726,6 +26342,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -25737,6 +26355,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -25771,6 +26402,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -26382,6 +27026,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -26393,6 +27039,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -26427,6 +27086,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -28172,6 +28844,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -28183,6 +28857,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -28217,6 +28904,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -28770,6 +29470,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -28781,6 +29483,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -28815,6 +29530,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -29208,6 +29936,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -29219,6 +29949,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -29253,6 +29996,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -29806,6 +30562,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -29817,6 +30575,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -29851,6 +30622,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -30244,6 +31028,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -30255,6 +31041,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -30289,6 +31088,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -30842,6 +31654,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -30853,6 +31667,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -30887,6 +31714,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -31280,6 +32120,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -31291,6 +32133,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -31325,6 +32180,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -31878,6 +32746,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -31889,6 +32759,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -31923,6 +32806,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -32316,6 +33212,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -32327,6 +33225,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -32361,6 +33272,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -32914,6 +33838,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -32925,6 +33851,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -32959,6 +33898,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -33352,6 +34304,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -33363,6 +34317,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -33397,6 +34364,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -33950,6 +34930,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -33961,6 +34943,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -33995,6 +34990,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -34388,6 +35396,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -34399,6 +35409,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -34433,6 +35456,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
@@ -34986,6 +36022,8 @@
             "autoScalerMin",
             "autoScalerMax",
             "additionalVolumeSizeGi",
+            "labels",
+            "annotations",
             "taints",
             "gvisor"
            ],
@@ -34997,6 +36035,19 @@
              "minimum": 0,
              "title": "Additional Volume Size (Gi)",
              "type": "integer"
+            },
+            "annotations": {
+             "_controlType": "keyvalue",
+             "description": "Use annotations to attach arbitrary non-identifying metadata to objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "autoScalerMax": {
              "default": 20,
@@ -35031,6 +36082,19 @@
              "description": "Specifies whether high availability (HA) zones are supported. This setting is permanent and cannot be changed later. If HA is disabled, all resources are placed in a single, randomly selected zone. Disabled HA allows setting autoScalerMin to 0 and autoScalerMax to 1, which helps reduce costs. It is not recommended for production environments. When enabled, resources are distributed across three zones to enhance fault tolerance. Enabled HA requires setting autoScalerMin to the minimal value 3.",
              "title": "HA zones",
              "type": "boolean"
+            },
+            "labels": {
+             "_controlType": "keyvalue",
+             "description": "Use labels to identify, filter, and organize objects.",
+             "patternProperties": {
+              ".*": {
+               "type": "string"
+              }
+             },
+             "propertyNames": {
+              "pattern": "^.+$"
+             },
+             "type": "object"
             },
             "machineType": {
              "_enumDisplayName": {
