@@ -21,7 +21,7 @@ jobs:
           ssh-key: ${{ secrets.DEPLOY_SSH_KEY }}
 
       - name: "Setup Node.js"
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 22
       - name: "Prepare collection of data from metadata repository"
