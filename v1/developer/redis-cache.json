@@ -146,12 +146,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp10",
@@ -474,12 +482,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp01",
@@ -641,14 +657,15 @@
           "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
           "type": "string",
           "enum": [
-           "6.0"
+           "6.0",
+           "7.0"
           ],
           "default": "6.0"
          },
          "public_access": {
-          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to false.",
+          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to true.",
           "type": "boolean",
-          "default": false
+          "default": true
          },
          "allow_access": {
           "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP except CF Domain of instance's landscape.",
@@ -1471,7 +1488,8 @@
           "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
           "type": "string",
           "enum": [
-           "6.0"
+           "6.0",
+           "7.0"
           ],
           "default": "6.0"
          }
@@ -1658,12 +1676,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp10",
@@ -1859,12 +1885,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp01",
@@ -2024,14 +2058,15 @@
           "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
           "type": "string",
           "enum": [
-           "6.0"
+           "6.0",
+           "7.0"
           ],
           "default": "6.0"
          },
          "public_access": {
-          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to false.",
+          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to true.",
           "type": "boolean",
-          "default": false
+          "default": true
          },
          "allow_access": {
           "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP except CF Domain of instance's landscape.",
@@ -2792,7 +2827,8 @@
           "description": "The major version number of the cache engine to be used for the clusters. If not provided, the major version is defaulted to 6.0",
           "type": "string",
           "enum": [
-           "6.0"
+           "6.0",
+           "7.0"
           ],
           "default": "6.0"
          }

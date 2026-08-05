@@ -13,6 +13,32 @@
  ],
  "servicePlans": [
   {
+   "name": "non-productive",
+   "displayName": "non-productive",
+   "category": "APPLICATION",
+   "description": "Non-productive standard-user plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "schemas": null
+  },
+  {
    "name": "standard",
    "displayName": "standard",
    "category": "APPLICATION",

@@ -1,9 +1,21 @@
 {
  "name": "it-rt",
- "displayName": "SAP Process Integration Runtime",
+ "displayName": "Cloud Integration Automation",
  "description": "Provides access to the integration flow endpoints and public APIs of the Cloud Integration capability of Integration Suite. You need this service instance only if you want to execute the integration flows or access Cloud Integration resources via APIs.",
  "icon": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/v5uV3ilFJzWpwPxBO1OZ06s5uBTY-JDK3yfeiRldCbDMHGSbed-5xF7DUN79BPei.svg",
  "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=Cloud%20Integration%20Automation",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=Cloud%20Integration%20Automation",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  },
   {
    "value": "https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/19af5e205fe14af6a4f8a9fd80d4dc92.html",
    "classification": "Documentation",
@@ -1237,6 +1249,228 @@
     }
    ],
    "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_standard_config_view": true,
+        "additionalProperties": false,
+        "_controlsOrder": [
+         "roles",
+         "grant-types",
+         "redirect-uris",
+         "token-validity"
+        ],
+        "properties": {
+         "roles": {
+          "description": "Roles related to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string"
+          },
+          "default": [
+           "ESBMessaging.send",
+           "API.invoke"
+          ],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "grant-types": {
+          "description": "Grant-types related to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "authorization_code",
+            "client_credentials",
+            "password",
+            "refresh_token",
+            "urn:ietf:params:oauth:grant-type:saml2-bearer",
+            "urn:ietf:params:oauth:grant-type:jwt-bearer"
+           ],
+           "_enumDisplayName": {
+            "authorization_code": "Authorization Code",
+            "client_credentials": "Client Credentials",
+            "password": "Password",
+            "refresh_token": "Refresh Token",
+            "urn:ietf:params:oauth:grant-type:saml2-bearer": "SAML2 Bearer",
+            "urn:ietf:params:oauth:grant-type:jwt-bearer": "JWT Bearer"
+           }
+          },
+          "default": [
+           "client_credentials"
+          ],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "redirect-uris": {
+          "description": "Redirect-Uris for authorization code grant-type",
+          "type": "array",
+          "items": {
+           "type": "string"
+          },
+          "default": [],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "token-validity": {
+          "title": "Access Token Validity (in seconds)",
+          "type": "integer",
+          "default": 3600,
+          "minimum": 3600,
+          "maximum": 86400,
+          "description": "Defines the validity of the access token"
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_standard_config_view": true,
+        "additionalProperties": false,
+        "_load_current_config": true,
+        "_controlsOrder": [
+         "roles",
+         "grant-types",
+         "redirect-uris",
+         "token-validity"
+        ],
+        "properties": {
+         "roles": {
+          "description": "Roles related to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string"
+          },
+          "default": [
+           "ESBMessaging.send",
+           "API.invoke"
+          ],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "grant-types": {
+          "description": "Grant-types related to the service instance",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "authorization_code",
+            "client_credentials",
+            "password",
+            "refresh_token",
+            "urn:ietf:params:oauth:grant-type:saml2-bearer",
+            "urn:ietf:params:oauth:grant-type:jwt-bearer"
+           ],
+           "_enumDisplayName": {
+            "authorization_code": "Authorization Code",
+            "client_credentials": "Client Credentials",
+            "password": "Password",
+            "refresh_token": "Refresh Token",
+            "urn:ietf:params:oauth:grant-type:saml2-bearer": "SAML2 Bearer",
+            "urn:ietf:params:oauth:grant-type:jwt-bearer": "JWT Bearer"
+           }
+          },
+          "default": [
+           "client_credentials"
+          ],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "redirect-uris": {
+          "description": "Redirect-Uris for authorization code grant-type",
+          "type": "array",
+          "items": {
+           "type": "string"
+          },
+          "default": [],
+          "minItems": 0,
+          "uniqueItems": true
+         },
+         "token-validity": {
+          "title": "Access Token Validity (in seconds)",
+          "type": "integer",
+          "default": 3600,
+          "minimum": 3600,
+          "maximum": 86400,
+          "description": "Defines the validity of the access token"
+         }
+        }
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "_show_standard_config_view": true,
+        "additionalProperties": false,
+        "_controlsOrder": [
+         "key-type",
+         "X.509",
+         "certificate-pinning",
+         "validity",
+         "key-length"
+        ],
+        "properties": {
+         "key-type": {
+          "title": "Key Type",
+          "type": "string",
+          "description": "The key type determines the type of the credentials provided in the service key.\nClientId/Secret: A service key that contains a ClientId/Secret.\nCertificate: A service key which contains a X509 certificate (requires grant-type 'Client Credentials').\nExternal Certificate: A service key that is using a externally provided X509 certificate (requires grant-type 'Client Credentials')",
+          "default": "client_id_secret",
+          "enum": [
+           "client_id_secret",
+           "certificate",
+           "certificate_external"
+          ],
+          "_enumDisplayName": {
+           "client_id_secret": "ClientId/Secret",
+           "certificate": "Certificate",
+           "certificate_external": "External Certificate"
+          }
+         },
+         "X.509": {
+          "default": "",
+          "title": "External Certificate (only applicable for Key Type 'External Certificate')",
+          "description": "Only applicable for Key Type 'External Certificate'. Enter your PEM-encoded X.509 certificate (e.g -----BEGIN CERTIFICATE-----MIIHyDCCBrCgAwIB[...]CAq8Tn7kSFDmVnrXe6v8hcQ==-----END CERTIFICATE-----)",
+          "type": "string"
+         },
+         "certificate-pinning": {
+          "default": true,
+          "title": "Pin Certificate (only applicable for Key Type 'External Certificate')",
+          "description": "Only applicable for Key Type 'External Certificate'.\nIf this setting is enabled, the incoming client certificate used during authentication must exactly match the stored certificate in the service key. If the client certificate is renewed, a new service key with the new certificate has to be created.\n\nIf this setting is disabled, only the subjectDN and issuerDN of the incoming client certificate will be compared. This allows to accept renewed client certificates without changing the service key. Note that once a newer client certificate is used, the previous certificate will not be accepted anymore for authentication. See the documentation for more details.",
+          "type": "boolean"
+         },
+         "validity": {
+          "title": "Validity in days (only applicable for Key Type 'Certificate')",
+          "type": "integer",
+          "default": 365,
+          "minimum": 1,
+          "maximum": 365,
+          "description": "Only applicable for Key Type 'Certificate'. The validity of the issued certificate in days"
+         },
+         "key-length": {
+          "title": "Key Size (only applicable for Key Type 'Certificate')",
+          "type": "integer",
+          "description": "Only applicable for Key Type 'Certificate'",
+          "default": 2048,
+          "enum": [
+           1024,
+           2048,
+           3072,
+           4096
+          ]
+         }
+        }
+       }
+      }
+     }
+    },
     {
      "service_instance": {
       "create": {

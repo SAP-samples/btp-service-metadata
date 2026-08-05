@@ -165,6 +165,7 @@
            "ca-central-1",
            "eu-central-1",
            "eu-north-1",
+           "eu-south-1",
            "eu-west-1",
            "eu-west-2",
            "eu-west-3",
@@ -419,12 +420,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp01",
@@ -621,9 +630,9 @@
           "default": "15"
          },
          "public_access": {
-          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to false.",
+          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to true.",
           "type": "boolean",
-          "default": false
+          "default": true
          },
          "allow_access": {
           "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP or CF Domain.",
@@ -872,6 +881,7 @@
            "ca-central-1",
            "eu-central-1",
            "eu-north-1",
+           "eu-south-1",
            "eu-west-1",
            "eu-west-2",
            "eu-west-3",
@@ -1216,6 +1226,7 @@
            "ca-central-1",
            "eu-central-1",
            "eu-north-1",
+           "eu-south-1",
            "eu-west-1",
            "eu-west-2",
            "eu-west-3",
@@ -1796,6 +1807,7 @@
            "asia-northeast1",
            "asia-northeast2",
            "asia-south1",
+           "asia-south2",
            "asia-southeast1",
            "australia-southeast1",
            "me-central2",
@@ -2088,6 +2100,386 @@
         "_show_form_view": true,
         "additionalProperties": true,
         "properties": {
+         "enable_cmk": {
+          "description": "Enables CMK features on a particular PostgreSQL Instance",
+          "type": "boolean",
+          "default": false
+         },
+         "show_cert_url": {
+          "description": "Adds server and client certificate urls in the VCAP credentials",
+          "type": "boolean",
+          "default": false
+         }
+        }
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-premium-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "allow_access": {
+          "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP or CF Domain.",
+          "type": "string"
+         },
+         "audit_log_level": {
+          "description": "Defines which classes of statements will be logged by session audit logging",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "ALL",
+            "DDL",
+            "FUNCTION",
+            "MISC",
+            "NONE",
+            "READ",
+            "ROLE",
+            "WRITE"
+           ]
+          },
+          "minItems": 1,
+          "default": [
+           "ROLE",
+           "DDL"
+          ],
+          "uniqueItems": true
+         },
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 16",
+          "type": "string",
+          "enum": [
+           "13",
+           "14",
+           "15",
+           "16",
+           "17"
+          ],
+          "default": "16"
+         },
+         "locale": {
+          "description": "Indicates the locale for the instance (TODO)",
+          "type": "string",
+          "default": "en_US"
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Duration of the time block in hours.",
+            "type": "integer",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 23
+           }
+          }
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64,
+           128,
+           256,
+           384
+          ],
+          "default": 8
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+          "type": "boolean",
+          "default": true
+         },
+         "region": {
+          "description": "The infrastructure region where the instance will be deployed.",
+          "type": "string",
+          "enum": [
+           "ap-northeast-1",
+           "ap-northeast-2",
+           "ap-northeast-3",
+           "ap-south-1",
+           "ap-southeast-1",
+           "ap-southeast-2",
+           "ca-central-1",
+           "eu-central-1",
+           "eu-north-1",
+           "eu-south-1",
+           "eu-west-1",
+           "eu-west-2",
+           "eu-west-3",
+           "sa-east-1",
+           "us-east-1",
+           "us-east-2",
+           "us-west-1",
+           "us-west-2"
+          ]
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance",
+          "type": "integer",
+          "default": 20
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem",
+              "wal_level",
+              "max_wal_senders",
+              "max_replication_slots",
+              "max_logical_replication_workers"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           },
+           "if": {
+            "properties": {
+             "name": {
+              "const": "wal_level"
+             }
+            }
+           },
+           "then": {
+            "properties": {
+             "value": {
+              "enum": [
+               "logical",
+               "replica"
+              ],
+              "description": "WAL level: logical enables logical replication, replica is sufficient for streaming replication"
+             }
+            }
+           }
+          },
+          "uniqueItems": true
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "default": 14,
+          "minimum": 1,
+          "maximum": 35
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-premium-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "audit_log_level": {
+          "description": "Defines which classes of statements will be logged by session audit logging",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "ALL",
+            "DDL",
+            "FUNCTION",
+            "MISC",
+            "NONE",
+            "READ",
+            "ROLE",
+            "WRITE"
+           ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
+          "type": "integer",
+          "enum": [
+           8,
+           16,
+           32,
+           64,
+           128,
+           256,
+           384
+          ]
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
+          "type": "integer"
+         },
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "11",
+           "12",
+           "13",
+           "14",
+           "15",
+           "16",
+           "17"
+          ]
+         },
+         "allow_access": {
+          "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. It will overide the access list provided during previous create/update operation",
+          "type": "string"
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
+          "type": "boolean"
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Duration of the time block in hours.",
+            "type": "integer",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 23
+           }
+          }
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem",
+              "wal_level",
+              "max_wal_senders",
+              "max_replication_slots",
+              "max_logical_replication_workers"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           },
+           "if": {
+            "properties": {
+             "name": {
+              "const": "wal_level"
+             }
+            }
+           },
+           "then": {
+            "properties": {
+             "value": {
+              "enum": [
+               "logical",
+               "replica"
+              ],
+              "description": "WAL level: logical enables logical replication, replica is sufficient for streaming replication"
+             }
+            }
+           }
+          },
+          "uniqueItems": true
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 35
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-premium-create-binding.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
          "enable_session_replication": {
           "description": "Enables session replication for database migrations",
           "type": "boolean",
@@ -2129,6 +2521,7 @@
            "asia-northeast1",
            "asia-northeast2",
            "asia-south1",
+           "asia-south2",
            "asia-southeast1",
            "australia-southeast1",
            "me-central2",
@@ -2990,6 +3383,14 @@
    "deprecationDate": null,
    "dataCenters": [
     {
+     "region": "ae01",
+     "name": "cf-ae01"
+    },
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
      "region": "ap10",
      "name": "cf-ap10"
     },
@@ -3042,6 +3443,14 @@
      "name": "cf-ch20"
     },
     {
+     "region": "eu01",
+     "name": "cf-eu01"
+    },
+    {
+     "region": "eu02",
+     "name": "cf-eu02"
+    },
+    {
      "region": "eu10",
      "name": "cf-eu10"
     },
@@ -3070,12 +3479,24 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
+    },
+    {
+     "region": "jp01",
+     "name": "cf-jp01"
     },
     {
      "region": "jp10",
@@ -3104,6 +3525,14 @@
     {
      "region": "uk20",
      "name": "cf-uk20"
+    },
+    {
+     "region": "us01",
+     "name": "cf-us01"
+    },
+    {
+     "region": "us02",
+     "name": "cf-us02"
     },
     {
      "region": "us10",
@@ -3135,6 +3564,51 @@
     }
    ],
    "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/reference-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": false,
+        "additionalProperties": true,
+        "properties": {
+         "source_instance_id": {
+          "description": "GUID of the source instance. A reference instance would be created for a source instance",
+          "type": "string"
+         },
+         "tenant_instance_id": {
+          "description": "GUID of the tenant instance. A reference instance would be created for a tenant instance",
+          "type": "string"
+         }
+        },
+        "oneOf": [
+         {
+          "required": [
+           "source_instance_id"
+          ],
+          "not": {
+           "required": [
+            "tenant_instance_id"
+           ]
+          }
+         },
+         {
+          "required": [
+           "tenant_instance_id"
+          ],
+          "not": {
+           "required": [
+            "source_instance_id"
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
     {
      "service_instance": {
       "create": {
@@ -3271,12 +3745,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp01",
@@ -3469,9 +3951,9 @@
           "default": "15"
          },
          "public_access": {
-          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to false.",
+          "description": "Indicates whether the instance is publicly available. If not provided, it is defaulted to true.",
           "type": "boolean",
-          "default": false
+          "default": true
          },
          "allow_access": {
           "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP or CF Domain.",
@@ -3712,6 +4194,7 @@
            "ca-central-1",
            "eu-central-1",
            "eu-north-1",
+           "eu-south-1",
            "eu-west-1",
            "eu-west-2",
            "eu-west-3",
@@ -4046,6 +4529,7 @@
            "ca-central-1",
            "eu-central-1",
            "eu-north-1",
+           "eu-south-1",
            "eu-west-1",
            "eu-west-2",
            "eu-west-3",
@@ -4591,6 +5075,7 @@
            "asia-northeast1",
            "asia-northeast2",
            "asia-south1",
+           "asia-south2",
            "asia-southeast1",
            "australia-southeast1",
            "me-central2",
@@ -4831,6 +5316,376 @@
         "_show_form_view": true,
         "additionalProperties": true,
         "properties": {
+         "enable_cmk": {
+          "description": "Enables CMK features on a particular PostgreSQL Instance",
+          "type": "boolean",
+          "default": false
+         },
+         "show_cert_url": {
+          "description": "Adds server and client certificate urls in the VCAP credentials",
+          "type": "boolean",
+          "default": false
+         }
+        }
+       }
+      }
+     },
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-standard-create.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "audit_log_level": {
+          "description": "Defines which classes of statements will be logged by session audit logging",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "ALL",
+            "DDL",
+            "FUNCTION",
+            "MISC",
+            "NONE",
+            "READ",
+            "ROLE",
+            "WRITE"
+           ]
+          },
+          "minItems": 1,
+          "default": [
+           "ROLE",
+           "DDL"
+          ],
+          "uniqueItems": true
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ],
+          "default": 2
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance",
+          "type": "integer",
+          "default": 20
+         },
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the major version is defaulted to 16",
+          "type": "string",
+          "enum": [
+           "13",
+           "14",
+           "15",
+           "16",
+           "17"
+          ],
+          "default": "16"
+         },
+         "locale": {
+          "description": "Indicates the locale for the instance (TODO)",
+          "type": "string",
+          "default": "en_US"
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, it is defaulted to true. For a multi-AZ instance, twice the number of storage SKU units are deducted from available entitlements",
+          "type": "boolean",
+          "default": true
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Duration of the time block in hours.",
+            "type": "integer",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 23
+           }
+          }
+         },
+         "region": {
+          "description": "The infrastructure region where the instance will be deployed.",
+          "type": "string",
+          "enum": [
+           "ap-northeast-1",
+           "ap-northeast-2",
+           "ap-northeast-3",
+           "ap-south-1",
+           "ap-southeast-1",
+           "ap-southeast-2",
+           "ca-central-1",
+           "eu-central-1",
+           "eu-north-1",
+           "eu-south-1",
+           "eu-west-1",
+           "eu-west-2",
+           "eu-west-3",
+           "sa-east-1",
+           "us-east-1",
+           "us-east-2",
+           "us-west-1",
+           "us-west-2"
+          ]
+         },
+         "allow_access": {
+          "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. Default behaviour will be to block all access to the instance from any public IP or CF Domain.",
+          "type": "string"
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem",
+              "wal_level",
+              "max_wal_senders",
+              "max_replication_slots",
+              "max_logical_replication_workers"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           },
+           "if": {
+            "properties": {
+             "name": {
+              "const": "wal_level"
+             }
+            }
+           },
+           "then": {
+            "properties": {
+             "value": {
+              "enum": [
+               "logical",
+               "replica"
+              ],
+              "description": "WAL level: logical enables logical replication, replica is sufficient for streaming replication"
+             }
+            }
+           }
+          },
+          "uniqueItems": true
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "default": 14,
+          "minimum": 1,
+          "maximum": 35
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-standard-update.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
+         "audit_log_level": {
+          "description": "Defines which classes of statements will be logged by session audit logging",
+          "type": "array",
+          "items": {
+           "type": "string",
+           "enum": [
+            "ALL",
+            "DDL",
+            "FUNCTION",
+            "MISC",
+            "NONE",
+            "READ",
+            "ROLE",
+            "WRITE"
+           ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+         },
+         "memory": {
+          "description": "Defines amount of memory (in GB) to be used for the instance. The number of CPU cores is also derived from the value based on the standard plan's semantics. Note that memory cannot be downscaled",
+          "type": "integer",
+          "enum": [
+           2,
+           4
+          ]
+         },
+         "storage": {
+          "description": "Amount of storage in GB to be allocated to the instance. Note that storage cannot be downscaled.",
+          "type": "integer"
+         },
+         "engine_version": {
+          "description": "The major version of the PostgreSQL database to use. If not provided, the existing engine version is not changed.",
+          "type": "string",
+          "enum": [
+           "11",
+           "12",
+           "13",
+           "14",
+           "15",
+           "16",
+           "17"
+          ]
+         },
+         "multi_az": {
+          "description": "Indicates whether the instance is a multi-AZ deployment. If not provided, the existing configuration is not changed.",
+          "type": "boolean"
+         },
+         "maintenance_window": {
+          "description": "Indicates the preferred maintenance window for the PostgreSQL database instance. The 30-minute maintenance window is selected at random from the specified block of time.",
+          "type": "object",
+          "properties": {
+           "day_of_week": {
+            "description": "Day of the week when the PostgreSQL database instance can be patched.",
+            "type": "string",
+            "enum": [
+             "Monday",
+             "Tuesday",
+             "Wednesday",
+             "Thursday",
+             "Friday",
+             "Saturday",
+             "Sunday"
+            ],
+            "default": "Sunday"
+           },
+           "start_hour_utc": {
+            "description": "Start hour of the time block (in UTC).",
+            "type": "integer",
+            "default": 4,
+            "minimum": 0,
+            "maximum": 23
+           },
+           "duration": {
+            "description": "Duration of the time block in hours.",
+            "type": "integer",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 23
+           }
+          }
+         },
+         "allow_access": {
+          "description": "Comma separated list of IPs and CF landscape domains from which connectivity to the instance can be established. It will overide the access list provided during previous create/update operation",
+          "type": "string"
+         },
+         "db_parameters": {
+          "description": "Database system configurations",
+          "type": "array",
+          "items": {
+           "type": "object",
+           "properties": {
+            "name": {
+             "description": "Name of the system configuration",
+             "enum": [
+              "max_wal_size",
+              "checkpoint_timeout",
+              "autovacuum_max_workers",
+              "autovacuum_vacuum_scale_factor",
+              "max_locks_per_transaction",
+              "idle_in_transaction_session_timeout",
+              "work_mem",
+              "maintenance_work_mem",
+              "wal_level",
+              "max_wal_senders",
+              "max_replication_slots",
+              "max_logical_replication_workers"
+             ],
+             "type": "string"
+            },
+            "value": {
+             "description": "Value of the system configuration",
+             "type": "string"
+            }
+           },
+           "if": {
+            "properties": {
+             "name": {
+              "const": "wal_level"
+             }
+            }
+           },
+           "then": {
+            "properties": {
+             "value": {
+              "enum": [
+               "logical",
+               "replica"
+              ],
+              "description": "WAL level: logical enables logical replication, replica is sufficient for streaming replication"
+             }
+            }
+           }
+          },
+          "uniqueItems": true
+         },
+         "backup_retention_period": {
+          "description": "Defines backup retention period for the PostgreSQL database instance",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 35
+         }
+        },
+        "_load_current_config": true
+       }
+      }
+     }
+    },
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$id": "http://example.com/schemas/postgres-standard-create-binding.json",
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "additionalProperties": true,
+        "properties": {
          "enable_session_replication": {
           "description": "Enables session replication for database migrations",
           "type": "boolean",
@@ -4872,6 +5727,7 @@
            "asia-northeast1",
            "asia-northeast2",
            "asia-south1",
+           "asia-south2",
            "asia-southeast1",
            "australia-southeast1",
            "me-central2",
@@ -5696,12 +6552,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp01",
@@ -5882,12 +6746,20 @@
      "name": "cf-eu31"
     },
     {
+     "region": "eu32",
+     "name": "cf-eu32"
+    },
+    {
      "region": "il30",
      "name": "cf-il30"
     },
     {
      "region": "in30",
      "name": "cf-in30"
+    },
+    {
+     "region": "in31",
+     "name": "cf-in31"
     },
     {
      "region": "jp01",
@@ -6075,6 +6947,7 @@
            "ca-central-1",
            "eu-central-1",
            "eu-north-1",
+           "eu-south-1",
            "eu-west-1",
            "eu-west-2",
            "eu-west-3",
