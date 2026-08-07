@@ -316,14 +316,14 @@
  },
  {
   "technicalId": "auditlog",
-  "displayName": "Audit Log Service",
+  "displayName": "SAP Audit Log service",
   "description": "Allow users to ingest compliance audit data from SAP BTP services and applications and store it for a default retention time of 90 days (with no additional costs applied). The ability to retrieve and download this data within this period is part of Auditlog Management Service. The service serves to support audit activities by prove wrongdoing and identifying malicious activities and provision of forensic evidence that can be used at Court. The scope of the service are secure and configuration change information records, data privacy specific logs, logs motivated by Multiple Regulations. The service is following each SAP Product standards and GDPR Compliance regulations.",
   "fileName": "auditlog.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "auditlog-api",
-  "displayName": "SAP Audit Log service",
+  "displayName": "[DEPRECATED] Audit Log Retrieval",
   "description": "[DEPRECATED] Audit Log Retrieval",
   "fileName": "auditlog-api.json",
   "category": "SERVICE"
@@ -680,14 +680,14 @@
  },
  {
   "technicalId": "cicd-app",
-  "displayName": "SAP Continuous Integration and Delivery",
+  "displayName": "Continuous Integration & Delivery",
   "description": "Continuous Integration & Delivery",
   "fileName": "cicd-app.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "cicd-service",
-  "displayName": "Continuous Integration & Delivery",
+  "displayName": "SAP Continuous Integration and Delivery",
   "description": "Continuous Integration & Delivery",
   "fileName": "cicd-service.json",
   "category": "SERVICE"
@@ -715,7 +715,7 @@
  },
  {
   "technicalId": "cloudforenergy-api",
-  "displayName": "SAP Cloud for Energy API",
+  "displayName": "SAP Cloud for Energy",
   "description": "Establish connection to the Cloud for Energy API",
   "fileName": "cloudforenergy-api.json",
   "category": "SERVICE"
@@ -778,14 +778,14 @@
  },
  {
   "technicalId": "content-agent",
-  "displayName": "SAP Content Agent service",
+  "displayName": "Content Agent Service",
   "description": "Content Agent Service",
   "fileName": "content-agent.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "content-agent-ui",
-  "displayName": "Content Agent Service",
+  "displayName": "SAP Content Agent service",
   "description": "Content Agent Service",
   "fileName": "content-agent-ui.json",
   "category": "APPLICATION"
@@ -1037,14 +1037,14 @@
  },
  {
   "technicalId": "data-privacy-integration-application",
-  "displayName": "SAP Data Privacy Integration",
+  "displayName": "Data Privacy Integration",
   "description": "Data Privacy Integration",
   "fileName": "data-privacy-integration-application.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "data-privacy-integration-service",
-  "displayName": "Data Privacy Integration",
+  "displayName": "SAP Data Privacy Integration",
   "description": "Data Privacy Integration",
   "fileName": "data-privacy-integration-service.json",
   "category": "SERVICE"
@@ -1261,7 +1261,7 @@
  },
  {
   "technicalId": "dvh-test-application",
-  "displayName": "SAP Digital Vehicle Hub",
+  "displayName": "SAP Digital Vehicle Hub Test",
   "description": "(Test) SAP Digital Vehicle Hub application represents the digital twin for any ground transportation object, which integrates and interacts seamlessly along the automotive & mobility value chain in the cloud.",
   "fileName": "dvh-test-application.json",
   "category": "APPLICATION"
@@ -1289,7 +1289,7 @@
  },
  {
   "technicalId": "dynamic-forms-trial",
-  "displayName": "SAP Dynamic Forms Trial",
+  "displayName": "SAP Dynamic Forms",
   "description": "SAP Dynamic Forms - Trial edition is a trial subscription to the SAP Dynamic Forms BTP Application, an all-in-one solution that allows users to create, manage, and use digital forms that change in real-time as they are being filled out. Designers will be guided through the steps required to create a data-driven and responsive form, and users will be guided through the steps required to complete forms based on these designs.",
   "fileName": "dynamic-forms-trial.json",
   "category": "APPLICATION"
@@ -1653,14 +1653,14 @@
  },
  {
   "technicalId": "feature-flags",
-  "displayName": "Feature Flags Service",
+  "displayName": "SAP Feature Flags service",
   "description": "Feature Flags Service",
   "fileName": "feature-flags.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "feature-flags-dashboard",
-  "displayName": "SAP Feature Flags service",
+  "displayName": "Feature Flags Service",
   "description": "Feature Flags Service",
   "fileName": "feature-flags-dashboard.json",
   "category": "APPLICATION"
@@ -2549,14 +2549,14 @@
  },
  {
   "technicalId": "MDMBusinessPartnerApplication",
-  "displayName": "Master Data Service for Business Partners",
+  "displayName": "SAP Master Data service for business partners",
   "description": "Master Data Service for Business Partners",
   "fileName": "mdmbusinesspartnerapplication.json",
   "category": "APPLICATION"
  },
  {
   "technicalId": "MDMBusinessPartnerService",
-  "displayName": "SAP Master Data service for business partners",
+  "displayName": "SAP Business Partner Service",
   "description": "SAP Business Partner Service",
   "fileName": "mdmbusinesspartnerservice.json",
   "category": "SERVICE"
@@ -2878,14 +2878,14 @@
  },
  {
   "technicalId": "one-mds",
-  "displayName": "SAP Master Data Integration",
+  "displayName": "Master Data Integration",
   "description": "Master Data Integration",
   "fileName": "one-mds.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "one-mds-master",
-  "displayName": "SAP Master Data Integration Tenant",
+  "displayName": "SAP Master Data Integration",
   "description": "SAP Master Data Integration Tenant",
   "fileName": "one-mds-master.json",
   "category": "APPLICATION"
@@ -2969,14 +2969,14 @@
  },
  {
   "technicalId": "personal-data-manager-service",
-  "displayName": "Personal Data Manager",
+  "displayName": "SAP Personal Data Manager",
   "description": "Personal Data Manager",
   "fileName": "personal-data-manager-service.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "PersonalDataManagerApp",
-  "displayName": "SAP Personal Data Manager",
+  "displayName": "Personal Data Manager",
   "description": "Personal Data Manager",
   "fileName": "personaldatamanagerapp.json",
   "category": "APPLICATION"
@@ -3753,7 +3753,7 @@
  },
  {
   "technicalId": "SAPEntitlementManagementBeta",
-  "displayName": "SAP Entitlement Management",
+  "displayName": "SAP Entitlement Management Test",
   "description": "SAP Entitlement Management Test",
   "fileName": "sapentitlementmanagementbeta.json",
   "category": "APPLICATION"
@@ -3921,14 +3921,14 @@
  },
  {
   "technicalId": "service-ticket-intelligence-partner",
-  "displayName": "Service Ticket Intelligence",
+  "displayName": "Service Ticket Intelligence Partner",
   "description": "Service Ticket Intelligence Partner",
   "fileName": "service-ticket-intelligence-partner.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "service-ticket-intelligence-trial",
-  "displayName": "Service Ticket Intelligence Trial",
+  "displayName": "Service Ticket Intelligence",
   "description": "Service Ticket Intelligence Trial",
   "fileName": "service-ticket-intelligence-trial.json",
   "category": "SERVICE"
@@ -4159,14 +4159,14 @@
  },
  {
   "technicalId": "workflow",
-  "displayName": "Workflow",
+  "displayName": "SAP Workflow Management",
   "description": "SAP Workflow service allows you to build, run, and manage workflows, from simple approvals to end-to-end processes that span across different organizations and applications. With an inbox application and custom-built user interfaces, you involve end users into business processes for decision making and data entry. The workflow service comes with web-based tools for workflow modeling, APIs for consumption in custom applications, monitoring tools, and a set of Fiori-based applications for end-user access. You can use JavaScript to embed custom business logic.",
   "fileName": "workflow.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "workflowmanagement",
-  "displayName": "SAP Workflow Management",
+  "displayName": "Workflow Management",
   "description": "Digitize workflows, manage decisions and gain end-to-end process visibility.",
   "fileName": "workflowmanagement.json",
   "category": "SERVICE"
@@ -4208,14 +4208,14 @@
  },
  {
   "technicalId": "xfs-runtime",
-  "displayName": "SAP BTP, serverless runtime",
+  "displayName": "Serverless Runtime",
   "description": "Provides runtime access to OData services exposed by the OData Provisioning capability in SAP Integration Suite. Please note that the extension capability is deprecated.",
   "fileName": "xfs-runtime.json",
   "category": "SERVICE"
  },
  {
   "technicalId": "xfs-runtime-trial",
-  "displayName": "Serverless Runtime",
+  "displayName": "SAP BTP, serverless runtime",
   "description": "Provides runtime access to OData services exposed by the OData Provisioning capability in SAP Integration Suite. Please note that the extension capability is deprecated.",
   "fileName": "xfs-runtime-trial.json",
   "category": "SERVICE"

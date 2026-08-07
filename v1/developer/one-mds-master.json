@@ -1,9 +1,22 @@
 {
  "name": "one-mds-master",
- "displayName": "SAP Master Data Integration Tenant",
+ "displayName": "SAP Master Data Integration",
  "description": "SAP Master Data Integration Tenant",
  "icon": null,
- "links": [],
+ "links": [
+  {
+   "value": "https://community.sap.com/search/?ct=blog&q=SAP%20Master%20Data%20Integration",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Blog Posts"
+  },
+  {
+   "value": "https://community.sap.com/search/?ct=qa&q=SAP%20Master%20Data%20Integration",
+   "classification": "SAP Community",
+   "type": "Link",
+   "text": "SAP Community Questions and Answers"
+  }
+ ],
  "servicePlans": [
   {
    "name": "standard",
