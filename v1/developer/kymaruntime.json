@@ -412,7 +412,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -455,11 +455,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -599,10 +600,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -1204,7 +1207,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -1247,11 +1250,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -1391,10 +1395,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -1809,7 +1815,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -1852,11 +1858,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -1996,10 +2003,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -2579,7 +2588,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -2622,11 +2631,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -2766,10 +2776,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -4768,7 +4780,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -4811,11 +4823,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -4923,10 +4936,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -5523,7 +5538,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -5566,11 +5581,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -5678,10 +5694,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -6094,7 +6112,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -6137,11 +6155,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -6249,10 +6268,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -6825,7 +6846,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -6868,11 +6889,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -6980,10 +7002,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -8886,7 +8910,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -8923,11 +8947,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -8983,10 +9008,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -9505,7 +9532,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -9542,11 +9569,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -9602,10 +9630,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -9940,7 +9970,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -9977,11 +10007,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -10037,10 +10068,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -10535,7 +10568,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -10572,11 +10605,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -10632,10 +10666,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -12336,7 +12372,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -12379,11 +12415,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -12523,10 +12560,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -13128,7 +13167,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -13171,11 +13210,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -13315,10 +13355,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -13733,7 +13775,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -13776,11 +13818,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -13920,10 +13963,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -14503,7 +14548,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -14546,11 +14591,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -14690,10 +14736,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -16296,7 +16344,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -16339,11 +16387,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -16451,10 +16500,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -17051,7 +17102,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -17094,11 +17145,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -17206,10 +17258,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -17622,7 +17676,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -17665,11 +17719,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -17777,10 +17832,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -18353,7 +18410,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -18396,11 +18453,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -18508,10 +18566,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -20046,7 +20106,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -20089,11 +20149,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -20179,10 +20240,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -20739,7 +20802,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -20782,11 +20845,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -20872,10 +20936,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -26798,7 +26864,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -26841,11 +26907,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -26931,10 +26998,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -27491,7 +27560,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -27534,11 +27603,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -27624,10 +27694,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -29268,6 +29340,7 @@
          "additionalWorkerNodePools",
          "modules",
          "networking",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -29275,6 +29348,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -29316,7 +29409,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -29359,11 +29452,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -29425,10 +29519,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -29901,6 +29997,7 @@
          "additionalVolumeSizeGi",
          "gvisor",
          "additionalWorkerNodePools",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -29908,6 +30005,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -29949,7 +30066,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -29992,11 +30109,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -30058,10 +30176,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -30374,6 +30494,7 @@
          "additionalWorkerNodePools",
          "modules",
          "networking",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -30381,6 +30502,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -30422,7 +30563,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -30465,11 +30606,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -30531,10 +30673,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -31007,6 +31151,7 @@
          "additionalVolumeSizeGi",
          "gvisor",
          "additionalWorkerNodePools",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -31014,6 +31159,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -31055,7 +31220,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -31098,11 +31263,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -31164,10 +31330,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -31480,6 +31648,7 @@
          "additionalWorkerNodePools",
          "modules",
          "networking",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -31487,6 +31656,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -31528,7 +31717,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -31571,11 +31760,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -31637,10 +31827,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -32113,6 +32305,7 @@
          "additionalVolumeSizeGi",
          "gvisor",
          "additionalWorkerNodePools",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -32120,6 +32313,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -32161,7 +32374,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -32204,11 +32417,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -32270,10 +32484,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -32586,6 +32802,7 @@
          "additionalWorkerNodePools",
          "modules",
          "networking",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -32593,6 +32810,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -32634,7 +32871,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -32677,11 +32914,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -32743,10 +32981,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -33219,6 +33459,7 @@
          "additionalVolumeSizeGi",
          "gvisor",
          "additionalWorkerNodePools",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -33226,6 +33467,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -33267,7 +33528,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -33310,11 +33571,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -33376,10 +33638,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -33692,6 +33956,7 @@
          "additionalWorkerNodePools",
          "modules",
          "networking",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -33699,6 +33964,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -33740,7 +34025,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -33783,11 +34068,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -33849,10 +34135,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -34325,6 +34613,7 @@
          "additionalVolumeSizeGi",
          "gvisor",
          "additionalWorkerNodePools",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -34332,6 +34621,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -34373,7 +34682,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -34416,11 +34725,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -34482,10 +34792,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -34798,6 +35110,7 @@
          "additionalWorkerNodePools",
          "modules",
          "networking",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -34805,6 +35118,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -34846,7 +35179,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -34889,11 +35222,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -34955,10 +35289,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -35431,6 +35767,7 @@
          "additionalVolumeSizeGi",
          "gvisor",
          "additionalWorkerNodePools",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -35438,6 +35775,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -35479,7 +35836,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -35522,11 +35879,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -35588,10 +35946,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -35904,6 +36264,7 @@
          "additionalWorkerNodePools",
          "modules",
          "networking",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -35911,6 +36272,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -35952,7 +36333,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -35995,11 +36376,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -36061,10 +36443,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
@@ -36537,6 +36921,7 @@
          "additionalVolumeSizeGi",
          "gvisor",
          "additionalWorkerNodePools",
+         "accessControlList",
          "oidc",
          "administrators",
          "auditLogAccess"
@@ -36544,6 +36929,26 @@
         "_load_current_config": true,
         "_show_form_view": true,
         "properties": {
+         "accessControlList": {
+          "description": "Allows you to restrict access to Kubernetes API server.",
+          "properties": {
+           "allowedCIDRs": {
+            "description": "The whitelisted CIDRs allowed to access the Kubernetes API server. If you don't want to define Access Control List, provide an empty list.",
+            "items": {
+             "example": "5.6.0.0/16",
+             "title": "CIDR range",
+             "type": "string"
+            },
+            "title": "Allowed CIDRs",
+            "type": "array"
+           }
+          },
+          "required": [
+           "allowedCIDRs"
+          ],
+          "title": "Access Control List",
+          "type": "object"
+         },
          "additionalVolumeSizeGi": {
           "default": 0,
           "description": "Additional disk space in Gi added on top of the default volume size for the worker pool.",
@@ -36585,7 +36990,7 @@
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -36628,11 +37033,12 @@
              "description": "Use labels to identify, filter, and organize objects.",
              "patternProperties": {
               ".*": {
+               "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                "type": "string"
               }
              },
              "propertyNames": {
-              "pattern": "^.+$"
+              "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$"
              },
              "type": "object"
             },
@@ -36694,10 +37100,12 @@
                "key": {
                 "description": "Specifies the taint key.",
                 "minLength": 1,
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,251}[a-zA-Z0-9])?/)?[a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?$",
                 "type": "string"
                },
                "value": {
                 "description": "Specifies the taint value.",
+                "pattern": "^([a-zA-Z0-9]([-a-zA-Z0-9_.]{0,61}[a-zA-Z0-9])?)?$",
                 "type": "string"
                }
               },
