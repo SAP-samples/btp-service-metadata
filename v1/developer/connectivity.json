@@ -794,6 +794,49 @@
      }
     }
    ]
+  },
+  {
+   "name": "proxy_authorization",
+   "displayName": "Proxy Authorization",
+   "category": "SERVICE",
+   "description": "Used for distributed Connectivity Proxy deployments working in untrusted mode. Instances of these plans serve as the OAuth client for fetching the Proxy-Authorization token and provide the client id to configure as allowed for the proxy endpoints.",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "ap01",
+     "name": "cf-ap01"
+    },
+    {
+     "region": "ap20",
+     "name": "cf-ap20"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    }
+   ],
+   "schemas": [
+    {
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "_show_form_view": false,
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     }
+    }
+   ]
   }
  ],
  "supportComponents": [
