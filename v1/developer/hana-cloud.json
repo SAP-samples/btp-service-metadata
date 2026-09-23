@@ -38558,7 +38558,31 @@
      "name": "sap_na-us-2"
     }
    ],
-   "schemas": null
+   "schemas": [
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "type": "object"
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": true,
+        "type": "object"
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": null
+      }
+     }
+    }
+   ]
   },
   {
    "name": "hana-td",
