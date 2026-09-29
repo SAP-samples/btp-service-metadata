@@ -525,6 +525,70 @@
    ]
   },
   {
+   "name": "hana-agent-memory",
+   "displayName": "hana-agent-memory",
+   "category": "SERVICE",
+   "description": "SAP HANA Cloud, Agent Memory Service - HDI container with memory vector schema on customer's HANA Cloud (BYOH)",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "ap10",
+     "name": "cf-ap10"
+    },
+    {
+     "region": "ap11",
+     "name": "cf-ap11"
+    },
+    {
+     "region": "br10",
+     "name": "cf-br10"
+    },
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    },
+    {
+     "region": "eu11",
+     "name": "cf-eu11"
+    },
+    {
+     "region": "eu30",
+     "name": "cf-eu30"
+    },
+    {
+     "region": "in30",
+     "name": "cf-in30"
+    },
+    {
+     "region": "jp10",
+     "name": "cf-jp10"
+    },
+    {
+     "region": "us10",
+     "name": "cf-us10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8008112",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8008612",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012231",
+     "commercialModel": "Subscription"
+    },
+    {
+     "materialNumber": "8012500",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
    "name": "hana-cloud-connection",
    "displayName": "hana-cloud-connection",
    "category": "SERVICE",
