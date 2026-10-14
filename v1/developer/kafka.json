@@ -946,6 +946,313 @@
          },
          "cores_per_broker": {
           "description": "Number of cores for each broker",
+          "type": "string",
+          "default": "2"
+         },
+         "message_max_bytes": {
+          "description": "The largest record batch size allowed by Kafka. Valid range is 1 to 10 MB with format <size-in-unit>[unit], e.g. 1000k.",
+          "type": "string",
+          "default": "1048588"
+         },
+         "auto_create_topics_enable": {
+          "description": "Enable auto creation of topics on the Kafka cluster",
+          "type": "boolean",
+          "default": true
+         },
+         "delete_topic_enable": {
+          "description": "Enable deletion of topics on the Kafka cluster",
+          "type": "boolean",
+          "default": true
+         },
+         "topics": {
+          "description": "Comma-separated list of names or specifications of topics to create intially",
+          "type": "string",
+          "default": ""
+         },
+         "min_insync_replicas": {
+          "description": "The minimum number of replicas that must acknowledge a write",
+          "type": "integer",
+          "default": 2
+         },
+         "log_retention_hours": {
+          "description": "How long messages should be retained in hours",
+          "type": "integer",
+          "default": 168
+         },
+         "public_ip": {
+          "description": "Flag to enable/disable a public endpoint for the cluster",
+          "type": "boolean",
+          "default": false
+         },
+         "allow_access": {
+          "description": "IP addresses, CIDR ranges and domains to give access to the public endpoint",
+          "type": "array",
+          "items": {
+           "type": "string"
+          },
+          "default": []
+         },
+         "enable_kafka_connect": {
+          "description": "Flag to enable/disable Kafka Connect for the cluster",
+          "type": "boolean",
+          "default": false
+         },
+         "remote_log_storage_system_enable": {
+          "description": "Flag to enable remote (\"tiered\") storage for the cluster",
+          "type": "boolean",
+          "default": false
+         },
+         "log_local_retention": {
+          "description": "How long messages should be retained locally. Older messages are transferred to remote storage. Format <int>[dhms], e.g. 3600000, 7d, 24h, 30m, 3600s. Value without unit is interpreted as milliseconds.",
+          "type": "string"
+         },
+         "log_local_retention_bytes": {
+          "description": "The maximum size of log segments to be retained locally. Excess data is transferred to remote storage. Format <int>[kMGT], e.g. 1024, 256k, 100M, 42G, 1T. Value without unit is interpreted as bytes.",
+          "type": "string"
+         },
+         "stack": {
+          "description": "Resource manager used to provision clusters",
+          "type": "string"
+         },
+         "broker_bind_mode": {
+          "description": "Mode used to provision service bindings, either sync or async",
+          "type": "string",
+          "enum": [
+           "sync",
+           "async"
+          ]
+         },
+         "enable_global_advertising": {
+          "description": "Flag to enable/disable global advertising for the cluster",
+          "type": "boolean",
+          "default": false
+         },
+         "connectors": {
+          "description": "List of connectors to install on the cluster",
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      },
+      "update": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "_show_form_view": false,
+        "_load_current_config": true,
+        "properties": {
+         "dynatrace_enabled": {
+          "description": "Flag to enable/disable Dynatrace monitoring for the service",
+          "type": "boolean"
+         },
+         "dynatrace_environment_id": {
+          "description": "Identifier for the Dynatrace environment the service will report to",
+          "type": "string"
+         },
+         "dynatrace_api_token": {
+          "description": "API token for the Dynatrace environment the service will report to",
+          "type": "string"
+         },
+         "dynatrace_api_url": {
+          "description": "API URL for the Dynatrace environment the service will report to",
+          "type": "string"
+         },
+         "number_of_brokers": {
+          "description": "Number of Kafka brokers. Valid range is between 3 and 100 brokers.",
+          "type": "integer"
+         },
+         "disk_per_broker": {
+          "description": "Disk size in GBs for each broker in the cluster. Valid input format is <size-in-GBs>G.",
+          "type": "string"
+         },
+         "cores_per_broker": {
+          "description": "Number of cores for each broker",
+          "type": "string"
+         },
+         "message_max_bytes": {
+          "description": "The largest record batch size allowed by Kafka. Valid range is 1 to 10 MB with format <size-in-unit>[unit], e.g. 1000k.",
+          "type": "string"
+         },
+         "auto_create_topics_enable": {
+          "description": "Enable auto creation of topics on the Kafka cluster",
+          "type": "boolean"
+         },
+         "delete_topic_enable": {
+          "description": "Enable deletion of topics on the Kafka cluster",
+          "type": "boolean"
+         },
+         "min_insync_replicas": {
+          "description": "The minimum number of replicas that must acknowledge a write",
+          "type": "integer"
+         },
+         "log_retention_hours": {
+          "description": "How long messages should be persisted in hours",
+          "type": "integer"
+         },
+         "public_ip": {
+          "description": "Flag to enable/disable a public endpoint for the cluster",
+          "type": "boolean"
+         },
+         "allow_access": {
+          "description": "IP addresses, CIDR ranges and domains to give access to the public endpoint",
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         },
+         "enable_kafka_connect": {
+          "description": "Flag to enable/disable Kafka Connect for the cluster",
+          "type": "boolean"
+         },
+         "remote_log_storage_system_enable": {
+          "description": "Flag to enable remote (\"tiered\") storage for the cluster",
+          "type": "boolean"
+         },
+         "log_local_retention": {
+          "description": "How long messages should be retained locally. Older messages are transferred to remote storage. Format <int>[dhms], e.g. 3600000, 7d, 24h, 30m, 3600s. Value without unit is interpreted as milliseconds.",
+          "type": "string"
+         },
+         "log_local_retention_bytes": {
+          "description": "The maximum size of log segments to be retained locally. Excess data is transferred to remote storage. Format <int>[kMGT], e.g. 1024, 256k, 100M, 42G, 1T. Value without unit is interpreted as bytes.",
+          "type": "string"
+         },
+         "broker_bind_mode": {
+          "description": "Mode used to provision service bindings, either sync or async",
+          "type": "string",
+          "enum": [
+           "sync",
+           "async"
+          ]
+         },
+         "enable_global_advertising": {
+          "description": "Flag to enable/disable global advertising for the service",
+          "type": "boolean"
+         },
+         "connectors": {
+          "description": "List of connectors to install on the cluster",
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "service_binding": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "_controlsOrder": [
+         "validity",
+         "cert_format",
+         "key_format",
+         "key_size",
+         "key_alg",
+         "secret"
+        ],
+        "properties": {
+         "validity": {
+          "description": "The desired lifetime of the certificate",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 365,
+          "default": 90
+         },
+         "cert_format": {
+          "description": "The desired output format for the certificate",
+          "type": "string",
+          "enum": [
+           "PEM",
+           "PKCS#7"
+          ],
+          "default": "PEM"
+         },
+         "key_format": {
+          "description": "The desired output format for the private key",
+          "type": "string",
+          "enum": [
+           "PKCS#8",
+           "PKCS#12"
+          ],
+          "default": "PKCS#8"
+         },
+         "key_size": {
+          "description": "The number of bits the private key shall have",
+          "type": "integer",
+          "minimum": 2048,
+          "default": 2048
+         },
+         "key_alg": {
+          "description": "The encryption algorithm to use for encrypting the private key",
+          "type": "string",
+          "enum": [
+           "AES256",
+           "AES192",
+           "AES128",
+           "3DES"
+          ],
+          "default": "AES256"
+         },
+         "secret": {
+          "description": "The secret to use for encrypting the private key",
+          "type": "string"
+         },
+         "credential-type": {
+          "description": "The type of credentials to create. By default, only X.509 certificates are created, but passwords are no longer included in bindings.",
+          "type": "string",
+          "enum": [
+           "x509",
+           "x509, password"
+          ],
+          "default": "x509"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "service_instance": {
+      "create": {
+       "parameters": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "_show_form_view": true,
+        "properties": {
+         "dynatrace_enabled": {
+          "description": "Flag to enable/disable Dynatrace monitoring for the service",
+          "type": "boolean"
+         },
+         "dynatrace_environment_id": {
+          "description": "Identifier for the Dynatrace environment the service will report to",
+          "type": "string"
+         },
+         "dynatrace_api_token": {
+          "description": "API token for the Dynatrace environment the service will report to",
+          "type": "string"
+         },
+         "dynatrace_api_url": {
+          "description": "API URL for the Dynatrace environment the service will report to",
+          "type": "string"
+         },
+         "number_of_brokers": {
+          "description": "Number of Kafka brokers. Valid range is between 3 and 100 brokers.",
+          "type": "integer",
+          "default": 3
+         },
+         "disk_per_broker": {
+          "description": "Disk size in GBs for each broker in the cluster. Valid input format is <size-in-GBs>G.",
+          "type": "string",
+          "default": "500G"
+         },
+         "cores_per_broker": {
+          "description": "Number of cores for each broker",
           "type": "integer",
           "default": 2
          },
