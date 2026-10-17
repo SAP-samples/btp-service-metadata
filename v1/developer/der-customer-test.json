@@ -6,6 +6,24 @@
  "links": [],
  "servicePlans": [
   {
+   "name": "ptest",
+   "displayName": "Partner Test",
+   "category": "APPLICATION",
+   "description": "SAP Distributed Energy Resources(DER) Partner Test Plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "schemas": null
+  },
+  {
    "name": "test",
    "displayName": "Customer Test",
    "category": "APPLICATION",

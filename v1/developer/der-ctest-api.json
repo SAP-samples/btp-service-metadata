@@ -6,6 +6,24 @@
  "links": [],
  "servicePlans": [
   {
+   "name": "ptest",
+   "displayName": "Partner Test",
+   "category": "SERVICE",
+   "description": "SAP Distributed Energy Resources API Partner Test Plan",
+   "isFree": null,
+   "isBeta": false,
+   "deprecated": false,
+   "deprecationMessage": null,
+   "deprecationDate": null,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "schemas": null
+  },
+  {
    "name": "test",
    "displayName": "Customer Test",
    "category": "SERVICE",

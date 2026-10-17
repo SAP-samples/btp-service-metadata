@@ -5,6 +5,26 @@
  "icon": null,
  "servicePlans": [
   {
+   "name": "ptest",
+   "displayName": "Partner Test",
+   "category": "APPLICATION",
+   "description": "SAP Distributed Energy Resources(DER) Partner Test Plan",
+   "isFree": null,
+   "isBeta": false,
+   "dataCenters": [
+    {
+     "region": "eu10",
+     "name": "cf-eu10"
+    }
+   ],
+   "materialNumberMapping": [
+    {
+     "materialNumber": "8022210",
+     "commercialModel": "Subscription"
+    }
+   ]
+  },
+  {
    "name": "test",
    "displayName": "Customer Test",
    "category": "APPLICATION",
