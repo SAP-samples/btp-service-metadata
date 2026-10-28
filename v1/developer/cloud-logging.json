@@ -1376,6 +1376,10 @@
            "enabled": {
             "default": false,
             "type": "boolean"
+           },
+           "span_passthrough": {
+            "default": false,
+            "type": "boolean"
            }
           },
           "type": "object"
@@ -1464,6 +1468,9 @@
          "ingest_otlp": {
           "properties": {
            "enabled": {
+            "type": "boolean"
+           },
+           "span_passthrough": {
             "type": "boolean"
            }
           },
@@ -1579,10 +1586,6 @@
            "enabled": {
             "default": false,
             "type": "boolean"
-           },
-           "span_passthrough": {
-            "default": false,
-            "type": "boolean"
            }
           },
           "type": "object"
@@ -1671,9 +1674,6 @@
          "ingest_otlp": {
           "properties": {
            "enabled": {
-            "type": "boolean"
-           },
-           "span_passthrough": {
             "type": "boolean"
            }
           },
@@ -2333,6 +2333,10 @@
            "enabled": {
             "default": false,
             "type": "boolean"
+           },
+           "span_passthrough": {
+            "default": false,
+            "type": "boolean"
            }
           },
           "type": "object"
@@ -2421,6 +2425,9 @@
          "ingest_otlp": {
           "properties": {
            "enabled": {
+            "type": "boolean"
+           },
+           "span_passthrough": {
             "type": "boolean"
            }
           },
@@ -2536,10 +2543,6 @@
            "enabled": {
             "default": false,
             "type": "boolean"
-           },
-           "span_passthrough": {
-            "default": false,
-            "type": "boolean"
            }
           },
           "type": "object"
@@ -2628,9 +2631,6 @@
          "ingest_otlp": {
           "properties": {
            "enabled": {
-            "type": "boolean"
-           },
-           "span_passthrough": {
             "type": "boolean"
            }
           },
@@ -3290,6 +3290,10 @@
            "enabled": {
             "default": false,
             "type": "boolean"
+           },
+           "span_passthrough": {
+            "default": false,
+            "type": "boolean"
            }
           },
           "type": "object"
@@ -3378,6 +3382,9 @@
          "ingest_otlp": {
           "properties": {
            "enabled": {
+            "type": "boolean"
+           },
+           "span_passthrough": {
             "type": "boolean"
            }
           },
@@ -3493,10 +3500,6 @@
            "enabled": {
             "default": false,
             "type": "boolean"
-           },
-           "span_passthrough": {
-            "default": false,
-            "type": "boolean"
            }
           },
           "type": "object"
@@ -3585,9 +3588,6 @@
          "ingest_otlp": {
           "properties": {
            "enabled": {
-            "type": "boolean"
-           },
-           "span_passthrough": {
             "type": "boolean"
            }
           },
