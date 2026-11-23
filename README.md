@@ -4,6 +4,9 @@
 
 ## Description
 
+> [!CAUTION]
+> 23.11.2026: The repository and its data is no longer actively maintained. The information provided here may be outdated and should be used with caution.
+
 > [!IMPORTANT]
 > 08.01.2025: We updated the metadata to **v1**. The `v0` directory will no longer be updated. The schema of the data changed e.g., you can now also find the commercial model per service plan is part of the data.
 
